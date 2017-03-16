@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="paiHmiPageIcons">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="20"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="1175" Value="Source[local].Bitmap[navDashboard]"/>
+    <BitmapRef ID="1176" Value="Source[local].Bitmap[navHardware]"/>
+    <BitmapRef ID="1177" Value="Source[local].Bitmap[navDiagnostics]"/>
+    <BitmapRef ID="1178" Value="Source[local].Bitmap[navSettings]"/>
+    <BitmapRef ID="1179" Value="Source[local].Bitmap[navData]"/>
+    <BitmapRef ID="1180" Value="Source[local].Bitmap[navApplication]"/>
+    <BitmapRef ID="2554" Value="Source[local].Bitmap[navLogin]"/>
+    <BitmapRef ID="2555" Value="Source[local].Bitmap[mechMotorSymbol]"/>
+    <BitmapRef ID="2556" Value="Source[local].Bitmap[mechRobot2]"/>
+    <BitmapRef ID="3058" Value="Source[local].Bitmap[fileUSBGeneric]"/>
+    <BitmapRef ID="3059" Value="Source[local].Bitmap[fileReport]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="1175" Value="0"/>
+    <Index ID="1176" Value="40"/>
+    <Index ID="1177" Value="30"/>
+    <Index ID="1178" Value="20"/>
+    <Index ID="1179" Value="50"/>
+    <Index ID="1180" Value="10"/>
+    <Index ID="2554" Value="60"/>
+    <Index ID="2555" Value="70"/>
+    <Index ID="2556" Value="80"/>
+    <Index ID="3058" Value="90"/>
+    <Index ID="3059" Value="100"/>
+  </IndexMap>
+</BitmapGroup>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="CNC_3Axis_MpLink" Type="mpcnc3axis">
+    <Group ID="Linking">
+      <Group ID="Subnodes">
+        <Property ID="AxisX" Value="Axis_CNC_X_MpLink" />
+        <Property ID="AxisY" Value="Axis_CNC_Y_MpLink" />
+        <Property ID="AxisZ" Value="Axis_CNC_Z_MpLink" />
+      </Group>
+    </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

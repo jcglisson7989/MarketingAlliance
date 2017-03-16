@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<AlarmGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="HERNON_Safety">
+  <Property Name="AcknowledgeImage" Value="Source[global].Variable[DataSource.gMachine.HMI.AlarmControls.Safety.AcknowledgeImage]"/>
+  <Property Name="ActiveBackColor" Value="4"/>
+  <Property Name="ActiveForeColor" Value="0"/>
+  <Property Name="AlarmImage" Value="Source[global].Variable[DataSource.gMachine.HMI.AlarmControls.Safety.AlarmImage]"/>
+  <Property Name="BypassBackColor" Value="14"/>
+  <Property Name="BypassForeColor" Value="0"/>
+  <Property Name="BypassImage" Value="None"/>
+  <Property Name="DefaultBackColor" Value="15"/>
+  <Property Name="DefaultForeColor" Value="0"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="GroupAlarm" Value="None"/>
+  <Property Name="ImageOffset" Value="0"/>
+  <Property Name="Index" Value="80"/>
+  <Property Name="LatchedBackColor" Value="2"/>
+  <Property Name="LatchedForeColor" Value="0"/>
+  <Property Name="Priority" Value="1"/>
+  <Property Name="QuitBackColor" Value="1"/>
+  <Property Name="QuitForeColor" Value="0"/>
+  <Alarms>
+    <Alarm Index="0">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="1">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="2">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="3">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="4">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="5">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="6">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="7">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="Group">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+    </Alarm>
+  </Alarms>
+  <TextGroup>
+    <TextSnippets/>
+    <TextLayer LanguageId="en">
+      <Text ID="3156" Value="Invalid Safe Relay Configuration"/>
+      <Text ID="3157" Value="Safety Relay 1 unsafe state"/>
+      <Text ID="3158" Value="Safety Relay 2 unsafe state"/>
+      <Text ID="3159" Value="Unsafe operation state"/>
+      <Text ID="3160" Value="Prcs voltage OFF"/>
+      <Text ID="3429" Value="Loading area door"/>
+      <Text ID="3430" Value="Process area door"/>
+      <Text ID="4477" Value="Mute Switch Timeout"/>
+      <Text ID="4919" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="3156" Value="Ungültige Sichere Relaiskonfiguration"/>
+      <Text ID="3157" Value="Sicherheitsrelais 1 unsicheren Zustand"/>
+      <Text ID="3158" Value="Sicherheitsrelais 2 unsicheren Zustand"/>
+      <Text ID="3159" Value="Unsichere Betriebszustand"/>
+      <Text ID="3160" Value="Prcs Spannung AUS"/>
+      <Text ID="3429" Value="Laderaumtür"/>
+      <Text ID="3430" Value="Prozessraumtür"/>
+      <Text ID="4477" Value=""/>
+      <Text ID="4919" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="3156" Value="Configuración de relé de seguridad no válido"/>
+      <Text ID="3157" Value="1 relé de seguridad estado inseguro"/>
+      <Text ID="3158" Value="Relé de seguridad 2 estado inseguro"/>
+      <Text ID="3159" Value="estado de operación insegura"/>
+      <Text ID="3160" Value="SPMLR tensión OFF"/>
+      <Text ID="3429" Value="puerta de carga área"/>
+      <Text ID="3430" Value="Puerta a la zona de proceso"/>
+      <Text ID="4477" Value=""/>
+      <Text ID="4919" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="fr">
+      <Text ID="3156" Value="Configuration relais Safe Invalid"/>
+      <Text ID="3157" Value="Relais 1 de l'état dangereux de la sécurité"/>
+      <Text ID="3158" Value="Relais 2 de l'état dangereux de la sécurité"/>
+      <Text ID="3159" Value="état de fonctionnement dangereux"/>
+      <Text ID="3160" Value="PRèS tension OFF"/>
+      <Text ID="3429" Value="porte de la zone de chargement"/>
+      <Text ID="3430" Value="porte de la zone de processus"/>
+      <Text ID="4477" Value=""/>
+      <Text ID="4919" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="3156" Value="Configuração do relé de segurança inválido"/>
+      <Text ID="3157" Value="Relé de segurança 1 estado inseguro"/>
+      <Text ID="3158" Value="Relé de segurança 2 estado inseguro"/>
+      <Text ID="3159" Value="estado funcionamento de risco"/>
+      <Text ID="3160" Value="PRCs tensão OFF"/>
+      <Text ID="3429" Value="porta de carregamento área"/>
+      <Text ID="3430" Value="porta área de processo"/>
+      <Text ID="4477" Value=""/>
+      <Text ID="4919" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="sv">
+      <Text ID="3156" Value="Ogiltig Safe Relay Configuration"/>
+      <Text ID="3157" Value="Säkerhetsrelä ett osäkert tillstånd"/>
+      <Text ID="3158" Value="Säkerhetsrelä 2 osäkert tillstånd"/>
+      <Text ID="3159" Value="Osäker användning tillstånd"/>
+      <Text ID="3160" Value="Prcs spänning OFF"/>
+      <Text ID="3429" Value="Lastyta dörr"/>
+      <Text ID="3430" Value="Processområde dörr"/>
+      <Text ID="4477" Value=""/>
+      <Text ID="4919" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="3156" Value="0"/>
+      <Index ID="3157" Value="1"/>
+      <Index ID="3158" Value="2"/>
+      <Index ID="3159" Value="3"/>
+      <Index ID="3160" Value="4"/>
+      <Index ID="3429" Value="5"/>
+      <Index ID="3430" Value="6"/>
+      <Index ID="4477" Value="7"/>
+      <Index ID="4919" Value="Group"/>
+    </IndexMap>
+  </TextGroup>
+</AlarmGroup>

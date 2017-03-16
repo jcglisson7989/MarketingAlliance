@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.6.110 SP?>
+<Library xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">bglibasWBR.typ</File>
+    <File Description="Exported constants">bglibasWBR.var</File>
+    <File>bglibasWBR.fun</File>
+    <File Description="Modified by WBR">bgssm.c</File>
+    <File>bgfifo.c</File>
+    <File>bgTimer1ms.c</File>
+    <File>wbrFunc.h</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="standard" />
+    <Dependency ObjectName="wbrLogSvc" />
+  </Dependencies>
+</Library>

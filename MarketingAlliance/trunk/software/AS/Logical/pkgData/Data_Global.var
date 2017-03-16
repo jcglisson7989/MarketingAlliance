@@ -1,0 +1,24 @@
+(*Insert your comment here.*)
+VAR
+	Data_Log_Control : MpDataRecorder := (0);
+	Data_Log_Header : MpDataRecorderHeaderType := (0);
+	Data_Log_Config : MpDataRecorderConfig := (0);
+	Data_Log_Config_Struct : MpDataRecorderConfigType := (0);
+	Data_Log_RegPar : MpDataRegPar := (0);
+END_VAR
+(*Insert your comment here.*)
+VAR
+	Data_Table_Control : MpDataTableUI;
+	Data_Table_UIConnect : MpDataTableUIConnectType;
+END_VAR
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+VAR
+	Data_Stats_UIConnect : MpDataStatisticsUIConnectType;
+	Data_Status_UI : MpDataStatisticsUI;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	File_Manager_Control : MpFileManagerUI := (0);
+	File_Manager_UIConnect : MpFileManagerUIConnectType := (0);
+END_VAR

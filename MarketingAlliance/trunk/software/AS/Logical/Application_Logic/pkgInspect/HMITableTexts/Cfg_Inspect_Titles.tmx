@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Cfg/Inspect</prop>
+  </header>
+  <body>
+    <tu tuid="Title.0">
+      <tuv xml:lang="en">
+        <seg>Insp. Primer VBlock</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Vblock</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s Vblock</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Vblock</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s VBlock</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % s VBlock</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.1">
+      <tuv xml:lang="en">
+        <seg>Insp. Primer Max Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Max Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. Max% s Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Max Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s Max esta ocupado [S]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % de Max Busy [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.2">
+      <tuv xml:lang="en">
+        <seg>Insp. Primer Results TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s resultat till [S]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s resultados para [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Ergebnisse [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s resultados en [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % s resultats à [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.3">
+      <tuv xml:lang="en">
+        <seg>Insp. Primer Trig Pause [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Trig Pause [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s Trig Pausa [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Trig Pause [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s Trig pausa [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % s Trig Pause [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.4">
+      <tuv xml:lang="en">
+        <seg>Insp. Primer Illum ON TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Illum Pa TILL [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s Illum ON TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Illum ON TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s Illum ENCENDIDO A [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. Illum ON de% à [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.5">
+      <tuv xml:lang="en">
+        <seg>Insp. Mouth VBlock</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Vblock</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s Vblock</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Vblock</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s VBlock</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % s VBlock</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.6">
+      <tuv xml:lang="en">
+        <seg>Insp. Mouth Max Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Max Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. Max% s Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Max Busy [S]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s Max esta ocupado [S]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % de Max Busy [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.7">
+      <tuv xml:lang="en">
+        <seg>Insp. Mouth Results TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s resultat till [S]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s resultados para [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Ergebnisse [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s resultados en [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % s resultats à [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.8">
+      <tuv xml:lang="en">
+        <seg>Insp. Mouth Trig Pause [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Trig Pause [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s Trig Pausa [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Trig Pause [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s Trig pausa [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. % s Trig Pause [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.9">
+      <tuv xml:lang="en">
+        <seg>Insp. Mouth Illum ON TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Insp. % s Illum Pa TILL [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Insp. % s Illum ON TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Insp. % s Illum ON TO [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Insp. % s Illum ENCENDIDO A [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Insp. Illum ON de% à [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.0">
+      <tuv xml:lang="en">
+        <seg>VBlock count between PiP sensor, Inspection unit</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Vblock rakna mellan PiP sensor, inspektion enhet</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Contagem Vblock entre o sensor PiP, unidade de inspecao</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vblock Zahlung zwischen BiB - Sensor, Einheit Inspektion</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Recuento VBlock entre el sensor de imagenes incrustadas, unidad de Inspeccion</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nombre de VBlock entre le capteur PiP, unite d' inspection</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.1">
+      <tuv xml:lang="en">
+        <seg>Maximum amount of time to receive Inspection Busy Signal (signaling inspection process is happening) [S]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Maximal tid for att ta emot inspektion Busy Signal (signalering inspektionsprocessen sker) [S]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade maxima de tempo para receber Inspeccao Busy Signal (sinalizacao processo de inspecao esta acontecendo) [S]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die maximale Menge an Zeit Inspektion Busy Signal (Signalisierung Prufprozess geschieht) [S] erhalten</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad maxima de tiempo para recibir Inspeccion Busy Signal (señalizacion proceso de inspeccion esta sucediendo) [S]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant maximum de temps pour recevoir l' inspection Busy Signal (signalisation processus d'inspection se passe) [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.2">
+      <tuv xml:lang="en">
+        <seg>Time to wait for inspection results</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid att vanta pa inspektionsresultat</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tempo de espera para os resultados da inspeccao</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit zu warten , Prufergebnissen</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Tiempo de espera para los resultados de inspeccion</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temps d'attente pour les resultats de l' inspection</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.3">
+      <tuv xml:lang="en">
+        <seg>Time after triggering the illumination to wait before triggering the inspection process to begin</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid efter utlosande belysningen att vanta innan utlosande inspektionsprocessen for att borja</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tempo apos o desencadeamento da iluminacao para esperar antes de desencadear o processo de inspecao para comecar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit nach der Beleuchtung Auslosung vor Auslosen des Prufprozesses zu warten , um zu beginnen</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Tiempo despues de activarse la iluminacion debe esperar antes de desencadenar el proceso de inspeccion para comenzar</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temps après le declenchement de l'eclairage à attendre avant de declencher le processus d'inspection pour commencer</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.4">
+      <tuv xml:lang="en">
+        <seg>Time for the illumination output to pulse HIGH.</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid for belysning utgang till puls HoG.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tempo para a saida de iluminacao de pulso de alta.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit fur die Lichtleistung zu pulsen HOCH.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>La hora de la salida de la iluminacion de pulso de alto.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temps pour la sortie d'eclairage à impulsion haute.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.5">
+      <tuv xml:lang="en">
+        <seg>VBlock count between PiP sensor, Inspection unit</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Vblock rakna mellan PiP sensor, inspektion enhet</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Contagem Vblock entre o sensor PiP, unidade de inspecao</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vblock Zahlung zwischen BiB - Sensor, Einheit Inspektion</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Recuento VBlock entre el sensor de imagenes incrustadas, unidad de Inspeccion</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nombre de VBlock entre le capteur PiP, unite d' inspection</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.6">
+      <tuv xml:lang="en">
+        <seg>Maximum amount of time to receive Inspection Busy Signal (signaling inspection process is happening) [S]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Maximal tid for att ta emot inspektion Busy Signal (signalering inspektionsprocessen sker) [S]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade maxima de tempo para receber Inspeccao Busy Signal (sinalizacao processo de inspecao esta acontecendo) [S]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die maximale Menge an Zeit Inspektion Busy Signal (Signalisierung Prufprozess geschieht) [S] erhalten</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad maxima de tiempo para recibir Inspeccion Busy Signal (señalizacion proceso de inspeccion esta sucediendo) [S]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant maximum de temps pour recevoir l' inspection Busy Signal (signalisation processus d'inspection se passe) [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.7">
+      <tuv xml:lang="en">
+        <seg>Time to wait for inspection results</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid att vanta pa inspektionsresultat</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tempo de espera para os resultados da inspeccao</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit zu warten , Prufergebnissen</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Tiempo de espera para los resultados de inspeccion</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temps d'attente pour les resultats de l' inspection</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.8">
+      <tuv xml:lang="en">
+        <seg>Time after triggering the illumination to wait before triggering the inspection process to begin</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid efter utlosande belysningen att vanta innan utlosande inspektionsprocessen for att borja</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tempo apos o desencadeamento da iluminacao para esperar antes de desencadear o processo de inspecao para comecar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit nach der Beleuchtung Auslosung vor Auslosen des Prufprozesses zu warten , um zu beginnen</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Tiempo despues de activarse la iluminacion debe esperar antes de desencadenar el proceso de inspeccion para comenzar</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temps après le declenchement de l'eclairage à attendre avant de declencher le processus d'inspection pour commencer</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.9">
+      <tuv xml:lang="en">
+        <seg>Time for the illumination output to pulse HIGH.</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid for belysning utgang till puls HoG.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tempo para a saida de iluminacao de pulso de alta.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit fur die Lichtleistung zu pulsen HOCH.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>La hora de la salida de la iluminacion de pulso de alto.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temps pour la sortie d'eclairage à impulsion haute.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAlarmXHistoryCode">
+  <Property Name="Description" Value="Textgroup for converting code numbers to string"/>
+  <Property Name="Index" Value="1212"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_0">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[0]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_1">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[1]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_2">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[2]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_3">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[3]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_4">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[4]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_5">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[5]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_6">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[6]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_7">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[7]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_8">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[8]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_9">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[9]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_10">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[10]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_11">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[11]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_12">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[12]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_13">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[13]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_14">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[14]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_15">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[15]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_16">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[16]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_17">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[17]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_18">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[18]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="CodeIndex_19">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Only Value"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgAlert.AlarmX_History_UIConnect.AlarmList.Code[19]]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="625398" Value="{CodeIndex_0}"/>
+    <Text ID="625399" Value="{CodeIndex_1}"/>
+    <Text ID="625400" Value="{CodeIndex_2}"/>
+    <Text ID="625401" Value="{CodeIndex_3}"/>
+    <Text ID="625402" Value="{CodeIndex_4}"/>
+    <Text ID="625403" Value="{CodeIndex_5}"/>
+    <Text ID="625404" Value="{CodeIndex_6}"/>
+    <Text ID="625405" Value="{CodeIndex_7}"/>
+    <Text ID="625406" Value="{CodeIndex_8}"/>
+    <Text ID="625407" Value="{CodeIndex_9}"/>
+    <Text ID="625408" Value="{CodeIndex_10}"/>
+    <Text ID="625409" Value="{CodeIndex_11}"/>
+    <Text ID="625410" Value="{CodeIndex_12}"/>
+    <Text ID="625411" Value="{CodeIndex_13}"/>
+    <Text ID="625412" Value="{CodeIndex_14}"/>
+    <Text ID="625413" Value="{CodeIndex_15}"/>
+    <Text ID="625414" Value="{CodeIndex_16}"/>
+    <Text ID="625415" Value="{CodeIndex_17}"/>
+    <Text ID="625416" Value="{CodeIndex_18}"/>
+    <Text ID="625417" Value="{CodeIndex_19}"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="625398" Value="{CodeIndex_0}"/>
+    <Text ID="625399" Value="{CodeIndex_1}"/>
+    <Text ID="625400" Value="{CodeIndex_2}"/>
+    <Text ID="625401" Value="{CodeIndex_3}"/>
+    <Text ID="625402" Value="{CodeIndex_4}"/>
+    <Text ID="625403" Value="{CodeIndex_5}"/>
+    <Text ID="625404" Value="{CodeIndex_6}"/>
+    <Text ID="625405" Value="{CodeIndex_7}"/>
+    <Text ID="625406" Value="{CodeIndex_8}"/>
+    <Text ID="625407" Value="{CodeIndex_9}"/>
+    <Text ID="625408" Value="{CodeIndex_10}"/>
+    <Text ID="625409" Value="{CodeIndex_11}"/>
+    <Text ID="625410" Value="{CodeIndex_12}"/>
+    <Text ID="625411" Value="{CodeIndex_13}"/>
+    <Text ID="625412" Value="{CodeIndex_14}"/>
+    <Text ID="625413" Value="{CodeIndex_15}"/>
+    <Text ID="625414" Value="{CodeIndex_16}"/>
+    <Text ID="625415" Value="{CodeIndex_17}"/>
+    <Text ID="625416" Value="{CodeIndex_18}"/>
+    <Text ID="625417" Value="{CodeIndex_19}"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="625398" Value=""/>
+    <Text ID="625399" Value=""/>
+    <Text ID="625400" Value=""/>
+    <Text ID="625401" Value=""/>
+    <Text ID="625402" Value=""/>
+    <Text ID="625403" Value=""/>
+    <Text ID="625404" Value=""/>
+    <Text ID="625405" Value=""/>
+    <Text ID="625406" Value=""/>
+    <Text ID="625407" Value=""/>
+    <Text ID="625408" Value=""/>
+    <Text ID="625409" Value=""/>
+    <Text ID="625410" Value=""/>
+    <Text ID="625411" Value=""/>
+    <Text ID="625412" Value=""/>
+    <Text ID="625413" Value=""/>
+    <Text ID="625414" Value=""/>
+    <Text ID="625415" Value=""/>
+    <Text ID="625416" Value=""/>
+    <Text ID="625417" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="625398" Value=""/>
+    <Text ID="625399" Value=""/>
+    <Text ID="625400" Value=""/>
+    <Text ID="625401" Value=""/>
+    <Text ID="625402" Value=""/>
+    <Text ID="625403" Value=""/>
+    <Text ID="625404" Value=""/>
+    <Text ID="625405" Value=""/>
+    <Text ID="625406" Value=""/>
+    <Text ID="625407" Value=""/>
+    <Text ID="625408" Value=""/>
+    <Text ID="625409" Value=""/>
+    <Text ID="625410" Value=""/>
+    <Text ID="625411" Value=""/>
+    <Text ID="625412" Value=""/>
+    <Text ID="625413" Value=""/>
+    <Text ID="625414" Value=""/>
+    <Text ID="625415" Value=""/>
+    <Text ID="625416" Value=""/>
+    <Text ID="625417" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="625398" Value=""/>
+    <Text ID="625399" Value=""/>
+    <Text ID="625400" Value=""/>
+    <Text ID="625401" Value=""/>
+    <Text ID="625402" Value=""/>
+    <Text ID="625403" Value=""/>
+    <Text ID="625404" Value=""/>
+    <Text ID="625405" Value=""/>
+    <Text ID="625406" Value=""/>
+    <Text ID="625407" Value=""/>
+    <Text ID="625408" Value=""/>
+    <Text ID="625409" Value=""/>
+    <Text ID="625410" Value=""/>
+    <Text ID="625411" Value=""/>
+    <Text ID="625412" Value=""/>
+    <Text ID="625413" Value=""/>
+    <Text ID="625414" Value=""/>
+    <Text ID="625415" Value=""/>
+    <Text ID="625416" Value=""/>
+    <Text ID="625417" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="625398" Value=""/>
+    <Text ID="625399" Value=""/>
+    <Text ID="625400" Value=""/>
+    <Text ID="625401" Value=""/>
+    <Text ID="625402" Value=""/>
+    <Text ID="625403" Value=""/>
+    <Text ID="625404" Value=""/>
+    <Text ID="625405" Value=""/>
+    <Text ID="625406" Value=""/>
+    <Text ID="625407" Value=""/>
+    <Text ID="625408" Value=""/>
+    <Text ID="625409" Value=""/>
+    <Text ID="625410" Value=""/>
+    <Text ID="625411" Value=""/>
+    <Text ID="625412" Value=""/>
+    <Text ID="625413" Value=""/>
+    <Text ID="625414" Value=""/>
+    <Text ID="625415" Value=""/>
+    <Text ID="625416" Value=""/>
+    <Text ID="625417" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="625398" Value="0"/>
+    <Index ID="625399" Value="1"/>
+    <Index ID="625400" Value="2"/>
+    <Index ID="625401" Value="3"/>
+    <Index ID="625402" Value="4"/>
+    <Index ID="625403" Value="5"/>
+    <Index ID="625404" Value="6"/>
+    <Index ID="625405" Value="7"/>
+    <Index ID="625406" Value="8"/>
+    <Index ID="625407" Value="9"/>
+    <Index ID="625408" Value="10"/>
+    <Index ID="625409" Value="11"/>
+    <Index ID="625410" Value="12"/>
+    <Index ID="625411" Value="13"/>
+    <Index ID="625412" Value="14"/>
+    <Index ID="625413" Value="15"/>
+    <Index ID="625414" Value="16"/>
+    <Index ID="625415" Value="17"/>
+    <Index ID="625416" Value="18"/>
+    <Index ID="625417" Value="19"/>
+  </IndexMap>
+</TextGroup>

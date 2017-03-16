@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.6.110 SP?>
+<Library Version="1.40.1" Description="Overall equipment effectiveness" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpOee.typ</File>
+    <File>MpOee.fun</File>
+    <File>MpOeeAlarm.typ</File>
+    <File>MpOeeError.typ</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpCom" FromVersion="1.40.1" ToVersion="1.40.1" />
+    <Dependency ObjectName="sys_lib" FromVersion="4.23.0" />
+  </Dependencies>
+</Library>

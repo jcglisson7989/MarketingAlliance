@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.6.110 SP?>
+<Library Version="1.40.1" Description="User management based on URS" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpUserX.typ</File>
+    <File>MpUserXError.typ</File>
+    <File>MpUserAlarm.typ</File>
+    <File>MpUserX.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpCom" FromVersion="1.40.1" ToVersion="1.40.1" />
+  </Dependencies>
+</Library>

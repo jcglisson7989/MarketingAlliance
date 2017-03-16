@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="p43_Hardware_Network">
+  <Property Name="Description" Value="Template setup page - system configuration"/>
+  <Property Name="Height" Value="768"/>
+  <Property Name="Index" Value="43"/>
+  <Property Name="MoveFocus" Value="Circular"/>
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiPageContent]"/>
+  <Property Name="Width" Value="1024"/>
+  <Layers>
+    <LayerRef Source="Source[local].Layer[Background]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="Background"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="0"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[globalArea]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="globalArea"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="1"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[paiHmiTabs9]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="paiHmiTabs9"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="2"/>
+    </LayerRef>
+    <Layer Name="Default">
+      <Property Name="BackColor" Value="9"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Normal"/>
+      <Property Name="Height" Value="768"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="StatusDatapoint" Value="None"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Width" Value="1024"/>
+      <Property Name="Z-Order" Value="3"/>
+      <TextGroup>
+        <TextLayer LanguageId="en">
+          <Text ID="627376" Value="Ethernet Device"/>
+          <Text ID="627377" Value="IP Address"/>
+          <Text ID="627378" Value="Networking Settings"/>
+          <Text ID="627381" Value="Current"/>
+          <Text ID="627382" Value="Change"/>
+          <Text ID="627383" Value="Subnet Mask"/>
+          <Text ID="627385" Value="Broadcast Address"/>
+          <Text ID="627387" Value="Gateway Address"/>
+          <Text ID="627389" Value="Host Name"/>
+          <Text ID="627391" Value="Ping Utility"/>
+          <Text ID="627392" Value="IP Address"/>
+          <Text ID="627394" Value="Ping Interval [ms]"/>
+          <Text ID="627395" Value="Ping Timeout [ms]"/>
+          <Text ID="627396" Value="Ping Status"/>
+          <Text ID="627398" Value="Enable"/>
+          <Text ID="627399" Value="Disable"/>
+          <Text ID="627400" Value="Enable/Disable"/>
+        </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="627376" Value="Ethernet Device"/>
+          <Text ID="627377" Value="IP Address"/>
+          <Text ID="627378" Value=""/>
+          <Text ID="627381" Value=""/>
+          <Text ID="627382" Value=""/>
+          <Text ID="627383" Value="Subnet Mask"/>
+          <Text ID="627385" Value="Broadcast Address"/>
+          <Text ID="627387" Value="Gateway Address"/>
+          <Text ID="627389" Value="Host Name"/>
+          <Text ID="627391" Value=""/>
+          <Text ID="627392" Value="IP Address"/>
+          <Text ID="627394" Value="Ping Interval [ms]"/>
+          <Text ID="627395" Value="Ping Timeout [ms]"/>
+          <Text ID="627396" Value="Ping Status"/>
+          <Text ID="627398" Value=""/>
+          <Text ID="627399" Value=""/>
+          <Text ID="627400" Value="Enable/Disable"/>
+        </TextLayer>
+        <TextLayer LanguageId="es">
+          <Text ID="627376" Value=""/>
+          <Text ID="627377" Value=""/>
+          <Text ID="627378" Value=""/>
+          <Text ID="627381" Value=""/>
+          <Text ID="627382" Value=""/>
+          <Text ID="627383" Value=""/>
+          <Text ID="627385" Value=""/>
+          <Text ID="627387" Value=""/>
+          <Text ID="627389" Value=""/>
+          <Text ID="627391" Value=""/>
+          <Text ID="627392" Value=""/>
+          <Text ID="627394" Value=""/>
+          <Text ID="627395" Value=""/>
+          <Text ID="627396" Value=""/>
+          <Text ID="627398" Value=""/>
+          <Text ID="627399" Value=""/>
+          <Text ID="627400" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="fr">
+          <Text ID="627376" Value=""/>
+          <Text ID="627377" Value=""/>
+          <Text ID="627378" Value=""/>
+          <Text ID="627381" Value=""/>
+          <Text ID="627382" Value=""/>
+          <Text ID="627383" Value=""/>
+          <Text ID="627385" Value=""/>
+          <Text ID="627387" Value=""/>
+          <Text ID="627389" Value=""/>
+          <Text ID="627391" Value=""/>
+          <Text ID="627392" Value=""/>
+          <Text ID="627394" Value=""/>
+          <Text ID="627395" Value=""/>
+          <Text ID="627396" Value=""/>
+          <Text ID="627398" Value=""/>
+          <Text ID="627399" Value=""/>
+          <Text ID="627400" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="pt">
+          <Text ID="627376" Value=""/>
+          <Text ID="627377" Value=""/>
+          <Text ID="627378" Value=""/>
+          <Text ID="627381" Value=""/>
+          <Text ID="627382" Value=""/>
+          <Text ID="627383" Value=""/>
+          <Text ID="627385" Value=""/>
+          <Text ID="627387" Value=""/>
+          <Text ID="627389" Value=""/>
+          <Text ID="627391" Value=""/>
+          <Text ID="627392" Value=""/>
+          <Text ID="627394" Value=""/>
+          <Text ID="627395" Value=""/>
+          <Text ID="627396" Value=""/>
+          <Text ID="627398" Value=""/>
+          <Text ID="627399" Value=""/>
+          <Text ID="627400" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="sv">
+          <Text ID="627376" Value=""/>
+          <Text ID="627377" Value=""/>
+          <Text ID="627378" Value=""/>
+          <Text ID="627381" Value=""/>
+          <Text ID="627382" Value=""/>
+          <Text ID="627383" Value=""/>
+          <Text ID="627385" Value=""/>
+          <Text ID="627387" Value=""/>
+          <Text ID="627389" Value=""/>
+          <Text ID="627391" Value=""/>
+          <Text ID="627392" Value=""/>
+          <Text ID="627394" Value=""/>
+          <Text ID="627395" Value=""/>
+          <Text ID="627396" Value=""/>
+          <Text ID="627398" Value=""/>
+          <Text ID="627399" Value=""/>
+          <Text ID="627400" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="627376" Value="0"/>
+          <Index ID="627377" Value="1"/>
+          <Index ID="627378" Value="2"/>
+          <Index ID="627381" Value="5"/>
+          <Index ID="627382" Value="6"/>
+          <Index ID="627383" Value="7"/>
+          <Index ID="627385" Value="9"/>
+          <Index ID="627387" Value="11"/>
+          <Index ID="627389" Value="13"/>
+          <Index ID="627391" Value="15"/>
+          <Index ID="627392" Value="16"/>
+          <Index ID="627394" Value="18"/>
+          <Index ID="627395" Value="19"/>
+          <Index ID="627396" Value="20"/>
+          <Index ID="627398" Value="22"/>
+          <Index ID="627399" Value="23"/>
+          <Index ID="627400" Value="24"/>
+        </IndexMap>
+      </TextGroup>
+      <Controls>
+        <Control ClassId="0x00001007" Name="setSecond1">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="504"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="237"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.ipAddr[2]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setMinute1">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="455"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="237"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.ipAddr[1]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour1">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="406"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="255"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="237"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.ipAddr[0]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtTimeFormat1">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="31"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="201"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat1">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="1"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="233"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateTime">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="28"/>
+          <Property Name="Left" Value="11"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelLarge]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="2"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="156"/>
+          <Property Name="Width" Value="177"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_1">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="207"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="1292.168.10.2"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oCurrentNWSettings.ethDevice]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="201"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour2">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="553"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="237"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.ipAddr[3]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_2">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="207"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="127.0.0.1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oCurrentNWSettings.ipAddr]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="237"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateTime1">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="247"/>
+          <Property Name="Height" Value="28"/>
+          <Property Name="Left" Value="260"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="5"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="158"/>
+          <Property Name="Width" Value="79"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateTime2">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="247"/>
+          <Property Name="Height" Value="28"/>
+          <Property Name="Left" Value="469"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="6"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="158"/>
+          <Property Name="Width" Value="86"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setSecond2">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="504"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="274"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.netMask[2]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setMinute2">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="455"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="274"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.netMask[1]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="406"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="274"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.netMask[0]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat2">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="7"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="270"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="553"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="274"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.netMask[3]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="207"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="255.0.0.1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oCurrentNWSettings.netMask]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="274"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setSecond3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="504"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="310"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.broadcast[2]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setMinute3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="455"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="310"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.broadcast[1]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="406"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="310"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.broadcast[0]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat3">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="9"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="306"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour6">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="553"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="310"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.broadcast[3]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="207"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="127.0.0.1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oCurrentNWSettings.broadcast]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="310"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setSecond4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="504"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="346"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.gateway[2]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setMinute4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="455"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="346"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.gateway[1]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour7">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="406"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="346"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.gateway[0]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat4">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="11"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="342"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour8">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="553"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="346"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oNumericalNWSettings.gateway[3]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="207"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="127.0.0.1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oCurrentNWSettings.gateway]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="346"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat5">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="13"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="379"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_6">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="206"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="paiserver"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiNetworking.oCurrentNWSettings.hostname]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="383"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateTime3">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="11"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelLarge]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="15"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="448"/>
+          <Property Name="Width" Value="145"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setSecond5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="504"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="613"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iNumericIpAddr[2]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setMinute5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="455"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="613"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iNumericIpAddr[1]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour9">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="406"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="613"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iNumericIpAddr[0]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat6">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="16"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="613"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour10">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="553"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="255"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="613"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iNumericIpAddr[3]]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="45"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_7">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="205"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="127.0.0.1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iIPAddrStr]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="613"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat7">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="18"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="540"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour11">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="407"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="10000"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="1000"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="540"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iPingIntervalxms]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat8">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="19"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="576"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour12">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="407"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="10000"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="100"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="576"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iPingTimeoutxms]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat9">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="20"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="650"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_8">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="BackColor" Value="8"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_grey]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.oPingStatus]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[paiPingStatus]"/>
+          <Property Name="ColorMapIndexOffset" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Opaque"/>
+          <Property Name="Font" Value="Source[local].Font[Arial10pxBold]"/>
+          <Property Name="ForeColor" Value="124"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.oPingStatus]"/>
+          <Property Name="Left" Value="205"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="127.0.0.1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGPingStatus]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="650"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_1">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_7]"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="407"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="PressedTextIndex" Value="23"/>
+          <Property Name="PressedTextSource" Value="SingleText"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_BlueMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="22"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="504"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiPING_ENABLE]"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateFormat10">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="13"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="24"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="504"/>
+          <Property Name="Width" Value="148"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="3"/>
+          <Property Name="Left" Value="11"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="188"/>
+          <Property Name="Width" Value="578"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_3">
+          <Property Name="BackColor" Value="247"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="266"/>
+          <Property Name="Left" Value="180"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="201"/>
+          <Property Name="Width" Value="2"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_4">
+          <Property Name="BackColor" Value="247"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="266"/>
+          <Property Name="Left" Value="387"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="201"/>
+          <Property Name="Width" Value="2"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_5">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="3"/>
+          <Property Name="Left" Value="11"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="484"/>
+          <Property Name="Width" Value="578"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_6">
+          <Property Name="BackColor" Value="247"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="202"/>
+          <Property Name="Left" Value="180"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="506"/>
+          <Property Name="Width" Value="2"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_7">
+          <Property Name="BackColor" Value="247"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="202"/>
+          <Property Name="Left" Value="387"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="506"/>
+          <Property Name="Width" Value="2"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour13">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="205"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="10000"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="1000"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumOutputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="539"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iPingIntervalxms]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="setHour14">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiSystemDateTime.iChangeTimeRequest]"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="205"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="10000"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="100"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumOutputMedium]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="575"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiPing.paiPingService.gPaiPing.iPingTimeoutxms]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="154"/>
+        </Control>
+      </Controls>
+      <KeyMapping/>
+    </Layer>
+    <LayerRef Source="Source[local].Layer[dialogMsg]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="dialogMsg"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Hidden"/>
+      <Property Name="Z-Order" Value="4"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[paiHmiMenu]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="paiHmiMenu"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Hidden"/>
+      <Property Name="Z-Order" Value="5"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[alertMsg]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="alertMsg"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Hidden"/>
+      <Property Name="Z-Order" Value="6"/>
+    </LayerRef>
+  </Layers>
+  <MovementOrder>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setSecond1]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setSecond2]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour2]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setSecond5]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setMinute1]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setMinute2]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setMinute5]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour1]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour3]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour2]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour9]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour2]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour4]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour10]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setSecond2]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setSecond3]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMinute2]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour4]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setMinute2]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setMinute3]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour3]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond2]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour3]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour5]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour4]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMinute2]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour4]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour6]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond2]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour3]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour2]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setSecond3]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setSecond4]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMinute3]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour6]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setSecond2]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setMinute3]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setMinute4]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour5]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond3]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setMinute2]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour5]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour7]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour6]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMinute3]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour3]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour6]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour8]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond3]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour5]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour4]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setSecond4]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour11]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMinute4]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour8]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setSecond3]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setMinute4]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour11]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour7]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond4]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setMinute3]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour7]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour11]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour8]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMinute4]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour5]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour8]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour11]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond4]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour7]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour6]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setSecond5]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMinute5]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour10]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour12]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setMinute5]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour9]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond5]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour12]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour9]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour10]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMinute5]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour12]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour10]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour2]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond5]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour9]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour12]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour11]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour12]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour8]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour10]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour7]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour12]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour9]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour8]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour10]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour11]"/>
+    </MovementEntry>
+  </MovementOrder>
+  <TabSequence>
+    <TabSeqItem Index="0" Value="Source[local].Layer[dialogMsg].Control[Numeric_1]"/>
+    <TabSeqItem Index="1" Value="Source[local].Layer[globalArea].Control[Numeric_3]"/>
+    <TabSeqItem Index="2" Value="Source[local].Layer[globalArea].Control[Numeric_4]"/>
+    <TabSeqItem Index="3" Value="Source[local].Layer[paiHmiTabs9].Control[numEntry6]"/>
+    <TabSeqItem Index="4" Value="Source[local].Layer[globalArea].Control[txtLayer_Filename]"/>
+    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
+    <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
+    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[setHour2]"/>
+    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[setSecond2]"/>
+    <TabSeqItem Index="10" Value="Source[embedded].Layer[Default].Control[setMinute2]"/>
+    <TabSeqItem Index="11" Value="Source[embedded].Layer[Default].Control[setHour3]"/>
+    <TabSeqItem Index="12" Value="Source[embedded].Layer[Default].Control[setHour4]"/>
+    <TabSeqItem Index="13" Value="Source[embedded].Layer[Default].Control[setSecond3]"/>
+    <TabSeqItem Index="14" Value="Source[embedded].Layer[Default].Control[setMinute3]"/>
+    <TabSeqItem Index="15" Value="Source[embedded].Layer[Default].Control[setHour5]"/>
+    <TabSeqItem Index="16" Value="Source[embedded].Layer[Default].Control[setHour6]"/>
+    <TabSeqItem Index="17" Value="Source[embedded].Layer[Default].Control[setSecond4]"/>
+    <TabSeqItem Index="18" Value="Source[embedded].Layer[Default].Control[setMinute4]"/>
+    <TabSeqItem Index="19" Value="Source[embedded].Layer[Default].Control[setHour7]"/>
+    <TabSeqItem Index="20" Value="Source[embedded].Layer[Default].Control[setHour8]"/>
+    <TabSeqItem Index="21" Value="Source[embedded].Layer[Default].Control[setSecond5]"/>
+    <TabSeqItem Index="22" Value="Source[embedded].Layer[Default].Control[setMinute5]"/>
+    <TabSeqItem Index="23" Value="Source[embedded].Layer[Default].Control[setHour9]"/>
+    <TabSeqItem Index="24" Value="Source[embedded].Layer[Default].Control[setHour10]"/>
+    <TabSeqItem Index="25" Value="Source[embedded].Layer[Default].Control[setHour11]"/>
+    <TabSeqItem Index="26" Value="Source[embedded].Layer[Default].Control[setHour12]"/>
+    <TabSeqItem Index="27" Value="Source[embedded].Layer[Default].Control[setHour13]"/>
+    <TabSeqItem Index="28" Value="Source[embedded].Layer[Default].Control[setHour14]"/>
+    <TabSeqItem Index="29" Value="Source[local].Layer[globalArea].Control[numEntry6]"/>
+  </TabSequence>
+</Page>

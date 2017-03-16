@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Cfg/Dispense</prop>
+  </header>
+  <body>
+    <tu tuid="Title.0">
+      <tuv xml:lang="en">
+        <seg>Disp Primer Valve VBlock</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Vblock</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Valvula Vblock</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Vblock</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>VBlock Valvula Disp% s</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>De Disp% Valve VBlock</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.1">
+      <tuv xml:lang="en">
+        <seg>Disp Primer Valve Max Out High [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Max Out Hog [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Valvula Max Out alta [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Max Out Hoch [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Disp% s Valvula Maximo de alta [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Valve Max Out haut de Disp% [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.2">
+      <tuv xml:lang="en">
+        <seg>Disp Primer Valve Signal Reset TO</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Signal aterstall TILL</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Signal Valvula RESET para</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Signal Reset TO</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Señal de la valvula Disp% s RESET para</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Disp% Valve Signal Reinitialiser TO</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.3">
+      <tuv xml:lang="en">
+        <seg>Disp Primer Valve Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Valve Max RDY [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Valvula Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Disp% s Valvula Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Valve Max Rdy de Disp% [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.4">
+      <tuv xml:lang="en">
+        <seg>Disp Primer Valve Neg. Edge Margin</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Neg. kant Marginal</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Neg valvula. Margem borda</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Neg. Edge - Margin</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Neg Valvula Disp% s. Margen de borde</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>De Disp% Valve Neg. Marge Edge</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.5">
+      <tuv xml:lang="en">
+        <seg>Disp Mouth Valve VBlock</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Vblock</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Valvula Vblock</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Vblock</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>VBlock Valvula Disp% s</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>De Disp% Valve VBlock</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.6">
+      <tuv xml:lang="en">
+        <seg>Disp Mouth Valve Max Out High [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Max Out Hog [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Valvula Max Out alta [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Max Out Hoch [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Disp% s Valvula Maximo de alta [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Valve Max Out haut de Disp% [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.7">
+      <tuv xml:lang="en">
+        <seg>Disp Mouth Valve Signal Reset TO</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Signal aterstall TILL</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Signal Valvula RESET para</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Signal Reset TO</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Señal de la valvula Disp% s RESET para</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Disp% Valve Signal Reinitialiser TO</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.8">
+      <tuv xml:lang="en">
+        <seg>Disp Mouth Valve Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Valve Max RDY [s]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Valvula Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Disp% s Valvula Max Rdy [s]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Valve Max Rdy de Disp% [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.9">
+      <tuv xml:lang="en">
+        <seg>Disp Mouth Valve Neg. Edge Margin</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Disp% s Ventil Neg. kant Marginal</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Disp% s Neg valvula. Margem borda</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Disp% s Ventil Neg. Edge - Margin</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Neg Valvula Disp% s. Margen de borde</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>De Disp% Valve Neg. Marge Edge</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.0">
+      <tuv xml:lang="en">
+        <seg>VBlock count between PiP sensor, Dispense unit</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Vblock rakna mellan PiP sensor, dispenseringsenhet</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Contagem Vblock entre o sensor PiP, unidade Dispense</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vblock Zahlung zwischen BiB - Sensor, Einheit Dispense</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Recuento VBlock entre el sensor de imagenes incrustadas, la unidad de dispensacion</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nombre de VBlock entre le capteur PiP, unite de distribution</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.1">
+      <tuv xml:lang="en">
+        <seg>Maximum amount of time to allow the dispense output to remain on before automatically resetting when purging</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Maximal tid for att tillata doserings utgang kvar pa innan automatisk aterstallning nar spolning</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade maxima de tempo para permitir a saida de distribuicao para permanecer no antes de redefinir automaticamente quando purga</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die maximale Menge an Zeit der Abgabeausgang zu ermoglichen , bevor automatisch das Zurucksetzen zu bleiben , wenn Spulen</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad maxima de tiempo para permitir la salida de dispensacion permanezca encendido antes de reiniciar automaticamente cuando se purga</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant maximum de temps pour permettre la sortie de distribution reste allume avant de reinitialiser automatiquement lors de la purge</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.2">
+      <tuv xml:lang="en">
+        <seg>Maximum amount of time after ending valve trigger to wait for valve ready signal to reset before throwing error [ms]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Maximal tid efter avslutad ventilavtryckaren for att vanta pa ventilen klar signal for att aterstalla innan du kastar fel [ms]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade maxima de tempo apos o termino do gatilho da valvula de esperar por valvula de sinal de pronto para redefinir antes de jogar erro [ms]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die maximale Menge an Zeit nach dem Ventil Trigger endet fur Ventilbereitschaftssignal zu warten , bevor werfen Fehler zurucksetzen [ms]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad maxima de tiempo despues de terminar el gatillo de la valvula de esperar a que la valvula de señal preparada para reiniciar antes de error de tiro [ms]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant maximum de temps après la fin de la vanne gâchette pour attendre la vanne de signal pret à etre reinitialise avant de lancer erreur [ms]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.3">
+      <tuv xml:lang="en">
+        <seg>Amount of time to wait before throwing an error after dispense has been triggered before seeing the valve ready DI fall</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid att vanta innan du kastar ett fel efter dispense har utlosts innan ser ventilen klar DI falla</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade de tempo de espera antes de lancar um erro apos a dispensa foi acionado antes de ver a valvula pronto queda DI</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Hohe der Zeit zu warten , bevor ein Fehler nach Abgabe zu werfen hat , bevor man das Ventil bereit DI Sturz ausgelost wurde</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad de tiempo que debe esperar antes de emitir un error despues de la dispensacion se ha activado antes de ver la caida de la valvula DI listo</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant de temps à attendre avant de lancer une erreur après distribution a ete declenche avant de voir la vanne prete chute de DI</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.4">
+      <tuv xml:lang="en">
+        <seg>Additional time to wait before throwing an error to ensure dispense edge gen. is functioning correctly</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Ytterligare tid att vanta innan du kastar ett fel for att sakerstalla doseringskanten allm. fungerar korrekt</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Mais tempo para esperar antes de lancar um erro para garantir borda dispense gen. esta funcionando corretamente</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zusatzliche Zeit zu warten , bevor ein Fehler werfen Spendekante gen zu gewahrleisten. korrekt funktioniert</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Mas tiempo para esperar antes de emitir un error para asegurar borde expendedor gen. esta funcionando correctamente</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un delai supplementaire d'attendre avant de lancer une erreur pour assurer bord de distribution gen. fonctionne correctement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.5">
+      <tuv xml:lang="en">
+        <seg>VBlock count between PiP sensor, Dispense unit</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Vblock rakna mellan PiP sensor, dispenseringsenhet</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Contagem Vblock entre o sensor PiP, unidade Dispense</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vblock Zahlung zwischen BiB - Sensor, Einheit Dispense</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Recuento VBlock entre el sensor de imagenes incrustadas, la unidad de dispensacion</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nombre de VBlock entre le capteur PiP, unite de distribution</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.6">
+      <tuv xml:lang="en">
+        <seg>Maximum amount of time to allow the dispense output to remain on before automatically resetting when purging</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Maximal tid for att tillata doserings utgang kvar pa innan automatisk aterstallning nar spolning</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade maxima de tempo para permitir a saida de distribuicao para permanecer no antes de redefinir automaticamente quando purga</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die maximale Menge an Zeit der Abgabeausgang zu ermoglichen , bevor automatisch das Zurucksetzen zu bleiben , wenn Spulen</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad maxima de tiempo para permitir la salida de dispensacion permanezca encendido antes de reiniciar automaticamente cuando se purga</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant maximum de temps pour permettre la sortie de distribution reste allume avant de reinitialiser automatiquement lors de la purge</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.7">
+      <tuv xml:lang="en">
+        <seg>Maximum amount of time after ending valve trigger to wait for valve ready signal to reset before throwing error [ms]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Maximal tid efter avslutad ventilavtryckaren for att vanta pa ventilen klar signal for att aterstalla innan du kastar fel [ms]</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade maxima de tempo apos o termino do gatilho da valvula de esperar por valvula de sinal de pronto para redefinir antes de jogar erro [ms]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die maximale Menge an Zeit nach dem Ventil Trigger endet fur Ventilbereitschaftssignal zu warten , bevor werfen Fehler zurucksetzen [ms]</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad maxima de tiempo despues de terminar el gatillo de la valvula de esperar a que la valvula de señal preparada para reiniciar antes de error de tiro [ms]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant maximum de temps après la fin de la vanne gâchette pour attendre la vanne de signal pret à etre reinitialise avant de lancer erreur [ms]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.8">
+      <tuv xml:lang="en">
+        <seg>Amount of time to wait before throwing an error after dispense has been triggered before seeing the valve ready DI fall</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Tid att vanta innan du kastar ett fel efter dispense har utlosts innan ser ventilen klar DI falla</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quantidade de tempo de espera antes de lancar um erro apos a dispensa foi acionado antes de ver a valvula pronto queda DI</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Hohe der Zeit zu warten , bevor ein Fehler nach Abgabe zu werfen hat , bevor man das Ventil bereit DI Sturz ausgelost wurde</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Cantidad de tiempo que debe esperar antes de emitir un error despues de la dispensacion se ha activado antes de ver la caida de la valvula DI listo</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Montant de temps à attendre avant de lancer une erreur après distribution a ete declenche avant de voir la vanne prete chute de DI</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.9">
+      <tuv xml:lang="en">
+        <seg>Additional time to wait before throwing an error to ensure dispense edge gen. is functioning correctly</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>Ytterligare tid att vanta innan du kastar ett fel for att sakerstalla doseringskanten allm. fungerar korrekt</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Mais tempo para esperar antes de lancar um erro para garantir borda dispense gen. esta funcionando corretamente</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zusatzliche Zeit zu warten , bevor ein Fehler werfen Spendekante gen zu gewahrleisten. korrekt funktioniert</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Mas tiempo para esperar antes de emitir un error para asegurar borde expendedor gen. esta funcionando correctamente</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un delai supplementaire d'attendre avant de lancer une erreur pour assurer bord de distribution gen. fonctionne correctement</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

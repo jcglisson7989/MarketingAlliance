@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.6.110 SP?>
+<Library Version="3.14.2" Description="GMC ARNC0 AxesGroup Implementation" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>GmcArncGrp.typ</File>
+    <File>GmcArncGrp.fun</File>
+    <File>GmcArncGrp.var</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="GmcManager" FromVersion="0.69.0" ToVersion="0.69.9" />
+    <Dependency ObjectName="Arnc0man" FromVersion="3.14.3" ToVersion="3.14.9" />
+    <Dependency ObjectName="ACP10_MC" FromVersion="3.14.2" ToVersion="3.14.9" />
+  </Dependencies>
+</Library>

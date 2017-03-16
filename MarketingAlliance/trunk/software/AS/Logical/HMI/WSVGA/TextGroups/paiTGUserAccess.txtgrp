@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="paiTGUserAccess">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="187"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="loggedLevel">
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiUser.gPaiUserMgr.currentGroup.Name]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="loggedUser">
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiUser.gPaiUserMgr.currentUser.UserName]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="623046" Value="Logout {loggedLevel} / {loggedUser}"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="623046" Value="Logout {loggedLevel}"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="623046" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="623046" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="623046" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="623046" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="623046" Value="0"/>
+  </IndexMap>
+</TextGroup>

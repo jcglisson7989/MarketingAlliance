@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<AlarmGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="HERNON_Inspect">
+  <Property Name="AcknowledgeImage" Value="Source[global].Variable[DataSource.gMachine.HMI.AlarmControls.Inspect.AcknowledgeImage]"/>
+  <Property Name="ActiveBackColor" Value="4"/>
+  <Property Name="ActiveForeColor" Value="0"/>
+  <Property Name="AlarmImage" Value="Source[global].Variable[DataSource.gMachine.HMI.AlarmControls.Inspect.AlarmImage]"/>
+  <Property Name="BypassBackColor" Value="14"/>
+  <Property Name="BypassForeColor" Value="0"/>
+  <Property Name="BypassImage" Value="None"/>
+  <Property Name="DefaultBackColor" Value="15"/>
+  <Property Name="DefaultForeColor" Value="0"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="GroupAlarm" Value="None"/>
+  <Property Name="ImageOffset" Value="0"/>
+  <Property Name="Index" Value="11"/>
+  <Property Name="LatchedBackColor" Value="2"/>
+  <Property Name="LatchedForeColor" Value="0"/>
+  <Property Name="Priority" Value="1"/>
+  <Property Name="QuitBackColor" Value="1"/>
+  <Property Name="QuitForeColor" Value="0"/>
+  <Alarms>
+    <Alarm Index="0">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="1">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="2">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="3">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="4">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="5">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="6">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="7">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="8">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="9">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="10">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="11">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="12">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="14">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="15">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="16">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="17">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="18">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="19">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="20">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="21">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="Group">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+    </Alarm>
+  </Alarms>
+  <TextGroup>
+    <TextSnippets/>
+    <TextLayer LanguageId="en">
+      <Text ID="3138" Value="Inspect unit 1 Err. 1"/>
+      <Text ID="3139" Value="Inspect unit 2 Err. 1"/>
+      <Text ID="3140" Value="Inspect unit 1 Err. 2"/>
+      <Text ID="3141" Value="Inspect unit 2 Err. 2"/>
+      <Text ID="3142" Value="Inspect unit 1 IO Alloc Error"/>
+      <Text ID="3143" Value="Inspect unit 2 IO Alloc Error"/>
+      <Text ID="3144" Value="Inspect unit 1 VBlock IDX Access Error"/>
+      <Text ID="3145" Value="Inspect unit 2 VBlock IDX Access Error"/>
+      <Text ID="3369" Value="Inspection 1- Not running"/>
+      <Text ID="3370" Value="Inspection 2- Not running"/>
+      <Text ID="3371" Value="Inspection 1- busy without signal"/>
+      <Text ID="3372" Value="Inspection 2- busy without signal"/>
+      <Text ID="3373" Value="Inspection 1- Max busy TO"/>
+      <Text ID="3374" Value="Inspection 2- Max busy TO"/>
+      <Text ID="3375" Value="Inspection 1- Results TO"/>
+      <Text ID="3376" Value="Inspection 2- Results TO"/>
+      <Text ID="3377" Value="Inspection 1- index during WAITING state"/>
+      <Text ID="3378" Value="Inspection 2- index during WAITING state"/>
+      <Text ID="3379" Value="Inspection not ready for START command"/>
+      <Text ID="3380" Value="Inspection error during runtime."/>
+      <Text ID="3539" Value="Inspection unit 1- sequential fail count limit"/>
+      <Text ID="3540" Value="Inspection unit 2- sequential fail count limit"/>
+      <Text ID="4857" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="3138" Value="Überprüfen Sie Einheit 1 Err. 1"/>
+      <Text ID="3139" Value="Überprüfen Sie Einheit 2 Err. 1"/>
+      <Text ID="3140" Value="Überprüfen Sie Einheit 1 Err. 2"/>
+      <Text ID="3141" Value="Überprüfen Sie Einheit 2 Err. 2"/>
+      <Text ID="3142" Value="Überprüfen Sie Einheit 1 IO Alloc Fehler"/>
+      <Text ID="3143" Value="Überprüfen Sie Einheit 2 IO Alloc Fehler"/>
+      <Text ID="3144" Value="Überprüfen Sie Einheit 1 Vblock IDX Zugriffsfehler"/>
+      <Text ID="3145" Value="Überprüfen Sie Einheit 2 Vblock IDX Zugriffsfehler"/>
+      <Text ID="3369" Value="Inspektion 1- Nicht läuft"/>
+      <Text ID="3370" Value="Inspektion 2- Nicht läuft"/>
+      <Text ID="3371" Value="Inspektion 1- beschäftigt ohne Signal"/>
+      <Text ID="3372" Value="Inspektion 2- beschäftigt ohne Signal"/>
+      <Text ID="3373" Value="Inspektion 1- Max beschäftigt"/>
+      <Text ID="3374" Value="Inspektion 2- Max beschäftigt"/>
+      <Text ID="3375" Value="Inspektion 1- Ergebnisse"/>
+      <Text ID="3376" Value="Inspektion 2- Ergebnisse"/>
+      <Text ID="3377" Value="Inspektion 1- Index während der Wartezustand"/>
+      <Text ID="3378" Value="Inspektion 2- Index während des Wartens Zustand"/>
+      <Text ID="3379" Value="Inspektion nicht bereit für START-Befehl"/>
+      <Text ID="3380" Value="Inspektion Fehler während der Laufzeit."/>
+      <Text ID="3539" Value="Inspektionseinheit 1- sequenziellen scheitern Zählgrenze"/>
+      <Text ID="3540" Value="Inspektionseinheit 2- sequenziellen scheitern Zählgrenze"/>
+      <Text ID="4857" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="3138" Value="Inspeccionar la unidad 1 Err. 1"/>
+      <Text ID="3139" Value="Inspeccionar la unidad 2 Err. 1"/>
+      <Text ID="3140" Value="Inspeccionar la unidad 1 Err. 2"/>
+      <Text ID="3141" Value="Inspeccionar la unidad 2 Err. 2"/>
+      <Text ID="3142" Value="Inspeccionar la unidad 1 IO Alloc error"/>
+      <Text ID="3143" Value="Inspeccionar la unidad 2 IO Alloc error"/>
+      <Text ID="3144" Value="Inspeccionar la unidad 1 VBlock IDX Error de acceso"/>
+      <Text ID="3145" Value="Inspeccionar la unidad 2 VBlock IDX Error de acceso"/>
+      <Text ID="3369" Value="Inspección 1- No está en ejecución"/>
+      <Text ID="3370" Value="Inspección 2- No está en ejecución"/>
+      <Text ID="3371" Value="Inspección 1- ocupados sin señal"/>
+      <Text ID="3372" Value="Inspección 2- ocupados sin señal"/>
+      <Text ID="3373" Value="Inspección 1- Max ocupado para"/>
+      <Text ID="3374" Value="Inspección 2- Max ocupado para"/>
+      <Text ID="3375" Value="Inspección 1- Resultados A"/>
+      <Text ID="3376" Value="Inspección 2- Resultados A"/>
+      <Text ID="3377" Value="Inspección 1- índice durante el estado ESPERA"/>
+      <Text ID="3378" Value="Inspección 2- índice durante el estado ESPERA"/>
+      <Text ID="3379" Value="Inspección no está listo para el comando START"/>
+      <Text ID="3380" Value="Inspección de error en tiempo de ejecución."/>
+      <Text ID="3539" Value="1- unidad de inspección secuencial fallar límite de recuento"/>
+      <Text ID="3540" Value="2- unidad de inspección secuencial fallar límite de recuento"/>
+      <Text ID="4857" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="fr">
+      <Text ID="3138" Value="Inspecter l'unité 1 Err. 1"/>
+      <Text ID="3139" Value="Inspecter l'unité 2 Err. 1"/>
+      <Text ID="3140" Value="Inspecter l'unité 1 Err. 2"/>
+      <Text ID="3141" Value="Inspecter l'unité 2 Err. 2"/>
+      <Text ID="3142" Value="Inspecter l'unité 1 IO Alloc erreur"/>
+      <Text ID="3143" Value="Inspecter l'unité 2 IO Alloc Erreur"/>
+      <Text ID="3144" Value="Inspecter l'unité 1 VBlock IDX Erreur d'accès"/>
+      <Text ID="3145" Value="Inspecter l'unité 2 VBlock IDX Erreur d'accès"/>
+      <Text ID="3369" Value="Inspection 1- Ne fonctionne pas"/>
+      <Text ID="3370" Value="Inspection 2- Pas en cours d'exécution"/>
+      <Text ID="3371" Value="Inspection 1- occupé sans signaux"/>
+      <Text ID="3372" Value="Inspection 2- occupé sans signaux"/>
+      <Text ID="3373" Value="Inspection 1- Max occupé pour"/>
+      <Text ID="3374" Value="Inspection 2- Max occupé pour"/>
+      <Text ID="3375" Value="Inspection 1- Résultats TO"/>
+      <Text ID="3376" Value="Inspection 2- Résultats TO"/>
+      <Text ID="3377" Value="Inspection index 1- pendant l'état ATTENTE"/>
+      <Text ID="3378" Value="Inspection index 2- pendant l'état ATTENTE"/>
+      <Text ID="3379" Value="Inspection pas prêt pour la commande START"/>
+      <Text ID="3380" Value="Erreur d'inspection lors de l'exécution."/>
+      <Text ID="3539" Value="unité d'inspection 1- séquentielle échec limite de comptage"/>
+      <Text ID="3540" Value="unité d'inspection 2- séquentielle échec limite de comptage"/>
+      <Text ID="4857" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="3138" Value="Inspecione a unidade 1 Err. 1"/>
+      <Text ID="3139" Value="Inspecione a unidade 2 Err. 1"/>
+      <Text ID="3140" Value="Inspecione a unidade 1 Err. 2"/>
+      <Text ID="3141" Value="Inspecione a unidade 2 Err. 2"/>
+      <Text ID="3142" Value="Inspecione a unidade 1 IO Alloc erro"/>
+      <Text ID="3143" Value="Inspecione a unidade 2 IO Alloc erro"/>
+      <Text ID="3144" Value="Inspecione unidade de erro 1 Vblock IDX Acesso"/>
+      <Text ID="3145" Value="Inspecione unidade de erro 2 Vblock IDX Acesso"/>
+      <Text ID="3369" Value="Inspeção 1- Não está em execução"/>
+      <Text ID="3370" Value="Inspeção 2- Não está em execução"/>
+      <Text ID="3371" Value="Inspeção 1- ocupado sem sinal"/>
+      <Text ID="3372" Value="Inspeção 2- ocupado sem sinal"/>
+      <Text ID="3373" Value="Inspeção 1- Max ocupado para"/>
+      <Text ID="3374" Value="Inspeção 2- Max ocupado para"/>
+      <Text ID="3375" Value="Inspeção 1- Resultados TO"/>
+      <Text ID="3376" Value="Inspeção 2- resultados a"/>
+      <Text ID="3377" Value="Inspeção 1- índice durante estado de espera"/>
+      <Text ID="3378" Value="Inspeção 2- índice durante estado de espera"/>
+      <Text ID="3379" Value="Inspecção não está pronto para comando START"/>
+      <Text ID="3380" Value="erro de inspeção durante a execução."/>
+      <Text ID="3539" Value="unidade de inspecção 1- sequencial falhar limite de contagem"/>
+      <Text ID="3540" Value="unidade de inspeção 2- sequencial falhar limite de contagem"/>
+      <Text ID="4857" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="sv">
+      <Text ID="3138" Value="Inspektera enheten en Err. 1"/>
+      <Text ID="3139" Value="Inspektera enheten 2 Err. 1"/>
+      <Text ID="3140" Value="Inspektera enheten en Err. 2"/>
+      <Text ID="3141" Value="Inspektera enheten 2 Err. 2"/>
+      <Text ID="3142" Value="Inspektera enhet 1 IO Alloc Fel"/>
+      <Text ID="3143" Value="Inspektera enheten 2 IO Alloc Fel"/>
+      <Text ID="3144" Value="Inspektera enheten en Vblock IDX Tillträde Fel"/>
+      <Text ID="3145" Value="Inspektera enheten 2 Vblock IDX Tillträde Fel"/>
+      <Text ID="3369" Value="Inspektion 1- Inte kör"/>
+      <Text ID="3370" Value="Inspektion 2- Inte kör"/>
+      <Text ID="3371" Value="Inspektion 1- upptagen utan signal"/>
+      <Text ID="3372" Value="Inspektion 2- upptagen utan signal"/>
+      <Text ID="3373" Value="Inspektion 1- Max upptagen för att"/>
+      <Text ID="3374" Value="Inspektion 2- Max upptagen för att"/>
+      <Text ID="3375" Value="Inspektion 1- resultaten till"/>
+      <Text ID="3376" Value="Inspektion 2- resultaten till"/>
+      <Text ID="3377" Value="Inspektion 1- index under väntetillstånd"/>
+      <Text ID="3378" Value="Inspektion 2- index under väntetillstånd"/>
+      <Text ID="3379" Value="Inspektion inte redo för startkommando"/>
+      <Text ID="3380" Value="Inspektion fel under körning."/>
+      <Text ID="3539" Value="Inspektionsenheten 1- sekventiell misslyckas räkna gräns"/>
+      <Text ID="3540" Value="Inspektionsenheten 2- sekventiell misslyckas räkna gräns"/>
+      <Text ID="4857" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="3138" Value="0"/>
+      <Index ID="3139" Value="1"/>
+      <Index ID="3140" Value="2"/>
+      <Index ID="3141" Value="3"/>
+      <Index ID="3142" Value="4"/>
+      <Index ID="3143" Value="5"/>
+      <Index ID="3144" Value="6"/>
+      <Index ID="3145" Value="7"/>
+      <Index ID="3369" Value="8"/>
+      <Index ID="3370" Value="9"/>
+      <Index ID="3371" Value="10"/>
+      <Index ID="3372" Value="11"/>
+      <Index ID="3373" Value="12"/>
+      <Index ID="3374" Value="13"/>
+      <Index ID="3375" Value="14"/>
+      <Index ID="3376" Value="15"/>
+      <Index ID="3377" Value="16"/>
+      <Index ID="3378" Value="17"/>
+      <Index ID="3379" Value="18"/>
+      <Index ID="3380" Value="19"/>
+      <Index ID="3539" Value="20"/>
+      <Index ID="3540" Value="21"/>
+      <Index ID="4857" Value="Group"/>
+    </IndexMap>
+  </TextGroup>
+</AlarmGroup>

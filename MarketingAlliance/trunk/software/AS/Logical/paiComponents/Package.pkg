@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.6.110 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="pai Custom static libraries">Libraries</Object>
+    <Object Type="Package" Description="pai C utilities">bglib</Object>
+    <Object Type="Package" Description="pai File Access service package">paiFileService</Object>
+    <Object Type="Package" Description="pai HMI related components">paiHmi</Object>
+    <Object Type="Package" Description="pai Ping Service">paiPing</Object>
+    <Object Type="Package" Description="pai simple User Access support">paiUser</Object>
+    <Object Type="Package" Description="pai UDP client and server">paiUDP</Object>
+    <Object Type="Package" Description="pai Template Application with Drop down menues and tabs page navigation">paiTemplate</Object>
+    <Object Type="Package" Description="pai defined types ">paiUtility</Object>
+  </Objects>
+</Package>

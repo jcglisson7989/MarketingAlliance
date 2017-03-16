@@ -1,0 +1,83 @@
+TODO:
+!!! clean up listSvc mem usage!!!
+                              - add code to trim e.g. 10% from log lists when mem usage reaches a certain point
+                              x - move mem mgt to new lib wbrMemSvc
+                              - add code to increase heap block request if usage > e.g. 50%
+                              - add code to warn when heap block usage > e.g. 90%
+
+LogSvc                        x - don't use list if status == 0 after first func call
+                              x - get rid of fb pointer if possible - keeping but handled better
+                              - implement logging level
+                              - link multiple messages/events together using Origin
+                              - individual logs for libraries
+                                - support for upstream services, e.g. listSvc
+
+wbrIOSvc
+wbrNetSvc
+wbrStrUtil
+
+wbrsprintf                    - try preprocessor trick in header to allow dynamic lib
+                                - #ifdef prototypes to prevent use in static lib
+                                - add static lib as dependency of dynamic lib
+                                - define the token used in #ifdef in dynamic lib so that prototypes are linked there
+
+
+
+0.11.0  2016-09
+  Imported TimerServices updates from Hailo GLOBALlift/TOPlift
+  ListSvc 
+    CharListToStringArray
+      Add maxNodes to control log size - Fixed mem leak!
+      Print element numbers with text
+      Some cleanup
+    Some cleanup
+  LogSvc
+    text logs
+      separate printing and display updates
+      more control using existing and new ListSvc features
+      updated Init
+    Fixed possible crash when declaring fb if mem alloc during node declaration fails, i.e. node == 0
+    Begin conversion to ArEventLog from AsArLog
+      Convert logbook get ident - it appears other info is no longer necessary
+      Convert logbook creation
+    Some cleanup
+  PingSvc
+    improved logging
+      fixed logbook entry failure 
+      added fb not enabled as error msg
+      less logbook spamming on ping success, and more control over the logging of success
+      fixed errors when changing target station
+    \todo   move wbrSQL_DT2_ISOFmtdStringFromDT() to wbrStrUtil
+  Removed unused packages
+  runFirstInit
+    added asConfigID
+    added version to compile info completed msg
+
+
+0.10.8  2016-05-03
+  Published to J. Glisson.  Used without issues as of 2016-09-13
+  
+
+
+0.10.7  2016-04
+  Clean up some /todos and other comments
+  Added wbrMemService to wrap AsMem and allow services besides list service
+    to use heap memory
+    moved mem funcs and data from wbrListService to wbrMemService
+  
+
+0.10.6  2016-03-31
+  Added TimerServices
+    Made a few mods to suit Hailo project and be more generic, e.g. msTimer object declared
+    Using clock_ms() from AsTime to count milliseconds
+    Added msTimer.diff_ms to facilitate time tracking, e.g. "hour meters"
+  A few changes to Init and Cyclic to be more generic for multiple projects
+    Write compile info to log on Init
+  Updated package dependencies to facilitate more trouble-free importing
+  
+    
+    
+0.10.5  2015-10-??
+  Initial release
+    Used in APDW project
+    No complaints as of 2016-03-07

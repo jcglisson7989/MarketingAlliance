@@ -1,0 +1,6 @@
+VAR
+	reset : BOOL;
+	set : BOOL;
+	ack : BOOL;
+	loc : AlarmX_Local_TmpVar_typ;
+END_VAR

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MAPP_INTERNAL_ERROR_ENUM">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="50"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="631321" Value="No Error"/>
+    <Text ID="631322" Value="Component Creation Error"/>
+    <Text ID="631323" Value="MpLink is NULL"/>
+    <Text ID="631324" Value="MpLink Connection Invalid"/>
+    <Text ID="631325" Value="MpLink Changed while component enabled"/>
+    <Text ID="631326" Value="Memory Corrupt"/>
+    <Text ID="631327" Value="MpLink currently in use by another block"/>
+    <Text ID="631328" Value="Param struct is NULL"/>
+    <Text ID="631329" Value="Config struct is NULL"/>
+    <Text ID="631330" Value="Config not pointing to a PV"/>
+    <Text ID="631331" Value="Error while loading config structure.  See logger."/>
+    <Text ID="631332" Value="Warning while loading PV.  See logger."/>
+    <Text ID="631333" Value="Error while saving PV content"/>
+    <Text ID="631334" Value="Config. read error"/>
+    <Text ID="631335" Value="Master or slave axis handle not valid"/>
+    <Text ID="631336" Value="Acopos error table missing"/>
+    <Text ID="631337" Value="Updated config. needs error reset"/>
+    <Text ID="631338" Value="Updated config requested waits for disabled state"/>
+    <Text ID="631339" Value="Updated config requested waits for standstill state"/>
+    <Text ID="631340" Value="PLCopen Error"/>
+    <Text ID="631341" Value="PLCopen Warning"/>
+    <Text ID="631342" Value="Torque reading disabled"/>
+    <Text ID="631343" Value="Max Torque reached"/>
+    <Text ID="631344" Value="Slave not found"/>
+    <Text ID="631345" Value="Master not found"/>
+    <Text ID="631346" Value="Invalid Denominator"/>
+    <Text ID="631347" Value="Invalid Numerator"/>
+    <Text ID="631348" Value="Selected cam profile invalid"/>
+    <Text ID="631349" Value="Command invalid- Slave Status"/>
+    <Text ID="631350" Value="Slave error"/>
+    <Text ID="631351" Value="Invalid axis type"/>
+    <Text ID="631352" Value="Last value limited"/>
+    <Text ID="631353" Value="Multiple commands in same cycle"/>
+    <Text ID="631354" Value="Check cam parameters"/>
+    <Text ID="631355" Value="Error Reading Error.  Embarassing."/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="631321" Value=""/>
+    <Text ID="631322" Value=""/>
+    <Text ID="631323" Value=""/>
+    <Text ID="631324" Value=""/>
+    <Text ID="631325" Value=""/>
+    <Text ID="631326" Value=""/>
+    <Text ID="631327" Value=""/>
+    <Text ID="631328" Value=""/>
+    <Text ID="631329" Value=""/>
+    <Text ID="631330" Value=""/>
+    <Text ID="631331" Value=""/>
+    <Text ID="631332" Value=""/>
+    <Text ID="631333" Value=""/>
+    <Text ID="631334" Value=""/>
+    <Text ID="631335" Value=""/>
+    <Text ID="631336" Value=""/>
+    <Text ID="631337" Value=""/>
+    <Text ID="631338" Value=""/>
+    <Text ID="631339" Value=""/>
+    <Text ID="631340" Value=""/>
+    <Text ID="631341" Value=""/>
+    <Text ID="631342" Value=""/>
+    <Text ID="631343" Value=""/>
+    <Text ID="631344" Value=""/>
+    <Text ID="631345" Value=""/>
+    <Text ID="631346" Value=""/>
+    <Text ID="631347" Value=""/>
+    <Text ID="631348" Value=""/>
+    <Text ID="631349" Value=""/>
+    <Text ID="631350" Value=""/>
+    <Text ID="631351" Value=""/>
+    <Text ID="631352" Value=""/>
+    <Text ID="631353" Value=""/>
+    <Text ID="631354" Value=""/>
+    <Text ID="631355" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="631321" Value=""/>
+    <Text ID="631322" Value=""/>
+    <Text ID="631323" Value=""/>
+    <Text ID="631324" Value=""/>
+    <Text ID="631325" Value=""/>
+    <Text ID="631326" Value=""/>
+    <Text ID="631327" Value=""/>
+    <Text ID="631328" Value=""/>
+    <Text ID="631329" Value=""/>
+    <Text ID="631330" Value=""/>
+    <Text ID="631331" Value=""/>
+    <Text ID="631332" Value=""/>
+    <Text ID="631333" Value=""/>
+    <Text ID="631334" Value=""/>
+    <Text ID="631335" Value=""/>
+    <Text ID="631336" Value=""/>
+    <Text ID="631337" Value=""/>
+    <Text ID="631338" Value=""/>
+    <Text ID="631339" Value=""/>
+    <Text ID="631340" Value=""/>
+    <Text ID="631341" Value=""/>
+    <Text ID="631342" Value=""/>
+    <Text ID="631343" Value=""/>
+    <Text ID="631344" Value=""/>
+    <Text ID="631345" Value=""/>
+    <Text ID="631346" Value=""/>
+    <Text ID="631347" Value=""/>
+    <Text ID="631348" Value=""/>
+    <Text ID="631349" Value=""/>
+    <Text ID="631350" Value=""/>
+    <Text ID="631351" Value=""/>
+    <Text ID="631352" Value=""/>
+    <Text ID="631353" Value=""/>
+    <Text ID="631354" Value=""/>
+    <Text ID="631355" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="631321" Value=""/>
+    <Text ID="631322" Value=""/>
+    <Text ID="631323" Value=""/>
+    <Text ID="631324" Value=""/>
+    <Text ID="631325" Value=""/>
+    <Text ID="631326" Value=""/>
+    <Text ID="631327" Value=""/>
+    <Text ID="631328" Value=""/>
+    <Text ID="631329" Value=""/>
+    <Text ID="631330" Value=""/>
+    <Text ID="631331" Value=""/>
+    <Text ID="631332" Value=""/>
+    <Text ID="631333" Value=""/>
+    <Text ID="631334" Value=""/>
+    <Text ID="631335" Value=""/>
+    <Text ID="631336" Value=""/>
+    <Text ID="631337" Value=""/>
+    <Text ID="631338" Value=""/>
+    <Text ID="631339" Value=""/>
+    <Text ID="631340" Value=""/>
+    <Text ID="631341" Value=""/>
+    <Text ID="631342" Value=""/>
+    <Text ID="631343" Value=""/>
+    <Text ID="631344" Value=""/>
+    <Text ID="631345" Value=""/>
+    <Text ID="631346" Value=""/>
+    <Text ID="631347" Value=""/>
+    <Text ID="631348" Value=""/>
+    <Text ID="631349" Value=""/>
+    <Text ID="631350" Value=""/>
+    <Text ID="631351" Value=""/>
+    <Text ID="631352" Value=""/>
+    <Text ID="631353" Value=""/>
+    <Text ID="631354" Value=""/>
+    <Text ID="631355" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="631321" Value=""/>
+    <Text ID="631322" Value=""/>
+    <Text ID="631323" Value=""/>
+    <Text ID="631324" Value=""/>
+    <Text ID="631325" Value=""/>
+    <Text ID="631326" Value=""/>
+    <Text ID="631327" Value=""/>
+    <Text ID="631328" Value=""/>
+    <Text ID="631329" Value=""/>
+    <Text ID="631330" Value=""/>
+    <Text ID="631331" Value=""/>
+    <Text ID="631332" Value=""/>
+    <Text ID="631333" Value=""/>
+    <Text ID="631334" Value=""/>
+    <Text ID="631335" Value=""/>
+    <Text ID="631336" Value=""/>
+    <Text ID="631337" Value=""/>
+    <Text ID="631338" Value=""/>
+    <Text ID="631339" Value=""/>
+    <Text ID="631340" Value=""/>
+    <Text ID="631341" Value=""/>
+    <Text ID="631342" Value=""/>
+    <Text ID="631343" Value=""/>
+    <Text ID="631344" Value=""/>
+    <Text ID="631345" Value=""/>
+    <Text ID="631346" Value=""/>
+    <Text ID="631347" Value=""/>
+    <Text ID="631348" Value=""/>
+    <Text ID="631349" Value=""/>
+    <Text ID="631350" Value=""/>
+    <Text ID="631351" Value=""/>
+    <Text ID="631352" Value=""/>
+    <Text ID="631353" Value=""/>
+    <Text ID="631354" Value=""/>
+    <Text ID="631355" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="631321" Value=""/>
+    <Text ID="631322" Value=""/>
+    <Text ID="631323" Value=""/>
+    <Text ID="631324" Value=""/>
+    <Text ID="631325" Value=""/>
+    <Text ID="631326" Value=""/>
+    <Text ID="631327" Value=""/>
+    <Text ID="631328" Value=""/>
+    <Text ID="631329" Value=""/>
+    <Text ID="631330" Value=""/>
+    <Text ID="631331" Value=""/>
+    <Text ID="631332" Value=""/>
+    <Text ID="631333" Value=""/>
+    <Text ID="631334" Value=""/>
+    <Text ID="631335" Value=""/>
+    <Text ID="631336" Value=""/>
+    <Text ID="631337" Value=""/>
+    <Text ID="631338" Value=""/>
+    <Text ID="631339" Value=""/>
+    <Text ID="631340" Value=""/>
+    <Text ID="631341" Value=""/>
+    <Text ID="631342" Value=""/>
+    <Text ID="631343" Value=""/>
+    <Text ID="631344" Value=""/>
+    <Text ID="631345" Value=""/>
+    <Text ID="631346" Value=""/>
+    <Text ID="631347" Value=""/>
+    <Text ID="631348" Value=""/>
+    <Text ID="631349" Value=""/>
+    <Text ID="631350" Value=""/>
+    <Text ID="631351" Value=""/>
+    <Text ID="631352" Value=""/>
+    <Text ID="631353" Value=""/>
+    <Text ID="631354" Value=""/>
+    <Text ID="631355" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="631321" Value="0"/>
+    <Index ID="631322" Value="1"/>
+    <Index ID="631323" Value="2"/>
+    <Index ID="631324" Value="3"/>
+    <Index ID="631325" Value="4"/>
+    <Index ID="631326" Value="5"/>
+    <Index ID="631327" Value="6"/>
+    <Index ID="631328" Value="7"/>
+    <Index ID="631329" Value="8"/>
+    <Index ID="631330" Value="9"/>
+    <Index ID="631331" Value="10"/>
+    <Index ID="631332" Value="11"/>
+    <Index ID="631333" Value="12"/>
+    <Index ID="631334" Value="13"/>
+    <Index ID="631335" Value="14"/>
+    <Index ID="631336" Value="15"/>
+    <Index ID="631337" Value="16"/>
+    <Index ID="631338" Value="17"/>
+    <Index ID="631339" Value="18"/>
+    <Index ID="631340" Value="19"/>
+    <Index ID="631341" Value="20"/>
+    <Index ID="631342" Value="21"/>
+    <Index ID="631343" Value="22"/>
+    <Index ID="631344" Value="23"/>
+    <Index ID="631345" Value="24"/>
+    <Index ID="631346" Value="25"/>
+    <Index ID="631347" Value="26"/>
+    <Index ID="631348" Value="27"/>
+    <Index ID="631349" Value="28"/>
+    <Index ID="631350" Value="29"/>
+    <Index ID="631351" Value="30"/>
+    <Index ID="631352" Value="31"/>
+    <Index ID="631353" Value="32"/>
+    <Index ID="631354" Value="33"/>
+    <Index ID="631355" Value="34"/>
+  </IndexMap>
+</TextGroup>

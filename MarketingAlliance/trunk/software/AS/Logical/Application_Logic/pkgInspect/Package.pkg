@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.6.110 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Insp_Global_Var.var</Object>
+    <Object Type="Program" Language="IEC" Description="Manage all inspection related functionality">Inspect</Object>
+    <Object Type="Package" Description="Folder contains the text files for configuring the process parameters in different languages and defining which PV param they reference">HMITableTexts</Object>
+    <Object Type="Library" Language="IEC">libInsp</Object>
+  </Objects>
+</Package>

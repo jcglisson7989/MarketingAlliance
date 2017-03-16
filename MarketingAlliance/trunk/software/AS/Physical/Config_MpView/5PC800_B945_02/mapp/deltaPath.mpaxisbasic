@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="Axis_Delta_Path_X_MpLink" Type="mpaxisbasic">
+    <Selector ID="AxisConfiguration" Value="AxisWithConfiguration">
+      <Group ID="Axis">
+        <Property ID="BaseType" Value="0" />
+        <Property ID="MeasurementUnit" Value="1" />
+        <Property ID="MeasurementResolution" Value="0.001" />
+        <Group ID="SoftwareLimitPositions">
+          <Property ID="LowerLimit" Value="-400" />
+          <Property ID="UpperLimit" Value="400" />
+        </Group>
+        <Group ID="MovementLimits">
+          <Property ID="JerkTime" Value="0.1" />
+        </Group>
+      </Group>
+      <Group ID="Drive">
+        <Group ID="Controller">
+          <Group ID="LoopFilters">
+            <Selector ID="[0]" />
+            <Selector ID="[1]" />
+            <Selector ID="[2]" />
+          </Group>
+        </Group>
+      </Group>
+    </Selector>
+    <Selector ID="MpAxisEnergy" Value="MpEnergyCore" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="Axis_Delta_Path_Y_MpLink" Type="mpaxisbasic">
+    <Selector ID="AxisConfiguration" Value="AxisWithConfiguration">
+      <Group ID="Axis">
+        <Property ID="BaseType" Value="0" />
+        <Property ID="MeasurementUnit" Value="1" />
+        <Property ID="MeasurementResolution" Value="0.001" />
+        <Group ID="SoftwareLimitPositions">
+          <Property ID="LowerLimit" Value="-400" />
+          <Property ID="UpperLimit" Value="400" />
+        </Group>
+        <Group ID="MovementLimits">
+          <Property ID="JerkTime" Value="0.1" />
+        </Group>
+      </Group>
+      <Group ID="Drive">
+        <Group ID="Controller">
+          <Group ID="LoopFilters">
+            <Selector ID="[0]" />
+            <Selector ID="[1]" />
+            <Selector ID="[2]" />
+          </Group>
+        </Group>
+      </Group>
+    </Selector>
+    <Selector ID="MpAxisEnergy" Value="MpEnergyCore" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="Axis_Delta_Path_Z_MpLink" Type="mpaxisbasic">
+    <Selector ID="AxisConfiguration" Value="AxisWithConfiguration">
+      <Group ID="Axis">
+        <Property ID="BaseType" Value="0" />
+        <Property ID="MeasurementUnit" Value="1" />
+        <Property ID="MeasurementResolution" Value="0.001" />
+        <Group ID="SoftwareLimitPositions">
+          <Property ID="LowerLimit" Value="-400" />
+          <Property ID="UpperLimit" Value="400" />
+        </Group>
+        <Group ID="MovementLimits">
+          <Property ID="JerkTime" Value="0.1" />
+        </Group>
+      </Group>
+      <Group ID="Drive">
+        <Group ID="Controller">
+          <Group ID="LoopFilters">
+            <Selector ID="[0]" />
+            <Selector ID="[1]" />
+            <Selector ID="[2]" />
+          </Group>
+        </Group>
+      </Group>
+    </Selector>
+    <Selector ID="MpAxisEnergy" Value="MpEnergyCore" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="Axis_Delta_Path_C_MpLink" Type="mpaxisbasic">
+    <Selector ID="AxisConfiguration" Value="AxisWithConfiguration">
+      <Group ID="Axis">
+        <Property ID="MeasurementResolution" Value="0.001" />
+        <Group ID="SoftwareLimitPositions">
+          <Property ID="LowerLimit" Value="-360" />
+          <Property ID="UpperLimit" Value="360" />
+        </Group>
+        <Group ID="MovementLimits">
+          <Property ID="Acceleration" Value="500.0" />
+          <Property ID="Deceleration" Value="500.0" />
+          <Property ID="JerkTime" Value="0.1" />
+        </Group>
+      </Group>
+      <Group ID="Drive">
+        <Group ID="Controller">
+          <Group ID="LoopFilters">
+            <Selector ID="[0]" />
+            <Selector ID="[1]" />
+            <Selector ID="[2]" />
+          </Group>
+        </Group>
+      </Group>
+    </Selector>
+    <Selector ID="MpAxisEnergy" Value="MpEnergyCore" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

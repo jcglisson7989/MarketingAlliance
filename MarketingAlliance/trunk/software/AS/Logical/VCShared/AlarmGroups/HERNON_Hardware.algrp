@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<AlarmGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="HERNON_Hardware">
+  <Property Name="AcknowledgeImage" Value="Source[global].Variable[DataSource.gMachine.HMI.AlarmControls.Hardware.AcknowledgeImage]"/>
+  <Property Name="ActiveBackColor" Value="4"/>
+  <Property Name="ActiveForeColor" Value="0"/>
+  <Property Name="AlarmImage" Value="Source[global].Variable[DataSource.gMachine.HMI.AlarmControls.Hardware.AlarmImage]"/>
+  <Property Name="BypassBackColor" Value="14"/>
+  <Property Name="BypassForeColor" Value="0"/>
+  <Property Name="BypassImage" Value="None"/>
+  <Property Name="DefaultBackColor" Value="15"/>
+  <Property Name="DefaultForeColor" Value="0"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="GroupAlarm" Value="None"/>
+  <Property Name="ImageOffset" Value="0"/>
+  <Property Name="Index" Value="3"/>
+  <Property Name="LatchedBackColor" Value="2"/>
+  <Property Name="LatchedForeColor" Value="0"/>
+  <Property Name="Priority" Value="1"/>
+  <Property Name="QuitBackColor" Value="1"/>
+  <Property Name="QuitForeColor" Value="0"/>
+  <Alarms>
+    <Alarm Index="0">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="1">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="2">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="3">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="4">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="5">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="6">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="7">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="8">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="9">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="10">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="11">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="12">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="14">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="15">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="16">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="17">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="18">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="19">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="20">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="21">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="22">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="23">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="24">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="25">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="26">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="27">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="28">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="29">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="Group">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+    </Alarm>
+  </Alarms>
+  <TextGroup>
+    <TextSnippets/>
+    <TextLayer LanguageId="en">
+      <Text ID="3496" Value="X1 Input Status error"/>
+      <Text ID="3497" Value="Counter module error"/>
+      <Text ID="3498" Value="PD1 module error"/>
+      <Text ID="3499" Value="PD2 module error"/>
+      <Text ID="3500" Value="PD3 module error"/>
+      <Text ID="3501" Value="PD1 PowerSupply error"/>
+      <Text ID="3502" Value="PD2 PowerSupply error"/>
+      <Text ID="3503" Value="PD3 PowerSupply error"/>
+      <Text ID="3504" Value="PD1 Fuse error"/>
+      <Text ID="3505" Value="PD2 Fuse error"/>
+      <Text ID="3506" Value="PD3 Fuse error"/>
+      <Text ID="3507" Value="DI 1 module error"/>
+      <Text ID="3508" Value="DO 1 module error"/>
+      <Text ID="3509" Value="Valve DSP module error"/>
+      <Text ID="3510" Value="MFC module error"/>
+      <Text ID="3511" Value="X2X sync. error"/>
+      <Text ID="3512" Value="Reservoir level low"/>
+      <Text ID="3513" Value="Projectile cure unit error"/>
+      <Text ID="3514" Value="Primer cure unit error"/>
+      <Text ID="3515" Value="Mute switch status"/>
+      <Text ID="3516" Value="Process stop status"/>
+      <Text ID="3517" Value="Process voltage status"/>
+      <Text ID="3518" Value="Air Pressure status"/>
+      <Text ID="3519" Value="Process Door status"/>
+      <Text ID="3520" Value="Loading Door status"/>
+      <Text ID="3521" Value="Projectile EdgeGen error"/>
+      <Text ID="3522" Value="Projectile EdgeGen warning"/>
+      <Text ID="3523" Value="Primer EdgeGen error"/>
+      <Text ID="3524" Value="Primer EdgeGen warning"/>
+      <Text ID="3525" Value="Edge Detection error"/>
+      <Text ID="4825" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="3496" Value="X1 Eingangsstatusfehler"/>
+      <Text ID="3497" Value="Zählermodul Fehler"/>
+      <Text ID="3498" Value="PD1 Modulfehler"/>
+      <Text ID="3499" Value="PD2 Modulfehler"/>
+      <Text ID="3500" Value="PD3 Modulfehler"/>
+      <Text ID="3501" Value="PD1 Powersupply Fehler"/>
+      <Text ID="3502" Value="PD2 Powersupply Fehler"/>
+      <Text ID="3503" Value="PD3 Powersupply Fehler"/>
+      <Text ID="3504" Value="PD1 Fuse Fehler"/>
+      <Text ID="3505" Value="PD2 Fuse Fehler"/>
+      <Text ID="3506" Value="PD3 Fuse Fehler"/>
+      <Text ID="3507" Value="DI 1 Modulfehler"/>
+      <Text ID="3508" Value="DO 1 Modulfehler"/>
+      <Text ID="3509" Value="Ventil DSP-Modul Fehler"/>
+      <Text ID="3510" Value="MFC-Modulfehler"/>
+      <Text ID="3511" Value="X2X sync. Fehler"/>
+      <Text ID="3512" Value="Reservoir Pegel niedrig"/>
+      <Text ID="3513" Value="Projektil Heilung Gerätefehler"/>
+      <Text ID="3514" Value="Primer Heilung Gerätefehler"/>
+      <Text ID="3515" Value="Mute-Schalter Status"/>
+      <Text ID="3516" Value="Prozess Stop-Status"/>
+      <Text ID="3517" Value="Prozessspannungsstatus"/>
+      <Text ID="3518" Value="Luftdruck-Status"/>
+      <Text ID="3519" Value="Prozesstürzustand"/>
+      <Text ID="3520" Value="Laden Türzustand"/>
+      <Text ID="3521" Value="Projektil EdgeGen Fehler"/>
+      <Text ID="3522" Value="Projektil EdgeGen Warnung"/>
+      <Text ID="3523" Value="Primer EdgeGen Fehler"/>
+      <Text ID="3524" Value="Primer EdgeGen Warnung"/>
+      <Text ID="3525" Value="Kantenerkennung Fehler"/>
+      <Text ID="4825" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="3496" Value="X1 error de estado de entrada"/>
+      <Text ID="3497" Value="Los errores del módulo contador"/>
+      <Text ID="3498" Value="Los errores del módulo PD1"/>
+      <Text ID="3499" Value="Los errores del módulo PD2"/>
+      <Text ID="3500" Value="Los errores del módulo PD3"/>
+      <Text ID="3501" Value="PD1 error PowerSupply"/>
+      <Text ID="3502" Value="PD2 error PowerSupply"/>
+      <Text ID="3503" Value="PD3 error PowerSupply"/>
+      <Text ID="3504" Value="Fusible de error PD1"/>
+      <Text ID="3505" Value="PD2 error de fusibles"/>
+      <Text ID="3506" Value="PD3 error de fusibles"/>
+      <Text ID="3507" Value="Los errores del módulo DI 1"/>
+      <Text ID="3508" Value="DO 1 error de módulo"/>
+      <Text ID="3509" Value="Los errores del módulo de la válvula de DSP"/>
+      <Text ID="3510" Value="Los errores del módulo MFC"/>
+      <Text ID="3511" Value="X2X sincronización. error"/>
+      <Text ID="3512" Value="El nivel del agua baja"/>
+      <Text ID="3513" Value="Error de la unidad de curado proyectil"/>
+      <Text ID="3514" Value="Error de la unidad de curado imprimación"/>
+      <Text ID="3515" Value="Estado del interruptor de silencio"/>
+      <Text ID="3516" Value="Proceso estado de parada"/>
+      <Text ID="3517" Value="estado del voltaje Proceso"/>
+      <Text ID="3518" Value="el estado de presión de aire"/>
+      <Text ID="3519" Value="Proceso estado de la puerta"/>
+      <Text ID="3520" Value="estado de la puerta de carga"/>
+      <Text ID="3521" Value="Proyectil de error EdgeGen"/>
+      <Text ID="3522" Value="advertencia proyectil EdgeGen"/>
+      <Text ID="3523" Value="EdgeGen error de imprimación"/>
+      <Text ID="3524" Value="advertencia EdgeGen imprimación"/>
+      <Text ID="3525" Value="error de detección de bordes"/>
+      <Text ID="4825" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="fr">
+      <Text ID="3496" Value="X1 Erreur d'entrée d'état"/>
+      <Text ID="3497" Value="erreur de module de comptage"/>
+      <Text ID="3498" Value="PD1 erreur de module"/>
+      <Text ID="3499" Value="PD2 erreur de module"/>
+      <Text ID="3500" Value="PD3 erreur de module"/>
+      <Text ID="3501" Value="erreur PD1 PowerSupply"/>
+      <Text ID="3502" Value="erreur PD2 PowerSupply"/>
+      <Text ID="3503" Value="erreur PD3 PowerSupply"/>
+      <Text ID="3504" Value="erreur PD1 Fuse"/>
+      <Text ID="3505" Value="erreur PD2 Fuse"/>
+      <Text ID="3506" Value="erreur PD3 Fuse"/>
+      <Text ID="3507" Value="DI 1 erreur de module"/>
+      <Text ID="3508" Value="DO 1 erreur de module"/>
+      <Text ID="3509" Value="Valve DSP erreur de module"/>
+      <Text ID="3510" Value="MFC erreur de module"/>
+      <Text ID="3511" Value="sync X2X. Erreur"/>
+      <Text ID="3512" Value="faible niveau de réservoir"/>
+      <Text ID="3513" Value="cure Projectile erreur de l'unité"/>
+      <Text ID="3514" Value="cure Primer erreur de l'unité"/>
+      <Text ID="3515" Value="état du commutateur Mute"/>
+      <Text ID="3516" Value="état d'arrêt du processus"/>
+      <Text ID="3517" Value="état de tension du processus"/>
+      <Text ID="3518" Value="état de pression d'air"/>
+      <Text ID="3519" Value="état de la porte du processus"/>
+      <Text ID="3520" Value="Chargement état de porte"/>
+      <Text ID="3521" Value="erreur Projectile EdgeGen"/>
+      <Text ID="3522" Value="avertissement Projectile EdgeGen"/>
+      <Text ID="3523" Value="Erreur EdgeGen amorce"/>
+      <Text ID="3524" Value="avertissement EdgeGen Primer"/>
+      <Text ID="3525" Value="erreur de détection de bord"/>
+      <Text ID="4825" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="3496" Value="X1 erro Status de Entrada"/>
+      <Text ID="3497" Value="erro do módulo Contador"/>
+      <Text ID="3498" Value="PD1 erro do módulo"/>
+      <Text ID="3499" Value="PD2 erro do módulo"/>
+      <Text ID="3500" Value="PD3 erro do módulo"/>
+      <Text ID="3501" Value="erro PD1 PowerSupply"/>
+      <Text ID="3502" Value="erro PD2 PowerSupply"/>
+      <Text ID="3503" Value="erro PD3 PowerSupply"/>
+      <Text ID="3504" Value="erro PD1 Fuse"/>
+      <Text ID="3505" Value="erro PD2 Fuse"/>
+      <Text ID="3506" Value="erro PD3 Fuse"/>
+      <Text ID="3507" Value="DI 1 erro do módulo"/>
+      <Text ID="3508" Value="DO 1 erro do módulo"/>
+      <Text ID="3509" Value="Válvula DSP erro do módulo"/>
+      <Text ID="3510" Value="MFC erro do módulo"/>
+      <Text ID="3511" Value="sync X2X. erro"/>
+      <Text ID="3512" Value="nível do reservatório de baixa"/>
+      <Text ID="3513" Value="Erro da unidade de cura projéctil"/>
+      <Text ID="3514" Value="Erro da unidade de cura Primer"/>
+      <Text ID="3515" Value="estado do interruptor Mute"/>
+      <Text ID="3516" Value="estado parado processo"/>
+      <Text ID="3517" Value="estado da voltagem processo"/>
+      <Text ID="3518" Value="status de pressão de ar"/>
+      <Text ID="3519" Value="do estado do portão processo"/>
+      <Text ID="3520" Value="status de porta de carregamento"/>
+      <Text ID="3521" Value="erro projéctil EdgeGen"/>
+      <Text ID="3522" Value="aviso projéctil EdgeGen"/>
+      <Text ID="3523" Value="erro EdgeGen Primer"/>
+      <Text ID="3524" Value="aviso EdgeGen Primer"/>
+      <Text ID="3525" Value="Erro de detecção de Borda"/>
+      <Text ID="4825" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="sv">
+      <Text ID="3496" Value="X1 Ingång Statusfel"/>
+      <Text ID="3497" Value="Counter modulfel"/>
+      <Text ID="3498" Value="PD1 modulfel"/>
+      <Text ID="3499" Value="PD2 modulfel"/>
+      <Text ID="3500" Value="PD3 modulfel"/>
+      <Text ID="3501" Value="PD1 powersupply error"/>
+      <Text ID="3502" Value="PD2 powersupply error"/>
+      <Text ID="3503" Value="PD3 powersupply error"/>
+      <Text ID="3504" Value="PD1 Säkring error"/>
+      <Text ID="3505" Value="PD2 Säkring error"/>
+      <Text ID="3506" Value="PD3 Säkring error"/>
+      <Text ID="3507" Value="DI 1 modulfel"/>
+      <Text ID="3508" Value="DO 1 modulfel"/>
+      <Text ID="3509" Value="Valve DSP-modul fel"/>
+      <Text ID="3510" Value="MFC modulfel"/>
+      <Text ID="3511" Value="X2x synkronisering. fel"/>
+      <Text ID="3512" Value="Reservoir nivå låg"/>
+      <Text ID="3513" Value="Projektilhärdnings apparatfel"/>
+      <Text ID="3514" Value="Primer härdnings apparatfel"/>
+      <Text ID="3515" Value="Mute switch status"/>
+      <Text ID="3516" Value="Process stoppstatus"/>
+      <Text ID="3517" Value="Processspänningsstatus"/>
+      <Text ID="3518" Value="Lufttryck status"/>
+      <Text ID="3519" Value="Processdörrstatus"/>
+      <Text ID="3520" Value="Luckan status"/>
+      <Text ID="3521" Value="Projektilen EdgeGen error"/>
+      <Text ID="3522" Value="Projektilen EdgeGen varning"/>
+      <Text ID="3523" Value="Primer EdgeGen error"/>
+      <Text ID="3524" Value="Primer EdgeGen varning"/>
+      <Text ID="3525" Value="Kanten Detekteringsfel"/>
+      <Text ID="4825" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="3496" Value="0"/>
+      <Index ID="3497" Value="1"/>
+      <Index ID="3498" Value="2"/>
+      <Index ID="3499" Value="3"/>
+      <Index ID="3500" Value="4"/>
+      <Index ID="3501" Value="5"/>
+      <Index ID="3502" Value="6"/>
+      <Index ID="3503" Value="7"/>
+      <Index ID="3504" Value="8"/>
+      <Index ID="3505" Value="9"/>
+      <Index ID="3506" Value="10"/>
+      <Index ID="3507" Value="11"/>
+      <Index ID="3508" Value="12"/>
+      <Index ID="3509" Value="13"/>
+      <Index ID="3510" Value="14"/>
+      <Index ID="3511" Value="15"/>
+      <Index ID="3512" Value="16"/>
+      <Index ID="3513" Value="17"/>
+      <Index ID="3514" Value="18"/>
+      <Index ID="3515" Value="19"/>
+      <Index ID="3516" Value="20"/>
+      <Index ID="3517" Value="21"/>
+      <Index ID="3518" Value="22"/>
+      <Index ID="3519" Value="23"/>
+      <Index ID="3520" Value="24"/>
+      <Index ID="3521" Value="25"/>
+      <Index ID="3522" Value="26"/>
+      <Index ID="3523" Value="27"/>
+      <Index ID="3524" Value="28"/>
+      <Index ID="3525" Value="29"/>
+      <Index ID="4825" Value="Group"/>
+    </IndexMap>
+  </TextGroup>
+</AlarmGroup>

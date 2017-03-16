@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Cfg/Dispense</prop>
+  </header>
+  <body>
+    <tu tuid="PV.0">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[0].VBlock_Offset_From_PiP_Sensor</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>255</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.1">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[0].Disp_Valve_Max_Output_High_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.2">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[0].Disp_Signal_Reset_MaxTO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.3">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[0].Disp_Valve_Max_RDY_NegEdge_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>5000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.4">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[0].Disp_Output_NegEdge_Margin_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.5">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[1].VBlock_Offset_From_PiP_Sensor</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>255</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.6">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[1].Disp_Valve_Max_Output_High_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.7">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[1].Disp_Signal_Reset_MaxTO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.8">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[1].Disp_Valve_Max_RDY_NegEdge_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>5000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.9">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Dispense[1].Disp_Output_NegEdge_Margin_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
