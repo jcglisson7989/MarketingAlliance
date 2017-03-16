@@ -1,0 +1,36 @@
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+VAR CONSTANT
+	DEFINE_START_REQUESTED_TO_MS : UDINT := 2000;
+	DEFINE_MENU_L_HIDE_TIMEOUT_MS : UDINT := 7000;
+	DEFINE_MENU_R_HIDE_TIMEOUT_MS : UDINT := 7000;
+	DEFINE_HMI_SPLASHSCREEN_TO_MS : UDINT := 5000;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	AIR_PRESSURE_STATE_ON : BOOL := TRUE;
+	AIR_PRESSURE_STATE_OFF : BOOL := FALSE;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	DT_CYCLE : REAL := 0.001;
+	T_IO_Cycle_us : UDINT := 1000;
+END_VAR
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+VAR CONSTANT
+	MAX_IDX_DISPENSE_VC_ARRAY : UDINT := 999;
+	MAX_IDX_ALARMS : UDINT := 99; (*Number of alarm items in the BOOL[] VC alarm structure*)
+	MAX_IDX_VBLOCKS : UDINT := 400; (*Total number of VBlocks that may EVER be installed on the system.  *)
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	MAX_IDX_DISPENSE_UNITS : UDINT := 1; (*Maximum index of the dispense units on the system, equal to one less than the total number of dispense units (since index 0 is the first element of an array!)*)
+	CONST_STR_DISP_IDX : ARRAY[0..MAX_IDX_DISPENSE_UNITS] OF STRING[80] := ['Primer','Projectile'];
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	MAX_IDX_INSPECT_UNITS : UDINT := 1; (*Maximum index of the inspection units on the system, equal to one less than the total number of inspection units (since index 0 is the first element of an array!)*)
+	CONST_STR_INSP_IDX : ARRAY[0..MAX_IDX_INSPECT_UNITS] OF STRING[80] := ['Primer','Projectile'];
+	MAX_IDX_INSPECTION_SEL_BITS : UDINT := 4;
+END_VAR

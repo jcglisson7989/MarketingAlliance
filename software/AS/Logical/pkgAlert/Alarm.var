@@ -1,0 +1,13 @@
+VAR
+	AlarmX_HistoryUI : MpAlarmXHistoryUI;
+	AlarmX_History_UIConnect : MpAlarmXHistoryUIConnectType;
+	AlarmX_ListUI : MpAlarmXListUI;
+	AlarmX_ListUIConnect : MpAlarmXListUIConnectType;
+	AlarmX_History : MpAlarmXHistory;
+	AlarmX_Control : MpAlarmXCore;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	Com_Logger_UI : MpComLoggerUI := (0);
+	Com_Logger_UIConnect : MpComLoggerUIConnectType := (0);
+END_VAR

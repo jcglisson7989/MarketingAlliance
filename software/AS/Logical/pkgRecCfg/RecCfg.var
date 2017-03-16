@@ -1,0 +1,17 @@
+VAR CONSTANT
+	DEFINE_CONSTANT_MAGIC_PREFIX : UDINT := 16#12345678;
+	DEFINE_CONSTANT_MAGIC_SUFFIX : UDINT := 16#87654321;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	MAX_IDX_TOTAL_RECIPES : UINT := 100;
+END_VAR
+(*Insert your comment here.*)
+VAR RETAIN
+	gConfigName : STRING[255];
+	gRecipeName : STRING[255];
+END_VAR
+(*Insert your comment here.*)
+VAR RETAIN
+	gRecCfg : Global_Par_typ;
+END_VAR

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeUIText_3">
+  <Property Name="Description" Value="General page text for RecipeUI"/>
+  <Property Name="Index" Value="1039"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="DirName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.CurrentDir]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="DevName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FileCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FileCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FolderCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FolderCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="DirName1">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.CurrentDir]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FileCount1">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FileCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FolderCount1">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FolderCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="631463" Value="Load"/>
+    <Text ID="631464" Value="Save"/>
+    <Text ID="631465" Value="Copy"/>
+    <Text ID="631466" Value="Create"/>
+    <Text ID="631467" Value="Refresh"/>
+    <Text ID="631468" Value="No"/>
+    <Text ID="631469" Value="Search keyword"/>
+    <Text ID="631470" Value="Sort"/>
+    <Text ID="631471" Value="Status"/>
+    <Text ID="631472" Value="Recipe select"/>
+    <Text ID="631473" Value="MpRecipeUI"/>
+    <Text ID="631474" Value="Create"/>
+    <Text ID="631475" Value="Name"/>
+    <Text ID="631476" Value="Date"/>
+    <Text ID="631477" Value="Size"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="631463" Value="Belastung"/>
+    <Text ID="631464" Value="sparen"/>
+    <Text ID="631465" Value="Kopieren"/>
+    <Text ID="631466" Value="Erstellen"/>
+    <Text ID="631467" Value="auffrischen"/>
+    <Text ID="631468" Value="Nein"/>
+    <Text ID="631469" Value="Suche nach Stichwort"/>
+    <Text ID="631470" Value="Sortieren"/>
+    <Text ID="631471" Value="Status"/>
+    <Text ID="631472" Value="Rezept wählen"/>
+    <Text ID="631473" Value="MpRecipeUI"/>
+    <Text ID="631474" Value="Erstellen"/>
+    <Text ID="631475" Value="Name"/>
+    <Text ID="631476" Value="Datum"/>
+    <Text ID="631477" Value="Größe"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="631463" Value="Carga"/>
+    <Text ID="631464" Value="Salvar"/>
+    <Text ID="631465" Value="Dupdo"/>
+    <Text ID="631466" Value="Crear"/>
+    <Text ID="631467" Value="Refrescar"/>
+    <Text ID="631468" Value="No"/>
+    <Text ID="631469" Value="Buscar la palabra clave"/>
+    <Text ID="631470" Value="Ordenar"/>
+    <Text ID="631471" Value="Estado"/>
+    <Text ID="631472" Value="receta seleccionar"/>
+    <Text ID="631473" Value="MpRecipeUI"/>
+    <Text ID="631474" Value="Crear"/>
+    <Text ID="631475" Value="Nombre"/>
+    <Text ID="631476" Value="Fecha"/>
+    <Text ID="631477" Value="tamaño"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="631463" Value="Charge"/>
+    <Text ID="631464" Value="sauvegarder"/>
+    <Text ID="631465" Value="Copie"/>
+    <Text ID="631466" Value="Créer"/>
+    <Text ID="631467" Value="Rafraîchir"/>
+    <Text ID="631468" Value="Non"/>
+    <Text ID="631469" Value="Chercher un mot-clé"/>
+    <Text ID="631470" Value="Trier"/>
+    <Text ID="631471" Value="statut"/>
+    <Text ID="631472" Value="Recette sélectionner"/>
+    <Text ID="631473" Value="MpRecipeUI"/>
+    <Text ID="631474" Value="Créer"/>
+    <Text ID="631475" Value="prénom"/>
+    <Text ID="631476" Value="date"/>
+    <Text ID="631477" Value="Taille"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="631463" Value="Carga"/>
+    <Text ID="631464" Value="Salvar"/>
+    <Text ID="631465" Value="Cópia"/>
+    <Text ID="631466" Value="Crio"/>
+    <Text ID="631467" Value="refrescar"/>
+    <Text ID="631468" Value="Não"/>
+    <Text ID="631469" Value="Pesquisar palavra-chave"/>
+    <Text ID="631470" Value="Ordenar"/>
+    <Text ID="631471" Value="estado"/>
+    <Text ID="631472" Value="receita seleccionar"/>
+    <Text ID="631473" Value="MpRecipeUI"/>
+    <Text ID="631474" Value="Crio"/>
+    <Text ID="631475" Value="Nome"/>
+    <Text ID="631476" Value="Encontro"/>
+    <Text ID="631477" Value="Tamanho"/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="631463" Value="Läsa in"/>
+    <Text ID="631464" Value="Spara"/>
+    <Text ID="631465" Value="Kopiera"/>
+    <Text ID="631466" Value="Skapa"/>
+    <Text ID="631467" Value="refresh"/>
+    <Text ID="631468" Value="Nej"/>
+    <Text ID="631469" Value="sökord"/>
+    <Text ID="631470" Value="Sortera"/>
+    <Text ID="631471" Value="Status"/>
+    <Text ID="631472" Value="receptet välj"/>
+    <Text ID="631473" Value="MpRecipeUI"/>
+    <Text ID="631474" Value="Skapa"/>
+    <Text ID="631475" Value="namn"/>
+    <Text ID="631476" Value="Datum"/>
+    <Text ID="631477" Value="Storlek"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="631463" Value="0"/>
+    <Index ID="631464" Value="1"/>
+    <Index ID="631465" Value="2"/>
+    <Index ID="631466" Value="3"/>
+    <Index ID="631467" Value="4"/>
+    <Index ID="631468" Value="11"/>
+    <Index ID="631469" Value="12"/>
+    <Index ID="631470" Value="16"/>
+    <Index ID="631471" Value="17"/>
+    <Index ID="631472" Value="18"/>
+    <Index ID="631473" Value="10"/>
+    <Index ID="631474" Value="19"/>
+    <Index ID="631475" Value="20"/>
+    <Index ID="631476" Value="21"/>
+    <Index ID="631477" Value="22"/>
+  </IndexMap>
+</TextGroup>

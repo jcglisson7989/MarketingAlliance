@@ -1,0 +1,22 @@
+(*Global PV containing the safety variables.*)
+VAR RETAIN
+	gSafetyPermInfo : paiSL_Perm_Info_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	gSafety : paiSL_typ;
+END_VAR
+(*Defined constants- change based on specific commissioning configuration*)
+VAR
+	DEFINE_OFFSET_ERR_START : UDINT := 100000;
+END_VAR
+VAR CONSTANT
+	DEFINE_SAFETY_APP_ID : UINT := 1;
+	DEFINE_TIME_MAX_RCTRL_CMD : REAL := 30;
+	DEFINE_TIME_ERROR_AUTORESET : REAL := 5;
+	DEFINE_TIME_SCANNING_RETRY : REAL := 10;
+	DEFINE_TIME_PRINT_HMI_STATUS : REAL := 2;
+	DEFINE_SAFELOGIC_ADDRESS : STRING[80] := 'SL1.IF1.ST4.IF1.ST2';
+	DEFINE_VERSION : UINT := safeVERSION_R107;
+	DEFINE_SAFELOGIC_ID : UINT := 1;
+END_VAR

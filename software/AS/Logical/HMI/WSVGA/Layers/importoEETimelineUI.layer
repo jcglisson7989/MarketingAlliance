@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="importoEETimelineUI">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="768"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Filter.DefaultLayerStatus]"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="626349" Value="%Y/%m/%d %H:%M:%S"/>
+      <Text ID="626350" Value="%Y/%m/%d %H:%M:%S"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="626349" Value="%d.%m.%Y %H:%M:%S"/>
+      <Text ID="626350" Value="%d.%m.%Y %H:%M:%S"/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="626349" Value=""/>
+      <Text ID="626350" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="fr">
+      <Text ID="626349" Value=""/>
+      <Text ID="626350" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="626349" Value=""/>
+      <Text ID="626350" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="sv">
+      <Text ID="626349" Value=""/>
+      <Text ID="626350" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="626349" Value="71"/>
+      <Index ID="626350" Value="73"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="txtGroupControl">
+      <Property Name="Border" Value="Source[local].Border[Mp_GroupControl]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+      <Property Name="Height" Value="614"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="72"/>
+      <Property Name="Width" Value="1024"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="shpBackgroundIdx_5">
+      <Property Name="BackColor" Value="252"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="67"/>
+      <Property Name="Left" Value="35"/>
+      <Property Name="LineWidth" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="606"/>
+      <Property Name="Width" Value="854"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="shpBackgroundIdx_3">
+      <Property Name="BackColor" Value="252"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="67"/>
+      <Property Name="Left" Value="35"/>
+      <Property Name="LineWidth" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="469"/>
+      <Property Name="Width" Value="854"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="shpBackgroundIdx_1">
+      <Property Name="BackColor" Value="252"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="67"/>
+      <Property Name="Left" Value="35"/>
+      <Property Name="LineWidth" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="331"/>
+      <Property Name="Width" Value="854"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclDuration_0">
+      <Property Name="BackColor" Value="16"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="GroupID" Value="110"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="683"/>
+      <Property Name="Marker" Value="Bitmap Only"/>
+      <Property Name="MarkerBitmap" Value="None"/>
+      <Property Name="MarkerSpacing" Value="0"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="Orientation" Value="Top"/>
+      <Property Name="RangeColor" Value="46"/>
+      <Property Name="RangeColorDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[0].DurationBar.Color]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[0].DurationBar.Duration]"/>
+      <Property Name="RangeEndValue" Value="1"/>
+      <Property Name="RangeStartDatapoint" Value="None"/>
+      <Property Name="RangeStartValue" Value="0"/>
+      <Property Name="RangeWidth" Value="24"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Scale]"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="38"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtProdState_0">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[0].ProductionState]"/>
+      <Property Name="Left" Value="333"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIProductionState]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="Width" Value="176"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtLabelStartTime">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="48"/>
+      <Property Name="Left" Value="30"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="7"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="213"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtLabelShiftId">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="48"/>
+      <Property Name="Left" Value="173"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="8"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="213"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtLabelProdState">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="48"/>
+      <Property Name="Left" Value="331"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="9"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="213"/>
+      <Property Name="Width" Value="176"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtLabelReason">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="48"/>
+      <Property Name="Left" Value="523"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="10"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="213"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtLabelDuration">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="48"/>
+      <Property Name="Left" Value="682"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="11"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="213"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnScrollUp">
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Scoll_Up]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_227]"/>
+      <Property Name="Height" Value="64"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="944"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Scoll_Up_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollUp]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="378"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_227]"/>
+      <Property Name="Width" Value="64"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnScrollDown">
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Scroll_Down]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_228]"/>
+      <Property Name="Height" Value="64"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="944"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Scroll_Down_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollDown]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="494"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_228]"/>
+      <Property Name="Width" Value="64"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnPageUp">
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Multi_Scroll_Up]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_229]"/>
+      <Property Name="Height" Value="64"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="944"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Multi_Scroll_Up_press]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollUpMulti]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_229]"/>
+      <Property Name="Width" Value="64"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnPageDown">
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Multi_Scroll_Down]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_230]"/>
+      <Property Name="Height" Value="64"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="944"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Multi_Scroll_Dwn_press]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollDownMulti]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="611"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_230]"/>
+      <Property Name="Width" Value="64"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtFromDateFilter">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="ForeColor" Value="255"/>
+      <Property Name="Height" Value="45"/>
+      <Property Name="Left" Value="190"/>
+      <Property Name="SimulationValue" Value="12/31/2015 23:59"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[DateTime]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="71"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="144"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Filter.Current.From.DateTime]"/>
+      <Property Name="Width" Value="224"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtFromFilterLabel">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="Height" Value="45"/>
+      <Property Name="Left" Value="62"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="144"/>
+      <Property Name="Width" Value="128"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtUntilDateFilter">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="ForeColor" Value="255"/>
+      <Property Name="Height" Value="45"/>
+      <Property Name="Left" Value="651"/>
+      <Property Name="SimulationValue" Value="12/31/2015 23:59"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[DateTime]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="73"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="144"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Filter.Current.Until.DateTime]"/>
+      <Property Name="Width" Value="224"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtUntilFilterLabel">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="Height" Value="45"/>
+      <Property Name="Left" Value="523"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndexOffset" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="144"/>
+      <Property Name="Width" Value="128"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnFilterEdit">
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_231]"/>
+      <Property Name="Height" Value="80"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="885"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedForeColor" Value="253"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[ControlButton]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIText]"/>
+      <Property Name="TextIndex" Value="3"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="128"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_231]"/>
+      <Property Name="Width" Value="128"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpEnableFromFilter">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAuditCheckbox]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="38"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Filter.Current.From.Enable]"/>
+      <Property Name="Left" Value="11"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Bitmap]"/>
+      <Property Name="Top" Value="146"/>
+      <Property Name="Width" Value="38"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpEnableUntilFilter">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAuditCheckbox]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="38"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Filter.Current.Until.Enable]"/>
+      <Property Name="Left" Value="472"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Bitmap]"/>
+      <Property Name="Top" Value="146"/>
+      <Property Name="Width" Value="38"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtDuration_0">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="110"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="685"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIDuration]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeHMS_0">
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="111"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[0].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeMDY_0">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="111"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[0].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtShiftID_0">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="174"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[0].ShiftName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtReason_0">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="507"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[0].Reason]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="Width" Value="178"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclDuration_1">
+      <Property Name="BackColor" Value="16"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="GroupID" Value="112"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="683"/>
+      <Property Name="Marker" Value="Bitmap Only"/>
+      <Property Name="MarkerBitmap" Value="None"/>
+      <Property Name="MarkerSpacing" Value="0"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="Orientation" Value="Top"/>
+      <Property Name="RangeColor" Value="46"/>
+      <Property Name="RangeColorDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[1].DurationBar.Color]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[1].DurationBar.Duration]"/>
+      <Property Name="RangeEndValue" Value="1"/>
+      <Property Name="RangeStartDatapoint" Value="None"/>
+      <Property Name="RangeStartValue" Value="0"/>
+      <Property Name="RangeWidth" Value="24"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Scale]"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="38"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtProdState_1">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[1].ProductionState]"/>
+      <Property Name="Left" Value="333"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIProductionState]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="Width" Value="176"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtDuration_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="112"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="685"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIDuration]"/>
+      <Property Name="TextIndexOffset" Value="1"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeHMS_1">
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="113"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[1].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeMDY_1">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="113"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[1].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtShiftID_1">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="174"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[1].ShiftName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtReason_1">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="507"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[1].Reason]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="Width" Value="178"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclDuration_2">
+      <Property Name="BackColor" Value="16"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="GroupID" Value="114"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="683"/>
+      <Property Name="Marker" Value="Bitmap Only"/>
+      <Property Name="MarkerBitmap" Value="None"/>
+      <Property Name="MarkerSpacing" Value="0"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="Orientation" Value="Top"/>
+      <Property Name="RangeColor" Value="46"/>
+      <Property Name="RangeColorDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[2].DurationBar.Color]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[2].DurationBar.Duration]"/>
+      <Property Name="RangeEndValue" Value="1"/>
+      <Property Name="RangeStartDatapoint" Value="None"/>
+      <Property Name="RangeStartValue" Value="0"/>
+      <Property Name="RangeWidth" Value="24"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Scale]"/>
+      <Property Name="Top" Value="398"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="38"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtProdState_2">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[2].ProductionState]"/>
+      <Property Name="Left" Value="333"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIProductionState]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="398"/>
+      <Property Name="Width" Value="176"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtDuration_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="114"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="685"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIDuration]"/>
+      <Property Name="TextIndexOffset" Value="2"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="398"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeHMS_2">
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="115"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="398"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[2].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeMDY_2">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="115"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="398"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[2].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtShiftID_2">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="174"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[2].ShiftName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="398"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtReason_2">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="507"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[2].Reason]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="398"/>
+      <Property Name="Width" Value="178"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclDuration_3">
+      <Property Name="BackColor" Value="16"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="GroupID" Value="116"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="683"/>
+      <Property Name="Marker" Value="Bitmap Only"/>
+      <Property Name="MarkerBitmap" Value="None"/>
+      <Property Name="MarkerSpacing" Value="0"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="Orientation" Value="Top"/>
+      <Property Name="RangeColor" Value="46"/>
+      <Property Name="RangeColorDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[3].DurationBar.Color]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[3].DurationBar.Duration]"/>
+      <Property Name="RangeEndValue" Value="1"/>
+      <Property Name="RangeStartDatapoint" Value="None"/>
+      <Property Name="RangeStartValue" Value="0"/>
+      <Property Name="RangeWidth" Value="24"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Scale]"/>
+      <Property Name="Top" Value="467"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="38"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtProdState_3">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[3].ProductionState]"/>
+      <Property Name="Left" Value="333"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIProductionState]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="467"/>
+      <Property Name="Width" Value="176"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtDuration_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="116"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="685"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIDuration]"/>
+      <Property Name="TextIndexOffset" Value="3"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="467"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeHMS_3">
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="117"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="467"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[3].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeMDY_3">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="117"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="467"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[3].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtShiftID_3">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="174"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[3].ShiftName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="467"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtReason_3">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="507"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[3].Reason]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="467"/>
+      <Property Name="Width" Value="178"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclDuration_4">
+      <Property Name="BackColor" Value="16"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="GroupID" Value="118"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="683"/>
+      <Property Name="Marker" Value="Bitmap Only"/>
+      <Property Name="MarkerBitmap" Value="None"/>
+      <Property Name="MarkerSpacing" Value="0"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="Orientation" Value="Top"/>
+      <Property Name="RangeColor" Value="46"/>
+      <Property Name="RangeColorDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[4].DurationBar.Color]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[4].DurationBar.Duration]"/>
+      <Property Name="RangeEndValue" Value="1"/>
+      <Property Name="RangeStartDatapoint" Value="None"/>
+      <Property Name="RangeStartValue" Value="0"/>
+      <Property Name="RangeWidth" Value="24"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Scale]"/>
+      <Property Name="Top" Value="536"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="38"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtProdState_4">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[4].ProductionState]"/>
+      <Property Name="Left" Value="333"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIProductionState]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="536"/>
+      <Property Name="Width" Value="176"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtDuration_4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="118"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="685"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIDuration]"/>
+      <Property Name="TextIndexOffset" Value="4"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="536"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeHMS_4">
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="119"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="536"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[4].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeMDY_4">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="119"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="536"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[4].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtShiftID_4">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="174"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[4].ShiftName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="536"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtReason_4">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="507"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[4].Reason]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="536"/>
+      <Property Name="Width" Value="178"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclDuration_5">
+      <Property Name="BackColor" Value="16"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+      <Property Name="GroupID" Value="120"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="683"/>
+      <Property Name="Marker" Value="Bitmap Only"/>
+      <Property Name="MarkerBitmap" Value="None"/>
+      <Property Name="MarkerSpacing" Value="0"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="Orientation" Value="Top"/>
+      <Property Name="RangeColor" Value="46"/>
+      <Property Name="RangeColorDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[5].DurationBar.Color]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[5].DurationBar.Duration]"/>
+      <Property Name="RangeEndValue" Value="1"/>
+      <Property Name="RangeStartDatapoint" Value="None"/>
+      <Property Name="RangeStartValue" Value="0"/>
+      <Property Name="RangeWidth" Value="24"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Scale]"/>
+      <Property Name="Top" Value="605"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="38"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtProdState_5">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[5].ProductionState]"/>
+      <Property Name="Left" Value="333"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIProductionState]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="605"/>
+      <Property Name="Width" Value="176"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtDuration_5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="120"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="685"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpOeeTimelineUIDuration]"/>
+      <Property Name="TextIndexOffset" Value="5"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="605"/>
+      <Property Name="Width" Value="208"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeHMS_5">
+      <Property Name="AlignmentVertical" Value="Bottom"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="121"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="605"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[5].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtStartTimeMDY_5">
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="GroupID" Value="121"/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="32"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDateTime]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="605"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[5].StartTime]"/>
+      <Property Name="Width" Value="144"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtShiftID_5">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="174"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[5].ShiftName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="605"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtReason_5">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="70"/>
+      <Property Name="Left" Value="507"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="3"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.Display[5].Reason]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="605"/>
+      <Property Name="Width" Value="178"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclScrollBar">
+      <Property Name="BackColor" Value="15"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_RangeBar]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="414"/>
+      <Property Name="Left" Value="902"/>
+      <Property Name="Marker" Value="None"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="MinorPitchLines" Value="1"/>
+      <Property Name="Orientation" Value="Left"/>
+      <Property Name="RangeColor" Value="253"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.RangeEnd]"/>
+      <Property Name="RangeEndValue" Value="90"/>
+      <Property Name="RangeSpacing" Value="0"/>
+      <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.RangeStart]"/>
+      <Property Name="RangeStartValue" Value="30"/>
+      <Property Name="RangeWidth" Value="51"/>
+      <Property Name="Spacing" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="261"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="0"/>
+      <Property Name="Width" Value="32"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="shpPageActive">
+      <Property Name="BackColor" Value="253"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="253"/>
+      <Property Name="Height" Value="88"/>
+      <Property Name="Left" Value="584"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="680"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_1">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="1022"/>
+      <Property Name="EndY" Value="682"/>
+      <Property Name="ForeColor" Value="253"/>
+      <Property Name="LineWidth" Value="5"/>
+      <Property Name="StartX" Value="0"/>
+      <Property Name="StartY" Value="682"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="%embVirtualKey_227">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.StepUp]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_228">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.StepDown]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_229">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.PageUp]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_230">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Output.PageDown]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_231">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgOEE.OEE_Timeline_UIConnect.Filter.ShowDialog]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>

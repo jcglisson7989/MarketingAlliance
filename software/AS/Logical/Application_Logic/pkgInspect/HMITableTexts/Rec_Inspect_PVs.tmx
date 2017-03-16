@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Rec/Inspect</prop>
+  </header>
+  <body>
+    <tu tuid="PV.0">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Insp_Program_Number</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>31</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.1">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[0].Enable</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.2">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[0].Insp_Trigger_ON_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>100</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.3">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[0].Insp_VBlock_Displacement</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0.5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0.02</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>0.98</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.4">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[0].Sequential_Fails_Stop_Line</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.5">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[1].Enable</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.6">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[1].Insp_Trigger_ON_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>100</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.7">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[1].Insp_VBlock_Displacement</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0.5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0.02</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>0.98</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.8">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Inspect[1].Sequential_Fails_Stop_Line</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>50000</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

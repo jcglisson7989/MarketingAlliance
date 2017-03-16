@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Cfg/Inspect</prop>
+  </header>
+  <body>
+    <tu tuid="PV.0">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[0].VBlock_Offset_From_PiP_Sensor</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>10</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>255</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.1">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[0].Inspection_Max_Busy_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>2000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.2">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[0].Insp_Results_Wait_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>500</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.3">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[0].Insp_Trigger_Wait_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.4">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[0].Insp_Illum_ON_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>200</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.5">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[1].VBlock_Offset_From_PiP_Sensor</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>10</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>255</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.6">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[1].Inspection_Max_Busy_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>2000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.7">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[1].Insp_Results_Wait_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>500</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.8">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[1].Insp_Trigger_Wait_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.9">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Inspect[1].Insp_Illum_ON_TO_S</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>200</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

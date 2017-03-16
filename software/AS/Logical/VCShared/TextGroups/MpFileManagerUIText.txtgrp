@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpFileManagerUIText">
+  <Property Name="Description" Value="Text for FileManagerUI"/>
+  <Property Name="Index" Value="1017"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="DirName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.CurrentDir]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="DevName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FileCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.FileCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FolderCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.FolderCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="623594" Value="Delete"/>
+    <Text ID="623595" Value="Cut"/>
+    <Text ID="623596" Value="Copy"/>
+    <Text ID="623597" Value="Paste"/>
+    <Text ID="623598" Value="Refresh"/>
+    <Text ID="623599" Value="CurrentPath:{DevName}{DirName}"/>
+    <Text ID="623600" Value="Selected:"/>
+    <Text ID="623601" Value="MultiSelect"/>
+    <Text ID="623602" Value="File(s) {FileCount} / Folder(s) {FolderCount}"/>
+    <Text ID="623603" Value="Current Path"/>
+    <Text ID="623604" Value="MpFileManagerUI"/>
+    <Text ID="623605" Value="No"/>
+    <Text ID="623606" Value="Search keyword"/>
+    <Text ID="623607" Value="Create Dir"/>
+    <Text ID="623608" Value="Rename"/>
+    <Text ID="623609" Value="New Name"/>
+    <Text ID="623610" Value="Sort"/>
+    <Text ID="623611" Value="Status"/>
+    <Text ID="623612" Value="Name"/>
+    <Text ID="623613" Value="Date"/>
+    <Text ID="623614" Value="Size"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="623594" Value="Löschen"/>
+    <Text ID="623595" Value="Ausschn."/>
+    <Text ID="623596" Value="Kopieren"/>
+    <Text ID="623597" Value="Einfügen"/>
+    <Text ID="623598" Value="Refresh"/>
+    <Text ID="623599" Value="Pfad:{DevName}{DirName}"/>
+    <Text ID="623600" Value="Ausgewählt:"/>
+    <Text ID="623601" Value="Mehrfach auswahl"/>
+    <Text ID="623602" Value="Dateien {FileCount} / Ordner {FolderCount}"/>
+    <Text ID="623603" Value="Akt. Pfad"/>
+    <Text ID="623604" Value="MpFileManagerUI"/>
+    <Text ID="623605" Value="Nein"/>
+    <Text ID="623606" Value="Suche"/>
+    <Text ID="623607" Value="Ordner erstellen"/>
+    <Text ID="623608" Value="Um benennen"/>
+    <Text ID="623609" Value="Neuer Name"/>
+    <Text ID="623610" Value="Sortieren"/>
+    <Text ID="623611" Value="Status"/>
+    <Text ID="623612" Value="Name"/>
+    <Text ID="623613" Value="Datum"/>
+    <Text ID="623614" Value="Größe"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="623594" Value=""/>
+    <Text ID="623595" Value=""/>
+    <Text ID="623596" Value=""/>
+    <Text ID="623597" Value=""/>
+    <Text ID="623598" Value=""/>
+    <Text ID="623599" Value=""/>
+    <Text ID="623600" Value=""/>
+    <Text ID="623601" Value=""/>
+    <Text ID="623602" Value=""/>
+    <Text ID="623603" Value=""/>
+    <Text ID="623604" Value=""/>
+    <Text ID="623605" Value=""/>
+    <Text ID="623606" Value=""/>
+    <Text ID="623607" Value=""/>
+    <Text ID="623608" Value=""/>
+    <Text ID="623609" Value=""/>
+    <Text ID="623610" Value=""/>
+    <Text ID="623611" Value=""/>
+    <Text ID="623612" Value=""/>
+    <Text ID="623613" Value=""/>
+    <Text ID="623614" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="623594" Value=""/>
+    <Text ID="623595" Value=""/>
+    <Text ID="623596" Value=""/>
+    <Text ID="623597" Value=""/>
+    <Text ID="623598" Value=""/>
+    <Text ID="623599" Value=""/>
+    <Text ID="623600" Value=""/>
+    <Text ID="623601" Value=""/>
+    <Text ID="623602" Value=""/>
+    <Text ID="623603" Value=""/>
+    <Text ID="623604" Value=""/>
+    <Text ID="623605" Value=""/>
+    <Text ID="623606" Value=""/>
+    <Text ID="623607" Value=""/>
+    <Text ID="623608" Value=""/>
+    <Text ID="623609" Value=""/>
+    <Text ID="623610" Value=""/>
+    <Text ID="623611" Value=""/>
+    <Text ID="623612" Value=""/>
+    <Text ID="623613" Value=""/>
+    <Text ID="623614" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="623594" Value=""/>
+    <Text ID="623595" Value=""/>
+    <Text ID="623596" Value=""/>
+    <Text ID="623597" Value=""/>
+    <Text ID="623598" Value=""/>
+    <Text ID="623599" Value=""/>
+    <Text ID="623600" Value=""/>
+    <Text ID="623601" Value=""/>
+    <Text ID="623602" Value=""/>
+    <Text ID="623603" Value=""/>
+    <Text ID="623604" Value=""/>
+    <Text ID="623605" Value=""/>
+    <Text ID="623606" Value=""/>
+    <Text ID="623607" Value=""/>
+    <Text ID="623608" Value=""/>
+    <Text ID="623609" Value=""/>
+    <Text ID="623610" Value=""/>
+    <Text ID="623611" Value=""/>
+    <Text ID="623612" Value=""/>
+    <Text ID="623613" Value=""/>
+    <Text ID="623614" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="623594" Value=""/>
+    <Text ID="623595" Value=""/>
+    <Text ID="623596" Value=""/>
+    <Text ID="623597" Value=""/>
+    <Text ID="623598" Value=""/>
+    <Text ID="623599" Value=""/>
+    <Text ID="623600" Value=""/>
+    <Text ID="623601" Value=""/>
+    <Text ID="623602" Value=""/>
+    <Text ID="623603" Value=""/>
+    <Text ID="623604" Value=""/>
+    <Text ID="623605" Value=""/>
+    <Text ID="623606" Value=""/>
+    <Text ID="623607" Value=""/>
+    <Text ID="623608" Value=""/>
+    <Text ID="623609" Value=""/>
+    <Text ID="623610" Value=""/>
+    <Text ID="623611" Value=""/>
+    <Text ID="623612" Value=""/>
+    <Text ID="623613" Value=""/>
+    <Text ID="623614" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="623594" Value="0"/>
+    <Index ID="623595" Value="1"/>
+    <Index ID="623596" Value="2"/>
+    <Index ID="623597" Value="3"/>
+    <Index ID="623598" Value="4"/>
+    <Index ID="623599" Value="5"/>
+    <Index ID="623600" Value="6"/>
+    <Index ID="623601" Value="7"/>
+    <Index ID="623602" Value="9"/>
+    <Index ID="623603" Value="8"/>
+    <Index ID="623604" Value="10"/>
+    <Index ID="623605" Value="11"/>
+    <Index ID="623606" Value="12"/>
+    <Index ID="623607" Value="13"/>
+    <Index ID="623608" Value="14"/>
+    <Index ID="623609" Value="15"/>
+    <Index ID="623610" Value="16"/>
+    <Index ID="623611" Value="17"/>
+    <Index ID="623612" Value="20"/>
+    <Index ID="623613" Value="21"/>
+    <Index ID="623614" Value="22"/>
+  </IndexMap>
+</TextGroup>

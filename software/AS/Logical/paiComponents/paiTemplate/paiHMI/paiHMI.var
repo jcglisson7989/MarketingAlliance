@@ -1,0 +1,22 @@
+(********************************************************************
+ * COPYRIGHT -- pai
+ ********************************************************************
+ * Package: HMI
+ * File: HMI.var
+ * Author: goran
+ * Created: August 28, 2013
+ ********************************************************************
+ * Variables of package HMI
+ ********************************************************************)
+VAR
+	gPaiHmiMain : paiHmiTemplate_typ; (*HMI logic, page navigation, visibility control, etc.*)
+	gPaiHmiMsgScroll : paiHmiMsgScrolling_typ; (*Scrolling Alarm Msg Support*)
+	gPaiHmiDialogMsg : paiHmiDialog_typ; (*Scrolling Alarm Msg Support*)
+	gPaiHmiAlertMsg : paiHmiAlert_typ; (*Scrolling Alarm Msg Support*)
+	gPaiHmiRTMenu : paiHmiDropdwMenuRT_typ;
+	gPaiHmiSystemDateTime : paiHmiSystemTime_typ;
+	gPaiHmiNetworking : paiHmiSystemNetworking_typ;
+END_VAR
+VAR RETAIN
+	gScrensaverTimeout : INT := 0;
+END_VAR

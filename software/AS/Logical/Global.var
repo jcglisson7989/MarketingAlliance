@@ -1,0 +1,5 @@
+VAR
+	gHmiParamTable : hmiParamListTable_typ := (0); (*Machine configuration / parameter settings logic *)
+	gAlarms : applicationAlarms_typ := (0);
+	gAlarmsFiltered : applicationAlarms_typ := (0);
+END_VAR

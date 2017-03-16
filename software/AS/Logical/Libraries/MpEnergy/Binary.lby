@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.6.110 SP?>
+<Library Version="1.40.1" Description="Energy monitoring" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpEnergy.typ</File>
+    <File>MpEnergyError.typ</File>
+    <File>MpEnergyAlarm.typ</File>
+    <File>MpEnergy.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpCom" FromVersion="1.40.1" ToVersion="1.40.1" />
+  </Dependencies>
+</Library>
