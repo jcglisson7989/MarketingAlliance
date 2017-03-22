@@ -35,6 +35,7 @@ TYPE
 		mpAUDIT_INF_WAIT_AUDIT_FB := 1083359157, (* UI-FB is waiting for MpAuditTrail to get active [Informational: 49077, 0x4092bfb5] *)
 		mpAUDIT_ERR_READ_VC_EVENTS := -1064124490, (* Could not read VC4-event errors [Error: 49078, 0xc092bfb6] *)
 		mpAUDIT_WRN_OPC_AUDIT_DISABLED := -2137866313, (*Opc Auditing is disabled [Error: 49079, 0x8092bfb7]*)
-		mpAUDIT_ERR_MONITOR_PV := -1064124488 (*PV to monitor not found [Error: 49080, 0xc092bfb8]*)
+		mpAUDIT_ERR_MONITOR_PV := -1064124488, (*PV to monitor not found [Error: 49080, 0xc092bfb8]*)
+		mpAUDIT_ERR_NO_BATCHID := -1064124487 (*No batch-ID given[Error: 49081, 0xc092bfb9]*)
 		);
 END_TYPE

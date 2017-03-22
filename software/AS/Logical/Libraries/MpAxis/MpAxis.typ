@@ -350,6 +350,7 @@ TYPE
 		Input : UDINT := 1; (*Input ratio*)
 		Output : UDINT := 1; (*Output ratio*)
 		Direction : MpAxisMotorDirectionEnum := mpAXIS_DIR_CLOCKWISE; (*Direction of rotation of the motor*)
+		MaximumTorque : REAL; (*Maximum torque allowed*)
 	END_STRUCT;
 	MpAxisTransformationType : 	STRUCT  (*Transformation configuration*)
 		ReferenceDistance : LREAL := 360.0; (*Linear axis: Defines the distance moved by the linear axis while the output after the gearbox (on the load side) moves one rotation [units]
@@ -370,7 +371,7 @@ Rotary axis: Defines the physical units in relation to one rotation of the gearb
 		TotalDelayTime : REAL := 0.0004; (*Total delay time [s]*)
 	END_STRUCT;
 	MpAxisControllerSpeedType : 	STRUCT  (*Controller for speed loop*)
-		ProportionalGain : REAL := 2.0; (*Gain factor [1/s]*)
+		ProportionalGain : REAL := 2.0; (*Gain factor [Asec]*)
 		IntegralTime : REAL := 0.0; (*Integral time [s]*)
 		FilterTime : REAL := 0.0; (*Filter time constant [s]*)
 	END_STRUCT;
@@ -650,8 +651,9 @@ Rotary axis: Defines the physical units in relation to one rotation of the gearb
 		);
 	MpAxisTorqueModeEnum : 
 		( (*Torque mode options list*)
-		mpAXIS_TORQUE_MODE_FF := 32, (*Feed-forward control*)
-		mpAXIS_TORQUE_MODE_LIMIT := 40 (*Torque limiter*)
+		mpAXIS_TORQUE_MODE_FF := 32, (*Feed-forward control (standard)*)
+		mpAXIS_TORQUE_MODE_LIMIT := 40, (*Torque limiter (standard)*)
+		mpAXIS_TORQUE_MODE_RAMPED_CTRL := 48 (*Ramped torque control*)
 		);
 	MpAxisCyclicSetParType : 	STRUCT  (*Cyclic Ref parameters structure*)
 		Acceleration : REAL := 100.0; (*Maximum acceleration [units/s²]*)
@@ -666,6 +668,7 @@ Rotary axis: Defines the physical units in relation to one rotation of the gearb
 		Mode : MpAxisTorqueModeEnum := mpAXIS_TORQUE_MODE_FF; (*Specifies how the "CyclicTorque" input is used*)
 		SctrlKv : REAL := 5.0; (*Proportional gain of the speed controller while cyclic torque control is active. This value is reset when disabled*)
 		SctrlTn : REAL := 0.1; (*Integral time of the speed controller while cyclic torque control is active. This value is reset when disabled [s]*)
+		RampedControl : MpAxisTorqueRampedControlType; (*Ramped torque control parameters*)
 	END_STRUCT;
 	MpAxisCyclicSetInfoType : 	STRUCT  (*Additional info about the axis*)
 		AxisReady : BOOL; (*The axis has been completely initialized at least once.*)
@@ -674,6 +677,7 @@ Rotary axis: Defines the physical units in relation to one rotation of the gearb
 		SlavePosition : LREAL; (*Position of the slave axis [units/s]*)
 		SlaveVelocity : REAL; (*Velocity of the slave axis [units/s]*)
 		Diag : MpAxisDiagExtType; (*Diagnostic structure for the status ID*)
+		TorqueControl : MpAxisTorqueInfoType; (*Torque control information*)
 	END_STRUCT;
 	MpAxisCamSequencerParType : 	STRUCT  (*Cam sequencer parameters structure*)
 		Configuration : MC_AUTDATA_TYP := (MaxMasterVelocity:=1000.0,State:=[15((RepeatCounterInit:=1))]); (*Configuration of CAM states*)
@@ -696,5 +700,21 @@ Rotary axis: Defines the physical units in relation to one rotation of the gearb
 		ActualPhasingValue : REAL; (*Current shift of the axis [master units]*)
 		Diag : MpAxisDiagExtType; (*Diagnostic structure for the status ID*)
 		RecoveryPosition : LREAL; (*Target position for recovery the slave. It is shown with all recovery mode types*)
+	END_STRUCT;
+	MpAxisTorqueInfoType : 	STRUCT  (*Torque control information parameters*)
+		InTorque : BOOL; (*Setpoint reached*)
+		WaitingForStart : BOOL; (*Function initialized, ready for StartParID"*)
+		VelocityLimitActive : BOOL; (*Axis velocity limit active*)
+	END_STRUCT;
+	MpAxisTorqueRampedControlType : 	STRUCT  (*Ramped torque control parameters*)
+		TorqueRamp : REAL := 0.0; (*Increase in torque until "Torque" value is reached [Nm/s]*)
+		PositiveMaxVelocity : REAL := 0.0; (*Upper velocity limit in the positive direction of rotation or lower velocity limit in the negative direction of rotation [PLCopen units/s]*)
+		NegativeMaxVelocity : REAL := 0.0; (*Upper velocity limit in the negative direction of rotation or lower velocity limit in the positive direction of rotation [PLCopen units/s]*)
+		DisableVelocityLimits : BOOL := FALSE; (*If TRUE, the "NegativeMaxVelocity" and "PositiveMaxVelocity" velocity limits are disabled. These parameters can be set to with any value and no longer have any effect.*)
+		CompensateVelocityLimits : BOOL := FALSE; (*If TRUE,  the velocity limits on the drive will be set to a calculated factor that is less or greater than specified for the "XxxMaxVelocity" parameters. The result of this configuration is that the configured velocity limits will not be exceeded*)
+		EnableTimeLimit : BOOL := FALSE; (*If TRUE, when the axis moves at the limit velocity for a certain amount of time (in seconds), then function will be terminated automatically with an error message*)
+		TimeLimit : REAL := 0.0; (*Time limit for how long the axis can move at the velocity or acceleration limit before it is stopped automatically [s]*)
+		StartParID : UINT := 0; (*Torque controlled movement starts via ParID when the value changes from 0 to !=0*)
+		TorqueParID : UINT := 0; (*Preset value of the torque setpoint from a ParID instead of the PLC via "Torque" [Nm]*)
 	END_STRUCT;
 END_TYPE
