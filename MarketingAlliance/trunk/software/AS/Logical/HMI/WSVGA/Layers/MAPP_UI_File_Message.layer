@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.2.6.110 SP"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
 <Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="MAPP_UI_File_Message">
   <Property Name="BackColor" Value="9"/>
   <Property Name="Description" Value="Message Box"/>
   <Property Name="Height" Value="768"/>
   <Property Name="Left" Value="0"/>
-  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.LayerStatus]"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.MessageBox.LayerStatus]"/>
   <Property Name="Top" Value="0"/>
   <Property Name="Width" Value="1024"/>
   <TextGroup>
@@ -55,7 +55,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[rockwell_15]"/>
       <Property Name="Height" Value="203"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.Type]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.MessageBox.Type]"/>
       <Property Name="Left" Value="289"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="1"/>
@@ -126,7 +126,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.Cancel]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.MessageBox.Cancel]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -141,7 +141,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.Confirm]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.MessageBox.Confirm]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>

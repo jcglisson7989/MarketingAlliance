@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.2.6.110 SP"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
 <Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="MAPP_UI_Recipe_Control">
   <Property Name="BackColor" Value="9"/>
   <Property Name="Description" Value=""/>
@@ -137,7 +137,7 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedForeColor" Value="253"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Load.Status]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Load.Status]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
       <Property Name="TextGroup" Value="Source[global].TextGroup[MpRecipeUIText_3]"/>
       <Property Name="TextIndex" Value="0"/>
@@ -164,7 +164,7 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedForeColor" Value="253"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Save.Status]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Save.Status]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
       <Property Name="TextGroup" Value="Source[global].TextGroup[MpRecipeUIText]"/>
       <Property Name="TextIndex" Value="1"/>
@@ -191,7 +191,7 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedForeColor" Value="253"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Refresh.Status]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Refresh.Status]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
       <Property Name="TextGroup" Value="Source[global].TextGroup[MpRecipeUIText]"/>
       <Property Name="TextIndex" Value="4"/>
@@ -214,11 +214,11 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="410"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.SelectedIndex]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.SelectedIndex]"/>
       <Property Name="Left" Value="8"/>
       <Property Name="LeftBitmap" Value="None"/>
       <Property Name="LeftTextGroup" Value="None"/>
-      <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.MaxSelection]"/>
+      <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.MaxSelection]"/>
       <Property Name="MaxIndex" Value="None"/>
       <Property Name="MinDatapoint" Value="None"/>
       <Property Name="MinIndex" Value="0"/>
@@ -230,7 +230,7 @@
       <Property Name="SliderForeColor" Value="240"/>
       <Property Name="SpacingVertical" Value="10"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.Names]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.Names]"/>
       <Property Name="TextIndexOffset" Value="0"/>
       <Property Name="TextSource" Value="MultipleStrings"/>
       <Property Name="Top" Value="70"/>
@@ -295,10 +295,10 @@
       <Property Name="MinorPitchLines" Value="1"/>
       <Property Name="Orientation" Value="Left"/>
       <Property Name="RangeColor" Value="253"/>
-      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.RangeEnd]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.RangeEnd]"/>
       <Property Name="RangeEndValue" Value="90"/>
       <Property Name="RangeSpacing" Value="0"/>
-      <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.RangeStart]"/>
+      <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.RangeStart]"/>
       <Property Name="RangeStartValue" Value="30"/>
       <Property Name="RangeWidth" Value="41"/>
       <Property Name="Spacing" Value="0"/>
@@ -390,7 +390,7 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
       <Property Name="ForeColor" Value="15"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Status]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Status]"/>
       <Property Name="Left" Value="8"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -417,7 +417,7 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedForeColor" Value="253"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Delete.Status]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Delete.Status]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndex" Value="25"/>
@@ -431,7 +431,7 @@
     <Control ClassId="0x0000100B" Name="txtRenameRecipeFileName">
       <Property Name="AlignmentHorizontal" Value="Center"/>
       <Property Name="Border" Value="Source[local].Border[Panel_BLU]"/>
-      <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.Rename]"/>
+      <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.Rename]"/>
       <Property Name="CompletionValue" Value="1"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
@@ -439,10 +439,10 @@
       <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpAlphaPad]"/>
       <Property Name="Left" Value="608"/>
       <Property Name="SimulationValue" Value="NewName"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.gHmiParamTable.selValueFormVisible]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
       <Property Name="Top" Value="402"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.NewFileName]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.NewFileName]"/>
       <Property Name="Width" Value="192"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdSortDate">
@@ -489,12 +489,12 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="410"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.SelectedIndex]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.SelectedIndex]"/>
       <Property Name="Input" Value="False"/>
       <Property Name="Left" Value="596"/>
       <Property Name="LeftBitmap" Value="None"/>
       <Property Name="LeftTextGroup" Value="None"/>
-      <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.MaxSelection]"/>
+      <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.MaxSelection]"/>
       <Property Name="MaxIndex" Value="None"/>
       <Property Name="MinDatapoint" Value="None"/>
       <Property Name="MinIndex" Value="0"/>
@@ -523,12 +523,12 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="410"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.SelectedIndex]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.SelectedIndex]"/>
       <Property Name="Input" Value="False"/>
       <Property Name="Left" Value="344"/>
       <Property Name="LeftBitmap" Value="None"/>
       <Property Name="LeftTextGroup" Value="None"/>
-      <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.MaxSelection]"/>
+      <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.MaxSelection]"/>
       <Property Name="MaxIndex" Value="None"/>
       <Property Name="MinDatapoint" Value="None"/>
       <Property Name="MinIndex" Value="0"/>
@@ -540,7 +540,7 @@
       <Property Name="SliderForeColor" Value="240"/>
       <Property Name="SpacingVertical" Value="10"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.LastModified]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.LastModified]"/>
       <Property Name="TextIndexOffset" Value="0"/>
       <Property Name="TextSource" Value="MultipleStrings"/>
       <Property Name="Top" Value="70"/>
@@ -580,7 +580,7 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedForeColor" Value="253"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Overwrite.Status]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Overwrite.Status]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndex" Value="32"/>
@@ -607,7 +607,7 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedForeColor" Value="253"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Copy.Status]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Copy.Status]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndex" Value="34"/>
@@ -628,7 +628,7 @@
       <Property Name="Left" Value="535"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.gHmiParamTable.selValueFormVisible]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndexOffset" Value="36"/>
@@ -639,7 +639,7 @@
     <Control ClassId="0x0000100B" Name="txtNewRecipe">
       <Property Name="AlignmentHorizontal" Value="Center"/>
       <Property Name="Border" Value="Source[local].Border[Panel_BLU]"/>
-      <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.New.Create]"/>
+      <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.New.Create]"/>
       <Property Name="CompletionValue" Value="1"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
@@ -647,10 +647,10 @@
       <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpAlphaPad]"/>
       <Property Name="Left" Value="310"/>
       <Property Name="SimulationValue" Value="NewName"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.gHmiParamTable.selValueFormVisible]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
       <Property Name="Top" Value="402"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.New.FileName]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.New.FileName]"/>
       <Property Name="Width" Value="192"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_4">
@@ -663,7 +663,7 @@
       <Property Name="Left" Value="177"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.gHmiParamTable.selValueFormVisible]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndexOffset" Value="37"/>
@@ -678,14 +678,14 @@
       <Property Name="VirtualKey_LED" Value="False"/>
       <KeyActions>
         <KeyAction ClassId="0x0000016A">
-          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.Refresh]"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.Refresh]"/>
           <Property Name="CompletionValue" Value="1"/>
           <Property Name="Description" Value=""/>
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="ResetValue" Value="4"/>
           <Property Name="SetValue" Value="5"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.SortOrder]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.SortOrder]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -700,7 +700,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Load.DP]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Load.DP]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -715,7 +715,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Save.DP]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Save.DP]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -730,7 +730,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Refresh.DP]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Refresh.DP]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -745,7 +745,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.StepUp]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.StepUp]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -760,7 +760,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.StepDown]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.StepDown]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -775,7 +775,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.PageUp]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.PageUp]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -790,7 +790,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.List.PageDown]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.List.PageDown]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -799,14 +799,14 @@
       <Property Name="VirtualKey_LED" Value="False"/>
       <KeyActions>
         <KeyAction ClassId="0x0000016A">
-          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.Refresh]"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.Refresh]"/>
           <Property Name="CompletionValue" Value="1"/>
           <Property Name="Description" Value=""/>
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="ResetValue" Value="0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.SortOrder]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.SortOrder]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -821,7 +821,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Delete.DP]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Delete.DP]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -830,14 +830,14 @@
       <Property Name="VirtualKey_LED" Value="False"/>
       <KeyActions>
         <KeyAction ClassId="0x0000016A">
-          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.Refresh]"/>
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.Refresh]"/>
           <Property Name="CompletionValue" Value="1"/>
           <Property Name="Description" Value=""/>
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="ResetValue" Value="2"/>
           <Property Name="SetValue" Value="3"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.Recipe.SortOrder]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pRecCfgUIConnect.Recipe.SortOrder]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -852,7 +852,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Overwrite.DP]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Overwrite.DP]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -867,7 +867,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pCmd.Copy.DP]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgRecCfg.Recipe_Handling.pCmd.Copy.DP]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>

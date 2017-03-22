@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.2.6.110 SP"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
 <Project xmlns="http://br-automation.co.at/AS/VC/Project">
   <Property Name="EnableEvents" Value="False"/>
   <Property Name="SharedTargetResourceRoot" Value=""/>
@@ -113,13 +113,6 @@
     <Source File="UnitGroups\Weight.vcug"/>
     <Source File="AlarmGroups\AlarmSystem.alcfg"/>
     <Source File="AlarmGroups\SystemAlarms.algrp"/>
-    <Source File="AlarmGroups\HERNON_Dispense.algrp"/>
-    <Source File="AlarmGroups\HERNON_Hardware.algrp"/>
-    <Source File="AlarmGroups\HERNON_Inspect.algrp"/>
-    <Source File="AlarmGroups\HERNON_Motor.algrp"/>
-    <Source File="AlarmGroups\HERNON_RecCfg.algrp"/>
-    <Source File="AlarmGroups\HERNON_Safety.algrp"/>
-    <Source File="AlarmGroups\HERNON_Sensor.algrp"/>
     <Source File="DataSources\Internal.dso"/>
     <Source File="DataSources\DataSource.dso"/>
     <Source File="ControlVersion.cvinfo"/>
