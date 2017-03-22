@@ -1,8 +1,0 @@
-VAR
-	ii_dispense_units : UDINT;
-END_VAR
-(*Insert your comment here.*)
-VAR
-	FBK_Disp_Valve : ARRAY[0..MAX_IDX_DISPENSE_UNITS] OF HernonDispValve;
-	Init_Logbook : FBK_Init_Logbook;
-END_VAR
