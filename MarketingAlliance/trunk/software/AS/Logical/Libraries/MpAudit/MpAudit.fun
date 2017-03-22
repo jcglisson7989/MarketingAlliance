@@ -35,7 +35,7 @@ FUNCTION_BLOCK MpAuditTrailConfig (*Configuration for audit trail*) (* $GROUP=ma
 		Info : MpAuditTrailInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType;
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType;
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -90,7 +90,7 @@ FUNCTION_BLOCK MpAuditTrail (*Centralized event audit trail*) (* $GROUP=mapp,$CA
 		Info : MpAuditTrailInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType;
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType;
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -118,7 +118,7 @@ FUNCTION_BLOCK MpAuditVC4Event (*Collects events from VC4 for the audit trail*) 
 		StatusID : DINT; (*Status information about the function block*) (* *) (*#PAR#; *)
 	END_VAR
 	VAR
-		Internal : MpAuditVC4EventInternalType;
+		Internal : {REDUND_UNREPLICABLE} MpAuditVC4EventInternalType;
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -137,7 +137,7 @@ FUNCTION_BLOCK MpAuditRegPar (*Register and monitor a PV*)
 		Info : MpAuditTrailInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType;
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType;
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -146,3 +146,35 @@ FUNCTION MpAuditClearBuffer : DINT (*Clears the audit buffer (archives are not e
 		MpLink : MpComIdentType; (*Connection to mapp*) (* *) (*#PAR#;*)
 	END_VAR
 END_FUNCTION
+
+FUNCTION MpAuditStartBatch : DINT (*Creates a event marking the start of a new batch*)
+	VAR_INPUT
+		MpLink : MpComIdentType; (*Connection to mapp*) (* *) (*#PAR#;*)
+		Name : WSTRING[50]; (*Name (unique identifier) of batch*) (* *) (*#CMD#;*)
+	END_VAR
+END_FUNCTION
+
+FUNCTION_BLOCK MpAuditExport (*Advanced export function*) (* $GROUP=mapp,$CAT=Audit Trail,$GROUPICON=Icon_mapp.png,$CATICON=Icon_MpAudit.png *)
+	VAR_INPUT
+		MpLink : REFERENCE TO MpComIdentType; (*Connection to mapp*) (* *) (*#PAR#;*)
+		Enable : BOOL; (*Enables/Disables the function block*) (* *) (*#PAR#;*)
+		ErrorReset : BOOL; (*Resets function block errors*) (* *) (*#PAR#;*)
+		Filter : REFERENCE TO MpAuditExportFilterType; (*Language ID that should be used when exporting data. The index of the desired language must be specified (reserved for later use)*) (* *) (*#CMD#;*)
+		ToRecord : UDINT; (*Record-number up to which (and excluding) data is exported*)
+		Language : REFERENCE TO STRING[20]; (*Language ID that should be used when exporting data. The index of the desired language must be specified (reserved for later use)*) (* *) (*#CMD#;*)
+		DeviceName : REFERENCE TO STRING[50]; (*File device (data storage medium) where the files are stored*) (* *) (*#CMD#;*)
+		Export : BOOL; (*Parameter (Filter-settings) for export*) (* *) (*#CMD#;*)
+	END_VAR
+	VAR_OUTPUT
+		Active : BOOL; (*Indicates whether the function block is active*) (* *) (*#PAR#;*)
+		Error : BOOL; (*Indicates that the function block is in an error state or a command was not executed correctly*) (* *) (*#PAR#;*)
+		StatusID : DINT; (*Status information about the function block*) (* *) (*#PAR#; *)
+		CommandBusy : BOOL; (*Function block currently executing command*) (* *) (*#CMD#OPT#;*)
+		CommandDone : BOOL; (*Command successfully executed by function block*) (* *) (*#CMD#;*)
+		Record : UDINT; (*Record-number of last exported record (set after export)*) (* *) (*#CMD#;*)
+		Info : MpAuditInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
+	END_VAR
+	VAR
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType;
+	END_VAR
+END_FUNCTION_BLOCK

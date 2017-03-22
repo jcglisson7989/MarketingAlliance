@@ -2,7 +2,7 @@
 *                    B & R   P O S I T I O N I N G                          *
 *****************************************************************************
 *                                                                           *
-*            Header File for Library NCGLOBAL (Version 3143)                * 
+*            Header File for Library NCGLOBAL (Version 3162)                * 
 *                                                                           *
 **************************** COPYRIGHT (C) **********************************
 *     THIS SOFTWARE IS THE PROPERTY OF B&R AUSTRIA: ALL RIGHTS RESERVED.    *
@@ -115,6 +115,7 @@
  #define FB_MC_BR_ReadNetTraceStatus 79U
  #define FB_MC_BR_ReadParID 21U
  #define FB_MC_BR_ReadParIDText 90U
+ #define FB_MC_BR_ReadParList 148U
  #define FB_MC_BR_ReadParTraceStatus 81U
  #define FB_MC_BR_ReceiveParIDOnPLC 113U
  #define FB_MC_BR_RegMarkCalc001 67U
@@ -268,6 +269,8 @@
  #define ncCAN_IF 0U
  #define ncCLOSED 1U
  #define ncCMD_ERROR 281U
+ #define ncCMD_ERROR_COAST_TO_STANDSTILL 5U
+ #define ncCMD_ERROR_INDUCTION_HALT 6U
  #define ncCMD_ERROR_ONLY 1U
  #define ncCMD_ERROR_STOP 2U
  #define ncCMD_ERROR_STOP_CTRL_OFF 3U
@@ -774,6 +777,7 @@
  #define ncWITH_INDEX 0U
  #define ncWITHOUT_INDEX 1U
  #define ncWRITE_COB 320U
+ #define ncWRITE_HPRIO 290U
  #define ncXY 0U
  #define ncYZ 2U
  #define ncZ_TRANS 3U
@@ -883,6 +887,7 @@
  _IEC_CONST unsigned short FB_MC_BR_ReadNetTraceStatus = 79U;
  _IEC_CONST unsigned short FB_MC_BR_ReadParID = 21U;
  _IEC_CONST unsigned short FB_MC_BR_ReadParIDText = 90U;
+ _IEC_CONST unsigned short FB_MC_BR_ReadParList = 148U;
  _IEC_CONST unsigned short FB_MC_BR_ReadParTraceStatus = 81U;
  _IEC_CONST unsigned short FB_MC_BR_ReceiveParIDOnPLC = 113U;
  _IEC_CONST unsigned short FB_MC_BR_RegMarkCalc001 = 67U;
@@ -1036,6 +1041,8 @@
  _IEC_CONST unsigned short ncCAN_IF = 0U;
  _IEC_CONST unsigned char ncCLOSED = 1U;
  _IEC_CONST unsigned short ncCMD_ERROR = 281U;
+ _IEC_CONST unsigned short ncCMD_ERROR_COAST_TO_STANDSTILL = 5U;
+ _IEC_CONST unsigned short ncCMD_ERROR_INDUCTION_HALT = 6U;
  _IEC_CONST unsigned short ncCMD_ERROR_ONLY = 1U;
  _IEC_CONST unsigned short ncCMD_ERROR_STOP = 2U;
  _IEC_CONST unsigned short ncCMD_ERROR_STOP_CTRL_OFF = 3U;
@@ -1542,6 +1549,7 @@
  _IEC_CONST unsigned short ncWITH_INDEX = 0U;
  _IEC_CONST unsigned short ncWITHOUT_INDEX = 1U;
  _IEC_CONST unsigned short ncWRITE_COB = 320U;
+ _IEC_CONST unsigned short ncWRITE_HPRIO = 290U;
  _IEC_CONST unsigned char ncXY = 0U;
  _IEC_CONST unsigned char ncYZ = 2U;
  _IEC_CONST unsigned short ncZ_TRANS = 3U;

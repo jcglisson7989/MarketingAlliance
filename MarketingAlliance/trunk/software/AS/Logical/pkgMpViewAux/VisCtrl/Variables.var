@@ -1,7 +1,0 @@
-VAR
-	usint_tmp : USINT;
-	clientSlots : ARRAY[0..4] OF ClientInfo;
-	pAxisControl : REFERENCE TO MpAxisBasic;
-	pDelta : REFERENCE TO MpDelta4Axis;
-	pAxisPar : REFERENCE TO MpAxisBasicParType;
-END_VAR

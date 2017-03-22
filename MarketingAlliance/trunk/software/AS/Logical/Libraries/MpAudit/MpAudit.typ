@@ -4,8 +4,23 @@ TYPE
 		(
 		mpAUDIT_UI_STATUS_IDLE, (*Indicates that no process is currently active*)
 		mpAUDIT_UI_STATUS_UPDATE, (*Performs an update*)
-		mpAUDIT_UI_STATUS_FILTER (*Displays a window for filtering the results*)
+		mpAUDIT_UI_STATUS_FILTER, (*Displays a window for filtering the results*)
+		mpAUDIT_UI_STATUS_EXPORT, (*Exporting data*)
+		mpAUDIT_UI_STATUS_ERROR (*Error pending*)
 		);
+	MpAuditUIMessageEnum : 
+		(
+		mpAUDIT_UI_MSG_NONE := 0, (*No dialog box*)
+		mpAUDIT_UI_MSG_ERROR := 1 (*Dialog box: Errors*)
+		);
+	MpAuditUIMessageBoxType : 	STRUCT 
+		LayerStatus : UINT; (*Visibility of the dialog box *)
+		Type : MpAuditUIMessageEnum; (*Type of dialog box*)
+		ErrorNumber : UINT; (*Current error number to be displayed *)
+		StatusID : DINT;
+		Confirm : BOOL; (*Confirms the operation*)
+		Cancel : BOOL; (*Cancels the operation*)
+	END_STRUCT;
 	MpAuditInfoType : 	STRUCT 
 		Diag : MpAuditDiagType; (*Diagnostic structure for the status ID*)
 	END_STRUCT;
@@ -53,6 +68,15 @@ TYPE
 		Exclude : BOOL; (*Only this user (FALSE) / All other users (TRUE)*)
 		Name : WSTRING[50]; (*Operator name*)
 	END_STRUCT;
+	MpAuditTrailUIPatternFilterType : 	STRUCT 
+		Enable : BOOL; (*Enables the filter*)
+		Exclude : BOOL; (*Select events matching the pattern (FALSE) or all other events (TRUE)*)
+		Compare : WSTRING[50]; (*String Pattern containing wildcards (* and ?) that is applied on the event-message*)
+	END_STRUCT;
+	MpAuditTrailUIBatchFilterType : 	STRUCT 
+		Enable : BOOL; (*Enables the filter*)
+		Name : WSTRING[50]; (*Name (identifier) of batch to be  included in output*)
+	END_STRUCT;
 	MpAuditTrailUIFilterDialogType : 	STRUCT 
 		LayerStatus : UINT; (*Status data point for the default layer of the visualization page where the filter is configured*)
 		From : MpAuditTrailUISetDTFilterType; (*Time from which events are displayed*)
@@ -61,12 +85,16 @@ TYPE
 		Operator : MpAuditTrailUIOpFilterType; (*Determines from which user events are displayed*)
 		Confirm : BOOL; (*Confirms the operation*)
 		Cancel : BOOL; (*Cancels the operation*)
+		Pattern : MpAuditTrailUIPatternFilterType; (*Event-message filter (pattern matching)*)
+		Batch : MpAuditTrailUIBatchFilterType; (*Batch filter*)
 	END_STRUCT;
 	MpAuditTrailUICurrentFilterType : 	STRUCT 
 		From : MpAuditTrailUICurrDTFilterType; (*Time from which events are displayed*)
 		Until : MpAuditTrailUICurrDTFilterType; (*Time until which events are displayed*)
 		Event : MpAuditTrailUIEventFilterType; (*Defines which events are displayed*)
 		Operator : MpAuditTrailUIOpFilterType; (*Determines from which user events are displayed*)
+		Pattern : MpAuditTrailUIPatternFilterType; (*Event-message filter (pattern matching)*)
+		Batch : MpAuditTrailUIBatchFilterType; (*Batch filter*)
 	END_STRUCT;
 	MpAuditUIFilterType : 	STRUCT 
 		ShowDialog : BOOL; (*Command that opens the dialog box*)
@@ -78,6 +106,8 @@ TYPE
 		Status : MpAuditTrailUIStatusEnum; (*Current operation*)
 		Output : MpAuditTrailUIOutputType; (*Indicates the filtered events*)
 		Filter : MpAuditUIFilterType; (*Allows events to be filtered*)
+		Export : BOOL; (*Export audit-data*)
+		MessageBox : MpAuditUIMessageBoxType; (*Controls dialog boxes*)
 	END_STRUCT;
 	MpAuditTrailUISetupType : 	STRUCT 
 		EventListSize : UINT := 20; (*Number of events to be displayed on one page of the list in the HMI application*)
@@ -105,7 +135,8 @@ TYPE
 	MpAuditArchiveModeEnum : 
 		(
 		mpAUDIT_ARCHIVE_DAILY := 0, (*Creates an archive daily*)
-		mpAUDIT_ARCHIVE_MO_TO_FR := 1 (*Creates an archive from Monday to Friday*)
+		mpAUDIT_ARCHIVE_MO_TO_FR := 1, (*Creates an archive from Monday to Friday*)
+		mpAUDIT_ARCHIVE_BATCH := 2 (*Create archives at start of new batch*)
 		);
 	MpAuditFontTypeEnum : 
 		(
@@ -186,6 +217,14 @@ With mpAUDIT_TEXT_SOURCE_VC4 as text source: Defines the index in the text group
 		RawData : BOOL := FALSE; (*Attaches raw data to the export file*)
 		FileType : MpAuditFileTypeEnum := mpAUDIT_FILE_TYPE_TXT; (*File type for the export file*)
 		PDF : MpAuditExportPdfType; (*Settings for PDF-export*)
+	END_STRUCT;
+	MpAuditExportFilterType : 	STRUCT 
+		From : MpAuditTrailUICurrDTFilterType; (*Time from which events are displayed*)
+		Until : MpAuditTrailUICurrDTFilterType; (*Time until which events are displayed*)
+		Event : MpAuditTrailUIEventFilterType; (*Defines which events are displayed*)
+		Operator : MpAuditTrailUIOpFilterType; (*Determines from which user events are displayed*)
+		Pattern : MpAuditTrailUIPatternFilterType; (*Event-message filter (pattern matching)*)
+		Batch : MpAuditTrailUIBatchFilterType; (*Batch filter*)
 	END_STRUCT;
 	MpAuditArchiveType : 	STRUCT 
 		Enable : BOOL := FALSE; (*Switches the archive function on/off*)

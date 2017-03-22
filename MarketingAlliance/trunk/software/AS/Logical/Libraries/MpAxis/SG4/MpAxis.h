@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpAxis 1.40.1 */
+/* MpAxis 1.60.1 */
 
 #ifndef _MPAXIS_
 #define _MPAXIS_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpAxis_VERSION
-#define _MpAxis_VERSION 1.40.1
+#define _MpAxis_VERSION 1.60.1
 #endif
 
 #include <bur/plctypes.h>
@@ -327,7 +327,8 @@ typedef enum MpAxisRecoveryModeEnum
 
 typedef enum MpAxisTorqueModeEnum
 {	mpAXIS_TORQUE_MODE_FF = 32,
-	mpAXIS_TORQUE_MODE_LIMIT = 40
+	mpAXIS_TORQUE_MODE_LIMIT = 40,
+	mpAXIS_TORQUE_MODE_RAMPED_CTRL = 48
 } MpAxisTorqueModeEnum;
 
 typedef enum MpAxisErrorEnum
@@ -570,6 +571,7 @@ typedef struct MpAxisGearboxType
 {	unsigned long Input;
 	unsigned long Output;
 	enum MpAxisMotorDirectionEnum Direction;
+	float MaximumTorque;
 } MpAxisGearboxType;
 
 typedef struct MpAxisTransformationType
@@ -798,10 +800,23 @@ typedef struct MpAxisCouplingInfoType
 	double RecoveryPosition;
 } MpAxisCouplingInfoType;
 
+typedef struct MpAxisTorqueRampedControlType
+{	float TorqueRamp;
+	float PositiveMaxVelocity;
+	float NegativeMaxVelocity;
+	plcbit DisableVelocityLimits;
+	plcbit CompensateVelocityLimits;
+	plcbit EnableTimeLimit;
+	float TimeLimit;
+	unsigned short StartParID;
+	unsigned short TorqueParID;
+} MpAxisTorqueRampedControlType;
+
 typedef struct MpAxisTorqueSetupType
 {	enum MpAxisTorqueModeEnum Mode;
 	float SctrlKv;
 	float SctrlTn;
+	struct MpAxisTorqueRampedControlType RampedControl;
 } MpAxisTorqueSetupType;
 
 typedef struct MpAxisCyclicSetParType
@@ -814,6 +829,12 @@ typedef struct MpAxisCyclicSetParType
 	struct MpAxisTorqueSetupType TorqueSetup;
 } MpAxisCyclicSetParType;
 
+typedef struct MpAxisTorqueInfoType
+{	plcbit InTorque;
+	plcbit WaitingForStart;
+	plcbit VelocityLimitActive;
+} MpAxisTorqueInfoType;
+
 typedef struct MpAxisCyclicSetInfoType
 {	plcbit AxisReady;
 	unsigned short PositionReceivedParID;
@@ -821,6 +842,7 @@ typedef struct MpAxisCyclicSetInfoType
 	double SlavePosition;
 	float SlaveVelocity;
 	struct MpAxisDiagExtType Diag;
+	struct MpAxisTorqueInfoType TorqueControl;
 } MpAxisCyclicSetInfoType;
 
 typedef struct MpAxisCamSequencerParType
