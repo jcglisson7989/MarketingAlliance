@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.2.6.110 SP"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
 <TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpFileManagerUIDevices_3">
   <Property Name="Description" Value="TextSnippets for FileManagerUI device names"/>
   <Property Name="Index" Value="1036"/>
   <TextSnippets>
     <TextSnippet ClassId="0x00002002" Name="Name0">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[0]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[0]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -14,7 +14,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name1">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[1]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[1]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -22,7 +22,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name2">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[2]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[2]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -30,7 +30,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name3">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[3]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[3]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -38,7 +38,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name4">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[4]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[4]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -46,7 +46,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name5">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[5]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[5]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -54,7 +54,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name6">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[6]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[6]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -62,7 +62,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name7">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[7]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[7]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -70,7 +70,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name8">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[8]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[8]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -78,7 +78,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name9">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[9]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[9]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -86,7 +86,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name1">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[0]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[0]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -94,7 +94,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name2">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[1]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[1]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -102,7 +102,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name3">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[2]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[2]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -110,7 +110,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name4">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[3]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[3]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -118,7 +118,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name5">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[4]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[4]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -126,7 +126,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name6">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[5]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[5]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -134,7 +134,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name7">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[6]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[6]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -142,7 +142,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name8">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[7]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[7]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -150,7 +150,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name9">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[8]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[8]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -158,7 +158,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name10">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[9]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[9]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -166,7 +166,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name4">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[0]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[0]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -174,7 +174,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name5">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[1]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[1]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -182,7 +182,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name6">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[2]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[2]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -190,7 +190,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name7">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[3]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[3]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -198,7 +198,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name8">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[4]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[4]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -206,7 +206,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name9">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[5]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[5]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -214,7 +214,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name10">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[6]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[6]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -222,7 +222,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name11">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[7]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[7]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -230,7 +230,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name12">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[8]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[8]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
@@ -238,7 +238,7 @@
     </TextSnippet>
     <TextSnippet ClassId="0x00002002" Name="Name13">
       <Property Name="Alignment" Value="Left"/>
-      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.DeviceList.DeviceNames[9]]"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.pkgData.File_Manager_UIConnect.DeviceList.DeviceNames[9]]"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillCharacter" Value=""/>
       <Property Name="MaxChars" Value="None"/>
