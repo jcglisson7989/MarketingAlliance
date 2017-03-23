@@ -27,6 +27,8 @@
   </DataObjects>
   <NcDataObjects>
     <NcDataObject Name="acp10etxen" Source="acp10etxen.dob" Memory="UserROM" Language="Ett" />
+    <NcDataObject Name="FeedAxisa" Source="FeedAxisobj.FeedAxisa.dob" Memory="UserROM" Language="Apt" />
+    <NcDataObject Name="FeedAxisi" Source="FeedAxisobj.FeedAxisi.dob" Memory="UserROM" Language="Ax" />
   </NcDataObjects>
   <VcDataObjects>
     <VcDataObject Name="WSVGA" Source="HMI.WSVGA.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />

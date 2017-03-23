@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="tmpl00_StartPage1">
+  <Property Name="BackColor" Value="0"/>
+  <Property Name="Description" Value="Template Start page - shown during boot up"/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Index" Value="1"/>
+  <Property Name="MoveFocus" Value="Circular"/>
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiPageContent]"/>
+  <Property Name="Width" Value="1024"/>
+  <Layers>
+    <Layer Name="Default">
+      <Property Name="BackColor" Value="9"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Normal"/>
+      <Property Name="Height" Value="600"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="StatusDatapoint" Value="None"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Width" Value="1024"/>
+      <Property Name="Z-Order" Value="0"/>
+      <TextGroup>
+        <TextLayer LanguageId="en"/>
+        <TextLayer LanguageId="de"/>
+        <TextLayer LanguageId="es"/>
+        <IndexMap/>
+      </TextGroup>
+      <Controls>
+        <Control ClassId="0x00001005" Name="Bitmap_1">
+          <Property Name="Bitmap" Value="Source[local].Bitmap[abc_logo_6a]"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="600"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="202"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="0"/>
+          <Property Name="Width" Value="687"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_1">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="55"/>
+          <Property Name="Left" Value="233"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="0"/>
+          <Property Name="Width" Value="708"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_2">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="600"/>
+          <Property Name="Left" Value="773"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="0"/>
+          <Property Name="Width" Value="247"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_3">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="595"/>
+          <Property Name="Left" Value="58"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="5"/>
+          <Property Name="Width" Value="191"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_4">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="111"/>
+          <Property Name="Left" Value="691"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="9"/>
+          <Property Name="Width" Value="223"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_5">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="96"/>
+          <Property Name="Left" Value="157"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="0"/>
+          <Property Name="Width" Value="215"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_6">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="53"/>
+          <Property Name="Left" Value="165"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="547"/>
+          <Property Name="Width" Value="737"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_7">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="83"/>
+          <Property Name="Left" Value="211"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="480"/>
+          <Property Name="Width" Value="131"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_8">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="96"/>
+          <Property Name="Left" Value="735"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="468"/>
+          <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_9">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="96"/>
+          <Property Name="Left" Value="759"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="52"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_10">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="96"/>
+          <Property Name="Left" Value="176"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="50"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_11">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="85"/>
+          <Property Name="Left" Value="242"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="507"/>
+          <Property Name="Width" Value="129"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_12">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="89"/>
+          <Property Name="Left" Value="177"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="446"/>
+          <Property Name="Width" Value="131"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_13">
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="96"/>
+          <Property Name="Left" Value="692"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="501"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtHeaderText">
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gMsgRunningCtrl.oMsgFCIdx]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[appRunMsgClr]"/>
+          <Property Name="ColorMapIndexOffset" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[HugeText]"/>
+          <Property Name="ForeColor" Value="206"/>
+          <Property Name="Height" Value="51"/>
+          <Property Name="Left" Value="0"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Running Msg"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Header]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gMsgRunningCtrl.oMsg]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="0"/>
+          <Property Name="Width" Value="1024"/>
+        </Control>
+      </Controls>
+      <KeyMapping/>
+    </Layer>
+  </Layers>
+  <MovementOrder/>
+  <TabSequence/>
+</Page>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="tmpl42_Dimensions">
+  <Property Name="Description" Value="Template main page - basic machine interface"/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Index" Value="42"/>
+  <Property Name="MoveFocus" Value="Circular"/>
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiPageContent]"/>
+  <Property Name="Width" Value="1024"/>
+  <Layers>
+    <LayerRef Source="Source[local].Layer[Background]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="Background"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="0"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[globalArea]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="globalArea"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="1"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[paiHmiTabs8]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="paiHmiTabs8"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="2"/>
+    </LayerRef>
+    <Layer Name="Default">
+      <Property Name="BackColor" Value="9"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Normal"/>
+      <Property Name="Height" Value="600"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="StatusDatapoint" Value="None"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Width" Value="1024"/>
+      <Property Name="Z-Order" Value="3"/>
+      <TextGroup>
+        <TextLayer LanguageId="en">
+          <Text ID="507909" Value="W="/>
+          <Text ID="507910" Value="L="/>
+          <Text ID="507911" Value="H="/>
+          <Text ID="507980" Value="Case Size [inch]"/>
+          <Text ID="507981" Value="Pallete Size"/>
+        </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="507909" Value=""/>
+          <Text ID="507910" Value=""/>
+          <Text ID="507911" Value=""/>
+          <Text ID="507980" Value=""/>
+          <Text ID="507981" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="es">
+          <Text ID="507909" Value=""/>
+          <Text ID="507910" Value=""/>
+          <Text ID="507911" Value=""/>
+          <Text ID="507980" Value=""/>
+          <Text ID="507981" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="507909" Value="56"/>
+          <Index ID="507910" Value="57"/>
+          <Index ID="507911" Value="58"/>
+          <Index ID="507980" Value="59"/>
+          <Index ID="507981" Value="60"/>
+        </IndexMap>
+      </TextGroup>
+      <Controls>
+        <Control ClassId="0x00001007" Name="Numeric_1">
+          <Property Name="AddFractionDigits" Value="1"/>
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="InputMinus" Value="Normal"/>
+          <Property Name="InputNext" Value="Enter"/>
+          <Property Name="Left" Value="32"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="20"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="4"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputLarge]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="170"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gPallete.palCfg.palDimensions.caseWidth]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="80"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtBrightness8">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="25"/>
+          <Property Name="Left" Value="6"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="56"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="177"/>
+          <Property Name="Width" Value="26"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtBrightness9">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="25"/>
+          <Property Name="Left" Value="6"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="57"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="220"/>
+          <Property Name="Width" Value="26"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtBrightness10">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="25"/>
+          <Property Name="Left" Value="6"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelMedium]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="58"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="266"/>
+          <Property Name="Width" Value="26"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_2">
+          <Property Name="AddFractionDigits" Value="1"/>
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="InputMinus" Value="Normal"/>
+          <Property Name="InputNext" Value="Enter"/>
+          <Property Name="Left" Value="32"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="20"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="4"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputLarge]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="216"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gPallete.palCfg.palDimensions.caseLength]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="80"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_3">
+          <Property Name="AddFractionDigits" Value="1"/>
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="InputMinus" Value="Normal"/>
+          <Property Name="InputNext" Value="Enter"/>
+          <Property Name="Left" Value="32"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="20"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="4"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiNumInputLarge]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="262"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gPallete.palCfg.palDimensions.caseHeight]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="80"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateTime1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="22"/>
+          <Property Name="Left" Value="0"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelLarge]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="59"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="139"/>
+          <Property Name="Width" Value="165"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="2"/>
+          <Property Name="Left" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="163"/>
+          <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtDateTime2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="22"/>
+          <Property Name="Left" Value="189"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiLabelLarge]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="60"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="139"/>
+          <Property Name="Width" Value="132"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_3">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="2"/>
+          <Property Name="Left" Value="189"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[shapeLineSeparator]"/>
+          <Property Name="Top" Value="163"/>
+          <Property Name="Width" Value="238"/>
+        </Control>
+        <Control ClassId="0x00001018" Name="Dropdown_1">
+          <Property Name="ButtonsBitmapGroup" Value="None"/>
+          <Property Name="ButtonsPressedBitmapGroup" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="DropdownForeColor" Value="175"/>
+          <Property Name="Font" Value="Source[local].Font[Arial14px]"/>
+          <Property Name="ForeColor" Value="175"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gPallete.palCfg.palDimensions.palleteSizeHmiIdx]"/>
+          <Property Name="InputNext" Value="Disable"/>
+          <Property Name="Left" Value="191"/>
+          <Property Name="LeftBitmap" Value="None"/>
+          <Property Name="LeftTextGroup" Value="None"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxIndex" Value="None"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinIndex" Value="None"/>
+          <Property Name="OptionDatapoint" Value="None"/>
+          <Property Name="RightBitmap" Value="None"/>
+          <Property Name="RightTextGroup" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[appPaletteSizes]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="172"/>
+          <Property Name="Width" Value="236"/>
+        </Control>
+      </Controls>
+      <KeyMapping/>
+    </Layer>
+    <LayerRef Source="Source[local].Layer[paiHmiMenu]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="paiHmiMenu"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Hidden"/>
+      <Property Name="Z-Order" Value="4"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[alertMsg]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="alertMsg"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="5"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[dialogMsg]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="dialogMsg"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="6"/>
+    </LayerRef>
+  </Layers>
+  <MovementOrder>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_1]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_2]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_3]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[Dropdown_1]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+    </MovementEntry>
+  </MovementOrder>
+  <TabSequence>
+    <TabSeqItem Index="0" Value="Source[local].Layer[dialogMsg].Control[Numeric_1]"/>
+    <TabSeqItem Index="1" Value="Source[local].Layer[globalArea].Control[Numeric_3]"/>
+    <TabSeqItem Index="2" Value="Source[local].Layer[globalArea].Control[Numeric_4]"/>
+    <TabSeqItem Index="3" Value="Source[local].Layer[paiHmiTabs8].Control[numEntry6]"/>
+    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
+    <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+    <TabSeqItem Index="8" Value="Source[local].Layer[globalArea].Control[txtLayer_Filename]"/>
+  </TabSequence>
+</Page>

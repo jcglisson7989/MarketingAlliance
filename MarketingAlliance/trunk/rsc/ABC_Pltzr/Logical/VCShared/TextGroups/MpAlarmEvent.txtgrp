@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAlarmEvent">
+  <Property Name="Description" Value="Texts for the event of an alarm - index  0-1 long, index 10-11 short"/>
+  <Property Name="Index" Value="1151"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="463392" Value="Triggered"/>
+    <Text ID="463393" Value="Reset"/>
+    <Text ID="463394" Value="Bypassed"/>
+    <Text ID="463395" Value="Not Bypassed"/>
+    <Text ID="463396" Value="Reset Acknowledged"/>
+    <Text ID="463397" Value="Achnowledged Reset"/>
+    <Text ID="463398" Value="T"/>
+    <Text ID="463399" Value="R"/>
+    <Text ID="463400" Value="B"/>
+    <Text ID="463401" Value="nB"/>
+    <Text ID="463402" Value="RA"/>
+    <Text ID="463403" Value="AR"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="463392" Value="Gekommen"/>
+    <Text ID="463393" Value="Gegangen"/>
+    <Text ID="463394" Value="Gebrückt"/>
+    <Text ID="463395" Value="Entbrückt"/>
+    <Text ID="463396" Value="Resetiert Quittiert"/>
+    <Text ID="463397" Value="Quittiert Resetiert"/>
+    <Text ID="463398" Value="T"/>
+    <Text ID="463399" Value="R"/>
+    <Text ID="463400" Value="B"/>
+    <Text ID="463401" Value="nB"/>
+    <Text ID="463402" Value="RA"/>
+    <Text ID="463403" Value="AR"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="463392" Value=""/>
+    <Text ID="463393" Value=""/>
+    <Text ID="463394" Value=""/>
+    <Text ID="463395" Value=""/>
+    <Text ID="463396" Value=""/>
+    <Text ID="463397" Value=""/>
+    <Text ID="463398" Value=""/>
+    <Text ID="463399" Value=""/>
+    <Text ID="463400" Value=""/>
+    <Text ID="463401" Value=""/>
+    <Text ID="463402" Value=""/>
+    <Text ID="463403" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="463392" Value="0"/>
+    <Index ID="463393" Value="1"/>
+    <Index ID="463394" Value="2"/>
+    <Index ID="463395" Value="3"/>
+    <Index ID="463396" Value="4"/>
+    <Index ID="463397" Value="5"/>
+    <Index ID="463398" Value="10"/>
+    <Index ID="463399" Value="11"/>
+    <Index ID="463400" Value="12"/>
+    <Index ID="463401" Value="13"/>
+    <Index ID="463402" Value="14"/>
+    <Index ID="463403" Value="15"/>
+  </IndexMap>
+</TextGroup>

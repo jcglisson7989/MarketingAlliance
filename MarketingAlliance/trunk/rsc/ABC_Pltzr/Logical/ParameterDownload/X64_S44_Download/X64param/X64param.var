@@ -1,0 +1,24 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: X64param
+ * File: X64param.var
+ * Author: scoccimaroj
+ * Created: July 14, 2010
+ ********************************************************************
+ * Local variables of program X64param
+ ********************************************************************)
+VAR
+	cmdStart : BOOL; (*Start command*)
+	State : USINT; (*state machine state*)
+	i : UINT; (*counter variable*)
+	AsIOAccRead_0 : AsIOAccRead; (*Read function block*)
+	csvSearch : CSV_Search;
+	csvWrite : CSV_WriteFile;
+	csvInit : CSV_Init;
+	csvInitCheckFile : CSV_InitCheckFile;
+	pNames : ARRAY[0..4] OF UDINT;
+	csvStrucMem : UDINT;
+	csvMemLength : UDINT;
+	position : INT;
+END_VAR

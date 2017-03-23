@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="paiHmiMenu">
+  <Property Name="BackColor" Value="246"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="en"/>
+    <TextLayer LanguageId="de"/>
+    <TextLayer LanguageId="es"/>
+    <IndexMap/>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001002" Name="btnMenuLeft0">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[0].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_3]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[0].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="0"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="66"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_0]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuTOP">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.activeTopMenuLF.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_2]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF_TOP]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="100"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_TOP]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuLeft1">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[1].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[1].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="132"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_1]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuLeft2">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[2].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_5]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[2].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="198"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_2]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuLeft3">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[3].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_8]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gCtrl.main.modeAuto]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[3].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="3"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="264"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_3]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuLeft4">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[4].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_20]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[4].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="4"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="330"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_4]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuLeft5">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[5].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_21]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[5].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="5"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="396"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_5]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuLeft7">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[7].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_23]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[7].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="7"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="528"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_7]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuLeft6">
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[6].button.jumpPageId]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_22]"/>
+      <Property Name="Height" Value="68"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[paiHmiPageIcons]"/>
+      <Property Name="PressedBitmapIndex" Value="2"/>
+      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiMain.prv.menuLF[6].button.itemVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_LF]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuTexts]"/>
+      <Property Name="TextIndex" Value="6"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="462"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_LF_6]"/>
+      <Property Name="Width" Value="251"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuRight0">
+      <Property Name="BackColor" Value="51"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiBMGRightMenuIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuIndexRT]"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuIndexRT]"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="ColorMapIndexOffset" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_58]"/>
+      <Property Name="Height" Value="75"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="754"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedColorDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuIndexRT]"/>
+      <Property Name="PressedColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="PressedColorMapIndexOffset" Value="0"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_RT]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuRTMachineMode]"/>
+      <Property Name="TextIndex" Value="0"/>
+      <Property Name="TextIndexDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuIndexRT]"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_RT_TOP]"/>
+      <Property Name="Width" Value="270"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuRight1">
+      <Property Name="BackColor" Value="45"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiBMGRightMenuIcons]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="ColorMapIndexOffset" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_59]"/>
+      <Property Name="Height" Value="75"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="754"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuDisabledItems[0]]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="PressedColorMapIndexOffset" Value="1"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_RT]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuRTMachineMode]"/>
+      <Property Name="TextIndex" Value="0"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="74"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_RT_0]"/>
+      <Property Name="Width" Value="270"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuRight2">
+      <Property Name="BackColor" Value="47"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiBMGRightMenuIcons]"/>
+      <Property Name="BitmapIndex" Value="1"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="ColorMapIndexOffset" Value="2"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_60]"/>
+      <Property Name="ForeColor" Value="45"/>
+      <Property Name="Height" Value="75"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="754"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuDisabledItems[1]]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="PressedColorMapIndexOffset" Value="2"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_RT]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuRTMachineMode]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="147"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_RT_1]"/>
+      <Property Name="Width" Value="270"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnMenuRight3">
+      <Property Name="BackColor" Value="10"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[paiBMGRightMenuIcons]"/>
+      <Property Name="BitmapIndex" Value="2"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSimulationValue" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="ColorMapIndexOffset" Value="2"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_61]"/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="75"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="754"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuDisabledItems[2]]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedColorMap" Value="Source[local].ColorMap[paiCMRightMenu]"/>
+      <Property Name="PressedColorMapIndexOffset" Value="3"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuVisible]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiBTN_Menu_RT]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[paiTGMenuRTMachineMode]"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="221"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[paiHMI_KEY_MENU_RT_2]"/>
+      <Property Name="Width" Value="270"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="0"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_1">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_2">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="2"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_3">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="3"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_4">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="4"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_5">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="5"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_6">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="6"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_7">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="7"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_8">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="8"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="paiHMI_KEY_MENU_LF_9">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="9"/>
+          <Property Name="ValueDatapoint" Value="None"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>

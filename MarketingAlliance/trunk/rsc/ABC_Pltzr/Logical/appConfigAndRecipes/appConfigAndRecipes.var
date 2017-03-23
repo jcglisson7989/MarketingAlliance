@@ -1,0 +1,22 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Package: ConfigAndRecipes
+ * File: ConfigAndRecipes.var
+ * Author: goran_2
+ * Created: August 06, 2011
+ ********************************************************************
+ * Variables of package ConfigAndRecipes
+ ********************************************************************)
+VAR RETAIN
+	gRecipe : paiRecipeApp_typ := (0);
+END_VAR
+VAR
+	gPVSerDesMgr : paiPVSerDesMgr_typ := (0);
+	gSerDesHMI_gConfigApp : paiPVSerDesHMI_typ := (0);
+	gSerDesHMI_gPalletCfg : paiPVSerDesHMI_typ := (0);
+	gSerDesMem_gConfigApp : configApp_typ := (0);
+	gSerDesMem_gLayerEditor : palleteCfgLayer_typ := (0);
+	gSerDesMem_gPallete_palCfg : palleteCfg_typ := (0);
+	gDummy : UDINT := 0;
+END_VAR

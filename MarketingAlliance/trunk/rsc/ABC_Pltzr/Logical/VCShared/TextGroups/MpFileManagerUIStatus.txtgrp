@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpFileManagerUIStatus">
+  <Property Name="Description" Value="Status text for FileManagerUI"/>
+  <Property Name="Index" Value="1019"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="463569" Value="IDLE"/>
+    <Text ID="463570" Value="CHANGE PAGE"/>
+    <Text ID="463571" Value="CHANGE FOLDER"/>
+    <Text ID="463572" Value="CHANGE DEVICE"/>
+    <Text ID="463573" Value="REFRESH"/>
+    <Text ID="463574" Value="CREATE"/>
+    <Text ID="463575" Value="ERROR"/>
+    <Text ID="463576" Value="RENAME"/>
+    <Text ID="463577" Value="DELETE"/>
+    <Text ID="463578" Value="COPY"/>
+    <Text ID="463579" Value="CUT"/>
+    <Text ID="463580" Value="PASTE"/>
+    <Text ID="463581" Value="SORT"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="463569" Value="IDLE"/>
+    <Text ID="463570" Value="SEITE WECHSELN"/>
+    <Text ID="463571" Value="ORDNER WECHSELN"/>
+    <Text ID="463572" Value="GERÄT WECHSELN"/>
+    <Text ID="463573" Value="REFRESH"/>
+    <Text ID="463574" Value="ANLEGEN"/>
+    <Text ID="463575" Value="FEHLER"/>
+    <Text ID="463576" Value="UMBENENNEN"/>
+    <Text ID="463577" Value="LÖSCHEN"/>
+    <Text ID="463578" Value="KOPIEREN"/>
+    <Text ID="463579" Value="AUSSCHNEIDEN"/>
+    <Text ID="463580" Value="EINFÜGEN"/>
+    <Text ID="463581" Value="SORTIEREN"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="463569" Value=""/>
+    <Text ID="463570" Value=""/>
+    <Text ID="463571" Value=""/>
+    <Text ID="463572" Value=""/>
+    <Text ID="463573" Value=""/>
+    <Text ID="463574" Value=""/>
+    <Text ID="463575" Value=""/>
+    <Text ID="463576" Value=""/>
+    <Text ID="463577" Value=""/>
+    <Text ID="463578" Value=""/>
+    <Text ID="463579" Value=""/>
+    <Text ID="463580" Value=""/>
+    <Text ID="463581" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="463569" Value="0"/>
+    <Index ID="463570" Value="2"/>
+    <Index ID="463571" Value="3"/>
+    <Index ID="463572" Value="4"/>
+    <Index ID="463573" Value="1"/>
+    <Index ID="463574" Value="5"/>
+    <Index ID="463575" Value="99"/>
+    <Index ID="463576" Value="6"/>
+    <Index ID="463577" Value="7"/>
+    <Index ID="463578" Value="8"/>
+    <Index ID="463579" Value="9"/>
+    <Index ID="463580" Value="10"/>
+    <Index ID="463581" Value="11"/>
+  </IndexMap>
+</TextGroup>

@@ -1,9 +1,9 @@
 VAR CONSTANT
-	svnIsInVCSSytem : STRING[80] := 'not versioned';
+	svnIsInVCSSytem : STRING[80] := 'versioned';
 	svnURL : STRING[80] := 'http://99.33.108.51/Internal/MarketingAlliance/trunk/software/AS';
-	svnCompileTime : STRING[80] := '2017/03/22 14:26:25';
-	svnPullDate : STRING[80] := '2017/03/22 12:36:58';
+	svnCompileTime : STRING[80] := '2017/03/23 11:47:36';
+	svnPullDate : STRING[80] := '2017/03/23 10:39:12';
 	svnContainsModifications : STRING[80] := 'Modified';
-	svnRevision : STRING[80] := 'R710';
-	svnRange : STRING[80] := '710';
+	svnRevision : STRING[80] := 'R713';
+	svnRange : STRING[80] := '711:713';
 END_VAR

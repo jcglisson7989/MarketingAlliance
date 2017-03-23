@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.2.134"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="paiBMGRightMenuIcons">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="21"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="1181" Value="Source[local].Bitmap[home]"/>
+    <BitmapRef ID="1182" Value="Source[local].Bitmap[right_pressed]"/>
+    <BitmapRef ID="1183" Value="Source[local].Bitmap[left_pressed]"/>
+    <BitmapRef ID="1184" Value="Source[local].Bitmap[Setting]"/>
+    <BitmapRef ID="1185" Value="Source[local].Bitmap[warning]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="1181" Value="0"/>
+    <Index ID="1182" Value="1"/>
+    <Index ID="1183" Value="2"/>
+    <Index ID="1184" Value="3"/>
+    <Index ID="1185" Value="4"/>
+  </IndexMap>
+</BitmapGroup>
