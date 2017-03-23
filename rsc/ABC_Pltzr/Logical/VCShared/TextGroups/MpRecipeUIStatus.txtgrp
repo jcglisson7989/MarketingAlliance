@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeUIStatus">
+  <Property Name="Description" Value="Status text for RecipeUI"/>
+  <Property Name="Index" Value="1018"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="464015" Value="IDLE"/>
+    <Text ID="464016" Value="LOAD"/>
+    <Text ID="464017" Value="SAVE"/>
+    <Text ID="464018" Value="CREATE"/>
+    <Text ID="464019" Value="REFRESH"/>
+    <Text ID="464020" Value="NOTIFY"/>
+    <Text ID="464021" Value="ERROR"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="464015" Value="IDLE"/>
+    <Text ID="464016" Value="LADEN"/>
+    <Text ID="464017" Value="SPEICHERN"/>
+    <Text ID="464018" Value="ANLEGEN"/>
+    <Text ID="464019" Value="REFRESH"/>
+    <Text ID="464020" Value="BENACHRICHTIGEN"/>
+    <Text ID="464021" Value="FEHLER"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="464015" Value=""/>
+    <Text ID="464016" Value=""/>
+    <Text ID="464017" Value=""/>
+    <Text ID="464018" Value=""/>
+    <Text ID="464019" Value=""/>
+    <Text ID="464020" Value=""/>
+    <Text ID="464021" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="464015" Value="0"/>
+    <Index ID="464016" Value="1"/>
+    <Index ID="464017" Value="2"/>
+    <Index ID="464018" Value="3"/>
+    <Index ID="464019" Value="4"/>
+    <Index ID="464020" Value="5"/>
+    <Index ID="464021" Value="99"/>
+  </IndexMap>
+</TextGroup>

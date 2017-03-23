@@ -1,0 +1,7 @@
+VAR
+	fileRWBuffer : STRING[50000] := '';
+	cfgFilename : STRING[63] := '';
+END_VAR
+VAR RETAIN
+	gMagicRecipe : UDINT := 0;
+END_VAR

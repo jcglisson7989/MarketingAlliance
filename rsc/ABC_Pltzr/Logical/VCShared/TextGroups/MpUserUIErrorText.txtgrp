@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpUserUIErrorText">
+  <Property Name="Description" Value="Error text for UserUI"/>
+  <Property Name="Index" Value="1010"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="464131" Value="Incorrect Password"/>
+    <Text ID="464132" Value="User does not exist"/>
+    <Text ID="464133" Value="User with same name exists already"/>
+    <Text ID="464134" Value="Login-Token invalid"/>
+    <Text ID="464135" Value="You are not logged in"/>
+    <Text ID="464136" Value="Password change is required"/>
+    <Text ID="464137" Value="The given user is locked (Unlock by Admin necessary)"/>
+    <Text ID="464138" Value="Password doesn't have required security \n(minimum length 5 characters &amp; alpha numeric)"/>
+    <Text ID="464139" Value="Given user-group does not exist"/>
+    <Text ID="464140" Value="Insufficient user-rights"/>
+    <Text ID="464141" Value="Could not delete user (internal error)"/>
+    <Text ID="464142" Value="Login ID with same name or ID exists already"/>
+    <Text ID="464143" Value="New password is identical to old one - rejected"/>
+    <Text ID="464144" Value="Password change required before any action can be performed"/>
+    <Text ID="464145" Value="Password confirmation not correct"/>
+    <Text ID="464146" Value="To many users are logged in - no further logins possible"/>
+    <Text ID="464147" Value="User-right index exceeds maximum available"/>
+    <Text ID="464148" Value="Given admin has no admin rights"/>
+    <Text ID="464149" Value="The given user is already logged in (no new login!)"/>
+    <Text ID="464150" Value="User is not logged in"/>
+    <Text ID="464151" Value="User is already logged in"/>
+    <Text ID="464152" Value="No User-Ident given"/>
+    <Text ID="464153" Value="No Password given"/>
+    <Text ID="464154" Value="Error occurred when imporint the data"/>
+    <Text ID="464155" Value="Could not open import file"/>
+    <Text ID="464156" Value="Could not save export-file"/>
+    <Text ID="464157" Value="Given group index is not correct"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="464131" Value="Passwort nicht korrekt"/>
+    <Text ID="464132" Value="Benutzer existiert nicht"/>
+    <Text ID="464133" Value="Benutzer mit selbem Namen bereits registriert"/>
+    <Text ID="464134" Value="Benutzer-Identifikation nicht gültig"/>
+    <Text ID="464135" Value="Sie sind nicht angemeldet"/>
+    <Text ID="464136" Value="Password change is required"/>
+    <Text ID="464137" Value="The given user is locked (Unlock by Admin necessary)"/>
+    <Text ID="464138" Value="Password hat nicht die erforderlich Sicherheit \n(minimum Laenge 5 Zeichen &amp; Alpha-Numerisch)"/>
+    <Text ID="464139" Value="Given user-group does not exist"/>
+    <Text ID="464140" Value="Insufficient user-rights"/>
+    <Text ID="464141" Value="Could not delete user (internal error)"/>
+    <Text ID="464142" Value="Login ID with same name or ID exists already"/>
+    <Text ID="464143" Value="New password is identical to old one - rejected"/>
+    <Text ID="464144" Value="Password change required before any action can be performed"/>
+    <Text ID="464145" Value="Password confirmation not correct"/>
+    <Text ID="464146" Value="To many users are logged in - no further logins possible"/>
+    <Text ID="464147" Value="User-right index exceeds maximum available"/>
+    <Text ID="464148" Value="Given admin has no admin rights"/>
+    <Text ID="464149" Value="The given user is already logged in (no new login!)"/>
+    <Text ID="464150" Value="User is not logged in"/>
+    <Text ID="464151" Value="User is already logged in"/>
+    <Text ID="464152" Value="No User-Ident given"/>
+    <Text ID="464153" Value="No Password given"/>
+    <Text ID="464154" Value="Error occurred when imporint the data"/>
+    <Text ID="464155" Value="Could not open import file"/>
+    <Text ID="464156" Value="Could not save export-file"/>
+    <Text ID="464157" Value="Given group index is not correc"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="464131" Value=""/>
+    <Text ID="464132" Value=""/>
+    <Text ID="464133" Value=""/>
+    <Text ID="464134" Value=""/>
+    <Text ID="464135" Value=""/>
+    <Text ID="464136" Value=""/>
+    <Text ID="464137" Value=""/>
+    <Text ID="464138" Value=""/>
+    <Text ID="464139" Value=""/>
+    <Text ID="464140" Value=""/>
+    <Text ID="464141" Value=""/>
+    <Text ID="464142" Value=""/>
+    <Text ID="464143" Value=""/>
+    <Text ID="464144" Value=""/>
+    <Text ID="464145" Value=""/>
+    <Text ID="464146" Value=""/>
+    <Text ID="464147" Value=""/>
+    <Text ID="464148" Value=""/>
+    <Text ID="464149" Value=""/>
+    <Text ID="464150" Value=""/>
+    <Text ID="464151" Value=""/>
+    <Text ID="464152" Value=""/>
+    <Text ID="464153" Value=""/>
+    <Text ID="464154" Value=""/>
+    <Text ID="464155" Value=""/>
+    <Text ID="464156" Value=""/>
+    <Text ID="464157" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="464131" Value="24576"/>
+    <Index ID="464132" Value="24577"/>
+    <Index ID="464133" Value="24578"/>
+    <Index ID="464134" Value="24579"/>
+    <Index ID="464135" Value="24580"/>
+    <Index ID="464136" Value="24594"/>
+    <Index ID="464137" Value="24584"/>
+    <Index ID="464138" Value="24583"/>
+    <Index ID="464139" Value="24582"/>
+    <Index ID="464140" Value="24581"/>
+    <Index ID="464141" Value="24593"/>
+    <Index ID="464142" Value="24592"/>
+    <Index ID="464143" Value="24591"/>
+    <Index ID="464144" Value="24585"/>
+    <Index ID="464145" Value="24602"/>
+    <Index ID="464146" Value="24586"/>
+    <Index ID="464147" Value="24590"/>
+    <Index ID="464148" Value="24587"/>
+    <Index ID="464149" Value="24588"/>
+    <Index ID="464150" Value="24589"/>
+    <Index ID="464151" Value="24597"/>
+    <Index ID="464152" Value="24599"/>
+    <Index ID="464153" Value="24600"/>
+    <Index ID="464154" Value="24604"/>
+    <Index ID="464155" Value="24605"/>
+    <Index ID="464156" Value="24606"/>
+    <Index ID="464157" Value="24595"/>
+  </IndexMap>
+</TextGroup>

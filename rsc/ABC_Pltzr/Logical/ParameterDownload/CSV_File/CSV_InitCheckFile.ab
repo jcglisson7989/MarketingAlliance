@@ -1,0 +1,32 @@
+FUNCTION_BLOCK CSV_InitCheckFile
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer Industrie Elektronik GmbH
+ ********************************************************************
+ * Library: CSV_File
+ * File: CSV_InitCheckFile
+ * Author: kreidlm
+ * Created: November 28, 2006
+ ********************************************************************
+ * Implementation of library CSV_File
+ ********************************************************************)
+
+if (enable = 1) then
+    AsMemPartCreate_0.enable = 1
+    AsMemPartCreate_0.len = MemCounter + 128 (* + Overhead und Reserve *)
+    AsMemPartCreate_0 FUB AsMemPartCreate()
+    if (AsMemPartCreate_0.status = 0) then
+        AsMemPartAlloc_0.enable = 1
+        AsMemPartAlloc_0.ident = AsMemPartCreate_0.ident
+        AsMemPartAlloc_0.len = MemCounter
+        AsMemPartAlloc_0 FUB AsMemPartAlloc()
+        status = AsMemPartAlloc_0.status
+        pFileBuffer = AsMemPartAlloc_0.mem
+        FileBufferSize =  AsMemPartAlloc_0.len
+    else
+    	status = AsMemPartCreate_0.status
+    endif
+ else
+ 	status = ERROR_ENABLE_NOT_SET
+ endif
+
+END_FUNCTION_BLOCK

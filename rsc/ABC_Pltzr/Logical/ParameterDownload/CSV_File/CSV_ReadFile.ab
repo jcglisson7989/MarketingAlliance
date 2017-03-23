@@ -1,0 +1,1257 @@
+FUNCTION_BLOCK CSV_ReadFile
+;*****************************************************************
+;FUB: 			CSV_ReadFile
+;*****************************************************************
+;Discription:
+;	This FUB reads the Values from a CSV-File.
+;
+;Parameter:
+;
+;Author:	Georg Kreil
+;			B&R Eggelsberg
+;
+;History:	V0.01 - 23 June 2003
+;					created
+;			V0.01.1 - 4 July 2003
+;					no changes
+;			V0.01.2 - 8 July 2003
+;					Error with array-structures corrected
+;			V0.01.3 - 14 July 2003
+;					Error with array-structures corrected
+;			V0.01.4 - 15 July 2003
+;					Error by empty rows corrected
+;			V0.01.5 - 17 July 2003
+;					Error, when variable starts with array-structure, corrected
+;			V0.01.6 - 21 July 2003
+;					strings can have all possible character without ";"
+;			V0.01.7 - 7 August 2003
+;					no changes
+;			V0.01.8 - 8 August 2003
+;					no changes
+;			V0.01.9 - 11 August 2003
+;					Value error corrected
+;			V0.02.0
+;					no changes
+;			V0.02.1
+;					no changes
+;			V0.02.2 - 11 August 2003
+;					Datatypcontrol enable/disable
+;			V0.02.3
+;					no changes
+;			V0.02.4 - 4 November 2003
+;					Datatyperror in loop corrected
+;			V0.02.5 - 13 November 2003
+;					Real values error corrected (5e-7)
+;			V0.02.6 - 14 November 2003
+;					dynamic varible now possible
+;			V0.02.7 - 24 November 2003
+;					bugfixes
+;			V0.02.8 - 27 November 2003
+;					changing 80 characters per cyclic to one row per cyclic
+;					different bugfixes
+;			V0.03.1 - 21 January 2004
+;					using the created strings from FUB CSV_ListFile with date
+;			V0.03.3 - 12 May 2004
+;					array behind array-structure corrected
+;			V0.03.4 - 14 May 2004
+;					changed the UDINT-conversion from STRING (see CSV_SEARCH)
+;					corrected the STRING-datatypcontrol (1Byte error)
+;			V0.03.9 - 2 August 2004
+;					correction "only array" and "only array in struct"
+;
+;*****************************************************************
+temp_status = temp_status
+Options = Options
+
+
+Internal.CharPerCyclic= 80		; number of character
+
+loop Internal.y=0 to 10 do
+	select Internal.Step
+
+		;##########################################################################################
+		state WAIT
+		;##########################################################################################
+
+			Internal.FileIdent= 0
+			Internal.temp_status=0
+			VarCnt = 0
+			Internal.Separator = Separator
+
+			if( (Internal.Separator = '.') or (Internal.Separator = '[') or (Internal.Separator = ']') or (Internal.Separator <= 32) or ( (Internal.Separator >= '0') and (Internal.Separator <= '9') ) or ( (Internal.Separator >= 'a') and (Internal.Separator <= 'z') ) or ( (Internal.Separator >= 'A') and (Internal.Separator <= 'Z') ) ) then
+				status = ERROR_WRONG_SEPARATOR
+				exitif(1=1)
+			endif
+
+			strcpy(adr(Internal.FileName),pFileName)
+			if (Internal.y=0) then
+				if( strlen(adr(Internal.FileName)) <> 0 ) then
+					; control, if the filename has the right extension
+					loop Internal.i=0 to sizeof(Internal.FileName) do
+
+						Dyn_Usint access (adr(Internal.FileName)+Internal.i)
+
+						; this is for using the created strings from FUB CSV_ListFile
+						if (Dyn_Usint = ' ') then
+							Dyn_Usint= 0
+							; add extension to filename
+							strcpy((adr(Internal.FileName)+Internal.i),".CSV")
+							exitif(1=1)
+						endif
+
+						if(Dyn_Usint = '.')then
+							if ( strcmp((adr(Internal.FileName)+Internal.i),".CSV") = 0 ) or ( strcmp((adr(Internal.FileName)+Internal.i),".csv") = 0 ) then
+								exitif(1=1)
+							else
+								; replace wrong extension
+								strcpy((adr(Internal.FileName)+Internal.i),".CSV")
+								exitif(1=1)
+							endif
+						else if(Dyn_Usint = 0) then
+							; add extension to filename
+							strcpy((adr(Internal.FileName)+Internal.i),".CSV")
+							exitif(1=1)
+						endif
+
+					endloop
+					Internal.ArrayStructureStarts= 0
+					status= 65535
+					;Pathname angegeben
+					if(pPath <> 0)then
+						strcpy(adr(Internal.Path),pPath)
+						; Pathname bearbeiten
+						if( strlen(adr(Internal.Path)) <> 0 )then
+
+						; control, if the filename has the right extension
+							loop Internal.i=0 to sizeof(Internal.Path) do
+
+								Dyn_Usint access (adr(Internal.Path) + Internal.i)
+								 if( ((Dyn_Usint >= '0' ) and ( Dyn_Usint <= '9' )) or ((Dyn_Usint >= 'A') and (Dyn_Usint <= 'Z')) or ((Dyn_Usint >= 'a') and (Dyn_Usint <= 'z')) or ( Dyn_Usint = '_') or ( Dyn_Usint = '-') or ( Dyn_Usint = '/') or ( Dyn_Usint = '\') or ( Dyn_Usint = 0) )then
+
+									if(Dyn_Usint = 0) then
+										Dyn_Usint access (adr(Internal.Path) + Internal.i - 1)
+										if(Dyn_Usint <> '\') and (Dyn_Usint <> '/')then
+											strcat( adr(Internal.Path), adr("/") )
+										endif
+										exitif(1=1)
+									endif
+									status= 65535
+								else
+									status= INVALID_CHARACTER
+									exitif(1=1)
+								endif
+							endloop
+							strcat( adr(Internal.Path), adr(Internal.FileName) )
+							strcpy( adr(Internal.FileName), adr(Internal.Path) )
+						endif
+					endif
+
+				else
+					status= NO_FILENAME
+				endif
+			endif
+
+			when (1=1) and (Internal.y=0) do
+			next FILE_OPEN
+
+		;##########################################################################################
+		state FILE_OPEN
+		;##########################################################################################
+
+			FileOpen_CSV.enable= 1
+			FileOpen_CSV.pDevice= pDevice
+			FileOpen_CSV.pFile= adr(Internal.FileName)
+			FileOpen_CSV.mode= 2	;FILE_RW
+			FileOpen_CSV FUB FileOpen()
+
+			; no error
+			when (FileOpen_CSV.status = 0) do
+				Internal.FileIdent= FileOpen_CSV.ident
+				; allocate memory, to copy the whole file
+				Internal.status_alloc= TMP_alloc(FileOpen_CSV.filelen,adr(Internal.pFileData))
+				strcpy(adr(Internal.FileName),"")
+				status= 65535
+			next FILE_READ
+
+			; file is opening
+			when (FileOpen_CSV.status = 65535) do
+				status= FileOpen_CSV.status
+			next FILE_OPEN
+
+			;error durring
+			when (FileOpen_CSV.status <> 0) and (FileOpen_CSV.status <> 65535) do
+				status= FileOpen_CSV.status
+			next WAIT
+
+		;##########################################################################################
+		state FILE_READ
+		;##########################################################################################
+
+			if( (Internal.status_alloc = 0) and (FileOpen_CSV.status = 0) )then
+				FileRead_CSV.enable= 1
+				FileRead_CSV.ident= Internal.FileIdent
+				FileRead_CSV.offset= 0
+				FileRead_CSV.pDest= Internal.pFileData
+				FileRead_CSV.len= FileOpen_CSV.filelen
+				FileRead_CSV FUB FileRead()
+			endif
+
+			when  (Internal.status_alloc <> 0) do
+				status= Internal.status_alloc
+			next WAIT
+
+			when (FileRead_CSV.status <> 0) and  (FileRead_CSV.status <> 65535) do
+				status= FileRead_CSV.status
+			next WAIT
+
+			when (FileRead_CSV.status = 65535) do
+				status= FileRead_CSV.status
+			next FILE_READ
+
+			when (FileRead_CSV.status = 0) do
+				Internal.Offset= 0
+				Internal.OffsetOld= 0
+				Internal.i= 0
+				strcpy(adr(Internal.Value),"")
+				strcpy(adr(Internal.TmpName),"")
+				strcpy(adr(Internal.StructName),"")
+				strcpy(adr(Internal.DataTyp),"")
+				strcpy(adr(Internal.DateTime),"")
+				strcpy(adr(Internal.VarName),"")
+				Internal.OnlyArray= 0
+				Internal.OnlyArrayInStruct= 0
+				LineCnt= 0
+				status= 65535
+				ErrorNumber = 0
+				ErrorLine = 0
+				ErrorCnt = 0
+			next FILE_CLOSE
+
+
+		;##########################################################################################
+		state FILE_CLOSE
+		;##########################################################################################
+
+		 	FileClose_CSV.enable= 1
+			FileClose_CSV.ident= Internal.FileIdent
+			FileClose_CSV FUB FileClose()
+
+			; Fehler beim Schliessen
+			when (FileClose_CSV.status <> 0) and (FileClose_CSV.status <> 65535) do
+				status= FileClose_CSV.status
+			next WAIT
+
+			; kein Fehler aufgetreten
+			when (FileClose_CSV.status = 0) do
+				status= 65535
+			next SEARCH_STRUCT_NAME
+
+			; noch nicht fertig
+			when (FileClose_CSV.status = 65535) do
+				status= FileClose_CSV.status
+			next FILE_CLOSE
+
+		;##########################################################################################
+		state SEARCH_STRUCT_NAME
+		;##########################################################################################
+
+		when (Internal.Offset >= FileOpen_CSV.filelen) or (status <> 65535) do
+		next TEMP_FREE
+
+		loop
+			SearchChar access Internal.pFileData + Internal.Offset
+			TestUsint = SearchChar
+
+			if( SearchChar = 13 )then
+				LineCnt= LineCnt+1
+			endif
+
+			if( SearchChar = '/' ) and (Internal.NameEntered <> 2) then
+				Internal.HeaderLine= 1
+			; date and time
+			else if( (((SearchChar >= '0' ) and ( SearchChar <= '9' )) or ((SearchChar >= 'A') and (SearchChar <= 'Z')) or ((SearchChar >= 'a') and (SearchChar <= 'z')) or ( SearchChar = '.') or (SearchChar = ':') or (SearchChar = ' ') ) and (strcmp(adr(Internal.DataTyp),"DATE_AND_TIME") = 0 ) and (Internal.NameEntered = 2) and (Internal.HeaderLine = 0) )then			; neue Zeile
+				Internal.DateTime[Internal.j]= SearchChar
+				Internal.j= Internal.j+1
+				Internal.DateAndTime= 1
+			; only numbers
+			else if( (((SearchChar >= '0' ) and ( SearchChar <= '9' )) or ( SearchChar = '.')  or ( SearchChar = 'E') or ( SearchChar = 'e') or ( SearchChar = '-')) and (Internal.NameEntered = 2) and (Internal.HeaderLine = 0) )then			; neue Zeile
+				Internal.Value[Internal.j]= SearchChar
+				Internal.j= Internal.j+1
+			; Strings
+	;		else if( (((SearchChar >= '0' ) and ( SearchChar <= '9' )) or ((SearchChar >= 'A') and (SearchChar <= 'Z')) or((SearchChar >= 'a') and (SearchChar <= 'z'))  or ( SearchChar = '.') or ( SearchChar = ' ')) and (Internal.NameEntered = 2) and (strcmp(adr(Internal.DataTyp),"STRING") = 0) and (Internal.HeaderLine = 0) )then			; neue Zeile
+	;		else if( (((SearchChar >= 33 ) and ( SearchChar <= 58 )) or ((SearchChar >= 60 ) and ( SearchChar <= 126 )) or ( SearchChar = ' ') ) and (Internal.NameEntered = 2) and (strcmp(adr(Internal.DataTyp),"STRING") = 0) and (Internal.HeaderLine = 0) )then			; neue Zeile
+;			alle sinnvollen Zeichen zulassen, auch Sonderzeichen
+			else if( (SearchChar >= 32 ) and ( SearchChar <= 126 ) and (Internal.NameEntered = 2) and (strcmp(adr(Internal.DataTyp),"STRING") = 0) and (Internal.HeaderLine = 0) )then			; neue Zeile
+				Internal.Value[Internal.j]= SearchChar
+				Internal.j= Internal.j+1
+			else if( ((SearchChar >= 'A') and (SearchChar <= 'Z')) or ((SearchChar >= 'a') and (SearchChar <= 'z')) or ((SearchChar >= '0' ) and ( SearchChar <= '9' )) or (SearchChar = '.') or (SearchChar = ':') or (SearchChar = '*') or (SearchChar = '[') or (SearchChar = ']') or (SearchChar = '_') and (Internal.HeaderLine = 0) )then
+				Internal.TmpName[Internal.i]= SearchChar
+				Internal.i= Internal.i+1
+			else if( SearchChar = 13 ) or ( SearchChar = 10 )  then			; neue Zeile
+				SearchChar access Internal.pFileData + Internal.Offset+1
+				TestUsint = SearchChar
+				if( SearchChar = 10) or ( SearchChar = 13 ) then
+	;				LineCnt= LineCnt+1
+					if(Internal.NameEntered = 1) then
+						Internal.TmpName[Internal.i]= 0
+						Internal.i= 0
+						strcpy(adr(Internal.DataTyp),adr(Internal.TmpName))
+					endif
+					Internal.Value[Internal.j]= 0
+					Internal.DateTime[Internal.j]= 0
+					Internal.i= 0
+					Internal.j= 0
+					Internal.TmpName[Internal.i]= 0
+					Internal.NameEntered= 0
+					Internal.HeaderLine= 0
+					inc(Internal.Offset)
+					exitif(strlen(adr(Internal.StructName)) <> 0)
+	;				exitif(1=1)
+				else
+	;				LineCnt= LineCnt+1
+					if(Internal.NameEntered = 1) then
+						Internal.TmpName[Internal.i]= 0
+						Internal.i= 0
+						strcpy(adr(Internal.DataTyp),adr(Internal.TmpName))
+					endif
+					Internal.Value[Internal.j]= 0
+					Internal.DateTime[Internal.j]= 0
+					Internal.i= 0
+					Internal.j= 0
+					Internal.TmpName[Internal.i]= 0
+					Internal.NameEntered= 0
+					Internal.HeaderLine= 0
+					exitif(strlen(adr(Internal.StructName)) <> 0)
+	;				exitif(1=1)
+				endif
+			; the structure name was readed
+			else if( SearchChar = Internal.Separator) and (Internal.NameEntered = 0) and (Internal.HeaderLine = 0) then		; neuer Name
+				Internal.TmpName[Internal.i]= 0
+				Internal.i= 0
+				strcpy(adr(Internal.StructName),adr(Internal.TmpName))
+				Internal.NameEntered= 1
+			; dataype was readed
+			else if( SearchChar = Internal.Separator) and (Internal.NameEntered = 1) and (Internal.HeaderLine = 0) then		; neuer Datentyp
+				Internal.TmpName[Internal.i]= 0
+				Internal.i= 0
+				strcpy(adr(Internal.DataTyp),adr(Internal.TmpName))
+				Internal.NameEntered= 2
+			; value was readed
+			else if( SearchChar = Internal.Separator) and (Internal.NameEntered = 2) and (Internal.HeaderLine = 0) then		; weitere Spalten ignorieren
+				Internal.TmpName[Internal.j]= 0
+				Internal.NameEntered= 3
+
+			else if( SearchChar = ' ') and (Internal.NameEntered = 0) and (Internal.HeaderLine = 0) then		; Leerzeichen
+				Internal.SpacesCounter= Internal.SpacesCounter+1
+			endif
+			exitif(Internal.Offset >= FileOpen_CSV.filelen+1)
+			inc(Internal.Offset)
+		endloop
+
+		Internal.Offset= Internal.Offset+1
+		Internal.OffsetOld= Internal.Offset
+		memcpy(adr(Internal.TmpDataTyp),adr(Internal.DataTyp),5)
+		Internal.TmpDataTyp[5]= 0
+
+;		when (RowNotOnEnd = 1) do
+;			status= 65535
+;		next SEARCH_STRUCT_NAME
+
+		; is it a dynamic variable
+		if(Internal.StructName[0] = '*')then
+			Internal.DynamicVariable= 1
+		else
+			Internal.DynamicVariable= 0
+		endif
+
+		;######################################################
+		; Correction 15.July 2003
+		when ( strlen(adr(Internal.StructName)) = 0  )do
+			status= 65535
+		next SEARCH_STRUCT_NAME
+		; Correction 15.July 2003
+		;######################################################
+
+		when (Internal.HeaderLine = 1)do
+			status= 65535
+		next SEARCH_STRUCT_NAME
+
+		;######################################################
+		; Correction 17.July 2003
+		when( strcmp(adr(Internal.DataTyp),"ARRAY_OF_STRUCTURES") = 0 ) do
+			loop Internal.i=strlen(adr(Internal.StructName)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.StructName)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					Part=1
+					exitif(1=1)
+				endif
+			endloop
+			if(	Part = 0 )then
+				Internal.ArrayStructureStarts= 1
+				strcpy(adr(Internal.StructName),"")
+				Internal.i= 0
+				Internal.SpacesCounter= 0
+			else
+				strcat(adr(Internal.StructName),adr(Internal.VarName))
+				Internal.i= 0
+				Internal.SpacesCounter= 0
+				Part= 0
+				status= 65535
+			endif
+		next SEARCH_VAR_NAMES
+
+	;	when( ( strcmp(adr(Internal.DataTyp),"STRUCTURE") = 0 ) or ( strcmp(adr(Internal.DataTyp),"ARRAY_OF_STRUCTURES") = 0 ) ) do
+		when ( strcmp(adr(Internal.DataTyp),"STRUCTURE") = 0 ) do
+		; Correction 17.July 2003
+		;######################################################
+			Internal.level= 2
+			loop Internal.i=0 to strlen(adr(Internal.StructName)) do
+				SearchChar access adr(Internal.StructName)+Internal.i
+				if(SearchChar ='.') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar= 0
+					exitif(1=1)
+				else if(SearchChar =']') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar access adr(Internal.StructName)+Internal.Merker
+					SearchChar= 0
+					exitif(1=1)
+				else if (SearchChar ='.') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				else if (SearchChar =']') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				endif
+			endloop
+			Internal.i=0
+
+			strcat(adr(Internal.StructName),adr(Internal.VarName))
+
+			Internal.SpacesCounter= 0
+			status= 65535
+		next SEARCH_VAR_NAMES
+
+		when(strcmp(adr(Internal.TmpDataTyp),"ARRAY") = 0 ) do
+			Internal.OnlyArray= 1
+			loop Internal.i=strlen(adr(Internal.StructName)) downto 0 do
+				SearchChar access adr(Internal.StructName) + Internal.i
+				if(SearchChar ='.')then
+					SearchChar = 0
+					Internal.OnlyArray= 0
+					Internal.OnlyArrayInStruct= 1
+					exitif(1=1)
+				endif
+			endloop
+
+			Internal.i=0
+			status= 65535
+		next SEARCH_VAR_NAMES
+
+		when( 1=1 ) do
+			Internal.level= 2
+			loop Internal.i=0 to strlen(adr(Internal.StructName)) do
+				SearchChar access adr(Internal.StructName)+Internal.i
+				if(SearchChar ='.') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar= 0
+					exitif(1=1)
+				else if(SearchChar =']') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar access adr(Internal.StructName)+Internal.Merker
+					SearchChar= 0
+					exitif(1=1)
+				else if (SearchChar ='.') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				else if (SearchChar =']') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				endif
+			endloop
+			Internal.i=0
+			strcat(adr(Internal.StructName),adr(Internal.VarName))
+
+			Internal.SpacesCounter= 0
+			status= 65535
+		next SET_VARIABLE
+
+		;##########################################################################################
+		state SEARCH_VAR_NAMES
+		;##########################################################################################
+
+		when (Internal.Offset >= FileOpen_CSV.filelen) or (status <> 65535) do
+		next TEMP_FREE
+
+		loop
+			SearchChar access Internal.pFileData + Internal.Offset
+			TestUsint = SearchChar
+
+			if( LineCnt = 64 )then
+				LineCnt = LineCnt
+			endif
+
+			if( SearchChar = 13 )then
+				LineCnt= LineCnt+1
+			endif
+
+			if( SearchChar = '/' ) and (Internal.NameEntered <> 2) then
+				Internal.HeaderLine= 1
+			; Zeit/Datum
+			else if( (((SearchChar >= '0' ) and ( SearchChar <= '9' )) or ((SearchChar >= 'A') and (SearchChar <= 'Z')) or ((SearchChar >= 'a') and (SearchChar <= 'z')) or ( SearchChar = '.') or (SearchChar = ':') or (SearchChar = ' ') ) and (strcmp(adr(Internal.DataTyp),"DATE_AND_TIME") = 0 ) and (Internal.NameEntered = 2) and (Internal.HeaderLine = 0)  )then			; neue Zeile
+				Internal.DateTime[Internal.j]= SearchChar
+				Internal.j= Internal.j+1
+			; Nur Zahlenwert
+			else if( (((SearchChar >= '0' ) and ( SearchChar <= '9' )) or ( SearchChar = '.')  or ( SearchChar = 'E') or ( SearchChar = 'e') or ( SearchChar = '-')) and (Internal.NameEntered = 2) and (Internal.HeaderLine = 0) )then			; neue Zeile
+				Internal.Value[Internal.j]= SearchChar
+				Internal.j= Internal.j+1
+			; String-Wert
+	;		else if( (((SearchChar >= '0' ) and ( SearchChar <= '9' )) or ((SearchChar >= 'A') and (SearchChar <= 'Z')) or((SearchChar >= 'a') and (SearchChar <= 'z'))  or ( SearchChar = '.') or ( SearchChar = ' ')) and (Internal.NameEntered = 2) and (strcmp(adr(Internal.DataTyp),"STRING") = 0) and (Internal.HeaderLine = 0) )then			; neue Zeile
+;			else if( (((SearchChar >= 33 ) and ( SearchChar <= 58 )) or ((SearchChar >= 60 ) and ( SearchChar <= 126 )) or ( SearchChar = ' ') ) and (Internal.NameEntered = 2) and (strcmp(adr(Internal.DataTyp),"STRING") = 0) and (Internal.HeaderLine = 0) )then			; neue Zeile
+;			alle sinnvollen Zeichen zulassen, auch Sonderzeichen
+			else if( (SearchChar >= 32 ) and ( SearchChar <= 126 ) and (Internal.NameEntered = 2) and (strcmp(adr(Internal.DataTyp),"STRING") = 0) and (Internal.HeaderLine = 0) )then			; neue Zeile
+				Internal.Value[Internal.j]= SearchChar
+				Internal.j= Internal.j+1
+			else if( ((SearchChar >= 'A') and (SearchChar <= 'Z')) or ((SearchChar >= 'a') and (SearchChar <= 'z')) or ((SearchChar >= '0' ) and ( SearchChar <= '9' )) or (SearchChar = '.') or (SearchChar = ':') or (SearchChar = '*') or (SearchChar = '[') or (SearchChar = ']') or (SearchChar = '_') and (Internal.HeaderLine = 0) )then
+				Internal.TmpName[Internal.i]= SearchChar
+				Internal.i= Internal.i+1
+			else if( SearchChar = 13 ) or ( SearchChar = 10 )  then			; neue Zeile
+				Internal.Offset= Internal.Offset+1
+	;			LineCnt= LineCnt+1
+				SearchChar access Internal.pFileData + Internal.Offset
+				TestUsint = SearchChar
+				if( SearchChar = 10) or ( SearchChar = 13 ) then
+	;				LineCnt= LineCnt+1
+					if(Internal.NameEntered = 1) then
+						Internal.TmpName[Internal.i]= 0
+						Internal.i= 0
+						strcpy(adr(Internal.DataTyp),adr(Internal.TmpName))
+					endif
+					Internal.Value[Internal.j]= 0
+					Internal.DateTime[Internal.j]= 0
+					Internal.i= 0
+					Internal.j= 0
+					Internal.TmpName[Internal.i]= 0
+					Internal.NameEntered= 0
+					inc(Internal.Offset)
+;					Internal.HeaderLine= 0
+					exitif( (strlen(adr(Internal.VarName)) <> 0) or (Internal.HeaderLine= 1) )
+				else
+	;				LineCnt= LineCnt+1
+					if(Internal.NameEntered = 1) then
+						Internal.TmpName[Internal.i]= 0
+						Internal.i= 0
+						strcpy(adr(Internal.DataTyp),adr(Internal.TmpName))
+					endif
+					if(strlen(adr(Internal.VarName)) = 0) then
+						Internal.Offset= Internal.Offset-1
+					endif
+					Internal.Value[Internal.j]= 0
+					Internal.DateTime[Internal.j]= 0
+					Internal.i= 0
+					Internal.j= 0
+					Internal.TmpName[Internal.i]= 0
+					Internal.NameEntered= 0
+;					Internal.HeaderLine= 0
+					exitif( (strlen(adr(Internal.VarName)) <> 0) or (Internal.HeaderLine= 1) )
+				endif
+			; Strukturname
+			else if( SearchChar = Internal.Separator) and (Internal.NameEntered = 0) and (Internal.HeaderLine = 0) then		; neuer Name
+				Internal.TmpName[Internal.i]= 0
+				Internal.i= 0
+				Internal.j= 0			; Correction 11 August 2003
+				strcpy(adr(Internal.VarName),adr(Internal.TmpName))
+				Internal.NameEntered= 1
+			; Datenyp
+			else if( SearchChar = Internal.Separator) and (Internal.NameEntered = 1) and (Internal.HeaderLine = 0) then		; neuer Datentyp
+				Internal.TmpName[Internal.i]= 0
+				Internal.i= 0
+				Internal.j= 0			; Correction 11 August 2003
+				strcpy(adr(Internal.DataTyp),adr(Internal.TmpName))
+				Internal.NameEntered= 2
+
+			else if( SearchChar = Internal.Separator) and (Internal.NameEntered = 2) and (Internal.HeaderLine = 0) then		; weitere Spalten ignorieren
+				Internal.TmpName[Internal.j]= 0
+				Internal.NameEntered= 3
+
+			else if( SearchChar = ' ') and (Internal.NameEntered = 0) and (Internal.HeaderLine = 0) then		; Leerzeichen
+				Internal.SpacesCounter= Internal.SpacesCounter+1
+			endif
+			exitif(Internal.Offset >= FileOpen_CSV.filelen+1)
+			inc(Internal.Offset)
+		endloop
+
+	;	Internal.Offset= Internal.Offset+1
+			Internal.Offset= Internal.Offset
+		Internal.OffsetOld= Internal.Offset
+		memcpy(adr(Internal.TmpDataTyp),adr(Internal.DataTyp),5)
+		Internal.TmpDataTyp[5]= 0
+
+;		when (RowNotOnEnd = 1) do
+;			status= 65535
+;		next SEARCH_VAR_NAMES
+
+		when (Internal.HeaderLine = 1)do
+			Internal.HeaderLine = 0
+			Internal.i= 0
+			strcpy(adr(Internal.Value),"")
+			strcpy(adr(Internal.TmpName),"")
+			strcpy(adr(Internal.StructName),"")
+			strcpy(adr(Internal.DataTyp),"")
+			strcpy(adr(Internal.DateTime),"")
+			strcpy(adr(Internal.VarName),"")
+			Internal.OnlyArray= 0
+			Internal.OnlyArrayInStruct= 0
+			Internal.ArrayStructureStarts = 0
+			status= 65535
+		next SEARCH_STRUCT_NAME
+
+
+		;######################################################
+		; Correction 6.October 2003
+		when ( strlen(adr(Internal.StructName)) = 0  )and (Internal.ArrayStructureStarts = 0) do
+			status= 65535
+		next SEARCH_STRUCT_NAME
+		; Correction 6.October 2003
+		;######################################################
+
+		;no new variablename in csv-file found
+		when (Internal.VarName[0] = 0) do
+			Internal.StructName[0]= 0
+			status= 65535
+		next SEARCH_STRUCT_NAME
+
+		; full name found
+		when(Internal.VarName[0]<> '.') do
+			strcpy(adr(Internal.StructName),adr(Internal.VarName))
+			status= 65535
+		next SET_VARIABLE
+
+		; only array-variable -> no structure, no single variable
+		when(Internal.OnlyArray = 1) do
+			; is it a dynamic variable
+			if(Internal.DynamicVariable = 1)then
+				strcat( adr(Internal.StructName), "*" )
+				strcat( adr(Internal.StructName), adr(Internal.VarName)+1)
+			else
+				strcpy( adr(Internal.StructName), adr(Internal.VarName)+1)
+			endif
+
+			status= 65535
+		next SET_VARIABLE
+
+		; only an array-variable in a structure -> no structure, no single variable
+		when(Internal.OnlyArrayInStruct = 1) do
+			Internal.i=0
+			strcat( adr(Internal.StructName), adr(Internal.VarName))
+			status= 65535
+		next SET_VARIABLE
+
+		; beginn of an array of structures found
+		when( strcmp(adr(Internal.DataTyp),"ARRAY_OF_STRUCTURES") = 0 ) do
+
+			Internal.level= 2
+			loop Internal.i=0 to strlen(adr(Internal.StructName)) do
+				SearchChar access adr(Internal.StructName)+Internal.i
+				if(SearchChar ='.') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar= 0
+					exitif(1=1)
+				else if(SearchChar =']') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar access adr(Internal.StructName)+Internal.Merker
+					SearchChar= 0
+					exitif(1=1)
+				else if (SearchChar ='.') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				else if (SearchChar =']') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				endif
+			endloop
+			Internal.i=0
+			Internal.SpacesCounter= 0
+			status= 65535
+		next SEARCH_VAR_NAMES
+
+		;new array found
+		when ( strcmp(adr(Internal.TmpDataTyp),"ARRAY") = 0 )do
+			Internal.level= 2
+			loop Internal.i=0 to strlen(adr(Internal.StructName)) do
+				SearchChar access adr(Internal.StructName)+Internal.i
+				if(SearchChar ='.') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar= 0
+					exitif(1=1)
+				else if(SearchChar =']') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar access adr(Internal.StructName)+Internal.Merker
+					SearchChar= 0
+					exitif(1=1)
+				else if (SearchChar ='.') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				else if (SearchChar =']') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				endif
+			endloop
+			Internal.i=0
+			Internal.SpacesLastRow= Internal.SpacesCounter
+			Internal.SpacesCounter= 0
+			status= 65535
+		next SEARCH_VAR_NAMES
+
+		; new structure found
+		when( strcmp(adr(Internal.DataTyp),"STRUCTURE") = 0 ) do
+		;######################################################
+		; Correction 17.July 2003
+			if (Internal.ArrayStructureStarts = 0) then
+				Internal.level= 2
+				loop Internal.i=0 to strlen(adr(Internal.StructName)) do
+					SearchChar access adr(Internal.StructName)+Internal.i
+					if(SearchChar ='.') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+						SearchChar= 0
+						exitif(1=1)
+					else if(SearchChar =']') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+
+						loop Internal.j=Internal.i downto 0 do
+							SearchChar access adr(Internal.StructName)+Internal.j
+							exitif(SearchChar = '.')
+						endloop
+						SearchChar= 0
+						exitif(1=1)
+					else if (SearchChar ='.') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+						Internal.level= Internal.level+1
+					else if (SearchChar =']') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+						Internal.level= Internal.level+1
+					endif
+				endloop
+				Internal.i=0
+				strcat(adr(Internal.StructName),adr(Internal.VarName))
+			else
+				Internal.level= 2
+				if(( Internal.level <> ((Internal.SpacesCounter+1)/5) )) then
+					loop Internal.i=0 to strlen(adr(Internal.StructName)) do
+						SearchChar access adr(Internal.StructName)+Internal.i
+						if(SearchChar ='.') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+							SearchChar= 0
+							exitif(1=1)
+						else if(SearchChar =']') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+
+							loop Internal.j=Internal.i downto 0 do
+								SearchChar access adr(Internal.StructName)+Internal.j
+								exitif(SearchChar = '.')
+							endloop
+							SearchChar= 0
+							exitif(1=1)
+						else if (SearchChar ='.') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+							Internal.level= Internal.level+1
+						else if (SearchChar =']') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+							Internal.level= Internal.level+1
+						endif
+					endloop
+				else
+					Internal.i= 0
+					; is it a dynamic variable
+					if(Internal.DynamicVariable = 1)then
+						strcpy( adr(Internal.StructName),"*" )
+					else
+						strcpy( adr(Internal.StructName),"" )
+					endif
+				endif
+
+				if ( Internal.i = 0 ) then
+					strcat(adr(Internal.StructName),adr(Internal.VarName)+1)
+				else
+					strcat(adr(Internal.StructName),adr(Internal.VarName))
+				endif
+				Internal.i=0
+			endif
+		; Correction 17.July 2003
+		;######################################################
+
+			Internal.SpacesCounter= 0
+			status= 65535
+		next SEARCH_VAR_NAMES
+
+		when( 1=1 ) do
+			Internal.level= 2
+			loop Internal.i=0 to strlen(adr(Internal.StructName)) do
+				SearchChar access adr(Internal.StructName)+Internal.i
+				if(SearchChar ='.') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar= 0
+					exitif(1=1)
+				else if(SearchChar =']') and( Internal.level = ((Internal.SpacesCounter+1)/5) ) then
+					SearchChar access adr(Internal.StructName)+Internal.Merker
+					SearchChar= 0
+					exitif(1=1)
+				else if (SearchChar ='.') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.Merker= Internal.i
+					Internal.level= Internal.level+1
+				else if (SearchChar =']') and ( Internal.level < ((Internal.SpacesCounter+1)/5) ) then
+					Internal.level= Internal.level+1
+				endif
+			endloop
+			Internal.i=0
+			strcat(adr(Internal.StructName),adr(Internal.VarName))
+
+			Internal.SpacesCounter= 0
+			status= 65535
+		next SET_VARIABLE
+
+		;##########################################################################################
+		state SET_VARIABLE
+		;##########################################################################################
+
+		Internal.PV_xgetadrStatus= PV_xgetadr(adr(Internal.StructName), adr(Internal.PV_Adress), adr(Internal.data_len))
+
+		when(	Internal.PV_xgetadrStatus <> 0 ) and (IgnoreError = FALSE) do
+			Internal.OnlyArrayInStruct = 0
+			if( ErrorNumber = 0 ) then
+				ErrorNumber = Internal.PV_xgetadrStatus
+				ErrorLine = LineCnt
+			endif
+
+			inc( ErrorCnt )
+			status= Internal.PV_xgetadrStatus
+		next TEMP_FREE
+
+		when(	Internal.PV_xgetadrStatus <> 0 ) and (IgnoreError = TRUE) do
+			if( ErrorNumber = 0 ) then
+				ErrorNumber = Internal.PV_xgetadrStatus
+				ErrorLine = LineCnt
+			endif
+
+			inc( ErrorCnt )
+
+			status= 65535
+		next SEARCH_VAR_NAMES
+
+		Inc(VarCnt)
+
+		if( (strcmp(adr(Internal.DataTyp),"BOOL") = 0 ) and (Internal.data_len = 1) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Bool access Internal.PV_Adress
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Dyn_Bool= bool( atoi(adr(Internal.Value)) )
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"USINT") = 0 ) and (Internal.data_len = 1) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Usint access Internal.PV_Adress
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Dyn_Usint= usint( atoi(adr(Internal.Value)) )
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"SINT") = 0 ) and (Internal.data_len = 1) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Sint access Internal.PV_Adress
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Dyn_Sint= sint( atoi(adr(Internal.Value)) )
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"UINT") = 0 ) and (Internal.data_len = 2) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Uint access Internal.PV_Adress
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Dyn_Uint= uint( atoi(adr(Internal.Value)) )
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"INT") = 0 ) and (Internal.data_len = 2) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Int access Internal.PV_Adress
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Dyn_Int= int( atoi(adr(Internal.Value)) )
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"UDINT") = 0 ) and (Internal.data_len = 4) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Udint access Internal.PV_Adress
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+
+			if (Internal.Value[0] <> '-') then
+				Dyn_Udint = 0
+				Internal.j = usint(strlen(adr(Internal.Value)))
+				loop Internal.i=0 to Internal.j do
+
+					Dyn_Udint = Dyn_Udint+(Internal.Value[Internal.i]-48)*udint(pow(10,strlen(adr(Internal.Value))-Internal.i-1))
+
+				endloop
+			else
+				Dyn_Udint= udint( atoi(adr(Internal.Value)) )
+			endif
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"DINT") = 0 ) and (Internal.data_len = 4) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Dint access Internal.PV_Adress
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Dyn_Dint= atoi(adr(Internal.Value))
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"STRING") = 0 ) and ((Internal.data_len-1) <= sizeof(Dyn_String)) and ((Internal.data_len-1) >= strlen(adr(Internal.Value))) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_String access Internal.PV_Adress
+			strcpy(adr(Dyn_String),adr(Internal.Value))
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"REAL") = 0 ) and (Internal.data_len = 4) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_Real access Internal.PV_Adress
+			Dyn_Real= atof(adr(Internal.Value))
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"OCTET STRING") = 0 ) and ((Internal.data_len-1) <= sizeof(Dyn_String)) and ((Internal.data_len-1) >= strlen(adr(Internal.Value))) and (Internal.PV_xgetadrStatus = 0) )then
+			Dyn_String access Internal.PV_Adress
+			strcpy(adr(Dyn_String),adr(Internal.Value))
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"DATE_AND_TIME") = 0 ) and (Internal.data_len = 4) and (Internal.PV_xgetadrStatus = 0) )then
+			Internal.Counter= 0
+			loop Internal.i=0 to strlen(adr(Internal.DateTime)) do
+				SearchChar access adr(Internal.DateTime)+Internal.i
+				if( (SearchChar <> ' ') and (SearchChar <> ':') and (SearchChar <> 0) )then
+					Internal.TmpDateTime[Internal.j]= SearchChar
+					Internal.j= Internal.j+1
+				else if( ((SearchChar = ' ') and (Internal.Counter < 3)) or ((SearchChar = ' ') and (Internal.Counter >= 5)) or ((SearchChar = ':') and (Internal.Counter >= 3)) or (SearchChar = 0) )then
+					Internal.TmpDateTime[Internal.j]= 0
+					; Tag
+					if(Internal.Counter = 0) then
+						if(strcmp(adr(Internal.TmpDateTime),"Sun") = 0 )then
+							Internal.DateTimeStruct.wday= 0
+							Internal.Counter = 1
+						else if(strcmp(adr(Internal.TmpDateTime),"Mon") = 0 )then
+							Internal.DateTimeStruct.wday= 1
+							Internal.Counter = 1
+						else if(strcmp(adr(Internal.TmpDateTime),"Tue") = 0 )then
+							Internal.DateTimeStruct.wday= 2
+							Internal.Counter = 1
+						else if(strcmp(adr(Internal.TmpDateTime),"Wed") = 0 )then
+							Internal.DateTimeStruct.wday= 3
+							Internal.Counter = 1
+						else if(strcmp(adr(Internal.TmpDateTime),"Thu") = 0 )then
+							Internal.DateTimeStruct.wday= 4
+							Internal.Counter = 1
+						else if(strcmp(adr(Internal.TmpDateTime),"Fri") = 0 )then
+							Internal.DateTimeStruct.wday= 5
+							Internal.Counter = 1
+						else if(strcmp(adr(Internal.TmpDateTime),"Sat") = 0 )then
+							Internal.DateTimeStruct.wday= 6
+							Internal.Counter = 1
+						endif
+					;Datum
+					else if(Internal.Counter = 1) then
+						if(strcmp(adr(Internal.TmpDateTime),"Jan") = 0 )then
+							Internal.DateTimeStruct.month= 1
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Feb") = 0 )then
+							Internal.DateTimeStruct.month= 2
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Mar") = 0 )then
+							Internal.DateTimeStruct.month= 3
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Apr") = 0 )then
+							Internal.DateTimeStruct.month= 4
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"May") = 0 )then
+							Internal.DateTimeStruct.month= 5
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Jun") = 0 )then
+							Internal.DateTimeStruct.month= 6
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Jul") = 0 )then
+							Internal.DateTimeStruct.month= 7
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Aug") = 0 )then
+							Internal.DateTimeStruct.month= 8
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Sep") = 0 )then
+							Internal.DateTimeStruct.month= 9
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Oct") = 0 )then
+							Internal.DateTimeStruct.month= 10
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Nov") = 0 )then
+							Internal.DateTimeStruct.month= 11
+							Internal.Counter= 2
+						else if(strcmp(adr(Internal.TmpDateTime),"Dec") = 0 )then
+							Internal.DateTimeStruct.month= 12
+							Internal.Counter= 2
+						endif
+
+					else if(Internal.Counter = 2) then
+							Internal.DateTimeStruct.day= usint( atoi(adr(Internal.TmpDateTime)) )
+							Internal.Counter= 3
+
+					else if(Internal.Counter = 3) then
+							Internal.DateTimeStruct.hour= usint( atoi(adr(Internal.TmpDateTime)) )
+							Internal.Counter= 4
+
+					else if(Internal.Counter = 4) then
+							Internal.DateTimeStruct.minute= usint( atoi(adr(Internal.TmpDateTime)) )
+							Internal.Counter= 5
+
+					else if(Internal.Counter = 5) then
+							Internal.DateTimeStruct.second= usint( atoi(adr(Internal.TmpDateTime)) )
+							Internal.Counter= 6
+
+					else if(Internal.Counter = 6) then
+							Internal.DateTimeStruct.year= uint( atoi(adr(Internal.TmpDateTime)) )
+							Internal.Counter= 7
+					endif
+					Internal.j= 0
+				endif
+
+			endloop
+			Internal.i= 0
+			Dyn_Date_and_Time access Internal.PV_Adress
+			Dyn_Date_and_Time= DTStructure_TO_DT(adr(Internal.DateTimeStruct))
+			Internal.DateAndTime = 0
+			status= 65535
+
+		else if( (strcmp(adr(Internal.DataTyp),"TIME") = 0 ) and (Internal.data_len = 4) and (Internal.PV_xgetadrStatus = 0) )then
+
+			Dyn_Time access Internal.PV_Adress
+
+			loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+				SearchChar access adr(Internal.Value)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Dyn_Time= time( atoi(adr(Internal.Value)) )
+			status= 65535
+
+		;######################################################################
+		; keine DatentypKontrolle
+		else if(No_DatatypControl = 1) and (Internal.PV_xgetadrStatus = 0) then
+			; 1-Byte (BOOL,SINT,USINT)
+			if (Internal.data_len = 1)	then
+				Dyn_Usint access Internal.PV_Adress
+				loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+					SearchChar access adr(Internal.Value)+Internal.i
+					if(SearchChar ='.')then
+						SearchChar= 0
+						exitif(1=1)
+					endif
+				endloop
+				Dyn_Usint= usint( atoi(adr(Internal.Value)) )
+				status= 65535
+
+			; 2-Byte (INT;UINT)
+			else if (Internal.data_len = 2) and (Internal.PV_xgetadrStatus = 0) then
+				Dyn_Uint access Internal.PV_Adress
+				loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+					SearchChar access adr(Internal.Value)+Internal.i
+					if(SearchChar ='.')then
+						SearchChar= 0
+						exitif(1=1)
+					endif
+				endloop
+				Dyn_Uint= uint( atoi(adr(Internal.Value)) )
+				status= 65535
+
+			; 4-Byte (DINT,UDINT,TIME)
+			else if (Internal.data_len = 4) and (Internal.DateAndTime = 0) and (Internal.PV_xgetadrStatus = 0) then
+				Dyn_Udint access Internal.PV_Adress
+				loop Internal.i=strlen(adr(Internal.Value)) downto 0 do	;Kommastellen löschen
+					SearchChar access adr(Internal.Value)+Internal.i
+					if(SearchChar ='.')then
+						SearchChar= 0
+						exitif(1=1)
+					endif
+				endloop
+				Dyn_Udint= uint( atoi(adr(Internal.Value)) )
+				status= 65535
+
+			; 4-Byte (DATE_AND_TIME)
+			else if (Internal.data_len = 4) and (Internal.DateAndTime = 1) and (Internal.PV_xgetadrStatus = 0) then
+				Internal.Counter= 0
+				loop Internal.i=0 to strlen(adr(Internal.DateTime)) do
+					SearchChar access adr(Internal.DateTime)+Internal.i
+					if( (SearchChar <> ' ') and (SearchChar <> ':') and (SearchChar <> 0) )then
+						Internal.TmpDateTime[Internal.j]= SearchChar
+						Internal.j= Internal.j+1
+					else if( ((SearchChar = ' ') and (Internal.Counter < 3)) or ((SearchChar = ' ') and (Internal.Counter >= 5)) or ((SearchChar = ':') and (Internal.Counter >= 3)) or (SearchChar = 0) )then
+						Internal.TmpDateTime[Internal.j]= 0
+						; Tag
+						if(Internal.Counter = 0) then
+							if(strcmp(adr(Internal.TmpDateTime),"Sun") = 0 )then
+								Internal.DateTimeStruct.wday= 0
+								Internal.Counter = 1
+							else if(strcmp(adr(Internal.TmpDateTime),"Mon") = 0 )then
+								Internal.DateTimeStruct.wday= 1
+								Internal.Counter = 1
+							else if(strcmp(adr(Internal.TmpDateTime),"Tue") = 0 )then
+								Internal.DateTimeStruct.wday= 2
+								Internal.Counter = 1
+							else if(strcmp(adr(Internal.TmpDateTime),"Wed") = 0 )then
+								Internal.DateTimeStruct.wday= 3
+								Internal.Counter = 1
+							else if(strcmp(adr(Internal.TmpDateTime),"Thu") = 0 )then
+								Internal.DateTimeStruct.wday= 4
+								Internal.Counter = 1
+							else if(strcmp(adr(Internal.TmpDateTime),"Fri") = 0 )then
+								Internal.DateTimeStruct.wday= 5
+								Internal.Counter = 1
+							else if(strcmp(adr(Internal.TmpDateTime),"Sat") = 0 )then
+								Internal.DateTimeStruct.wday= 6
+								Internal.Counter = 1
+							endif
+						;Datum
+						else if(Internal.Counter = 1) then
+							if(strcmp(adr(Internal.TmpDateTime),"Jan") = 0 )then
+								Internal.DateTimeStruct.month= 1
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Feb") = 0 )then
+								Internal.DateTimeStruct.month= 2
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Mar") = 0 )then
+								Internal.DateTimeStruct.month= 3
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Apr") = 0 )then
+								Internal.DateTimeStruct.month= 4
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"May") = 0 )then
+								Internal.DateTimeStruct.month= 5
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Jun") = 0 )then
+								Internal.DateTimeStruct.month= 6
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Jul") = 0 )then
+								Internal.DateTimeStruct.month= 7
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Aug") = 0 )then
+								Internal.DateTimeStruct.month= 8
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Sep") = 0 )then
+								Internal.DateTimeStruct.month= 9
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Oct") = 0 )then
+								Internal.DateTimeStruct.month= 10
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Nov") = 0 )then
+								Internal.DateTimeStruct.month= 11
+								Internal.Counter= 2
+							else if(strcmp(adr(Internal.TmpDateTime),"Dec") = 0 )then
+								Internal.DateTimeStruct.month= 12
+								Internal.Counter= 2
+							endif
+
+						else if(Internal.Counter = 2) then
+								Internal.DateTimeStruct.day= usint( atoi(adr(Internal.TmpDateTime)) )
+								Internal.Counter= 3
+
+						else if(Internal.Counter = 3) then
+								Internal.DateTimeStruct.hour= usint( atoi(adr(Internal.TmpDateTime)) )
+								Internal.Counter= 4
+
+						else if(Internal.Counter = 4) then
+								Internal.DateTimeStruct.minute= usint( atoi(adr(Internal.TmpDateTime)) )
+								Internal.Counter= 5
+
+						else if(Internal.Counter = 5) then
+								Internal.DateTimeStruct.second= usint( atoi(adr(Internal.TmpDateTime)) )
+								Internal.Counter= 6
+
+						else if(Internal.Counter = 6) then
+								Internal.DateTimeStruct.year= uint( atoi(adr(Internal.TmpDateTime)) )
+								Internal.Counter= 7
+						endif
+						Internal.j= 0
+					endif
+
+				endloop
+				Internal.i= 0
+				Dyn_Date_and_Time access Internal.PV_Adress
+				Dyn_Date_and_Time= DTStructure_TO_DT(adr(Internal.DateTimeStruct))
+				Internal.DateAndTime = 0
+				status= 65535
+
+			; mehr als 4 Byte
+			else if (Internal.data_len > 4) and (Internal.data_len <= sizeof(Dyn_String)) and (Internal.PV_xgetadrStatus = 0) then
+				Dyn_String access Internal.PV_Adress
+				strcpy(adr(Dyn_String),adr(Internal.Value))
+				status= 65535
+			else
+				if(Internal.PV_xgetadrStatus <> 0)then
+					Internal.OnlyArrayInStruct = 0
+					Internal.temp_status= Internal.PV_xgetadrStatus
+				else
+					Internal.OnlyArrayInStruct = 0
+					Internal.temp_status= DATATYP_ERROR
+				endif
+			endif
+
+		; keine DatentypKontrolle
+		;######################################################################
+		else
+				if(Internal.PV_xgetadrStatus <> 0)then
+					Internal.OnlyArrayInStruct = 0
+					Internal.temp_status= Internal.PV_xgetadrStatus
+				else
+					Internal.OnlyArrayInStruct = 0
+					Internal.temp_status= DATATYP_ERROR
+				endif
+		endif
+
+		when (Internal.Offset < FileOpen_CSV.filelen-1) and (status = 65535) and (Internal.temp_status = 0) do
+			loop Internal.i=strlen(adr(Internal.StructName)) downto 0 do
+				SearchChar access adr(Internal.StructName)+Internal.i
+				if(SearchChar ='.')then
+					SearchChar= 0
+					exitif(1=1)
+				endif
+			endloop
+			Internal.i= 0
+			strcpy(adr(Internal.VarName),"")
+		next SEARCH_VAR_NAMES
+
+		when (Internal.Offset >= FileOpen_CSV.filelen-1) or (Internal.temp_status <> 0) do
+		next TEMP_FREE
+
+		;##########################################################################################
+		state TEMP_FREE
+		;##########################################################################################
+
+			Internal.status_free= TMP_free(FileOpen_CSV.filelen,Internal.pFileData)
+
+		when (1=1) do
+			if(Internal.temp_status <> 0)then
+				Internal.OnlyArrayInStruct = 0
+				status= Internal.temp_status
+			else if(Internal.status_free = 0)then
+				Internal.OnlyArrayInStruct = 0
+				status= 0
+			else if(Internal.status_free <> 0)then
+				Internal.OnlyArrayInStruct = 0
+				status= Internal.status_free
+			endif
+			Internal.Step= 0
+			exitif(1=1)
+		next WAIT
+	endselect
+
+endloop
+END_FUNCTION_BLOCK

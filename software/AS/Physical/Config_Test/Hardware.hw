@@ -18,6 +18,20 @@
     <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.101G-20B.dis" />
     <Parameter ID="VncRefreshRate" Value="200" />
   </Module>
+  <Module Name="8AC114.60-2" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1045.00-2" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="X20CP1382" TargetConnector="IF3" NodeNumber="1" />
+  </Module>
+  <Module Name="8AC120.60-1" Type="8AC120.60-1" Version="1.0.0.2">
+    <Connection Connector="SS" TargetModule="8V1045.00-2" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8V1045.00-2" Type="8V1045.00-2" Version="1.0.0.2">
+    <Parameter ID="SinglePhaseOperation" Value="on" />
+    <Parameter ID="AxisIsPeriodic_r1" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+    <Parameter ID="SupplyVoltage" Value="200" />
+  </Module>
   <Module Name="X20CP1382" Type="X20CP1382" Version="1.3.0.0">
     <Module Name="X1" Type="X1" Virtual="true" Version="1.0.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
@@ -54,7 +68,7 @@
     <Parameter ID="AutomaticTransferOfUserfiles" Value="on" />
     <Parameter ID="ApplicationStorageType" Value="NORMAL" />
     <Parameter ID="Simulation" Value="1" />
-    <Parameter ID="UserRamSize" Value="20000" />
+    <Parameter ID="UserRamSize" Value="15000" />
     <Parameter ID="RemMemSize" Value="5000" />
     <Parameter ID="PermanentPvSize" Value="2500" />
     <Parameter ID="RemanentGlobalPvSize" Value="1000" />

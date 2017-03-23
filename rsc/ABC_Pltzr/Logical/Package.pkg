@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Package Version="1.00.1" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="Projec docs">Doc</Object>
+    <Object Type="Package" Description="Global libraries">Libraries</Object>
+    <Object Type="Package" Description="pai Components and Libraries">paiComponents</Object>
+    <Object Type="Package" Description="application types and global vars">Globals</Object>
+    <Object Type="Package" Description="application tasks and logic">MachineControl</Object>
+    <Object Type="Package" Description="application simulation and testing tasks and logic">Simulation</Object>
+    <Object Type="Package" Description="HMI screens ">HMI</Object>
+    <Object Type="Package" Description="application configuration and recipes">appConfigAndRecipes</Object>
+    <Object Type="Package">ParameterDownload</Object>
+  </Objects>
+</Package>

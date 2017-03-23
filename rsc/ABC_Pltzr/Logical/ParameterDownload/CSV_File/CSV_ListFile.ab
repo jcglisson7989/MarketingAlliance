@@ -1,0 +1,401 @@
+FUNCTION_BLOCK CSV_ListFile
+;*****************************************************************
+;FUB: 			CSV_ListFile
+;*****************************************************************
+;Discription:
+;	This FUB writes the Values from the allocated memory from the FUB
+;	CSV-Init in a CSV-File.
+;
+;Parameter:
+;
+;Author:	Georg Kreil
+;			B&R Eggelsberg
+;
+;History:	V0.01.1 - 24 June 2003
+;					created
+;			V0.01.2 - 8 July 2003
+;					no changes
+;			V0.01.3 - 14 July 2003
+;					no changes
+;			V0.01.4 - 15 July 2003
+;					Error with maximum namelenght corrected
+;					displayed strings changed by diplayed year
+;					2003 -> 03
+;					and without file-extension
+;			V0.01.5 - 17 July 2003
+;					no changes
+;			V0.01.6 - 18 July 2003
+;					Possibility to set the focus over a separate value added
+;					Output, if it possible to scroll one page up/down  added
+;			V0.01.7 - 7 August 2003
+;					no changes
+;			V0.01.8 - 8 August 2003
+;					output strings one charecter shorter
+;			V0.01.9 - 11 August 2003
+;					no changes
+;*****************************************************************
+	select Step
+
+	;*********************************************************************
+		state wait
+	;*********************************************************************
+	;*********************************************************************
+	; control memorysize
+    when ( (MaxNameLenght+19)*ArrayNum > SizeStringArray) or (MaxNameLenght > 28) do
+    	status= MAX_NAMELENGHT_TO_LONG
+    	command= 0
+	next wait
+	;*********************************************************************
+	; create file-list
+    when (command = FiJOB_CREATE_FILE_LIST ) and (status <> 65535) do
+    	status  = 65535
+		next file_dir_info
+	;*********************************************************************
+	; Scroll one line up
+    when (command = FiJOB_LIST_UP) and (status <> 65535) do
+	    	if(ListboxFocusPos = 0) then
+	    		ListboxFocusPos= 0				; set focus
+	        	ScrollUp= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+	    	else
+	    		ListboxFocusPos= ListboxFocusPos-1			; set focus
+
+	    		if(ListboxFocusPos <> 0)then ;set/reset scrolldown output
+		        	ScrollUp= 1
+		        else
+		        	ScrollUp= 0
+		        endif
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+	    		if(DownLines < NumListboxLines-1)then
+	    			UpLines= UpLines-1
+	    			DownLines= DownLines+1
+	    		else
+	    			PosFirstLine= PosFirstLine-1
+	    		endif
+			endif
+		command = 0
+		status  = 0
+		next wait
+	;*********************************************************************
+	; Scroll one line down
+    when (command = FiJOB_LIST_DOWN) and (status <> 65535) do
+	    	if(CSV_FileNum-1 <= ListboxFocusPos) then
+	    		ListboxFocusPos= CSV_FileNum-1			; set focus
+	    		ScrollDown= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+	    	else
+
+	    		ListboxFocusPos= ListboxFocusPos+1			; set focus
+
+	    		if(ListboxFocusPos <> CSV_FileNum-1 )then; set/reset scrollup output
+		    		ScrollDown= 1
+				else
+		    		ScrollDown= 0
+				endif
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+	    		if(UpLines < NumListboxLines-1)then
+	    			UpLines= UpLines+1
+	    			DownLines= DownLines-1
+	    		else
+	    			PosFirstLine= PosFirstLine+1
+	    		endif
+
+			endif
+		command = 0
+		status  = 0
+		next wait
+	;*********************************************************************
+	; Scroll one page up
+    when (command = FiJOB_LIST_PG_UP) and (status <> 65535) do
+	        ; there are less files as lines in the listbox
+	    	if(ListboxFocusPos <= 0) or (ListboxFocusPos-NumListboxLines = 0)  then
+	    		ListboxFocusPos= 0			; set focus
+	        	ScrollUp= 0
+    			UpLines= 0
+    			DownLines= NumListboxLines-1
+	    		PosFirstLine= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+			else if ( ListboxFocusPos-NumListboxLines > 30000 )then
+	        	ListboxFocusPos= 0			; set focus
+	        	ScrollUp= 0
+    			UpLines= 0
+    			DownLines= NumListboxLines-1
+	    		PosFirstLine= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+			else if ( ListboxFocusPos-NumListboxLines > 0 )and ( ListboxFocusPos-NumListboxLines < 30000 )then
+	        	ListboxFocusPos= ListboxFocusPos-NumListboxLines			; set focus
+	        	ScrollUp= 1
+
+	    		PosFirstLine= PosFirstLine - (NumListboxLines -UpLines)
+    			UpLines= 0
+    			DownLines= NumListboxLines-1
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+			endif
+		command = 0
+		status  = 0
+		next wait
+	;*********************************************************************
+	; Scroll one page down
+    when (command = FiJOB_LIST_PG_DOWN) and (status <> 65535) do
+	        ; there are less files as lines in the listbox
+	    	if(CSV_FileNum-1 <= ListboxFocusPos+NumListboxLines) then
+	    		ListboxFocusPos= CSV_FileNum-1			; set focus
+	    		ScrollDown= 0
+
+    			if( CSV_FileNum > NumListboxLines) then
+    				PosFirstLine= (CSV_FileNum-1)-(NumListboxLines-1)
+   	 				UpLines= NumListboxLines-1
+    				DownLines= 0
+    			endif
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+			else if ( ListboxFocusPos+NumListboxLines > CSV_FileNum )then
+	        	ListboxFocusPos= CSV_FileNum-1			; set focus
+	    		ScrollDown= 0
+
+    			PosFirstLine= (CSV_FileNum-1)-(NumListboxLines-1)
+    			UpLines= NumListboxLines-1
+    			DownLines= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+			else if ( ListboxFocusPos+NumListboxLines < CSV_FileNum )then
+	        	ListboxFocusPos= ListboxFocusPos+NumListboxLines			; set focus
+	    		ScrollDown= 1
+
+    			PosFirstLine= PosFirstLine+NumListboxLines-DownLines
+    			UpLines= NumListboxLines-1
+    			DownLines= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+			endif
+		command = 0
+		status  = 0
+	    next wait
+
+	;*********************************************************************
+	; set focus with input-value
+    when (command = FiJOB_SET_FOCUS) and (status <> 65535) do
+  		if( SetFocusPos <= NumListboxLines-1  ) then
+  			if( CSV_FileNum- 1 >= PosFirstLine+SetFocusPos ) then
+		  		ListboxFocusPos= PosFirstLine+SetFocusPos
+		  		DownLines= NumListboxLines-SetFocusPos-1
+		  		UpLines= SetFocusPos
+				status  = 0
+			endif
+
+		else
+			status  = FOCUSPOS_OUT_OF_LISTBOX
+		endif
+
+	  	command = 0
+   		next wait
+
+	;*********************************************************************
+		state file_dir_info
+	;*********************************************************************
+
+	  ; no memoryadress given
+		when ( pStringArray = 0)  do
+			command = 0
+			status  = ERR_NO_MEM_ALLOC
+		next wait
+
+	    DirInfo_01.enable = 1
+	    DirInfo_01.pDevice =pFileDevice
+	    DirInfo_01.pPath = pPath
+	    DirInfo_01 FUB DirInfo()
+
+	    ;no error, files exists
+	    when (DirInfo_01.status = ERRF_NO_ERROR) and (DirInfo_01.filenum <> 0) DO
+	      FileNumOnDisk = uint(DirInfo_01.filenum)
+	  	  memset(pStringArray, 0, (MaxNameLenght+19)*ArrayNum)
+	      CSV_FileNum = 0								; filenumber reset
+	      FileNumAct = 0                              	; actual filenumber reset
+	      Offset = 0									; reset offset
+	      status= 65535
+		  strcpy(adr(TmpExtension),".CSV")
+	      next file_info
+
+	    ; no error, no files
+	    when (DirInfo_01.status = ERRF_NO_ERROR) and (DirInfo_01.filenum = 0) DO
+	      FileNumOnDisk = 0                           ; number of files reset
+	      FileNumAct = 0                              ; actual filenumber reset
+	      CSV_FileNum = 0								; filenumber reset
+	   	  memset(pStringArray, 0,(MaxNameLenght+19)*ArrayNum)  ; clear memory
+	      command = 0  	                              ; command reset
+	      status= 0  	      						  ; clear status
+	      next wait
+
+	    ; Fehler aufgetreten
+	    when (DirInfo_01.status <> ERRF_NO_ERROR) and (DirInfo_01.status <> 65535) DO
+	      status = DirInfo_01.status                            ; set error
+	      command = 0                             	   ; command reset
+	      FileNumAct = 0                               ; actual filenumber reset
+	      Offset = 0      							   ; reset offset
+	      next wait
+
+	;*********************************************************************************
+	  state file_info
+	;*********************************************************************************
+
+	    when (ArrayNum < FileNumOnDisk) DO
+			command = 0
+			status  = ARRAY_TO_LESS
+    	next wait
+
+	    ; create FileInfo
+	    DirRead_01.enable = 1
+	    DirRead_01.pDevice = pFileDevice
+	    DirRead_01.pPath = pPath
+	    DirRead_01.entry = udint(FileNumAct)  ; actual filenumber
+	    DirRead_01.option = FILE_FILE
+	    DirRead_01.pData = adr(FileInfo)
+	    DirRead_01.data_len = sizeof(FileInfo)
+	    DirRead_01 FUB DirRead()
+
+	    ; Fehler aufgetreten
+	    when (DirRead_01.status <> ERRF_NO_ERROR) and (DirRead_01.status <> 65535) do
+	      status = DirRead_01.status                      ; Fehler setzen
+	      command= 0
+	      next wait
+
+	    ; no error
+	    if (DirRead_01.status = ERRF_NO_ERROR) then
+	      ; filename to long -> not add to filelist
+	      if (strlen(adr(FileInfo.Filename)) <= MaxNameLenght+4) then
+			; control, if the file has the right extension
+	      	loop i=0 to strlen(adr(FileInfo.Filename)) do
+		     	memcpy(adr(TmpExtension),adr(FileInfo.Filename[i]),sizeof(TmpExtension))
+		     	result1=strcmp(adr(TmpExtension),".CSV")
+				result2=strcmp(adr(TmpExtension),".csv")
+				if((result1 = 0 ) or (result2 = 0 ))then
+					strcpy( adr(TmpString[0]),adr(FileInfo.Filename[0]) )
+; Changes V0.01.4		loop i=i+4 to MaxNameLenght+5 do
+                   	loop i=i to MaxNameLenght+3 do
+						TmpString[i]= ' '
+					endloop
+					DT_TO_DTStructure(FileInfo.Date,adr(dateandtime));
+
+					; create date and time to a string and add to the filename
+					TmpString[MaxNameLenght+ 4]= (dateandtime.day / 10) + '0'
+					TmpString[MaxNameLenght+ 5]= (dateandtime.day mod 10) + '0'
+					TmpString[MaxNameLenght+ 6]= '.'
+
+					TmpString[MaxNameLenght+ 7]= (dateandtime.month / 10) + '0'
+					TmpString[MaxNameLenght+ 8]= (dateandtime.month mod 10) + '0'
+					TmpString[MaxNameLenght+ 9]= '.'
+
+; Changes V0.01.4					TmpString[MaxNameLenght+12]= USINT(  (dateandtime.year / 1000)       ) + '0'
+; Changes V0.01.4					TmpString[MaxNameLenght+13]= USINT( ((dateandtime.year / 100) mod 10)) + '0'
+					TmpString[MaxNameLenght+10]= USINT( ((dateandtime.year mod 100)/10)  ) + '0'
+					TmpString[MaxNameLenght+11]= USINT(  (dateandtime.year mod 10)       ) + '0'
+					TmpString[MaxNameLenght+12]= ' '
+
+					TmpString[MaxNameLenght+13]= (dateandtime.hour / 10) + '0'
+					TmpString[MaxNameLenght+14]= (dateandtime.hour mod 10) + '0'
+					TmpString[MaxNameLenght+15]= ':'
+					TmpString[MaxNameLenght+16]= (dateandtime.minute / 10) + '0'
+					TmpString[MaxNameLenght+17]= (dateandtime.minute mod 10) + '0'
+					TmpString[MaxNameLenght+18]= 0
+
+					strcpy( pStringArray + Offset, adr(TmpString) )
+				    Offset = Offset + (MaxNameLenght+19)
+	  	            inc(CSV_FileNum)				; increase CSV-filenumber
+	  	            exitif(1=1)
+			    else if( adr(FileInfo.Filename[i]) = '.' )then
+			    	exitif(1=1)
+			    endif
+
+		    endloop
+
+
+	      endif
+
+	      FileNumAct = FileNumAct + 1                ;  increase actual filenumber
+
+	    endif
+
+
+
+	    when (FileNumAct >= FileNumOnDisk) DO		; all files listed
+			command = 0								; reset command
+			ListboxFocusPos= 0						; reset focus-position
+	       	ScrollUp= 0
+   			UpLines= 0
+   			DownLines= NumListboxLines-1
+   			PosFirstLine= 0
+
+    		if (CSV_FileNum = 1) then
+	        	ScrollDown= 0
+        	else
+	        	ScrollDown= 1
+    		endif
+
+			status  = 0		    					; reset status
+      next wait
+
+
+	;*********************************************************************************
+	  state option
+	;*********************************************************************************
+
+	endselect
+
+END_FUNCTION_BLOCK

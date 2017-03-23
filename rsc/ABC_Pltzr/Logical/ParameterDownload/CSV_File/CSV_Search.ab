@@ -1,0 +1,1495 @@
+FUNCTION_BLOCK CSV_Search
+;*****************************************************************
+;FUB: 			CSV_Search
+;*****************************************************************
+;Discription:
+;	This FUB write the actual values of the structure in the allocated
+;	memory from the FUB CSV_Init. The way, how the structure is written in
+;	the memory is the same, how it stand in the CSV-File.
+;
+;Parameter:
+;
+;Author:	Georg Kreil
+;			B&R Eggelsberg
+;
+;History:	V0.01 - 17 June 2003
+;					created
+;			V0.01.1 - 4 July 2003
+;					Error with return-jumps by Array-structures corrected
+;			V0.01.2 - 8 July 2003
+;					Error arrays about index 9 corrected
+;			V0.01.3 - 14 July 2003
+;					no changes
+;			V0.01.4 - 15 July 2003
+;					no changes
+;			V0.01.5 - 17 July 2003
+;					Error, when variable starts with array-structure, corrected
+;			V0.01.6 - 21 July 2003
+;					no ";" in strings possible, will be changed in ","
+;			V0.01.7 - 7 August 2003
+;					no changes
+;			V0.01.8 - 8 August 2003
+;					no changes
+;			V0.01.9 - 11 August 2003
+;					no changes
+;			V0.02   - 10 September 2003
+;					Error with Arrays (111 instead of 11) corrected
+;			V0.02.6 - 14 November 2003
+;					dynamic varible now possible
+;			V0.03   - 01 December 2003
+;					output filelen added
+;			V0.03.1 - 26 January 2004
+;					multiple array-structure
+;			V0.03.2 - 11 May 2004
+;					last element of an array-structure corrected
+;			V0.03.3 - 12 May 2004
+;					last element in an array-structure corrected
+;			V0.03.4 - 14 May 2004
+;					changed the UDINT-conversion to STRING (16#FFFF_FFFF = -1 => 16#FFFF_FFFF = 429497295)
+;			V0.03.5 - 30 May 2004
+;					part of sturcture possible
+;			V0.03.6 - 17 June 2004
+;					max. structurelenght from 80 to 150 changed
+;			V0.03.7 - 14 July 2004
+;					correction of CurrageReturn/LineFeed
+;			V0.04   - 6 August 2004
+;					complete header will be displayed only once at multi structures in a file
+;
+;*****************************************************************
+Options = Options
+
+if (pStructName <> 0) then
+
+	Internal.CRLF[0]= 13
+	Internal.CRLF[1]= 10
+	Internal.CRLF[2]= 0
+
+	Internal.Separator[0] = Separator
+	Internal.Separator[1] = 0
+
+	loop Internal.y=0 to 5 do
+	select Internal.Step
+
+
+		;##########################################################################################
+		state INIT
+		;##########################################################################################
+
+				Internal.Ebene= 1
+				Internal.NameCounter= 1
+				ErrorName= 0
+				Internal.VariableCounter = 0;
+
+				loop Internal.i=0 to 49 do
+					Internal.ItemNrSoll[Internal.i]= 65535
+					Internal.ItemNrIst[Internal.i]= 0
+				endloop
+
+				Dyn_Udint access pStructName
+
+				if(Dyn_Udint <> 0 )then
+					strcpy( adr(Internal.VarItemName),Dyn_Udint )	;copy Structurename to Internal "Work"-String
+					loop Internal.i=usint(strlen(adr(Internal.VarItemName))+1) downto 0 do
+						SearchChar access adr(Internal.VarItemName) + Internal.i	; set dynamic variable for access
+							if (SearchChar = '.')then
+								Internal.ItemNrSoll[Internal.Ebene]= 1
+								Internal.ItemNrIst[Internal.Ebene]= 1
+								Internal.Ebene= Internal.Ebene+1
+							else if(SearchChar = '[') then
+								Internal.ItemNrSoll[Internal.Ebene]= 1
+								Internal.ItemNrIst[Internal.Ebene]= 1
+								Internal.Ebene= Internal.Ebene+1
+							endif
+					endloop
+
+				endif
+
+				when (pStructMem = 0 ) do
+					status= ERR_NO_MEM_ALLOC
+					Internal.y= 5
+				next INIT
+
+				when (Dyn_Udint = 0 ) and (Internal.y = 0) do
+					status= ERROR_STRUCT_NAMES
+					ErrorName= Internal.NameCounter
+					Internal.y= 5
+				next INIT
+
+				when (FileHeader = HEADER) and (Internal.y = 0) and (Internal.NameCounter = 1) do
+		 			Internal.Offset= 0
+					memset(pStructMem , 0, MemLen)
+					status= 65535
+				next WRITE_HEADER
+
+				when (FileHeader = NO_HEADER) and (Internal.y = 0) do
+		 			Internal.Offset= 0
+					memset(pStructMem , 0, MemLen)
+					strcpy(pStructMem+Internal.Offset,"//############################################################################################### ")
+					Internal.Offset= Internal.Offset+98
+					strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+					Internal.Offset= Internal.Offset+1
+					strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+					Internal.Offset= Internal.Offset+1
+					strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+					Internal.Offset= Internal.Offset+2
+					status= 65535
+				next PV_INFO
+
+		;##########################################################################################
+		state WRITE_HEADER
+		;##########################################################################################
+
+			strcpy(pStructMem+Internal.Offset,"//############################################################################################### ")
+			Internal.Offset= Internal.Offset+98
+			strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+			Internal.Offset= Internal.Offset+1
+			strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+			Internal.Offset= Internal.Offset+1
+			strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+			Internal.Offset= Internal.Offset+2
+
+			; machine no
+			if(pMaschineNo <> 0)then
+				strcpy(pStructMem+Internal.Offset,"// MachineNo.: ")
+				Internal.Offset= Internal.Offset+15
+				strcpy(pStructMem+Internal.Offset,pMaschineNo)
+				Internal.Offset= Internal.Offset+strlen(pMaschineNo)
+				strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+				Internal.Offset= Internal.Offset+2
+			endif
+
+			; comment
+			if(pComment <> 0)then
+				strcpy(pStructMem+Internal.Offset,"// Comment: ")
+				Internal.Offset= Internal.Offset+12
+				strcpy(pStructMem+Internal.Offset,pComment)
+				Internal.Offset= Internal.Offset+strlen(pComment)
+				strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+				Internal.Offset= Internal.Offset+2
+			endif
+
+			; version
+			if(pVersion <> 0)then
+				strcpy(pStructMem+Internal.Offset,"// ")
+				Internal.Offset= Internal.Offset+3
+				strcpy(pStructMem+Internal.Offset,pVersion)
+				Internal.Offset= Internal.Offset+strlen(pVersion)
+				strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+				Internal.Offset= Internal.Offset+2
+			endif
+
+			; Date
+			strcpy(pStructMem+Internal.Offset,"// Date: ")
+			Internal.Offset= Internal.Offset+9
+			DTGetTime(1,status,Internal.Date_and_Time)
+			ascDT(Internal.Date_and_Time, adr(Internal.UsintArray), sizeof(Internal.UsintArray))
+			strcpy(pStructMem+Internal.Offset,adr(Internal.UsintArray))
+			Internal.Offset= Internal.Offset+strlen(adr(Internal.UsintArray))
+			strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+			Internal.Offset= Internal.Offset+2
+
+			strcpy(pStructMem+Internal.Offset,"//############################################################################################### ")
+			Internal.Offset= Internal.Offset+98
+			strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+			Internal.Offset= Internal.Offset+1
+			strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+			Internal.Offset= Internal.Offset+1
+			strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+			Internal.Offset= Internal.Offset+2
+
+				when (1=1) do
+					status= 65535
+				next PV_INFO
+
+		;##########################################################################################
+		state PV_INFO
+		;##########################################################################################
+		; save the startname of the variable
+			strcpy( adr(Internal.StartVarName), adr(Internal.VarItemName) )
+		; Information über Variable
+			Internal.PV_ninfoStatus = PV_ninfo(adr(Internal.VarItemName), adr(Internal.Datatyp), adr(Internal.DataLenght), adr(Internal.Dimension))
+			Internal.PV_xgetadrStatus = PV_xgetadr(adr(Internal.VarItemName), adr(Internal.PV_Adress), adr(Internal.Lenght))
+
+			if (Internal.PV_ninfoStatus = 0 ) and (FileHeader = HEADER) then
+				strcpy(pStructMem+Internal.Offset,"// Structure Size: ")
+				Internal.Offset= Internal.Offset+19
+				itoa(dint(Internal.DataLenght),adr(Internal.Value))
+				strcpy(pStructMem+Internal.Offset,adr(Internal.Value))
+				Internal.Offset= Internal.Offset+strlen(adr(Internal.Value))
+				strcpy(pStructMem+Internal.Offset," Bytes")
+				Internal.Offset= Internal.Offset+6
+				strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+				Internal.Offset= Internal.Offset+2
+				strcpy(pStructMem+Internal.Offset,"//############################################################################################### ")
+				Internal.Offset= Internal.Offset+98
+				strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+				Internal.Offset= Internal.Offset+1
+				strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+				Internal.Offset= Internal.Offset+1
+				strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+				Internal.Offset= Internal.Offset+2
+			endif
+
+			when (Internal.PV_ninfoStatus <> 0) do
+				status= Internal.PV_ninfoStatus
+				ErrorName= Internal.NameCounter
+				Internal.y= 5
+			next INIT
+
+			; "Normale" Strukturen
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 0) do
+				if(FullNameLenght = 0) then
+					strcpy(adr(Internal.StrukturName),adr(Internal.VarItemName))
+					strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+					strcat(adr(Internal.StrukturName),"STRUCTURE")
+					strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				endif
+				Internal.ItemNrSoll[Internal.Ebene] = Internal.Dimension
+				status= 65535
+			next FILE_WRITE_STRUCT_NAME
+
+			; Array's
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp <> 0) and (Internal.Datatyp <> 15) and (Internal.Dimension > 1)do
+				if(FullNameLenght = 0) then
+					strcpy(adr(Internal.StrukturName),adr(Internal.VarItemName))
+					strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+					strcat(adr(Internal.StrukturName),"ARRAY")
+					strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				endif
+
+				Internal.ItemNrSoll[Internal.Ebene] = Internal.Dimension-1
+				strcat(adr(Internal.VarItemName),"[")
+				itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+				strcat(adr(Internal.VarItemName),adr(Internal.Index))
+				strcat(adr(Internal.VarItemName),"]")
+
+				Internal.ArrayVariable= 1
+				status= 65535
+			next FILE_WRITE_STRUCT_NAME
+
+			; Array-Strukturen
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 15) do
+				if(FullNameLenght = 0) then
+					strcpy(adr(Internal.StrukturName),adr(Internal.VarItemName))
+					strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+					strcat(adr(Internal.StrukturName),"ARRAY_OF_STRUCTURES")
+					strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				endif
+
+				Internal.ItemNrSoll[Internal.Ebene] = Internal.Dimension-1
+				Internal.ItemNrIst[Internal.Ebene]= 0
+
+				; Variable für die PV-Funktionen zusammenstellen
+				strcat(adr(Internal.VarItemName),"[")
+				itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+				strcat(adr(Internal.VarItemName),adr(Internal.Index))
+				strcat(adr(Internal.VarItemName),"]")
+				Internal.ArrayStructure= 1	; Merker für Array-Struktur
+				status= 65535
+			next FILE_WRITE_STRUCT_NAME
+
+			; Keine Strukturen und keine Array's
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp <> 0) and (Internal.Datatyp <> 15) and (Internal.Dimension <= 1) do
+				strcpy(adr(Internal.StrukturName),adr(Internal.VarItemName))
+				strcpy(adr(Internal.FullStrukturName),adr(Internal.VarItemName))
+				Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene] + 1
+				Internal.ItemNrSoll[Internal.Ebene]= Internal.Dimension
+				Internal.PV_xgetadrStatus = PV_xgetadr(adr(Internal.VarItemName), adr(Internal.PV_Adress), adr(Internal.Lenght))
+				OnlyOneVar= 1
+				status= 65535
+			next PV_DATATYP
+
+		;##########################################################################################
+		state FILE_WRITE_STRUCT_NAME
+		;##########################################################################################
+
+			if((Internal.Offset+strlen(adr(Internal.StrukturName))-1) < MemLen ) and (Internal.Offset <> 0) then
+				strcpy(pStructMem+Internal.Offset,adr(Internal.StrukturName))
+			else if((Internal.Offset+strlen(adr(Internal.StrukturName))-1) < MemLen ) and (FullNameLenght = 0) then
+				strcpy(pStructMem+Internal.Offset,adr(Internal.StrukturName))
+			else
+				status= 55555
+			endif
+
+			when( (Internal.Datatyp = 15) or ((Internal.Datatyp <> 0) and (Internal.Datatyp <> 15) and (Internal.Dimension > 1) )) do
+	;			strcpy(adr(Internal.StrukturName),"")
+
+				if(FullNameLenght = 0) then
+					Internal.Offset= Internal.Offset + strlen(adr(Internal.StrukturName))-1
+					strcpy(adr(Internal.StrukturName),"")
+
+					loop Internal.i=0 to Internal.Ebene do
+						strcat(adr(Internal.StrukturName),"     ")
+					endloop
+					strcat(adr(Internal.StrukturName),".")
+				endif
+
+				status= 65535
+			next PV_ITEM_INFO
+
+			when ( (Internal.Datatyp = 0) or (Internal.Dimension <= 1) )do
+	;			strcpy(adr(Internal.StrukturName),"")
+
+				if(FullNameLenght = 0) then
+					Internal.Offset= Internal.Offset + strlen(adr(Internal.StrukturName))-1
+					strcpy(adr(Internal.StrukturName),"")
+					loop Internal.i=0 to Internal.Ebene do
+						strcat(adr(Internal.StrukturName),"     ")
+					endloop
+					strcat(adr(Internal.StrukturName),".")
+				endif
+
+				status= 65535
+			next PV_ITEM
+
+		;##########################################################################################
+		state PV_ITEM
+		;##########################################################################################
+		; Elementname der Stukture holen
+			Internal.PV_itemStatus = PV_item(adr(Internal.VarItemName), Internal.ItemNrIst[Internal.Ebene],adr(Internal.ItemName))
+
+			when (Internal.PV_itemStatus = 0) do
+				; Name für PV_Info()
+				strcat(adr(Internal.VarItemName),".")
+				strcat(adr(Internal.VarItemName),adr(Internal.ItemName))
+				Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene] + 1
+				status= 65535
+			next PV_ITEM_INFO
+
+		;##########################################################################################
+		state PV_ITEM_INFO
+		;##########################################################################################
+
+			Internal.PV_ninfoStatus = PV_ninfo(adr(Internal.VarItemName), adr(Internal.Datatyp), adr(Internal.DataLenght), adr(Internal.Dimension))
+			Internal.PV_xgetadrStatus = PV_xgetadr(adr(Internal.VarItemName), adr(Internal.PV_Adress), adr(Internal.Lenght))
+
+			; for part of structure: control, if this is the correct part
+			when ( memcmp(adr(Internal.VarItemName), adr(Internal.StartVarName), strlen(adr(Internal.StartVarName))) <> 0) do
+				status= 65535
+			next NEXT_STRUCTURE
+
+	;		###############################
+	;		Correction from 17 July 2003
+			when ( (Internal.PV_ninfoStatus <> 0 ) and (Internal.PV_xgetadrStatus <> 0) ) and ( Internal.ItemNrIst[1] > Internal.ItemNrSoll[1] ) do
+				status= 65535
+			next NEXT_STRUCTURE
+	;		Correction from 17 July 2003
+	;		###############################
+
+			when (Internal.PV_ninfoStatus <> 0) do		; any error ocurred
+				status= Internal.PV_ninfoStatus			; return error-code
+				ErrorName= Internal.NameCounter
+				Internal.y= 5
+			next INIT
+
+			when (Internal.PV_xgetadrStatus <> 0) do	; any error ocurred
+				status= Internal.PV_xgetadrStatus		; return error-code
+				ErrorName= Internal.NameCounter
+				Internal.y= 5
+			next INIT
+
+			;******************************************************************************************
+			; a new structure/dimension was found (only last Part of PV-Name)
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 0)  and (Internal.ArrayStructure = 0) and (FullNameLenght = 0) do
+				strcat(adr(Internal.StrukturName),adr(Internal.ItemName))	; add the new item-name to the CSV-file
+				inc(Internal.Ebene) 										; increase the dimension-counter
+				Internal.ItemNrSoll[Internal.Ebene]= Internal.Dimension		; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+			next PV_DATATYP
+
+			;******************************************************************************************
+			; a new structure/dimension was found ( whole PV-Name)
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 0)  and (Internal.ArrayStructure = 0) and (FullNameLenght = 1) do
+				inc(Internal.Ebene) 										; increase the dimension-counter
+				Internal.ItemNrSoll[Internal.Ebene]= Internal.Dimension		; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+			next PV_ITEM_LOOP
+
+			;******************************************************************************************
+			; a new structure/dimension was found in an array-structure, part of Name
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 0) and (Internal.ArrayStructure = 1) and (FullNameLenght = 0) do
+				strcpy(adr(Internal.ItemName),adr(Internal.VarItemName))	; copy variable-name
+				Internal.FoundChar= 1										; set counter for found levels
+																			;	-> '.''[' are character for levels
+				; loop to the rearmost '.' in the variable-name
+				loop Internal.i=usint(strlen(adr(Internal.ItemName)+1)) downto 0 do
+					SearchChar access adr(Internal.ItemName) + Internal.i	; set dynamic variable for access
+					exitif(SearchChar ='.')									; exit from loop
+				endloop
+	;			###############################
+	;			Correction from 17 July 2003
+				if( Internal.i = 0) then
+					; don't write the '*' of dynamic variables in the file
+					if(Internal.ItemName[0] = '*')then
+						strcat( adr(Internal.StrukturName), adr(Internal.ItemName)+ 1 )
+					else
+						strcat( adr(Internal.StrukturName), adr(Internal.ItemName) )
+					endif
+				else
+					strcat(adr(Internal.StrukturName),adr(Internal.ItemName)+Internal.i+1)
+				endif
+
+	;			strcat(adr(Internal.StrukturName),adr(Internal.ItemName)+Internal.i+1)	; add the variable-name to the CSV-File from the found '.'
+	;			Correction from 17 July 2003
+	;			###############################
+
+				inc(Internal.Ebene) 										; increase level-counter
+				Internal.ItemNrSoll[Internal.Ebene]= Internal.Dimension		; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+			next PV_DATATYP
+
+			;******************************************************************************************
+			; a new structure/dimension was found in an array-structure	,full name
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 0) and (Internal.ArrayStructure = 1) and (FullNameLenght = 1) do
+				strcpy(adr(Internal.ItemName),adr(Internal.VarItemName))	; copy variable-name
+				Internal.FoundChar= 1										; set counter for found levels
+																			;	-> '.''[' are character for levels
+				; loop to the rearmost '.' in the variable-name
+				loop Internal.i=usint(strlen(adr(Internal.ItemName)+1)) downto 0 do
+					SearchChar access adr(Internal.ItemName) + Internal.i	; set dynamic variable for access
+					exitif(SearchChar ='.')									; exit from loop
+				endloop
+
+				inc(Internal.Ebene) 										; increase level-counter
+				Internal.ItemNrSoll[Internal.Ebene]= Internal.Dimension		; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+			next PV_DATATYP
+
+			;******************************************************************************************
+			; array-variable was found ( no array-structure, full Name)
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp <> 0) and (Internal.Datatyp <> 15) and (Internal.Dimension > 1) and (FullNameLenght = 1) do
+
+				inc(Internal.Ebene)											; increase the level-counter
+				Internal.ItemNrSoll[Internal.Ebene] = Internal.Dimension-1	; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+
+				;create new variable-name for the next PV-function
+				strcat(adr(Internal.VarItemName),"[")						; add to the variable-name '[' ->testvariable[
+				itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index)); convert index-number to index-string
+				strcat(adr(Internal.VarItemName),adr(Internal.Index))		; add index ->testvariable[0
+				strcat(adr(Internal.VarItemName),"]")						; add ']' ->testvariable[0]
+				Internal.ArrayVariable= 1									; flag for array-variable
+			next PV_ITEM_INFO
+
+			;******************************************************************************************
+			; array-variable was found ( no array-structure, part of name)
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp <> 0) and (Internal.Datatyp <> 15) and (Internal.Dimension > 1) and (FullNameLenght = 0) do
+
+				inc(Internal.Ebene)											; increase the level-counter
+				Internal.ItemNrSoll[Internal.Ebene] = Internal.Dimension-1	; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+
+				; create entry in the CSV-file
+				strcat(adr(Internal.StrukturName),adr(Internal.ItemName))	; add the new item-name to the CSV-file
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"ARRAY")					; add as datatyp "ARRAY"
+				strcat(adr(Internal.StrukturName),"[")						; add '[' -> ARRAY[
+				itoa(Internal.Dimension,adr(Internal.Index))
+				strcat(adr(Internal.StrukturName),adr(Internal.Index))		; add index	-> ARRAY[0
+				strcat(adr(Internal.StrukturName),"]")						; add']' -> ARRAY[0]
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))	; new line
+
+				;create new variable-name for the next PV-function
+				strcat(adr(Internal.VarItemName),"[")						; add to the variable-name '[' ->testvariable[
+				itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index)); convert index-number to index-string
+				strcat(adr(Internal.VarItemName),adr(Internal.Index))		; add index ->testvariable[0
+				strcat(adr(Internal.VarItemName),"]")						; add ']' ->testvariable[0]
+				Internal.ArrayVariable= 1									; flag for array-variable
+			next FILE_WRITE
+
+			;******************************************************************************************
+			; array-structure was found (part of name )
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 15) and (FullNameLenght = 0) do
+
+				strcat(adr(Internal.StrukturName),adr(Internal.ItemName))	; add the new item-name to the CSV-file
+				inc(Internal.Ebene)											; increase level-counter
+				Internal.ItemNrSoll[Internal.Ebene] = Internal.Dimension-1	; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+
+				;create new variable-name for the next PV-function
+				strcat(adr(Internal.VarItemName),"[")						; add to the variable-name '[' ->testvariable[
+				itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index)); convert index-number to index-string
+				strcat(adr(Internal.VarItemName),adr(Internal.Index))		; add index ->testvariable[0
+				strcat(adr(Internal.VarItemName),"]")						; add ']' ->testvariable[0]
+				Internal.ArrayStructure= 1									; flag for array-structure
+			next PV_DATATYP
+
+			;******************************************************************************************
+			; array-structure was found (full name)
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp = 15) and (FullNameLenght = 1) do
+
+				inc(Internal.Ebene)											; increase level-counter
+				Internal.ItemNrSoll[Internal.Ebene] = Internal.Dimension-1	; save number of dimensions
+				Internal.ItemNrIst[Internal.Ebene]= 0						; reset dimension-counter
+
+				;create new variable-name for the next PV-function
+				strcat(adr(Internal.VarItemName),"[")						; add to the variable-name '[' ->testvariable[
+				itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index)); convert index-number to index-string
+				strcat(adr(Internal.VarItemName),adr(Internal.Index))		; add index ->testvariable[0
+				strcat(adr(Internal.VarItemName),"]")						; add ']' ->testvariable[0]
+				Internal.ArrayStructure= 1									; flag for array-structure
+			next PV_ITEM_INFO
+
+			;******************************************************************************************
+			; there was no new structure/dimension found, but in this level, there are more as one other dimensions(elements)
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and ((Internal.Datatyp <> 0) or (Internal.Datatyp <> 15)) and (Internal.ItemNrIst[Internal.Ebene] < Internal.ItemNrSoll[Internal.Ebene]) and (Internal.Dimension <= 1)do
+
+				if (FullNameLenght = 1) then
+					strcpy( adr(Internal.FullStrukturName), adr(Internal.VarItemName) )
+				endif
+
+				Internal.FoundChar= 1 			; set counter for found levels
+				loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do	; loop the hole variable name
+					SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamic variable access
+
+					;******************************************************************************************
+					; the right level was found
+					;******************************************************************************************
+					if( (SearchChar = '.') and (Internal.FoundChar = Internal.Ebene) )then
+						strcat(adr(Internal.StrukturName),adr(Internal.ItemName))	; add the new item-name to the CSV-file
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+						exitif(1=1)			; exit loop
+					;******************************************************************************************
+	 				; an array-variable was found in the right level (no array's in structure)
+					;******************************************************************************************
+	 				else if( (SearchChar = '[') and (Internal.FoundChar = Internal.Ebene) and (Internal.Ebene = 1) )then	; es ist noch die richtige Internal.Ebene erreicht
+						; don't write the '*' of dynamic variables in the file
+						if(Internal.VarItemName[0] = '*')then
+							strcat(adr(Internal.StrukturName),adr(Internal.VarItemName)+1)
+						else
+							strcat(adr(Internal.StrukturName),adr(Internal.VarItemName))
+						endif
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+						Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1	; increase dimension-counter
+						itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+						strcat(adr(Internal.VarItemName),"[")					; add to the variable-name '[' ->testvariable[
+						strcat(adr(Internal.VarItemName),adr(Internal.Index))	; add index ->testvariable[0
+						strcat(adr(Internal.VarItemName),"]")					; add ']' ->testvariable[0]
+						Internal.ArrayVariable= 1								; flag for array-structure
+						exitif(1=1)
+					;******************************************************************************************
+					; an array was found in the right level
+					;******************************************************************************************
+	 				else if( (SearchChar = '[') and (Internal.FoundChar = Internal.Ebene) and (Internal.Ebene > 1) )then
+						loop Internal.i=Internal.Merker to  usint(strlen(adr(Internal.VarItemName))+1) do
+							SearchChar access adr(Internal.VarItemName) + Internal.i		; dynamic variable access
+							Internal.ArrayName[Internal.i-Internal.Merker]= SearchChar		; copy the last item-name
+						endloop
+						Internal.ArrayName[Internal.i-Internal.Merker+1]= 0					; zero-termination of the copied name
+						strcat(adr(Internal.StrukturName),adr(Internal.ArrayName))			; add the copied name to the CSV-file
+						SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamic variable access
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+						Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1	; increase dimension-counter
+						itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+						strcat(adr(Internal.VarItemName),"[")								; add to the variable-name '[' ->testvariable[
+						strcat(adr(Internal.VarItemName),adr(Internal.Index))				; add index ->testvariable[0
+						strcat(adr(Internal.VarItemName),"]")								; add ']' ->testvariable[0]
+						Internal.ArrayVariable= 1											; flag for array-structure
+						exitif(1=1)									; exit loop
+					;******************************************************************************************
+					; a level was found, but not the right level
+					;******************************************************************************************
+					else if( ((SearchChar = '.') or(SearchChar = ']') ) and (Internal.FoundChar < Internal.Ebene) )then
+						inc(Internal.FoundChar)						; increase counter for found levels
+						Internal.Merker= Internal.Counter_Usint+1	; notice position of the found level-character
+					endif
+				endloop
+			next PV_DATATYP
+
+			;******************************************************************************************
+			; there was no new structure/dimension found, but in this level, there is only one other dimensions(elements)
+			;******************************************************************************************
+			when (Internal.PV_ninfoStatus = 0) and (Internal.Datatyp <> 0) and (Internal.Datatyp <> 15) and (Internal.ItemNrIst[Internal.Ebene] >= (Internal.ItemNrSoll[Internal.Ebene]))do
+
+				if (FullNameLenght = 1) then
+					strcpy( adr(Internal.FullStrukturName), adr(Internal.VarItemName) )
+				endif
+
+				Internal.FoundChar= 1 		; set counter for found levels
+				loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do	; loop the hole variable name
+					SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamic variable access
+					;******************************************************************************************
+					; the right level was found
+					;******************************************************************************************
+					if ( (SearchChar = '.') and ( (Internal.FoundChar = Internal.Ebene) or (Internal.FoundChar = (Internal.Ebene-1)) )  and (Internal.ArrayVariable = 0) and (Internal.ArrayStructure = 0) )then	; es ist noch die richtige Internal.Ebene erreicht
+						strcat(adr(Internal.StrukturName),adr(Internal.ItemName))
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+						if(Internal.Ebene <> 0)then
+							Internal.Ebene= Internal.Ebene - 1	; reduce level-counter
+						else
+							Internal.Ebene= 0					; set level-counter to zero
+						endif
+						exitif(1=1)			; exit loop
+
+					;******************************************************************************************
+					; structure with array-structure found
+					;******************************************************************************************
+					else if ( (SearchChar = '.') and  (Internal.FoundChar = Internal.Ebene-1)  and (Internal.ArrayVariable = 0) and (Internal.ArrayStructure = 1) )then	; es ist noch die richtige Ebene erreicht
+						strcat(adr(Internal.StrukturName),adr(Internal.ItemName))	; add the new item-name to the CSV-file
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+						if(Internal.Ebene <> 0)then
+	;					###############################
+	;					Correction from 4 July 2003
+	;						Internal.Ebene= Internal.Ebene - 1	; reduce level-counter
+							loop Internal.Ebene=Internal.Ebene-1 downto 0 do
+								exitif((Internal.ItemNrIst[Internal.Ebene] < Internal.ItemNrSoll[Internal.Ebene]))
+							endloop
+
+
+							if(Internal.MerkerArray[Internal.Ebene]= 1)then
+								Internal.FoundChar= 0
+								loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do			; den ganzen String durchsuchen
+									SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamischen Variable setzen
+
+									if ( (SearchChar = '[') and (Internal.Ebene-1 = Internal.FoundChar) )then
+										SearchChar= 0
+										Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1
+										strcat(adr(Internal.VarItemName),"[")
+										itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+										strcat(adr(Internal.VarItemName),adr(Internal.Index))
+										strcat(adr(Internal.VarItemName),"]")
+										Internal.NextItemReady= 1
+										loop Internal.i=usint(strlen(adr(Internal.VarItemName))+1) downto 0 do
+											SearchChar access adr(Internal.VarItemName) + Internal.i		; dynamischen Variable setzen
+											exitif(SearchChar='.')
+										endloop
+
+	;					###############################
+	;					Correction from 11 August 2003
+										if (Internal.i = 0) then
+											strcpy(adr(Internal.ItemName),adr(Internal.VarItemName) + Internal.i)
+										else
+											strcpy(adr(Internal.ItemName),adr(Internal.VarItemName) + Internal.i + 1)
+										endif
+	;					Correction from 11 August 2003
+	;					###############################
+										exitif(1=1)
+									else if	( (SearchChar = '[') and (Internal.Ebene > Internal.FoundChar) )then
+										inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+									else if( (SearchChar = '.') and (Internal.Ebene > Internal.FoundChar) )then
+										inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+									endif
+								endloop
+							else
+								Internal.FoundChar= 0
+								loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do			; den ganzen String durchsuchen
+									SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamischen Variable setzen
+
+									if ( (SearchChar = '.') and (Internal.Ebene-1 = Internal.FoundChar) )then
+										SearchChar= 0
+										exitif(1=1)
+									else if	( (SearchChar = '[') and (Internal.Ebene > Internal.FoundChar) )then
+										inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+									else if( (SearchChar = '.') and (Internal.Ebene > Internal.FoundChar) )then
+										inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+									endif
+								endloop
+							endif
+	;					Correction from 4 July 2003
+	;					###############################
+						else
+							Internal.Ebene= 0					; set level-counter to zero
+						endif
+						Internal.ArrayStructure= 0				; reset flag for array-structure
+						exitif(1=1)			; exit loop
+
+					;******************************************************************************************
+					; the array-sturcture is not on the end, there are another array-indexes available
+					;******************************************************************************************
+					else if ( (SearchChar = '.') and (Internal.FoundChar = Internal.Ebene) and (Internal.ItemNrIst[Internal.Ebene-1] < Internal.ItemNrSoll[Internal.Ebene-1]) and (Internal.ArrayVariable = 0) and (Internal.ArrayStructure = 1) )then
+
+	;					###############################
+	;					Correction from 8 July 2003
+						strcat(adr(Internal.StrukturName),adr(Internal.ItemName))	; add the new item-name to the CSV-file
+
+						; set the counter to the index in the variablename, to set here the zerotemination
+						; e.g.: test.var1.structure[0].value -> test.var1.structure[
+						loop Internal.i=Internal.Counter_Usint-1 downto 0 do
+							SearchChar access adr(Internal.VarItemName) + Internal.i ; dynamic variable access
+							exitif(SearchChar = '[')
+						endloop
+
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+						Internal.Ebene= Internal.Ebene - 1	;reduce level-counter
+						strcat(adr(Internal.VarItemName),"[")						; add '[' -> test.var1.structure[
+	;					Correction from 8 July 2003
+	;					###############################
+
+						Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1 ; increase dimension-counter
+						itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+						strcat(adr(Internal.VarItemName),adr(Internal.Index))		; add index to the variable-name e.g.: test.var1.structure[
+																					; -> test.var1.structure[0
+						strcat(adr(Internal.VarItemName),"]")						; add ']' -> test.var1.structure[0]
+						exitif(1=1)			; exit loop
+
+					;******************************************************************************************
+					; the array-sturcture is on the end
+					;******************************************************************************************
+					else if ( (SearchChar = '.') and (Internal.FoundChar = Internal.Ebene) and (Internal.ItemNrIst[Internal.Ebene-1] >= Internal.ItemNrSoll[Internal.Ebene-1]) and (Internal.ArrayVariable = 0) and (Internal.ArrayStructure = 1) )then
+
+					loop Internal.Ebene=Internal.Ebene-1 downto 0 do
+						exitif((Internal.ItemNrIst[Internal.Ebene] < Internal.ItemNrSoll[Internal.Ebene]))
+					endloop
+
+						Internal.FoundChar= 0
+
+						if Internal.Ebene <> 0 then
+							loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do			; den ganzen String durchsuchen
+								SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamischen Variable setzen
+
+								if ( (SearchChar = '.') and (Internal.Ebene-1 = Internal.FoundChar) )then
+									SearchChar= 0
+									Internal.ArrayStructure= 0
+									strcat(adr(Internal.StrukturName),adr(Internal.ItemName))
+									exitif(1=1)
+								else if ( (SearchChar = '[') and (Internal.Ebene-1 = Internal.FoundChar) )then
+									SearchChar= 0
+
+									strcat(adr(Internal.StrukturName),adr(Internal.ItemName))
+
+									strcat(adr(Internal.VarItemName),"[")						; add '[' ->testvariable[
+									Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1	;increase dimension-counter
+									itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+									strcat(adr(Internal.VarItemName),adr(Internal.Index))		; add index ->testvariable[0
+									strcat(adr(Internal.VarItemName),"]")						; add ']' ->testvariable[0]
+									Internal.ArrayStructure= 1
+									exitif(1=1)
+								else if	( (SearchChar = '[') and (Internal.Ebene > Internal.FoundChar) )then
+									inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+								else if( (SearchChar = '.') and (Internal.Ebene > Internal.FoundChar) )then
+									inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+								endif
+							endloop
+						else
+							Internal.Ebene= 1
+							loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do			; den ganzen String durchsuchen
+								if (SearchChar = '.') then
+									SearchChar= 0
+									strcat(adr(Internal.StrukturName),adr(Internal.ItemName))
+									exitif(1=1)
+								endif
+							endloop
+							Internal.ArrayStructure= 0
+							Internal.ArrayVariable = 0
+					endif
+
+	(*
+
+						strcat(adr(Internal.StrukturName),adr(Internal.ItemName))		; add the new item-name to the CSV-file
+						loop Internal.i=Internal.Counter_Usint-1 downto 0 do
+						SearchChar access adr(Internal.VarItemName) + Internal.i		; dynamic variable access
+							if(	SearchChar = '.') then
+								SearchChar= 0		; create new varible-name -> zerotermination of the string
+													; with this zerotermination, the variable-name, witch was used at last for the
+													; PV_ninfo()-function, will be cut off the last item-name
+													; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+								exitif(1=1)			;exit loop
+							endif
+						endloop
+						Internal.Ebene= Internal.Ebene - 2		; reduce level-counter
+						Internal.ArrayStructure= 0				; reset flag for array-structure
+
+						;******************************************************************************************
+						; is the next structure also an array structure (e.g. test.var1.structure[0].struct[0].var2
+						;******************************************************************************************
+						if(Internal.ItemNrIst[Internal.Ebene] >= Internal.ItemNrSoll[Internal.Ebene])then
+
+							SearchChar access adr(Internal.VarItemName) + Internal.i - 1		; dynamic variable access
+
+							if( SearchChar = ']') then		; if the next characture = ']'
+	;							##############################################
+	; 							Correction from 10 September 2003
+								if(Internal.ItemNrIst[Internal.Ebene-1] >= Internal.ItemNrSoll[Internal.Ebene-1])then	; es ist noch die richtige Ebene erreicht
+									loop Internal.Ebene=Internal.Ebene-1 downto 0 do
+										exitif((Internal.ItemNrIst[Internal.Ebene] < Internal.ItemNrSoll[Internal.Ebene]))
+									endloop
+									Internal.FoundChar= 0
+
+									loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do			; den ganzen String durchsuchen
+										SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamischen Variable setzen
+
+										if ( (SearchChar = '.') and (Internal.Ebene-1 = Internal.FoundChar) )then
+											SearchChar= 0
+											exitif(1=1)
+										else if	( (SearchChar = '[') and (Internal.Ebene > Internal.FoundChar) )then
+											inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+										else if( (SearchChar = '.') and (Internal.Ebene > Internal.FoundChar) )then
+											inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+										endif
+									endloop
+
+								else
+									loop Internal.i=Internal.i downto 0 do
+										SearchChar access adr(Internal.VarItemName) + Internal.i		; dynamischen Variable setzen
+										exitif(SearchChar = '[')
+									endloop
+									SearchChar= 0		; create new varible-name -> zerotermination of the string
+														; with this zerotermination, the variable-name, witch was used at last for the
+														; PV_ninfo()-function, will be cut off the last item-name
+														; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+	; 								Correction from 10 September 2003
+	;								##############################################
+									strcat(adr(Internal.VarItemName),"[")						; add '[' ->testvariable[
+									Internal.Ebene= Internal.Ebene-1	; reduce level-counter
+									Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1	;increase dimension-counter
+									itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+									strcat(adr(Internal.VarItemName),adr(Internal.Index))		; add index ->testvariable[0
+									strcat(adr(Internal.VarItemName),"]")						; add ']' ->testvariable[0]
+									Internal.ArrayStructure= 1									; set flag for array-structure
+								endif
+							endif
+						endif
+	*)
+						exitif(1=1)			; exit loop
+
+					; nur Array's-Variablen
+					;******************************************************************************************
+					; an array was found ( not in a structure)
+					;******************************************************************************************
+	 				else if( (SearchChar = '[') and (Internal.FoundChar = Internal.Ebene) and (Internal.Ebene = 1))then	; es ist noch die richtige Internal.Ebene erreicht
+						; don't write the '*' of dynamic variables in the file
+						if(Internal.VarItemName[0] = '*')then
+							strcat(adr(Internal.StrukturName),adr(Internal.VarItemName)+1)
+						else
+							strcat(adr(Internal.StrukturName),adr(Internal.VarItemName))
+						endif
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+						if(Internal.Ebene <> 0)then
+							Internal.Ebene= Internal.Ebene - 1	; reduce level-counter
+						else
+							Internal.Ebene= 0					; reset counter
+						endif
+						Internal.ArrayVariable= 0				; reset flag for array-variable
+						exitif(1=1)								; exit loop
+
+					;******************************************************************************************
+					; an array in a structure was found
+					;******************************************************************************************
+	 				else if( (SearchChar = '[') and (Internal.FoundChar = Internal.Ebene) and (Internal.Ebene > 1) )then
+						loop Internal.i=Internal.Merker to  usint(strlen(adr(Internal.VarItemName))+1) do	; loop the hole variable-name
+							SearchChar access adr(Internal.VarItemName) + Internal.i		; dynamic variable access
+							Internal.ArrayName[Internal.i-Internal.Merker]= SearchChar		; copy the last item-name
+						endloop
+						strcat(adr(Internal.StrukturName),adr(Internal.ArrayName))			; copy the last item-name to th CSV-file
+						SearchChar access adr(Internal.VarItemName) + Internal.Merker-1		; dynamic variable access
+						SearchChar= 0		; create new varible-name -> zerotermination of the string
+											; with this zerotermination, the variable-name, witch was used at last for the
+											; PV_ninfo()-function, will be cut off the last item-name
+											; e.g.:	test.var1.var2 -> zerotemination -> test.var1
+
+	;					###############################
+	;					Correction from 17 July 2003
+	;					if(Internal.Ebene <> 0)then
+	;						Internal.Ebene= Internal.Ebene - 1	; reduce level-counter
+	;					else
+	;						Internal.Ebene= 0					; reset level-counter
+	;					endif
+
+						loop Internal.Ebene=Internal.Ebene-1 downto 0 do
+							exitif((Internal.ItemNrIst[Internal.Ebene] < Internal.ItemNrSoll[Internal.Ebene]))
+						endloop
+
+
+						if(Internal.MerkerArray[Internal.Ebene]= 1)then
+							Internal.FoundChar= 0
+							loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do			; den ganzen String durchsuchen
+								SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamischen Variable setzen
+
+								if ( (SearchChar = '[') and (Internal.Ebene-1 = Internal.FoundChar) )then
+									SearchChar= 0
+									Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1
+									strcat(adr(Internal.VarItemName),"[")
+									itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+									strcat(adr(Internal.VarItemName),adr(Internal.Index))
+									strcat(adr(Internal.VarItemName),"]")
+									Internal.NextItemReady= 1
+									loop Internal.i=usint(strlen(adr(Internal.VarItemName))+1) downto 0 do
+										SearchChar access adr(Internal.VarItemName) + Internal.i		; dynamischen Variable setzen
+										exitif(SearchChar='.')
+									endloop
+
+									if( Internal.i <> 0) then
+										strcpy(adr(Internal.ItemName),adr(Internal.VarItemName) + Internal.i + 1)
+									else
+										strcpy(adr(Internal.ItemName),adr(Internal.VarItemName) + Internal.i)
+									endif
+
+									exitif(1=1)
+								else if	( (SearchChar = '[') and (Internal.Ebene > Internal.FoundChar) )then
+									inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+								else if( (SearchChar = '.') and (Internal.Ebene > Internal.FoundChar) )then
+									inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+								endif
+							endloop
+						else
+							Internal.FoundChar= 0
+							loop Internal.Counter_Usint=0 to usint(strlen(adr(Internal.VarItemName))+1) do			; den ganzen String durchsuchen
+								SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamischen Variable setzen
+
+								if ( (SearchChar = '.') and (Internal.Ebene-1 = Internal.FoundChar) )then
+									SearchChar= 0
+									exitif(1=1)
+								else if	( (SearchChar = '[') and (Internal.Ebene > Internal.FoundChar) )then
+									inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+								else if( (SearchChar = '.') and (Internal.Ebene > Internal.FoundChar) )then
+									inc(Internal.FoundChar)		; eine weitere Ebene gefunden
+								endif
+							endloop
+						endif
+	;					Correction from 17 July 2003
+	;					###############################
+
+						Internal.ArrayVariable= 0				; reset flag for array-variable
+						exitif(1=1)
+					;******************************************************************************************
+					; a level was found, but not the right level
+					;******************************************************************************************
+					else if( ((SearchChar = '.') and (Internal.FoundChar < (Internal.Ebene-1))and (Internal.ArrayVariable = 0)) or ((SearchChar = '.') and (Internal.FoundChar < Internal.Ebene) and (Internal.ArrayVariable = 1)) )then	; es ist noch die richtige Internal.Ebene erreicht
+	;					###############################
+	;					Correction from 4 July 2003
+						Internal.MerkerArray[Internal.FoundChar]= 0
+	;					Correction from 4 July 2003
+	;					###############################
+						inc(Internal.FoundChar)						; increase counter for found levels
+						Internal.Merker= Internal.Counter_Usint+1	; notice position of the found level-character
+						Internal.ArrayStructure= 0					; reset flag for array-structure
+					;******************************************************************************************
+					; a level was found, but not the right level (array-structure)
+					;******************************************************************************************
+					else if ( (SearchChar = ']') and (Internal.Ebene > Internal.FoundChar) )then
+	;					###############################
+	;					Correction from 4 July 2003
+						Internal.MerkerArray[Internal.FoundChar]= 1
+	;					Correction from 4 July 2003
+	;					###############################
+						inc(Internal.FoundChar)			; increase counter for found levels
+						Internal.ArrayStructure= 1		; set flag for array-structure
+					endif
+				endloop
+			next PV_DATATYP
+
+		;##########################################################################################
+		state PV_DATATYP
+		;##########################################################################################
+
+			if (FullNameLenght = 1) and (OnlyOneVar = 0) then
+				strcpy( adr(Internal.StrukturName),adr(Internal.FullStrukturName) )
+			endif
+
+			when (Internal.PV_Adress = 0) do
+				status= ERR_PV_ADRESS
+				Internal.y= 5
+			next INIT
+
+			when (Internal.Datatyp = 0) and (FullNameLenght = 0) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"STRUCTURE")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				Internal.ArrayStructure= 0
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 0) and (FullNameLenght = 1) do
+				strcpy(adr(Internal.StrukturName)," ")
+				Internal.ArrayStructure= 0
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 1) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"BOOL")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Bool access Internal.PV_Adress
+				itoa(Dyn_Bool,adr(Internal.Value))
+
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 2) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"SINT")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Sint access Internal.PV_Adress
+				itoa(Dyn_Sint,adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),".0")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 3) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"INT")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Int access Internal.PV_Adress
+				itoa(Dyn_Int,adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),".0")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 4) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"DINT")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Dint access Internal.PV_Adress
+				itoa(Dyn_Dint,adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),".0")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 5) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"USINT")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Usint access Internal.PV_Adress
+				itoa(Dyn_Usint,adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),".0")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 6) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"UINT")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Uint access Internal.PV_Adress
+				itoa(Dyn_Uint,adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),".0")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 7) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"UDINT")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Udint access Internal.PV_Adress
+	;			itoa(Dyn_Udint,adr(Internal.Value))
+				Internal.TmpValue = Dyn_Udint
+				memset(adr(Internal.Value), 0, sizeof(Internal.Value) )
+				; umwandeln des UDINT-Werte in einen String
+				Internal.Value[0]= usint(Internal.TmpValue/1000000000)+48;
+				Internal.TmpValue= Internal.TmpValue mod 1000000000
+				Internal.Value[1]= usint(Internal.TmpValue/100000000)+48;
+				Internal.TmpValue= Internal.TmpValue mod 100000000
+				Internal.Value[2]= usint(Internal.TmpValue/10000000)+48;
+				Internal.TmpValue= Internal.TmpValue mod 10000000
+				Internal.Value[3]= usint(Internal.TmpValue/1000000)+48;
+				Internal.TmpValue= Internal.TmpValue mod 1000000
+				Internal.Value[4]= usint(Internal.TmpValue/100000)+48;
+				Internal.TmpValue= Internal.TmpValue mod 100000
+				Internal.Value[5]= usint(Internal.TmpValue/10000)+48;
+				Internal.TmpValue= Internal.TmpValue mod 10000
+				Internal.Value[6]= usint(Internal.TmpValue/1000)+48;
+				Internal.TmpValue= Internal.TmpValue mod 1000
+				Internal.Value[7]= usint(Internal.TmpValue/100)+48;
+				Internal.TmpValue= Internal.TmpValue mod 100
+				Internal.Value[8]= usint(Internal.TmpValue/10)+48;
+				Internal.TmpValue= Internal.TmpValue mod 10
+				Internal.Value[9]= usint(Internal.TmpValue/1)+48;
+				; angeführte nullen löschen
+				if Internal.Value[0] = '0' then	; if there are no leading '0' (value > 1.000.000.000) - no need to try find them
+					loop Internal.i=0 to 9 do
+						if(Internal.Value[Internal.i] <> '0') then
+							memmove(adr(Internal.Value[0]),adr(Internal.Value[Internal.i]), sizeof(Internal.Value)-Internal.i)
+							Internal.Value[sizeof(Internal.Value)-Internal.i] = 0
+							exitif(1=1)
+						endif
+						; kein Wert
+						if (Internal.i=9) then
+							strcpy(adr(Internal.Value),"0")
+						endif
+					endloop
+				endif
+
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),".0")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 8) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"REAL")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Real access Internal.PV_Adress
+				ftoa(Dyn_Real,adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				loop Internal.i=0 to sizeof(Internal.Value) do
+					Dyn_Usint access adr(Internal.Value)+Internal.i
+					exitif(Dyn_Usint = '.')
+					if (Dyn_Usint = 0) then
+						strcat(adr(Internal.StrukturName),".0")
+						exitif(1=1)
+					endif
+				endloop
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 9) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"STRING")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+
+				loop Internal.i=0 to uint(Internal.Lenght) do
+					Dyn_Usint access (Internal.PV_Adress+Internal.i)
+
+					Internal.UsintArray[Internal.i]= Dyn_Usint
+
+					exitif (Dyn_Usint = 0)
+				endloop
+				strcat(adr(Internal.StrukturName),adr(Internal.UsintArray))
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 10) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"OCTET STRING")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+
+				loop Internal.i=0 to uint(Internal.Lenght) do
+					Dyn_Usint access (Internal.PV_Adress+Internal.i)
+
+					Internal.UsintArray[Internal.i]= Dyn_Usint
+					exitif (Dyn_Usint = 0)
+				endloop
+				strcat(adr(Internal.StrukturName),adr(Internal.UsintArray))
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 11) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"DATE_AND_TIME")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Date_and_Time access Internal.PV_Adress
+				ascDT(Dyn_Date_and_Time, adr(Internal.UsintArray), sizeof(Internal.UsintArray))
+				strcat(adr(Internal.StrukturName),adr(Internal.UsintArray))
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 12) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"TIME")
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				Dyn_Time access Internal.PV_Adress
+	;			ascTIME(Dyn_Time, adr(Internal.UsintArray), sizeof(Internal.UsintArray))
+	;			strcat(adr(Internal.StrukturName),adr(Internal.UsintArray))
+				Internal.DintTime= dint(Dyn_Time)
+				itoa(Internal.DintTime,adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),adr(Internal.Value))
+				strcat(adr(Internal.StrukturName),".0")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				inc(Internal.VariableCounter)
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 13) or (Internal.Datatyp = 14) do
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 15) and (FullNameLenght = 0) do
+				strcat(adr(Internal.StrukturName),adr(Internal.Separator[0]))
+				strcat(adr(Internal.StrukturName),"ARRAY_OF_STRUCTURES")
+				strcat(adr(Internal.StrukturName),adr(Internal.CRLF[0]))
+				status= 65535
+			next FILE_WRITE
+
+			when (Internal.Datatyp = 15) and (FullNameLenght = 1) do
+				strcpy(adr(Internal.StrukturName)," ")
+				status= 65535
+			next FILE_WRITE
+
+		;##########################################################################################
+		state FILE_WRITE
+		;##########################################################################################
+
+	;		if( FileIdent <> 0)then
+	;			FileWrite_CSV.enable= 1
+	;			FileWrite_CSV.ident= FileIdent
+	;			FileWrite_CSV.offset= Internal.Offset
+	;			FileWrite_CSV.pSrc= adr(Internal.StrukturName)
+	;			FileWrite_CSV.len= strlen(adr(Internal.StrukturName))-1
+	;			FileWrite_CSV FUB FileWrite()
+	;		endif
+
+	;		Strings mit nur Leerzeichen nicht ins File eintragen
+			loop Internal.i = strlen(adr(Internal.StrukturName)) downto 1 do
+				exitif(Internal.StrukturName[Internal.i-1] <> ' ')
+			endloop
+
+	;		String mit nur Leerzeichen löschen
+			if (Internal.i = 1) then
+				strcpy(adr(Internal.StrukturName), "")
+			endif
+
+		    if((Internal.Offset+strlen(adr(Internal.StrukturName))-1) <  MemLen ) and (Internal.Offset <> 0) then
+	;			strcpy(pStructMem+Internal.Offset,adr(Internal.StrukturName))
+				memcpy(pStructMem+Internal.Offset,adr(Internal.StrukturName),strlen(adr(Internal.StrukturName)))
+			else if((Internal.Offset+strlen(adr(Internal.StrukturName))-1) <  MemLen ) and (Internal.Offset = 0) then
+				memcpy(pStructMem+Internal.Offset,adr(Internal.StrukturName),strlen(adr(Internal.StrukturName)) )
+			else
+				status= 55555
+				ErrorName= Internal.NameCounter
+			endif
+
+
+			when(Internal.ArrayVariable = 0) and (Internal.ArrayStructure = 0) do
+				Internal.Offset= Internal.Offset + strlen(adr(Internal.StrukturName))
+				status= 65535
+			next PV_ITEM_LOOP
+
+			when(Internal.ArrayVariable= 1) do
+				Internal.Offset= Internal.Offset + strlen(adr(Internal.StrukturName))
+				strcpy(adr(Internal.StrukturName),"")
+
+				loop Internal.i=0 to Internal.Ebene do
+					strcat(adr(Internal.StrukturName),"     ")
+				endloop
+		    	strcat(adr(Internal.StrukturName),".")
+				status= 65535
+			next PV_ITEM_INFO
+
+			when(Internal.ArrayStructure= 1) do
+				Internal.Offset= Internal.Offset + strlen(adr(Internal.StrukturName))
+				strcpy(adr(Internal.StrukturName),"")
+
+				loop Internal.i=0 to Internal.Ebene do
+					strcat(adr(Internal.StrukturName),"     ")
+				endloop
+		    	strcat(adr(Internal.StrukturName),".")
+				status= 65535
+			next PV_ITEM_INFO
+
+
+		;##########################################################################################
+		state PV_ITEM_LOOP
+		;##########################################################################################
+		; Elementname der Stucture holen
+
+			; for part of structure: control, if this is the correct part
+			when ( memcmp(adr(Internal.VarItemName), adr(Internal.StartVarName), strlen(adr(Internal.StartVarName))) <> 0) do
+				status= 65535
+			next NEXT_STRUCTURE
+
+			when(OnlyOneVar = 1)do
+				OnlyOneVar= 0
+				status= 65535
+			next NEXT_STRUCTURE
+
+	;		###############################
+	;		Correction from 4 July 2003
+
+	;		Internal.PV_itemStatus = PV_item(adr(Internal.VarItemName), Internal.ItemNrIst[Internal.Ebene],adr(Internal.ItemName))
+
+			if(Internal.NextItemReady = 0)then
+				Internal.PV_itemStatus = PV_item(adr(Internal.VarItemName), Internal.ItemNrIst[Internal.Ebene],adr(Internal.ItemName))
+			endif
+
+			when (Internal.NextItemReady = 1) do
+				strcpy(adr(Internal.StrukturName),"")
+				loop Internal.i=0 to Internal.Ebene do
+					strcat(adr(Internal.StrukturName),"     ")
+				endloop
+	    		strcat(adr(Internal.StrukturName),".")
+				Internal.NextItemReady= 0
+			next PV_ITEM_INFO
+
+	;		Correction from 4 July 2003
+	;		###############################
+
+			when ( strlen( adr(Internal.VarItemName)) + strlen( adr(Internal.ItemName)) ) > sizeof(Internal.VarItemName) do
+				status= ERROR_STRUCTNAME_TOO_LONG
+				ErrorName= Internal.NameCounter
+				Internal.y= 5
+			next INIT
+
+			when ((Internal.Ebene = 1) and (Internal.ItemNrIst[Internal.Ebene] >= Internal.ItemNrSoll[Internal.Ebene])) or (Internal.Ebene = 0) do
+				Internal.PV_itemStatus = 0
+				status= 65535
+			next NEXT_STRUCTURE
+
+			when (Internal.PV_itemStatus = 14714) and (Internal.ArrayStructure = 1) do
+				Internal.PV_itemStatus = 0
+				status= 65535
+			next NEXT_STRUCTURE
+
+			when (Internal.Ebene > 1) and (Internal.PV_itemStatus <> 0) and (Internal.ItemNrIst[Internal.Ebene] = Internal.ItemNrSoll[Internal.Ebene]) do
+				loop Internal.Counter_Usint= usint(strlen(adr(Internal.VarItemName))+1) downto 0 do			; den ganzen String durchsuchen
+					SearchChar access adr(Internal.VarItemName) + Internal.Counter_Usint		; dynamischen Variable setzen
+					if ( SearchChar = '.' ) then
+						SearchChar= 0
+						Internal.Ebene= Internal.Ebene-1
+						if (Internal.ItemNrIst[Internal.Ebene] <> Internal.ItemNrSoll[Internal.Ebene]) then
+							exitif(1=1)
+						endif
+					endif
+
+					if ( SearchChar = '[' ) then
+						SearchChar= 0
+						Internal.Ebene= Internal.Ebene-1
+						if (Internal.ItemNrIst[Internal.Ebene] <> Internal.ItemNrSoll[Internal.Ebene]) then
+							Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene]+1
+							strcat(adr(Internal.VarItemName),"[")
+							itoa(Internal.ItemNrIst[Internal.Ebene],adr(Internal.Index))
+							strcat(adr(Internal.VarItemName),adr(Internal.Index))
+							strcat(adr(Internal.VarItemName),"]")
+
+							loop Internal.i=usint(strlen(adr(Internal.VarItemName))+1) downto 0 do
+								SearchChar access adr(Internal.VarItemName) + Internal.i	; set dynamic variable for access
+									if (SearchChar = '.')then
+										strcpy(adr(Internal.ItemName),adr(Internal.VarItemName) + Internal.i + 1 )
+										exitif(1=1)
+									endif
+							endloop
+
+							Internal.NextItemReady= 1
+							exitif(1=1)
+						endif
+					endif
+
+				endloop
+
+				status= 65535
+			next PV_ITEM_LOOP
+
+			when (Internal.PV_itemStatus = 0) do
+				; Name für PV_Info()
+				strcat(adr(Internal.VarItemName),".")
+				strcat(adr(Internal.VarItemName),adr(Internal.ItemName))
+				Internal.ItemNrIst[Internal.Ebene]= Internal.ItemNrIst[Internal.Ebene] + 1
+				strcpy(adr(Internal.StrukturName),"")
+
+				loop Internal.i=0 to Internal.Ebene do
+					strcat(adr(Internal.StrukturName),"     ")
+				endloop
+	    	strcat(adr(Internal.StrukturName),".")
+
+			status= 65535
+			next PV_ITEM_INFO
+
+		;##########################################################################################
+		state NEXT_STRUCTURE
+		;##########################################################################################
+			Dyn_Udint access (pStructName + Internal.NameCounter*4 )
+
+			when (Internal.NameCounter < NumOfStructs) and (NumOfStructs > 1) and (Dyn_Udint <> 0) do
+				Internal.Ebene= 1	;Start-Level
+
+				loop Internal.i=0 to 49 do
+					Internal.ItemNrSoll[Internal.i]= 65535	;set and reset internal counter
+					Internal.ItemNrIst[Internal.i]= 0
+				endloop
+				; Carriage Return and Linefeed
+				Internal.CRLF[0]= 13
+				Internal.CRLF[1]= 10
+				Internal.CRLF[2]= 0		; String Zerotermination
+
+				strcpy(adr(Internal.VarItemName) ,Dyn_Udint)	;copy Structurename to Internal "Work"-String
+				Internal.NameCounter= Internal.NameCounter+1
+
+				loop Internal.i=usint(strlen(adr(Internal.VarItemName))) downto 0 do
+					SearchChar access adr(Internal.VarItemName) + Internal.i	; set dynamic variable for access
+						if (SearchChar = '.')then
+							Internal.ItemNrSoll[Internal.Ebene]= 1
+							Internal.ItemNrIst[Internal.Ebene]= 1
+							Internal.Ebene= Internal.Ebene+1
+						else if(SearchChar = '[') then
+							Internal.ItemNrSoll[Internal.Ebene]= 1
+							Internal.ItemNrIst[Internal.Ebene]= 1
+							Internal.Ebene= Internal.Ebene+1
+						endif
+				endloop
+
+				strcpy(pStructMem+Internal.Offset,"//############################################################################################### ")
+				Internal.Offset= Internal.Offset+98
+				strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+				Internal.Offset= Internal.Offset+1
+				strcpy(pStructMem+Internal.Offset,adr(Internal.Separator))
+				Internal.Offset= Internal.Offset+1
+				strcpy(pStructMem+Internal.Offset,adr(Internal.CRLF))
+				Internal.Offset= Internal.Offset+2
+				OnlyOneVar= 0
+				status= 65535
+			next PV_INFO
+
+			when (Internal.NameCounter = 0) or (Internal.NameCounter = 1) or (Internal.NameCounter = NumOfStructs) do
+				FileLen= Internal.Offset
+				status= 0
+				Internal.y= 5
+			next INIT
+
+			when (Dyn_Udint = 0 ) do
+				status= ERROR_STRUCT_NAMES
+				ErrorName= Internal.NameCounter
+				Internal.y= 5
+			next INIT
+
+	endselect
+
+	endloop
+
+else
+    status = ERROR_INPUT_POINTER_ERR;
+endif
+END_FUNCTION_BLOCK

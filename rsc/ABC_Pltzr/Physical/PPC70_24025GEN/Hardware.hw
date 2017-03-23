@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="4PPC70_101G_20W" Type="4PPC70.101G-20W" Version="1.2.0.0">
+    <Connector Name="IF1">
+      <Parameter ID="ActivatePowerlink" Value="0" />
+    </Connector>
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.1.100" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Parameter ID="InaNodeNumber" Value="1" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="WSVGA" />
+      <Parameter ID="VncAuthentication1" Value="1" />
+      <Parameter ID="VncPasswordViewOnly1" Value="v" />
+      <Parameter ID="VncPasswordViewControl1" Value="24025" />
+      <Parameter ID="VncMaxConnections1" Value="2" />
+      <Parameter ID="VncRefreshRate1" Value="250" />
+    </Connector>
+    <Parameter ID="PermanentPvSize" Value="1000" />
+    <Parameter ID="RemanentGlobalPvSize" Value="25000" />
+    <Parameter ID="VolatileGlobalPvSize" Value="200000" />
+    <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+    <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
+    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Tolerance" Value="4000" />
+    <Parameter ID="Cyclic2Duration" Value="20000" />
+    <Parameter ID="Cyclic2Tolerance" Value="20000" />
+    <Parameter ID="Cyclic3Duration" Value="50000" />
+    <Parameter ID="Cyclic3Tolerance" Value="50000" />
+    <Parameter ID="Cyclic4Duration" Value="100000" />
+    <Parameter ID="Cyclic4Tolerance" Value="100000" />
+    <Parameter ID="Cyclic5Duration" Value="200000" />
+    <Parameter ID="Cyclic5Tolerance" Value="200000" />
+    <Parameter ID="Cyclic6Duration" Value="500000" />
+    <Parameter ID="Cyclic6Tolerance" Value="500000" />
+    <Parameter ID="Cyclic7Duration" Value="1000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic8Duration" Value="10000" />
+    <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="abc" />
+    <Parameter ID="FtpUserPassword1" Value="veVz20Da1KUF2Vww53L6omFNdzfk8lHY0HjcrjfOb/w=" Description="abc123" />
+    <Parameter ID="FtpUserSalt1" Value="pyAcjG26" />
+    <Parameter ID="FTPPath1" Value="5" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="VcObjectName" Value="WSVGA" />
+    <Parameter ID="KeyMappingFile" Value="VC\4PPC70_101G_20W.dis" />
+  </Module>
+  <Module Name="8I64-VFD1" Type="8I64xxxxxxx.00x-1" Version="1.3.8.1">
+    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1" />
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="enableIOLR" Value="off" />
+    <Parameter ID="enableDigitalOutput" Value="off" />
+    <Parameter ID="DigitalOutputMode01" Value="actionDO" />
+    <Parameter ID="ACC" Value="1" />
+    <Parameter ID="DEC" Value="1" />
+    <Parameter ID="HSP" Value="900" />
+    <Parameter ID="ITH" Value="28" />
+    <Parameter ID="BFR" Value="1" />
+    <Parameter ID="UNS" Value="460" />
+    <Parameter ID="FRS" Value="600" />
+    <Parameter ID="NCR" Value="28" />
+    <Parameter ID="NSP" Value="1750" />
+    <Parameter ID="COS" Value="80" />
+    <Parameter ID="TFR" Value="900" />
+    <Parameter ID="DO" Value="9" />
+    <Parameter ID="BRA" Value="0" />
+    <Parameter ID="BLC" Value="64" />
+    <Parameter ID="BRT" Value="15" />
+    <Parameter ID="BEN" Value="0" />
+    <Parameter ID="BET" Value="15" />
+  </Module>
+  <Module Name="8I64-VFD11" Type="8I64xxxxxxx.00x-1" Version="1.3.8.1">
+    <Connection Connector="X2X1" TargetModule="8I64-VFD52" TargetConnector="X2X2" />
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="enableIOLR" Value="off" />
+    <Parameter ID="enableDigitalOutput" Value="off" />
+    <Parameter ID="DigitalOutputMode01" Value="actionDO" />
+    <Parameter ID="DownloadParameters" Value="yes" />
+    <Parameter ID="ACC" Value="1" />
+    <Parameter ID="DEC" Value="1" />
+    <Parameter ID="HSP" Value="900" />
+    <Parameter ID="ITH" Value="13" />
+    <Parameter ID="FTD" Value="600" />
+    <Parameter ID="BFR" Value="1" />
+    <Parameter ID="UNS" Value="460" />
+    <Parameter ID="FRS" Value="600" />
+    <Parameter ID="NCR" Value="13" />
+    <Parameter ID="NSP" Value="1750" />
+    <Parameter ID="COS" Value="80" />
+    <Parameter ID="TFR" Value="900" />
+    <Parameter ID="DO" Value="9" />
+    <Parameter ID="BRA" Value="0" />
+    <Parameter ID="BLC" Value="64" />
+    <Parameter ID="BRT" Value="5" />
+    <Parameter ID="BEN" Value="0" />
+    <Parameter ID="BET" Value="5" />
+  </Module>
+  <Module Name="8I64-VFD12" Type="8I64xxxxxxx.00x-1" Version="1.3.8.1">
+    <Connection Connector="X2X1" TargetModule="8I64-VFD11" TargetConnector="X2X2" />
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="enableIOLR" Value="off" />
+    <Parameter ID="enableDigitalOutput" Value="off" />
+    <Parameter ID="DigitalOutputMode01" Value="actionDO" />
+    <Parameter ID="DownloadParameters" Value="yes" />
+    <Parameter ID="ACC" Value="1" />
+    <Parameter ID="DEC" Value="200" />
+    <Parameter ID="HSP" Value="900" />
+    <Parameter ID="ITH" Value="13" />
+    <Parameter ID="FTD" Value="600" />
+    <Parameter ID="BFR" Value="1" />
+    <Parameter ID="UNS" Value="460" />
+    <Parameter ID="FRS" Value="600" />
+    <Parameter ID="NCR" Value="13" />
+    <Parameter ID="NSP" Value="1750" />
+    <Parameter ID="COS" Value="80" />
+    <Parameter ID="TFR" Value="900" />
+    <Parameter ID="DO" Value="9" />
+    <Parameter ID="BRA" Value="0" />
+    <Parameter ID="BLC" Value="64" />
+    <Parameter ID="BRT" Value="5" />
+    <Parameter ID="BEN" Value="0" />
+    <Parameter ID="BET" Value="5" />
+  </Module>
+  <Module Name="8I64-VFD2" Type="8I64xxxxxxx.00x-1" Version="1.3.8.1">
+    <Connection Connector="X2X1" TargetModule="8I64-VFD1" TargetConnector="X2X2" />
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="enableIOLR" Value="off" />
+    <Parameter ID="enableDigitalOutput" Value="off" />
+    <Parameter ID="DigitalOutputMode01" Value="actionDO" />
+    <Parameter ID="DownloadParameters" Value="yes" />
+    <Parameter ID="ACC" Value="1" />
+    <Parameter ID="DEC" Value="1" />
+    <Parameter ID="HSP" Value="900" />
+    <Parameter ID="BFR" Value="1" />
+    <Parameter ID="UNS" Value="460" />
+    <Parameter ID="FRS" Value="600" />
+    <Parameter ID="NCR" Value="13" />
+    <Parameter ID="NSP" Value="1750" />
+    <Parameter ID="TFR" Value="900" />
+    <Parameter ID="DO" Value="9" />
+    <Parameter ID="BRA" Value="0" />
+    <Parameter ID="BLC" Value="64" />
+    <Parameter ID="BRT" Value="5" />
+    <Parameter ID="BEN" Value="0" />
+    <Parameter ID="BET" Value="5" />
+  </Module>
+  <Module Name="8I64-VFD5" Type="8I64xxxxxxx.00x-1" Version="1.3.8.1">
+    <Connection Connector="X2X1" TargetModule="8I64-VFD2" TargetConnector="X2X2" />
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="DownloadParameters" Value="yes" />
+    <Parameter ID="ACC" Value="1" />
+    <Parameter ID="DEC" Value="1" />
+    <Parameter ID="HSP" Value="900" />
+    <Parameter ID="ITH" Value="13" />
+    <Parameter ID="FTD" Value="600" />
+    <Parameter ID="BFR" Value="1" />
+    <Parameter ID="UNS" Value="460" />
+    <Parameter ID="FRS" Value="600" />
+    <Parameter ID="NCR" Value="13" />
+    <Parameter ID="NSP" Value="1750" />
+    <Parameter ID="COS" Value="80" />
+    <Parameter ID="TFR" Value="900" />
+    <Parameter ID="DE2" Value="10" />
+    <Parameter ID="BRA" Value="0" />
+  </Module>
+  <Module Name="8I64-VFD52" Type="8I64xxxxxxx.00x-1" Version="1.3.8.1">
+    <Connection Connector="X2X1" TargetModule="8I64-VFD5" TargetConnector="X2X2" />
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="enableIOLR" Value="off" />
+    <Parameter ID="enableDigitalOutput" Value="off" />
+    <Parameter ID="DigitalOutputMode01" Value="actionDO" />
+    <Parameter ID="ACC" Value="1" />
+    <Parameter ID="DEC" Value="1" />
+    <Parameter ID="HSP" Value="900" />
+    <Parameter ID="ITH" Value="13" />
+    <Parameter ID="FTD" Value="600" />
+    <Parameter ID="BFR" Value="1" />
+    <Parameter ID="UNS" Value="460" />
+    <Parameter ID="FRS" Value="600" />
+    <Parameter ID="NCR" Value="13" />
+    <Parameter ID="NSP" Value="1750" />
+    <Parameter ID="COS" Value="80" />
+    <Parameter ID="TFR" Value="900" />
+    <Parameter ID="DO" Value="9" />
+    <Parameter ID="INR" Value="0" />
+    <Parameter ID="BRA" Value="0" />
+    <Parameter ID="BLC" Value="64" />
+    <Parameter ID="BRT" Value="1" />
+    <Parameter ID="BEN" Value="0" />
+    <Parameter ID="BET" Value="1" />
+  </Module>
+  <Module Name="X20BM01" Type="X20BM01" Version="1.0.0.1" />
+  <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM01" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11a" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11b" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11a" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11c" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11b" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11d" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11c" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11e" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11f" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11f" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11d" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BR9300" Type="X20BR9300" Version="1.0.2.6">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM01" TargetConnector="SL1" />
+    <Connection Connector="X2X1" TargetModule="4PPC70_101G_20W" TargetConnector="IF5" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20BT9400" Type="X20BT9400" Version="1.0.1.3">
+    <Connection Connector="SS1" TargetModule="X20TB12f" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11e" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DI9371" Type="X20DI9371" Version="1.0.1.2">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DI9371a" Type="X20DI9371" Version="1.0.1.2">
+    <Connection Connector="SS1" TargetModule="X20TB12b" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="InputFilter" Value="100" />
+  </Module>
+  <Module Name="X20DO4529" Type="X20DO4529" Version="1.0.1.2">
+    <Connection Connector="SS1" TargetModule="X20TB12c" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DO9322" Type="X20DO9322" Version="1.0.3.0">
+    <Connection Connector="SS1" TargetModule="X20TB12e" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11d" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DO9322a" Type="X20DO9322" Version="1.0.3.0">
+    <Connection Connector="SS1" TargetModule="X20TB12g" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11f" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20PS2100" Type="X20PS2100" Version="1.0.3.0">
+    <Connection Connector="SS1" TargetModule="X20TB12d" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11c" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12b" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12c" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12d" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12e" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12f" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12g" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X67DM1321" Type="X67DM1321" Version="1.1.1.0">
+    <Connection Connector="X2X1" TargetModule="8I64-VFD12" TargetConnector="X2X2" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X67DM1321.L08" Type="X67DM1321.L08" Version="1.1.2.0">
+    <Connection Connector="X2X1" TargetModule="X67DM1321a" TargetConnector="X2X2" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Direction01" Value="output" />
+    <Parameter ID="Direction02" Value="output" />
+    <Parameter ID="Direction03" Value="output" />
+    <Parameter ID="Direction04" Value="output" />
+    <Parameter ID="Direction05" Value="output" />
+    <Parameter ID="Direction06" Value="output" />
+    <Parameter ID="Direction07" Value="output" />
+    <Parameter ID="Direction08" Value="output" />
+    <Parameter ID="Direction09" Value="output" />
+    <Parameter ID="Direction10" Value="output" />
+    <Parameter ID="Direction11" Value="output" />
+    <Parameter ID="Direction12" Value="output" />
+  </Module>
+  <Module Name="X67DM1321a" Type="X67DM1321" Version="1.1.1.0">
+    <Connection Connector="X2X1" TargetModule="X67DM1321" TargetConnector="X2X2" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Direction01" Value="output" />
+    <Parameter ID="Direction02" Value="output" />
+    <Parameter ID="Direction03" Value="output" />
+    <Parameter ID="Direction04" Value="output" />
+  </Module>
+  <Module Name="X67DM1321b" Type="X67DM1321" Version="1.1.1.0">
+    <Connection Connector="X2X1" TargetModule="X67DM1321c" TargetConnector="X2X2" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X67DM1321c" Type="X67DM1321" Version="1.1.1.0">
+    <Connection Connector="X2X1" TargetModule="X67DM1321.L08" TargetConnector="X2X2" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Direction01" Value="output" />
+    <Parameter ID="Direction02" Value="output" />
+  </Module>
+</Hardware>

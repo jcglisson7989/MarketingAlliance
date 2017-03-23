@@ -1,0 +1,10 @@
+(*********************************************************************************
+ * Copyright: Piedmont Automation Inc
+ * Author:    Goran
+ * Created:   Jun 26, 2015/11:38 AM 
+ *********************************************************************************
+ * Declaration of global variables
+ *********************************************************************************)
+VAR
+	gMachineVFD : ARRAY[0..APP_VFD_IDXLAST] OF paiVFD_typ;
+END_VAR

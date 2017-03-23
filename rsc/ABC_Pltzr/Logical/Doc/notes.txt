@@ -1,0 +1,226 @@
+9/21/2016
+=========
+(ProjectDate:='09/21/2016',ProjectVersion:='1.00.2',ASVersion:='AS 4.2.4',ProjectAbout:='Palletizer72',ProjectInfo:='24025',ProjectComments:='n/a')
+
+-------- Forwarded Message --------
+Subject: 	Duckhorn Wine
+Date: 	Fri, 9 Sep 2016 13:25:31 +0000
+From: 	David Emminger <demminger@abcpackaging.com>
+To: 	Goran Bjelcevic <gbjelcevic@piedmontautomation.com>
+CC: 	Eric Dederichs <edederichs@abcpackaging.com>, Greg Phelps <gphelps@piedmontautomation.com>, Kraig Downey <kdowney@abcpackaging.com>, Brittany Leslie <bleslie@abcpackaging.com>
+
+Good morning Goran,
+Duckhorn has requested a minor change to the machine HMI programming which is:
+
+They want the fault screen to remain displayed and not automatically close when a fault is cleared. They want to manually navigate away from the fault screen.
+
+Unhide the mute button
+
+Change the maintenance access password to 4858418
+
+ 
+- a logic to automaticaly switch away from the alarm screen when all alarms are cleared is removed. 
+Change: file: appHmiLogic.c, line: 1491
+- changed the maint access password to 4858418
+Change: file: paiUser.c, line: 105
+- changed hide logic for safety curtains 'mute' button. Now, the button will be shown even for users that are not logged in.
+Change: ladder: palletdischarge Rung: 13
+
+
+5/2/2016
+=======
+-rectified 'no pallet reset' after executing 'Complete Pallet' manual request
+-changed logic for stopping the infeed CV; instead of stopping when staging stops, the infeed CV now stops only when staging is stopped AND case is present at EE2
+-changed logic for elevator when exiting pallet; instead of going to top of the pallet, now the elevator goes to the top (max elevator position)
+-fixed issue with entering a case command in the layer desinger
+-added support for 6th blade
+-changed manual operation of the blade stops from time delayed to quick (no time delay)
+
+
+4/18/2016
+==========
+DONE-EE2 / EE8 stop the machine row jam/incorrect count
+DONE-stage at EE4
+DONE-stats timer only in auto mode
+-vfd fault indication in the alarm text
+DONE-prevent changing counts in automatic
+DONE-in automatic can't go to manual screen (put finish product button eslewhere)
+-full pallet out should zero the layers
+DONE ALARM INCORRECT COUNT
+DONE HIDE ZERO BUTTON WHEN in AUTO
+VFD BRA = OFF for VFD5 and VFD52
+
+4/15/2016
+=========
+DONE: Button: load appConfig from file
+VFD errors show in the alarm!
+Stats counters
+Case count
+Pallete count
+Pallete / hour
+Case / min
+DONE: Blade stop drawing support
+DONE: Move blade stop timers to recipe
+Staging cv support
+Usb programming
+File copy to/from to usb
+Factory defaults
+Retainer bar early feature
+Pallet discharge interlock
+Remove unused code, pages, etc
+Add stop / resume to ssm.
+Add single step support to ssm.
+
+
+4/14/12016
+=========
+DONE-moved all timers to recipe
+DONE-added pallet exit button (manual mode only)
+DONE-added pallet finish button (auto mode only, to finish pallet and discharge)
+-
+
+4/13/2015
+==========
+- zero button visibility check logic (it can cause havoc is pressed when not allowed)
+DONE- pallet done (in auto mode, compeltes the pallete and exits it) 
+ vs. run pallet out (in manual mode, exits the palette) > buttons needed
+STOP BUTTON - shall stop and any time, then resume from there 
+PART- debounce timers for all PE-s (EE2, EE4, EE8) > recipe
+DONE - product/recipe dependant settings (i.e. timers, etc)
+DONE- delay front squearing action using a delay timer
+DONE- pallet takeaway timer; the time required for a discharge PE to clear before the pallet are moved to discharge cv forward
+- EE8 get the code for it
+DONE- row forming VFD speeds and acc, table speed, acc/decl, discrage cv-s > all VDD-s shall be part of the recipe
+DONE - defending fault shall be shown as the alarm!! (not low air pressure)
+DONE - drop down LF key to jump to screen MANUAL
+DONE - the delay time for row push shall be respected after restart following an e-stop on the last case for the row (if the e-stop tiggered just before the last estop made the row, the continue will immedialtly push the 
+row wo. waiting)
+- Connect Alarm Ack button to the Clear VFD Fault input
+
+3/24/2015
+==========
+-add alarm for elevator stop block
+-add light curtain functionlity - fault and mute
+-chain slack alarm recovery from stop block
+-add message block stops are down
+
+
+3/23/2015
+=========
+-added support for new HW config:
+PPC70_JOB24025
+-this configuration is according to the ABC JOB24025
+-no palletizer dispneser is used. Instead, the pallets are build directly onto the mesh converyer
+-the HW changes include:
+-added 2 VFD-s VFD52 (row pusher ext) and VFD12 (pallet discharge CV)
+-dropped VFD4 (row pusher) and reassinged it as VFD5 (infeed rollers)
+
+
+
+3/22/2016
+==========
+-revisit and rectify recipe handling to have only a single file per recipe (i.e. layer files included in the recipe file)
+-DONE-reshuffle recipe screens (i.e. recipe select, recipe create, layer create, layer view, etc)
+DONE-add support for multiple blade stops
+DONE-add support for pallet dispenser
+-add support for infeed conveyer location (left/right) to be reflected on the configuration screen
+DONE-rectify issue with the VFD-s at startup (i.e. reboot shall not be required due to incorrect configuration)
+-revisti all hmi screens
+-test interruptions, e-stops and power outages
+-allow elevator jog when table not at grouping (recovery mode!)
+-add new alarms
+-pattern layer changes require reload of the pattern program to init the structures!!!
+
+
+
+2/15/2016
+==========
+-revisit and rectify recipe handling to have only a single file per recipe (i.e. layer files included in the recipe file)
+-reshuffle recipe screens (i.e. recipe select, recipe create, layer create, layer view, etc)
+-add support for multiple blade stops
+-add support for pallet dispenser
+-add support for infeed conveyer location (left/right) to be reflected on the configuration screen
+-rectify issue with the VFD-s at startup (i.e. reboot shall not be required due to incorrect configuration)
+-revisti all hmi screens
+-test interruptions, e-stops and power outages
+-allow elevator jog when table not at grouping (recovery mode!)
+
+
+
+9/10/2015
+========-
+-DONEadd blade stops
+-DONEadd turner
+-DONEestop handling
+-DONEacc/dec on all drives
+-DONEadd configurable number of layers
+
+
+9/9/2015
+=========
+-add messages about zerooing machine
+-add message about machine ready
+-add message when auto-cycle active
+-start/auto drycycle sequence 
+
+
+9/4/2013
+========
+-add number of E-Stops as an option into mach configuration
+-add number of DS-s as an option into mach configuration
+-add discharge light curtain to the safety logic
+-remove AlwaysOnBit and TestBitx from the program when done
+
+-add manual elevator moves to table position (use two speeds)
+
+
+
+7/22/2015
+-io
+-control strructures
+-alarms
+-recipes
+-control logic
+-hmi
+
+Subsystems:
+===========
+Motors ON/OFF:
+-retainer bar
+-row/grouping rollers
+-product infeed cv 
+-pallet infeed chains
+-pallet dispense elevator
+
+Inverters:
+-elevator
+-transfer table
+-row pusher
+-palletizing roller cv
+
+
+Machine Modes:
+==============
+Service (Air=NO, all motors = OFF)
+Manual - HandMode (Air=YES, all motors = ON, NOT in automatic mode, manual actions)
+Auto - MachineRunningAuto (automatic cycle)
+DryCycle (automatic, dry cycle)
+Demo (automatic, demo cycle)
+
+
+Original LADDERS:
+-main
+-screen
+-IO
+-dispenser
+-inserter
+-bladestop1...bladestop6
+-squaring
+-prodset
+-patterns
+-picture
+-caserun
+-stdturner
+-turntable
+-servoturn
+-drycycle

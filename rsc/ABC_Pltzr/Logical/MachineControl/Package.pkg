@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Global data types">MachineControl.typ</Object>
+    <Object Type="File" Description="Global variables">MachineControl.var</Object>
+    <Object Type="Program" Language="ANSIC" Description="app Machine Control">machCtrl</Object>
+    <Object Type="Program" Language="ANSIC" Description="app VFD Control">vfdControl</Object>
+    <Object Type="Program" Language="ANSIC" Description="app Pallet Processor">palProc</Object>
+    <Object Type="Program" Language="ANSIC" Description="app HMI Logic">appHmi</Object>
+    <Object Type="Program" Language="ANSIC" Description="app Drawing">appDraw</Object>
+    <Object Type="Program" Language="IEC" Description="sim only logic">simonly</Object>
+    <Object Type="Program" Language="IEC" Description="app animation">animation</Object>
+    <Object Type="Program" Language="IEC" Description="app alarms">alarms</Object>
+    <Object Type="Program" Language="IEC" Description="app HMI messages">messages</Object>
+    <Object Type="Program" Language="IEC" Description="app Machine Safety">safety</Object>
+    <Object Type="Program" Language="IEC" Description="app Machine Mode">machmode</Object>
+    <Object Type="Program" Language="IEC" Description="app Machine Zeroing">machzero</Object>
+    <Object Type="Program" Language="IEC" Description="app infeed CV idle logic">infcvidle</Object>
+    <Object Type="Program" Language="IEC" Description="app case turner">caseturner</Object>
+    <Object Type="Program" Language="IEC" Description="app row forming">rowforming</Object>
+    <Object Type="Program" Language="IEC" Description="app row forming">blades</Object>
+    <Object Type="Program" Language="IEC" Description="app retainer bar">retainbar</Object>
+    <Object Type="Program" Language="IEC" Description="app transfer table">transtable</Object>
+    <Object Type="Program" Language="IEC" Description="app squaring">squaring</Object>
+    <Object Type="Program" Language="IEC" Description="app elevator">elevator</Object>
+    <Object Type="Program" Language="IEC" Description="app elevator moving">elevmove</Object>
+    <Object Type="Program" Language="IEC" Description="app pallet infeed conveyer">palletinfcv</Object>
+    <Object Type="Program" Language="IEC" Description="app pallet infeed dispenser assembly">palletinfdis</Object>
+    <Object Type="Program" Language="IEC" Description="app pallete infeed dispenser auto logic">palletinfauto</Object>
+    <Object Type="Program" Language="IEC" Description="app pallet discharge conveyer">palletdischarge</Object>
+    <Object Type="Program" Language="IEC" Description="app dry cycle machine">drycycle</Object>
+    <Object Type="Program" Language="IEC" Description="app dry pallete">drycypal</Object>
+    <Object Type="Program" Language="IEC" Description="app alarms">diofilter</Object>
+  </Objects>
+</Package>

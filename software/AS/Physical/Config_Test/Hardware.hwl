@@ -8,7 +8,10 @@
     <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
     <Module Name="X1" Type="X1" X="225" Y="103" />
     <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
-    <Module Name="6PPT30.101G-20B" Type="6PPT30.101G-20B" X="426.550049" Y="183.799988" />
+    <Module Name="6PPT30.101G-20B" Type="6PPT30.101G-20B" X="426" Y="183" />
+    <Module Name="8V1045.00-2" Type="8V1045.00-2" X="354.150024" Y="351.75" />
+    <Module Name="8AC120.60-1" Type="8AC120.60-1" X="368.150024" Y="558.25" />
+    <Module Name="8AC114.60-2" Type="8AC114.60-2" X="356.95" Y="558.25" />
   </Modules>
   <Links>
     <Link From="6PPT30.101G-20B" To="X20CP1382" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
@@ -20,6 +23,15 @@
       <Point X="134" Y="203" />
       <Point X="134" Y="188" />
       <Point X="134" Y="188" />
+    </Link>
+    <Link From="8AC114.60-2" To="X20CP1382" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="363.050018" Y="586.05" />
+      <Point X="363.050018" Y="586.05" />
+      <Point X="354.050018" Y="586.05" />
+      <Point X="153" Y="586.05" />
+      <Point X="153" Y="203" />
+      <Point X="153" Y="188" />
+      <Point X="153" Y="188" />
     </Link>
   </Links>
   <InfoElements />

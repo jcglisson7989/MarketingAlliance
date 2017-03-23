@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Local data types">ParameterDownload.typ</Object>
+    <Object Type="File" Description="Local variables">ParameterDownload.var</Object>
+    <Object Type="Package" Description="download parameters from a P84 ACOPOSInverter">P84_Download</Object>
+    <Object Type="Package" Description="download the parameters from the X64">X64_S44_Download</Object>
+    <Object Type="Package" Description="download parameters from a P74 ACOPOSInverter">P74_Download</Object>
+    <Object Type="Library" Language="IEC">CSV_File</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="asioacc" />
+    <Dependency ObjectName="asmem" />
+    <Dependency ObjectName="astime" />
+    <Dependency ObjectName="asmath" />
+    <Dependency ObjectName="fileio" />
+    <Dependency ObjectName="asepl" />
+    <Dependency ObjectName="sys_lib" />
+    <Dependency ObjectName="standard" />
+    <Dependency ObjectName="asstring" />
+  </Dependencies>
+</Package>
