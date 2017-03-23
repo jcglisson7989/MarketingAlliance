@@ -343,54 +343,6 @@
       </KeyAction>
     </KeyActions>
   </VirtualKey>
-  <VirtualKey Name="paiHMI_KEY_MENU_RT_1">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.iMenuIndexRT]"/>
-      </KeyAction>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_1"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuVisible]"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
-  <VirtualKey Name="paiHMI_KEY_MENU_RT_2">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="2"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.iMenuIndexRT]"/>
-      </KeyAction>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_1"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiRTMenu.oMenuVisible]"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
   <VirtualKey Name="%embVirtualKey_2">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
@@ -2537,58 +2489,6 @@
       </KeyAction>
     </KeyActions>
   </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_9">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_10">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_24">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="APP_BTN_ZERO">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x0000016B">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="ResetValue" Value="0"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gCtrl.main.btnZero]"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
-  <VirtualKey Name="APP_BTN_RESETDRYCYCLE">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="0"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.dryCycleState]"/>
-      </KeyAction>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_1"/>
-        <Property Name="SetValue" Value="0"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.animationState]"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
   <VirtualKey Name="APP_BTN_SAVE_CNAGES">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
@@ -2616,36 +2516,6 @@
         <Property Name="Name" Value="Action_0"/>
         <Property Name="SetValue" Value="1"/>
         <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.appConfigAndRecipes.gSerDesHMI_gPalletCfg.oBtnClick]"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
-  <VirtualKey Name="APP_MANUAL_PALLETFINISHREQUEST">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gCtrl.palletDischarge.palletManualFinishRequest]"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
-  <VirtualKey Name="APP_BTN_CLR_CASE_COUNTS">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MachineControl.gCtrl.main.btnClearCaseCounts]"/>
       </KeyAction>
     </KeyActions>
   </VirtualKey>
@@ -2738,54 +2608,6 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="%embVirtualKey_259">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="TP_ALPHA_Dash">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000165">
-        <Property Name="Description" Value=""/>
-        <Property Name="LanguageDependent" Value="False"/>
-        <Property Name="UnicodeValue['de']" Value="-"/>
-        <Property Name="UnicodeValue['en']" Value="-"/>
-        <Property Name="UnicodeValue['es']" Value="-"/>
-        <Property Name="UnicodeValue['fr']" Value="-"/>
-        <Property Name="UnicodeValue['pt']" Value="-"/>
-        <Property Name="UnicodeValue['sv']" Value="-"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
-  <VirtualKey Name="TouchCalibration">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="clearAlarm">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="clearAlarms">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="pageCoffee">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="pageFileManager">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="pageHome">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="pageSDM">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="pageSetup">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
@@ -2918,110 +2740,6 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="%embVirtualKey_14">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_ACK_FW">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_ACK_MISMATCH">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_ACK_SK_XCHG">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_ALTER_PW">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_CLEAR_DATA">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_DOWNLOAD_APP">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_FORMAT_SK">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_READ_STATUS">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_RESET_SLX">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_SCAN_MODULES">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SAFE_TEST">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_ClearData">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_FirmwareAcknowledge">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_ModuleExchange1">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_ModuleExchange2">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_ModuleExchange3">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_ModuleExchange4">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_ModuleExchangeN">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_ReadStatus">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_Reset">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_SafeKeyCopy">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_SafeKeyExchange">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_SafeKeyFormat">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_Scan">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_SetPassword">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="SRC_VK_Test">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
@@ -3329,10 +3047,6 @@
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
-  <VirtualKey Name="APP_PROP_LIST_DEC_DP">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
   <VirtualKey Name="APP_PROP_LIST_IDXDECDEC">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
@@ -3346,10 +3060,6 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="APP_PROP_LIST_IDXINC">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="APP_PROP_LIST_INC_DP">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>

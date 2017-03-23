@@ -853,21 +853,6 @@
     </Control>
   </Controls>
   <KeyMapping>
-    <VirtualKey Name="APP_PROP_LIST_DEC_DP">
-      <Property Name="Description" Value=""/>
-      <Property Name="VirtualKey_LED" Value="False"/>
-      <KeyActions>
-        <KeyAction ClassId="0x00000161">
-          <Property Name="CompletionDatapoint" Value="None"/>
-          <Property Name="CompletionValue" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Locking" Value="Never"/>
-          <Property Name="Name" Value="Action_0"/>
-          <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gHmiParamTable.decDP]"/>
-        </KeyAction>
-      </KeyActions>
-    </VirtualKey>
     <VirtualKey Name="APP_PROP_LIST_IDXDECDEC">
       <Property Name="Description" Value=""/>
       <Property Name="VirtualKey_LED" Value="False"/>
@@ -923,21 +908,6 @@
           <Property Name="Action" Value="Step Up"/>
           <Property Name="Control" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
           <Property Name="Description" Value=""/>
-        </KeyAction>
-      </KeyActions>
-    </VirtualKey>
-    <VirtualKey Name="APP_PROP_LIST_INC_DP">
-      <Property Name="Description" Value=""/>
-      <Property Name="VirtualKey_LED" Value="False"/>
-      <KeyActions>
-        <KeyAction ClassId="0x00000161">
-          <Property Name="CompletionDatapoint" Value="None"/>
-          <Property Name="CompletionValue" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Locking" Value="Never"/>
-          <Property Name="Name" Value="Action_0"/>
-          <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gHmiParamTable.incDP]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
