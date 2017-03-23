@@ -185,7 +185,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[0]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Facility[0]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="99"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -202,7 +202,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[0]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Severity[0]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -221,7 +221,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="MpComponent"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[0]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Component[0]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="158"/>
       <Property Name="Width" Value="256"/>
@@ -240,7 +240,7 @@
       <Property Name="TextIndex" Value="40"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="158"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[0].DateTime]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Time[0].DateTime]"/>
       <Property Name="Width" Value="282"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtErrorMessageIdx0">
@@ -255,7 +255,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[0]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Message[0]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="186"/>
       <Property Name="Width" Value="800"/>
@@ -322,10 +322,10 @@
       <Property Name="MinorPitchLines" Value="1"/>
       <Property Name="Orientation" Value="Top"/>
       <Property Name="RangeColor" Value="10"/>
-      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.RangeEnd]"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.RangeEnd]"/>
       <Property Name="RangeEndValue" Value="90"/>
       <Property Name="RangeSpacing" Value="0"/>
-      <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.RangeStart]"/>
+      <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.RangeStart]"/>
       <Property Name="RangeStartValue" Value="30"/>
       <Property Name="RangeWidth" Value="23"/>
       <Property Name="Spacing" Value="0"/>
@@ -390,7 +390,7 @@
       <Property Name="SimulationValue" Value="Mp"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
       <Property Name="Top" Value="184"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.SearchFilter]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.SearchFilter]"/>
       <Property Name="Width" Value="125"/>
     </Control>
     <Control ClassId="0x00001007" Name="numStatusIDIdx0">
@@ -410,7 +410,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="162"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[0]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StatusID[0]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -431,7 +431,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="162"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[0]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.ErrorNumber[0]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -454,7 +454,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[1]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Facility[1]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="99"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -471,7 +471,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[1]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Severity[1]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -490,7 +490,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="MpComponent"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[1]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Component[1]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="238"/>
       <Property Name="Width" Value="256"/>
@@ -509,7 +509,7 @@
       <Property Name="TextIndex" Value="43"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="238"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[1].DateTime]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Time[1].DateTime]"/>
       <Property Name="Width" Value="282"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtErrorMessageIdx1">
@@ -524,7 +524,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[1]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Message[1]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="266"/>
       <Property Name="Width" Value="800"/>
@@ -546,7 +546,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="242"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[1]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StatusID[1]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -567,7 +567,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="242"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[1]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.ErrorNumber[1]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -590,7 +590,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[2]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Facility[2]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="99"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -607,7 +607,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[2]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Severity[2]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -626,7 +626,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="MpComponent"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[2]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Component[2]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="318"/>
       <Property Name="Width" Value="256"/>
@@ -645,7 +645,7 @@
       <Property Name="TextIndex" Value="46"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="318"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[2].DateTime]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Time[2].DateTime]"/>
       <Property Name="Width" Value="282"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtErrorMessageIdx2">
@@ -660,7 +660,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[2]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Message[2]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="346"/>
       <Property Name="Width" Value="800"/>
@@ -682,7 +682,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="322"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[2]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StatusID[2]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -703,7 +703,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="322"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[2]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.ErrorNumber[2]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -726,7 +726,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[3]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Facility[3]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="99"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -743,7 +743,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[3]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Severity[3]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -762,7 +762,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="MpComponent"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[3]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Component[3]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="398"/>
       <Property Name="Width" Value="256"/>
@@ -781,7 +781,7 @@
       <Property Name="TextIndex" Value="49"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="398"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[3].DateTime]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Time[3].DateTime]"/>
       <Property Name="Width" Value="282"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtErrorMessageIdx3">
@@ -796,7 +796,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[3]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Message[3]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="800"/>
@@ -818,7 +818,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="402"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[3]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StatusID[3]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -839,7 +839,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="402"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[3]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.ErrorNumber[3]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -862,7 +862,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[4]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Facility[4]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="99"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -879,7 +879,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[4]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Severity[4]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -898,7 +898,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="MpComponent"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[4]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Component[4]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="450"/>
       <Property Name="Width" Value="256"/>
@@ -917,7 +917,7 @@
       <Property Name="TextIndex" Value="52"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="450"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[4].DateTime]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Time[4].DateTime]"/>
       <Property Name="Width" Value="282"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtErrorMessageIdx4">
@@ -932,7 +932,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[4]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Message[4]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="800"/>
@@ -954,7 +954,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="458"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[4]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StatusID[4]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -975,7 +975,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="458"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[4]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.ErrorNumber[4]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -998,7 +998,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[5]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Facility[5]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="99"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1015,7 +1015,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[5]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Severity[5]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1034,7 +1034,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="MpComponent"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[5]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Component[5]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="450"/>
       <Property Name="Width" Value="256"/>
@@ -1053,7 +1053,7 @@
       <Property Name="TextIndex" Value="55"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="450"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[5].DateTime]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Time[5].DateTime]"/>
       <Property Name="Width" Value="282"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtErrorMessageIdx5">
@@ -1068,7 +1068,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[5]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Message[5]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="800"/>
@@ -1090,7 +1090,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="458"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[5]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StatusID[5]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -1111,7 +1111,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="458"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[5]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.ErrorNumber[5]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -1134,7 +1134,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[6]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Facility[6]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="99"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1151,7 +1151,7 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="Height" Value="38"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[6]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Severity[6]]"/>
       <Property Name="Left" Value="769"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1170,7 +1170,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="MpComponent"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[6]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Component[6]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="450"/>
       <Property Name="Width" Value="256"/>
@@ -1189,7 +1189,7 @@
       <Property Name="TextIndex" Value="58"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="450"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[6].DateTime]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Time[6].DateTime]"/>
       <Property Name="Width" Value="282"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtErrorMessageIdx6">
@@ -1204,7 +1204,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[6]]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.Message[6]]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="800"/>
@@ -1226,7 +1226,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="458"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[6]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StatusID[6]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -1247,7 +1247,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="458"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[6]]"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.ErrorNumber[6]]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -1319,7 +1319,7 @@
           <Property Name="Name" Value="Action_0"/>
           <Property Name="ResetValue" Value="0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StepUp]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StepUp]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -1335,7 +1335,7 @@
           <Property Name="Name" Value="Action_0"/>
           <Property Name="ResetValue" Value="0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StepDown]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.StepDown]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -1351,7 +1351,7 @@
           <Property Name="Name" Value="Action_0"/>
           <Property Name="ResetValue" Value="0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.PageUp]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.PageUp]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -1367,7 +1367,7 @@
           <Property Name="Name" Value="Action_0"/>
           <Property Name="ResetValue" Value="0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.PageDown]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.List.PageDown]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -1382,7 +1382,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.Clear]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.pkgAlert.Com_Logger_UIConnect.Clear]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>

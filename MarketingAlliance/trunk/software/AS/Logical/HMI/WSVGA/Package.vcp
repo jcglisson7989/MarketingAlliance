@@ -6,7 +6,7 @@
   <Property Name="BeepTouch" Value="False"/>
   <Property Name="CalibrationDatapoint" Value="None"/>
   <Property Name="CalibrationStateDatapoint" Value="None"/>
-  <Property Name="ColorMode" Value="32Bit"/>
+  <Property Name="ColorMode" Value="8Bit"/>
   <Property Name="ConfigureTemplate" Value="0"/>
   <Property Name="ConnectionErrorPage" Value="None"/>
   <Property Name="DefaultKeyLevelNumeric" Value="0"/>
@@ -53,7 +53,6 @@
     <Source File="TextGroups\Languages.txtgrp"/>
     <Source File="TextGroups\LoginLevels.txtgrp"/>
     <Source File="TextGroups\MpButtons_PageTexts.txtgrp"/>
-    <Source File="TextGroups\paiTGMenuRTMachineMode.txtgrp"/>
     <Source File="TextGroups\paiTGPageNavigation.txtgrp"/>
     <Source File="TextGroups\paiTGPingStatus.txtgrp"/>
     <Source File="TextGroups\paiTGUserAccess.txtgrp"/>
@@ -880,6 +879,9 @@
     <Source File="Bitmaps\Panel_BLK_114x220_1.bminfo"/>
     <Source File="Bitmaps\Panel_GRN_114x221.bminfo"/>
     <Source File="Bitmaps\Panel_RED_114x221.bminfo"/>
+    <Source File="Bitmaps\logoMarketingAllianceTop.bminfo"/>
+    <Source File="Bitmaps\Bitmap_1.bminfo"/>
+    <Source File="Bitmaps\logoMASplashScreen.bminfo"/>
     <Source File="BitmapGroups\AlphaPadQVGA.bmgrp"/>
     <Source File="BitmapGroups\BordersColored.bmgrp"/>
     <Source File="BitmapGroups\paiUserAccessGroups.bmgrp"/>
@@ -923,12 +925,11 @@
     <Source File="Pages\p32_Diag_AlarmHist.page"/>
     <Source File="Pages\p33_Diag_Log.page"/>
     <Source File="Pages\p40_Hardware_SDM.page"/>
-    <Source File="Pages\p41_Hardware_Safety.page"/>
-    <Source File="Pages\p42_Hardware_Panel.page"/>
-    <Source File="Pages\p43_Hardware_Network.page"/>
+    <Source File="Pages\p41_Hardware_Panel.page"/>
+    <Source File="Pages\p42_Hardware_Network.page"/>
     <Source File="Pages\p50_Data_Stats.page"/>
     <Source File="Pages\p51_Data_Table.page"/>
-    <Source File="Pages\p58_Data_Export.page"/>
+    <Source File="Pages\p52_Data_Export.page"/>
     <Source File="Pages\p60_Access_Login.page"/>
     <Source File="Pages\p61_Access_Users.page"/>
     <Source File="Pages\p62_Access_Groups.page"/>
@@ -937,8 +938,8 @@
     <Source File="Pages\p71_Motion_Basis_Movements.page"/>
     <Source File="Pages\p72_Motion_Tune_Limit_StopMode.page"/>
     <Source File="Pages\p73_Motion_Service.page"/>
-    <Source File="Pages\p90_USB_Status.page"/>
-    <Source File="Pages\p91_USB_FileIO.page"/>
+    <Source File="Pages\p80_USB_Status.page"/>
+    <Source File="Pages\p81_USB_FileIO.page"/>
     <Source File="Layers\Background.layer"/>
     <Source File="Layers\alertMsg.layer"/>
     <Source File="Layers\dialogMsg.layer"/>

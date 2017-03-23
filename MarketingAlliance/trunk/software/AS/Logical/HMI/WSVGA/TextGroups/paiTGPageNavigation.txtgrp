@@ -5,7 +5,7 @@
   <Property Name="Index" Value="15"/>
   <TextSnippets/>
   <TextLayer LanguageId="en">
-    <Text ID="622993" Value="BUTTON: Main, 10"/>
+    <Text ID="622993" Value="BUTTON: Dashboard, 10"/>
     <Text ID="622996" Value="BUTTON: Setup, 20"/>
     <Text ID="622997" Value="TAB: Machine Config, 20"/>
     <Text ID="622999" Value="TAB: Process Recipe, 21"/>
@@ -16,41 +16,27 @@
     <Text ID="623004" Value="BUTTON: Data, 50"/>
     <Text ID="623005" Value="BUTTON: Login, 60"/>
     <Text ID="623006" Value="BUTTON: Motion Control, 70"/>
-    <Text ID="623007" Value="BUTTON: Mechatronics, 80"/>
-    <Text ID="623008" Value="BUTTON: USB Options, 90"/>
+    <Text ID="623008" Value="BUTTON: USB Options, 80"/>
     <Text ID="623009" Value="TAB: Alerts, 30"/>
     <Text ID="623010" Value="TAB: Alarms, 31"/>
     <Text ID="623011" Value="TAB: Alarm History, 32"/>
     <Text ID="623012" Value="TAB: App. Log, 33"/>
-    <Text ID="623013" Value="TAB: SDM, 40"/>
-    <Text ID="623014" Value="TAB: SafeLogix, 41"/>
+    <Text ID="623014" Value="TAB: Panel, 41"/>
     <Text ID="623015" Value="TAB: Axis Setup, 70"/>
     <Text ID="623016" Value="TAB: Basis Movement, 71"/>
     <Text ID="623017" Value="TAB: Tuning, 72"/>
-    <Text ID="623018" Value="TAB: CNC, 80"/>
-    <Text ID="623019" Value="TAB: Delta, 81"/>
-    <Text ID="623020" Value="TAB: USB, 90"/>
-    <Text ID="623021" Value="TAB: Spindle, 82"/>
-    <Text ID="623022" Value="TAB: Teach, 83"/>
-    <Text ID="623023" Value="TAB: FileIO, 91"/>
+    <Text ID="623020" Value="TAB: USB, 80"/>
+    <Text ID="623023" Value="TAB: FileIO, 81"/>
     <Text ID="623024" Value="TAB: Login, 60"/>
     <Text ID="623025" Value="TAB: Users, 61"/>
     <Text ID="623026" Value="TAB: Groups, 62"/>
     <Text ID="623027" Value="TAB: Data, 50"/>
     <Text ID="623028" Value="TAB: PV Table, 51"/>
-    <Text ID="623029" Value="TAB: PV Stats, 52"/>
-    <Text ID="623030" Value="TAB: Cam, 84"/>
-    <Text ID="623031" Value="TAB: Panel, 42"/>
-    <Text ID="623032" Value="TAB: Network, 43"/>
-    <Text ID="623033" Value="TAB: OMAC PackML, 53"/>
-    <Text ID="623034" Value="TAB: Audit, 54"/>
-    <Text ID="623035" Value="TAB: OEE, 55"/>
-    <Text ID="623036" Value="TAB: Import/Export, 58"/>
-    <Text ID="623037" Value="TAB: Energy, 56"/>
-    <Text ID="623038" Value="TAB: Asset Int., 57"/>
+    <Text ID="623029" Value="TAB: Sample Import/Export, 52"/>
+    <Text ID="623031" Value="TAB: Network, 42"/>
     <Text ID="627458" Value="TAB: Save/Load, 63"/>
     <Text ID="627459" Value="TAB: Service, 73"/>
-    <Text ID="628476" Value="TAB: test1234, 10"/>
+    <Text ID="633804" Value="TAB: SDM, 40"/>
   </TextLayer>
   <TextLayer LanguageId="de">
     <Text ID="622993" Value=""/>
@@ -64,22 +50,16 @@
     <Text ID="623004" Value=""/>
     <Text ID="623005" Value=""/>
     <Text ID="623006" Value=""/>
-    <Text ID="623007" Value=""/>
     <Text ID="623008" Value=""/>
     <Text ID="623009" Value=""/>
     <Text ID="623010" Value=""/>
     <Text ID="623011" Value=""/>
     <Text ID="623012" Value=""/>
-    <Text ID="623013" Value=""/>
     <Text ID="623014" Value=""/>
     <Text ID="623015" Value=""/>
     <Text ID="623016" Value=""/>
     <Text ID="623017" Value=""/>
-    <Text ID="623018" Value=""/>
-    <Text ID="623019" Value=""/>
     <Text ID="623020" Value=""/>
-    <Text ID="623021" Value=""/>
-    <Text ID="623022" Value=""/>
     <Text ID="623023" Value=""/>
     <Text ID="623024" Value=""/>
     <Text ID="623025" Value=""/>
@@ -87,18 +67,10 @@
     <Text ID="623027" Value=""/>
     <Text ID="623028" Value=""/>
     <Text ID="623029" Value=""/>
-    <Text ID="623030" Value=""/>
     <Text ID="623031" Value=""/>
-    <Text ID="623032" Value=""/>
-    <Text ID="623033" Value=""/>
-    <Text ID="623034" Value=""/>
-    <Text ID="623035" Value=""/>
-    <Text ID="623036" Value=""/>
-    <Text ID="623037" Value=""/>
-    <Text ID="623038" Value=""/>
     <Text ID="627458" Value=""/>
     <Text ID="627459" Value=""/>
-    <Text ID="628476" Value=""/>
+    <Text ID="633804" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="es">
     <Text ID="622993" Value=""/>
@@ -112,22 +84,16 @@
     <Text ID="623004" Value=""/>
     <Text ID="623005" Value=""/>
     <Text ID="623006" Value=""/>
-    <Text ID="623007" Value=""/>
     <Text ID="623008" Value=""/>
     <Text ID="623009" Value=""/>
     <Text ID="623010" Value=""/>
     <Text ID="623011" Value=""/>
     <Text ID="623012" Value=""/>
-    <Text ID="623013" Value=""/>
     <Text ID="623014" Value=""/>
     <Text ID="623015" Value=""/>
     <Text ID="623016" Value=""/>
     <Text ID="623017" Value=""/>
-    <Text ID="623018" Value=""/>
-    <Text ID="623019" Value=""/>
     <Text ID="623020" Value=""/>
-    <Text ID="623021" Value=""/>
-    <Text ID="623022" Value=""/>
     <Text ID="623023" Value=""/>
     <Text ID="623024" Value=""/>
     <Text ID="623025" Value=""/>
@@ -135,18 +101,10 @@
     <Text ID="623027" Value=""/>
     <Text ID="623028" Value=""/>
     <Text ID="623029" Value=""/>
-    <Text ID="623030" Value=""/>
     <Text ID="623031" Value=""/>
-    <Text ID="623032" Value=""/>
-    <Text ID="623033" Value=""/>
-    <Text ID="623034" Value=""/>
-    <Text ID="623035" Value=""/>
-    <Text ID="623036" Value=""/>
-    <Text ID="623037" Value=""/>
-    <Text ID="623038" Value=""/>
     <Text ID="627458" Value=""/>
     <Text ID="627459" Value=""/>
-    <Text ID="628476" Value=""/>
+    <Text ID="633804" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="622993" Value=""/>
@@ -160,22 +118,16 @@
     <Text ID="623004" Value=""/>
     <Text ID="623005" Value=""/>
     <Text ID="623006" Value=""/>
-    <Text ID="623007" Value=""/>
     <Text ID="623008" Value=""/>
     <Text ID="623009" Value=""/>
     <Text ID="623010" Value=""/>
     <Text ID="623011" Value=""/>
     <Text ID="623012" Value=""/>
-    <Text ID="623013" Value=""/>
     <Text ID="623014" Value=""/>
     <Text ID="623015" Value=""/>
     <Text ID="623016" Value=""/>
     <Text ID="623017" Value=""/>
-    <Text ID="623018" Value=""/>
-    <Text ID="623019" Value=""/>
     <Text ID="623020" Value=""/>
-    <Text ID="623021" Value=""/>
-    <Text ID="623022" Value=""/>
     <Text ID="623023" Value=""/>
     <Text ID="623024" Value=""/>
     <Text ID="623025" Value=""/>
@@ -183,18 +135,10 @@
     <Text ID="623027" Value=""/>
     <Text ID="623028" Value=""/>
     <Text ID="623029" Value=""/>
-    <Text ID="623030" Value=""/>
     <Text ID="623031" Value=""/>
-    <Text ID="623032" Value=""/>
-    <Text ID="623033" Value=""/>
-    <Text ID="623034" Value=""/>
-    <Text ID="623035" Value=""/>
-    <Text ID="623036" Value=""/>
-    <Text ID="623037" Value=""/>
-    <Text ID="623038" Value=""/>
     <Text ID="627458" Value=""/>
     <Text ID="627459" Value=""/>
-    <Text ID="628476" Value=""/>
+    <Text ID="633804" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="pt">
     <Text ID="622993" Value=""/>
@@ -208,22 +152,16 @@
     <Text ID="623004" Value=""/>
     <Text ID="623005" Value=""/>
     <Text ID="623006" Value=""/>
-    <Text ID="623007" Value=""/>
     <Text ID="623008" Value=""/>
     <Text ID="623009" Value=""/>
     <Text ID="623010" Value=""/>
     <Text ID="623011" Value=""/>
     <Text ID="623012" Value=""/>
-    <Text ID="623013" Value=""/>
     <Text ID="623014" Value=""/>
     <Text ID="623015" Value=""/>
     <Text ID="623016" Value=""/>
     <Text ID="623017" Value=""/>
-    <Text ID="623018" Value=""/>
-    <Text ID="623019" Value=""/>
     <Text ID="623020" Value=""/>
-    <Text ID="623021" Value=""/>
-    <Text ID="623022" Value=""/>
     <Text ID="623023" Value=""/>
     <Text ID="623024" Value=""/>
     <Text ID="623025" Value=""/>
@@ -231,18 +169,10 @@
     <Text ID="623027" Value=""/>
     <Text ID="623028" Value=""/>
     <Text ID="623029" Value=""/>
-    <Text ID="623030" Value=""/>
     <Text ID="623031" Value=""/>
-    <Text ID="623032" Value=""/>
-    <Text ID="623033" Value=""/>
-    <Text ID="623034" Value=""/>
-    <Text ID="623035" Value=""/>
-    <Text ID="623036" Value=""/>
-    <Text ID="623037" Value=""/>
-    <Text ID="623038" Value=""/>
     <Text ID="627458" Value=""/>
     <Text ID="627459" Value=""/>
-    <Text ID="628476" Value=""/>
+    <Text ID="633804" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="sv">
     <Text ID="622993" Value=""/>
@@ -256,22 +186,16 @@
     <Text ID="623004" Value=""/>
     <Text ID="623005" Value=""/>
     <Text ID="623006" Value=""/>
-    <Text ID="623007" Value=""/>
     <Text ID="623008" Value=""/>
     <Text ID="623009" Value=""/>
     <Text ID="623010" Value=""/>
     <Text ID="623011" Value=""/>
     <Text ID="623012" Value=""/>
-    <Text ID="623013" Value=""/>
     <Text ID="623014" Value=""/>
     <Text ID="623015" Value=""/>
     <Text ID="623016" Value=""/>
     <Text ID="623017" Value=""/>
-    <Text ID="623018" Value=""/>
-    <Text ID="623019" Value=""/>
     <Text ID="623020" Value=""/>
-    <Text ID="623021" Value=""/>
-    <Text ID="623022" Value=""/>
     <Text ID="623023" Value=""/>
     <Text ID="623024" Value=""/>
     <Text ID="623025" Value=""/>
@@ -279,18 +203,10 @@
     <Text ID="623027" Value=""/>
     <Text ID="623028" Value=""/>
     <Text ID="623029" Value=""/>
-    <Text ID="623030" Value=""/>
     <Text ID="623031" Value=""/>
-    <Text ID="623032" Value=""/>
-    <Text ID="623033" Value=""/>
-    <Text ID="623034" Value=""/>
-    <Text ID="623035" Value=""/>
-    <Text ID="623036" Value=""/>
-    <Text ID="623037" Value=""/>
-    <Text ID="623038" Value=""/>
     <Text ID="627458" Value=""/>
     <Text ID="627459" Value=""/>
-    <Text ID="628476" Value=""/>
+    <Text ID="633804" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="622993" Value="10"/>
@@ -304,40 +220,26 @@
     <Index ID="623004" Value="50"/>
     <Index ID="623005" Value="60"/>
     <Index ID="623006" Value="70"/>
-    <Index ID="623007" Value="80"/>
-    <Index ID="623008" Value="90"/>
+    <Index ID="623008" Value="80"/>
     <Index ID="623009" Value="31"/>
     <Index ID="623010" Value="32"/>
     <Index ID="623011" Value="33"/>
     <Index ID="623012" Value="34"/>
-    <Index ID="623013" Value="41"/>
     <Index ID="623014" Value="42"/>
     <Index ID="623015" Value="71"/>
     <Index ID="623016" Value="72"/>
     <Index ID="623017" Value="73"/>
-    <Index ID="623018" Value="81"/>
-    <Index ID="623019" Value="82"/>
-    <Index ID="623020" Value="91"/>
-    <Index ID="623021" Value="83"/>
-    <Index ID="623022" Value="84"/>
-    <Index ID="623023" Value="92"/>
+    <Index ID="623020" Value="81"/>
+    <Index ID="623023" Value="82"/>
     <Index ID="623024" Value="61"/>
     <Index ID="623025" Value="62"/>
     <Index ID="623026" Value="63"/>
     <Index ID="623027" Value="51"/>
     <Index ID="623028" Value="52"/>
     <Index ID="623029" Value="53"/>
-    <Index ID="623030" Value="85"/>
     <Index ID="623031" Value="43"/>
-    <Index ID="623032" Value="44"/>
-    <Index ID="623033" Value="54"/>
-    <Index ID="623034" Value="55"/>
-    <Index ID="623035" Value="56"/>
-    <Index ID="623036" Value="59"/>
-    <Index ID="623037" Value="57"/>
-    <Index ID="623038" Value="58"/>
     <Index ID="627458" Value="64"/>
     <Index ID="627459" Value="74"/>
-    <Index ID="628476" Value="11"/>
+    <Index ID="633804" Value="41"/>
   </IndexMap>
 </TextGroup>

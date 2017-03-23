@@ -52,19 +52,29 @@
           <Property Name="Top" Value="47"/>
           <Property Name="Width" Value="1024"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_1">
-          <Property Name="Bitmap" Value="Source[local].Bitmap[iAutomation_v15tm_webnotagline]"/>
-          <Property Name="BitmapSource" Value="SingleBitmap"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+        <Control ClassId="0x00001001" Name="Shape_1">
+          <Property Name="BackColor" Value="15"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="76"/>
+          <Property Name="Height" Value="263"/>
+          <Property Name="Left" Value="236"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="Top" Value="241"/>
+          <Property Name="Width" Value="557"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_1">
+          <Property Name="Bitmap" Value="Source[local].Bitmap[logoMASplashScreen]"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="206"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="326"/>
+          <Property Name="Left" Value="306"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-          <Property Name="Top" Value="207"/>
-          <Property Name="Width" Value="431"/>
+          <Property Name="Top" Value="271"/>
+          <Property Name="Width" Value="400"/>
         </Control>
       </Controls>
       <KeyMapping/>
