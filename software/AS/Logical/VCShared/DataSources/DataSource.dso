@@ -4434,19 +4434,6 @@
         </DataPoint>
       </Folder>
     </Folder>
-    <Folder Name="HMI">
-      <Property Name="Description" Value=""/>
-      <Property Name="FolderType" Value="Package"/>
-      <DataPoint Name="CurrentCouplingHMIStatus">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="DINT"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="INTEGER"/>
-      </DataPoint>
-    </Folder>
     <Folder Name="appConfigAndRecipes">
       <Property Name="Description" Value=""/>
       <Property Name="FolderType" Value="Package"/>
@@ -12251,104 +12238,6 @@
         <Folder Name="Output">
           <Property Name="Description" Value=""/>
           <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="EventID">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UINT[0..19]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER[]"/>
-            <DataPoint Name="EventID[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[6]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[7]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[8]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EventID[9]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </DataPoint>
           <DataPoint Name="EventText">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="Description" Value=""/>
@@ -12574,30 +12463,6 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
           </DataPoint>
-          <DataPoint Name="RangeStart">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <DataPoint Name="RangeEnd">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
         </Folder>
         <Folder Name="Filter">
           <Property Name="Description" Value=""/>
@@ -12614,15 +12479,6 @@
           <Folder Name="Dialog">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="LayerStatus">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
             <Folder Name="From">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
@@ -12634,51 +12490,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <Folder Name="Until">
@@ -12692,51 +12503,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <Folder Name="Event">
@@ -12760,32 +12526,6 @@
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
               </DataPoint>
-              <DataPoint Name="Event">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UDINT[0..4]"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER[]"/>
-                <DataPoint Name="Event[0]">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Event[1]">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </DataPoint>
             </Folder>
             <Folder Name="Operator">
               <Property Name="Description" Value=""/>
@@ -12807,16 +12547,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Name">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="WSTRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
               </DataPoint>
             </Folder>
             <DataPoint Name="Confirm">
@@ -12838,139 +12568,11 @@
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
           </Folder>
-          <Folder Name="Current">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <Folder Name="From">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-            <Folder Name="Until">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-            <Folder Name="Event">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Event">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UDINT[0..4]"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER[]"/>
-                <DataPoint Name="Event[0]">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Event[1]">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </DataPoint>
-            </Folder>
-            <Folder Name="Operator">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Name">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="WSTRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-            </Folder>
-          </Folder>
-          <DataPoint Name="DefaultLayerStatus">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
         </Folder>
       </Folder>
       <Folder Name="Audit_Control">
         <Property Name="Description" Value=""/>
         <Property Name="FolderType" Value="FunctionBlock"/>
-        <DataPoint Name="CommandDone">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
         <DataPoint Name="Export">
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -13462,67 +13064,9 @@
       <Folder Name="OEE_Core_UIConnect">
         <Property Name="Description" Value=""/>
         <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="Availability">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="Performance">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="Quality">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="OEE">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
         <Folder Name="ShiftStatistics">
           <Property Name="Description" Value=""/>
           <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="ShiftName">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="STRING"/>
-            <Property Name="StringLength" Value="20"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="STRING"/>
-          </DataPoint>
           <Folder Name="TotalTime">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
@@ -13635,51 +13179,6 @@
               <Property Name="VCType" Value="INTEGER"/>
             </DataPoint>
           </Folder>
-          <DataPoint Name="TargetPieces">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UDINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-          <DataPoint Name="TotalPieces">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UDINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-          <DataPoint Name="GoodPieces">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UDINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-          <DataPoint Name="RejectPieces">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UDINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-          <DataPoint Name="AverageCycleTime">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="TIME"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
         </Folder>
       </Folder>
       <Folder Name="OEE_Timeline_UIConnect">
@@ -13694,44 +13193,6 @@
             <Folder Name="Display[0]">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="StartTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="ShiftName">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="20"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-              <DataPoint Name="ProductionState">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="MpOeeUIProductionStateEnum"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Reason">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
               <Folder Name="Duration">
                 <Property Name="Description" Value=""/>
                 <Property Name="FolderType" Value="Struct"/>
@@ -13755,28 +13216,6 @@
                   <Property Name="ConnectedBySharedResource" Value="True"/>
                   <Property Name="Description" Value=""/>
                   <Property Name="PLCType" Value="USINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
-              <Folder Name="DurationBar">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Duration">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Color">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
                   <Property Name="UpdateTime" Value="Default"/>
                   <Property Name="UserID" Value="None"/>
                   <Property Name="VCType" Value="INTEGER"/>
@@ -13786,44 +13225,6 @@
             <Folder Name="Display[1]">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="StartTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="ShiftName">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="20"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-              <DataPoint Name="ProductionState">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="MpOeeUIProductionStateEnum"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Reason">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
               <Folder Name="Duration">
                 <Property Name="Description" Value=""/>
                 <Property Name="FolderType" Value="Struct"/>
@@ -13847,28 +13248,6 @@
                   <Property Name="ConnectedBySharedResource" Value="True"/>
                   <Property Name="Description" Value=""/>
                   <Property Name="PLCType" Value="USINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
-              <Folder Name="DurationBar">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Duration">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Color">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
                   <Property Name="UpdateTime" Value="Default"/>
                   <Property Name="UserID" Value="None"/>
                   <Property Name="VCType" Value="INTEGER"/>
@@ -13878,44 +13257,6 @@
             <Folder Name="Display[2]">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="StartTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="ShiftName">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="20"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-              <DataPoint Name="ProductionState">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="MpOeeUIProductionStateEnum"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Reason">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
               <Folder Name="Duration">
                 <Property Name="Description" Value=""/>
                 <Property Name="FolderType" Value="Struct"/>
@@ -13939,28 +13280,6 @@
                   <Property Name="ConnectedBySharedResource" Value="True"/>
                   <Property Name="Description" Value=""/>
                   <Property Name="PLCType" Value="USINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
-              <Folder Name="DurationBar">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Duration">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Color">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
                   <Property Name="UpdateTime" Value="Default"/>
                   <Property Name="UserID" Value="None"/>
                   <Property Name="VCType" Value="INTEGER"/>
@@ -13970,44 +13289,6 @@
             <Folder Name="Display[3]">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="StartTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="ShiftName">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="20"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-              <DataPoint Name="ProductionState">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="MpOeeUIProductionStateEnum"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Reason">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
               <Folder Name="Duration">
                 <Property Name="Description" Value=""/>
                 <Property Name="FolderType" Value="Struct"/>
@@ -14031,28 +13312,6 @@
                   <Property Name="ConnectedBySharedResource" Value="True"/>
                   <Property Name="Description" Value=""/>
                   <Property Name="PLCType" Value="USINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
-              <Folder Name="DurationBar">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Duration">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Color">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
                   <Property Name="UpdateTime" Value="Default"/>
                   <Property Name="UserID" Value="None"/>
                   <Property Name="VCType" Value="INTEGER"/>
@@ -14062,44 +13321,6 @@
             <Folder Name="Display[4]">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="StartTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="ShiftName">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="20"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-              <DataPoint Name="ProductionState">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="MpOeeUIProductionStateEnum"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Reason">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
               <Folder Name="Duration">
                 <Property Name="Description" Value=""/>
                 <Property Name="FolderType" Value="Struct"/>
@@ -14123,28 +13344,6 @@
                   <Property Name="ConnectedBySharedResource" Value="True"/>
                   <Property Name="Description" Value=""/>
                   <Property Name="PLCType" Value="USINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
-              <Folder Name="DurationBar">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Duration">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Color">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
                   <Property Name="UpdateTime" Value="Default"/>
                   <Property Name="UserID" Value="None"/>
                   <Property Name="VCType" Value="INTEGER"/>
@@ -14154,44 +13353,6 @@
             <Folder Name="Display[5]">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="StartTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="ShiftName">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="20"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-              <DataPoint Name="ProductionState">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="MpOeeUIProductionStateEnum"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Reason">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="50"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
               <Folder Name="Duration">
                 <Property Name="Description" Value=""/>
                 <Property Name="FolderType" Value="Struct"/>
@@ -14220,54 +13381,8 @@
                   <Property Name="VCType" Value="INTEGER"/>
                 </DataPoint>
               </Folder>
-              <Folder Name="DurationBar">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Duration">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Color">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UDINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
             </Folder>
           </Folder>
-          <DataPoint Name="RangeStart">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <DataPoint Name="RangeEnd">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
           <DataPoint Name="PageUp">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -14320,15 +13435,6 @@
           <Folder Name="Dialog">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="LayerStatus">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
             <Folder Name="From">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
@@ -14340,51 +13446,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <Folder Name="Until">
@@ -14398,51 +13459,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <DataPoint Name="Confirm">
@@ -14464,63 +13480,6 @@
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
           </Folder>
-          <Folder Name="Current">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <Folder Name="From">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-            <Folder Name="Until">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-          </Folder>
-          <DataPoint Name="DefaultLayerStatus">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
         </Folder>
       </Folder>
       <Folder Name="OEE_List_UIConnect">
@@ -14529,717 +13488,6 @@
         <Folder Name="Output">
           <Property Name="Description" Value=""/>
           <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="StartTime">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="DATE_AND_TIME[0..19]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER[]"/>
-            <DataPoint Name="StartTime[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="StartTime[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="StartTime[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="StartTime[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="StartTime[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="StartTime[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="EndTime">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="DATE_AND_TIME[0..19]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER[]"/>
-            <DataPoint Name="EndTime[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EndTime[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EndTime[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EndTime[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EndTime[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="EndTime[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DATE_AND_TIME"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="ShiftName">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="STRING[0..19]"/>
-            <Property Name="StringLength" Value="20"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="STRING[]"/>
-            <DataPoint Name="ShiftName[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="20"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
-            <DataPoint Name="ShiftName[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="20"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
-            <DataPoint Name="ShiftName[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="20"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
-            <DataPoint Name="ShiftName[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="20"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
-            <DataPoint Name="ShiftName[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="20"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
-            <DataPoint Name="ShiftName[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="20"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="Availability">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL[0..19]"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED[]"/>
-            <DataPoint Name="Availability[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Availability[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Availability[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Availability[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Availability[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Availability[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="Performance">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL[0..19]"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED[]"/>
-            <DataPoint Name="Performance[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Performance[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Performance[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Performance[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Performance[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Performance[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="Quality">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL[0..19]"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED[]"/>
-            <DataPoint Name="Quality[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Quality[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Quality[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Quality[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Quality[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Quality[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="OEE">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL[0..19]"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED[]"/>
-            <DataPoint Name="OEE[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="OEE[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="OEE[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="OEE[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="OEE[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="OEE[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="TargetPieces">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UDINT[0..19]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER[]"/>
-            <DataPoint Name="TargetPieces[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TargetPieces[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TargetPieces[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TargetPieces[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TargetPieces[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TargetPieces[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="TotalPieces">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UDINT[0..19]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER[]"/>
-            <DataPoint Name="TotalPieces[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TotalPieces[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TotalPieces[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TotalPieces[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TotalPieces[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="TotalPieces[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </DataPoint>
-          <DataPoint Name="GoodPieces">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UDINT[0..19]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER[]"/>
-            <DataPoint Name="GoodPieces[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="GoodPieces[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="GoodPieces[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="GoodPieces[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="GoodPieces[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="GoodPieces[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UDINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </DataPoint>
           <DataPoint Name="PageUp">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -15292,15 +13540,6 @@
           <Folder Name="Dialog">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="LayerStatus">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
             <Folder Name="From">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
@@ -15312,51 +13551,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <Folder Name="Until">
@@ -15370,51 +13564,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <DataPoint Name="Confirm">
@@ -15436,63 +13585,6 @@
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
           </Folder>
-          <Folder Name="Current">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <Folder Name="From">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-            <Folder Name="Until">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-          </Folder>
-          <DataPoint Name="DefaultLayerStatus">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
         </Folder>
       </Folder>
       <Folder Name="OEE_Trend_UIConnect">
@@ -15565,15 +13657,6 @@
           <Folder Name="Dialog">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="LayerStatus">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
             <Folder Name="From">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
@@ -15585,51 +13668,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <Folder Name="Until">
@@ -15643,51 +13681,6 @@
                 <Property Name="UpdateTime" Value="Default"/>
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Year">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Month">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Day">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Hour">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <DataPoint Name="Minute">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="USINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
             <DataPoint Name="Confirm">
@@ -15709,63 +13702,6 @@
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
           </Folder>
-          <Folder Name="Current">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <Folder Name="From">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-            <Folder Name="Until">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Enable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="DateTime">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="DATE_AND_TIME"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-          </Folder>
-          <DataPoint Name="DefaultLayerStatus">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="UINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
         </Folder>
       </Folder>
     </Folder>
@@ -18465,178 +16401,6 @@
         <Folder Name="pAxisCoupling">
           <Property Name="Description" Value=""/>
           <Property Name="FolderType" Value="FunctionBlock"/>
-          <DataPoint Name="InCompensation">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="InSync">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="RecoveryDone">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="PhasingDone">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <Folder Name="Info">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="MasterReady">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="BOOL"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="BOOL"/>
-            </DataPoint>
-            <DataPoint Name="SlaveReady">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="BOOL"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="BOOL"/>
-            </DataPoint>
-            <DataPoint Name="SlavePosition">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="SlaveVelocity">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="ActualOffsetValue">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="ActualPhasingValue">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <Folder Name="Diag">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="ExecutingCommand">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="MpAxisExecutingCmdEnum"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-              <Folder Name="Internal">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Code">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Severity">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="MpComSeveritiesEnum"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Facility">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="MpComFacilitiesEnum"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
-              <Folder Name="StatusID">
-                <Property Name="Description" Value=""/>
-                <Property Name="FolderType" Value="Struct"/>
-                <DataPoint Name="Code">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="UINT"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-                <DataPoint Name="Severity">
-                  <Property Name="ConnectedBySharedResource" Value="False"/>
-                  <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-                  <Property Name="Description" Value=""/>
-                  <Property Name="PLCType" Value="MpComSeveritiesEnum"/>
-                  <Property Name="UpdateTime" Value="Default"/>
-                  <Property Name="UserID" Value="None"/>
-                  <Property Name="VCType" Value="INTEGER"/>
-                </DataPoint>
-              </Folder>
-            </Folder>
-          </Folder>
           <DataPoint Name="Update">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -18691,42 +16455,6 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
           </DataPoint>
-          <DataPoint Name="Active">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="CommandBusy">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="CommandAborted">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="Error">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
           <DataPoint Name="ErrorReset">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -18749,220 +16477,9 @@
         <Folder Name="pCouplingPar">
           <Property Name="Description" Value=""/>
           <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="RatioNumerator">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <DataPoint Name="RatioDenominator">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="REAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <Folder Name="Gear">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="Acceleration">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Deceleration">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-          </Folder>
-          <Folder Name="Cam">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="CamTableID">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="USINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="MasterStartPosition">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="CamTable">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING[0..4]"/>
-              <Property Name="StringLength" Value="12"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING[]"/>
-            </DataPoint>
-          </Folder>
-          <Folder Name="Recovery">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="Mode">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="MpAxisRecoveryModeEnum"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="Velocity">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Acceleration">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="ToleranceWindow">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-          </Folder>
           <Folder Name="PhaseShift">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="Mode">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="MpAxisShiftModeEnum"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="ApplicationMode">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="MpAxisApplyModeEnum"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="ApplicationDistance">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Distance">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Velocity">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Acceleration">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="CyclicParID">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
             <DataPoint Name="EnableVelocityControl">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -18976,81 +16493,6 @@
           <Folder Name="OffsetShift">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="Mode">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="MpAxisShiftModeEnum"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="ApplicationMode">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="MpAxisApplyModeEnum"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="Distance">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Velocity">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="Acceleration">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="REAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="ApplicationDistance">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="DPLimit" Value="None"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="LREAL"/>
-              <Property Name="PLCUnit" Value="None"/>
-              <Property Name="UnitGroup" Value="None"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="SCALED"/>
-            </DataPoint>
-            <DataPoint Name="CyclicParID">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="UINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
             <DataPoint Name="EnableVelocityControl">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -19065,66 +16507,6 @@
         <Folder Name="pCamLead">
           <Property Name="Description" Value=""/>
           <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="MasterOffset">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="LREAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <DataPoint Name="MasterDistance">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="LREAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <DataPoint Name="SlaveDistance">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="LREAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <DataPoint Name="MasterScaling">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="LREAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
-          <DataPoint Name="SlaveScaling">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="DPLimit" Value="None"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="LREAL"/>
-            <Property Name="PLCUnit" Value="None"/>
-            <Property Name="UnitGroup" Value="None"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="SCALED"/>
-          </DataPoint>
           <DataPoint Name="CamEnable">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
@@ -19135,53 +16517,6 @@
             <Property Name="VCType" Value="BOOL"/>
           </DataPoint>
         </Folder>
-      </Folder>
-      <Folder Name="Axis_Line_Control">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="FunctionBlock"/>
-        <Folder Name="Info">
-          <Property Name="Description" Value=""/>
-          <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="PLCopenState">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="MpAxisPlcOpenStateEnum"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-        </Folder>
-      </Folder>
-      <Folder Name="Axis_Blank_Control">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="FunctionBlock"/>
-        <Folder Name="Info">
-          <Property Name="Description" Value=""/>
-          <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="PLCopenState">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="MpAxisPlcOpenStateEnum"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-        </Folder>
-      </Folder>
-      <Folder Name="CamLeadListbox">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="Index">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="HMI\WSVGA"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="DINT"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="INTEGER"/>
-        </DataPoint>
       </Folder>
     </Folder>
     <Folder Name="gHmiParamTable">
