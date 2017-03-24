@@ -4,3 +4,9 @@ VAR
 	gAlarmsFiltered : applicationAlarms_typ := (0);
 	FeedAxis : ACP10AXIS_typ;
 END_VAR
+(*<--------------------------------------------->*)
+(*Pre-compile Constants*)
+VAR CONSTANT
+	MAX_IDX_CREASES : UDINT := 19;
+END_VAR
+(*<--------------------------------------------->*)

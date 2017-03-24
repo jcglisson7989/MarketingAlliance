@@ -6,7 +6,10 @@
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
-  <TaskClass Name="Cyclic#4" />
+  <TaskClass Name="Cyclic#4">
+    <Task Name="Control" Source="Application_Logic.Control.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="FeedRoller" Source="Application_Logic.FeedRoller.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
   <TaskClass Name="Cyclic#7" />

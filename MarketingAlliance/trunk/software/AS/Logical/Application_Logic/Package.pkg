@@ -2,9 +2,7 @@
 <?AutomationStudio Version=4.2.7.54 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Private="true">Enumerations.typ</Object>
-    <Object Type="File" Private="true">ControlStructures.typ</Object>
-    <Object Type="File" Private="true">IO.typ</Object>
-    <Object Type="File" Private="true">varPkg.var</Object>
+    <Object Type="Program" Language="IEC">Control</Object>
+    <Object Type="Program" Language="IEC">FeedRoller</Object>
   </Objects>
 </Package>
