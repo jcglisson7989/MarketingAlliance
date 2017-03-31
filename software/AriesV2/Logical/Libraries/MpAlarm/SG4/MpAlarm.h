@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpAlarm 1.20.5 */
+/* MpAlarm 1.60.1 */
 
 #ifndef _MPALARM_
 #define _MPALARM_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpAlarm_VERSION
-#define _MpAlarm_VERSION 1.20.5
+#define _MpAlarm_VERSION 1.60.1
 #endif
 
 #include <bur/plctypes.h>

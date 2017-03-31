@@ -16,11 +16,13 @@ TYPE
 		RecipeSave : BOOL; (*Enables a confirmation window when saving a recipe*)
 		RecipeCreate : BOOL; (*Enables a confirmation window when creating a recipe	*)
 		RecipeDelete : BOOL; (*Enables a confirmation window when creating a recipe*)
+		RecipeRename : BOOL; (*Enables a confirmation window when renaming a recipe*)
 	END_STRUCT;
 	MpRecipeUISetupType : 	STRUCT 
 		RecipeListSize : UINT := 20; (*Number of recipes to be displayed on one page of the list in the HMI application*)
 		RecipeListScrollWindow : USINT := 1; (*Determines how many entries from the list are displayed in advance when scrolling up and down*)
 		Confirmation : MpRecipeUISetupConfirmType; (*Displaying the confirmation window*)
+		AutoLoadHeader : BOOL; (*Header info of a recipe should be loaded automatically when a recipe is selected (like a preview) *)
 	END_STRUCT;
 	MpRecipeUIMessageEnum : 
 		(
@@ -28,7 +30,8 @@ TYPE
 		mpRECIPE_UI_MSG_CONFIRM_LOAD := 1, (*Dialog box for confirming the loading procedure*)
 		mpRECIPE_UI_MSG_CONFIRM_SAVE := 2, (*Dialog box for confirming the saving procedure*)
 		mpRECIPE_UI_MSG_CONFIRM_CREATE := 3, (*Dialog box for confirming the creation of a new recipe	*)
-		mpRECIPE_UI_MSG_CONFIRM_DELETE := 4 (*Dialog box for confirming the deletion of an existing recipe*)
+		mpRECIPE_UI_MSG_CONFIRM_DELETE := 4, (*Dialog box for confirming the deletion of an existing recipe*)
+		mpRECIPE_UI_MSG_CONFIRM_RENAME := 5 (*Dialog box for confirming the renaming of an existing recipe*)
 		);
 	MpRecipeUIStatusEnum : 
 		(
@@ -72,6 +75,12 @@ TYPE
 		Sizes : ARRAY[0..19]OF UDINT; (*List of all recipe file sizes*)
 		LastModified : ARRAY[0..19]OF STRING[50]; (*List of the last modification dates for all recipe files*)
 	END_STRUCT;
+	MpRecipeUIHeaderType : 	STRUCT 
+		Name : STRING[100]; (*Name of the recipe*)
+		Description : STRING[255]; (*Comment that describes the recipe*)
+		Version : STRING[20]; (*Version of the recipe*)
+		DateTime : DATE_AND_TIME; (*Date and time the recipe was created*)
+	END_STRUCT;
 	MpRecipeUIRecipeType : 	STRUCT 
 		List : MpRecipeUIRecipeListType; (*List of all available recipes (filenames)*)
 		Load : BOOL; (*Loads the selected recipe*)
@@ -83,6 +92,7 @@ TYPE
 		Delete : BOOL; (*Deletes the selected recipe*)
 		Rename : BOOL; (*Renames the currently selected recipe*)
 		NewFileName : STRING[255]; (*Name of the new recipe*)
+		Header : MpRecipeUIHeaderType; (*The header info of the currently selected recipe (is only loaded if the option is enabled in UISetup)*)
 	END_STRUCT;
 	MpRecipeXmlInfoType : 	STRUCT 
 		FileSize : UDINT; (*Size of the recipe stored on the respective data storage medium*)

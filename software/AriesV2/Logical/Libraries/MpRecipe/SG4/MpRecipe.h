@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpRecipe 1.20.5 */
+/* MpRecipe 1.60.1 */
 
 #ifndef _MPRECIPE_
 #define _MPRECIPE_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpRecipe_VERSION
-#define _MpRecipe_VERSION 1.20.5
+#define _MpRecipe_VERSION 1.60.1
 #endif
 
 #include <bur/plctypes.h>
@@ -38,7 +38,8 @@ typedef enum MpRecipeUIMessageEnum
 	mpRECIPE_UI_MSG_CONFIRM_LOAD = 1,
 	mpRECIPE_UI_MSG_CONFIRM_SAVE = 2,
 	mpRECIPE_UI_MSG_CONFIRM_CREATE = 3,
-	mpRECIPE_UI_MSG_CONFIRM_DELETE = 4
+	mpRECIPE_UI_MSG_CONFIRM_DELETE = 4,
+	mpRECIPE_UI_MSG_CONFIRM_RENAME = 5
 } MpRecipeUIMessageEnum;
 
 typedef enum MpRecipeUIStatusEnum
@@ -130,12 +131,14 @@ typedef struct MpRecipeUISetupConfirmType
 	plcbit RecipeSave;
 	plcbit RecipeCreate;
 	plcbit RecipeDelete;
+	plcbit RecipeRename;
 } MpRecipeUISetupConfirmType;
 
 typedef struct MpRecipeUISetupType
 {	unsigned short RecipeListSize;
 	unsigned char RecipeListScrollWindow;
 	struct MpRecipeUISetupConfirmType Confirmation;
+	plcbit AutoLoadHeader;
 } MpRecipeUISetupType;
 
 typedef struct MpRecipeUIMessageBoxType
@@ -164,6 +167,13 @@ typedef struct MpRecipeUIRecipeListType
 	plcstring LastModified[20][51];
 } MpRecipeUIRecipeListType;
 
+typedef struct MpRecipeUIHeaderType
+{	plcstring Name[101];
+	plcstring Description[256];
+	plcstring Version[21];
+	plcdt DateTime;
+} MpRecipeUIHeaderType;
+
 typedef struct MpRecipeUIRecipeType
 {	struct MpRecipeUIRecipeListType List;
 	plcbit Load;
@@ -175,6 +185,7 @@ typedef struct MpRecipeUIRecipeType
 	plcbit Delete;
 	plcbit Rename;
 	plcstring NewFileName[256];
+	struct MpRecipeUIHeaderType Header;
 } MpRecipeUIRecipeType;
 
 typedef struct MpRecipeUIConnectType

@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpWebXs 1.20.5 */
+/* MpWebXs 1.60.1 */
 
 #ifndef _MPWEBXS_
 #define _MPWEBXS_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpWebXs_VERSION
-#define _MpWebXs_VERSION 1.20.5
+#define _MpWebXs_VERSION 1.60.1
 #endif
 
 #include <bur/plctypes.h>

@@ -1,5 +1,5 @@
 
-FUNCTION_BLOCK MpRecipeRegParSync (*Declare a PV as a recipe parameter and perform synchronisation*) (* $GROUP=mapp,$CAT=CSV Recipe,$CAT=XML Recipe,$GROUPICON=Icon_mapp.png,$CATICON=Icon_MpRecipe.png *)
+FUNCTION_BLOCK MpRecipeRegParSync (*Declare a PV as a recipe parameter and perform synchronisation*) (* $GROUP=mapp,$CAT=XML Recipe,$GROUPICON=Icon_mapp.png,$CATICON=Icon_MpRecipe.png *)
 	VAR_INPUT
 		MpLink : REFERENCE TO MpComIdentType; (*Connection to mapp*) (* *) (*#PAR#;*)
 		Enable : BOOL; (*Enables/Disables the function block *) (* *) (*#PAR#;*)
@@ -17,11 +17,11 @@ FUNCTION_BLOCK MpRecipeRegParSync (*Declare a PV as a recipe parameter and perfo
 		Info : MpRecipeInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK
 
-FUNCTION_BLOCK MpRecipeRegPar (*Declare a PV as a recipe parameter*) (* $GROUP=mapp,$CAT=CSV Recipe,$CAT=XML Recipe,$GROUPICON=Icon_mapp.png,$CATICON=Icon_MpRecipe.png *)
+FUNCTION_BLOCK MpRecipeRegPar (*Declare a PV as a recipe parameter*) (* $GROUP=mapp,$CAT=XML Recipe,$GROUPICON=Icon_mapp.png,$CATICON=Icon_MpRecipe.png *)
 	VAR_INPUT
 		MpLink : REFERENCE TO MpComIdentType; (* Connection to mapp*) (* *) (*#PAR#;*)
 		Enable : BOOL; (*Enables/Disables the function block*) (* *) (*#PAR#;*)
@@ -37,7 +37,7 @@ FUNCTION_BLOCK MpRecipeRegPar (*Declare a PV as a recipe parameter*) (* $GROUP=m
 		Info : MpRecipeInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -64,16 +64,16 @@ FUNCTION_BLOCK MpRecipeXml (*Load/save parameters from/to an XML file*) (* $GROU
 		Info : MpRecipeXmlInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK
 
-FUNCTION_BLOCK MpRecipeUI (*UI connection to a VC4 recipe page*) (* $GROUP=mapp,$CAT=CSV Recipe,$CAT=XML Recipe,$GROUPICON=Icon_mapp.png,$CATICON=Icon_MpRecipe.png *)
+FUNCTION_BLOCK MpRecipeUI (*UI connection to a VC4 recipe page*) (* $GROUP=mapp,$CAT=XML Recipe,$GROUPICON=Icon_mapp.png,$CATICON=Icon_MpRecipe.png *)
 	VAR_INPUT
 		MpLink : REFERENCE TO MpComIdentType; (*Connection to mapp*) (* *) (*#PAR#;*)
 		Enable : BOOL; (*Enables/Disables the function block*) (* *) (*#PAR#;*)
 		ErrorReset : BOOL; (*Resets function block errors*) (* *) (*#PAR#;*)
-		UISetup : MpRecipeUISetupType; (*Used to configure the elements connected to the HMI application*) (* *) (*#PAR#;*)
+		UISetup : {REDUND_UNREPLICABLE} MpRecipeUISetupType; (*Used to configure the elements connected to the HMI application*) (* *) (*#PAR#;*)
 		UIConnect : REFERENCE TO MpRecipeUIConnectType; (*This structure contains the parameters needed for the connection to the HMI application*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR_OUTPUT
@@ -83,7 +83,7 @@ FUNCTION_BLOCK MpRecipeUI (*UI connection to a VC4 recipe page*) (* $GROUP=mapp,
 		Info : MpRecipeInfoType; (*Additional information about the component*) (* *) (*#CMD;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -110,6 +110,6 @@ FUNCTION_BLOCK MpRecipeCsv (*Load/save parameters from/to an CSV file*) (* $GROU
 		Info : MpRecipeCsvInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType; (*Internal stucture*) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK
