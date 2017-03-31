@@ -1,0 +1,22 @@
+0.10.7  2016-04
+  Clean up some /todos and other comments
+  Added wbrMemService to wrap AsMem and allow services besides list service
+    to use heap memory
+    moved mem funcs and data from wbrListService to wbrMemService
+  
+
+0.10.6  2016-03-31
+  Added TimerServices
+    Made a few mods to suit Hailo project and be more generic, e.g. msTimer object declared
+    Using clock_ms() from AsTime to count milliseconds
+    Added msTimer.diff_ms to facilitate time tracking, e.g. "hour meters"
+  A few changes to Init and Cyclic to be more generic for multiple projects
+    Write compile info to log on Init
+  Updated package dependencies to facilitate more trouble-free importing
+  
+    
+    
+0.10.5  2015-10-??
+  Initial release
+    Used in APDW project
+    No complaints as of 2016-03-07

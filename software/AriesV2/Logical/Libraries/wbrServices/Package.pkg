@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Package Version="0.10.8" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="wbrSevices documentation and temporary file storage">Doc</Object>
+    <Object Type="Package" Description="Header files that contain C-only functions, e.g. those with variable arguments.  These are included in Project-&gt;Build-&gt;Additional Include Directories and therefore the full path is not required.">wbrServices_C_Includes</Object>
+    <Object Type="File" Description="Package data types">wbrServices.typ</Object>
+    <Object Type="Library" Language="ANSIC" Description="Writes user-formatted output to a string">wbrsprintf</Object>
+    <Object Type="Library" Language="ANSIC" Description="Allocate heap memory using AsMem">wbrMemSvc</Object>
+    <Object Type="Library" Language="ANSIC" Description="Linked list services">wbrListSvc</Object>
+    <Object Type="Library" Language="ANSIC" Description="Logging to logbooks, other logs todo">wbrLogSvc</Object>
+    <Object Type="Library" Language="ANSIC" Description="Modified by WBR beginning 2015-01-13">bglibasWBR</Object>
+    <Object Type="Library" Language="ANSIC" Description="Ping a host or IP address">wbrPingSvc</Object>
+    <Object Type="Package" Description="Utility functions">wbrSvcUtilities</Object>
+    <Object Type="File" Description="Global variables">wbrServicesGlobal.var</Object>
+    <Object Type="Package" Description="Place this program in TC#1 to initialize wbrServices">InitSP</Object>
+    <Object Type="Package" Description="Place this program in TC#8 to insure cyclic updates">Cyclic</Object>
+    <Object Type="Package" Description="ms-based time counters, pulses, etc.">TimerServices</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="AsMem" />
+    <Dependency ObjectName="AsArLog" />
+    <Dependency ObjectName="AsICMP" />
+    <Dependency ObjectName="brsystem" />
+    <Dependency ObjectName="astime" />
+  </Dependencies>
+</Package>

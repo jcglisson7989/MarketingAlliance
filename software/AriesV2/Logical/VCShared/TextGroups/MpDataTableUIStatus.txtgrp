@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpDataTableUIStatus">
+  <Property Name="Description" Value="Status text for TableUI"/>
+  <Property Name="Index" Value="1191"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="495672" Value="IDLE"/>
+    <Text ID="495673" Value="REFRESH"/>
+    <Text ID="495674" Value="ERROR"/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="495672" Value="PÅ TOMGÅNG"/>
+    <Text ID="495673" Value="FÖRFRISKA"/>
+    <Text ID="495674" Value="FEL"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="495672" Value="IDLE"/>
+    <Text ID="495673" Value="REFRESH"/>
+    <Text ID="495674" Value="ERRO"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="495672" Value="IDLE"/>
+    <Text ID="495673" Value="AKTUALISIEREN"/>
+    <Text ID="495674" Value="FEHLER"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="495672" Value="TOURNER AU RALENTI"/>
+    <Text ID="495673" Value="RAFRAÎCHIR"/>
+    <Text ID="495674" Value="ERREUR"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="495672" Value="OCIOSO"/>
+    <Text ID="495673" Value="REFRESCAR"/>
+    <Text ID="495674" Value="ERROR"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="495672" Value="0"/>
+    <Index ID="495673" Value="1"/>
+    <Index ID="495674" Value="99"/>
+  </IndexMap>
+</TextGroup>

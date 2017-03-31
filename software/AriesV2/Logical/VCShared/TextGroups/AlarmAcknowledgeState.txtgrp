@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="AlarmAcknowledgeState">
+  <Property Name="Description" Value="Texts for acknowledge state of an alarm - index 0-1 long, index 10-11 short"/>
+  <Property Name="Index" Value="152"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="521795" Value="Acknowledged"/>
+    <Text ID="521796" Value="Not Acknowledged"/>
+    <Text ID="521797" Value="Acknowledged Reset"/>
+    <Text ID="521798" Value="Reset Acknowledged"/>
+    <Text ID="521799" Value=""/>
+    <Text ID="521800" Value=""/>
+    <Text ID="521801" Value=""/>
+    <Text ID="521802" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="521795" Value="Erkänd"/>
+    <Text ID="521796" Value="inte Bekräftat"/>
+    <Text ID="521797" Value="erkänd Reset"/>
+    <Text ID="521798" Value="reset Bekräftade"/>
+    <Text ID="521799" Value=""/>
+    <Text ID="521800" Value=""/>
+    <Text ID="521801" Value=""/>
+    <Text ID="521802" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="521795" Value="Reconhecido"/>
+    <Text ID="521796" Value="não Reconhecido"/>
+    <Text ID="521797" Value="Redefinir reconhecido"/>
+    <Text ID="521798" Value="Redefinir Reconhecido"/>
+    <Text ID="521799" Value=""/>
+    <Text ID="521800" Value=""/>
+    <Text ID="521801" Value=""/>
+    <Text ID="521802" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="521795" Value="Anerkannt"/>
+    <Text ID="521796" Value="Nicht anerkannt"/>
+    <Text ID="521797" Value="Anerkannte zurücksetzen"/>
+    <Text ID="521798" Value="Reset quittiert"/>
+    <Text ID="521799" Value=""/>
+    <Text ID="521800" Value=""/>
+    <Text ID="521801" Value=""/>
+    <Text ID="521802" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="521795" Value="Signalé"/>
+    <Text ID="521796" Value="Non Signalé"/>
+    <Text ID="521797" Value="Réinitialiser Acquittée"/>
+    <Text ID="521798" Value="Réinitialiser Signalé"/>
+    <Text ID="521799" Value=""/>
+    <Text ID="521800" Value=""/>
+    <Text ID="521801" Value=""/>
+    <Text ID="521802" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="521795" Value="Admitido"/>
+    <Text ID="521796" Value="no Reconocido"/>
+    <Text ID="521797" Value="Restablecer reconocido"/>
+    <Text ID="521798" Value="Restablecer Reconocido"/>
+    <Text ID="521799" Value=""/>
+    <Text ID="521800" Value=""/>
+    <Text ID="521801" Value=""/>
+    <Text ID="521802" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="521795" Value="0"/>
+    <Index ID="521796" Value="1"/>
+    <Index ID="521797" Value="3"/>
+    <Index ID="521798" Value="2"/>
+    <Index ID="521799" Value="10"/>
+    <Index ID="521800" Value="11"/>
+    <Index ID="521801" Value="12"/>
+    <Index ID="521802" Value="13"/>
+  </IndexMap>
+</TextGroup>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpFileManagerUIMessageBox">
+  <Property Name="Description" Value="Message box text for FileManagerUI"/>
+  <Property Name="Index" Value="1003"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="97155" Value=""/>
+    <Text ID="97156" Value="Delete File"/>
+    <Text ID="97157" Value="Overwrite File"/>
+    <Text ID="97158" Value="Move File"/>
+    <Text ID="97160" Value="Are you sure you want to delete this file?"/>
+    <Text ID="97161" Value="File with same name exist. Are you sure you want to overwrite?"/>
+    <Text ID="97162" Value="Are you sure to move the file?"/>
+    <Text ID="112086" Value="MpFileManagerUI message box"/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="97155" Value=""/>
+    <Text ID="97156" Value="Radera fil"/>
+    <Text ID="97157" Value="skrivnings Arkiv"/>
+    <Text ID="97158" Value="Flytta fil"/>
+    <Text ID="97160" Value="Är du säker på att du vill radera den här filen?"/>
+    <Text ID="97161" Value="Fil med samma namn. Är du säker på att du vill skriva över?"/>
+    <Text ID="97162" Value="Är du säker på att flytta filen?"/>
+    <Text ID="112086" Value="MpFileManagerUI meddelanderuta"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="97155" Value=""/>
+    <Text ID="97156" Value="apagar Arquivo"/>
+    <Text ID="97157" Value="Arquivo de sobrescrever"/>
+    <Text ID="97158" Value="mover Arquivo"/>
+    <Text ID="97160" Value="Tem certeza de que deseja excluir este arquivo?"/>
+    <Text ID="97161" Value="Arquivo com mesmo nome existe. Tem certeza de que deseja substituir?"/>
+    <Text ID="97162" Value="Tem certeza que deseja mover o arquivo?"/>
+    <Text ID="112086" Value="caixa de mensagem MpFileManagerUI"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="97155" Value=""/>
+    <Text ID="97156" Value="Datei löschen"/>
+    <Text ID="97157" Value="Datei überschreiben"/>
+    <Text ID="97158" Value="Datei verschieben"/>
+    <Text ID="97160" Value="Sind Sie sicher, dass Sie diese Datei löschen?"/>
+    <Text ID="97161" Value="Datei mit dem gleichen Namen existieren. Sind Sie sicher, dass Sie überschreiben?"/>
+    <Text ID="97162" Value="Sind Sie sicher, dass die Datei zu bewegen?"/>
+    <Text ID="112086" Value="MpFileManagerUI Meldungsfeld"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="97155" Value=""/>
+    <Text ID="97156" Value="Supprimer le fichier"/>
+    <Text ID="97157" Value="Écraser le fichier"/>
+    <Text ID="97158" Value="Déplacer un fichier"/>
+    <Text ID="97160" Value="Êtes-vous sûr de vouloir supprimer ce fichier?"/>
+    <Text ID="97161" Value="Fichier avec le même nom existe. Êtes-vous sûr de vouloir écraser?"/>
+    <Text ID="97162" Value="Etes-vous sûr de déplacer le fichier?"/>
+    <Text ID="112086" Value="boîte de message MpFileManagerUI"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="97155" Value=""/>
+    <Text ID="97156" Value="Borrar archivo"/>
+    <Text ID="97157" Value="Archivo de sobrescritura"/>
+    <Text ID="97158" Value="Mover archivo"/>
+    <Text ID="97160" Value="¿Seguro que quieres eliminar este archivo?"/>
+    <Text ID="97161" Value="Archivo con el mismo nombre existe. ¿Seguro que desea sobrescribir?"/>
+    <Text ID="97162" Value="¿Seguro de mover el archivo?"/>
+    <Text ID="112086" Value="cuadro de mensaje MpFileManagerUI"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="97155" Value="0"/>
+    <Index ID="97156" Value="1"/>
+    <Index ID="97157" Value="2"/>
+    <Index ID="97158" Value="3"/>
+    <Index ID="97160" Value="11"/>
+    <Index ID="97161" Value="12"/>
+    <Index ID="97162" Value="13"/>
+    <Index ID="112086" Value="100"/>
+  </IndexMap>
+</TextGroup>

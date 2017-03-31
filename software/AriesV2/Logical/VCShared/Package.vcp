@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<Project xmlns="http://br-automation.co.at/AS/VC/Project">
+  <Property Name="EnableEvents" Value="False"/>
+  <Property Name="SharedTargetResourceRoot" Value=""/>
+  <SourceFiles>
+    <Source File="Languages.vcr"/>
+    <Source File="TextGroups\DateTimeFormats.txtgrp"/>
+    <Source File="TextGroups\MpDateTimeFormats.txtgrp"/>
+    <Source File="TextGroups\MpFileManagerUIDevices.txtgrp"/>
+    <Source File="TextGroups\MpFileManagerUIFiles.txtgrp"/>
+    <Source File="TextGroups\MpFileManagerUIMessageBox.txtgrp"/>
+    <Source File="TextGroups\MpFileManagerUIStatus.txtgrp"/>
+    <Source File="TextGroups\MpFileManagerUIText.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUIMessageBox.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUIStatus.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUIText.txtgrp"/>
+    <Source File="TextGroups\MpDataTableHeader.txtgrp"/>
+    <Source File="TextGroups\MpDataTableUIStatus.txtgrp"/>
+    <Source File="TextGroups\MpDataTableUIText.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUISize.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUIText_0.txtgrp"/>
+    <Source File="TextGroups\AlarmAcknowledgeState.txtgrp"/>
+    <Source File="TextGroups\AlarmState.txtgrp"/>
+    <Source File="UnitGroups\Temperatures.vcug"/>
+    <Source File="AlarmGroups\AlarmSystem.alcfg"/>
+    <Source File="AlarmGroups\SystemAlarms.algrp"/>
+    <Source File="AlarmGroups\MpFileManagerAlarms.algrp"/>
+    <Source File="AlarmGroups\AlarmGrp_Rec.algrp"/>
+    <Source File="AlarmGroups\AlarmGrp_Cfg.algrp"/>
+    <Source File="DataSources\Internal.dso"/>
+    <Source File="DataSources\DataSource.dso"/>
+    <Source File="ControlVersion.cvinfo"/>
+  </SourceFiles>
+</Project>
