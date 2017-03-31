@@ -129,4 +129,7 @@ TYPE
 		DeviceNames : ARRAY[0..9]OF STRING[50]; (*List of all available data storage media*)
 		SelectedIndex : UINT; (*Index of the entry currently selected in the list*)
 	END_STRUCT;
+	MpFileManagerConfigType : 	STRUCT 
+		CustomizedFileType : ARRAY[0..9]OF STRING[5]; (*Customized file type names*)
+	END_STRUCT;
 END_TYPE

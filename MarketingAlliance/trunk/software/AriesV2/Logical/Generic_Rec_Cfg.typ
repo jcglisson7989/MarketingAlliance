@@ -17,6 +17,9 @@ TYPE
 	END_STRUCT;
 	Global_Cfg_typ : 	STRUCT 
 		MagicPrefix : UDINT;
+		HMI : HMIConfig_typ;
+		wbrMemService : wbrMemService_typ;
+		cfgCompile : cfgCompileVersionInfo_typ;
 		MagicSuffix : UDINT;
 	END_STRUCT;
 END_TYPE

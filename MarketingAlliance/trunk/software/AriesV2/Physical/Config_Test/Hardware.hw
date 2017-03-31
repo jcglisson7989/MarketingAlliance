@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.7.54 SP?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="X20CP1585" Type="X20CP1585" Version="1.3.2.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="EthInterfaceRedundant" Value="0" />
+      <Parameter ID="HostName" Value="x20cpu" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.10.10" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="EplInterfaceRedundant" Value="0" />
+      <Parameter ID="CycleTime" Value="4000" />
+      <Parameter ID="EplEthInterfaceRedundant" Value="0" />
+    </Connector>
+    <Connector Name="IF6">
+      <Parameter ID="CycleTime" Value="4000" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="AriesV2_Config_3500HS" />
+    <Parameter ID="UserRamSize" Value="40000" />
+    <Parameter ID="RemMemSize" Value="10000" />
+    <Parameter ID="PermanentPvSize" Value="8000" />
+    <Parameter ID="RemanentGlobalPvSize" Value="1000" />
+    <Parameter ID="VolatileGlobalPvSize" Value="300000" />
+    <Parameter ID="RebootReset" Value="2" />
+    <Parameter ID="RebootPowerfail" Value="2" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP1585.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="8000" />
+    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic2Duration" Value="12000" />
+    <Parameter ID="Cyclic2Tolerance" Value="996000" />
+    <Parameter ID="Cyclic3Duration" Value="8000" />
+    <Parameter ID="Cyclic3Tolerance" Value="5000000" />
+    <Parameter ID="Cyclic4Duration" Value="100000" />
+    <Parameter ID="Cyclic4Tolerance" Value="100000" />
+    <Parameter ID="Cyclic5Duration" Value="200000" />
+    <Parameter ID="Cyclic5Tolerance" Value="200000" />
+    <Parameter ID="Cyclic6Duration" Value="500000" />
+    <Parameter ID="Cyclic6Tolerance" Value="500000" />
+    <Parameter ID="Cyclic7Duration" Value="1000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic8Duration" Value="24000" />
+    <Parameter ID="Cyclic8Tolerance" Value="48000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="ROOT" />
+    <Parameter ID="FileDevicePath1" Value="F:\" />
+    <Group ID="FileDevice2" />
+    <Parameter ID="FileDeviceName2" Value="Recipe" />
+    <Parameter ID="FileDevicePath2" Value="F:\AS_Data\Recipe" />
+    <Group ID="FileDevice3" />
+    <Parameter ID="FileDeviceName3" Value="Config" />
+    <Parameter ID="FileDevicePath3" Value="F:\AS_Data\Config" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="user" />
+    <Parameter ID="FtpUserPassword1" Value="LsodGR3jeFK3pzrFw1H5+czzepg0YTVl3svctHEKl8w=" />
+    <Parameter ID="FtpUserSalt1" Value="HHFLDaL4" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Group ID="FtpUser2" />
+    <Parameter ID="FtpUsername2" Value="admin" />
+    <Parameter ID="FtpUserPassword2" Value="ohx/+BSKxELE8VtAzHGH48r+NF8pZu2EVGO55B1GtgA=" />
+    <Parameter ID="FtpUserSalt2" Value="HlYZIA1j" />
+    <Parameter ID="FTPAccessRight2" Value="0" />
+    <Parameter ID="FTPdevice2" Value="ALL" />
+  </Module>
+</Hardware>

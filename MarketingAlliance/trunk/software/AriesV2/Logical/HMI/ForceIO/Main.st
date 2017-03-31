@@ -1,13 +1,13 @@
 
 PROGRAM _INIT
-	gHMIForceIO.forceItems[0].pAddrIO := ADR(ControlIO.iRunCmd);
-	gHMIForceIO.forceItems[1].pAddrIO := ADR(ControlIO.iReservoirLevel);
-	gHMIForceIO.forceItems[2].pAddrIO := ADR(CureIO.oUVCureChannel[0]);
-	gHMIForceIO.forceItems[3].pAddrIO := ADR(CureIO.oUVCureChannel[1]);
-	gHMIForceIO.forceItems[4].pAddrIO := ADR(StatusIO.iClearError);
-	gHMIForceIO.forceItems[5].pAddrIO := ADR(ControlIO.iTargetPiP);
-	gHMIForceIO.forceItems[6].pAddrIO := ADR(ControlIO.oTargetPresent);
-	gHMIForceIO.forceItems[7].pAddrIO := ADR(StatusIO.oRunningReady);
+//	gHMIForceIO.forceItems[0].pAddrIO := ADR(ControlIO.iRunCmd);
+//	gHMIForceIO.forceItems[1].pAddrIO := ADR(ControlIO.iReservoirLevel);
+//	gHMIForceIO.forceItems[2].pAddrIO := ADR(CureIO.oUVCureChannel[0]);
+//	gHMIForceIO.forceItems[3].pAddrIO := ADR(CureIO.oUVCureChannel[1]);
+//	gHMIForceIO.forceItems[4].pAddrIO := ADR(StatusIO.iClearError);
+//	gHMIForceIO.forceItems[5].pAddrIO := ADR(ControlIO.iTargetPiP);
+//	gHMIForceIO.forceItems[6].pAddrIO := ADR(ControlIO.oTargetPresent);
+//	gHMIForceIO.forceItems[7].pAddrIO := ADR(StatusIO.oRunningReady);
 END_PROGRAM
 
 PROGRAM _CYCLIC

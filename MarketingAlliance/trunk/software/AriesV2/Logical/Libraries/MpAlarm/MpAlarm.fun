@@ -15,7 +15,7 @@ FUNCTION_BLOCK MpAlarmBasic (*mapp component for a basic centralized alarm colle
 		Info : MpAlarmInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType; (*Internal data*) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType; (*Internal data*) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -24,7 +24,7 @@ FUNCTION_BLOCK MpAlarmBasicUI (*mapp component for connecting alarms to the VC4 
 		MpLink : REFERENCE TO MpComIdentType; (*Connection to mapp*) (* *) (*#PAR#;*)
 		Enable : BOOL; (*Enables/Disables the function block*) (* *) (*#PAR#;*)
 		ErrorReset : BOOL; (*Resets function block errors*) (* *) (*#PAR#;*)
-		UISetup : MpAlarmBasicUISetupType; (*Used to configure the elements connected to the HMI application*) (* *) (*#PAR#;*)
+		UISetup : {REDUND_UNREPLICABLE} MpAlarmBasicUISetupType; (*Used to configure the elements connected to the HMI application*) (* *) (*#PAR#;*)
 		Mode : MpAlarmBasicUIModeEnum; (*Mode: Show mapp alarms / user alarms / all alarms - This must be decided before the function block is enabled*) (* *) (*#PAR#;*)
 	END_VAR
 	VAR_OUTPUT
@@ -34,7 +34,7 @@ FUNCTION_BLOCK MpAlarmBasicUI (*mapp component for connecting alarms to the VC4 
 		Info : MpAlarmInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpAlarmBasicUIInternalType; (*Internal data*) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpAlarmBasicUIInternalType; (*Internal data*) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -74,6 +74,6 @@ FUNCTION_BLOCK MpAlarmRegUser (*Add-On function block used to register user alar
 		Info : MpAlarmInfoType; (*Additional information about the component*) (* *) (*#CMD#;*)
 	END_VAR
 	VAR
-		Internal : MpComInternalDataType; (* *) (* *) (*#OMIT#;*)
+		Internal : {REDUND_UNREPLICABLE} MpComInternalDataType; (* *) (* *) (*#OMIT#;*)
 	END_VAR
 END_FUNCTION_BLOCK

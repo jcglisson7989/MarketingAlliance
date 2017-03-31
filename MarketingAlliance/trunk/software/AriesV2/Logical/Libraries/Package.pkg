@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.2.4.149?>
+<?AutomationStudio Version=4.2.7.54 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Library" Language="Binary" Description="This library contains function interfaces for IEC 61131-3 operator functions. For the most part, these are mathematical and logical functions.">operator</Object>
@@ -29,15 +29,15 @@
     <Object Type="Library" Language="Binary" Description="This mechatronics library contains function blocks for filtering and basic signal processing.">MTFilter</Object>
     <Object Type="Library" Language="ANSIC">jgLibC</Object>
     <Object Type="Library" Language="Binary" Description="This mechatronics library contains function blocks for statistical data analysis.">MTData</Object>
-    <Object Type="Library" Language="Binary" Description="MpCom Library">MpCom</Object>
-    <Object Type="Library" Language="Binary" Description="File management system">MpFile</Object>
-    <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
-    <Object Type="Library" Language="Binary" Description="Basic alarm management">MpAlarm</Object>
-    <Object Type="Library" Language="Binary" Description="Web access">MpWebXs</Object>
     <Object Type="Library" Language="Binary" Description="AR Text-System and -Formatter">ArTextSys</Object>
     <Object Type="Library" Language="ANSIC" Description="library (written/managed by J. Glisson) containing functions for ACPu err acknowledgement, HMI param table construction, HMI param table activation to the common layer">MAPPSuppor</Object>
     <Object Type="Package" Description="Service libraries">wbrServices</Object>
     <Object Type="Library" Language="Binary" Description="This library contains FBKs for pinging a station.">AsICMP</Object>
     <Object Type="Library" Language="Binary" Description="This mechatronics library contains basic control function blocks.">MTBasics</Object>
+    <Object Type="Library" Language="Binary" Description="MpCom Library">MpCom</Object>
+    <Object Type="Library" Language="Binary" Description="Web access">MpWebXs</Object>
+    <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
+    <Object Type="Library" Language="Binary" Description="Basic alarm management">MpAlarm</Object>
+    <Object Type="Library" Language="Binary" Description="File management system">MpFile</Object>
   </Objects>
 </Package>

@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpFile 1.20.5 */
+/* MpFile 1.60.1 */
 
 #ifndef _MPFILE_
 #define _MPFILE_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpFile_VERSION
-#define _MpFile_VERSION 1.20.5
+#define _MpFile_VERSION 1.60.1
 #endif
 
 #include <bur/plctypes.h>
@@ -98,7 +98,6 @@ typedef enum MpFileErrorEnum
 	mpFILE_ERR_MPLINK_CHANGED = -1064239100,
 	mpFILE_ERR_MPLINK_CORRUPT = -1064239099,
 	mpFILE_ERR_MPLINK_IN_USE = -1064239098,
-	mpFILE_ERR_CONFIG_INVALID = -1064239091,
 	mpFILE_ERR_MISSING_UICONNECT = -1064165376,
 	mpFILE_ERR_CMD_NOT_ALLOWED = -1064165375,
 	mpFILE_ERR_NOTHING_TO_PASTE = -1064165374,
@@ -107,7 +106,8 @@ typedef enum MpFileErrorEnum
 	mpFILE_ERR_INVALID_FILE_DEV = -1064165371,
 	mpFILE_ERR_NAME_EMPTY = -1064165370,
 	mpFILE_ERR_INVALID_NAME = -1064165369,
-	mpFILE_ERR_PASTE_NOT_ALLOWED = -1064165368
+	mpFILE_ERR_PASTE_NOT_ALLOWED = -1064165368,
+	mpFILE_ERR_FILE_SYSTEM = -1064165367
 } MpFileErrorEnum;
 
 typedef enum MpFileUIAlarmEnum
@@ -199,6 +199,10 @@ typedef struct MpFileManagerUIConnectType
 	unsigned short DefaultLayerStatus;
 } MpFileManagerUIConnectType;
 
+typedef struct MpFileManagerConfigType
+{	plcstring CustomizedFileType[10][6];
+} MpFileManagerConfigType;
+
 typedef struct MpFileManagerUI
 {
 	/* VAR_INPUT (analog) */
@@ -218,10 +222,33 @@ typedef struct MpFileManagerUI
 	plcbit Error;
 } MpFileManagerUI_typ;
 
+typedef struct MpFileManagerConfig
+{
+	/* VAR_INPUT (analog) */
+	struct MpComIdentType* MpLink;
+	struct MpFileManagerConfigType* Configuration;
+	/* VAR_OUTPUT (analog) */
+	signed long StatusID;
+	struct MpFileInfoType Info;
+	/* VAR (analog) */
+	struct MpComInternalDataType Internal;
+	/* VAR_INPUT (digital) */
+	plcbit Enable;
+	plcbit ErrorReset;
+	plcbit Load;
+	plcbit Save;
+	/* VAR_OUTPUT (digital) */
+	plcbit Active;
+	plcbit Error;
+	plcbit CommandBusy;
+	plcbit CommandDone;
+} MpFileManagerConfig_typ;
+
 
 
 /* Prototyping of functions and function blocks */
 _BUR_PUBLIC void MpFileManagerUI(struct MpFileManagerUI* inst);
+_BUR_PUBLIC void MpFileManagerConfig(struct MpFileManagerConfig* inst);
 
 
 #ifdef __cplusplus

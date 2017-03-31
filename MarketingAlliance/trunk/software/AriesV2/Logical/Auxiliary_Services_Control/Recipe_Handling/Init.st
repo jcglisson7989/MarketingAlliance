@@ -15,8 +15,6 @@ PROGRAM _INIT
 		brsmemset(ADR(gRecCfg.save.Rec), 0, SIZEOF(Global_Rec_typ));
 		brsmemset(ADR(gRecCfg.active.Rec), 0, SIZEOF(Global_Rec_typ));
 		
-		brsmemset(ADR(gStatistics), 0, SIZEOF(AS3500HS_Stats_typ));
-		
 		gRecCfg.active.Cfg.MagicPrefix := DEFINE_CONSTANT_MAGIC_PREFIX;
 		gRecCfg.save.Cfg.MagicPrefix:= DEFINE_CONSTANT_MAGIC_PREFIX;
 		gRecCfg.defaultvals.Cfg.MagicPrefix:= DEFINE_CONSTANT_MAGIC_PREFIX;
