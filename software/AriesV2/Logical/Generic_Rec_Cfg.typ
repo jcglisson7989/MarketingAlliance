@@ -13,17 +13,10 @@ END_TYPE
 TYPE
 	Global_Rec_typ : 	STRUCT 
 		MagicPrefix : UDINT;
-		Dispense : ARRAY[0..MAX_IDX_VALVES]OF HERNON_Rec_Dispense_typ;
-		Control : AS3500HS_Control_Rec_typ;
 		MagicSuffix : UDINT;
 	END_STRUCT;
 	Global_Cfg_typ : 	STRUCT 
 		MagicPrefix : UDINT;
-		Dispense : ARRAY[0..MAX_IDX_VALVES]OF HERNON_Cfg_Dispense_typ;
-		HMI : HMIConfig_typ;
-		wbrMemService : wbrMemSvcStoredConfig_typ;
-		cfgCompile : cfgCompileVersionInfo_typ;
-		Control : AS3500HS_Control_Cfg_typ;
 		MagicSuffix : UDINT;
 	END_STRUCT;
 END_TYPE

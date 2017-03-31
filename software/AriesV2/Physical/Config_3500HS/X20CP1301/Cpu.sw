@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.2.4.149?>
+<?AutomationStudio Version=4.2.7.54 SP?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
     <Task Name="runFirst" Source="Libraries.wbrServices.InitSP.runFirst.prg" Memory="UserROM" Language="ANSIC" BuildOptions="-D &quot;str(x)=#x&quot; -D AS_PROJ=str($(AS_PROJECT_NAME)) -D AS_CFG=str($(AS_CONFIGURATION)) -D &quot;AS_VERS=str($(AS_VERSION))&quot; -D &quot;AS_USER=str($(AS_USER_NAME))&quot; -D &quot;AS_CMPNY=str($(AS_COMPANY_NAME))&quot;" Debugging="true" />
     <Task Name="ForceIO1" Source="HMI.ForceIO.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="ControlLog" Source="Application.Master.ControlLogic.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Valves" Source="Application.Dispense.Valves.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ForceIO" Source="HMI.ForceIO.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
@@ -153,8 +151,6 @@
     <LibraryObject Name="wbrLogSvc" Source="Libraries.wbrServices.wbrLogSvc.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <LibraryObject Name="wbrMemSvc" Source="Libraries.wbrServices.wbrMemSvc.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <LibraryObject Name="wbrPingSvc" Source="Libraries.wbrServices.wbrPingSvc.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
-    <LibraryObject Name="libValve" Source="Application.Dispense.libValve.lby" Memory="UserROM" Language="IEC" Debugging="true" />
-    <LibraryObject Name="libAS52XX" Source="Application.Master.libAS52XX.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="vcresman" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
