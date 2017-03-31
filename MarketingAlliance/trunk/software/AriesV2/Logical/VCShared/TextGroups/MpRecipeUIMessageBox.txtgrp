@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeUIMessageBox">
+  <Property Name="Description" Value="Message box text for RecipeUI"/>
+  <Property Name="Index" Value="3"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="110801" Value="Do you really want to load"/>
+    <Text ID="110802" Value="Do you really want to save"/>
+    <Text ID="110803" Value="Do you really want to create"/>
+    <Text ID="110804" Value=""/>
+    <Text ID="112087" Value="MpRecipeUI message box"/>
+    <Text ID="539820" Value="Do you really want to delete"/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="110801" Value="Vill du verkligen vill ladda"/>
+    <Text ID="110802" Value="Vill du verkligen vill spara"/>
+    <Text ID="110803" Value="Vill du verkligen vill skapa"/>
+    <Text ID="110804" Value=""/>
+    <Text ID="112087" Value="MpRecipeUI meddelanderuta"/>
+    <Text ID="539820" Value="Vill du verkligen vill ta bort"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="110801" Value="Você realmente deseja carregar"/>
+    <Text ID="110802" Value="Você realmente deseja salvar"/>
+    <Text ID="110803" Value="Você realmente deseja criar"/>
+    <Text ID="110804" Value=""/>
+    <Text ID="112087" Value="caixa de mensagem MpRecipeUI"/>
+    <Text ID="539820" Value="Você realmente quer apagar"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="110801" Value="Wollen Sie wirklich laden möchten"/>
+    <Text ID="110802" Value="Wollen Sie wirklich sparen"/>
+    <Text ID="110803" Value="Wollen Sie wirklich schaffen"/>
+    <Text ID="110804" Value=""/>
+    <Text ID="112087" Value="MpRecipeUI Meldungsfeld"/>
+    <Text ID="539820" Value="Wollen Sie wirklich löschen"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="110801" Value="Voulez-vous vraiment charger"/>
+    <Text ID="110802" Value="Voulez-vous vraiment sauver"/>
+    <Text ID="110803" Value="Voulez-vous vraiment créer"/>
+    <Text ID="110804" Value=""/>
+    <Text ID="112087" Value="boîte de message MpRecipeUI"/>
+    <Text ID="539820" Value="Voulez-vous vraiment supprimer"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="110801" Value="¿Realmente desea cargar"/>
+    <Text ID="110802" Value="¿Realmente desea guardar"/>
+    <Text ID="110803" Value="¿Realmente desea crear"/>
+    <Text ID="110804" Value=""/>
+    <Text ID="112087" Value="cuadro de mensaje MpRecipeUI"/>
+    <Text ID="539820" Value="¿De verdad quiere eliminar"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="110801" Value="1"/>
+    <Index ID="110802" Value="2"/>
+    <Index ID="110803" Value="3"/>
+    <Index ID="110804" Value="0"/>
+    <Index ID="112087" Value="100"/>
+    <Index ID="539820" Value="4"/>
+  </IndexMap>
+</TextGroup>

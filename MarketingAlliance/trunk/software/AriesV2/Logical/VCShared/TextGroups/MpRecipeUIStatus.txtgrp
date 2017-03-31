@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeUIStatus">
+  <Property Name="Description" Value="Status text for RecipeUI"/>
+  <Property Name="Index" Value="1018"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="110776" Value="IDLE"/>
+    <Text ID="110777" Value="LOAD"/>
+    <Text ID="110778" Value="SAVE"/>
+    <Text ID="110779" Value="CREATE"/>
+    <Text ID="110780" Value="REFRESH"/>
+    <Text ID="110781" Value="NOTIFY"/>
+    <Text ID="110782" Value="ERROR"/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="110776" Value="PÅ TOMGÅNG"/>
+    <Text ID="110777" Value="LÄSA IN"/>
+    <Text ID="110778" Value="SPARA"/>
+    <Text ID="110779" Value="SKAPA"/>
+    <Text ID="110780" Value="FÖRFRISKA"/>
+    <Text ID="110781" Value="UNDERRÄTTA"/>
+    <Text ID="110782" Value="FEL"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="110776" Value="IDLE"/>
+    <Text ID="110777" Value="CARGA"/>
+    <Text ID="110778" Value="SALVAR"/>
+    <Text ID="110779" Value="CRIO"/>
+    <Text ID="110780" Value="REFRESH"/>
+    <Text ID="110781" Value="AVISAR"/>
+    <Text ID="110782" Value="ERRO"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="110776" Value="IDLE"/>
+    <Text ID="110777" Value="BELASTUNG"/>
+    <Text ID="110778" Value="SPAREN"/>
+    <Text ID="110779" Value="ERSTELLEN"/>
+    <Text ID="110780" Value="AKTUALISIEREN"/>
+    <Text ID="110781" Value="BENACHRICHTIGEN"/>
+    <Text ID="110782" Value="FEHLER"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="110776" Value="TOURNER AU RALENTI"/>
+    <Text ID="110777" Value="CHARGE"/>
+    <Text ID="110778" Value="ENREGISTRER"/>
+    <Text ID="110779" Value="CRÉER"/>
+    <Text ID="110780" Value="RAFRAÎCHIR"/>
+    <Text ID="110781" Value="NOTIFY"/>
+    <Text ID="110782" Value="ERREUR"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="110776" Value="OCIOSO"/>
+    <Text ID="110777" Value="CARGA"/>
+    <Text ID="110778" Value="SALVAR"/>
+    <Text ID="110779" Value="CREAR"/>
+    <Text ID="110780" Value="REFRESCAR"/>
+    <Text ID="110781" Value="NOTIFICAR"/>
+    <Text ID="110782" Value="ERROR"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="110776" Value="0"/>
+    <Index ID="110777" Value="1"/>
+    <Index ID="110778" Value="2"/>
+    <Index ID="110779" Value="3"/>
+    <Index ID="110780" Value="4"/>
+    <Index ID="110781" Value="5"/>
+    <Index ID="110782" Value="99"/>
+  </IndexMap>
+</TextGroup>

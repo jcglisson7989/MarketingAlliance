@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="Data_Log_MpLink" Type="mpdatarecorder">
+    <Group ID="DataRecorder">
+      <Property ID="MaxNumberOfFiles" Value="15" />
+      <Property ID="DecimalDigits" Value="3" />
+      <Property ID="SaveInterval" Value="60000" />
+      <Property ID="PowerFailSafe" Value="FALSE" />
+      <Property ID="DecimalMark" Value="." />
+      <Property ID="OverwriteOldestFile" Value="TRUE" />
+    </Group>
+  </Element>
+</Configuration>

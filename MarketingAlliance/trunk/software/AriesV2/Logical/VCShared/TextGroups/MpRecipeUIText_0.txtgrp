@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeUIText_0">
+  <Property Name="Description" Value="General page text for RecipeUI"/>
+  <Property Name="Index" Value="1024"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="DirName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.CurrentDir]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="DevName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FileCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FileCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FolderCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FolderCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="496184" Value="Load"/>
+    <Text ID="496185" Value="Save"/>
+    <Text ID="496186" Value="Copy"/>
+    <Text ID="496187" Value="Create"/>
+    <Text ID="496188" Value="Refresh"/>
+    <Text ID="496189" Value="No"/>
+    <Text ID="496190" Value="Search keyword"/>
+    <Text ID="496191" Value="Sort"/>
+    <Text ID="496192" Value="Status"/>
+    <Text ID="496193" Value="Recipe select"/>
+    <Text ID="496194" Value="MpRecipeUI"/>
+    <Text ID="496195" Value="Create new file"/>
+    <Text ID="496196" Value="Name"/>
+    <Text ID="496197" Value="Date"/>
+    <Text ID="496198" Value="Size"/>
+    <Text ID="496199" Value="Delete"/>
+    <Text ID="496200" Value="Rename"/>
+    <Text ID="496201" Value=""/>
+    <Text ID="496202" Value=""/>
+    <Text ID="496203" Value=""/>
+    <Text ID="496204" Value="Rename selected file"/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="496184" Value="Läsa in"/>
+    <Text ID="496185" Value="Spara"/>
+    <Text ID="496186" Value="Kopiera"/>
+    <Text ID="496187" Value="Skapa"/>
+    <Text ID="496188" Value="refresh"/>
+    <Text ID="496189" Value="Nej"/>
+    <Text ID="496190" Value="sökord"/>
+    <Text ID="496191" Value="Sortera"/>
+    <Text ID="496192" Value="Status"/>
+    <Text ID="496193" Value="receptet välj"/>
+    <Text ID="496194" Value="MpRecipeUI"/>
+    <Text ID="496195" Value="Skapa ny fil"/>
+    <Text ID="496196" Value="namn"/>
+    <Text ID="496197" Value="Datum"/>
+    <Text ID="496198" Value="Storlek"/>
+    <Text ID="496199" Value="Radera"/>
+    <Text ID="496200" Value="Döpa om"/>
+    <Text ID="496201" Value=""/>
+    <Text ID="496202" Value=""/>
+    <Text ID="496203" Value=""/>
+    <Text ID="496204" Value="Byt namn på vald fil"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="496184" Value="Carga"/>
+    <Text ID="496185" Value="Salvar"/>
+    <Text ID="496186" Value="Cópia"/>
+    <Text ID="496187" Value="Crio"/>
+    <Text ID="496188" Value="refrescar"/>
+    <Text ID="496189" Value="Não"/>
+    <Text ID="496190" Value="Pesquisar palavra-chave"/>
+    <Text ID="496191" Value="Ordenar"/>
+    <Text ID="496192" Value="estado"/>
+    <Text ID="496193" Value="receita seleccionar"/>
+    <Text ID="496194" Value="MpRecipeUI"/>
+    <Text ID="496195" Value="Criar novo arquivo"/>
+    <Text ID="496196" Value="Nome"/>
+    <Text ID="496197" Value="Encontro"/>
+    <Text ID="496198" Value="Tamanho"/>
+    <Text ID="496199" Value="Excluir"/>
+    <Text ID="496200" Value="rebatizar"/>
+    <Text ID="496201" Value=""/>
+    <Text ID="496202" Value=""/>
+    <Text ID="496203" Value=""/>
+    <Text ID="496204" Value="Mudar o nome de arquivo selecionado"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="496184" Value="Belastung"/>
+    <Text ID="496185" Value="sparen"/>
+    <Text ID="496186" Value="Kopieren"/>
+    <Text ID="496187" Value="Erstellen"/>
+    <Text ID="496188" Value="auffrischen"/>
+    <Text ID="496189" Value="Nein"/>
+    <Text ID="496190" Value="Suche nach Stichwort"/>
+    <Text ID="496191" Value="Sortieren"/>
+    <Text ID="496192" Value="Status"/>
+    <Text ID="496193" Value="Rezept wählen"/>
+    <Text ID="496194" Value="MpRecipeUI"/>
+    <Text ID="496195" Value="Neue Datei erstellen"/>
+    <Text ID="496196" Value="Name"/>
+    <Text ID="496197" Value="Datum"/>
+    <Text ID="496198" Value="Größe"/>
+    <Text ID="496199" Value="Löschen"/>
+    <Text ID="496200" Value="Umbenennen"/>
+    <Text ID="496201" Value=""/>
+    <Text ID="496202" Value=""/>
+    <Text ID="496203" Value=""/>
+    <Text ID="496204" Value="Benennen Sie ausgewählte Datei"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="496184" Value="Charge"/>
+    <Text ID="496185" Value="sauvegarder"/>
+    <Text ID="496186" Value="Copie"/>
+    <Text ID="496187" Value="Créer"/>
+    <Text ID="496188" Value="Rafraîchir"/>
+    <Text ID="496189" Value="Non"/>
+    <Text ID="496190" Value="Chercher un mot-clé"/>
+    <Text ID="496191" Value="Trier"/>
+    <Text ID="496192" Value="statut"/>
+    <Text ID="496193" Value="Recette sélectionner"/>
+    <Text ID="496194" Value="MpRecipeUI"/>
+    <Text ID="496195" Value="Créer un nouveau fichier"/>
+    <Text ID="496196" Value="prénom"/>
+    <Text ID="496197" Value="date"/>
+    <Text ID="496198" Value="Taille"/>
+    <Text ID="496199" Value="Effacer"/>
+    <Text ID="496200" Value="Rebaptiser"/>
+    <Text ID="496201" Value=""/>
+    <Text ID="496202" Value=""/>
+    <Text ID="496203" Value=""/>
+    <Text ID="496204" Value="Renommer le fichier sélectionné"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="496184" Value="Carga"/>
+    <Text ID="496185" Value="Salvar"/>
+    <Text ID="496186" Value="Dupdo"/>
+    <Text ID="496187" Value="Crear"/>
+    <Text ID="496188" Value="Refrescar"/>
+    <Text ID="496189" Value="No"/>
+    <Text ID="496190" Value="Buscar la palabra clave"/>
+    <Text ID="496191" Value="Ordenar"/>
+    <Text ID="496192" Value="Estado"/>
+    <Text ID="496193" Value="receta seleccionar"/>
+    <Text ID="496194" Value="MpRecipeUI"/>
+    <Text ID="496195" Value="Crear nuevo archivo"/>
+    <Text ID="496196" Value="Nombre"/>
+    <Text ID="496197" Value="Fecha"/>
+    <Text ID="496198" Value="tamaño"/>
+    <Text ID="496199" Value="Borrar"/>
+    <Text ID="496200" Value="Rebautizar"/>
+    <Text ID="496201" Value=""/>
+    <Text ID="496202" Value=""/>
+    <Text ID="496203" Value=""/>
+    <Text ID="496204" Value="Cambiar el nombre de archivo seleccionado"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="496184" Value="0"/>
+    <Index ID="496185" Value="1"/>
+    <Index ID="496186" Value="2"/>
+    <Index ID="496187" Value="3"/>
+    <Index ID="496188" Value="4"/>
+    <Index ID="496189" Value="11"/>
+    <Index ID="496190" Value="12"/>
+    <Index ID="496191" Value="16"/>
+    <Index ID="496192" Value="17"/>
+    <Index ID="496193" Value="18"/>
+    <Index ID="496194" Value="10"/>
+    <Index ID="496195" Value="19"/>
+    <Index ID="496196" Value="20"/>
+    <Index ID="496197" Value="21"/>
+    <Index ID="496198" Value="22"/>
+    <Index ID="496199" Value="5"/>
+    <Index ID="496200" Value="6"/>
+    <Index ID="496201" Value="7"/>
+    <Index ID="496202" Value="8"/>
+    <Index ID="496203" Value="9"/>
+    <Index ID="496204" Value="23"/>
+  </IndexMap>
+</TextGroup>
