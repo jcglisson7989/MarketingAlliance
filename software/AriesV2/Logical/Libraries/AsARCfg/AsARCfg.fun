@@ -26,7 +26,7 @@
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetInaNode			(*enters the node number into the AR registry for INA device; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetInaNode			(*enters the node number into the AR registry for INA device; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
 		pDevice			: DINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
@@ -64,7 +64,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetIPAddr				(*enters IP address into the AR registry for Ethernet device; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetIPAddr				(*enters IP address into the AR registry for Ethernet device; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
 		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
@@ -102,12 +102,53 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetSubnetMask			(*enters subnet mask into the AR registry for Ethernet device; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetSubnetMask			(*enters subnet mask into the AR registry for Ethernet device; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
 		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
 		pSubnetMask		: UDINT;		(*subnet mask given as a pointer, valid range "1.0.0.1" - "255.255.255.254"*)
 		Option			: UDINT;		(*options: cfgOPTION_VOLATILE, cfgOPTION_NON_VOLATILE*)
+	END_VAR
+
+	VAR_OUTPUT
+		status			: UINT;			(*execution status: ERR_OK, ERR_FUB_ENABLE_FALSE, ERR_FUB_BUSY, 0xXXXX = see help*)
+	END_VAR
+
+	VAR
+        i_state			: UINT;			(*internal variable*)
+		i_result		: UINT;			(*internal variable*)
+        i_tmp			: UDINT;		(*internal variable*)
+	END_VAR
+END_FUNCTION_BLOCK
+
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgGetClusterIPAddr				(*reads Cluster IP address from the AR registry for Ethernet device; asynchronous execution*)
+	VAR_INPUT
+		enable			: BOOL;			(*enables execution*)
+		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
+		pIPAddr			: UDINT;		(*Cluster IP address given as a pointer*)
+		pSubnetMask		: UDINT;		(*Cluster subnet mask given as a pointer*)
+		LenIp			: USINT;		(*length of the string (pIPAddr) -> ideally, Len = 16*)
+		LenSnmk			: USINT;		(*length of the string (pSubnetMask) -> ideally, Len = 16*)
+	END_VAR
+
+	VAR_OUTPUT
+		status			: UINT;			(*execution status: ERR_OK, ERR_FUB_ENABLE_FALSE, ERR_FUB_BUSY, 0xXXXX = see help*)
+	END_VAR
+
+	VAR
+        i_state			: UINT;			(*internal variable*)
+		i_result		: UINT;			(*internal variable*)
+        i_tmp			: UDINT;		(*internal variable*)
+	END_VAR
+END_FUNCTION_BLOCK
+
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetClusterIPAddr				(*enters Cluster IP address into the AR registry for Ethernet device; asynchronous execution*)
+	VAR_INPUT
+		enable			: BOOL;			(*enables execution*)
+		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
+		pIPAddr			: UDINT;		(*Cluster IP address given as pointer, valid range "1.0.0.1" - "247.255.255.255"*)
+		pSubnetMask		: UDINT;		(*Cluster subnet mask given as a pointer, valid range "1.0.0.1" - "255.255.255.254"*)
+		Option			: UDINT;		(*options:  cfgOPTION_VOLATILE, cfgOPTION_NON_VOLATILE*)
 	END_VAR
 
 	VAR_OUTPUT
@@ -140,7 +181,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetDefaultGateway		(*enters default gateway into AR registry for Ethernet device; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetDefaultGateway		(*enters default gateway into AR registry for Ethernet device; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
 		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
@@ -215,7 +256,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetEthBaudrate		(*enters the baud rate into the AR registry for Ethernet device; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetEthBaudrate		(*enters the baud rate into the AR registry for Ethernet device; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
 		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
@@ -252,7 +293,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetEthConfigMode		(*modifies the configuration mode for Ethernet device; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetEthConfigMode		(*modifies the configuration mode for Ethernet device; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
 		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
@@ -289,9 +330,47 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetHostName			(*sets a host name for a target; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetHostName			(*sets a host name for a target; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
+		pHostName		: UDINT;		(*hostname*)
+		Option			: UDINT;		(*options: cfgOPTION_VOLATILE, cfgOPTION_NON_VOLATILE*)
+	END_VAR
+
+	VAR_OUTPUT
+		status			: UINT;			(*execution status: ERR_OK, ERR_FUB_ENABLE_FALSE, ERR_FUB_BUSY, 0xXXXX = see help*)
+	END_VAR
+
+	VAR
+        i_state			: UINT;			(*internal variable*)
+		i_result		: UINT;			(*internal variable*)
+        i_tmp			: UDINT;		(*internal variable*)
+	END_VAR
+END_FUNCTION_BLOCK
+
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgGetHostNameIf			(*reads a host name for a interface; asynchronous execution*)
+	VAR_INPUT
+		enable			: BOOL;			(*enables execution*)
+		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
+		pHostName		: UDINT;		(*hostname*)
+		Len				: USINT;		(*length of the string (HostName)*)
+	END_VAR
+
+	VAR_OUTPUT
+		status			: UINT;			(*execution status: ERR_OK, ERR_FUB_ENABLE_FALSE, ERR_FUB_BUSY, 0xXXXX = see help*)
+	END_VAR
+
+	VAR
+        i_state			: UINT;			(*internal variable*)
+		i_result		: UINT;			(*internal variable*)
+        i_tmp			: UDINT;		(*internal variable*)
+	END_VAR
+END_FUNCTION_BLOCK
+
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetHostNameIf			(*sets a host name for a interface; asynchronous execution*)
+	VAR_INPUT
+		enable			: BOOL;			(*enables execution*)
+		pDevice			: UDINT;		(*INA device name given as pointer (syntax: SL<x>.SS<y>.IF<z>)*)
 		pHostName		: UDINT;		(*hostname*)
 		Option			: UDINT;		(*options: cfgOPTION_VOLATILE, cfgOPTION_NON_VOLATILE*)
 	END_VAR
@@ -664,7 +743,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetCIFSDomain			(*cifs - enters domain into the AR registry; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetCIFSDomain			(*cifs - enters domain into the AR registry; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;			(*enables execution*)
 		pDomain			: UDINT;		(*Domainname given as pointer*)
@@ -703,7 +782,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetCIFSDefaultuser	(*cifs - enters default user into the AR registry; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetCIFSDefaultuser	(*cifs - enters default user into the AR registry; asynchronous execution*)
 	VAR_INPUT
 		enable				: BOOL;			(*enables execution*)
 		pDefaultuser		: UDINT;		(*Default Username given as pointer*)
@@ -722,7 +801,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} FUNCTION_BLOCK CfgSetDhcpServer 	(*dhcp - starts or stops dhcp server; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetDhcpServer 	(*dhcp - starts or stops dhcp server; asynchronous execution*)
 	VAR_INPUT
 		enable				: BOOL;			(*enables execution*)
 		start				: UDINT;		(*1 = start server; 0 = stop server*)
@@ -740,7 +819,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_ERROR} FUNCTION_BLOCK CfgSetDhcpsData 	(*dhcp - configures dhcp server; asynchronous execution*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK CfgSetDhcpsData 	(*dhcp - configures dhcp server; asynchronous execution*)
 	VAR_INPUT
 		enable				: BOOL;			(*enables execution*)
 		pInterfaceList		: UDINT;		(*provided interfaces*)

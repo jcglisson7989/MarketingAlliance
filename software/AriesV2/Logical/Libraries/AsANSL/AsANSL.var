@@ -19,6 +19,19 @@ VAR CONSTANT
 	asANSL_PV_DIRECTION_READ			: USINT		:= 1;		(*client read pv*)
 	asANSL_PV_DIRECTION_WRITE			: USINT		:= 2;		(*client write pv*)
 	
+	asANSL_RED_CONN_NO_CONNECTION		: UDINT		:= 0;		(*no connection to one of the redundancy CPUs*)
+	asANSL_RED_CONN_PRI_NOT_ACTIV		: UDINT		:= 2;		(*connection of the primary (not activ) CPU*)
+	asANSL_RED_CONN_PRI_ACTIV			: UDINT		:= 3;		(*connection of the primary (activ) CPU*)
+	asANSL_RED_CONN_SEC_NOT_ACTIV 		: UDINT		:= 4;		(*connection of the secondary (not activ) CPU*)
+	asANSL_RED_CONN_SEC_ACTIV			: UDINT		:= 5;		(*connection of the secondary (activ) CPU*)
+	
+	asANSL_RED_CONN_CLU_OK				: UDINT		:= 1;		(*cluster connection is OK*)
+	asANSL_RED_CONN_CLU_ERROR			: UDINT		:= 2;		(*cluster connection is in an error state*)
+	asANSL_RED_CONN_PRI_OK				: UDINT		:= 4;		(*connection to the primary CPU is OK*)
+	asANSL_RED_CONN_PRI_ERROR			: UDINT		:= 8;		(*connection to the primary CPU is in an error state*)
+	asANSL_RED_CONN_SEC_OK				: UDINT		:= 16;		(*connection to the secondary CPU is OK*)
+	asANSL_RED_CONN_SEC_ERROR			: UDINT		:= 32;		(*connection to the secondary CPU is in an error state*)
+	
 	asANSL_ERR_MEMORY_RESOURCE			: UINT		:= 31651;	(*system out of memory*)
 	asANSL_ERR_EVENT_RESOURCE			: UINT		:= 31652;	(*system out of event resource*)
 	asANSL_ERR_THREAD_RESOURCE			: UINT		:= 31653;	(*system out of thread resource*)

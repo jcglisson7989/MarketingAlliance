@@ -87,5 +87,7 @@ VAR CONSTANT
 	cfgNTP_STOP						: UINT		:= 0;		(*stop NTP server/client*)
 	cfgSTATUS_NTP_ACTIVE			: UINT		:= 1;		(*NTP server/client active*)
 	cfgSTATUS_NTP_INACTIVE			: UINT		:= 0;		(*NTP server/client inactive*)
+
+	cfgSDM_COLOR_DEFAULT			: UDINT		:= 2147483648;	(*sdm default color*)
 	
 END_VAR

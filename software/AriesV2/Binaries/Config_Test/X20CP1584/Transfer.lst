@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Transfer xmlns="http://br-automation.co.at/AS/Transfer">
+  <OperatingSystem Version="B4.26"/>
+  <Hardware Target="SG4"/>
+  <Operation Delete="AsICMP.br"/>
+  <Operation Delete="AsArProf.br"/>
+  <Operation Delete="AsArLog.br"/>
+  <Operation Delete="AsMem.br"/>
+  <Operation Delete="AsIecCon.br"/>
+  <Operation Delete="AsArSdm.br"/>
+  <Operation Delete="AsUSB.br"/>
+  <Operation Delete="AsUDP.br"/>
+  <Operation Delete="AsTCP.br"/>
+  <Operation Delete="DataObj.br"/>
+  <Operation Delete="AsARCfg.br"/>
+  <Operation Delete="AsANSL.br"/>
+  <Operation Delete="sys_lib.br"/>
+  <Operation Delete="brsystem.br"/>
+  <Operation Delete="FileIO.br"/>
+  <Operation Delete="astime.br"/>
+  <Operation Download="asfw.br" Memory="SystemROM"/>
+  <Operation Download="ashwd.br" Memory="SystemROM"/>
+  <Operation Download="arconfig.br" Memory="SystemROM"/>
+  <Operation Download="sysconf.br" Memory="SystemROM"/>
+  <Operation Restart="warm"/>
+  <Operation Download="TCData.br" Memory="UserROM"/>
+  <Operation Download="Alarm.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Cfg.br" Memory="UserROM"/>
+  <Operation Download="MAPP_File.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Web.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Rec.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Alm.br" Memory="UserROM"/>
+  <Operation Download="Data_Log.br" Memory="UserROM"/>
+  <Operation Download="iomap.br" Memory="UserROM"/>
+  <Operation Download="AsXml.br" Memory="UserROM"/>
+  <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="runtime.br" Memory="UserROM"/>
+  <Operation Download="AsBrMath.br" Memory="UserROM"/>
+  <Operation Download="AsBrStr.br" Memory="UserROM"/>
+  <Operation Download="operator.br" Memory="UserROM"/>
+  <Operation Download="AsIOTime.br" Memory="UserROM"/>
+  <Operation Download="astime.br" Memory="UserROM"/>
+  <Operation Download="FileIO.br" Memory="UserROM"/>
+  <Operation Download="brsystem.br" Memory="UserROM"/>
+  <Operation Download="sys_lib.br" Memory="UserROM"/>
+  <Operation Download="AsANSL.br" Memory="UserROM"/>
+  <Operation Download="AsARCfg.br" Memory="UserROM"/>
+  <Operation Download="DataObj.br" Memory="UserROM"/>
+  <Operation Download="AsTCP.br" Memory="UserROM"/>
+  <Operation Download="AsUDP.br" Memory="UserROM"/>
+  <Operation Download="AsUSB.br" Memory="UserROM"/>
+  <Operation Download="AsArSdm.br" Memory="UserROM"/>
+  <Operation Download="AsIecCon.br" Memory="UserROM"/>
+  <Operation Download="AsMem.br" Memory="UserROM"/>
+  <Operation Download="AsArLog.br" Memory="UserROM"/>
+  <Operation Download="AsArProf.br" Memory="UserROM"/>
+  <Operation Download="AsICMP.br" Memory="UserROM"/>
+</Transfer>
