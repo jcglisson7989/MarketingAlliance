@@ -8,7 +8,20 @@
     <Module Name="X20DO9322" Type="X20DO9322" X="246" Y="-269" />
     <Module Name="X20TB12a" Type="X20TB12" X="246" Y="-242" />
     <Module Name="X20CP1584" Type="X20CP1584" X="83" Y="-269" />
+    <Module Name="8V1045.00-2" Type="8V1045.00-2" X="562.15" Y="-170" />
+    <Module Name="8AC120.60-1" Type="8AC120.60-1" X="576.15" Y="36.5" />
+    <Module Name="8AC114.60-2" Type="8AC114.60-2" X="564.95" Y="36.5" />
   </Modules>
-  <Links />
+  <Links>
+    <Link From="8AC114.60-2" To="X20CP1584" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="571.05" Y="64.3" />
+      <Point X="571.05" Y="64.3" />
+      <Point X="562.05" Y="64.3" />
+      <Point X="139" Y="64.3" />
+      <Point X="139" Y="-169" />
+      <Point X="139" Y="-182" />
+      <Point X="139" Y="-182" />
+    </Link>
+  </Links>
   <InfoElements />
 </BR.AS.HardwareTopology>
