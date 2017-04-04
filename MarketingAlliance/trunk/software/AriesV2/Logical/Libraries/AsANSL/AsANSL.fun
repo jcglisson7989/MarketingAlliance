@@ -111,6 +111,24 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
+{REDUND_OK} {REDUND_UNREPLICABLE} FUNCTION_BLOCK AsANSLClientDiagRedConn	(*reads diagnostic infos of a redundancy connection of an ANSL client; asynchronous execution*)
+	VAR_INPUT
+		enable			: BOOL;							(*enables execution*)
+		dataObjName		: STRING[256];					(*datamodul name*)
+		connName		: STRING[64];					(*connection name*)
+	END_VAR
+
+	VAR_OUTPUT
+		status					: UINT;									(*execution status: ERR_OK, ERR_FUB_ENABLE_FALSE, ERR_FUB_BUSY, 0xXXXX = see help*)
+		ClientDiagRedConnInfo	: AsANSLClientDiagRedConnInfoType;		(*client redundancy connection info struct*)
+	END_VAR
+
+	VAR
+        i_state			: UINT;			(*internal variable*)
+		i_result		: UINT;			(*internal variable*)
+	END_VAR
+END_FUNCTION_BLOCK
+
 {REDUND_OK} {REDUND_UNREPLICABLE} FUNCTION_BLOCK AsANSLClientDiagPv		(*reads diagnostic infos of a pv connection of an ANSL client; asynchronous execution*)
 	VAR_INPUT
 		enable			: BOOL;							(*enables execution*)
@@ -174,3 +192,21 @@ END_FUNCTION_BLOCK
 
 {REDUND_OK} {REDUND_UNREPLICABLE} FUNCTION AsANSLServerConnCount : UDINT	(*return the number of activ connections of an ANSL Server*)
 END_FUNCTION
+
+{REDUND_OK} {REDUND_UNREPLICABLE} FUNCTION_BLOCK AsANSLServerDiagConnAll	(*reads diagnostic infos of an ANSL server connection; asynchronous execution*)
+	VAR_INPUT
+		enable				: BOOL;						(*enables execution*)
+		index				: UDINT;					(*index to iterate the connections*)
+		filterClientIpAddr	: STRING[64];				(*filter to list only connections with the same ClientIpAddr*)
+	END_VAR
+
+	VAR_OUTPUT
+		status				: UINT;								(*execution status: ERR_OK, ERR_FUB_ENABLE_FALSE, ERR_FUB_BUSY, 0xXXXX = see help*)
+		ServerDiagConnInfo	: AsANSLServerDiagConnInfoType;		(*server connection info struct*)
+	END_VAR
+
+	VAR
+        i_state			: UINT;			(*internal variable*)
+		i_result		: UINT;			(*internal variable*)
+	END_VAR
+END_FUNCTION_BLOCK

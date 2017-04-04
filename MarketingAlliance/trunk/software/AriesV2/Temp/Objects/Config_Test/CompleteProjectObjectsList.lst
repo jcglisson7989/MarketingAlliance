@@ -1,0 +1,2363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
+<Objects>
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package"
+    LastWriteTime="131354683706885311" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Temp\Includes\AS_TempDecl\Config_Test\GlobalComponents\MpComponents.var"
+    LogicalPath="MpComponents.var"
+    Type="File"
+    LastWriteTime="131357150630655405"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\doc\Package.pkg"
+    LogicalPath="doc"
+    Type="Package"
+    LastWriteTime="131354630594449168" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\doc\BR_AutomationStudio_Winmerge_Settings.txt"
+    LogicalPath="doc.BR_AutomationStudio_Winmerge_Settings.txt"
+    Type="File"
+    LastWriteTime="131354627067197282"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Generic_Rec_Cfg.typ"
+    LogicalPath="Generic_Rec_Cfg.typ"
+    Type="File"
+    LastWriteTime="131354690425921392"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Machine.typ"
+    LogicalPath="Machine.typ"
+    Type="File"
+    LastWriteTime="131354683768461596"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\GlobalConstants.var"
+    LogicalPath="GlobalConstants.var"
+    Type="File"
+    LastWriteTime="131354631559417027"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\GlobalVariables.var"
+    LogicalPath="GlobalVariables.var"
+    Type="File"
+    LastWriteTime="131354683513818250"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="131354680928714414" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\operator\Binary.lby"
+    LogicalPath="Libraries.operator"
+    Type="Library"
+    LastWriteTime="131299747060000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\operator\operator.fun"
+    LogicalPath="Libraries.operator.operator.fun"
+    Type="File"
+    LastWriteTime="131299746660000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\operator\operator.typ"
+    LogicalPath="Libraries.operator.operator.typ"
+    Type="File"
+    LastWriteTime="131299746800000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\operator\operator.var"
+    LogicalPath="Libraries.operator.operator.var"
+    Type="File"
+    LastWriteTime="131299746940000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\runtime\Binary.lby"
+    LogicalPath="Libraries.runtime"
+    Type="Library"
+    LastWriteTime="131299747060000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\runtime\runtime.fun"
+    LogicalPath="Libraries.runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="131299746680000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\runtime\runtime.typ"
+    LogicalPath="Libraries.runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="131299746800000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\runtime\runtime.var"
+    LogicalPath="Libraries.runtime.runtime.var"
+    Type="File"
+    LastWriteTime="131299746940000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\astime\Binary.lby"
+    LogicalPath="Libraries.astime"
+    Type="Library"
+    LastWriteTime="131299747040000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\astime\astime.fun"
+    LogicalPath="Libraries.astime.astime.fun"
+    Type="File"
+    LastWriteTime="131299746640000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\astime\astime.typ"
+    LogicalPath="Libraries.astime.astime.typ"
+    Type="File"
+    LastWriteTime="131299746760000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\astime\astime.var"
+    LogicalPath="Libraries.astime.astime.var"
+    Type="File"
+    LastWriteTime="131299746900000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIecCon\Binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="131299746980000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="131299746580000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
+    Type="File"
+    LastWriteTime="131299746720000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIecCon\AsIecCon.var"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.var"
+    Type="File"
+    LastWriteTime="131299746840000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\FileIO\Binary.lby"
+    LogicalPath="Libraries.FileIO"
+    Type="Library"
+    LastWriteTime="131299747060000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\FileIO\FileIO.fun"
+    LogicalPath="Libraries.FileIO.FileIO.fun"
+    Type="File"
+    LastWriteTime="131299746660000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\FileIO\FileIO.typ"
+    LogicalPath="Libraries.FileIO.FileIO.typ"
+    Type="File"
+    LastWriteTime="131299746800000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\FileIO\FileIO.var"
+    LogicalPath="Libraries.FileIO.FileIO.var"
+    Type="File"
+    LastWriteTime="131299746920000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsXml\Binary.lby"
+    LogicalPath="Libraries.AsXml"
+    Type="Library"
+    LastWriteTime="131299747040000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsXml\AsXml.fun"
+    LogicalPath="Libraries.AsXml.AsXml.fun"
+    Type="File"
+    LastWriteTime="131299746640000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsXml\AsXml.typ"
+    LogicalPath="Libraries.AsXml.AsXml.typ"
+    Type="File"
+    LastWriteTime="131299746780000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsXml\AsXml.var"
+    LogicalPath="Libraries.AsXml.AsXml.var"
+    Type="File"
+    LastWriteTime="131299746900000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\standard\Binary.lby"
+    LogicalPath="Libraries.standard"
+    Type="Library"
+    LastWriteTime="131299747060000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\standard\standard.fun"
+    LogicalPath="Libraries.standard.standard.fun"
+    Type="File"
+    LastWriteTime="131299746680000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\standard\standard.typ"
+    LogicalPath="Libraries.standard.standard.typ"
+    Type="File"
+    LastWriteTime="131299746800000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\standard\standard.var"
+    LogicalPath="Libraries.standard.standard.var"
+    Type="File"
+    LastWriteTime="131299746940000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\brsystem\Binary.lby"
+    LogicalPath="Libraries.brsystem"
+    Type="Library"
+    LastWriteTime="131299747040000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\brsystem\brsystem.fun"
+    LogicalPath="Libraries.brsystem.brsystem.fun"
+    Type="File"
+    LastWriteTime="131299746640000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\brsystem\brsystem.typ"
+    LogicalPath="Libraries.brsystem.brsystem.typ"
+    Type="File"
+    LastWriteTime="131299746780000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\brsystem\brsystem.var"
+    LogicalPath="Libraries.brsystem.brsystem.var"
+    Type="File"
+    LastWriteTime="131299746920000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\sys_lib\Binary.lby"
+    LogicalPath="Libraries.sys_lib"
+    Type="Library"
+    LastWriteTime="131299747080000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\sys_lib\sys_lib.fun"
+    LogicalPath="Libraries.sys_lib.sys_lib.fun"
+    Type="File"
+    LastWriteTime="131299746680000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\sys_lib\sys_lib.typ"
+    LogicalPath="Libraries.sys_lib.sys_lib.typ"
+    Type="File"
+    LastWriteTime="131299746800000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\sys_lib\sys_lib.var"
+    LogicalPath="Libraries.sys_lib.sys_lib.var"
+    Type="File"
+    LastWriteTime="131299746940000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsANSL\Binary.lby"
+    LogicalPath="Libraries.AsANSL"
+    Type="Library"
+    LastWriteTime="131299746960000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsANSL\AsANSL.fun"
+    LogicalPath="Libraries.AsANSL.AsANSL.fun"
+    Type="File"
+    LastWriteTime="131299746560000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsANSL\AsANSL.typ"
+    LogicalPath="Libraries.AsANSL.AsANSL.typ"
+    Type="File"
+    LastWriteTime="131299746680000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsANSL\AsANSL.var"
+    LogicalPath="Libraries.AsANSL.AsANSL.var"
+    Type="File"
+    LastWriteTime="131299746820000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsARCfg\Binary.lby"
+    LogicalPath="Libraries.AsARCfg"
+    Type="Library"
+    LastWriteTime="131299746960000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsARCfg\AsARCfg.fun"
+    LogicalPath="Libraries.AsARCfg.AsARCfg.fun"
+    Type="File"
+    LastWriteTime="131299746560000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsARCfg\AsARCfg.typ"
+    LogicalPath="Libraries.AsARCfg.AsARCfg.typ"
+    Type="File"
+    LastWriteTime="131299746680000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsARCfg\AsARCfg.var"
+    LogicalPath="Libraries.AsARCfg.AsARCfg.var"
+    Type="File"
+    LastWriteTime="131299746820000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrMath\Binary.lby"
+    LogicalPath="Libraries.AsBrMath"
+    Type="Library"
+    LastWriteTime="131299746960000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrMath\AsBrMath.fun"
+    LogicalPath="Libraries.AsBrMath.AsBrMath.fun"
+    Type="File"
+    LastWriteTime="131299746560000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrMath\AsBrMath.typ"
+    LogicalPath="Libraries.AsBrMath.AsBrMath.typ"
+    Type="File"
+    LastWriteTime="131299746700000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrMath\AsBrMath.var"
+    LogicalPath="Libraries.AsBrMath.AsBrMath.var"
+    Type="File"
+    LastWriteTime="131299746820000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrStr\Binary.lby"
+    LogicalPath="Libraries.AsBrStr"
+    Type="Library"
+    LastWriteTime="131299746960000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrStr\AsBrStr.fun"
+    LogicalPath="Libraries.AsBrStr.AsBrStr.fun"
+    Type="File"
+    LastWriteTime="131299746560000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrStr\AsBrStr.typ"
+    LogicalPath="Libraries.AsBrStr.AsBrStr.typ"
+    Type="File"
+    LastWriteTime="131299746700000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrStr\AsBrStr.var"
+    LogicalPath="Libraries.AsBrStr.AsBrStr.var"
+    Type="File"
+    LastWriteTime="131299746820000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\DataObj\Binary.lby"
+    LogicalPath="Libraries.DataObj"
+    Type="Library"
+    LastWriteTime="131299747040000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\DataObj\DataObj.fun"
+    LogicalPath="Libraries.DataObj.DataObj.fun"
+    Type="File"
+    LastWriteTime="131299746660000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\DataObj\DataObj.typ"
+    LogicalPath="Libraries.DataObj.DataObj.typ"
+    Type="File"
+    LastWriteTime="131299746780000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\DataObj\DataObj.var"
+    LogicalPath="Libraries.DataObj.DataObj.var"
+    Type="File"
+    LastWriteTime="131299746920000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsTCP\Binary.lby"
+    LogicalPath="Libraries.AsTCP"
+    Type="Library"
+    LastWriteTime="131299747040000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsTCP\AsTCP.fun"
+    LogicalPath="Libraries.AsTCP.AsTCP.fun"
+    Type="File"
+    LastWriteTime="131299746640000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsTCP\AsTCP.typ"
+    LogicalPath="Libraries.AsTCP.AsTCP.typ"
+    Type="File"
+    LastWriteTime="131299746760000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsTCP\AsTCP.var"
+    LogicalPath="Libraries.AsTCP.AsTCP.var"
+    Type="File"
+    LastWriteTime="131299746900000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUDP\Binary.lby"
+    LogicalPath="Libraries.AsUDP"
+    Type="Library"
+    LastWriteTime="131299747040000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUDP\AsUDP.fun"
+    LogicalPath="Libraries.AsUDP.AsUDP.fun"
+    Type="File"
+    LastWriteTime="131299746640000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUDP\AsUDP.typ"
+    LogicalPath="Libraries.AsUDP.AsUDP.typ"
+    Type="File"
+    LastWriteTime="131299746780000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUDP\AsUDP.var"
+    LogicalPath="Libraries.AsUDP.AsUDP.var"
+    Type="File"
+    LastWriteTime="131299746900000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUSB\Binary.lby"
+    LogicalPath="Libraries.AsUSB"
+    Type="Library"
+    LastWriteTime="131299747040000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUSB\AsUSB.fun"
+    LogicalPath="Libraries.AsUSB.AsUSB.fun"
+    Type="File"
+    LastWriteTime="131299746640000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUSB\AsUSB.typ"
+    LogicalPath="Libraries.AsUSB.AsUSB.typ"
+    Type="File"
+    LastWriteTime="131299746780000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUSB\AsUSB.var"
+    LogicalPath="Libraries.AsUSB.AsUSB.var"
+    Type="File"
+    LastWriteTime="131299746900000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArSdm\Binary.lby"
+    LogicalPath="Libraries.AsArSdm"
+    Type="Library"
+    LastWriteTime="131299746960000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArSdm\AsArSdm.fun"
+    LogicalPath="Libraries.AsArSdm.AsArSdm.fun"
+    Type="File"
+    LastWriteTime="131299746560000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArSdm\AsArSdm.typ"
+    LogicalPath="Libraries.AsArSdm.AsArSdm.typ"
+    Type="File"
+    LastWriteTime="131299746700000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArSdm\AsArSdm.var"
+    LogicalPath="Libraries.AsArSdm.AsArSdm.var"
+    Type="File"
+    LastWriteTime="131299746820000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIOTime\Binary.lby"
+    LogicalPath="Libraries.AsIOTime"
+    Type="Library"
+    LastWriteTime="131299746980000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIOTime\AsIOTime.fun"
+    LogicalPath="Libraries.AsIOTime.AsIOTime.fun"
+    Type="File"
+    LastWriteTime="131299746600000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIOTime\AsIOTime.typ"
+    LogicalPath="Libraries.AsIOTime.AsIOTime.typ"
+    Type="File"
+    LastWriteTime="131299746720000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIOTime\AsIOTime.var"
+    LogicalPath="Libraries.AsIOTime.AsIOTime.var"
+    Type="File"
+    LastWriteTime="131299746860000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsMem\Binary.lby"
+    LogicalPath="Libraries.AsMem"
+    Type="Library"
+    LastWriteTime="131299747000000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsMem\AsMem.fun"
+    LogicalPath="Libraries.AsMem.AsMem.fun"
+    Type="File"
+    LastWriteTime="131299746600000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsMem\AsMem.typ"
+    LogicalPath="Libraries.AsMem.AsMem.typ"
+    Type="File"
+    LastWriteTime="131299746740000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsMem\AsMem.var"
+    LogicalPath="Libraries.AsMem.AsMem.var"
+    Type="File"
+    LastWriteTime="131299746860000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArLog\Binary.lby"
+    LogicalPath="Libraries.AsArLog"
+    Type="Library"
+    LastWriteTime="131299746960000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArLog\AsArLog.fun"
+    LogicalPath="Libraries.AsArLog.AsArLog.fun"
+    Type="File"
+    LastWriteTime="131299746560000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArLog\AsArLog.typ"
+    LogicalPath="Libraries.AsArLog.AsArLog.typ"
+    Type="File"
+    LastWriteTime="131299746700000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArLog\AsArLog.var"
+    LogicalPath="Libraries.AsArLog.AsArLog.var"
+    Type="File"
+    LastWriteTime="131299746820000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArProf\Binary.lby"
+    LogicalPath="Libraries.AsArProf"
+    Type="Library"
+    LastWriteTime="131299746960000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArProf\AsArProf.fun"
+    LogicalPath="Libraries.AsArProf.AsArProf.fun"
+    Type="File"
+    LastWriteTime="131299746560000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArProf\AsArProf.typ"
+    LogicalPath="Libraries.AsArProf.AsArProf.typ"
+    Type="File"
+    LastWriteTime="131299746700000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArProf\AsArProf.var"
+    LogicalPath="Libraries.AsArProf.AsArProf.var"
+    Type="File"
+    LastWriteTime="131299746820000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTTypes\Binary.lby"
+    LogicalPath="Libraries.MTTypes"
+    Type="Library"
+    LastWriteTime="131354626997704497" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTTypes\MTTypes.fun"
+    LogicalPath="Libraries.MTTypes.MTTypes.fun"
+    Type="File"
+    LastWriteTime="131354626997704497"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTTypes\MTTypes.typ"
+    LogicalPath="Libraries.MTTypes.MTTypes.typ"
+    Type="File"
+    LastWriteTime="131354626997925861"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTTypes\MTTypes.var"
+    LogicalPath="Libraries.MTTypes.MTTypes.var"
+    Type="File"
+    LastWriteTime="131354626997925861"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTProfile\Binary.lby"
+    LogicalPath="Libraries.MTProfile"
+    Type="Library"
+    LastWriteTime="131354626996545590" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTProfile\MTProfile.fun"
+    LogicalPath="Libraries.MTProfile.MTProfile.fun"
+    Type="File"
+    LastWriteTime="131354626996545590"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTProfile\MTProfile.typ"
+    LogicalPath="Libraries.MTProfile.MTProfile.typ"
+    Type="File"
+    LastWriteTime="131354626996545590"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTProfile\MTProfile.var"
+    LogicalPath="Libraries.MTProfile.MTProfile.var"
+    Type="File"
+    LastWriteTime="131354626996545590"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTFilter\Binary.lby"
+    LogicalPath="Libraries.MTFilter"
+    Type="Library"
+    LastWriteTime="131354626994917918" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTFilter\MTFilter.fun"
+    LogicalPath="Libraries.MTFilter.MTFilter.fun"
+    Type="File"
+    LastWriteTime="131354626994917918"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTFilter\MTFilter.typ"
+    LogicalPath="Libraries.MTFilter.MTFilter.typ"
+    Type="File"
+    LastWriteTime="131354626995074186"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTFilter\MTFilter.var"
+    LogicalPath="Libraries.MTFilter.MTFilter.var"
+    Type="File"
+    LastWriteTime="131354626995230439"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\jgLibC\ANSIC.lby"
+    LogicalPath="Libraries.jgLibC"
+    Type="Library"
+    LastWriteTime="131354626974031535" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\jgLibC\Types.typ"
+    LogicalPath="Libraries.jgLibC.Types.typ"
+    Type="File"
+    LastWriteTime="131354626973870920"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\jgLibC\Constants.var"
+    LogicalPath="Libraries.jgLibC.Constants.var"
+    Type="File"
+    LastWriteTime="131354626974031535"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\jgLibC\jgLibC.fun"
+    LogicalPath="Libraries.jgLibC.jgLibC.fun"
+    Type="File"
+    LastWriteTime="131354626974031535"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\jgLibC\Debounce_Signal.c"
+    LogicalPath="Libraries.jgLibC.Debounce_Signal.c"
+    Type="File"
+    LastWriteTime="131354626973870920"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\jgLibC\Indexer_Helper_functions.c"
+    LogicalPath="Libraries.jgLibC.Indexer_Helper_functions.c"
+    Type="File"
+    LastWriteTime="131354626973870920"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTData\Binary.lby"
+    LogicalPath="Libraries.MTData"
+    Type="Library"
+    LastWriteTime="131354626993537655" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTData\MTData.fun"
+    LogicalPath="Libraries.MTData.MTData.fun"
+    Type="File"
+    LastWriteTime="131354626993693892"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTData\MTData.typ"
+    LogicalPath="Libraries.MTData.MTData.typ"
+    Type="File"
+    LastWriteTime="131354626993693892"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTData\MTData.var"
+    LogicalPath="Libraries.MTData.MTData.var"
+    Type="File"
+    LastWriteTime="131354626993693892"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\ArTextSys\Binary.lby"
+    LogicalPath="Libraries.ArTextSys"
+    Type="Library"
+    LastWriteTime="131354626975034166" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\ArTextSys\ArTextSys.typ"
+    LogicalPath="Libraries.ArTextSys.ArTextSys.typ"
+    Type="File"
+    LastWriteTime="131354626975034166"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\ArTextSys\ArTextSys.fun"
+    LogicalPath="Libraries.ArTextSys.ArTextSys.fun"
+    Type="File"
+    LastWriteTime="131354626974877886"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\ArTextSys\ArTextSys.var"
+    LogicalPath="Libraries.ArTextSys.ArTextSys.var"
+    Type="File"
+    LastWriteTime="131354626975034166"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\ANSIC.lby"
+    LogicalPath="Libraries.MAPPSuppor"
+    Type="Library"
+    LastWriteTime="131354626972026590" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\MAPPSuppor.typ"
+    LogicalPath="Libraries.MAPPSuppor.MAPPSuppor.typ"
+    Type="File"
+    LastWriteTime="131354626972026590"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\HMIparamList.typ"
+    LogicalPath="Libraries.MAPPSuppor.HMIparamList.typ"
+    Type="File"
+    LastWriteTime="131354626971869030"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\MAPPSuppor.var"
+    LogicalPath="Libraries.MAPPSuppor.MAPPSuppor.var"
+    Type="File"
+    LastWriteTime="131354626972026590"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\MAPPSuppor.fun"
+    LogicalPath="Libraries.MAPPSuppor.MAPPSuppor.fun"
+    Type="File"
+    LastWriteTime="131354626972026590"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\hmiParamList.h"
+    LogicalPath="Libraries.MAPPSuppor.hmiParamList.h"
+    Type="File"
+    LastWriteTime="131354626972339280"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\hmiParamList.c"
+    LogicalPath="Libraries.MAPPSuppor.hmiParamList.c"
+    Type="File"
+    LastWriteTime="131354626972026590"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\bgstring.c"
+    LogicalPath="Libraries.MAPPSuppor.bgstring.c"
+    Type="File"
+    LastWriteTime="131354626972182976"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\bgstring.h"
+    LogicalPath="Libraries.MAPPSuppor.bgstring.h"
+    Type="File"
+    LastWriteTime="131354626972339280"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\bgsprintf.c"
+    LogicalPath="Libraries.MAPPSuppor.bgsprintf.c"
+    Type="File"
+    LastWriteTime="131354626972182976"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\bgsprintf.h"
+    LogicalPath="Libraries.MAPPSuppor.bgsprintf.h"
+    Type="File"
+    LastWriteTime="131354626972182976"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\FBK_Init_Logbook.c"
+    LogicalPath="Libraries.MAPPSuppor.FBK_Init_Logbook.c"
+    Type="File"
+    LastWriteTime="131354626972182976"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\hmiTableFBK_typ.c"
+    LogicalPath="Libraries.MAPPSuppor.hmiTableFBK_typ.c"
+    Type="File"
+    LastWriteTime="131354626972182976"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\ActivateHMITable.c"
+    LogicalPath="Libraries.MAPPSuppor.ActivateHMITable.c"
+    Type="File"
+    LastWriteTime="131354626971869030"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\Package.pkg"
+    LogicalPath="Libraries.wbrServices"
+    Type="Package"
+    LastWriteTime="131354626966648815" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\Doc\Package.pkg"
+    LogicalPath="Libraries.wbrServices.Doc"
+    Type="Package"
+    LastWriteTime="131354626966023793" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\Doc\changeLog.txt"
+    LogicalPath="Libraries.wbrServices.Doc.changeLog.txt"
+    Type="File"
+    LastWriteTime="131354626966180046"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrServices_C_Includes\Package.pkg"
+    LogicalPath="Libraries.wbrServices.wbrServices_C_Includes"
+    Type="Package"
+    LastWriteTime="131354626969856056" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrServices_C_Includes\bglibasWBR_C.h"
+    LogicalPath="Libraries.wbrServices.wbrServices_C_Includes.bglibasWBR_C.h"
+    Type="File"
+    LastWriteTime="131354626969871068"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrServices.typ"
+    LogicalPath="Libraries.wbrServices.wbrServices.typ"
+    Type="File"
+    LastWriteTime="131354626965867039"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrsprintf\ANSIC.lby"
+    LogicalPath="Libraries.wbrServices.wbrsprintf"
+    Type="Library"
+    LastWriteTime="131354626970652367" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrsprintf\wbrsprintf.h"
+    LogicalPath="Libraries.wbrServices.wbrsprintf.wbrsprintf.h"
+    Type="File"
+    LastWriteTime="131354626970868689"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrsprintf\cvtflasc.c"
+    LogicalPath="Libraries.wbrServices.wbrsprintf.cvtflasc.c"
+    Type="File"
+    LastWriteTime="131354626970652367"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrsprintf\ofmt.c"
+    LogicalPath="Libraries.wbrServices.wbrsprintf.ofmt.c"
+    Type="File"
+    LastWriteTime="131354626970858678"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrsprintf\wbrsprintf.c"
+    LogicalPath="Libraries.wbrServices.wbrsprintf.wbrsprintf.c"
+    Type="File"
+    LastWriteTime="131354626970868689"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrMemSvc\ANSIC.lby"
+    LogicalPath="Libraries.wbrServices.wbrMemSvc"
+    Type="Library"
+    LastWriteTime="131354626968867766" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrMemSvc\wbrMemSvc.typ"
+    LogicalPath="Libraries.wbrServices.wbrMemSvc.wbrMemSvc.typ"
+    Type="File"
+    LastWriteTime="131354626969024730"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrMemSvc\wbrMemSvc.fun"
+    LogicalPath="Libraries.wbrServices.wbrMemSvc.wbrMemSvc.fun"
+    Type="File"
+    LastWriteTime="131354626968867766"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrMemSvc\wbrMemSvc.c"
+    LogicalPath="Libraries.wbrServices.wbrMemSvc.wbrMemSvc.c"
+    Type="File"
+    LastWriteTime="131354626968867766"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrListSvc\ANSIC.lby"
+    LogicalPath="Libraries.wbrServices.wbrListSvc"
+    Type="Library"
+    LastWriteTime="131354626968338915" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrListSvc\wbrListSvc.typ"
+    LogicalPath="Libraries.wbrServices.wbrListSvc.wbrListSvc.typ"
+    Type="File"
+    LastWriteTime="131354626968495171"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrListSvc\wbrListSvc.var"
+    LogicalPath="Libraries.wbrServices.wbrListSvc.wbrListSvc.var"
+    Type="File"
+    LastWriteTime="131354626968495171"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrListSvc\wbrListSvc.fun"
+    LogicalPath="Libraries.wbrServices.wbrListSvc.wbrListSvc.fun"
+    Type="File"
+    LastWriteTime="131354626968338915"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrListSvc\wbrListSvc.c"
+    LogicalPath="Libraries.wbrServices.wbrListSvc.wbrListSvc.c"
+    Type="File"
+    LastWriteTime="131354626968338915"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrLogSvc\ANSIC.lby"
+    LogicalPath="Libraries.wbrServices.wbrLogSvc"
+    Type="Library"
+    LastWriteTime="131354626965176957" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrLogSvc\wbrLogSvc.typ"
+    LogicalPath="Libraries.wbrServices.wbrLogSvc.wbrLogSvc.typ"
+    Type="File"
+    LastWriteTime="131354626965020847"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrLogSvc\wbrLogSvc.var"
+    LogicalPath="Libraries.wbrServices.wbrLogSvc.wbrLogSvc.var"
+    Type="File"
+    LastWriteTime="131354626965176957"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrLogSvc\wbrLogSvc.fun"
+    LogicalPath="Libraries.wbrServices.wbrLogSvc.wbrLogSvc.fun"
+    Type="File"
+    LastWriteTime="131354626965176957"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrLogSvc\wbrLogSvc.c"
+    LogicalPath="Libraries.wbrServices.wbrLogSvc.wbrLogSvc.c"
+    Type="File"
+    LastWriteTime="131354626965176957"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\ANSIC.lby"
+    LogicalPath="Libraries.wbrServices.bglibasWBR"
+    Type="Library"
+    LastWriteTime="131354626967336225" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\bglibasWBR.typ"
+    LogicalPath="Libraries.wbrServices.bglibasWBR.bglibasWBR.typ"
+    Type="File"
+    LastWriteTime="131354626967492477"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\bglibasWBR.var"
+    LogicalPath="Libraries.wbrServices.bglibasWBR.bglibasWBR.var"
+    Type="File"
+    LastWriteTime="131354626967492477"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\bglibasWBR.fun"
+    LogicalPath="Libraries.wbrServices.bglibasWBR.bglibasWBR.fun"
+    Type="File"
+    LastWriteTime="131354626967492477"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\bgssm.c"
+    LogicalPath="Libraries.wbrServices.bglibasWBR.bgssm.c"
+    Type="File"
+    LastWriteTime="131354626967648726"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\bgfifo.c"
+    LogicalPath="Libraries.wbrServices.bglibasWBR.bgfifo.c"
+    Type="File"
+    LastWriteTime="131354626967492477"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\bgTimer1ms.c"
+    LogicalPath="Libraries.wbrServices.bglibasWBR.bgTimer1ms.c"
+    Type="File"
+    LastWriteTime="131354626967492477"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\wbrFunc.h"
+    LogicalPath="Libraries.wbrServices.bglibasWBR.wbrFunc.h"
+    Type="File"
+    LastWriteTime="131354626967830066"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrPingSvc\ANSIC.lby"
+    LogicalPath="Libraries.wbrServices.wbrPingSvc"
+    Type="Library"
+    LastWriteTime="131354626969337243" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrPingSvc\wbrPingSvc.typ"
+    LogicalPath="Libraries.wbrServices.wbrPingSvc.wbrPingSvc.typ"
+    Type="File"
+    LastWriteTime="131354626969337243"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrPingSvc\wbrPingSvc.fun"
+    LogicalPath="Libraries.wbrServices.wbrPingSvc.wbrPingSvc.fun"
+    Type="File"
+    LastWriteTime="131354626969337243"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrPingSvc\wbrPingSvc.c"
+    LogicalPath="Libraries.wbrServices.wbrPingSvc.wbrPingSvc.c"
+    Type="File"
+    LastWriteTime="131354626969337243"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrSvcUtilities\Package.pkg"
+    LogicalPath="Libraries.wbrServices.wbrSvcUtilities"
+    Type="Package"
+    LastWriteTime="131354626970183605" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrSvcUtilities\wbrFltUtil\ANSIC.lby"
+    LogicalPath="Libraries.wbrServices.wbrSvcUtilities.wbrFltUtil"
+    Type="Library"
+    LastWriteTime="131354626970183605" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrSvcUtilities\wbrFltUtil\wbrFltUtil.fun"
+    LogicalPath="Libraries.wbrServices.wbrSvcUtilities.wbrFltUtil.wbrFltUtil.fun"
+    Type="File"
+    LastWriteTime="131354626970339854"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrSvcUtilities\wbrFltUtil\wbrFloatUtilities.c"
+    LogicalPath="Libraries.wbrServices.wbrSvcUtilities.wbrFltUtil.wbrFloatUtilities.c"
+    Type="File"
+    LastWriteTime="131354626970339854"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrServicesGlobal.var"
+    LogicalPath="Libraries.wbrServices.wbrServicesGlobal.var"
+    Type="File"
+    LastWriteTime="131354626969831036"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\InitSP\Package.pkg"
+    LogicalPath="Libraries.wbrServices.InitSP"
+    Type="Package"
+    LastWriteTime="131354626964334756" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\InitSP\runFirst\ANSIC.prg"
+    LogicalPath="Libraries.wbrServices.InitSP.runFirst"
+    Type="Program"
+    LastWriteTime="131354626964178511" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\InitSP\runFirst\svninfo.c"
+    LogicalPath="Libraries.wbrServices.InitSP.runFirst.svninfo.c"
+    Type="File"
+    LastWriteTime="131357162190149581"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\InitSP\runFirst\runFirstInit.c"
+    LogicalPath="Libraries.wbrServices.InitSP.runFirst.runFirstInit.c"
+    Type="File"
+    LastWriteTime="131354626964178511"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\InitSP\runFirst\template_info.txt"
+    LogicalPath="Libraries.wbrServices.InitSP.runFirst.template_info.txt"
+    Type="File"
+    LastWriteTime="131354626964334756"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\InitSP\runFirst\Variables.var"
+    LogicalPath="Libraries.wbrServices.InitSP.runFirst.Variables.var"
+    Type="File"
+    LastWriteTime="131354626964178511"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\Cyclic\Package.pkg"
+    LogicalPath="Libraries.wbrServices.Cyclic"
+    Type="Package"
+    LastWriteTime="131354626965867039" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\Cyclic\wbrService\ANSIC.prg"
+    LogicalPath="Libraries.wbrServices.Cyclic.wbrService"
+    Type="Program"
+    LastWriteTime="131354626965867039" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\Cyclic\wbrService\wbrServiceCyclic.c"
+    LogicalPath="Libraries.wbrServices.Cyclic.wbrService.wbrServiceCyclic.c"
+    Type="File"
+    LastWriteTime="131354626965867039"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\TimerServices\Package.pkg"
+    LogicalPath="Libraries.wbrServices.TimerServices"
+    Type="Package"
+    LastWriteTime="131354626966648815" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\TimerServices\TimerServices.typ"
+    LogicalPath="Libraries.wbrServices.TimerServices.TimerServices.typ"
+    Type="File"
+    LastWriteTime="131354626966648815"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\TimerServices\TimerServices.var"
+    LogicalPath="Libraries.wbrServices.TimerServices.TimerServices.var"
+    Type="File"
+    LastWriteTime="131354626966648815"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\TimerServices\msTimeSvc\ANSIC.prg"
+    LogicalPath="Libraries.wbrServices.TimerServices.msTimeSvc"
+    Type="Program"
+    LastWriteTime="131354626966805036" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\TimerServices\msTimeSvc\msTimeSvc.c"
+    LogicalPath="Libraries.wbrServices.TimerServices.msTimeSvc.msTimeSvc.c"
+    Type="File"
+    LastWriteTime="131354626966835085"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsICMP\Binary.lby"
+    LogicalPath="Libraries.AsICMP"
+    Type="Library"
+    LastWriteTime="131299746980000000" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsICMP\AsICMP.fun"
+    LogicalPath="Libraries.AsICMP.AsICMP.fun"
+    Type="File"
+    LastWriteTime="131299746580000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsICMP\AsICMP.typ"
+    LogicalPath="Libraries.AsICMP.AsICMP.typ"
+    Type="File"
+    LastWriteTime="131299746720000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsICMP\AsICMP.var"
+    LogicalPath="Libraries.AsICMP.AsICMP.var"
+    Type="File"
+    LastWriteTime="131299746840000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTBasics\Binary.lby"
+    LogicalPath="Libraries.MTBasics"
+    Type="Library"
+    LastWriteTime="131354626973185812" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTBasics\MTBasics.typ"
+    LogicalPath="Libraries.MTBasics.MTBasics.typ"
+    Type="File"
+    LastWriteTime="131354626973185812"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTBasics\MTBasics.fun"
+    LogicalPath="Libraries.MTBasics.MTBasics.fun"
+    Type="File"
+    LastWriteTime="131354626973185812"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpCom\Binary.lby"
+    LogicalPath="Libraries.MpCom"
+    Type="Library"
+    LastWriteTime="131354680910526139" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpCom\MpCom.var"
+    LogicalPath="Libraries.MpCom.MpCom.var"
+    Type="File"
+    LastWriteTime="131354680910419251"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpCom\MpCom.typ"
+    LogicalPath="Libraries.MpCom.MpCom.typ"
+    Type="File"
+    LastWriteTime="131354680910469341"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpCom\MpComError.typ"
+    LogicalPath="Libraries.MpCom.MpComError.typ"
+    Type="File"
+    LastWriteTime="131354680910516136"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpCom\MpCom.fun"
+    LogicalPath="Libraries.MpCom.MpCom.fun"
+    Type="File"
+    LastWriteTime="131354680910526139"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpWebXs\Binary.lby"
+    LogicalPath="Libraries.MpWebXs"
+    Type="Library"
+    LastWriteTime="131354680914869880" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpWebXs\MpWebXs.fun"
+    LogicalPath="Libraries.MpWebXs.MpWebXs.fun"
+    Type="File"
+    LastWriteTime="131354680914809956"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpRecipe\Binary.lby"
+    LogicalPath="Libraries.MpRecipe"
+    Type="Library"
+    LastWriteTime="131354680919564651" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpRecipe\MpRecipe.typ"
+    LogicalPath="Libraries.MpRecipe.MpRecipe.typ"
+    Type="File"
+    LastWriteTime="131354680919252154"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpRecipe\MpRecipeAlarm.typ"
+    LogicalPath="Libraries.MpRecipe.MpRecipeAlarm.typ"
+    Type="File"
+    LastWriteTime="131354680919252154"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpRecipe\MpRecipeError.typ"
+    LogicalPath="Libraries.MpRecipe.MpRecipeError.typ"
+    Type="File"
+    LastWriteTime="131354680919252154"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpRecipe\MpRecipe.fun"
+    LogicalPath="Libraries.MpRecipe.MpRecipe.fun"
+    Type="File"
+    LastWriteTime="131354680919408399"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpAlarm\Binary.lby"
+    LogicalPath="Libraries.MpAlarm"
+    Type="Library"
+    LastWriteTime="131354680923846088" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpAlarm\MpAlarmError.typ"
+    LogicalPath="Libraries.MpAlarm.MpAlarmError.typ"
+    Type="File"
+    LastWriteTime="131354680923704150"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpAlarm\MpAlarm.typ"
+    LogicalPath="Libraries.MpAlarm.MpAlarm.typ"
+    Type="File"
+    LastWriteTime="131354680923751758"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpAlarm\MpAlarm.fun"
+    LogicalPath="Libraries.MpAlarm.MpAlarm.fun"
+    Type="File"
+    LastWriteTime="131354680923806190"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpFile\Binary.lby"
+    LogicalPath="Libraries.MpFile"
+    Type="Library"
+    LastWriteTime="131354680928336660" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpFile\MpFile.typ"
+    LogicalPath="Libraries.MpFile.MpFile.typ"
+    Type="File"
+    LastWriteTime="131354680928180407"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpFile\MpFileError.typ"
+    LogicalPath="Libraries.MpFile.MpFileError.typ"
+    Type="File"
+    LastWriteTime="131354680928180407"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpFile\MpFileAlarm.typ"
+    LogicalPath="Libraries.MpFile.MpFileAlarm.typ"
+    Type="File"
+    LastWriteTime="131354680928180407"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpFile\MpFile.fun"
+    LogicalPath="Libraries.MpFile.MpFile.fun"
+    Type="File"
+    LastWriteTime="131354680928336660"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Application\Package.pkg"
+    LogicalPath="Application"
+    Type="Package"
+    LastWriteTime="131354631698301823" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Package.pkg"
+    LogicalPath="Auxiliary_Services_Control"
+    Type="Package"
+    LastWriteTime="131354627053004098" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\USB_Mount_types.typ"
+    LogicalPath="Auxiliary_Services_Control.USB_Mount_types.typ"
+    Type="File"
+    LastWriteTime="131354627053167132"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Auxiliary.var"
+    LogicalPath="Auxiliary_Services_Control.Auxiliary.var"
+    Type="File"
+    LastWriteTime="131354627052979086"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\File_Handling\IEC.prg"
+    LogicalPath="Auxiliary_Services_Control.File_Handling"
+    Type="Program"
+    LastWriteTime="131354627052480240" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\File_Handling\Cyclic.st"
+    LogicalPath="Auxiliary_Services_Control.File_Handling.Cyclic.st"
+    Type="File"
+    LastWriteTime="131354627052323991"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\File_Handling\Init.st"
+    LogicalPath="Auxiliary_Services_Control.File_Handling.Init.st"
+    Type="File"
+    LastWriteTime="131354627052323991"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\File_Handling\Exit.st"
+    LogicalPath="Auxiliary_Services_Control.File_Handling.Exit.st"
+    Type="File"
+    LastWriteTime="131354627052480240"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\File_Handling\Types.typ"
+    LogicalPath="Auxiliary_Services_Control.File_Handling.Types.typ"
+    Type="File"
+    LastWriteTime="131354627052480240"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\File_Handling\Variables.var"
+    LogicalPath="Auxiliary_Services_Control.File_Handling.Variables.var"
+    Type="File"
+    LastWriteTime="131354627052480240"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\ComLogger\IEC.prg"
+    LogicalPath="Auxiliary_Services_Control.ComLogger"
+    Type="Program"
+    LastWriteTime="131354627053009100" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\ComLogger\Cyclic.st"
+    LogicalPath="Auxiliary_Services_Control.ComLogger.Cyclic.st"
+    Type="File"
+    LastWriteTime="131354627053009100"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\ComLogger\Init.st"
+    LogicalPath="Auxiliary_Services_Control.ComLogger.Init.st"
+    Type="File"
+    LastWriteTime="131354627053009100"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\ComLogger\Exit.st"
+    LogicalPath="Auxiliary_Services_Control.ComLogger.Exit.st"
+    Type="File"
+    LastWriteTime="131354627053009100"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\ComLogger\Types.typ"
+    LogicalPath="Auxiliary_Services_Control.ComLogger.Types.typ"
+    Type="File"
+    LastWriteTime="131354627053009100"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\ComLogger\Variables.var"
+    LogicalPath="Auxiliary_Services_Control.ComLogger.Variables.var"
+    Type="File"
+    LastWriteTime="131354627053009100"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\IEC.prg"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling"
+    Type="Program"
+    LastWriteTime="131354627052011478" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Cyclic.st"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Cyclic.st"
+    Type="File"
+    LastWriteTime="131354627052011478"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Init.st"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Init.st"
+    Type="File"
+    LastWriteTime="131354691327653641"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Exit.st"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Exit.st"
+    Type="File"
+    LastWriteTime="131354627052011478"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Types.typ"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Types.typ"
+    Type="File"
+    LastWriteTime="131354627052011478"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Variables.var"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Variables.var"
+    Type="File"
+    LastWriteTime="131354627052011478"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Action_Set_Active_Rec.st"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Action_Set_Active_Rec.st"
+    Type="File"
+    LastWriteTime="131354627051970100"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\libHERNON.fun"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.libHERNON.fun"
+    Type="File"
+    LastWriteTime="131354627051945045"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Set_Default_Recipe_Values.st"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Set_Default_Recipe_Values.st"
+    Type="File"
+    LastWriteTime="131354683159794770"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Auxiliary_Services_Control\Recipe_Handling\Set_Default_Config_Values.st"
+    LogicalPath="Auxiliary_Services_Control.Recipe_Handling.Set_Default_Config_Values.st"
+    Type="File"
+    LastWriteTime="131354683160953415"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\Package.pkg"
+    LogicalPath="bglib"
+    Type="Package"
+    LastWriteTime="131354627070995469" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgXmlRpcParser.h"
+    LogicalPath="bglib.bgXmlRpcParser.h"
+    Type="File"
+    LastWriteTime="131354627072356883"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\_X_bgftpclient.c"
+    LogicalPath="bglib._X_bgftpclient.c"
+    Type="File"
+    LastWriteTime="131354627071041403"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgBitUtilities.c"
+    LogicalPath="bglib.bgBitUtilities.c"
+    Type="File"
+    LastWriteTime="131354627071041403"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgBufMemAlloc.c"
+    LogicalPath="bglib.bgBufMemAlloc.c"
+    Type="File"
+    LastWriteTime="131354627071041403"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgBufMemAlloc.h"
+    LogicalPath="bglib.bgBufMemAlloc.h"
+    Type="File"
+    LastWriteTime="131354627071041403"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgDataStructures.c"
+    LogicalPath="bglib.bgDataStructures.c"
+    Type="File"
+    LastWriteTime="131354627071197782"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgDataStructures.h"
+    LogicalPath="bglib.bgDataStructures.h"
+    Type="File"
+    LastWriteTime="131354627071197782"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgdebug.h"
+    LogicalPath="bglib.bgdebug.h"
+    Type="File"
+    LastWriteTime="131354627072356883"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgfsig.c"
+    LogicalPath="bglib.bgfsig.c"
+    Type="File"
+    LastWriteTime="131354627072356883"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgfsig.h"
+    LogicalPath="bglib.bgfsig.h"
+    Type="File"
+    LastWriteTime="131354627072356883"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgftpclient.c"
+    LogicalPath="bglib.bgftpclient.c"
+    Type="File"
+    LastWriteTime="131354627072513052"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgftpclient.h"
+    LogicalPath="bglib.bgftpclient.h"
+    Type="File"
+    LastWriteTime="131354627072513052"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgftpclient_lib.c"
+    LogicalPath="bglib.bgftpclient_lib.c"
+    Type="File"
+    LastWriteTime="131354627072513052"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgHttpAppWeb.c"
+    LogicalPath="bglib.bgHttpAppWeb.c"
+    Type="File"
+    LastWriteTime="131354627071197782"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgHttpAppWeb.h"
+    LogicalPath="bglib.bgHttpAppWeb.h"
+    Type="File"
+    LastWriteTime="131354627071197782"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgHttpAppXmlRpc.c"
+    LogicalPath="bglib.bgHttpAppXmlRpc.c"
+    Type="File"
+    LastWriteTime="131354627071353968"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgHttpAppXmlRpc.h"
+    LogicalPath="bglib.bgHttpAppXmlRpc.h"
+    Type="File"
+    LastWriteTime="131354627071353968"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgHttpProtocol.c"
+    LogicalPath="bglib.bgHttpProtocol.c"
+    Type="File"
+    LastWriteTime="131354627071353968"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgHttpProtocol.h"
+    LogicalPath="bglib.bgHttpProtocol.h"
+    Type="File"
+    LastWriteTime="131354627071510181"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bglib-1.c"
+    LogicalPath="bglib.bglib-1.c"
+    Type="File"
+    LastWriteTime="131354627072513052"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bglib.c"
+    LogicalPath="bglib.bglib.c"
+    Type="File"
+    LastWriteTime="131354627072513052"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bglibversion.h"
+    LogicalPath="bglib.bglibversion.h"
+    Type="File"
+    LastWriteTime="131354627072513052"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgPVLogger.c"
+    LogicalPath="bglib.bgPVLogger.c"
+    Type="File"
+    LastWriteTime="131354627071510181"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgringbuffer.c"
+    LogicalPath="bglib.bgringbuffer.c"
+    Type="File"
+    LastWriteTime="131354627072669305"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgringbuffer.h"
+    LogicalPath="bglib.bgringbuffer.h"
+    Type="File"
+    LastWriteTime="131354627072669305"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgSecMD5Signature.c"
+    LogicalPath="bglib.bgSecMD5Signature.c"
+    Type="File"
+    LastWriteTime="131354627071822789"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgSecMD5Signature.h"
+    LogicalPath="bglib.bgSecMD5Signature.h"
+    Type="File"
+    LastWriteTime="131354627071822789"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgsprintf.c"
+    LogicalPath="bglib.bgsprintf.c"
+    Type="File"
+    LastWriteTime="131354627072669305"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgsprintf.h"
+    LogicalPath="bglib.bgsprintf.h"
+    Type="File"
+    LastWriteTime="131354627072669305"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgsscanf.c"
+    LogicalPath="bglib.bgsscanf.c"
+    Type="File"
+    LastWriteTime="131354627072825427"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgsscanf.h"
+    LogicalPath="bglib.bgsscanf.h"
+    Type="File"
+    LastWriteTime="131354627072825427"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgstatemachine.c"
+    LogicalPath="bglib.bgstatemachine.c"
+    Type="File"
+    LastWriteTime="131354627072825427"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgstatemachine.h"
+    LogicalPath="bglib.bgstatemachine.h"
+    Type="File"
+    LastWriteTime="131354627072825427"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgstring.c"
+    LogicalPath="bglib.bgstring.c"
+    Type="File"
+    LastWriteTime="131354627073016849"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgstring.h"
+    LogicalPath="bglib.bgstring.h"
+    Type="File"
+    LastWriteTime="131354627073045828"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgstringTest.c"
+    LogicalPath="bglib.bgstringTest.c"
+    Type="File"
+    LastWriteTime="131354627073045828"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTcpSocketClient.c"
+    LogicalPath="bglib.bgTcpSocketClient.c"
+    Type="File"
+    LastWriteTime="131354627071822789"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTcpSocketClientServer.h"
+    LogicalPath="bglib.bgTcpSocketClientServer.h"
+    Type="File"
+    LastWriteTime="131354627071999383"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTcpSocketServer.c"
+    LogicalPath="bglib.bgTcpSocketServer.c"
+    Type="File"
+    LastWriteTime="131354627072044148"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgtelnetsrvr.c"
+    LogicalPath="bglib.bgtelnetsrvr.c"
+    Type="File"
+    LastWriteTime="131354627073045828"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTelnetSrvr-astcp.c"
+    LogicalPath="bglib.bgTelnetSrvr-astcp.c"
+    Type="File"
+    LastWriteTime="131354627072044148"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTimer1ms.c"
+    LogicalPath="bglib.bgTimer1ms.c"
+    Type="File"
+    LastWriteTime="131354627072200421"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTimer.c"
+    LogicalPath="bglib.bgTimer.c"
+    Type="File"
+    LastWriteTime="131354627072044148"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTimer.h"
+    LogicalPath="bglib.bgTimer.h"
+    Type="File"
+    LastWriteTime="131354627072200421"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgXmlRpcParser.c"
+    LogicalPath="bglib.bgXmlRpcParser.c"
+    Type="File"
+    LastWriteTime="131354627072200421"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgPVSerialize.h"
+    LogicalPath="bglib.bgPVSerialize.h"
+    Type="File"
+    LastWriteTime="131354627071666437"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgPVSerialize.c"
+    LogicalPath="bglib.bgPVSerialize.c"
+    Type="File"
+    LastWriteTime="131354627071666437"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgBitUtilities.h"
+    LogicalPath="bglib.bgBitUtilities.h"
+    Type="File"
+    LastWriteTime="131354627071041403"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgTimer1ms.h"
+    LogicalPath="bglib.bgTimer1ms.h"
+    Type="File"
+    LastWriteTime="131354627072200421"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgPVLogger2.c"
+    LogicalPath="bglib.bgPVLogger2.c"
+    Type="File"
+    LastWriteTime="131354627071510181"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgPVSerializeJSON.h"
+    LogicalPath="bglib.bgPVSerializeJSON.h"
+    Type="File"
+    LastWriteTime="131354627071666437"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgPVSerializeJSON.c"
+    LogicalPath="bglib.bgPVSerializeJSON.c"
+    Type="File"
+    LastWriteTime="131354627071666437"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\bglib\bgPVCompare.c"
+    LogicalPath="bglib.bgPVCompare.c"
+    Type="File"
+    LastWriteTime="131354627071510181"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\Package.pkg"
+    LogicalPath="HMI"
+    Type="Package"
+    LastWriteTime="131354627047317727" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\Generic_Controls.typ"
+    LogicalPath="HMI.Generic_Controls.typ"
+    Type="File"
+    LastWriteTime="131354627047473857"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMI_Pages.typ"
+    LogicalPath="HMI.HMI_Pages.typ"
+    Type="File"
+    LastWriteTime="131354627047317727"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMIdialog.typ"
+    LogicalPath="HMI.HMIdialog.typ"
+    Type="File"
+    LastWriteTime="131354627047473857"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMImsgScroll.typ"
+    LogicalPath="HMI.HMImsgScroll.typ"
+    Type="File"
+    LastWriteTime="131354627047473857"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMIForceIO.typ"
+    LogicalPath="HMI.HMIForceIO.typ"
+    Type="File"
+    LastWriteTime="131354627047317727"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMIalert.typ"
+    LogicalPath="HMI.HMIalert.typ"
+    Type="File"
+    LastWriteTime="131354627047473857"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMI.typ"
+    LogicalPath="HMI.HMI.typ"
+    Type="File"
+    LastWriteTime="131354627047317727"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMIremmem.typ"
+    LogicalPath="HMI.HMIremmem.typ"
+    Type="File"
+    LastWriteTime="131354627047473857"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMI.var"
+    LogicalPath="HMI.HMI.var"
+    Type="File"
+    LastWriteTime="131354627047317727"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\ANSIC.prg"
+    LogicalPath="HMI.hmilogic"
+    Type="Program"
+    LastWriteTime="131354627046158729" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\hmilogic.c"
+    LogicalPath="HMI.hmilogic.hmilogic.c"
+    Type="File"
+    LastWriteTime="131354627045997281"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\hmiParamList.c"
+    LogicalPath="HMI.hmilogic.hmiParamList.c"
+    Type="File"
+    LastWriteTime="131354627045997281"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\hmiDialog.c"
+    LogicalPath="HMI.hmilogic.hmiDialog.c"
+    Type="File"
+    LastWriteTime="131354627046158729"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\hmiAlert.c"
+    LogicalPath="HMI.hmilogic.hmiAlert.c"
+    Type="File"
+    LastWriteTime="131354627046158729"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\loginCyclicLogic.c"
+    LogicalPath="HMI.hmilogic.loginCyclicLogic.c"
+    Type="File"
+    LastWriteTime="131354627045987274"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\loginLogic_Header.h"
+    LogicalPath="HMI.hmilogic.loginLogic_Header.h"
+    Type="File"
+    LastWriteTime="131354627045997281"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\hmiParamList.h"
+    LogicalPath="HMI.hmilogic.hmiParamList.h"
+    Type="File"
+    LastWriteTime="131354627046158729"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\hmiAlert.h"
+    LogicalPath="HMI.hmilogic.hmiAlert.h"
+    Type="File"
+    LastWriteTime="131354627046158729"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\hmiDialog.h"
+    LogicalPath="HMI.hmilogic.hmiDialog.h"
+    Type="File"
+    LastWriteTime="131354627046314768"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\hmilogic\HMIlocal.var"
+    LogicalPath="HMI.hmilogic.HMIlocal.var"
+    Type="File"
+    LastWriteTime="131354627046158729"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\ForceIO\IEC.prg"
+    LogicalPath="HMI.ForceIO"
+    Type="Program"
+    LastWriteTime="131354627046471021" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\ForceIO\Main.st"
+    LogicalPath="HMI.ForceIO.Main.st"
+    Type="File"
+    LastWriteTime="131354690422615579"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\ForceIO\Types.typ"
+    LogicalPath="HMI.ForceIO.Types.typ"
+    Type="File"
+    LastWriteTime="131354627046471021"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\ForceIO\Variables.var"
+    LogicalPath="HMI.ForceIO.Variables.var"
+    Type="File"
+    LastWriteTime="131354627046471021"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\VisuW1\Vc.dob"
+    LogicalPath="HMI.VisuW1"
+    Type="DataObject"
+    LastWriteTime="131354627044778237" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\VisuW1\VCObject.vc"
+    LogicalPath="HMI.VisuW1.VCObject.vc"
+    Type="File"
+    LastWriteTime="131354627044778237"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMITableManager\IEC.prg"
+    LogicalPath="HMI.HMITableManager"
+    Type="Program"
+    LastWriteTime="131354627045155968" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMITableManager\Main.st"
+    LogicalPath="HMI.HMITableManager.Main.st"
+    Type="File"
+    LastWriteTime="131354627044999684"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMITableManager\Types.typ"
+    LogicalPath="HMI.HMITableManager.Types.typ"
+    Type="File"
+    LastWriteTime="131354627045155968"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\HMI\HMITableManager\Variables.var"
+    LogicalPath="HMI.HMITableManager.Variables.var"
+    Type="File"
+    LastWriteTime="131354627045155968"
+    Private="true" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Project.language"
+    LogicalPath="Project.language"
+    Type="File"
+    LastWriteTime="131354627070823154"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\Config.pkg"
+    LogicalPath="Config_Test"
+    Type="Configuration"
+    LastWriteTime="131357150585264510" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\Hardware.hw"
+    LogicalPath="Config_Test.Hardware.hw"
+    Type="File"
+    LastWriteTime="131357162174368947"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\Hardware.hwl"
+    LogicalPath="Config_Test.Hardware.hwl"
+    Type="File"
+    LastWriteTime="131357157354348467"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\Cpu.pkg"
+    LogicalPath="Config_Test.X20CP1584"
+    Type="Cpu"
+    LastWriteTime="131357157529849081" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\Cpu.sw"
+    LogicalPath="Config_Test.X20CP1584.Cpu.sw"
+    Type="File"
+    LastWriteTime="131357161987069647"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\Cpu.per"
+    LogicalPath="Config_Test.X20CP1584.Cpu.per"
+    Type="File"
+    LastWriteTime="131354627074202216"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\IoMap.iom"
+    LogicalPath="Config_Test.X20CP1584.IoMap.iom"
+    Type="File"
+    LastWriteTime="131354686421679561"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\PvMap.vvm"
+    LogicalPath="Config_Test.X20CP1584.PvMap.vvm"
+    Type="File"
+    LastWriteTime="131354627074358469"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\Package.pkg"
+    LogicalPath="Config_Test.X20CP1584.VC"
+    Type="Package"
+    LastWriteTime="131354627074670970" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keyboa.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keyboa.dis"
+    Type="File"
+    LastWriteTime="131354627074514721"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\6PPT30.070.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.6PPT30.070.dis"
+    Type="File"
+    LastWriteTime="131354627074358469"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keybo1.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keybo1.dis"
+    Type="File"
+    LastWriteTime="131354627074514721"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keybo2.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keybo2.dis"
+    Type="File"
+    LastWriteTime="131354627074514721"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keybo3.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keybo3.dis"
+    Type="File"
+    LastWriteTime="131354627074514721"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keybo4.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keybo4.dis"
+    Type="File"
+    LastWriteTime="131354627074514721"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keybo5.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keybo5.dis"
+    Type="File"
+    LastWriteTime="131354627074514721"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keyboard.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keyboard.dis"
+    Type="File"
+    LastWriteTime="131354627074670970"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keyboard1.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keyboard1.dis"
+    Type="File"
+    LastWriteTime="131354627074670970"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keyboard2.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keyboard2.dis"
+    Type="File"
+    LastWriteTime="131354627074670970"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\VC\PS2-Keyboard3.dis"
+    LogicalPath="Config_Test.X20CP1584.VC.PS2-Keyboard3.dis"
+    Type="File"
+    LastWriteTime="131354627074670970"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\Package.pkg"
+    LogicalPath="Config_Test.X20CP1584.mapp"
+    Type="Package"
+    LastWriteTime="131354627075513720" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\MAPP_File.mpfilemanagerui"
+    LogicalPath="Config_Test.X20CP1584.mapp.MAPP_File.mpfilemanagerui"
+    Type="File"
+    LastWriteTime="131354627075513720"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\MAPP_Rec.mprecipecsv"
+    LogicalPath="Config_Test.X20CP1584.mapp.MAPP_Rec.mprecipecsv"
+    Type="File"
+    LastWriteTime="131354627075513720"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\MAPP_Cfg.mprecipecsv"
+    LogicalPath="Config_Test.X20CP1584.mapp.MAPP_Cfg.mprecipecsv"
+    Type="File"
+    LastWriteTime="131354627075357614"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\MAPP_Web.mpwebxs"
+    LogicalPath="Config_Test.X20CP1584.mapp.MAPP_Web.mpwebxs"
+    Type="File"
+    LastWriteTime="131354627075513720"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\MAPP_Alm.mpalarmbasic"
+    LogicalPath="Config_Test.X20CP1584.mapp.MAPP_Alm.mpalarmbasic"
+    Type="File"
+    LastWriteTime="131354627075357614"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\Alarm.mpalarmbasic"
+    LogicalPath="Config_Test.X20CP1584.mapp.Alarm.mpalarmbasic"
+    Type="File"
+    LastWriteTime="131354627075357614"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\X20CP1584\mapp\Data_Log.mpdatarecorder"
+    LogicalPath="Config_Test.X20CP1584.mapp.Data_Log.mpdatarecorder"
+    Type="File"
+    LastWriteTime="131354627075357614"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\Hardware.jpg"
+    LogicalPath="Config_Test.Hardware.jpg"
+    Type="File"
+    LastWriteTime="131357157430134016"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Physical\Config_Test\Hardware1.jpg"
+    LogicalPath="Config_Test.Hardware1.jpg"
+    Type="File"
+    LastWriteTime="131354627076199965"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\ArTextSys\SG4\ArTextSys.h"
+    LogicalPath="ArTextSys.h"
+    Type="File"
+    LastWriteTime="131354626975034166"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsANSL\SG4\AsANSL.h"
+    LogicalPath="AsANSL.h"
+    Type="File"
+    LastWriteTime="131299747080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsARCfg\SG4\AsARCfg.h"
+    LogicalPath="AsARCfg.h"
+    Type="File"
+    LastWriteTime="131299747080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArLog\SG4\AsArLog.h"
+    LogicalPath="AsArLog.h"
+    Type="File"
+    LastWriteTime="131299747080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArProf\SG4\AsArProf.h"
+    LogicalPath="AsArProf.h"
+    Type="File"
+    LastWriteTime="131299747080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsArSdm\SG4\AsArSdm.h"
+    LogicalPath="AsArSdm.h"
+    Type="File"
+    LastWriteTime="131299747080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrMath\SG4\AsBrMath.h"
+    LogicalPath="AsBrMath.h"
+    Type="File"
+    LastWriteTime="131299747080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsBrStr\SG4\AsBrStr.h"
+    LogicalPath="AsBrStr.h"
+    Type="File"
+    LastWriteTime="131299747080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsICMP\SG4\AsICMP.h"
+    LogicalPath="AsICMP.h"
+    Type="File"
+    LastWriteTime="131299747100000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIecCon\SG4\AsIecCon.h"
+    LogicalPath="AsIecCon.h"
+    Type="File"
+    LastWriteTime="131299747100000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsIOTime\SG4\AsIOTime.h"
+    LogicalPath="AsIOTime.h"
+    Type="File"
+    LastWriteTime="131299747120000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsMem\SG4\AsMem.h"
+    LogicalPath="AsMem.h"
+    Type="File"
+    LastWriteTime="131299747140000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsTCP\SG4\AsTCP.h"
+    LogicalPath="AsTCP.h"
+    Type="File"
+    LastWriteTime="131299747160000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\astime\SG4\astime.h"
+    LogicalPath="astime.h"
+    Type="File"
+    LastWriteTime="131299747160000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUDP\SG4\AsUDP.h"
+    LogicalPath="AsUDP.h"
+    Type="File"
+    LastWriteTime="131299747160000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsUSB\SG4\AsUSB.h"
+    LogicalPath="AsUSB.h"
+    Type="File"
+    LastWriteTime="131299747160000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\AsXml\SG4\AsXml.h"
+    LogicalPath="AsXml.h"
+    Type="File"
+    LastWriteTime="131299747180000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\bglibasWBR\SG4\bglibasWBR.h"
+    LogicalPath="bglibasWBR.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\brsystem\SG4\brsystem.h"
+    LogicalPath="brsystem.h"
+    Type="File"
+    LastWriteTime="131299747180000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\DataObj\SG4\DataObj.h"
+    LogicalPath="DataObj.h"
+    Type="File"
+    LastWriteTime="131299747180000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\FileIO\SG4\FileIO.h"
+    LogicalPath="FileIO.h"
+    Type="File"
+    LastWriteTime="131299747200000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\jgLibC\SG4\jgLibC.h"
+    LogicalPath="jgLibC.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MAPPSuppor\SG4\MAPPSuppor.h"
+    LogicalPath="MAPPSuppor.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpAlarm\SG4\MpAlarm.h"
+    LogicalPath="MpAlarm.h"
+    Type="File"
+    LastWriteTime="131334353880000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpCom\SG4\MpCom.h"
+    LogicalPath="MpCom.h"
+    Type="File"
+    LastWriteTime="131334320640000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpFile\SG4\MpFile.h"
+    LogicalPath="MpFile.h"
+    Type="File"
+    LastWriteTime="131334356440000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpRecipe\SG4\MpRecipe.h"
+    LogicalPath="MpRecipe.h"
+    Type="File"
+    LastWriteTime="131334363160000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MpWebXs\SG4\MpWebXs.h"
+    LogicalPath="MpWebXs.h"
+    Type="File"
+    LastWriteTime="131334322760000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTBasics\SG4\MTBasics.h"
+    LogicalPath="MTBasics.h"
+    Type="File"
+    LastWriteTime="131354626973342065"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTData\SG4\MTData.h"
+    LogicalPath="MTData.h"
+    Type="File"
+    LastWriteTime="131354626994384037"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTFilter\SG4\MTFilter.h"
+    LogicalPath="MTFilter.h"
+    Type="File"
+    LastWriteTime="131354626995880528"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTProfile\SG4\MTProfile.h"
+    LogicalPath="MTProfile.h"
+    Type="File"
+    LastWriteTime="131354626997235744"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\MTTypes\SG4\MTTypes.h"
+    LogicalPath="MTTypes.h"
+    Type="File"
+    LastWriteTime="131354626998394670"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\operator\SG4\operator.h"
+    LogicalPath="operator.h"
+    Type="File"
+    LastWriteTime="131299747200000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\runtime\SG4\runtime.h"
+    LogicalPath="runtime.h"
+    Type="File"
+    LastWriteTime="131299747200000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\standard\SG4\standard.h"
+    LogicalPath="standard.h"
+    Type="File"
+    LastWriteTime="131299747200000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\sys_lib\SG4\sys_lib.h"
+    LogicalPath="sys_lib.h"
+    Type="File"
+    LastWriteTime="131299747200000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrSvcUtilities\wbrFltUtil\SG4\wbrFltUtil.h"
+    LogicalPath="wbrFltUtil.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrListSvc\SG4\wbrListSvc.h"
+    LogicalPath="wbrListSvc.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrLogSvc\SG4\wbrLogSvc.h"
+    LogicalPath="wbrLogSvc.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrMemSvc\SG4\wbrMemSvc.h"
+    LogicalPath="wbrMemSvc.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+  <Object
+    Path="C:\Users\jcgli\Desktop\MarketingAlliance_033117\trunk\software\AriesV2\Logical\Libraries\wbrServices\wbrPingSvc\SG4\wbrPingSvc.h"
+    LogicalPath="wbrPingSvc.h"
+    Type="File"
+    LastWriteTime="0"
+    Private="false" />
+</Objects>

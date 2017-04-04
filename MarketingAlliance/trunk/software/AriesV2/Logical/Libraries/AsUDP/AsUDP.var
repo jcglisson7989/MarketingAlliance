@@ -35,6 +35,7 @@ VAR CONSTANT
 	udpSO_RCVBUF_SET					: UDINT := 1005;	(*set option receive buffer*)
 	udpSO_RCVBUF_GET					: UDINT := 1006;	(*get option receive buffer*)
 	udpSO_ADDRESS_GET					: UDINT := 1007;	(*get socket address*)
+	udpSO_BINDTODEVICE					: UDINT := 1008;	(*bind socket to device*)
 	udpIP_ADD_MEMBERSHIP				: UDINT := 2001;	(*add multicast group*)
 	udpIP_DROP_MEMBERSHIP				: UDINT := 2002;	(*leave multicast group*)
 	udpIP_MULTICAST_IF_SET				: UDINT := 2003;	(*set interface for outgoing multicats*)
