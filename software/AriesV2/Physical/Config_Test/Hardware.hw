@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.2.7.54 SP?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="8AC114.60-2" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1045.00-2" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="X20CP1584" TargetConnector="IF3" NodeNumber="1" />
+  </Module>
+  <Module Name="8AC120.60-1" Type="8AC120.60-1" Version="1.0.0.2">
+    <Connection Connector="SS" TargetModule="8V1045.00-2" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8V1045.00-2" Type="8V1045.00-2" Version="1.0.0.2">
+    <Parameter ID="AxisIsPeriodic_r1" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+  </Module>
   <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.1">
     <Connection Connector="X2X1" TargetModule="X20CP1584" TargetConnector="IF6" />
   </Module>
@@ -28,6 +40,7 @@
     <Parameter ID="PermanentPvSize" Value="15000" />
     <Parameter ID="VolatileGlobalPvSize" Value="300000" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP1584.IF6" />
     <Parameter ID="TaskClassIdleTime" Value="4000" />
     <Parameter ID="Cyclic1Duration" Value="8000" />
     <Parameter ID="Cyclic1Tolerance" Value="8000" />
@@ -45,7 +58,6 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="8000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
-    <Parameter ID="TimerDevice" Value="X20CP1584.IF6" />
   </Module>
   <Module Name="X20DI9371" Type="X20DI9371" Version="1.0.2.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />

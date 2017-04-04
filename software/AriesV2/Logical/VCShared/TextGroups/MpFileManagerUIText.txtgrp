@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.2.4.149"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
 <TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpFileManagerUIText">
   <Property Name="Description" Value="Text for FileManagerUI"/>
   <Property Name="Index" Value="1017"/>
@@ -99,121 +99,6 @@
     <Text ID="112052" Value="Name"/>
     <Text ID="112053" Value="Date"/>
     <Text ID="112054" Value="Size"/>
-  </TextLayer>
-  <TextLayer LanguageId="sv">
-    <Text ID="110276" Value="Radera"/>
-    <Text ID="110277" Value="Skära"/>
-    <Text ID="110278" Value="Kopiera"/>
-    <Text ID="110279" Value="Klistra in"/>
-    <Text ID="110280" Value="refresh"/>
-    <Text ID="110281" Value="CurrentPath: {DevName}{DirName}"/>
-    <Text ID="110282" Value="Vald:"/>
-    <Text ID="110283" Value="Multiselect"/>
-    <Text ID="110284" Value="File(s) {FileCount} / Folder(s) {FolderCount}"/>
-    <Text ID="110285" Value="strömväg"/>
-    <Text ID="110286" Value="MpFileManagerUI"/>
-    <Text ID="110287" Value="Nej"/>
-    <Text ID="110288" Value="sökord"/>
-    <Text ID="110289" Value="Skapa Dir"/>
-    <Text ID="110290" Value="Döpa om"/>
-    <Text ID="110291" Value="nytt namn"/>
-    <Text ID="111459" Value="Sortera"/>
-    <Text ID="111460" Value="Status"/>
-    <Text ID="112052" Value="namn"/>
-    <Text ID="112053" Value="Datum"/>
-    <Text ID="112054" Value="Storlek"/>
-  </TextLayer>
-  <TextLayer LanguageId="pt">
-    <Text ID="110276" Value="Excluir"/>
-    <Text ID="110277" Value="Cortar"/>
-    <Text ID="110278" Value="Cópia"/>
-    <Text ID="110279" Value="Colar"/>
-    <Text ID="110280" Value="refrescar"/>
-    <Text ID="110281" Value="CurrentPath: {DevName}{DirName}"/>
-    <Text ID="110282" Value="Selecionado:"/>
-    <Text ID="110283" Value="MultiSelect"/>
-    <Text ID="110284" Value="File(s) {FileCount} / Folder(s) {FolderCount}"/>
-    <Text ID="110285" Value="Caminho atual"/>
-    <Text ID="110286" Value="MpFileManagerUI"/>
-    <Text ID="110287" Value="Não"/>
-    <Text ID="110288" Value="Pesquisar palavra-chave"/>
-    <Text ID="110289" Value="Criar Dir"/>
-    <Text ID="110290" Value="rebatizar"/>
-    <Text ID="110291" Value="Novo nome"/>
-    <Text ID="111459" Value="Ordenar"/>
-    <Text ID="111460" Value="estado"/>
-    <Text ID="112052" Value="Nome"/>
-    <Text ID="112053" Value="Encontro"/>
-    <Text ID="112054" Value="Tamanho"/>
-  </TextLayer>
-  <TextLayer LanguageId="de">
-    <Text ID="110276" Value="Löschen"/>
-    <Text ID="110277" Value="Schneiden"/>
-    <Text ID="110278" Value="Kopieren"/>
-    <Text ID="110279" Value="Paste"/>
-    <Text ID="110280" Value="auffrischen"/>
-    <Text ID="110281" Value="Currentpath: {DevName} {DirName}"/>
-    <Text ID="110282" Value="Ausgewählt:"/>
-    <Text ID="110283" Value="Multiselect"/>
-    <Text ID="110284" Value="File(s) {FileCount} / Folder(s) {FolderCount}"/>
-    <Text ID="110285" Value="Aktueller Pfad"/>
-    <Text ID="110286" Value="MpFileManagerUI"/>
-    <Text ID="110287" Value="Nein"/>
-    <Text ID="110288" Value="Suche nach Stichwort"/>
-    <Text ID="110289" Value="Erstelle Dir"/>
-    <Text ID="110290" Value="Umbenennen"/>
-    <Text ID="110291" Value="Neuer Name"/>
-    <Text ID="111459" Value="Sortieren"/>
-    <Text ID="111460" Value="Status"/>
-    <Text ID="112052" Value="Name"/>
-    <Text ID="112053" Value="Datum"/>
-    <Text ID="112054" Value="Größe"/>
-  </TextLayer>
-  <TextLayer LanguageId="fr">
-    <Text ID="110276" Value="Effacer"/>
-    <Text ID="110277" Value="Coupe"/>
-    <Text ID="110278" Value="Copie"/>
-    <Text ID="110279" Value="Pâte"/>
-    <Text ID="110280" Value="Rafraîchir"/>
-    <Text ID="110281" Value="CurrentPath: {DevName} {DirName}"/>
-    <Text ID="110282" Value="Choisi:"/>
-    <Text ID="110283" Value="Sélection multiple"/>
-    <Text ID="110284" Value="File(s) {FileCount} / Folder(s) {FolderCount}"/>
-    <Text ID="110285" Value="Chemin courant"/>
-    <Text ID="110286" Value="MpFileManagerUI"/>
-    <Text ID="110287" Value="Non"/>
-    <Text ID="110288" Value="Chercher un mot-clé"/>
-    <Text ID="110289" Value="Créer Dir"/>
-    <Text ID="110290" Value="Rebaptiser"/>
-    <Text ID="110291" Value="Nouveau nom"/>
-    <Text ID="111459" Value="Trier"/>
-    <Text ID="111460" Value="statut"/>
-    <Text ID="112052" Value="prénom"/>
-    <Text ID="112053" Value="date"/>
-    <Text ID="112054" Value="Taille"/>
-  </TextLayer>
-  <TextLayer LanguageId="es">
-    <Text ID="110276" Value="Borrar"/>
-    <Text ID="110277" Value="Cortar"/>
-    <Text ID="110278" Value="Dupdo"/>
-    <Text ID="110279" Value="Pegar"/>
-    <Text ID="110280" Value="Refrescar"/>
-    <Text ID="110281" Value="CurrentPath: {DevName} {DirName} "/>
-    <Text ID="110282" Value="Seleccionado:"/>
-    <Text ID="110283" Value="Selección múltiple"/>
-    <Text ID="110284" Value="File(s) {FileCount} / Folder(s) {FolderCount}"/>
-    <Text ID="110285" Value="Trayectoria de corriente"/>
-    <Text ID="110286" Value="MpFileManagerUI"/>
-    <Text ID="110287" Value="No"/>
-    <Text ID="110288" Value="Buscar la palabra clave"/>
-    <Text ID="110289" Value="crear Dir"/>
-    <Text ID="110290" Value="Rebautizar"/>
-    <Text ID="110291" Value="Nuevo nombre"/>
-    <Text ID="111459" Value="Ordenar"/>
-    <Text ID="111460" Value="Estado"/>
-    <Text ID="112052" Value="Nombre"/>
-    <Text ID="112053" Value="Fecha"/>
-    <Text ID="112054" Value="tamaño"/>
   </TextLayer>
   <IndexMap>
     <Index ID="110276" Value="0"/>

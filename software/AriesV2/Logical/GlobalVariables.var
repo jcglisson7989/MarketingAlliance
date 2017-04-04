@@ -10,7 +10,19 @@ VAR
 	gVersion : {REDUND_UNREPLICABLE} STRING[80] := 'TBD';
 END_VAR
 (*Insert your comment here.*)
+VAR
+	Axis : ACP10AXIS_typ;
+	AxisControl : MpAxisBasic;
+END_VAR
 (*Insert your comment here.*)
+VAR
+	MachineState : AriesMachineState_Enum;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	IO : AriesIOPoints_typ;
+	IO_LastCycle : AriesIOPoints_typ;
+END_VAR
 (*Insert your comment here.*)
 (*Insert your comment here.*)
 (*Insert your comment here.*)

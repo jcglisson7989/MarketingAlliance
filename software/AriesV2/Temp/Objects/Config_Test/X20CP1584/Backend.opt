@@ -1,9 +1,0 @@
-wbrsprintf	"$(AS_CPU_PATH)/wbrsprintf/a.out" -o "$(AS_CPU_PATH)/wbrsprintf/wbrsprintf.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/wbrsprintf/wbrsprintf.xrefox" -G V4.1.2 
-jgLibC	"$(AS_CPU_PATH)/jgLibC/a.out" -o "$(AS_CPU_PATH)/jgLibC/jgLibC.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/jgLibC/jgLibC.xrefox" -G V4.1.2 
-bglibasWBR	"$(AS_CPU_PATH)/bglibasWBR/a.out" -o "$(AS_CPU_PATH)/bglibasWBR/bglibasWBR.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/bglibasWBR/bglibasWBR.xrefox" -G V4.1.2 
-MAPPSuppor	"$(AS_CPU_PATH)/MAPPSuppor/a.out" -o "$(AS_CPU_PATH)/MAPPSuppor/MAPPSuppor.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/MAPPSuppor/MAPPSuppor.xrefox" -G V4.1.2 
-wbrFltUtil	"$(AS_CPU_PATH)/wbrFltUtil/a.out" -o "$(AS_CPU_PATH)/wbrFltUtil/wbrFltUtil.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/wbrFltUtil/wbrFltUtil.xrefox" -G V4.1.2 
-wbrListSvc	"$(AS_CPU_PATH)/wbrListSvc/a.out" -o "$(AS_CPU_PATH)/wbrListSvc/wbrListSvc.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/wbrListSvc/wbrListSvc.xrefox" -G V4.1.2 
-wbrLogSvc	"$(AS_CPU_PATH)/wbrLogSvc/a.out" -o "$(AS_CPU_PATH)/wbrLogSvc/wbrLogSvc.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/wbrLogSvc/wbrLogSvc.xrefox" -G V4.1.2 
-wbrMemSvc	"$(AS_CPU_PATH)/wbrMemSvc/a.out" -o "$(AS_CPU_PATH)/wbrMemSvc/wbrMemSvc.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/wbrMemSvc/wbrMemSvc.xrefox" -G V4.1.2 
-wbrPingSvc	"$(AS_CPU_PATH)/wbrPingSvc/a.out" -o "$(AS_CPU_PATH)/wbrPingSvc/wbrPingSvc.ox" -T SG4 -r Library  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/wbrPingSvc/wbrPingSvc.xrefox" -G V4.1.2 

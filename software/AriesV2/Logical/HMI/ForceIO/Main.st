@@ -1,17 +1,19 @@
 
 PROGRAM _INIT
-//	gHMIForceIO.forceItems[0].pAddrIO := ADR(ControlIO.iRunCmd);
-//	gHMIForceIO.forceItems[1].pAddrIO := ADR(ControlIO.iReservoirLevel);
-//	gHMIForceIO.forceItems[2].pAddrIO := ADR(CureIO.oUVCureChannel[0]);
-//	gHMIForceIO.forceItems[3].pAddrIO := ADR(CureIO.oUVCureChannel[1]);
-//	gHMIForceIO.forceItems[4].pAddrIO := ADR(StatusIO.iClearError);
-//	gHMIForceIO.forceItems[5].pAddrIO := ADR(ControlIO.iTargetPiP);
-//	gHMIForceIO.forceItems[6].pAddrIO := ADR(ControlIO.oTargetPresent);
-//	gHMIForceIO.forceItems[7].pAddrIO := ADR(StatusIO.oRunningReady);
+	
+	gHMIForceIO.forceItems[0].pAddrIO := ADR(IO.oCreaserCCWRotation);
+	gHMIForceIO.forceItems[1].pAddrIO := ADR(IO.oCreaserCWRotation);
+	gHMIForceIO.forceItems[2].pAddrIO := ADR(IO.oBoardFeedingLight);
+	gHMIForceIO.forceItems[3].pAddrIO := ADR(IO.oUIIndicatorLight);
+	
+	gHMIForceIO.forceItems[4].pAddrIO := ADR(IO.iSafeMachineState);
+	gHMIForceIO.forceItems[5].pAddrIO := ADR(IO.iCreaserShaftSensor);
+	gHMIForceIO.forceItems[6].pAddrIO := ADR(IO.iFiberOpticSensor);
+	gHMIForceIO.forceItems[7].pAddrIO := ADR(IO.iSM1Disabled);
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	IF gHMIForceIO.forceEnable = 0 THEN //IMPORTANTTODO: only go to max idx! FIX THIS IN AS5200 AND UVF AS WELL!
+	IF gHMIForceIO.forceEnable = 0 THEN 
 		gHMIForceIO.forceItemsVisibility := 1;
 		
 		FOR ii_force := 0 TO HMI_ENUM_FORCEIO_LASTINDEX BY 1 DO

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.2.4.149"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
 <DataSource xmlns="http://br-automation.co.at/AS/VC/Project" Name="DataSource">
   <Property Name="AutoRefresh" Value="False"/>
   <Property Name="DefaultUpdateTime" Value="200"/>
@@ -7,34 +7,6 @@
   <Property Name="IsIntern" Value="False"/>
   <Property Name="TextGroup" Value="None"/>
   <DataPoints>
-    <Folder Name="Dial_Vel">
-      <Property Name="Description" Value=""/>
-      <Property Name="FolderType" Value="Struct"/>
-      <DataPoint Name="Targ_Per_S">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-        <Property Name="DPLimit" Value="None"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="REAL"/>
-        <Property Name="PLCUnit" Value="None"/>
-        <Property Name="UnitGroup" Value="None"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="SCALED"/>
-      </DataPoint>
-      <DataPoint Name="RPM">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-        <Property Name="DPLimit" Value="None"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="REAL"/>
-        <Property Name="PLCUnit" Value="None"/>
-        <Property Name="UnitGroup" Value="None"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="SCALED"/>
-      </DataPoint>
-    </Folder>
     <Folder Name="Alarm_Tasks">
       <Property Name="Description" Value=""/>
       <Property Name="FolderType" Value="Package"/>
@@ -13221,18 +13193,6 @@
       <Property Name="UserID" Value="None"/>
       <Property Name="VCType" Value="STRING"/>
     </DataPoint>
-    <DataPoint Name="MAX_RPM_GAUGE">
-      <Property Name="ConnectedBySharedResource" Value="False"/>
-      <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-      <Property Name="DPLimit" Value="None"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="PLCType" Value="REAL"/>
-      <Property Name="PLCUnit" Value="None"/>
-      <Property Name="UnitGroup" Value="None"/>
-      <Property Name="UpdateTime" Value="Default"/>
-      <Property Name="UserID" Value="None"/>
-      <Property Name="VCType" Value="SCALED"/>
-    </DataPoint>
     <DataPoint Name="gMachineName">
       <Property Name="ConnectedBySharedResource" Value="False"/>
       <Property Name="ConnectingVisus" Value="HMI\VisuX,HMI\VisuW1"/>
@@ -13597,36 +13557,6 @@
               <Property Name="VCType" Value="STRING"/>
             </DataPoint>
           </Folder>
-          <Folder Name="Dispense">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct[0..1]"/>
-            <Folder Name="Dispense[1]">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Disable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UDINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-            <Folder Name="Dispense[0]">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="Disable">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="UDINT"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="INTEGER"/>
-              </DataPoint>
-            </Folder>
-          </Folder>
           <Folder Name="cfgCompile">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
@@ -13710,15 +13640,6 @@
             <Property Name="UpdateTime" Value="Default"/>
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="Dashboard_Hide_Encoder_Sim">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="USINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
           </DataPoint>
           <DataPoint Name="CMD_Reset_Statistics">
             <Property Name="ConnectedBySharedResource" Value="False"/>
@@ -14609,46 +14530,6 @@
         </DataPoint>
       </Folder>
     </Folder>
-    <Folder Name="Position">
-      <Property Name="Description" Value=""/>
-      <Property Name="FolderType" Value="Struct"/>
-      <DataPoint Name="Degrees_Rel_Home">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-        <Property Name="DPLimit" Value="None"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="REAL"/>
-        <Property Name="PLCUnit" Value="None"/>
-        <Property Name="UnitGroup" Value="None"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="SCALED"/>
-      </DataPoint>
-      <DataPoint Name="Degrees_Absolute">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-        <Property Name="DPLimit" Value="None"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="REAL"/>
-        <Property Name="PLCUnit" Value="None"/>
-        <Property Name="UnitGroup" Value="None"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="SCALED"/>
-      </DataPoint>
-      <DataPoint Name="Home_Position_Degrees">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-        <Property Name="DPLimit" Value="None"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="REAL"/>
-        <Property Name="PLCUnit" Value="None"/>
-        <Property Name="UnitGroup" Value="None"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="SCALED"/>
-      </DataPoint>
-    </Folder>
     <DataPoint Name="gAlarmState">
       <Property Name="ConnectedBySharedResource" Value="False"/>
       <Property Name="ConnectingVisus" Value="HMI\VisuX"/>
@@ -14693,15 +14574,6 @@
     <Folder Name="gStatistics">
       <Property Name="Description" Value=""/>
       <Property Name="FolderType" Value="Struct"/>
-      <DataPoint Name="Total_Num_Targets">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="UDINT"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="INTEGER"/>
-      </DataPoint>
       <DataPoint Name="runtime_h">
         <Property Name="ConnectedBySharedResource" Value="False"/>
         <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
@@ -14729,40 +14601,6 @@
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="INTEGER"/>
       </DataPoint>
-      <Folder Name="Debug">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <Folder Name="Disp_Cycle_Count">
-          <Property Name="Description" Value=""/>
-          <Property Name="FolderType" Value="Struct[0..1]"/>
-          <Folder Name="Disp_Cycle_Count[0]">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="Count">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </Folder>
-          <Folder Name="Disp_Cycle_Count[1]">
-            <Property Name="Description" Value=""/>
-            <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="Count">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\VisuW1"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="DINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </Folder>
-        </Folder>
-      </Folder>
     </Folder>
   </DataPoints>
 </DataSource>
