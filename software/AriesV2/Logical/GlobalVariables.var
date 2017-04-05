@@ -24,6 +24,9 @@ VAR
 	IO_LastCycle : AriesIOPoints_typ;
 END_VAR
 (*Insert your comment here.*)
+VAR RETAIN
+	gStatistics : Global_Statistics_typ;
+END_VAR
 (*Insert your comment here.*)
 (*Insert your comment here.*)
 (*Insert your comment here.*)

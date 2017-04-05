@@ -13,6 +13,7 @@ END_TYPE
 TYPE
 	Global_Rec_typ : 	STRUCT 
 		MagicPrefix : UDINT;
+		Crease : AriesCreaserParams_typ;
 		MagicSuffix : UDINT;
 	END_STRUCT;
 	Global_Cfg_typ : 	STRUCT 

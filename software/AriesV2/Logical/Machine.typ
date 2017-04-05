@@ -1,5 +1,10 @@
 
 TYPE
+	AriesCreaserParams_typ : 	STRUCT 
+		CreaseDistance_mm : ARRAY[0..MAX_IDX_CREASES]OF REAL;
+		CreaseWidth_mm : REAL;
+		CreaseCount : UDINT;
+	END_STRUCT;
 	AriesIOPoints_typ : 	STRUCT 
 		oCreaserCCWRotation : BOOL;
 		oCreaserCWRotation : BOOL;
@@ -25,4 +30,11 @@ TYPE
 		New_Member1,
 		New_Member
 		);
+	Global_Statistics_typ : 	STRUCT 
+		total_runtime : UDINT;
+		runtime_h : UDINT;
+		runtime_m : UDINT;
+		runtime_s : UDINT;
+		total_processed : UDINT;
+	END_STRUCT;
 END_TYPE
