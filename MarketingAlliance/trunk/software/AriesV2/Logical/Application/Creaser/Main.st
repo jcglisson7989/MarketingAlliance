@@ -27,8 +27,17 @@ PROGRAM _CYCLIC
 			IO.oBoardFeedingLight := FALSE;
 			IO.oUIIndicatorLight := FALSE;
 		
+			IF EDGEPOS(setStartCommandFlag) THEN
+				
+				setflagCreaserIndexCommand := TRUE;
+				
+			END_IF;
+		
 		MACHINE_STATE_RUNNING:
-			
+			Action_Manage_Update_Total_Runtime;
+		
+			CASE ProcessState OF
+				PRCS_STATE_INIT:
 		
 		MACHINE_STATE_ERROR:
 			IO.oCreaserCCWRotation := FALSE;

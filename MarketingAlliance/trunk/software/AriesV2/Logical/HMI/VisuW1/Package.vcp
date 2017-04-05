@@ -53,6 +53,17 @@
     <Source File="TextGroups\LoginLevels.txtgrp"/>
     <Source File="TextGroups\AppLabels.txtgrp"/>
     <Source File="TextGroups\AS3500HS_States_Dispense.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_AUTOTUNE_MODE.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_AUTOTUNE_ORIENTATION.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_FF_MODE_ENUM.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_HOME_DIR_ENUM.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_HOME_MODE.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_HOME_OPTION_ENUM.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_Limit_Status.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_MOVE_DIRECTION.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_Power_On_Status.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_Read_Mode.txtgrp"/>
+    <Source File="TextGroups\MAPP_Axis_STOP_PHASE.txtgrp"/>
     <Source File="Fonts\rockwell_13.fninfo"/>
     <Source File="Fonts\rockwell_22.fninfo"/>
     <Source File="Fonts\DefaultFont.fninfo"/>
@@ -251,6 +262,9 @@
     <Source File="Layers\HMI_ForceIO_Header.layer"/>
     <Source File="Layers\UI_Change_Lang.layer"/>
     <Source File="Layers\tmp_hide_machine_functionality.layer"/>
+    <Source File="Layers\Motion_MAPP_Axis_Move.layer"/>
+    <Source File="Layers\Motion_MAPP_Axis_Power_Home.layer"/>
+    <Source File="Layers\Motion_MAPP_Axis_Setup.layer"/>
     <Source File="StyleSheets\Color.vcs"/>
     <Source File="Borders\AS_border_AlertMessage.bdr"/>
     <Source File="Borders\AS_border_nav.bdr"/>
