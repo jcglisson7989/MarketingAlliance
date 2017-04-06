@@ -1,0 +1,650 @@
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MAPPSuppor.h
+
+    41:2   g v DEF  S _WEAK                            
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpCom.h
+
+   124:16  g v DEF  S MpComIdentType                   
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/mpcomponentsVAR.h
+
+    16:31  g v DEF  S Recipe_CSV_MpLink                
+    17:31  g v DEF  S gAlarmBasic                      
+    18:31  g v DEF  S File_Manager_MpLink              
+    19:31  g v DEF  S FeedAxis_MpLink                  
+    20:31  g v DEF  S Data_Log_MpLink                  
+    21:31  g v DEF  S Config_CSV_MpLink                
+    22:31  g v DEF  S Alarm_MpLink                     
+    28:1   l v DEF  S __asm__                          
+    31:1   l v DEF  S __asm__                          
+    35:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalconstantsVAR.h
+
+    38:1   l v DEF  S __asm__                          
+    41:1   l v DEF  S __asm__                          
+    45:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/machineTYP.h
+
+    76:1   l v DEF  S __asm__                          
+    79:1   l v DEF  S __asm__                          
+    82:1   l v DEF  S __asm__                          
+    86:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/generic_rec_cfgTYP.h
+
+    77:1   l v DEF  S __asm__                          
+    80:1   l v DEF  S __asm__                          
+    84:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/machineTYP.h
+
+    62:16  g v DEF  S Global_Statistics_typ            
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalvariablesVAR.h
+
+    16:45  g v DEF  S gStatistics                      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/machineTYP.h
+
+    44:16  g v DEF  S AriesIOPoints_typ                
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalvariablesVAR.h
+
+    17:34  g v DEF  S IO_LastCycle                     
+    18:34  g v DEF  S IO                               
+    19:36  g v DEF  S ProcessState                     
+    20:37  g v DEF  S MachineState                     
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpAxis.h
+
+   454:16  g v DEF  S MpAxisBasicParType               
+   391:16  g v DEF  S MpAxisHomingType                 
+   410:16  g v DEF  S MpAxisJogType                    
+   418:16  g v DEF  S MpAxisStopType                   
+   424:16  g v DEF  S MpAxisStopAfterTriggerType       
+   432:16  g v DEF  S MpAxisTorqueLimitType            
+   437:16  g v DEF  S MpAxisCyclicReadSetupType        
+   444:16  g v DEF  S MpAxisAutotuneType               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalvariablesVAR.h
+
+    21:35  g v DEF  S AxisPar                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpAxis.h
+
+   872:16  g v DEF  S MpAxisBasic                      
+   517:16  g v DEF  S MpAxisBasicInfoType              
+   475:16  g v DEF  S MpAxisCyclicReadType             
+   470:16  g v DEF  S MpAxisCyclicReadValueType        
+   482:16  g v DEF  S MpAxisDigitalIOStatusType        
+   491:16  g v DEF  S MpAxisAddInfoHardwareType        
+   511:16  g v DEF  S MpAxisDiagExtType                
+   498:16  g v DEF  S MpAxisStatusIDType               
+   504:16  g v DEF  S MpAxisInternalType               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpCom.h
+
+   128:16  g v DEF  S MpComInternalDataType            
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalvariablesVAR.h
+
+    22:28  g v DEF  S AxisControl                      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/Acp10man.h
+
+   662:16  g v DEF  S ACP10AXIS_typ                    
+    22:16  g v DEF  S ACP10SWVER_typ                   
+    40:16  g v DEF  S ACP10OBINF_typ                   
+    28:16  g v DEF  S ACP10OBIHW_typ                   
+    72:16  g v DEF  S ACP10SIM_typ                     
+    65:16  g v DEF  S ACP10SIMPA_typ                   
+    51:16  g v DEF  S ACP10SIMM1_typ                   
+    57:16  g v DEF  S ACP10SIMM2_typ                   
+    89:16  g v DEF  S ACP10GLINI_typ                   
+    81:16  g v DEF  S ACP10GLIPA_typ                   
+   113:16  g v DEF  S ACP10NET_typ                     
+   106:16  g v DEF  S ACP10NETSV_typ                   
+    96:16  g v DEF  S ACP10NSVRQ_typ                   
+   101:16  g v DEF  S ACP10NSVRS_typ                   
+   145:16  g v DEF  S ACP10AXDBL_typ                   
+   123:16  g v DEF  S ACP10AXDBS_typ                   
+   133:16  g v DEF  S ACP10AXDBP_typ                   
+   179:16  g v DEF  S ACP10DIGIN_typ                   
+   150:16  g v DEF  S ACP10DISTA_typ                   
+   160:16  g v DEF  S ACP10DILEV_typ                   
+   169:16  g v DEF  S ACP10DIFRC_typ                   
+   204:16  g v DEF  S ACP10ENCIF_typ                   
+   197:16  g v DEF  S ACP10ENCPA_typ                   
+   193:16  g v DEF  S ACP10ENCSC_typ                   
+   188:16  g v DEF  S ACP10ENCSL_typ                   
+   230:16  g v DEF  S ACP10AXLIM_typ                   
+   211:16  g v DEF  S ACP10AXLPA_typ                   
+   286:16  g v DEF  S ACP10CTRL_typ                    
+   237:16  g v DEF  S ACP10CTRPO_typ                   
+   258:16  g v DEF  S ACP10CTRSP_typ                   
+   246:16  g v DEF  S ACP10ISQFI_typ                   
+   267:16  g v DEF  S ACP10CTRUF_typ                   
+   277:16  g v DEF  S ACP10CTRFF_typ                   
+   405:16  g v DEF  S ACP10AXMOV_typ                   
+   321:16  g v DEF  S ACP10AXSTO_typ                   
+   297:16  g v DEF  S ACP10AXSTI_typ                   
+   303:16  g v DEF  S ACP10AXSTP_typ                   
+   309:16  g v DEF  S ACP10AXSTQ_typ                   
+   315:16  g v DEF  S ACP10AXSTD_typ                   
+   358:16  g v DEF  S ACP10HOME_typ                    
+   331:16  g v DEF  S ACP10HOMST_typ                   
+   339:16  g v DEF  S ACP10HOMPA_typ                   
+   395:16  g v DEF  S ACP10BAMOV_typ                   
+   366:16  g v DEF  S ACP10BMVST_typ                   
+   372:16  g v DEF  S ACP10BMVOV_typ                   
+   377:16  g v DEF  S ACP10BMVPA_typ                   
+   387:16  g v DEF  S ACP10TRSTP_typ                   
+   584:16  g v DEF  S ACP10SETUP_typ                   
+   425:16  g v DEF  S ACP10SUOBJ_typ                   
+   413:16  g v DEF  S ACP10SUOST_typ                   
+   421:16  g v DEF  S ACP10SUOPA_typ                   
+   467:16  g v DEF  S ACP10SUMA_typ                    
+   430:16  g v DEF  S ACP10SUMAS_typ                   
+   455:16  g v DEF  S ACP10SUMAP_typ                   
+   437:16  g v DEF  S ACP10SUMAO_typ                   
+   507:16  g v DEF  S ACP10SUMS_typ                    
+   472:16  g v DEF  S ACP10SUMSS_typ                   
+   493:16  g v DEF  S ACP10SUMSP_typ                   
+   479:16  g v DEF  S ACP10SUMSO_typ                   
+   529:16  g v DEF  S ACP10SUPH_typ                    
+   512:16  g v DEF  S ACP10SUPHS_typ                   
+   522:16  g v DEF  S ACP10SUPHP_typ                   
+   559:16  g v DEF  S ACP10SUCTR_typ                   
+   534:16  g v DEF  S ACP10SUCST_typ                   
+   540:16  g v DEF  S ACP10SUCPA_typ                   
+   579:16  g v DEF  S ACP10SUIR_typ                    
+   564:16  g v DEF  S ACP10SUIRS_typ                   
+   571:16  g v DEF  S ACP10SUIRP_typ                   
+   603:16  g v DEF  S ACP10AXMON_typ                   
+   596:16  g v DEF  S ACP10AXMOS_typ                   
+   648:16  g v DEF  S ACP10MSG_typ                     
+   609:16  g v DEF  S ACP10MSCNT_typ                   
+   616:16  g v DEF  S ACP10MSREC_typ                   
+   637:16  g v DEF  S ACP10MSTXT_typ                   
+   622:16  g v DEF  S ACP10MTXST_typ                   
+   627:16  g v DEF  S ACP10MTXPA_typ                   
+   642:16  g v DEF  S ACP10MSCMDERR_typ                
+   655:16  g v DEF  S ACP10NCTST_typ                   
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalvariablesVAR.h
+
+    23:30  g v DEF  S Axis                             
+    24:19  g v DEF  S gVersion                         
+    25:19  g v DEF  S gProjectDate                     
+    26:19  g v DEF  S gMachineName                     
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/machineTYP.h
+
+    55:16  g v DEF  S Machine_Alarms_typ               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalvariablesVAR.h
+
+    27:35  g v DEF  S gAlarms                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/generic_rec_cfgTYP.h
+
+    65:16  g v DEF  S Global_Par_typ                   
+    33:16  g v DEF  S Global_Rec_Cfg_typ               
+    17:16  g v DEF  S Global_Rec_typ                   
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/machineTYP.h
+
+    35:16  g v DEF  S AriesCreaserParams_typ           
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/generic_rec_cfgTYP.h
+
+    24:16  g v DEF  S Global_Cfg_typ                   
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/machineTYP.h
+
+    30:16  g v DEF  S CreaserConfig_typ                
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/generic_rec_cfgTYP.h
+
+    10:16  g v DEF  S HMIConfig_typ                    
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/wbrMemSvc.h
+
+    37:16  g v DEF  S wbrMemService_typ                
+    28:16  g v DEF  S wbrMemSvcStatus_typ              
+    33:16  g v DEF  S wbrMemSvcStoredConfig_typ        
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/jgLibC.h
+
+    33:16  g v DEF  S cfgCompileVersionInfo_typ        
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/generic_rec_cfgTYP.h
+
+    60:16  g v DEF  S Global_Rec_Cfg_IO_typ            
+    55:16  g v DEF  S Global_Rec_Cfg_Info_typ          
+    49:16  g v DEF  S Global_RecCfg_Public_Out_typ     
+    38:16  g v DEF  S Global_RecCfg_Public_In_typ      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/globalvariablesVAR.h
+
+    28:38  g v DEF  S gRecCfg                          
+    34:1   l v DEF  S __asm__                          
+    37:1   l v DEF  S __asm__                          
+    38:1   l v DEF  S __asm__                          
+    42:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/libraries/wbrservices/wbrservicesTYP.h
+
+    33:1   l v DEF  S __asm__                          
+    36:1   l v DEF  S __asm__                          
+    40:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/wbrPingSvc.h
+
+    37:16  g v DEF  S wbrPingService_typ               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/AsICMP.h
+
+    40:16  g v DEF  S IcmpPing                         
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/standard.h
+
+   118:16  g v DEF  S TON                              
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/libraries/wbrservices/wbrservicesglobalVAR.h
+
+    16:35  g v DEF  S genericPing                      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/wbrLogSvc.h
+
+    44:16  g v DEF  S wbrLogService_typ                
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/wbrListSvc.h
+
+    49:16  g v DEF  S linkedList_typ                   
+    43:16  g v DEF  S listNode_typ                     
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/wbrLogSvc.h
+
+    34:16  g v DEF  S wbrLogServiceTextLog_typ         
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/wbrListSvc.h
+
+    72:16  g v DEF  S wbrListSvcStringList_typ         
+    65:16  g v DEF  S wbrListSvcStringListInput_typ    
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/libraries/wbrservices/wbrservicesglobalVAR.h
+
+    17:34  g v DEF  S logService                       
+    18:34  g v DEF  S memService                       
+    24:1   l v DEF  S __asm__                          
+    27:1   l v DEF  S __asm__                          
+    31:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/libraries/wbrservices/timerservices/timerservicesTYP.h
+
+    40:1   l v DEF  S __asm__                          
+    43:1   l v DEF  S __asm__                          
+    47:1   l v DEF  S __asm__                          
+    15:16  g v DEF  S msTimer_typ                      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/libraries/wbrservices/timerservices/timerservicesVAR.h
+
+    16:28  g v DEF  S msTimer                          
+    22:1   l v DEF  S __asm__                          
+    25:1   l v DEF  S __asm__                          
+    29:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/usb_mount_typesTYP.h
+
+    60:1   l v DEF  S __asm__                          
+    63:1   l v DEF  S __asm__                          
+    67:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpAlarm.h
+
+   117:16  g v DEF  S MpAlarmBasicUI                   
+    56:16  g v DEF  S MpAlarmBasicUISetupType          
+    87:16  g v DEF  S MpAlarmInfoType                  
+    83:16  g v DEF  S MpAlarmDiagType                  
+    77:16  g v DEF  S MpAlarmStatusIDType              
+    91:16  g v DEF  S MpAlarmBasicUIInternalType       
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    22:31  g v DEF  S Alarm_Data_UI                    
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpAlarm.h
+
+    65:16  g v DEF  S MpAlarmBasicUIConnect20Type      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    23:44  g v DEF  S Alarm_Data                       
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpCom.h
+
+   168:16  g v DEF  S MpComLoggerUIConnectType         
+   152:16  g v DEF  S MpComLoggerUILoggerListType      
+   147:16  g v DEF  S MpComLoggerUIDateTimeType        
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    24:41  g v DEF  S Com_Logger_UIConnect             
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpCom.h
+
+   204:16  g v DEF  S MpComLoggerUI                    
+   142:16  g v DEF  S MpComLoggerUISetupType           
+   175:16  g v DEF  S MpComLoggerUIInfoType            
+   116:16  g v DEF  S MpComDiagType                    
+   109:16  g v DEF  S MpComStatusIDType                
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    25:30  g v DEF  S Com_Logger_UI                    
+    26:31  g v DEF  S Alarm_File_UI                    
+    27:44  g v DEF  S Alarm_File                       
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpFile.h
+
+   194:16  g v DEF  S MpFileManagerUIConnectType       
+   147:16  g v DEF  S MpFileManagerUIDeviceListType    
+   168:16  g v DEF  S MpFileManagerUIFileType          
+   152:16  g v DEF  S MpFileManagerUIFileListType      
+   119:16  g v DEF  S MpFileManagerUIItemType          
+   162:16  g v DEF  S MpFileManagerUIPathInfoType      
+   186:16  g v DEF  S MpFileManagerUIMessageBoxType    
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    28:43  g v DEF  S File_Manager_UIConnect           
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpFile.h
+
+   206:16  g v DEF  S MpFileManagerUI                  
+   142:16  g v DEF  S MpFileManagerUISetupType         
+   138:16  g v DEF  S MpFileInfoType                   
+   134:16  g v DEF  S MpFileDiagType                   
+   128:16  g v DEF  S MpFileStatusIDType               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    29:32  g v DEF  S File_Manager_Control             
+    30:31  g v DEF  S Alarm_Config_UI                  
+    31:44  g v DEF  S Alarm_Config                     
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpRecipe.h
+
+   191:16  g v DEF  S MpRecipeUIConnectType            
+   177:16  g v DEF  S MpRecipeUIRecipeType             
+   156:16  g v DEF  S MpRecipeUIRecipeListType         
+   170:16  g v DEF  S MpRecipeUIHeaderType             
+   151:16  g v DEF  S MpRecipeUINewType                
+   144:16  g v DEF  S MpRecipeUIMessageBoxType         
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    32:38  g v DEF  S gConfig_CSV_UIConnect            
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpRecipe.h
+
+   296:16  g v DEF  S MpRecipeUI                       
+   137:16  g v DEF  S MpRecipeUISetupType              
+   129:16  g v DEF  S MpRecipeUISetupConfirmType       
+   125:16  g v DEF  S MpRecipeInfoType                 
+   121:16  g v DEF  S MpRecipeDiagType                 
+   115:16  g v DEF  S MpRecipeStatusIDType             
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    33:27  g v DEF  S Config_CSV_UI                    
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpRecipe.h
+
+   249:16  g v DEF  S MpRecipeRegPar                   
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    34:31  g v DEF  S Config_CSV_RegPar                
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpRecipe.h
+
+   213:16  g v DEF  S MpRecipeCsvHeaderType            
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    35:38  g v DEF  S Config_CSV_Header                
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MpRecipe.h
+
+   315:16  g v DEF  S MpRecipeCsv                      
+   220:16  g v DEF  S MpRecipeCsvInfoType              
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    36:28  g v DEF  S Config_CSV_Control               
+    37:31  g v DEF  S Alarm_Recipe_UI                  
+    38:44  g v DEF  S Alarm_Recipe                     
+    39:38  g v DEF  S gRecipe_CSV_UIConnect            
+    40:27  g v DEF  S Recipe_CSV_UI                    
+    41:31  g v DEF  S Recipe_CSV_RegPar                
+    42:38  g v DEF  S Recipe_CSV_Header                
+    43:28  g v DEF  S Recipe_CSV_Control               
+    44:26  g v DEF  S gRecipeName                      
+    45:26  g v DEF  S gConfigName                      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/usb_mount_typesTYP.h
+
+    46:16  g v DEF  S USB_Object_typ                   
+    33:16  g v DEF  S USB_FBK_typ                      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/FileIO.h
+
+   607:16  g v DEF  S DevLink                          
+   623:16  g v DEF  S DevUnlink                        
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/usb_mount_typesTYP.h
+
+    38:16  g v DEF  S USB_Data_typ                     
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/AsUSB.h
+
+    80:16  g v DEF  S usbNode_typ                      
+    90:16  g v DEF  S usbDeviceDescr_typ               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
+
+    46:31  g v DEF  S USB_Object                       
+    47:33  g v DEF  S gUSB_Step                        
+    53:1   l v DEF  S __asm__                          
+    56:1   l v DEF  S __asm__                          
+    57:1   l v DEF  S __asm__                          
+    58:1   l v DEF  S __asm__                          
+    59:1   l v DEF  S __asm__                          
+    60:1   l v DEF  S __asm__                          
+    64:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/generic_controlsTYP.h
+
+    74:1   l v DEF  S __asm__                          
+    77:1   l v DEF  S __asm__                          
+    80:1   l v DEF  S __asm__                          
+    84:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmi_pagesTYP.h
+
+    52:1   l v DEF  S __asm__                          
+    55:1   l v DEF  S __asm__                          
+    59:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmidialogTYP.h
+
+    28:1   l v DEF  S __asm__                          
+    31:1   l v DEF  S __asm__                          
+    35:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmimsgscrollTYP.h
+
+    25:1   l v DEF  S __asm__                          
+    28:1   l v DEF  S __asm__                          
+    32:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiforceioTYP.h
+
+    29:1   l v DEF  S __asm__                          
+    32:1   l v DEF  S __asm__                          
+    35:1   l v DEF  S __asm__                          
+    39:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmialertTYP.h
+
+    25:1   l v DEF  S __asm__                          
+    28:1   l v DEF  S __asm__                          
+    32:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiTYP.h
+
+   113:1   l v DEF  S __asm__                          
+   116:1   l v DEF  S __asm__                          
+   119:1   l v DEF  S __asm__                          
+   123:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiremmemTYP.h
+
+    24:1   l v DEF  S __asm__                          
+    27:1   l v DEF  S __asm__                          
+    31:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiforceioTYP.h
+
+    17:16  g v DEF  S hmiForceIO_typ                   
+    10:16  g v DEF  S hmiForceIOItem_typ               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiVAR.h
+
+    18:31  g v DEF  S gHMIForceIO                      
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmimsgscrollTYP.h
+
+    10:16  g v DEF  S hmiMsgScrolling_typ              
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiVAR.h
+
+    19:36  g v DEF  S gHmiMsgScroll                    
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiTYP.h
+
+    98:16  g v DEF  S hmiControlLogic_typ              
+    41:16  g v DEF  S hmiControlLogicStatus_typ        
+    10:16  g v DEF  S hmiControlLogicKeys_typ          
+    17:16  g v DEF  S hmiNavigationLogic_typ           
+    62:16  g v DEF  S hmiRecipeLogic_typ               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmialertTYP.h
+
+    10:16  g v DEF  S hmiAlert_typ                     
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmidialogTYP.h
+
+    10:16  g v DEF  S hmiDialog_typ                    
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiTYP.h
+
+    93:16  g v DEF  S hmiTables_typ                    
+    84:16  g v DEF  S hmiTableTrigger_typ              
+    79:16  g v DEF  S hmiTableRecCfgTrigger_typ        
+    89:16  g v DEF  S hmiTableLoad_typ                 
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiVAR.h
+
+    20:36  g v DEF  S gHmi                             
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MAPPSuppor.h
+
+   176:16  g v DEF  S hmiParamListTable_typ            
+   165:16  g v DEF  S hmiParamLimits_typ               
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/hmi/hmiVAR.h
+
+    21:38  g v DEF  S gHmiParamTable                   
+    27:1   l v DEF  S __asm__                          
+    30:1   l v DEF  S __asm__                          
+    34:1   l v DEF  S __asm__                          
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/Libraries/MAPPSuppor/FBK_Init_Logbook.c
+
+    11:6   g v DEF  S FBK_Init_Logbook                 
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/MAPPSuppor.h
+
+   213:16  g v DEF  S FBK_Init_Logbook                 
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/wbrLogSvc.h
+
+    53:16  g v DEF  S wbrLogServiceLogbookInfo_typ     
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Temp/Includes/AsArLog.h
+
+   203:16  g v DEF  S AsArLogGetInfo                   
+
+FILE: C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/Libraries/MAPPSuppor/FBK_Init_Logbook.c
+
+    11:46  l v DEF  S p                                
+    15:6   l v RW   S p                                
+    15:7   g v R    M FBK_Init_Logbook.Enable          
+    17:2   l v RW   S p                                
+    17:3   g v W    M FBK_Init_Logbook.ii_init_calls   
+    19:2   g v RW   S wbrsnprintf                      
+    19:14  l v RW   S p                                
+    19:15  g v R    M FBK_Init_Logbook.Logbook         
+    19:24  g v RW   M wbrLogServiceLogbookInfo_typ.name 
+    19:38  l v RW   S p                                
+    19:39  g v RW   M FBK_Init_Logbook.Logbook         
+    19:48  g v RW   M wbrLogServiceLogbookInfo_typ.name 
+    19:56  l v RW   S p                                
+    19:57  g v RW   M FBK_Init_Logbook.Name            
+    22:3   g v RW   S getLogbookInfo                   
+    22:19  l v R    S p                                
+    22:20  g v RW   M FBK_Init_Logbook.Logbook         
+    23:3   l v RW   S p                                
+    23:4   g v W    M FBK_Init_Logbook.ii_init_calls   
+    24:10  l v RW   S p                                
+    24:11  g v R    M FBK_Init_Logbook.Logbook         
+    24:20  g v R    M wbrLogServiceLogbookInfo_typ.status 
+    24:41  l v RW   S p                                
+    24:42  g v R    M FBK_Init_Logbook.ii_init_calls   
+    26:5   l v RW   S p                                
+    26:6   g v R    M FBK_Init_Logbook.Logbook         
+    26:15  g v R    M wbrLogServiceLogbookInfo_typ.status 
+    27:3   l v RW   S p                                
+    27:4   g v W    M FBK_Init_Logbook.ii_init_calls   
+    29:4   g v RW   S createNewLogbook                 
+    29:22  l v R    S p                                
+    29:23  g v RW   M FBK_Init_Logbook.Logbook         
+    30:4   l v RW   S p                                
+    30:5   g v W    M FBK_Init_Logbook.ii_init_calls   
+    31:11  l v RW   S p                                
+    31:12  g v R    M FBK_Init_Logbook.Logbook         
+    31:21  g v R    M wbrLogServiceLogbookInfo_typ.status 
+    31:42  l v RW   S p                                
+    31:43  g v R    M FBK_Init_Logbook.ii_init_calls   
+    34:7   l v RW   S p                                
+    34:8   g v R    M FBK_Init_Logbook.Logbook         
+    34:17  g v R    M wbrLogServiceLogbookInfo_typ.status 
+    35:4   g v RW   S requestMessageToLog              
+    35:51  l v RW   S p                                
+    35:52  g v R    M FBK_Init_Logbook.Logbook         
+    35:61  g v R    M wbrLogServiceLogbookInfo_typ.ident 
+    38:4   g v RW   S requestMessageToLog              
+    38:110 l v RW   S p                                
+    38:111 g v R    M FBK_Init_Logbook.Logbook         
+    38:120 g v R    M wbrLogServiceLogbookInfo_typ.status 
+    43:2   l v RW   S p                                
+    43:3   g v W    M FBK_Init_Logbook.pLog            
+    43:12  l v RW   S p                                
+    43:13  g v R    M FBK_Init_Logbook.Logbook         
+    43:22  g v R    M wbrLogServiceLogbookInfo_typ.ident 

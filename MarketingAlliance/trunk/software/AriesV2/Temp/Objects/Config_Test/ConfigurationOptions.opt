@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
+<ConfigurationOptions
+  Name="Config_Test"
+  Target="SG4"
+  GccVersion="4.1.2"
+  SaveSourceOnTarget="false"
+  ActivateSdm="true"
+  WebServer="true"
+  ARMSimulation="False">
+  <ModuleMemoryData>
+    <Module
+      Name=""
+      Memory="19096" />
+  </ModuleMemoryData>
+  <Memories
+    PermanentAnalogMemory="0"
+    PermanentDigitalMemory="15000"
+    VolatileMemory="300000" />
+</ConfigurationOptions>
