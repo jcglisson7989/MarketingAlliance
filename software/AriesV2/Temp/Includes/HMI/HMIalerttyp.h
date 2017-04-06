@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1491508150_17_
-#define _BUR_1491508150_17_
+#ifndef _BUR_1491508286_17_
+#define _BUR_1491508286_17_
 
 #include <bur/plctypes.h>
 
@@ -32,5 +32,5 @@ __asm__(".ascii \"iecfile \\\"Logical/HMI/HMIalert.typ\\\" scope \\\"global\\\"\
 __asm__(".previous");
 
 
-#endif /* _BUR_1491508150_17_ */
+#endif /* _BUR_1491508286_17_ */
 
