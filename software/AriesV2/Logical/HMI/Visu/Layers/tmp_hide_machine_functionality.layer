@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="tmp_hide_machine_functionality">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="618418" Value="This functionality not available for the active configuration!"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="618418" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="618418" Value="0"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BackColor" Value="250"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_22]"/>
+      <Property Name="ForeColor" Value="51"/>
+      <Property Name="Height" Value="394"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="61"/>
+      <Property Name="Width" Value="799"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>

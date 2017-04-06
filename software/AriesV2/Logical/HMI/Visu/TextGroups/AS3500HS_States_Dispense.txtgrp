@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="AS3500HS_States_Dispense">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="1"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="617044" Value="Init"/>
+    <Text ID="617045" Value="Ready"/>
+    <Text ID="617046" Value="Dispensing"/>
+    <Text ID="617047" Value="Wait RST"/>
+    <Text ID="617048" Value="Disabled"/>
+    <Text ID="617049" Value="Error"/>
+    <Text ID="617050" Value="Wait Valve"/>
+    <Text ID="617051" Value="Wait Addl Shots"/>
+    <Text ID="617052" Value="Inactive"/>
+    <Text ID="617053" Value="Wait Offset..."/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="617044" Value=""/>
+    <Text ID="617045" Value=""/>
+    <Text ID="617046" Value=""/>
+    <Text ID="617047" Value=""/>
+    <Text ID="617048" Value=""/>
+    <Text ID="617049" Value=""/>
+    <Text ID="617050" Value=""/>
+    <Text ID="617051" Value=""/>
+    <Text ID="617052" Value=""/>
+    <Text ID="617053" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="617044" Value="0"/>
+    <Index ID="617045" Value="1"/>
+    <Index ID="617046" Value="2"/>
+    <Index ID="617047" Value="3"/>
+    <Index ID="617048" Value="5"/>
+    <Index ID="617049" Value="6"/>
+    <Index ID="617050" Value="7"/>
+    <Index ID="617051" Value="8"/>
+    <Index ID="617052" Value="4"/>
+    <Index ID="617053" Value="9"/>
+  </IndexMap>
+</TextGroup>
