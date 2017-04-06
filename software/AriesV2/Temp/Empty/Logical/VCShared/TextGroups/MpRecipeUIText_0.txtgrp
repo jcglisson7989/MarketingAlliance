@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeUIText_0">
+  <Property Name="Description" Value="General page text for RecipeUI" />
+  <Property Name="Index" Value="1024" />
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="DirName">
+      <Property Name="Alignment" Value="Left" />
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.CurrentDir]" />
+      <Property Name="Description" Value="" />
+      <Property Name="FillCharacter" Value="" />
+      <Property Name="MaxChars" Value="None" />
+      <Property Name="MinChars" Value="None" />
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="DevName">
+      <Property Name="Alignment" Value="Left" />
+      <Property Name="Datapoint" Value="None" />
+      <Property Name="Description" Value="" />
+      <Property Name="FillCharacter" Value="" />
+      <Property Name="MaxChars" Value="None" />
+      <Property Name="MinChars" Value="None" />
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FileCount">
+      <Property Name="AddFractionDigits" Value="0" />
+      <Property Name="Alignment" Value="Right" />
+      <Property Name="Content" Value="Value Unittext" />
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FileCount]" />
+      <Property Name="Description" Value="" />
+      <Property Name="FillCharacter" Value="" />
+      <Property Name="MaxChars" Value="None" />
+      <Property Name="MinChars" Value="None" />
+      <Property Name="MinIntegerDigits" Value="1" />
+      <Property Name="UnitText" Value="Abbreviation" />
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FolderCount">
+      <Property Name="AddFractionDigits" Value="0" />
+      <Property Name="Alignment" Value="Right" />
+      <Property Name="Content" Value="Value Unittext" />
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FolderCount]" />
+      <Property Name="Description" Value="" />
+      <Property Name="FillCharacter" Value="" />
+      <Property Name="MaxChars" Value="None" />
+      <Property Name="MinChars" Value="None" />
+      <Property Name="MinIntegerDigits" Value="1" />
+      <Property Name="UnitText" Value="Abbreviation" />
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="496184" Value="Load" />
+    <Text ID="496185" Value="Save" />
+    <Text ID="496186" Value="Copy" />
+    <Text ID="496187" Value="Create" />
+    <Text ID="496188" Value="Refresh" />
+    <Text ID="496189" Value="No" />
+    <Text ID="496190" Value="Search keyword" />
+    <Text ID="496191" Value="Sort" />
+    <Text ID="496192" Value="Status" />
+    <Text ID="496193" Value="Recipe select" />
+    <Text ID="496194" Value="MpRecipeUI" />
+    <Text ID="496195" Value="Create new file" />
+    <Text ID="496196" Value="Name" />
+    <Text ID="496197" Value="Date" />
+    <Text ID="496198" Value="Size" />
+    <Text ID="496199" Value="Delete" />
+    <Text ID="496200" Value="Rename" />
+    <Text ID="496201" Value="" />
+    <Text ID="496202" Value="" />
+    <Text ID="496203" Value="" />
+    <Text ID="496204" Value="Rename selected file" />
+  </TextLayer>
+  <IndexMap>
+    <Index ID="496184" Value="0" />
+    <Index ID="496185" Value="1" />
+    <Index ID="496186" Value="2" />
+    <Index ID="496187" Value="3" />
+    <Index ID="496188" Value="4" />
+    <Index ID="496189" Value="11" />
+    <Index ID="496190" Value="12" />
+    <Index ID="496191" Value="16" />
+    <Index ID="496192" Value="17" />
+    <Index ID="496193" Value="18" />
+    <Index ID="496194" Value="10" />
+    <Index ID="496195" Value="19" />
+    <Index ID="496196" Value="20" />
+    <Index ID="496197" Value="21" />
+    <Index ID="496198" Value="22" />
+    <Index ID="496199" Value="5" />
+    <Index ID="496200" Value="6" />
+    <Index ID="496201" Value="7" />
+    <Index ID="496202" Value="8" />
+    <Index ID="496203" Value="9" />
+    <Index ID="496204" Value="23" />
+  </IndexMap>
+</TextGroup>

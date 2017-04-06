@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<Crossref Scope="HMI.ForceIO" AppMod="">
+	<Vars>
+		<Var Name="ForceIO1.pToggle" Scope="Local" Type="REFERENCE TO BOOL">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="23" C="4" PS="Ln:23, Col:4" A="A"/>
+				<Pos L="27" C="4" PS="Ln:27, Col:4" A="W"/>
+				<Pos L="37" C="5" PS="Ln:37, Col:5" A="A"/>
+				<Pos L="47" C="8" PS="Ln:47, Col:8" A="R"/>
+				<Pos L="48" C="6" PS="Ln:48, Col:6" A="W"/>
+			</File>
+		</Var>
+		<Var Name="ForceIO1.pSet" Scope="Local" Type="REFERENCE TO BOOL">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="21" C="4" PS="Ln:21, Col:4" A="A"/>
+				<Pos L="25" C="4" PS="Ln:25, Col:4" A="W"/>
+				<Pos L="35" C="5" PS="Ln:35, Col:5" A="A"/>
+				<Pos L="39" C="8" PS="Ln:39, Col:8" A="R"/>
+			</File>
+		</Var>
+		<Var Name="ForceIO1.pReset" Scope="Local" Type="REFERENCE TO BOOL">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="22" C="4" PS="Ln:22, Col:4" A="A"/>
+				<Pos L="26" C="4" PS="Ln:26, Col:4" A="W"/>
+				<Pos L="36" C="5" PS="Ln:36, Col:5" A="A"/>
+				<Pos L="43" C="8" PS="Ln:43, Col:8" A="R"/>
+			</File>
+		</Var>
+		<Var Name="ForceIO1.pForceIOPt" Scope="Local" Type="REFERENCE TO BOOL">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="20" C="4" PS="Ln:20, Col:4" A="A"/>
+				<Pos L="34" C="5" PS="Ln:34, Col:5" A="A"/>
+				<Pos L="40" C="6" PS="Ln:40, Col:6" A="W"/>
+				<Pos L="44" C="6" PS="Ln:44, Col:6" A="W"/>
+				<Pos L="49" C="6" PS="Ln:49, Col:6" A="W"/>
+				<Pos L="49" C="24" PS="Ln:49, Col:24" A="R"/>
+			</File>
+		</Var>
+		<Var Name="ForceIO1.ii_force" Scope="Local" Type="UDINT">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="19" C="7" PS="Ln:19, Col:7" A="W"/>
+				<Pos L="20" C="45" PS="Ln:20, Col:45" A="R"/>
+				<Pos L="21" C="43" PS="Ln:21, Col:43" A="R"/>
+				<Pos L="22" C="45" PS="Ln:22, Col:45" A="R"/>
+				<Pos L="23" C="46" PS="Ln:23, Col:46" A="R"/>
+				<Pos L="32" C="7" PS="Ln:32, Col:7" A="W"/>
+				<Pos L="33" C="30" PS="Ln:33, Col:30" A="R"/>
+				<Pos L="34" C="46" PS="Ln:34, Col:46" A="R"/>
+				<Pos L="35" C="44" PS="Ln:35, Col:44" A="R"/>
+				<Pos L="36" C="46" PS="Ln:36, Col:46" A="R"/>
+				<Pos L="37" C="47" PS="Ln:37, Col:47" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oCreaserCCWRotation" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="4" C="43" PS="Ln:4, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oCreaserCWRotation" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="5" C="43" PS="Ln:5, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oBoardFeedingLight" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="6" C="43" PS="Ln:6, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oUIIndicatorLight" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="7" C="43" PS="Ln:7, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iSafeMachineState" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="9" C="43" PS="Ln:9, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iCreaserShaftSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="10" C="43" PS="Ln:10, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iFiberOpticSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="11" C="43" PS="Ln:11, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iSM1Disabled" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="12" C="43" PS="Ln:12, Col:43" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gHMIForceIO.forceItems.pAddrIO" Scope="Global" Type="hmiForceIO_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="4" C="2" PS="Ln:4, Col:2" A="W"/>
+				<Pos L="5" C="2" PS="Ln:5, Col:2" A="W"/>
+				<Pos L="6" C="2" PS="Ln:6, Col:2" A="W"/>
+				<Pos L="7" C="2" PS="Ln:7, Col:2" A="W"/>
+				<Pos L="9" C="2" PS="Ln:9, Col:2" A="W"/>
+				<Pos L="10" C="2" PS="Ln:10, Col:2" A="W"/>
+				<Pos L="11" C="2" PS="Ln:11, Col:2" A="W"/>
+				<Pos L="12" C="2" PS="Ln:12, Col:2" A="W"/>
+				<Pos L="20" C="22" PS="Ln:20, Col:22" A="RW"/>
+				<Pos L="33" C="7" PS="Ln:33, Col:7" A="R"/>
+				<Pos L="34" C="23" PS="Ln:34, Col:23" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="gHMIForceIO.forceEnable" Scope="Global" Type="hmiForceIO_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="16" C="5" PS="Ln:16, Col:5" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gHMIForceIO.forceItemsVisibility" Scope="Global" Type="hmiForceIO_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="17" C="3" PS="Ln:17, Col:3" A="W"/>
+				<Pos L="30" C="3" PS="Ln:30, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gHMIForceIO.forceItems.set" Scope="Global" Type="hmiForceIO_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="21" C="20" PS="Ln:21, Col:20" A="RW"/>
+				<Pos L="35" C="21" PS="Ln:35, Col:21" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="gHMIForceIO.forceItems.reset" Scope="Global" Type="hmiForceIO_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="22" C="22" PS="Ln:22, Col:22" A="RW"/>
+				<Pos L="36" C="23" PS="Ln:36, Col:23" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="gHMIForceIO.forceItems.toggle" Scope="Global" Type="hmiForceIO_typ">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="23" C="23" PS="Ln:23, Col:23" A="RW"/>
+				<Pos L="37" C="24" PS="Ln:37, Col:24" A="RW"/>
+			</File>
+		</Var>
+	</Vars>
+	<Consts>
+		<Const Name="HMI_ENUM_FORCEIO_LASTINDEX" Scope="Global" Type="USINT">
+			<File Name="C:/Users/admin/Desktop/MarketingAlliance_040417/software/AriesV2/Logical/HMI/ForceIO/Main.st">
+				<Pos L="19" C="24" PS="Ln:19, Col:24" A="R"/>
+				<Pos L="32" C="24" PS="Ln:32, Col:24" A="R"/>
+			</File>
+		</Const>
+	</Consts>
+	<Enums>
+	</Enums>
+	<Funcs>
+	</Funcs>
+	<Actions>
+	</Actions>
+</Crossref>
