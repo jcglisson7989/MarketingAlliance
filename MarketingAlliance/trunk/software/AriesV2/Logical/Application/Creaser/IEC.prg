@@ -6,5 +6,8 @@
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
     <File Description="Manage the total runtime counter and its breakdown into HH:MM:SS">Action_Manage_Update_Total_Runtime.st</File>
+    <File>Action_Start_Feeder.st</File>
+    <File>Action_Transition_Feed_Vel_Additive.st</File>
+    <File>Action_Creaser_Idx.st</File>
   </Files>
 </Program>
