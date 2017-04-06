@@ -1,162 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.7.54 SP"?>
 <Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Pg53_Diag_3_FileExplorer">
-  <Property Name="BackColor" Value="0"/>
-  <Property Name="Description" Value=""/>
-  <Property Name="ForeColor" Value="93"/>
-  <Property Name="Height" Value="600"/>
-  <Property Name="Index" Value="53"/>
-  <Property Name="MoveFocus" Value="Circular"/>
-  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-  <Property Name="Width" Value="1024"/>
+  <Property Name="BackColor" Value="0" />
+  <Property Name="Description" Value="" />
+  <Property Name="ForeColor" Value="93" />
+  <Property Name="Height" Value="600" />
+  <Property Name="Index" Value="53" />
+  <Property Name="MoveFocus" Value="Circular" />
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]" />
+  <Property Name="Width" Value="1024" />
   <Layers>
     <LayerRef Source="Source[local].Layer[Background]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="Background"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="0"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="Background" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="0" />
     </LayerRef>
     <LayerRef Source="Source[local].Layer[Global_Overlay]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="Global_Overlay"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="1"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="Global_Overlay" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="1" />
     </LayerRef>
     <LayerRef Source="Source[local].Layer[Tabs_50_Diagnostics]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="Tabs_50_Diagnostics"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="2"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="Tabs_50_Diagnostics" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="2" />
     </LayerRef>
     <LayerRef Source="Source[local].Layer[MAPP_UI_File_Manager]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="MAPP_UI_File_Manager"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="3"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="MAPP_UI_File_Manager" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="3" />
     </LayerRef>
     <LayerRef Source="Source[local].Layer[MAPP_UI_File_Message]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="MAPP_UI_File_Message"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Hidden"/>
-      <Property Name="Z-Order" Value="4"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="MAPP_UI_File_Message" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Hidden" />
+      <Property Name="Z-Order" Value="4" />
     </LayerRef>
     <Layer Name="Default">
-      <Property Name="BackColor" Value="9"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Height" Value="600"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="StatusDatapoint" Value="None"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Width" Value="1024"/>
-      <Property Name="Z-Order" Value="5"/>
+      <Property Name="BackColor" Value="9" />
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Height" Value="600" />
+      <Property Name="Left" Value="0" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="StatusDatapoint" Value="None" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Width" Value="1024" />
+      <Property Name="Z-Order" Value="5" />
       <TextGroup>
-        <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="de"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en" />
+        <TextLayer LanguageId="de" />
+        <IndexMap />
       </TextGroup>
-      <Controls/>
-      <KeyMapping/>
+      <Controls />
+      <KeyMapping />
     </Layer>
     <LayerRef Source="Source[local].Layer[Navigation_Left]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="Navigation_Left"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Hidden"/>
-      <Property Name="Z-Order" Value="6"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="Navigation_Left" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Hidden" />
+      <Property Name="Z-Order" Value="6" />
     </LayerRef>
     <LayerRef Source="Source[local].Layer[MSG_Dialog]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="MSG_Dialog"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Hidden"/>
-      <Property Name="Z-Order" Value="7"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="MSG_Dialog" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Hidden" />
+      <Property Name="Z-Order" Value="7" />
     </LayerRef>
     <LayerRef Source="Source[local].Layer[MSG_Alert]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="MSG_Alert"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Hidden"/>
-      <Property Name="Z-Order" Value="8"/>
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="MSG_Alert" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Hidden" />
+      <Property Name="Z-Order" Value="8" />
     </LayerRef>
   </Layers>
   <MovementOrder>
     <MovementEntry Control="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]">
-      <Property Name="Down" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]"/>
-      <Property Name="Left" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]"/>
-      <Property Name="Right" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]"/>
-      <Property Name="Up" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]"/>
+      <Property Name="Down" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]" />
+      <Property Name="Left" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]" />
+      <Property Name="Right" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]" />
+      <Property Name="Up" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]" />
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]">
-      <Property Name="Down" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]"/>
-      <Property Name="Left" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]"/>
-      <Property Name="Right" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]"/>
-      <Property Name="Up" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]"/>
+      <Property Name="Down" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]" />
+      <Property Name="Left" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]" />
+      <Property Name="Right" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]" />
+      <Property Name="Up" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]" />
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
-    <TabSeqItem Index="0" Value="Source[local].Layer[MSG_Dialog].Control[Numeric_1]"/>
-    <TabSeqItem Index="1" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]"/>
-    <TabSeqItem Index="2" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]"/>
-    <TabSeqItem Index="3" Value="Source[local].Layer[Global_Overlay].Control[Numeric_2]"/>
-    <TabSeqItem Index="4" Value="Source[local].Layer[Global_Overlay].Control[Numeric_3]"/>
+    <TabSeqItem Index="0" Value="Source[local].Layer[MSG_Dialog].Control[Numeric_1]" />
+    <TabSeqItem Index="1" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtSearchFilter]" />
+    <TabSeqItem Index="2" Value="Source[local].Layer[MAPP_UI_File_Manager].Control[txtNewName]" />
+    <TabSeqItem Index="3" Value="Source[local].Layer[Global_Overlay].Control[Numeric_2]" />
+    <TabSeqItem Index="4" Value="Source[local].Layer[Global_Overlay].Control[Numeric_3]" />
   </TabSequence>
 </Page>
