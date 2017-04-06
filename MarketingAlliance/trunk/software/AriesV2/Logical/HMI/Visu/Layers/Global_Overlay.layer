@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="Global_Overlay">
+  <Property Name="BackColor" Value="247"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="en"/>
+    <TextLayer LanguageId="de"/>
+    <IndexMap/>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="txtHeaderText1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="20"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="294"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[DateTimeHeader]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="460"/>
+      <Property Name="Width" Value="198"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_2">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="142"/>
+      <Property Name="EndY" Value="479"/>
+      <Property Name="StartX" Value="142"/>
+      <Property Name="StartY" Value="459"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_3">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="493"/>
+      <Property Name="EndY" Value="479"/>
+      <Property Name="StartX" Value="493"/>
+      <Property Name="StartY" Value="459"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="18"/>
+      <Property Name="Left" Value="493"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="192.168.100.100"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[Internal.Connection.IPAddress]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="462"/>
+      <Property Name="Width" Value="146"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_4">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="643"/>
+      <Property Name="EndY" Value="479"/>
+      <Property Name="StartX" Value="643"/>
+      <Property Name="StartY" Value="459"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_5">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="294"/>
+      <Property Name="EndY" Value="479"/>
+      <Property Name="StartX" Value="294"/>
+      <Property Name="StartY" Value="459"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+      <Property Name="ForeColor" Value="1"/>
+      <Property Name="Height" Value="20"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.prv.loginLevel]"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="Current User"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[LoginLevels]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="460"/>
+      <Property Name="Width" Value="93"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="20"/>
+      <Property Name="Left" Value="147"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="Current Rec."/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.gRecipeName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="460"/>
+      <Property Name="Width" Value="148"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="Numeric_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_8]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="22"/>
+      <Property Name="Left" Value="93"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.loginVisibleGE1]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="458"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.prv.tmr3RemainingTimeMin]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="23"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="Numeric_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_8]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="22"/>
+      <Property Name="Left" Value="120"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.loginVisibleGE1]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="458"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.prv.tmr3RemainingTimeSec]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="23"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_6">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="750"/>
+      <Property Name="EndY" Value="480"/>
+      <Property Name="StartX" Value="750"/>
+      <Property Name="StartY" Value="459"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="18"/>
+      <Property Name="Left" Value="749"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="R123"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.Rev_Number]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="462"/>
+      <Property Name="Width" Value="51"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_7">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="18"/>
+      <Property Name="Left" Value="642"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="AS5215"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gMachineName]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="462"/>
+      <Property Name="Width" Value="109"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_22">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_11]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="44"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MachineState]"/>
+      <Property Name="Left" Value="227"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[AriesMachineSMTexts]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="4"/>
+      <Property Name="Width" Value="361"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_7">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="799"/>
+      <Property Name="EndY" Value="459"/>
+      <Property Name="StartX" Value="0"/>
+      <Property Name="StartY" Value="459"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_23">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_11]"/>
+      <Property Name="ForeColor" Value="249"/>
+      <Property Name="Height" Value="30"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.ProcessState]"/>
+      <Property Name="Left" Value="167"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[AriesPrcsSMTexts]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="85"/>
+      <Property Name="Width" Value="244"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>

@@ -1,0 +1,3314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.7.54 SP"?>
+<?xml-stylesheet type="text/xsl" href="SG4_Import_ToDo_Generator.xsl"?>
+<ImportLog>
+  <Header>
+    <Property Name="ImportDate" Value="4/6/2017 12:57 PM"/>
+    <Property Name="SourceVisualization" Value="C:\Users\admin\Desktop\MarketingAlliance_tmp_vc_import\software\AriesV2\Logical\HMI\VisuW1"/>
+    <Property Name="TargetVisualization" Value="C:\Users\admin\Desktop\MarketingAlliance_040417\software\AriesV2\Logical\HMI\Visu"/>
+  </Header>
+  <Resources>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].BitmapGroups[MpPads]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_lowerPressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_lower]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numeric2Pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numeric2]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numericPressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numeric]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_upperPressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_upper]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_lowerPressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_lower]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numeric2Pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numeric2]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numericPressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numeric]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_upperPressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_upper]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadHor]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadHor_pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadVer]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadVer_pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_Numpad]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[MpKey_Numpad_pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].BitmapGroups[Pads]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_AlphaPad_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_AlphaPad_pressed_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_EditPad]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_EditPad_pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadHor]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadHor_pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadVer]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadVer_pressed]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPadLimits_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPadLimits_pressed_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_Large_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_pressed_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_pressed_Large_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_alertmsg_border]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_border_nav_listviewbox_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_dialog_check]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_dialog_x]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_down_1_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_down_2_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_pvlistview_box]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_up_1_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[HAS_up_2_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_AlphaPad_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_AlphaPad_pressed_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_EditPad]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_EditPad_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadHor]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadHor_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadVer]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_ListPadVer_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPadLimits_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPadLimits_pressed_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_Large_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_pressed_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Key_NumPad_pressed_Large_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpAlarm_AcknowledgeReset]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpAlarm_NotQuit]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpAlarm_Quit]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpAlarm_ResetAcknowledge]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpBorderSlider09x09]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_control]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_control_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_decrease]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_decrease_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_default]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_default_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_device_selected_left]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_device_unselected_left]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_error]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_global_area]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_global_area_bottom1]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_global_area_bottom]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_global_area_left]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_global_area_pres_bottom]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_global_area_press_left]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_global_area_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_increase]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_increase_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_off]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_on]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_radio_selected]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_radio_unselected]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_ready]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_down]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_down_multi]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_down_multi_press]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_down_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_left]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_left_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_right]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_right_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_up]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_up_multi]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_up_multi_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpButton_scroll_up_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpCheckbox_small]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpCheckbox_small_checked]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpCheckbox_small_gray]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpComLoggerAlarm]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpComLoggerInformation]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpComLoggerWarning]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_ArrowLeft]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_ArrowRight]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_ArrowUp]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_BMP]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_CSV]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_DOC]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_FILE]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_FOLDER]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_HTML]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_JPG]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_TXT]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_XLS]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFile_XML]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFrameHeader]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpFrameInvisible]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpGroupControl]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpInputBorderCenterless]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpInputBorderInactiveCenterless]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpInputBorderInactive]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpInputBorder]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_lowerPressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_lower]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numeric2Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numeric2]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numericPressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_numeric]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_upperPressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_AlphaPad_upper]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_lowerPressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_lower]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numeric2Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numeric2]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numericPressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_numeric]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_upperPressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_EditPad_upper]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadHor]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadHor_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadVer]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_ListPadVer_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_Numpad]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpKey_Numpad_pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpLabelBorderDown]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpLabelBorderLeft]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpLabelBorder]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpMpFile_ArrowDown]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpOutputBorder]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[MpProgressBorder]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_BLK_114x220]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_BLU_114x220]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_GRN_114x221]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_RED_114x221]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[checkbox_small]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[checkbox_small_checked]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[logoMarketingAllianceInc]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[nav_Diagnostics_64x64_Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[nav_Engineer_64x64_Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[nav_Gears_64x64_Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[nav_Home_64x64_Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[nav_Recipe_64x64_Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[nav_Security_64x64_Pressed]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Borders[Mp_Flat_grey]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Borders[Sunken]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[Failure_Colors]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[HAS_Blue_Light_CMP]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[HAS_Green_Light_CMP]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[HAS_Red_Light_CMP]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[Header_Tab_Sel_Txt]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[IO_InputStatus]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[IO_OutputStatus]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[LoaderStatus]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[MAPP_BOOL]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[MAPP_Read_Valid]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[MSG_Alert_Text]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[Motion_Button]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[NAMMO_Home_Prcs_cmp]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[NAMMO_Purge_cmp]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[NAMMO_safety_io]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[PartnotRemoved]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[Sensor_0_White_1_Grn]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[Sensor_0_White_1_Red]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[StopResLow]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[cmp_AUTOSEALER_PieChart]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[cmp_AUTOSEALER_Prcs_Colors]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].ColorMaps[cmp_AUTOSEALER_States]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[DefaultFont]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[Info]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpButton]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpDefault]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpDefault_0]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpDefault_3]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpHtml_SDM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpInfo]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpInput]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[MpPads]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_10]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_11]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_12]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_13]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_15]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_17]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_18]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_22]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_26]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_6]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_7]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_8]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_9]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Palette[Palette]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Text Snippet.DateTime.default]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Text Snippet.IndexText.default]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[AS3500HS_States_Dispense]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[AUTOSEALER_States_MasterSM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[AppLabels]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Text Snippet.IndexText.default]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].TextGroups[LoginLevels]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].DataSources[DataSource]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[AriesMachineSMTexts]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[AriesPrcsSMTexts]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[DateTimeHeader]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Text Snippet.DateTime.default]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].TextGroups[DateTimeFormats]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[LoginLevels]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_AUTOTUNE_MODE]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_AUTOTUNE_ORIENTATION]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_FF_MODE_ENUM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_HOME_DIR_ENUM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_HOME_MODE]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_HOME_OPTION_ENUM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_Limit_Status]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_MOVE_DIRECTION]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_Power_On_Status]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_Read_Mode]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_STOP_PHASE]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MM_Left_Titles]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MpButtons_PageTexts]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[Tabs_20_Recipe]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[Tabs_30_Config]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[Tabs_40_Login]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[Tabs_50_Diagnostics]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[Tabs_90_Auxiliary]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[WebURLs]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TouchPads[MpAlphaPad]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].BitmapGroups[MpPads]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Fonts[MpPads]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_1]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_2]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_3]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_4]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_5]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_6]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_7]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_8]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_9]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_A]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Apostrophy1]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Apostrophy]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Asterisk]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_At_sign]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_B]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_BckSlsh]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Bigger]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_C]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Care]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Closebrace]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Closebracket]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Closeparen]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Colon]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Comma]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_DOT]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_D]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Dollar]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_E]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Equal]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Euro]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Exclamation]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_F]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_G]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_H]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Hash]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_I]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_J]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_K]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_L]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_M]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_N]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_O]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Openbrace]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Openbracket]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Openparen]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_P]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Percent]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Plus]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Pound]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Q]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Quest]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_R]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_S]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Semicolon]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Slash]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Small]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Space]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_T]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Tilde]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_U]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Underscore]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_VBar]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_V]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_W]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_X]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Y]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Yen]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Z]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sa]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sb]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sc]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sd]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_se]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sf]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sg]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sh]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_si]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sj]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sk]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sl]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sm]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sn]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_so]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sp]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sq]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sr]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_ss]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_st]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_su]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sv]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sw]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sx]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sy]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sz]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_Alpha_And]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_BACKSPACE]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_CANCEL]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_Cur_Left]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_Cur_Right]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ENTER]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_INCR_LAYER1]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER1]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER2]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER3]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TouchPads[MpNavigationPad_ver]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].BitmapGroups[MpPads]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent1]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent2]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent3]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent4]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TouchPads[MpNumPad]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].BitmapGroups[MpPads]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Borders[Mp_Flat_grey]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Fonts[MpInfo]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Fonts[MpPads]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_1]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_2]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_3]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_4]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_5]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_6]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_7]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_8]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_9]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_DOT]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_BACKSPACE]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_CANCEL]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ENTER]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_SIGN_CHANGE]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TouchPads[NumPad]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].BitmapGroups[Pads]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Borders[Sunken]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Fonts[Info]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_1]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_2]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_3]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_4]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_5]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_6]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_7]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_8]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_9]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_DOT]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_BACKSPACE]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_CANCEL]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_ENTER]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[TP_SIGN_CHANGE]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_1]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_2]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_3]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_4]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_5]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_6]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_7]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_8]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_9]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_A]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Apostrophy1]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Apostrophy]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Asterisk]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_At_sign]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_B]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_BckSlsh]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Bigger]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_C]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Care]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Closebrace]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Closebracket]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Closeparen]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Colon]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Comma]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_DOT]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_D]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Dollar]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_E]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Equal]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Euro]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Exclamation]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_F]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_G]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_H]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Hash]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_I]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_J]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_K]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_L]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_M]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_N]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_O]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Openbrace]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Openbracket]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Openparen]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_P]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Percent]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Plus]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Pound]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Q]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Quest]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_R]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_S]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Semicolon]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Slash]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Small]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Space]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_T]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Tilde]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_U]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Underscore]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_VBar]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_V]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_W]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_X]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Y]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Yen]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_Z]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sa]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sb]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sc]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sd]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_se]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sf]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sg]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sh]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_si]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sj]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sk]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sl]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sm]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sn]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_so]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sp]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sq]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sr]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_ss]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_st]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_su]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sv]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sw]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sx]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sy]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ALPHA_sz]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_Alpha_And]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_BACKSPACE]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_CANCEL]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_Cur_Left]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_Cur_Right]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_ENTER]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent1]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent2]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent3]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_FocusDependent4]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_INCR_LAYER1]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER1]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER2]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_SET_LAYER3]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[TP_SIGN_CHANGE]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[VCShared].DataSources[DataSource]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[VCShared].Languages[English]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[VCShared].TextGroups[DateTimeFormats]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+  </Resources>
+</ImportLog>
