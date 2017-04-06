@@ -218,17 +218,17 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_11]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="44"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.gState]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MachineState]"/>
       <Property Name="Left" Value="227"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-      <Property Name="TextGroup" Value="Source[local].TextGroup[AUTOSEALER_States_MasterSM]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[AriesMachineSMTexts]"/>
       <Property Name="TextIndexOffset" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="4"/>
-      <Property Name="Width" Value="244"/>
+      <Property Name="Width" Value="361"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_7">
       <Property Name="ControlID" Value="0"/>
@@ -238,6 +238,26 @@
       <Property Name="StartX" Value="0"/>
       <Property Name="StartY" Value="459"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_23">
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_11]"/>
+      <Property Name="ForeColor" Value="249"/>
+      <Property Name="Height" Value="30"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.ProcessState]"/>
+      <Property Name="Left" Value="167"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[AriesPrcsSMTexts]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="85"/>
+      <Property Name="Width" Value="244"/>
     </Control>
   </Controls>
   <KeyMapping/>

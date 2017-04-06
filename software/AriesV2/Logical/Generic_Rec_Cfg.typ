@@ -13,11 +13,13 @@ END_TYPE
 TYPE
 	Global_Rec_typ : 	STRUCT 
 		MagicPrefix : UDINT;
+		FeedVelocity : REAL;
 		Crease : AriesCreaserParams_typ;
 		MagicSuffix : UDINT;
 	END_STRUCT;
 	Global_Cfg_typ : 	STRUCT 
 		MagicPrefix : UDINT;
+		Creaser : CreaserConfig_typ;
 		HMI : HMIConfig_typ;
 		wbrMemService : wbrMemService_typ;
 		cfgCompile : cfgCompileVersionInfo_typ;

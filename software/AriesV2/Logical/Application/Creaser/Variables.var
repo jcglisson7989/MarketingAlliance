@@ -1,3 +1,11 @@
 VAR
+	Timer_Creaser_Idx_Edge : TON;
 	Timer_Total_Runtime : TON;
+	tmp_bool : BOOL;
+	setFlagTravelEdgeOffset : BOOL;
+	setFlagCreaserIdxFinished : BOOL;
+	setflagCreaserIndexCommand : BOOL;
+	setStartCommandFlag : BOOL;
+	setFlagCreaserIndexed : BOOL;
+	setFlagCreaserWaitEdge : BOOL;
 END_VAR

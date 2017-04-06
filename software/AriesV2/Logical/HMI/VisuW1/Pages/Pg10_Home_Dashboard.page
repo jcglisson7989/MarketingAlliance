@@ -83,6 +83,7 @@
           <Text ID="617542" Value="OUT"/>
           <Text ID="617543" Value="IN"/>
           <Text ID="617861" Value="Processed:"/>
+          <Text ID="618665" Value="Process State:"/>
         </TextLayer>
         <IndexMap>
           <Index ID="615954" Value="35"/>
@@ -116,6 +117,7 @@
           <Index ID="617542" Value="18"/>
           <Index ID="617543" Value="19"/>
           <Index ID="617861" Value="20"/>
+          <Index ID="618665" Value="21"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -1063,6 +1065,24 @@
           <Property Name="Top" Value="63"/>
           <Property Name="Width" Value="85"/>
         </Control>
+        <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="AlignmentHorizontal" Value="Right"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="31"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="21"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="85"/>
+          <Property Name="Width" Value="122"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_53_8">
@@ -1348,7 +1368,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Application.Master.ControlLogic.CMD_Reset_Statistics]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gStatistics.Reset]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

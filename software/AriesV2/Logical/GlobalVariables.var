@@ -13,10 +13,12 @@ END_VAR
 VAR
 	Axis : ACP10AXIS_typ;
 	AxisControl : MpAxisBasic;
+	AxisPar : MpAxisBasicParType;
 END_VAR
 (*Insert your comment here.*)
 VAR
 	MachineState : AriesMachineState_Enum;
+	ProcessState : CreaserPrcsState_Enum;
 END_VAR
 (*Insert your comment here.*)
 VAR
