@@ -17,7 +17,7 @@
     <Opc EncryptOpcs="false" UseShortNames="false" WindowsServer="true" />
     <TaskClasses DefaultIoTaskClass="Automatic" DefaultTaskClass="Cyclic4" />
     <Transfer AllowWarmRestart="true" DownloadMode="Overload" GeneratePviTransferList="true" IgnoreBrDependencies="false" IgnoreTargetOnlyObjects="false" PackedArConfig="false" PackedIoMap="false" PromptBeforeProject="true" PromptBeforeTask="false" TransferInServiceMode="false" TransferOnlyRelevantChanges="false" />
-    <Vc FirmwareVersion="V4.26.3" />
+    <Vc FirmwareVersion="not used" />
     <Io ArConfigDataModule="false" ArConfigDataModulePath="$(AS_CPU_PATH)\AS\CfgData.br" DisabledHardware="false" IoMapDataModule="false" IoMapDataModulePath="$(AS_CPU_PATH)\AS\IomData.br" ManualIoOffsets="false" Supervision="true" />
     <Simulation StartAR000="true" TerminateAR000="true" />
     <Safety SafetyRelease="1.5" />

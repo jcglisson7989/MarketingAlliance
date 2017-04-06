@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1491508150_6_
-#define _BUR_1491508150_6_
+#ifndef _BUR_1491508286_6_
+#define _BUR_1491508286_6_
 
 #include <bur/plctypes.h>
 
@@ -40,5 +40,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/wbrServices/wbrServices.typ\\\" 
 __asm__(".previous");
 
 
-#endif /* _BUR_1491508150_6_ */
+#endif /* _BUR_1491508286_6_ */
 

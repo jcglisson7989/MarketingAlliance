@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1491508150_4_
-#define _BUR_1491508150_4_
+#ifndef _BUR_1491508286_4_
+#define _BUR_1491508286_4_
 
 #include <bur/plctypes.h>
 
@@ -42,5 +42,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/MpAxis/MpAxis.fun\\\" scope \\\"
 __asm__(".previous");
 
 
-#endif /* _BUR_1491508150_4_ */
+#endif /* _BUR_1491508286_4_ */
 
