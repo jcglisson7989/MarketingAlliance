@@ -3,8 +3,8 @@ PROGRAM _INIT
 	AxisControl.MpLink := ADR(FeedAxis_MpLink);
 	AxisControl.Enable := TRUE;
 	AxisControl.Parameters := ADR(AxisPar);
-	AxisControl.Axis := ADR(Axis);
-	AxisControl();
+	AxisControl.Axis := ADR(Axis1);
+	AxisControl;
 
 	MachineState := MACHINE_STATE_INIT;
 	
@@ -99,8 +99,8 @@ PROGRAM _CYCLIC
 	
 
 	
-	
-	AxisControl();
+	Axis1;
+	AxisControl;
 	
 	
 	

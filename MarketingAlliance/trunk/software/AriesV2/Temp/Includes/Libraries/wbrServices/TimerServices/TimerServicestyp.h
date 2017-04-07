@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1491508286_8_
-#define _BUR_1491508286_8_
+#ifndef _BUR_1491590275_7_
+#define _BUR_1491590275_7_
 
 #include <bur/plctypes.h>
 
@@ -47,5 +47,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/wbrServices/TimerServices/TimerS
 __asm__(".previous");
 
 
-#endif /* _BUR_1491508286_8_ */
+#endif /* _BUR_1491590275_7_ */
 

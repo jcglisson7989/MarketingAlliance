@@ -33,7 +33,9 @@
     <Object Type="Library" Language="ANSIC" Description="library (written/managed by J. Glisson) containing functions for ACPu err acknowledgement, HMI param table construction, HMI param table activation to the common layer">MAPPSuppor</Object>
     <Object Type="Package" Description="Service libraries">wbrServices</Object>
     <Object Type="Library" Language="Binary" Description="This library contains FBKs for pinging a station.">AsICMP</Object>
+    <Object Type="Library" Language="Binary" Description="This mechatronics library contains basic control function blocks.">MTBasics</Object>
     <Object Type="Library" Language="Binary" Description="MpCom Library">MpCom</Object>
+    <Object Type="Library" Language="Binary" Description="Single and multi axes control">MpAxis</Object>
     <Object Type="Library" Language="Binary" Description="Web access">MpWebXs</Object>
     <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
     <Object Type="Library" Language="Binary" Description="Basic alarm management">MpAlarm</Object>
@@ -42,7 +44,5 @@
     <Object Type="Library" Language="Binary" Description="ACOPOS Parameters">Acp10par</Object>
     <Object Type="Library" Language="Binary" Description="Global NC functions">NcGlobal</Object>
     <Object Type="Library" Language="Binary" Description="PLCopen Motion Control function blocks">Acp10_MC</Object>
-    <Object Type="Library" Language="Binary" Description="This mechatronics library contains basic control function blocks.">MTBasics</Object>
-    <Object Type="Library" Language="Binary" Description="Single and multi axes control">MpAxis</Object>
   </Objects>
 </Package>

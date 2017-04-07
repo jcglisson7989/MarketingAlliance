@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1491508286_15_
-#define _BUR_1491508286_15_
+#ifndef _BUR_1491590275_14_
+#define _BUR_1491590275_14_
 
 #include <bur/plctypes.h>
 
@@ -32,5 +32,5 @@ __asm__(".ascii \"iecfile \\\"Logical/HMI/HMImsgScroll.typ\\\" scope \\\"global\
 __asm__(".previous");
 
 
-#endif /* _BUR_1491508286_15_ */
+#endif /* _BUR_1491590275_14_ */
 

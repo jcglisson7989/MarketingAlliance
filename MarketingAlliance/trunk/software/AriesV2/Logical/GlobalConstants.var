@@ -12,3 +12,38 @@ END_VAR
 VAR CONSTANT
 	MAX_IDX_CREASES : UDINT := 9;
 END_VAR
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+VAR RETAIN
+	gRecCfg : Global_Par_typ;
+END_VAR
+VAR
+	gAlarms : Machine_Alarms_typ;
+	gMachineName : {REDUND_UNREPLICABLE} STRING[80] := 'AS3500HS';
+	gProjectDate : {REDUND_UNREPLICABLE} STRING[80] := '7. March 2017';
+	gVersion : {REDUND_UNREPLICABLE} STRING[80] := 'TBD';
+END_VAR
+(*Insert your comment here.*)
+VAR
+	Axis1 : ACP10AXIS_typ;
+	AxisControl : MpAxisBasic;
+	AxisPar : MpAxisBasicParType;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	MachineState : AriesMachineState_Enum;
+	ProcessState : CreaserPrcsState_Enum;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	IO : AriesIOPoints_typ;
+	IO_LastCycle : AriesIOPoints_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR RETAIN
+	gStatistics : Global_Statistics_typ;
+END_VAR
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+(*Insert your comment here.*)

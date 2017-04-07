@@ -8,5 +8,5 @@ ACTION Action_Start_Feeder:
 	AxisControl.MoveAbsolute := FALSE;
 	AxisControl.MoveAdditive := FALSE;
 	AxisControl.Stop := FALSE;
-	AxisControl();
+	AxisControl;
 END_ACTION
