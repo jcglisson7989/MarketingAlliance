@@ -1,0 +1,334 @@
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/wbrListSvc.h
+
+    49:16  g v DEF  S linkedList_typ                   
+    43:16  g v DEF  S listNode_typ                     
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Logical/Libraries/wbrServices/wbrLogSvc/wbrLogSvc.c
+
+    14:19  g v DEF  S logList                          
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/wbrLogSvc.h
+
+    44:16  g v DEF  S wbrLogService_typ                
+    34:16  g v DEF  S wbrLogServiceTextLog_typ         
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/wbrListSvc.h
+
+    72:16  g v DEF  S wbrListSvcStringList_typ         
+    65:16  g v DEF  S wbrListSvcStringListInput_typ    
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Logical/Libraries/wbrServices/wbrLogSvc/wbrLogSvc.c
+
+    16:19  g v DEF  S lsvc                             
+    54:16  g v DEF  S getLogList                       
+    56:11  g v R    S logList                          
+    62:9   g v DEF  S getLogServiceData                
+    65:3   g v RW   S lsvc                             
+    65:7   g v W    M wbrLogService_typ.list           
+    65:13  g v W    M linkedList_typ.*                 
+    65:16  g v RW   S logList                          
+    67:18  g v R    S lsvc                             
+    77:9   g v DEF  S setLogServiceDataAddress         
+    79:31  l v DEF  S p                                
+    82:3   g v W    S lsvc                             
+    82:9   l v R    S p                                
+    84:18  g v R    S lsvc                             
+    96:9   g v DEF  S initLogService                   
+    98:3   g v W    S logList                          
+    98:31  g v RW   S listSvcRequestList               
+    99:3   g v RW   S lsvc                             
+    99:7   g v W    M wbrLogService_typ.log            
+    99:12  g v W    M wbrLogServiceTextLog_typ.str     
+    99:16  g v W    M wbrListSvcStringList_typ.list    
+    99:42  g v RW   S listSvcRequestList               
+   108:9   g v DEF  S wbrLogServicePrintMessageToTextLog 
+   110:3   g v RW   S wbrsnprintf                      
+   110:23  g v RW   S listSvcRequestListNode           
+   110:46  g v RW   S lsvc                             
+   110:50  g v R    M wbrLogService_typ.log            
+   110:55  g v R    M wbrLogServiceTextLog_typ.str     
+   110:59  g v R    M wbrListSvcStringList_typ.list    
+   113:15  g v RW   S lsvc                             
+   113:19  g v RW   M wbrLogService_typ.message        
+   116:11  g v RW   S listSvcCharListToStringArray     
+   117:17  g v RW   S lsvc                             
+   117:21  g v R    M wbrLogService_typ.log            
+   117:26  g v R    M wbrLogServiceTextLog_typ.str     
+   117:30  g v R    M wbrListSvcStringList_typ.list    
+   118:18  g v RW   S lsvc                             
+   118:22  g v R    M wbrLogService_typ.log            
+   118:27  g v R    M wbrLogServiceTextLog_typ.view    
+   121:17  g v RW   S lsvc                             
+   121:21  g v R    M wbrLogService_typ.log            
+   121:26  g v R    M wbrLogServiceTextLog_typ.str     
+   121:30  g v R    M wbrListSvcStringList_typ.i       
+   121:32  g v R    M wbrListSvcStringListInput_typ.offset 
+   122:17  g v RW   S lsvc                             
+   122:21  g v R    M wbrLogService_typ.log            
+   122:26  g v R    M wbrLogServiceTextLog_typ.str     
+   122:30  g v R    M wbrListSvcStringList_typ.i       
+   122:32  g v R    M wbrListSvcStringListInput_typ.pageOffset 
+   133:9   g v DEF  S getLogbookInfo                   
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/wbrLogSvc.h
+
+    53:16  g v DEF  S wbrLogServiceLogbookInfo_typ     
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/AsArLog.h
+
+   203:16  g v DEF  S AsArLogGetInfo                   
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Logical/Libraries/wbrServices/wbrLogSvc/wbrLogSvc.c
+
+   135:40  l v DEF  S logInfo                          
+   139:28  s v DEF  S fb                               
+   160:3   s v W    S fb                               
+   160:5   g v W    M AsArLogGetInfo.enable            
+   161:3   s v W    S fb                               
+   161:5   g v W    M AsArLogGetInfo.pName             
+   161:21  l v RW   S logInfo                          
+   161:28  g v RW   M wbrLogServiceLogbookInfo_typ.name 
+   163:3   g v RW   S AsArLogGetInfo                   
+   163:19  s v RW   S fb                               
+   166:7   s v R    S fb                               
+   166:9   g v R    M AsArLogGetInfo.status            
+   168:5   l v RW   S logInfo                          
+   168:12  g v W    M wbrLogServiceLogbookInfo_typ.ident 
+   168:25  s v R    S fb                               
+   168:27  g v R    M AsArLogGetInfo.ident             
+   169:5   l v RW   S logInfo                          
+   169:12  g v W    M wbrLogServiceLogbookInfo_typ.length 
+   169:25  s v R    S fb                               
+   169:27  g v R    M AsArLogGetInfo.len               
+   170:5   l v RW   S logInfo                          
+   170:12  g v W    M wbrLogServiceLogbookInfo_typ.memType 
+   170:25  s v R    S fb                               
+   170:27  g v R    M AsArLogGetInfo.memType           
+   171:5   l v RW   S logInfo                          
+   171:12  g v W    M wbrLogServiceLogbookInfo_typ.index 
+   171:25  s v R    S fb                               
+   171:27  g v R    M AsArLogGetInfo.actualIndex       
+   172:5   l v RW   S logInfo                          
+   172:12  g v W    M wbrLogServiceLogbookInfo_typ.formatVer 
+   172:25  s v R    S fb                               
+   172:27  g v R    M AsArLogGetInfo.FormatVer         
+   175:3   s v W    S fb                               
+   175:5   g v W    M AsArLogGetInfo.enable            
+   177:11  l v RW   S logInfo                          
+   177:18  g v W    M wbrLogServiceLogbookInfo_typ.status 
+   177:31  s v R    S fb                               
+   177:33  g v R    M AsArLogGetInfo.status            
+   185:9   g v DEF  S createNewLogbook                 
+   187:42  l v DEF  S logInfo                          
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/AsArLog.h
+
+   117:16  g v DEF  S AsArLogCreate                    
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Logical/Libraries/wbrServices/wbrLogSvc/wbrLogSvc.c
+
+   191:27  s v DEF  S fb                               
+   194:3   s v W    S fb                               
+   194:5   g v W    M AsArLogCreate.enable             
+   195:3   s v W    S fb                               
+   195:5   g v W    M AsArLogCreate.pName              
+   195:21  l v RW   S logInfo                          
+   195:28  g v RW   M wbrLogServiceLogbookInfo_typ.name 
+   196:3   s v W    S fb                               
+   196:5   g v W    M AsArLogCreate.len                
+   196:15  l v RW   S logInfo                          
+   196:22  g v R    M wbrLogServiceLogbookInfo_typ.length 
+   197:3   s v W    S fb                               
+   197:5   g v W    M AsArLogCreate.memType            
+   197:15  l v RW   S logInfo                          
+   197:22  g v W    M wbrLogServiceLogbookInfo_typ.memType 
+   199:3   g v RW   S AsArLogCreate                    
+   199:18  s v RW   S fb                               
+   201:7   s v R    S fb                               
+   201:9   g v R    M AsArLogCreate.status             
+   203:5   l v RW   S logInfo                          
+   203:12  g v W    M wbrLogServiceLogbookInfo_typ.ident 
+   203:25  s v R    S fb                               
+   203:27  g v R    M AsArLogCreate.ident              
+   204:5   l v RW   S logInfo                          
+   204:12  g v W    M wbrLogServiceLogbookInfo_typ.status 
+   204:25  s v R    S fb                               
+   204:27  g v R    M AsArLogCreate.status             
+   208:3   s v W    S fb                               
+   208:5   g v W    M AsArLogCreate.enable             
+   210:11  l v RW   S logInfo                          
+   210:18  g v W    M wbrLogServiceLogbookInfo_typ.status 
+   210:31  s v R    S fb                               
+   210:33  g v R    M AsArLogCreate.status             
+   218:9   g v DEF  S requestMessageToLog              
+   220:19  l v DEF  S msgAdr                           
+   221:19  l v DEF  S logIdent                         
+   222:19  l v DEF  S logMsgType                       
+   223:19  l v DEF  S erNum                            
+   224:19  l v DEF  S data                             
+   225:19  l v DEF  S dataLen                          
+   230:6   l v R    S logIdent                         
+   230:19  g v R    S logList                          
+   230:31  l v R    S msgAdr                           
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/wbrLogSvc.h
+
+    39:16  g v DEF  S wbrLogServiceLogListNode_typ     
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Temp/Includes/AsArLog.h
+
+   148:16  g v DEF  S AsArLogWrite                     
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_040717/AriesV2/Logical/Libraries/wbrServices/wbrLogSvc/wbrLogSvc.c
+
+   234:31  l v DEF  S node                             
+   234:31  l v W    S node                             
+   234:73  g v RW   S listSvcRequestListNode           
+   234:96  g v R    S logList                          
+   235:19  l v DEF  S fb                               
+   235:19  l v W    S fb                               
+   235:28  l v R    S node                             
+   235:32  g v RW   M wbrLogServiceLogListNode_typ.fb  
+   238:3   l v RW   S fb                               
+   238:5   g v W    M AsArLogWrite.enable              
+   240:6   l v R    S logMsgType                       
+   242:5   l v RW   S fb                               
+   242:7   g v W    M AsArLogWrite.ident               
+   242:23  l v R    S logIdent                         
+   243:5   l v RW   S fb                               
+   243:7   g v W    M AsArLogWrite.logLevel            
+   243:23  l v R    S logMsgType                       
+   244:5   l v RW   S fb                               
+   244:7   g v W    M AsArLogWrite.errornr             
+   244:23  l v R    S erNum                            
+   245:5   l v RW   S fb                               
+   245:7   g v W    M AsArLogWrite.mem                 
+   245:23  l v R    S data                             
+   246:5   l v RW   S fb                               
+   246:7   g v W    M AsArLogWrite.len                 
+   246:23  l v R    S dataLen                          
+   250:5   l v RW   S fb                               
+   250:7   g v W    M AsArLogWrite.ident               
+   251:5   l v RW   S fb                               
+   251:7   g v W    M AsArLogWrite.logLevel            
+   252:5   l v RW   S fb                               
+   252:7   g v W    M AsArLogWrite.errornr             
+   253:5   l v RW   S fb                               
+   253:7   g v W    M AsArLogWrite.mem                 
+   254:5   l v RW   S fb                               
+   254:7   g v W    M AsArLogWrite.len                 
+   257:3   g v RW   S wbrsnprintf                      
+   257:15  l v RW   S node                             
+   257:19  g v RW   M wbrLogServiceLogListNode_typ.inMsg 
+   257:39  l v R    S msgAdr                           
+   258:3   l v RW   S fb                               
+   258:5   g v W    M AsArLogWrite.asciiString         
+   258:29  l v RW   S node                             
+   258:33  g v RW   M wbrLogServiceLogListNode_typ.inMsg 
+   260:3   g v RW   S AsArLogWrite                     
+   260:16  l v R    S fb                               
+   264:6   l v RW   S fb                               
+   264:8   g v R    M AsArLogWrite.status              
+   266:5   g v RW   S lsvc                             
+   266:9   g v W    M wbrLogService_typ.busy           
+   267:13  l v RW   S fb                               
+   267:15  g v R    M AsArLogWrite.status              
+   270:6   l v RW   S fb                               
+   270:8   g v R    M AsArLogWrite.status              
+   272:5   g v RW   S wbrsnprintf                      
+   272:17  g v RW   S lsvc                             
+   272:21  g v RW   M wbrLogService_typ.message        
+   273:24  g v RW   S lsvc                             
+   273:28  g v RW   M wbrLogService_typ.message        
+   275:17  l v RW   S fb                               
+   275:19  g v R    M AsArLogWrite.status              
+   278:3   g v RW   S wbrsnprintf                      
+   278:15  g v RW   S lsvc                             
+   278:19  g v RW   M wbrLogService_typ.message        
+   279:22  g v RW   S lsvc                             
+   279:26  g v RW   M wbrLogService_typ.message        
+   283:3   g v RW   S lsvc                             
+   283:7   g v W    M wbrLogService_typ.busy           
+   283:16  g v RW   S logList                          
+   283:23  g v R    M linkedList_typ.numNodes          
+   285:3   g v RW   S getLogServiceData                
+   287:3   g v RW   S wbrLogServicePrintMessageToTextLog 
+   288:11  l v RW   S fb                               
+   288:13  g v R    M AsArLogWrite.status              
+   295:9   g v DEF  S requestInfoMsgToLogbookNoData    
+   297:19  l v DEF  S msgAdr                           
+   298:19  l v DEF  S logIdent                         
+   301:11  g v RW   S requestMessageToLog              
+   301:33  l v R    S msgAdr                           
+   302:33  l v R    S logIdent                         
+   327:9   g v DEF  S requestMessageToLogDefault       
+   329:19  l v DEF  S msgAdr                           
+   334:11  g v RW   S requestMessageToLog              
+   334:32  l v R    S msgAdr                           
+   342:7   g v DEF  S writeMessagesToLog               
+   344:9   l v DEF  S i                                
+   344:9   l v W    S i                                
+   344:12  g v RW   S logList                          
+   344:19  g v R    M linkedList_typ.numNodes          
+   344:44  g v RW   S logList                          
+   344:51  g v R    M linkedList_typ.numNodes          
+   346:30  l v DEF  S node                             
+   346:30  l v W    S node                             
+   346:71  g v RW   S listSvcGetHeadData               
+   346:90  g v R    S logList                          
+   347:19  l v DEF  S fb                               
+   347:19  l v W    S fb                               
+   347:28  l v R    S node                             
+   347:32  g v RW   M wbrLogServiceLogListNode_typ.fb  
+   350:6   g v RW   S logList                          
+   350:13  g v R    M linkedList_typ.numNodes          
+   350:26  g v RW   S lsvc                             
+   350:30  g v R    M wbrLogService_typ.maxNodesUsed   
+   350:47  g v RW   S lsvc                             
+   350:51  g v W    M wbrLogService_typ.maxNodesUsed   
+   350:67  g v RW   S logList                          
+   350:74  g v R    M linkedList_typ.numNodes          
+   352:7   l v R    S fb                               
+   354:5   g v RW   S lsvc                             
+   354:9   g v W    M wbrLogService_typ.busy           
+   355:5   g v RW   S wbrsnprintf                      
+   355:17  g v RW   S lsvc                             
+   355:21  g v RW   M wbrLogService_typ.message        
+   356:24  g v RW   S lsvc                             
+   356:28  g v RW   M wbrLogService_typ.message        
+   358:5   g v RW   S wbrLogServicePrintMessageToTextLog 
+   362:10  l v R    S i                                
+   362:15  l v W    S i                                
+   364:12  l v RW   S fb                               
+   364:14  g v R    M AsArLogWrite.status              
+   369:7   g v RW   S wbrsnprintf                      
+   369:19  g v RW   S lsvc                             
+   369:23  g v RW   M wbrLogService_typ.message        
+   370:26  g v RW   S lsvc                             
+   370:30  g v RW   M wbrLogService_typ.message        
+   372:19  l v RW   S fb                               
+   372:21  g v R    M AsArLogWrite.status              
+   373:7   g v RW   S wbrLogServicePrintMessageToTextLog 
+   377:7   g v RW   S listSvcDeleteCurrentNode         
+   377:32  g v R    S logList                          
+   379:12  l v W    S node                             
+   379:50  g v RW   S listSvcGetHeadData               
+   379:69  g v R    S logList                          
+   381:9   g v RW   S lsvc                             
+   381:13  g v W    M wbrLogService_typ.busy           
+   382:9   g v RW   S wbrsnprintf                      
+   382:21  g v RW   S lsvc                             
+   382:25  g v RW   M wbrLogService_typ.message        
+   383:28  g v RW   S lsvc                             
+   383:32  g v RW   M wbrLogService_typ.message        
+   385:9   g v RW   S wbrLogServicePrintMessageToTextLog 
+   386:9   g v RW   S getLogServiceData                
+   389:7   l v W    S fb                               
+   389:13  l v R    S node                             
+   389:17  g v RW   M wbrLogServiceLogListNode_typ.fb  
+   393:5   g v RW   S AsArLogWrite                     
+   393:18  l v R    S fb                               
+   396:3   g v RW   S getLogServiceData                
+   397:11  l v RW   S fb                               
+   397:13  g v R    M AsArLogWrite.status              

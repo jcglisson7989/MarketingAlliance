@@ -19,12 +19,12 @@ ACTION Action_Creaser_Idx:
 		
 		CASE gRecCfg.active.Rec.Crease.ShaftSensorEdge OF
 			0:
-				IF IO.iCreaserShaftSensor AND NOT IO_LastCycle.iCreaserShaftSensor THEN
+				IF IO.iCreaserShaftSensor AND NOT IO_LastCycle.iCreaserShaftSensor AND NOT setFlagTravelEdgeOffset THEN
 					setFlagTravelEdgeOffset := TRUE;
 					bgTimerStart(Timer_Creaser_Idx_Edge, Tms(gRecCfg.active.Rec.Crease.CreaserMotorIdxLag_S));
 				END_IF;
 			1:
-				IF NOT IO.iCreaserShaftSensor AND IO_LastCycle.iCreaserShaftSensor THEN
+				IF NOT IO.iCreaserShaftSensor AND IO_LastCycle.iCreaserShaftSensor AND NOT setFlagTravelEdgeOffset THEN
 					setFlagTravelEdgeOffset := TRUE;
 					bgTimerStart(Timer_Creaser_Idx_Edge, Tms(gRecCfg.active.Rec.Crease.CreaserMotorIdxLag_S));
 				END_IF;

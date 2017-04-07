@@ -41,6 +41,7 @@ extern "C"
 	#include <bglibasWBR.h>
 	#include <wbrFltUtil.h>
 	#include <AsICMP.h>
+	#include <MTBasics.h>
 	#include <MpCom.h>
 	#include <MpWebXs.h>
 	#include <MpRecipe.h>
@@ -48,7 +49,6 @@ extern "C"
 	#include <MpFile.h>
 	#include <Acp10par.h>
 	#include <NcGlobal.h>
-	#include <MTBasics.h>
 	#include <MAPPSuppor.h>
 	#include <wbrPingSvc.h>
 	#include <Acp10man.h>
@@ -62,7 +62,6 @@ extern "C"
 #include <globalconstantsVAR.h>
 #include <machineTYP.h>
 #include <generic_rec_cfgTYP.h>
-#include <globalvariablesVAR.h>
 #include <libraries/wbrservices/wbrservicesTYP.h>
 #include <libraries/wbrservices/wbrservicesglobalVAR.h>
 #include <libraries/wbrservices/timerservices/timerservicesTYP.h>
