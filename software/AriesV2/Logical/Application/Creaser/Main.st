@@ -16,6 +16,10 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	IF gStatistics.Reset THEN //Reset all statistics
+		brsmemset(ADR(gStatistics), 0, SIZEOF(Global_Statistics_typ)); //Kind of a weird way to do this- essentially just writes 0's to the entirety of the memory the structure occupies (thus "zeroing-out" the counters)
+	END_IF;
+	
 	//Set alarm values based on IO points->
 	gAlarms.SM1_Disabled := IO.iSM1Disabled; //SM1 supplies power to the IO from the 24VAC->24VDC power supply
 	gAlarms.Unsafe_Machine_State := NOT IO.iSafeMachineState; //DP reads whether the E-stop has been pressed

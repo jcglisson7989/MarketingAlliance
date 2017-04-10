@@ -3,11 +3,11 @@
 <Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Pg43_Login_4_Engineer">
   <Property Name="BackColor" Value="0"/>
   <Property Name="Description" Value=""/>
-  <Property Name="Height" Value="600"/>
+  <Property Name="Height" Value="800"/>
   <Property Name="Index" Value="43"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-  <Property Name="Width" Value="1024"/>
+  <Property Name="Width" Value="480"/>
   <Layers>
     <LayerRef Source="Source[local].Layer[Background]">
       <Property Name="Description" Value=""/>
@@ -65,7 +65,7 @@
       <Property Name="BackColor" Value="9"/>
       <Property Name="Description" Value=""/>
       <Property Name="EditingMode" Value="Normal"/>
-      <Property Name="Height" Value="600"/>
+      <Property Name="Height" Value="800"/>
       <Property Name="Left" Value="0"/>
       <Property Name="OutlineColor" Value="0"/>
       <Property Name="OutlineDisplayControl" Value="False"/>
@@ -74,7 +74,7 @@
       <Property Name="StatusDatapoint" Value="None"/>
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Width" Value="1024"/>
+      <Property Name="Width" Value="480"/>
       <Property Name="Z-Order" Value="4"/>
       <TextGroup>
         <TextLayer LanguageId="en">
@@ -94,16 +94,16 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-          <Property Name="Height" Value="38"/>
-          <Property Name="Left" Value="499"/>
+          <Property Name="Height" Value="51"/>
+          <Property Name="Left" Value="234"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="136"/>
-          <Property Name="Width" Value="252"/>
+          <Property Name="Top" Value="181"/>
+          <Property Name="Width" Value="118"/>
         </Control>
         <Control ClassId="0x0000100B" Name="String_2">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -111,17 +111,17 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
-          <Property Name="Height" Value="44"/>
+          <Property Name="Height" Value="59"/>
           <Property Name="InputMode" Value="Password"/>
           <Property Name="InputPasswordChar" Value="*"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="796"/>
+          <Property Name="Left" Value="373"/>
           <Property Name="MaxChars" Value="4"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="Top" Value="132"/>
+          <Property Name="Top" Value="176"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gRecCfg.active.Cfg.HMI.passwordEngineer]"/>
-          <Property Name="Width" Value="228"/>
+          <Property Name="Width" Value="107"/>
         </Control>
       </Controls>
       <KeyMapping/>
