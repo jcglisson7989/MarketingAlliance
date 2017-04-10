@@ -2,49 +2,19 @@
 <?AutomationStudio Version="4.2.7.54 SP"?>
 <EnvironmentSettings xmlns="http://br-automation.co.at/AS/VC/Project">
   <Visual_Components_Frames>
-    <Property Name="ActiveFrame" Value="8"/>
+    <Property Name="ActiveFrame" Value="15"/>
     <Property Name="SaveFrameLimit" Value="4"/>
     <Property Name="ShowCmd" Value="3"/>
     <Frame>
       <Property Name="ActiveView" Value="0"/>
       <Property Name="FrameMinPtX" Value="-1"/>
       <Property Name="FrameMinPtY" Value="-1"/>
-      <Property Name="ParentObjectName" Value="Pg10_Home_Dashboard"/>
+      <Property Name="ParentObjectName" Value="Pg53_Diag_3_FileExplorer"/>
       <Property Name="ParentObjectType" Value="Page"/>
       <Property Name="ShowCmd" Value="3"/>
-      <Property Name="WndPosBottom" Value="625"/>
-      <Property Name="WndPosLeft" Value="208"/>
-      <Property Name="WndPosRight" Value="1645"/>
-      <Property Name="WndPosTop" Value="208"/>
-      <Views>
-        <View>
-          <Property Name="ID" Value="32"/>
-          <Property Name="Scalecx" Value="4"/>
-          <Property Name="Scalecy" Value="4"/>
-          <Property Name="ScrollPositionX" Value="0"/>
-          <Property Name="ScrollPositionY" Value="0"/>
-        </View>
-        <View>
-          <Property Name="ID" Value="536870912"/>
-        </View>
-        <View>
-          <Property Name="ID" Value="16384"/>
-        </View>
-        <View>
-          <Property Name="ID" Value="262144"/>
-        </View>
-      </Views>
-    </Frame>
-    <Frame>
-      <Property Name="ActiveView" Value="0"/>
-      <Property Name="FrameMinPtX" Value="-1"/>
-      <Property Name="FrameMinPtY" Value="-1"/>
-      <Property Name="ParentObjectName" Value="Pg00_Startup"/>
-      <Property Name="ParentObjectType" Value="Page"/>
-      <Property Name="ShowCmd" Value="1"/>
       <Property Name="WndPosBottom" Value="599"/>
       <Property Name="WndPosLeft" Value="182"/>
-      <Property Name="WndPosRight" Value="750"/>
+      <Property Name="WndPosRight" Value="1032"/>
       <Property Name="WndPosTop" Value="182"/>
       <Views>
         <View>
@@ -69,13 +39,13 @@
       <Property Name="ActiveView" Value="0"/>
       <Property Name="FrameMinPtX" Value="-1"/>
       <Property Name="FrameMinPtY" Value="-1"/>
-      <Property Name="ParentObjectName" Value="PageEmpty"/>
+      <Property Name="ParentObjectName" Value="Pg51_Diagnostics_2_Alarm_History"/>
       <Property Name="ParentObjectType" Value="Page"/>
       <Property Name="ShowCmd" Value="1"/>
-      <Property Name="WndPosBottom" Value="573"/>
-      <Property Name="WndPosLeft" Value="156"/>
-      <Property Name="WndPosRight" Value="724"/>
-      <Property Name="WndPosTop" Value="156"/>
+      <Property Name="WndPosBottom" Value="547"/>
+      <Property Name="WndPosLeft" Value="130"/>
+      <Property Name="WndPosRight" Value="980"/>
+      <Property Name="WndPosTop" Value="130"/>
       <Views>
         <View>
           <Property Name="ID" Value="32"/>
@@ -99,13 +69,43 @@
       <Property Name="ActiveView" Value="0"/>
       <Property Name="FrameMinPtX" Value="-1"/>
       <Property Name="FrameMinPtY" Value="-1"/>
-      <Property Name="ParentObjectName" Value="AriesPrcsSMTexts"/>
+      <Property Name="ParentObjectName" Value="Pg50_Diagnostics_1_Alarms"/>
+      <Property Name="ParentObjectType" Value="Page"/>
+      <Property Name="ShowCmd" Value="1"/>
+      <Property Name="WndPosBottom" Value="521"/>
+      <Property Name="WndPosLeft" Value="104"/>
+      <Property Name="WndPosRight" Value="954"/>
+      <Property Name="WndPosTop" Value="104"/>
+      <Views>
+        <View>
+          <Property Name="ID" Value="32"/>
+          <Property Name="Scalecx" Value="4"/>
+          <Property Name="Scalecy" Value="4"/>
+          <Property Name="ScrollPositionX" Value="0"/>
+          <Property Name="ScrollPositionY" Value="0"/>
+        </View>
+        <View>
+          <Property Name="ID" Value="536870912"/>
+        </View>
+        <View>
+          <Property Name="ID" Value="16384"/>
+        </View>
+        <View>
+          <Property Name="ID" Value="262144"/>
+        </View>
+      </Views>
+    </Frame>
+    <Frame>
+      <Property Name="ActiveView" Value="0"/>
+      <Property Name="FrameMinPtX" Value="-1"/>
+      <Property Name="FrameMinPtY" Value="-1"/>
+      <Property Name="ParentObjectName" Value="Tabs_50_Diagnostics"/>
       <Property Name="ParentObjectType" Value="TextGroup"/>
       <Property Name="ShowCmd" Value="1"/>
-      <Property Name="WndPosBottom" Value="547"/>
-      <Property Name="WndPosLeft" Value="130"/>
-      <Property Name="WndPosRight" Value="922"/>
-      <Property Name="WndPosTop" Value="130"/>
+      <Property Name="WndPosBottom" Value="495"/>
+      <Property Name="WndPosLeft" Value="78"/>
+      <Property Name="WndPosRight" Value="928"/>
+      <Property Name="WndPosTop" Value="78"/>
       <Views>
         <View>
           <Property Name="ID" Value="512"/>
