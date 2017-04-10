@@ -1,5 +1,12 @@
 
 ACTION Action_Creaser_Idx: 
+	
+		//Temp. Sim. code->
+	Timer_Sim_CreaserIdx.PT := T#500ms;
+	Timer_Sim_CreaserIdx.IN := setFlagCreaserWaitEdge;
+	Timer_Sim_CreaserIdx();
+	IO.iCreaserShaftSensor := Timer_Sim_CreaserIdx.Q;
+	
 	setFlagCreaserIdxFinished := FALSE;
 	
 	IF setflagCreaserIndexCommand THEN
@@ -15,6 +22,8 @@ ACTION Action_Creaser_Idx:
 			setFlagTravelEdgeOffset := FALSE;
 			setFlagCreaserWaitEdge := FALSE;
 			setFlagCreaserIdxFinished := TRUE;
+			
+			gStatistics.total_creases := gStatistics.total_creases + 1;
 		END_IF;
 		
 		CASE gRecCfg.active.Rec.Crease.ShaftSensorEdge OF
@@ -33,6 +42,8 @@ ACTION Action_Creaser_Idx:
 		IO.oCreaserCCWRotation := FALSE;
 		IO.oCreaserCWRotation  := FALSE;
 	END_IF;
+	
+
 	
 	bgTimerCyclic(Timer_Creaser_Idx_Edge);
 	

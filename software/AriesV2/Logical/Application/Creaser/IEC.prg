@@ -11,5 +11,8 @@
     <File>Action_Creaser_Idx.st</File>
     <File>Action_AxisControl_Mgmt.st</File>
     <File>Action_Move_Crease_Width.st</File>
+    <File>Action_Tally_Board_L.st</File>
+    <File Private="true">LocalFunctions.fun</File>
+    <File>PulseTrain.st</File>
   </Files>
 </Program>

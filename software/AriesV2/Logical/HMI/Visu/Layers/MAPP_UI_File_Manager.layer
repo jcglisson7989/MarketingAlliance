@@ -57,11 +57,11 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_132]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="83"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="403"/>
+      <Property Name="Left" Value="417"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -72,9 +72,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="667"/>
+      <Property Name="Top" Value="647"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_132]"/>
-      <Property Name="Width" Value="66"/>
+      <Property Name="Width" Value="60"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdPaste">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -83,11 +83,11 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_147]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="83"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="336"/>
+      <Property Name="Left" Value="355"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -98,9 +98,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="667"/>
+      <Property Name="Top" Value="647"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_147]"/>
-      <Property Name="Width" Value="66"/>
+      <Property Name="Width" Value="60"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdCopy">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -109,11 +109,11 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_159]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="83"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="202"/>
+      <Property Name="Left" Value="231"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -124,9 +124,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="667"/>
+      <Property Name="Top" Value="647"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_159]"/>
-      <Property Name="Width" Value="66"/>
+      <Property Name="Width" Value="60"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdLineUp">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -137,7 +137,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_160]"/>
       <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="450"/>
+      <Property Name="Left" Value="433"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Scoll_Up_pressed]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -145,9 +145,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="None"/>
-      <Property Name="Top" Value="371"/>
+      <Property Name="Top" Value="356"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_160]"/>
-      <Property Name="Width" Value="24"/>
+      <Property Name="Width" Value="44"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdRefresh">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -157,9 +157,9 @@
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_161]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_8]"/>
-      <Property Name="Height" Value="107"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="342"/>
+      <Property Name="Left" Value="313"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -169,9 +169,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="173"/>
+      <Property Name="Top" Value="223"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[FileRefreshBtn]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="80"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdLineDown">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -182,7 +182,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_162]"/>
       <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="450"/>
+      <Property Name="Left" Value="433"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Scroll_Down_pressed]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -190,9 +190,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="None"/>
-      <Property Name="Top" Value="440"/>
+      <Property Name="Top" Value="425"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_162]"/>
-      <Property Name="Width" Value="24"/>
+      <Property Name="Width" Value="44"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdEnterDir">
       <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
@@ -206,7 +206,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_163]"/>
       <Property Name="Height" Value="56"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="101"/>
+      <Property Name="Left" Value="127"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -215,7 +215,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="None"/>
-      <Property Name="Top" Value="229"/>
+      <Property Name="Top" Value="232"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[EnterDirBtn]"/>
       <Property Name="Width" Value="36"/>
     </Control>
@@ -233,7 +233,7 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
       <Property Name="Height" Value="56"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="65"/>
+      <Property Name="Left" Value="91"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -243,7 +243,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="None"/>
-      <Property Name="Top" Value="229"/>
+      <Property Name="Top" Value="232"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[FolderExitBtn]"/>
       <Property Name="Width" Value="36"/>
     </Control>
@@ -254,11 +254,11 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_169]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="83"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="269"/>
+      <Property Name="Left" Value="293"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -269,9 +269,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="667"/>
+      <Property Name="Top" Value="647"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_169]"/>
-      <Property Name="Width" Value="66"/>
+      <Property Name="Width" Value="60"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_0">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -284,10 +284,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_172]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="65"/>
+      <Property Name="Left" Value="100"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -300,9 +300,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="291"/>
+      <Property Name="Top" Value="290"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_172]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_1">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -315,10 +315,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_173]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="65"/>
+      <Property Name="Left" Value="100"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -331,9 +331,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="363"/>
+      <Property Name="Top" Value="342"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_173]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_2">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -346,10 +346,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_174]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="65"/>
+      <Property Name="Left" Value="100"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -362,9 +362,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="437"/>
+      <Property Name="Top" Value="394"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_174]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_3">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -377,10 +377,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_175]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="65"/>
+      <Property Name="Left" Value="100"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -393,9 +393,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="509"/>
+      <Property Name="Top" Value="446"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_175]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_4">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -408,10 +408,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_176]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="246"/>
+      <Property Name="Left" Value="253"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -424,9 +424,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="291"/>
+      <Property Name="Top" Value="290"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_176]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001004" Name="txtCurrentDirInfo">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -435,16 +435,16 @@
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
       <Property Name="ForeColor" Value="16"/>
-      <Property Name="Height" Value="64"/>
-      <Property Name="Left" Value="235"/>
+      <Property Name="Height" Value="58"/>
+      <Property Name="Left" Value="230"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
       <Property Name="TextGroup" Value="Source[global].TextGroup[MpFileManagerUIText]"/>
       <Property Name="TextIndexOffset" Value="9"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="593"/>
-      <Property Name="Width" Value="240"/>
+      <Property Name="Top" Value="587"/>
+      <Property Name="Width" Value="250"/>
     </Control>
     <Control ClassId="0x0000100B" Name="txtSearchFilter">
       <Property Name="Border" Value="Source[local].Border[Mp_InputBorder]"/>
@@ -455,10 +455,10 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
       <Property Name="Height" Value="51"/>
       <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpAlphaPad]"/>
-      <Property Name="Left" Value="66"/>
+      <Property Name="Left" Value="92"/>
       <Property Name="SimulationValue" Value="Mp"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-      <Property Name="Top" Value="176"/>
+      <Property Name="Top" Value="179"/>
       <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.Filter]"/>
       <Property Name="Width" Value="212"/>
     </Control>
@@ -469,11 +469,11 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_177]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="83"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="135"/>
+      <Property Name="Left" Value="169"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -485,9 +485,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="667"/>
+      <Property Name="Top" Value="647"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_177]"/>
-      <Property Name="Width" Value="66"/>
+      <Property Name="Width" Value="60"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdRename">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -496,11 +496,11 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_178]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="83"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="67"/>
+      <Property Name="Left" Value="107"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -512,9 +512,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="667"/>
+      <Property Name="Top" Value="647"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_178]"/>
-      <Property Name="Width" Value="66"/>
+      <Property Name="Width" Value="60"/>
     </Control>
     <Control ClassId="0x0000100B" Name="txtNewName">
       <Property Name="Border" Value="Source[local].Border[Panel_BLU]"/>
@@ -523,13 +523,13 @@
       <Property Name="Font" Value="Source[local].Font[rockwell_11]"/>
       <Property Name="Height" Value="64"/>
       <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpAlphaPad]"/>
-      <Property Name="Left" Value="65"/>
+      <Property Name="Left" Value="100"/>
       <Property Name="MaxChars" Value="60"/>
       <Property Name="SimulationValue" Value="Folder / File"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-      <Property Name="Top" Value="593"/>
+      <Property Name="Top" Value="518"/>
       <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.NewName]"/>
-      <Property Name="Width" Value="165"/>
+      <Property Name="Width" Value="303"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdDevice_1">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -538,7 +538,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_179]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="Height" Value="83"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="2"/>
@@ -556,7 +556,7 @@
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="249"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_179]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="86"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdDevice_2">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -565,7 +565,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_180]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="Height" Value="83"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="2"/>
@@ -581,7 +581,7 @@
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="332"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_180]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="86"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdDevice_3">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -590,7 +590,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_193]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="Height" Value="83"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="2"/>
@@ -606,7 +606,7 @@
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="415"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_193]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="86"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdDevice_4">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -615,7 +615,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_194]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="Height" Value="83"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="2"/>
@@ -631,7 +631,7 @@
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="497"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_194]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="86"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdDevice_5">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -640,7 +640,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_195]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="Height" Value="83"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="2"/>
@@ -658,7 +658,7 @@
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="580"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_195]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="86"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdDevice_0">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -667,7 +667,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_200]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="Height" Value="83"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="2"/>
@@ -685,7 +685,7 @@
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="167"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_200]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="86"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdPageUp">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -696,7 +696,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_201]"/>
       <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="450"/>
+      <Property Name="Left" Value="433"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Multi_Scroll_Up_press]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -704,9 +704,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="None"/>
-      <Property Name="Top" Value="300"/>
+      <Property Name="Top" Value="285"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_201]"/>
-      <Property Name="Width" Value="24"/>
+      <Property Name="Width" Value="44"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdPageDown">
       <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -717,7 +717,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_202]"/>
       <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="450"/>
+      <Property Name="Left" Value="433"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Multi_Scroll_Dwn_press]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -725,9 +725,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="None"/>
-      <Property Name="Top" Value="509"/>
+      <Property Name="Top" Value="494"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_202]"/>
-      <Property Name="Width" Value="24"/>
+      <Property Name="Width" Value="44"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdSortName">
       <Property Name="BitmapAlignmentHorizontal" Value="Right of Text"/>
@@ -743,7 +743,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="56"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="137"/>
+      <Property Name="Left" Value="163"/>
       <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[MpFileIcons]"/>
       <Property Name="PressedBitmapIndex" Value="101"/>
       <Property Name="PressedBitmapSource" Value="BitmapGroup"/>
@@ -756,7 +756,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="229"/>
+      <Property Name="Top" Value="232"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_203]"/>
       <Property Name="Width" Value="48"/>
     </Control>
@@ -768,9 +768,9 @@
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_204]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_8]"/>
-      <Property Name="Height" Value="107"/>
+      <Property Name="Height" Value="60"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="403"/>
+      <Property Name="Left" Value="397"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -781,9 +781,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="173"/>
+      <Property Name="Top" Value="223"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_204]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="80"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdSortDate">
       <Property Name="BitmapAlignmentHorizontal" Value="Right of Text"/>
@@ -799,7 +799,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="56"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="185"/>
+      <Property Name="Left" Value="211"/>
       <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[MpFileIcons]"/>
       <Property Name="PressedBitmapIndex" Value="101"/>
       <Property Name="PressedBitmapSource" Value="BitmapGroup"/>
@@ -812,7 +812,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="229"/>
+      <Property Name="Top" Value="232"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_205]"/>
       <Property Name="Width" Value="48"/>
     </Control>
@@ -830,7 +830,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="56"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="233"/>
+      <Property Name="Left" Value="259"/>
       <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[MpFileIcons]"/>
       <Property Name="PressedBitmapIndex" Value="101"/>
       <Property Name="PressedBitmapSource" Value="BitmapGroup"/>
@@ -843,7 +843,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="229"/>
+      <Property Name="Top" Value="232"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_206]"/>
       <Property Name="Width" Value="48"/>
     </Control>
@@ -854,17 +854,17 @@
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[rockwell_8]"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="Height" Value="107"/>
+      <Property Name="Height" Value="30"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.Status]"/>
-      <Property Name="Left" Value="281"/>
+      <Property Name="Left" Value="315"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
       <Property Name="TextGroup" Value="Source[global].TextGroup[MpFileManagerUIStatus]"/>
       <Property Name="TextIndexOffset" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="173"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Top" Value="192"/>
+      <Property Name="Width" Value="161"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_5">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -877,10 +877,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="246"/>
+      <Property Name="Left" Value="253"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -893,9 +893,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="363"/>
+      <Property Name="Top" Value="342"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_6">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -908,10 +908,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="246"/>
+      <Property Name="Left" Value="253"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -924,9 +924,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="437"/>
+      <Property Name="Top" Value="394"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001002" Name="txtcmdItem_7">
       <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
@@ -939,10 +939,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
-      <Property Name="Height" Value="69"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="246"/>
+      <Property Name="Left" Value="253"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
@@ -955,9 +955,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="509"/>
+      <Property Name="Top" Value="446"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
-      <Property Name="Width" Value="180"/>
+      <Property Name="Width" Value="150"/>
     </Control>
     <Control ClassId="0x00001012" Name="sclScrollBar">
       <Property Name="BackColor" Value="15"/>
@@ -965,8 +965,8 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="291"/>
-      <Property Name="Left" Value="427"/>
+      <Property Name="Height" Value="206"/>
+      <Property Name="Left" Value="408"/>
       <Property Name="Marker" Value="None"/>
       <Property Name="MarkerFont" Value="Source[local].Font[MpDefault_0]"/>
       <Property Name="MaxDatapoint" Value="None"/>
@@ -984,7 +984,7 @@
       <Property Name="RangeWidth" Value="19"/>
       <Property Name="Spacing" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="291"/>
+      <Property Name="Top" Value="293"/>
       <Property Name="ValueDatapoint" Value="None"/>
       <Property Name="ValueSimulation" Value="0"/>
       <Property Name="Width" Value="17"/>
@@ -996,7 +996,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_196]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="Height" Value="83"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="2"/>
@@ -1014,7 +1014,7 @@
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="662"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_196]"/>
-      <Property Name="Width" Value="60"/>
+      <Property Name="Width" Value="86"/>
     </Control>
   </Controls>
   <KeyMapping>

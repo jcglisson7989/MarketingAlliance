@@ -8,9 +8,9 @@ PROGRAM _INIT
 	File_Manager_UIConnect.DeviceList.DeviceNames[0] := 'ROOT';
 	File_Manager_UIConnect.DeviceList.DeviceNames[1] := 'Config';
 	File_Manager_UIConnect.DeviceList.DeviceNames[2] := 'Recipe';
-	File_Manager_UIConnect.DeviceList.DeviceNames[3] := '';
-	File_Manager_UIConnect.DeviceList.DeviceNames[4] := '';
-	File_Manager_UIConnect.DeviceList.DeviceNames[5] := '';
+	File_Manager_UIConnect.DeviceList.DeviceNames[3] := 'Process';
+	File_Manager_UIConnect.DeviceList.DeviceNames[4] := 'USB1';
+	File_Manager_UIConnect.DeviceList.DeviceNames[5] := 'USB2';
 	
 	File_Manager_Control.UISetup.FileListSize := 8;
 	File_Manager_Control.UISetup.FileListScrollWindow := 5;

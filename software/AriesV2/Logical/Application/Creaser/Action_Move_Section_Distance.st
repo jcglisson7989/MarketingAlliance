@@ -7,9 +7,11 @@ ACTION Action_Move_Section_Distance:
 	AxisControl.Stop := FALSE;
 	AxisControl();
 	
+	Current_Crease_Section_Length := gRecCfg.active.Rec.Crease.CreaseDistance_mm[ii_crease_count];
+	
 	AxisPar.Acceleration := gRecCfg.active.Cfg.Creaser.FeedAxisAccel;
 	AxisPar.Deceleration := gRecCfg.active.Cfg.Creaser.FeedAxisDecel;
-	AxisPar.Distance := 	gRecCfg.active.Rec.Crease.CreaseDistance_mm[ii_crease_count];
+	AxisPar.Distance := gRecCfg.active.Rec.Crease.CreaseDistance_mm[ii_crease_count];
 	AxisPar.Velocity := gRecCfg.active.Rec.FeedVelocity;
 	
 	AxisControl.MoveAdditive := TRUE;
