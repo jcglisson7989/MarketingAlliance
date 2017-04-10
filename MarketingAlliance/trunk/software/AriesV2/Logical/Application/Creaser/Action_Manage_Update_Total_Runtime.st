@@ -6,7 +6,7 @@ ACTION Action_Manage_Update_Total_Runtime:
 		bgTimerStart(Timer_Total_Runtime, 1000);
 		
 		gStatistics.runtime_h := gStatistics.total_runtime / 3600;
-		gStatistics.runtime_m := gStatistics.total_runtime 	MOD 3600;
+		gStatistics.runtime_m := (gStatistics.total_runtime 	/ 60) MOD 60;
 		gStatistics.runtime_s := gStatistics.total_runtime MOD 60;
 	END_IF;
 	

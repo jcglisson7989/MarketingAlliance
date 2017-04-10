@@ -67,6 +67,7 @@ TYPE
 		Error_State_SM1_Power : BOOL;
 		Feed_Axis_Motor_Error : BOOL;
 		Crease_Count_Greater_Max : BOOL;
+		Error_State_Process_Error : BOOL;
 	END_STRUCT;
 	Global_Statistics_typ : 	STRUCT 
 		total_runtime : UDINT;
@@ -75,5 +76,8 @@ TYPE
 		runtime_s : UDINT;
 		total_processed : UDINT;
 		Reset : BOOL;
+		total_creases : UDINT;
+		Sum_Board_Travel_Lengths : REAL;
+		Avg_Board_Length : REAL;
 	END_STRUCT;
 END_TYPE

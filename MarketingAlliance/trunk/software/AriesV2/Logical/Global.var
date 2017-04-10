@@ -27,6 +27,7 @@ END_VAR
 VAR
 	Axis1 : ACP10AXIS_typ;
 	AxisControl : MpAxisBasic;
+	AxisControl_LastCycle : MpAxisBasic;
 	AxisPar : MpAxisBasicParType;
 END_VAR
 (*Insert your comment here.*)
@@ -47,7 +48,19 @@ END_VAR
 VAR
 	iMachineErrorReset : BOOL;
 	iStartCommand : BOOL;
+	iSoftStopCommand : BOOL;
 END_VAR
 (*Insert your comment here.*)
+VAR CONSTANT
+	DEFINE_MM_ROLLER_REV : REAL := 125.664;
+END_VAR
+VAR
+	delta_Board_Position : REAL;
+	RollerPos_LastCycle : REAL;
+	RollerPos_ThisCycle : REAL;
+	Current_Board_Position : REAL;
+	Latch_Board_Length : REAL;
+	Current_Crease_Section_Length : REAL;
+END_VAR
 (*Insert your comment here.*)
 (*Insert your comment here.*)

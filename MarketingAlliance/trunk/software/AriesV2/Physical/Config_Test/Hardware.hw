@@ -45,6 +45,7 @@
       <Group ID="Vnc1" />
       <Parameter ID="VncVcObjectName1" Value="Visu1" />
       <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard4.dis" />
+      <Parameter ID="VncRefreshRate1" Value="200" />
     </Connector>
     <Connector Name="IF3">
       <Parameter ID="CycleTime" Value="8000" />
@@ -53,7 +54,6 @@
       <Parameter ID="CycleTime" Value="8000" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="AriesV2_Config_Test" />
-    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="UserRamSize" Value="5000" />
     <Parameter ID="RemMemSize" Value="25000" />
     <Parameter ID="PermanentPvSize" Value="15000" />
@@ -79,6 +79,18 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="8000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="ROOT" />
+    <Parameter ID="FileDevicePath1" Value="F:\" />
+    <Group ID="FileDevice2" />
+    <Parameter ID="FileDeviceName2" Value="Config" />
+    <Parameter ID="FileDevicePath2" Value="F:\Config" />
+    <Group ID="FileDevice3" />
+    <Parameter ID="FileDeviceName3" Value="Recipe" />
+    <Parameter ID="FileDevicePath3" Value="F:\Recipe" />
+    <Group ID="FileDevice4" />
+    <Parameter ID="FileDeviceName4" Value="Process" />
+    <Parameter ID="FileDevicePath4" Value="F:\Process" />
   </Module>
   <Module Name="X20DI9371" Type="X20DI9371" Version="1.0.2.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />

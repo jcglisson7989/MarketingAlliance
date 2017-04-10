@@ -25,7 +25,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="Height" Value="513"/>
+      <Property Name="Height" Value="484"/>
       <Property Name="Left" Value="2"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -48,7 +48,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_3]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="77"/>
+      <Property Name="Height" Value="50"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="12"/>
       <Property Name="Multiline" Value="Automatic"/>
@@ -63,7 +63,7 @@
       <Property Name="TextIndexDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.menuIndexLT]"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="11"/>
+      <Property Name="Top" Value="6"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_TOP]"/>
       <Property Name="Width" Value="200"/>
     </Control>
@@ -94,7 +94,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="93"/>
+      <Property Name="Top" Value="62"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_0_HOME]"/>
       <Property Name="Width" Value="200"/>
     </Control>
@@ -125,7 +125,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="176"/>
+      <Property Name="Top" Value="145"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_1_RECIPE]"/>
       <Property Name="Width" Value="200"/>
     </Control>
@@ -156,7 +156,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="344"/>
+      <Property Name="Top" Value="313"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_3_LOGIN]"/>
       <Property Name="Width" Value="200"/>
     </Control>
@@ -187,7 +187,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="427"/>
+      <Property Name="Top" Value="396"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_4_DIAGNOSTICS]"/>
       <Property Name="Width" Value="200"/>
     </Control>
@@ -218,7 +218,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="260"/>
+      <Property Name="Top" Value="229"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_2_CONFIG]"/>
       <Property Name="Width" Value="200"/>
     </Control>
