@@ -1864,19 +1864,6 @@
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="STRING"/>
       </DataPoint>
-      <Folder Name="Data_Logger">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Program"/>
-        <DataPoint Name="locTempHideDataLogLayer">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="USINT"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="INTEGER"/>
-        </DataPoint>
-      </Folder>
     </Folder>
     <Folder Name="HMI">
       <Property Name="Description" Value=""/>
@@ -2125,15 +2112,6 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="INTEGER"/>
           </DataPoint>
-          <DataPoint Name="loginVisibleGE3">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="USINT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
           <DataPoint Name="tabKeysRadioDataPoint">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="HMI\Visu"/>
@@ -2178,24 +2156,6 @@
               <Property Name="VCType" Value="INTEGER"/>
             </DataPoint>
             <DataPoint Name="tabKeysRadioArray[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="USINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="tabKeysRadioArray[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="USINT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="tabKeysRadioArray[6]">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="HMI\Visu"/>
               <Property Name="Description" Value=""/>
@@ -2715,30 +2675,10 @@
               <Property Name="UserID" Value="None"/>
               <Property Name="VCType" Value="STRING"/>
             </DataPoint>
-            <DataPoint Name="passwordFactory">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="15"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
           </Folder>
           <Folder Name="cfgCompile">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Struct"/>
-            <DataPoint Name="AR_Version">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="15"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
             <DataPoint Name="AS_config">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="HMI\Visu"/>
@@ -2755,16 +2695,6 @@
               <Property Name="Description" Value=""/>
               <Property Name="PLCType" Value="STRING"/>
               <Property Name="StringLength" Value="31"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="STRING"/>
-            </DataPoint>
-            <DataPoint Name="AS_version">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="STRING"/>
-              <Property Name="StringLength" Value="63"/>
               <Property Name="UpdateTime" Value="Default"/>
               <Property Name="UserID" Value="None"/>
               <Property Name="VCType" Value="STRING"/>

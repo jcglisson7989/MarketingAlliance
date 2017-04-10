@@ -35,13 +35,13 @@
       <Property Name="TextIndexOffset" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="0"/>
-      <Property Name="Width" Value="128"/>
+      <Property Name="Width" Value="221"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_1">
       <Property Name="AlignmentHorizontal" Value="Center"/>
       <Property Name="BackColor" Value="250"/>
       <Property Name="BitmapAlignmentHorizontal" Value="Right"/>
-      <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.menuIndexLT]"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
       <Property Name="BitmapSource" Value="None"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
@@ -50,11 +50,9 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="77"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="7"/>
+      <Property Name="Left" Value="12"/>
       <Property Name="Multiline" Value="Automatic"/>
-      <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[MM_Left_Bmaps_sel]"/>
-      <Property Name="PressedBitmapIndex" Value="0"/>
-      <Property Name="PressedBitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="PressedBitmapSource" Value="None"/>
       <Property Name="PressedForeColor" Value="1"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
       <Property Name="SpacingHorizontal" Value="7"/>
@@ -67,7 +65,7 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="11"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_TOP]"/>
-      <Property Name="Width" Value="120"/>
+      <Property Name="Width" Value="200"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_2">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -82,7 +80,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="77"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="7"/>
+      <Property Name="Left" Value="12"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedForeColor" Value="1"/>
@@ -98,7 +96,7 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="93"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_0_HOME]"/>
-      <Property Name="Width" Value="120"/>
+      <Property Name="Width" Value="200"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_3">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -113,7 +111,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="77"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="7"/>
+      <Property Name="Left" Value="12"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedForeColor" Value="1"/>
@@ -129,7 +127,7 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="176"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_1_RECIPE]"/>
-      <Property Name="Width" Value="120"/>
+      <Property Name="Width" Value="200"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_4">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -144,7 +142,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="77"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="7"/>
+      <Property Name="Left" Value="12"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedForeColor" Value="1"/>
@@ -160,7 +158,7 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="344"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_3_LOGIN]"/>
-      <Property Name="Width" Value="120"/>
+      <Property Name="Width" Value="200"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_5">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -175,7 +173,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="77"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="7"/>
+      <Property Name="Left" Value="12"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedForeColor" Value="1"/>
@@ -191,7 +189,7 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="427"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_4_DIAGNOSTICS]"/>
-      <Property Name="Width" Value="120"/>
+      <Property Name="Width" Value="200"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_10">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -206,7 +204,7 @@
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="77"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="7"/>
+      <Property Name="Left" Value="12"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedForeColor" Value="1"/>
@@ -222,7 +220,7 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="260"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_2_CONFIG]"/>
-      <Property Name="Width" Value="120"/>
+      <Property Name="Width" Value="200"/>
     </Control>
   </Controls>
   <KeyMapping/>

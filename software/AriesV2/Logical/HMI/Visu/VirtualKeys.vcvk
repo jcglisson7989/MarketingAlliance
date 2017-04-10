@@ -1706,15 +1706,7 @@
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_59">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
   <VirtualKey Name="%embVirtualKey_5_2">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_60">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
@@ -1731,10 +1723,6 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="%embVirtualKey_73">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_74">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
@@ -2320,7 +2308,7 @@
         <Property Name="Description" Value=""/>
         <Property Name="Locking" Value="Never"/>
         <Property Name="Name" Value="Action_1"/>
-        <Property Name="Page" Value="Source[local].Page[Pg44_Login_5_Hernon]"/>
+        <Property Name="Page" Value="None"/>
         <Property Name="Target" Value="Page"/>
       </KeyAction>
     </KeyActions>
@@ -2342,7 +2330,7 @@
         <Property Name="Description" Value=""/>
         <Property Name="Locking" Value="Never"/>
         <Property Name="Name" Value="Action_1"/>
-        <Property Name="Page" Value="Source[local].Page[Pg45_Login_6_Factory]"/>
+        <Property Name="Page" Value="None"/>
         <Property Name="Target" Value="Page"/>
       </KeyAction>
       <KeyAction ClassId="0x00000161">
