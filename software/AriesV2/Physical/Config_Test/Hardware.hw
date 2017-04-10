@@ -39,10 +39,12 @@
       <Parameter ID="ActivateDevice" Value="1" />
       <Parameter ID="HostName" Value="x20cpu" />
       <Parameter ID="Mode" Value="Manual" />
-      <Parameter ID="InaNodeNumber" Value="0" />
-      <Parameter ID="DeviceParam" Value="/EDDN=gei" />
       <Parameter ID="InternetAddress" Value="192.168.10.10" />
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Parameter ID="InaNodeNumber" Value="0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu1" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard4.dis" />
     </Connector>
     <Connector Name="IF3">
       <Parameter ID="CycleTime" Value="8000" />
@@ -58,6 +60,7 @@
     <Parameter ID="RebootReset" Value="2" />
     <Parameter ID="RebootPowerfail" Value="2" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP1382.IF3" />
     <Parameter ID="TaskClassIdleTime" Value="8000" />
     <Parameter ID="Cyclic1Duration" Value="8000" />
     <Parameter ID="Cyclic1Tolerance" Value="0" />
@@ -75,7 +78,6 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="8000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
-    <Parameter ID="TimerDevice" Value="X20CP1382.IF3" />
   </Module>
   <Module Name="X20DI9371" Type="X20DI9371" Version="1.0.2.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
