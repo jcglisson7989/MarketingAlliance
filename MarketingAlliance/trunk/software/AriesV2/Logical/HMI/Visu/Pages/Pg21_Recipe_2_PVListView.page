@@ -37,7 +37,7 @@
     </LayerRef>
     <LayerRef Source="Source[local].Layer[Tabs_20_Recipe]">
       <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Normal"/>
+      <Property Name="EditingMode" Value="Frozen"/>
       <Property Name="Left" Value="0"/>
       <Property Name="Name" Value="Tabs_20_Recipe"/>
       <Property Name="OutlineColor" Value="0"/>
@@ -140,33 +140,33 @@
   <MovementOrder>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Listbox_3]">
       <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
-      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
+      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
       <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Listbox_4]">
       <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
       <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
       <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Listbox_2]">
       <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
       <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
-      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
+      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Numeric_5]">
-      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
-      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
+      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
+      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
       <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Numeric_6]">
       <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
-      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
-      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
+      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
+      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
