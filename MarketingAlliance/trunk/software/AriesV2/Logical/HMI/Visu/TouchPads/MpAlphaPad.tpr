@@ -7,7 +7,7 @@
   <Property Name="BitmapOffset" Value="2" />
   <Property Name="BitmapSource" Value="MultipleBitmaps" />
   <Property Name="Description" Value="" />
-  <Property Name="Height" Value="325" />
+  <Property Name="Height" Value="433" />
   <Property Name="Left" Value="0" />
   <Property Name="NumLevel" Value="4" />
   <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[MpPads]" />
@@ -15,18 +15,18 @@
   <Property Name="PressedBitmapOffset" Value="6" />
   <Property Name="PressedBitmapSource" Value="MultipleBitmaps" />
   <Property Name="Top" Value="0" />
-  <Property Name="Width" Value="809" />
+  <Property Name="Width" Value="379" />
   <Controls>
     <Control ClassId="0x00000500" Name="TouchPadGrid_1">
-      <Property Name="ColumnWidth" Value="23" />
+      <Property Name="ColumnWidth" Value="11" />
       <Property Name="Columns" Value="35" />
       <Property Name="Description" Value="" />
-      <Property Name="Height" Value="306" />
+      <Property Name="Height" Value="408" />
       <Property Name="Left" Value="0" />
-      <Property Name="RowHeight" Value="61" />
+      <Property Name="RowHeight" Value="81" />
       <Property Name="Rows" Value="5" />
-      <Property Name="Top" Value="15" />
-      <Property Name="Width" Value="806" />
+      <Property Name="Top" Value="20" />
+      <Property Name="Width" Value="378" />
     </Control>
     <Control ClassId="0x0000100E" Name="TouchPadEdit_1">
       <Property Name="BackColor" Value="252" />
@@ -34,11 +34,11 @@
       <Property Name="Description" Value="" />
       <Property Name="Font" Value="Source[local].Font[MpPads]" />
       <Property Name="ForeColor" Value="0" />
-      <Property Name="Height" Value="38" />
-      <Property Name="Left" Value="27" />
+      <Property Name="Height" Value="51" />
+      <Property Name="Left" Value="13" />
       <Property Name="SimulationValue" Value="0" />
-      <Property Name="Top" Value="26" />
-      <Property Name="Width" Value="717" />
+      <Property Name="Top" Value="35" />
+      <Property Name="Width" Value="336" />
     </Control>
   </Controls>
   <PanelItems>

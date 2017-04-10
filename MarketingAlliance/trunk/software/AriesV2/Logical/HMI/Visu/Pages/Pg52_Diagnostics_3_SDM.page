@@ -3,11 +3,11 @@
 <Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Pg52_Diagnostics_3_SDM">
   <Property Name="BackColor" Value="0"/>
   <Property Name="Description" Value=""/>
-  <Property Name="Height" Value="600"/>
+  <Property Name="Height" Value="800"/>
   <Property Name="Index" Value="52"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-  <Property Name="Width" Value="1024"/>
+  <Property Name="Width" Value="480"/>
   <Layers>
     <LayerRef Source="Source[local].Layer[Background]">
       <Property Name="Description" Value=""/>
@@ -52,7 +52,7 @@
       <Property Name="BackColor" Value="9"/>
       <Property Name="Description" Value=""/>
       <Property Name="EditingMode" Value="Normal"/>
-      <Property Name="Height" Value="600"/>
+      <Property Name="Height" Value="800"/>
       <Property Name="Left" Value="0"/>
       <Property Name="OutlineColor" Value="0"/>
       <Property Name="OutlineDisplayControl" Value="False"/>
@@ -61,7 +61,7 @@
       <Property Name="StatusDatapoint" Value="None"/>
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Width" Value="1024"/>
+      <Property Name="Width" Value="480"/>
       <Property Name="Z-Order" Value="3"/>
       <TextGroup>
         <TextLayer LanguageId="en"/>
@@ -78,12 +78,12 @@
           <Property Name="DefaultURLs" Value="Source[local].TextGroup[WebURLs]"/>
           <Property Name="Description" Value=""/>
           <Property Name="HTMLStream" Value="None"/>
-          <Property Name="Height" Value="424"/>
-          <Property Name="Left" Value="219"/>
+          <Property Name="Height" Value="565"/>
+          <Property Name="Left" Value="103"/>
           <Property Name="RenderEngine" Value="Automatic"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[HTMLView]"/>
-          <Property Name="Top" Value="134"/>
-          <Property Name="Width" Value="794"/>
+          <Property Name="Top" Value="179"/>
+          <Property Name="Width" Value="372"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -93,15 +93,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
           <Property Name="ForeColor" Value="55"/>
-          <Property Name="Height" Value="50"/>
-          <Property Name="Left" Value="3"/>
+          <Property Name="Height" Value="67"/>
+          <Property Name="Left" Value="1"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Machine Name Example"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gMachineName]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="131"/>
-          <Property Name="Width" Value="205"/>
+          <Property Name="Top" Value="175"/>
+          <Property Name="Width" Value="96"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_2">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -111,15 +111,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
           <Property Name="ForeColor" Value="55"/>
-          <Property Name="Height" Value="50"/>
-          <Property Name="Left" Value="3"/>
+          <Property Name="Height" Value="67"/>
+          <Property Name="Left" Value="1"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="18. Feb 2015"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.date]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="185"/>
-          <Property Name="Width" Value="205"/>
+          <Property Name="Top" Value="247"/>
+          <Property Name="Width" Value="96"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_3">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -129,15 +129,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
           <Property Name="ForeColor" Value="55"/>
-          <Property Name="Height" Value="50"/>
-          <Property Name="Left" Value="3"/>
+          <Property Name="Height" Value="67"/>
+          <Property Name="Left" Value="1"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="V1.0.1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.Rev_Number]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="239"/>
-          <Property Name="Width" Value="205"/>
+          <Property Name="Top" Value="319"/>
+          <Property Name="Width" Value="96"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_4">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -147,15 +147,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
           <Property Name="ForeColor" Value="55"/>
-          <Property Name="Height" Value="50"/>
-          <Property Name="Left" Value="3"/>
+          <Property Name="Height" Value="67"/>
+          <Property Name="Left" Value="1"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="D4.24"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.AR_Version]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="292"/>
-          <Property Name="Width" Value="205"/>
+          <Property Name="Top" Value="389"/>
+          <Property Name="Width" Value="96"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_5">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -165,15 +165,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
           <Property Name="ForeColor" Value="55"/>
-          <Property Name="Height" Value="50"/>
-          <Property Name="Left" Value="3"/>
+          <Property Name="Height" Value="67"/>
+          <Property Name="Left" Value="1"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="AS4.2.4.149"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.AS_version]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="346"/>
-          <Property Name="Width" Value="205"/>
+          <Property Name="Top" Value="461"/>
+          <Property Name="Width" Value="96"/>
         </Control>
       </Controls>
       <KeyMapping/>

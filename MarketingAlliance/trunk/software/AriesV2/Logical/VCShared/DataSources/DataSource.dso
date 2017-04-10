@@ -2365,29 +2365,11 @@
                 <Property Name="UserID" Value="None"/>
                 <Property Name="VCType" Value="BOOL"/>
               </DataPoint>
-              <DataPoint Name="Dispense">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
             </Folder>
             <Folder Name="Cfg">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
               <DataPoint Name="Control">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="HMI\Visu"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="BOOL"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="BOOL"/>
-              </DataPoint>
-              <DataPoint Name="Dispense">
                 <Property Name="ConnectedBySharedResource" Value="False"/>
                 <Property Name="ConnectingVisus" Value="HMI\Visu"/>
                 <Property Name="Description" Value=""/>

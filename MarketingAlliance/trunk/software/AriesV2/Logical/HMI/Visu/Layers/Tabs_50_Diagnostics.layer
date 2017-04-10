@@ -3,11 +3,11 @@
 <Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="Tabs_50_Diagnostics">
   <Property Name="BackColor" Value="9"/>
   <Property Name="Description" Value=""/>
-  <Property Name="Height" Value="600"/>
+  <Property Name="Height" Value="800"/>
   <Property Name="Left" Value="0"/>
   <Property Name="StatusDatapoint" Value="None"/>
   <Property Name="Top" Value="0"/>
-  <Property Name="Width" Value="1024"/>
+  <Property Name="Width" Value="480"/>
   <TextGroup>
     <TextLayer LanguageId="en">
       <Text ID="619313" Value=""/>
@@ -33,9 +33,9 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_57]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="50"/>
+      <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="14"/>
+      <Property Name="Left" Value="7"/>
       <Property Name="PressedBackColor" Value="202"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedColorDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[1]]"/>
@@ -49,9 +49,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="78"/>
+      <Property Name="Top" Value="104"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_50_DIAGNOSTICS_1_ALARMS]"/>
-      <Property Name="Width" Value="179"/>
+      <Property Name="Width" Value="84"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_3">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -66,9 +66,9 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_72]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="50"/>
+      <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="424"/>
+      <Property Name="Left" Value="199"/>
       <Property Name="PressedBackColor" Value="202"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedColorDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[3]]"/>
@@ -82,9 +82,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="78"/>
+      <Property Name="Top" Value="104"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_50_DIAGNOSTICS_3_SDM]"/>
-      <Property Name="Width" Value="179"/>
+      <Property Name="Width" Value="84"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_6">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -99,9 +99,9 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_80]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="50"/>
+      <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="219"/>
+      <Property Name="Left" Value="103"/>
       <Property Name="PressedBackColor" Value="202"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedColorDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[2]]"/>
@@ -115,9 +115,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="78"/>
+      <Property Name="Top" Value="104"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_50_DIAGNOSTICS_2_ALARM_HIST]"/>
-      <Property Name="Width" Value="179"/>
+      <Property Name="Width" Value="84"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_4">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -132,9 +132,9 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_73]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_12]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="50"/>
+      <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="630"/>
+      <Property Name="Left" Value="295"/>
       <Property Name="PressedBackColor" Value="202"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedColorDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[4]]"/>
@@ -148,16 +148,16 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="78"/>
+      <Property Name="Top" Value="104"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_50_DIAGNOSTICS_4_FileIO]"/>
-      <Property Name="Width" Value="179"/>
+      <Property Name="Width" Value="84"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_1">
       <Property Name="BackColor" Value="248"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="Height" Value="449"/>
+      <Property Name="Height" Value="599"/>
       <Property Name="Left" Value="0"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -165,8 +165,8 @@
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndexOffset" Value="17"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="119"/>
-      <Property Name="Width" Value="1023"/>
+      <Property Name="Top" Value="159"/>
+      <Property Name="Width" Value="480"/>
     </Control>
   </Controls>
   <KeyMapping/>

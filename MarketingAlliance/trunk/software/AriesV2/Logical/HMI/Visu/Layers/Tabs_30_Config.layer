@@ -3,11 +3,11 @@
 <Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="Tabs_30_Config">
   <Property Name="BackColor" Value="9"/>
   <Property Name="Description" Value=""/>
-  <Property Name="Height" Value="600"/>
+  <Property Name="Height" Value="800"/>
   <Property Name="Left" Value="0"/>
   <Property Name="StatusDatapoint" Value="None"/>
   <Property Name="Top" Value="0"/>
-  <Property Name="Width" Value="1024"/>
+  <Property Name="Width" Value="480"/>
   <TextGroup>
     <TextLayer LanguageId="en">
       <Text ID="619293" Value=""/>
@@ -33,9 +33,9 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_23]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="50"/>
+      <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="12"/>
+      <Property Name="Left" Value="6"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBackColor" Value="202"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
@@ -49,9 +49,9 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="78"/>
+      <Property Name="Top" Value="104"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_30_CONFIG_1]"/>
-      <Property Name="Width" Value="179"/>
+      <Property Name="Width" Value="84"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_2">
       <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -66,9 +66,9 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_26]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="50"/>
+      <Property Name="Height" Value="67"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="209"/>
+      <Property Name="Left" Value="98"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="PressedBackColor" Value="202"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
@@ -82,25 +82,25 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="78"/>
+      <Property Name="Top" Value="104"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_30_CONFIG_2]"/>
-      <Property Name="Width" Value="179"/>
+      <Property Name="Width" Value="84"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_1">
       <Property Name="BackColor" Value="248"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="Height" Value="449"/>
-      <Property Name="Left" Value="1"/>
+      <Property Name="Height" Value="599"/>
+      <Property Name="Left" Value="0"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndexOffset" Value="8"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="119"/>
-      <Property Name="Width" Value="1023"/>
+      <Property Name="Top" Value="159"/>
+      <Property Name="Width" Value="480"/>
     </Control>
   </Controls>
   <KeyMapping/>
