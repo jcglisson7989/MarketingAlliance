@@ -8,7 +8,8 @@ TYPE
 		PRCS_STATE_MOVE_CREASE := 3,
 		PRCS_STATE_CREASE := 4,
 		PRCS_STATE_MOVE_CREASE_WIDTH := 5,
-		PRCS_STATE_ERROR := 6
+		PRCS_STATE_ERROR := 6,
+		PRCS_STATE_EJECT_FINISHED_BOARD := 7
 		);
 	AriesMachineState_Enum : 
 		(
@@ -62,6 +63,10 @@ TYPE
 		Unsafe_Machine_State : BOOL;
 		Fiber_Optic_Blocked_RunCmd : BOOL;
 		Creaser_Shaft_Edge_Timeout : BOOL;
+		Error_State_Unsafe_Machine : BOOL;
+		Error_State_SM1_Power : BOOL;
+		Feed_Axis_Motor_Error : BOOL;
+		Crease_Count_Greater_Max : BOOL;
 	END_STRUCT;
 	Global_Statistics_typ : 	STRUCT 
 		total_runtime : UDINT;

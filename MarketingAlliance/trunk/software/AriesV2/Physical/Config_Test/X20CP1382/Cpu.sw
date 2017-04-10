@@ -21,6 +21,9 @@
     <NcDataObject Name="Axisa" Source="Axisobj.Axisa.dob" Memory="UserROM" Language="Apt" />
     <NcDataObject Name="Axisi" Source="Axisobj.Axisi.dob" Memory="UserROM" Language="Ax" />
   </NcDataObjects>
+  <VcDataObjects>
+    <VcDataObject Name="Visu1" Source="HMI.Visu.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
+  </VcDataObjects>
   <Binaries>
     <BinaryObject Name="TCData" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10sys" Source="" Memory="UserROM" Language="Binary" />

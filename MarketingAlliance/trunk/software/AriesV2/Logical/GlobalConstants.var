@@ -44,6 +44,10 @@ VAR RETAIN
 	gStatistics : Global_Statistics_typ;
 END_VAR
 (*Insert your comment here.*)
+VAR
+	iMachineErrorReset : BOOL;
+	iStartCommand : BOOL;
+END_VAR
 (*Insert your comment here.*)
 (*Insert your comment here.*)
 (*Insert your comment here.*)

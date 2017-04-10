@@ -36,6 +36,6 @@ ACTION Action_Creaser_Idx:
 	
 	bgTimerCyclic(Timer_Creaser_Idx_Edge);
 	
-	setStartCommandFlag := FALSE;
+	
 	setflagCreaserIndexCommand := FALSE;
 END_ACTION

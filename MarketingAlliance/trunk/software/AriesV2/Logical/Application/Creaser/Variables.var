@@ -2,10 +2,21 @@ VAR
 	Timer_Creaser_Idx_Edge : TON;
 	Timer_Total_Runtime : TON;
 	tmp_bool : BOOL;
+END_VAR
+(*Insert your comment here.*)
+VAR
 	setFlagTravelEdgeOffset : BOOL;
 	setFlagCreaserIdxFinished : BOOL;
 	setflagCreaserIndexCommand : BOOL;
-	setStartCommandFlag : BOOL;
-	setFlagCreaserIndexed : BOOL;
 	setFlagCreaserWaitEdge : BOOL;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	DEFINE_SLOW_PULSE_PERIOD : TIME := T#2500ms;
+	DEFINE_FAST_PULSE_PERIOD : TIME := T#250ms;
+END_VAR
+VAR
+	Pulse_Slow : TP;
+	Pulse_Fast : TP;
+	ii_crease_count : UDINT;
 END_VAR
