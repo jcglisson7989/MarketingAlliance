@@ -25,15 +25,11 @@
     <Object Type="Library" Language="Binary" Description="The AsArLog library can be used to collect additional error information and for further processing.">AsArLog</Object>
     <Object Type="Library" Language="Binary" Description="The AsArProf library is used to operate the AR Profiler from an application.">AsArProf</Object>
     <Object Type="Library" Language="Binary" Description="This mechatronics library contains different system datatypes and general error numbers.">MTTypes</Object>
-    <Object Type="Library" Language="Binary" Description="This mechatronics library contains function blocks for profile generation.">MTProfile</Object>
-    <Object Type="Library" Language="Binary" Description="This mechatronics library contains function blocks for filtering and basic signal processing.">MTFilter</Object>
     <Object Type="Library" Language="ANSIC">jgLibC</Object>
     <Object Type="Library" Language="Binary" Description="This mechatronics library contains function blocks for statistical data analysis.">MTData</Object>
-    <Object Type="Library" Language="Binary" Description="AR Text-System and -Formatter">ArTextSys</Object>
     <Object Type="Library" Language="ANSIC" Description="library (written/managed by J. Glisson) containing functions for ACPu err acknowledgement, HMI param table construction, HMI param table activation to the common layer">MAPPSuppor</Object>
     <Object Type="Package" Description="Service libraries">wbrServices</Object>
     <Object Type="Library" Language="Binary" Description="This library contains FBKs for pinging a station.">AsICMP</Object>
-    <Object Type="Library" Language="Binary" Description="This mechatronics library contains basic control function blocks.">MTBasics</Object>
     <Object Type="Library" Language="Binary" Description="MpCom Library">MpCom</Object>
     <Object Type="Library" Language="Binary" Description="Single and multi axes control">MpAxis</Object>
     <Object Type="Library" Language="Binary" Description="Web access">MpWebXs</Object>
@@ -45,5 +41,6 @@
     <Object Type="Library" Language="Binary" Description="Global NC functions">NcGlobal</Object>
     <Object Type="Library" Language="Binary" Description="PLCopen Motion Control function blocks">Acp10_MC</Object>
     <Object Type="Library" Language="Binary" Description="ACOPOS Simulation">Acp10sim</Object>
+    <Object Type="Library" Language="Binary" Description="IEC Text-System Library.">ArTextSys</Object>
   </Objects>
 </Package>

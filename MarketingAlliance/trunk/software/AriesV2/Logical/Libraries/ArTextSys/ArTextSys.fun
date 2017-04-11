@@ -7,9 +7,7 @@
  * Declaration of IEC-FUBs of library ArTextSys
  ********************************************************************)
 
-(* ..ION_BLOCK 123456789|123456789|123456789| <-maximum name-length *)
-
-FUNCTION_BLOCK ArTextSysGetSystemLanguage	(*determine preferred user-language*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetSystemLanguage	(*determine preferred user-language*)
 	VAR_INPUT
 		Execute 		: BOOL; 			(*start on rising edge*)
 	END_VAR
@@ -25,7 +23,7 @@ FUNCTION_BLOCK ArTextSysGetSystemLanguage	(*determine preferred user-language*)
 	END_VAR
 END_FUNCTION_BLOCK
 
-FUNCTION_BLOCK ArTextSysSetSystemLanguage	(*update preferred user-language*)
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysSetSystemLanguage	(*update preferred user-language*)
 	VAR_INPUT
 		Execute 		: BOOL;
 		LanguageCode	: ArTextSysLanguageCodeType;
@@ -41,9 +39,8 @@ FUNCTION_BLOCK ArTextSysSetSystemLanguage	(*update preferred user-language*)
 	END_VAR
 END_FUNCTION_BLOCK
 
-(* ..ION_BLOCK 123456789|123456789|123456789| <-maximum name-length *)
 
-FUNCTION_BLOCK ArTextSysGetNamespaceLanguages
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetNamespaceLanguages
 	VAR_INPUT
 		Execute 		: BOOL; 			(*start on rising edge*)
 		Namespace		: UDINT;			(*string-pointer to namespace*)
@@ -62,9 +59,8 @@ FUNCTION_BLOCK ArTextSysGetNamespaceLanguages
 	END_VAR
 END_FUNCTION_BLOCK
 
-(* ..ION_BLOCK 123456789|123456789|123456789| <-maximum name-length *)
 
-FUNCTION_BLOCK ArTextSysGetText
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetText
 	VAR_INPUT
 		Execute 		: BOOL;
 		Namespace		: UDINT;			(*string-pointer to namespace*)
@@ -86,7 +82,7 @@ FUNCTION_BLOCK ArTextSysGetText
 	END_VAR
 END_FUNCTION_BLOCK
 
-FUNCTION_BLOCK ArTextSysFormatString
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysFormatString
 	VAR_INPUT
 		Execute 		: BOOL;
 		FormatString	: UDINT;			(*string-pointer to format-template*)
@@ -109,7 +105,7 @@ FUNCTION_BLOCK ArTextSysFormatString
 	END_VAR
 END_FUNCTION_BLOCK
 
-FUNCTION_BLOCK ArTextSysGetFormattedText
+{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetFormattedText
 	VAR_INPUT
 		Execute 		: BOOL;
 		Namespace		: UDINT;			(*string-pointer to namespace*)

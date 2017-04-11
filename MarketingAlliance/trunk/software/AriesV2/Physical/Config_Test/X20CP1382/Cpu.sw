@@ -60,59 +60,62 @@
     <BinaryObject Name="vcpdsw" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccovl" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccline" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VisuW102" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VisuW103" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vera" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vccgauge" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="TC" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VisuW01" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VisuW02" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VisuW03" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Data" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Acp10Map1" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vccslider" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="File_Mgmt" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Recipe" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="MAPP_Com" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Axes" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Visu01" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Visu03" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Visu02" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Visu" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="verabd" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpkat" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vccpiech" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccddbox" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccpopup" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcctrend" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VisuW101" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcnet" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vctcal" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcmgr" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpdvnc" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="iomap" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="arconfig" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="Data_Log" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="MAPP_Alm" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="MAPP_Rec" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="MAPP_Web" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="MAPP_File" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="MAPP_Cfg" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="asfw" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="Alarm" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10sys" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TCData" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu102" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu101" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu103" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Alarm" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="asfw" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="MAPP_Cfg" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MAPP_File" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MAPP_Web" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MAPP_Rec" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MAPP_Alm" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Data_Log" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="arconfig" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="iomap" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VisuW101" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcctrend" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vccpiech" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="verabd" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu02" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu03" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu01" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Axes" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MAPP_Com" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Recipe" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="File_Mgmt" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vccslider" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Acp10Map1" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Data" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VisuW03" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VisuW02" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VisuW01" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="TC" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vccgauge" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VisuW103" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VisuW102" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="FileIO" Source="Libraries.FileIO.lby" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -158,11 +161,12 @@
     <LibraryObject Name="jgLibC" Source="Libraries.jgLibC.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <LibraryObject Name="bglibasWBR" Source="Libraries.wbrServices.bglibasWBR.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <LibraryObject Name="vcresman" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="AsSafety" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="AsMbTCP" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="Acp10sim" Source="Libraries.Acp10sim.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="AsMbTCP" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="AsSafety" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="ArTextSys" Source="Libraries.ArTextSys.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

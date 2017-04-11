@@ -18,10 +18,8 @@
 TYPE
 	HMITableIndex_enum : 
 		(
-		TABLE_REC_CONTROL := 0,
-		TABLE_REC_DISPENSE := 1,
-		TABLE_CFG_CONTROL := 2,
-		TABLE_CFG_DISPENSE := 3
+		TABLE_RECIPE := 0,
+		TABLE_CONFIG := 1
 		);
 	hmiTableStatStruct_typ : 	STRUCT 
 		maxLenDesc : UDINT;

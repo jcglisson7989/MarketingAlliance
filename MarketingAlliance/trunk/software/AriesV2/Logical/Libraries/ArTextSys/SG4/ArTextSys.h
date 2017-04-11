@@ -1,10 +1,11 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _ARTEXTSYS_H_INCLUDED_
-#define _ARTEXTSYS_H_INCLUDED_
+#ifndef _ARTEXTSYS_
+#define _ARTEXTSYS_
 #ifdef __cplusplus
-extern "C" {
+extern "C" 
+{
 #endif
 
 #include <bur/plctypes.h>
@@ -12,85 +13,73 @@ extern "C" {
 #ifndef _BUR_PUBLIC
 #define _BUR_PUBLIC
 #endif
-
-/**
- * @addtogroup IEC-Lib
- * @{
- */
-
 /* Constants */
-#if defined(_REPLACE_CONST) || defined(BUILD_TEXTSYSTEM)
-#define arTEXTSYS_ERR_OUT_OF_MEMORY 	((long)0xC030280AL) /*!< fatal error: out of memory*/
-#define arTEXTSYS_ERR_INVALID_ARG		((long)0x8030280BL) /*!< provided argument is invalid*/
-#define arTEXTSYS_ERR_FAILED			((long)0x8030280CL) /*!< internal operation failure*/
-#define arTEXTSYS_ERR_ACCESS_DENIED 	((long)0x8030280DL) /*!< resource-access denied*/
-#define arTEXTSYS_ERR_INVALID_HANDLE	((long)0x8030280EL) /*!< invalid handle detected*/
-
-#define arTEXTSYS_ERR_CANT_OPEN_TEXTDB	((long)0x80302811L) /*!< opening of text-db failed*/
-#define arTEXTSYS_INF_ALREADY_OPENED	((long)0x40302812L) /*!< text-db is open and ready*/
-#define arTEXTSYS_ERR_TEXTDB_SCHEMA 	((long)0x80302813L) /*!< unrecognised text-db schema or structure*/
-#define arTEXTSYS_ERR_TEXTDB_READER 	((long)0x80302814L) /*!< read of open text-db failed*/
-#define arTEXTSYS_ERR_TEXTDB_INTERNAL	((long)0x80302815L) /*!< other kind of text-db error*/
-#define arTEXTSYS_INF_NOT_SET_DURABLE	((long)0x40302816L) /*!< configuration-change is not durable*/
-
-#define arTEXTSYS_ERR_NO_TEXT_FOUND 	((long)0x80302818L) /*!< no requested text found*/
-#define arTEXTSYS_INF_LANGUAGE_DIFFERS	((long)0x4030281AL) /*!< text-language differs; not in requested language*/
-#define arTEXTSYS_INF_SUBSTITUTE_TEXT	((long)0x4030281BL) /*!< no text found, but substitute-text provided*/
-#define arTEXTSYS_ERR_NOT_EXISTS		((long)0x8030281CL) /*!< record not found; doesn't exist*/
-#define arTEXTSYS_ERR_END_REACHED		((long)0x8030281DL) /*!< no further suitable entry found*/
+#ifdef _REPLACE_CONST
+ #define arTEXTSYS_ERR_END_REACHED 2150639645U
+ #define arTEXTSYS_ERR_NOT_EXISTS 2150639644U
+ #define arTEXTSYS_INF_SUBSTITUTE_TEXT 1076897819
+ #define arTEXTSYS_INF_LANGUAGE_DIFFERS 1076897818
+ #define arTEXTSYS_ERR_NO_TEXT_FOUND 2150639640U
+ #define arTEXTSYS_INF_NOT_SET_DURABLE 1076897814
+ #define arTEXTSYS_ERR_TEXTDB_INTERNAL 2150639637U
+ #define arTEXTSYS_ERR_TEXTDB_READER 2150639636U
+ #define arTEXTSYS_ERR_TEXTDB_SCHEMA 2150639635U
+ #define arTEXTSYS_INF_ALREADY_OPENED 1076897810
+ #define arTEXTSYS_ERR_CANT_OPEN_TEXTDB 2150639633U
+ #define arTEXTSYS_ERR_INVALID_HANDLE 2150639630U
+ #define arTEXTSYS_ERR_ACCESS_DENIED 2150639629U
+ #define arTEXTSYS_ERR_FAILED 2150639628U
+ #define arTEXTSYS_ERR_INVALID_ARG 2150639627U
+ #define arTEXTSYS_ERR_OUT_OF_MEMORY 3224381450U
 #else
  #ifndef _GLOBAL_CONST
-	#define _GLOBAL_CONST _WEAK const
+   #define _GLOBAL_CONST _WEAK const
  #endif
- _GLOBAL_CONST long 	arTEXTSYS_ERR_FAILED;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_ACCESS_DENIED;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_OUT_OF_MEMORY;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_INVALID_ARG;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_INVALID_HANDLE;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_UNEXPECTED;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_CANT_OPEN_TEXTDB;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_TEXTDB_SCHEMA;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_TEXTDB_READER;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_TEXTDB_INTERNAL;
- _GLOBAL_CONST long 	arTEXTSYS_INF_NOT_SET_DURABLE;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_NO_TEXT_FOUND;
- _GLOBAL_CONST long 	arTEXTSYS_INF_LANGUAGE_DIFFERS;
- _GLOBAL_CONST long 	arTEXTSYS_INF_SUBSTITUTE_TEXT;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_NOT_EXISTS;
- _GLOBAL_CONST long 	arTEXTSYS_ERR_END_REACHED;
-#endif	/*_REPLACE_CONST*/
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_END_REACHED;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_NOT_EXISTS;
+ _GLOBAL_CONST signed long arTEXTSYS_INF_SUBSTITUTE_TEXT;
+ _GLOBAL_CONST signed long arTEXTSYS_INF_LANGUAGE_DIFFERS;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_NO_TEXT_FOUND;
+ _GLOBAL_CONST signed long arTEXTSYS_INF_NOT_SET_DURABLE;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_TEXTDB_INTERNAL;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_TEXTDB_READER;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_TEXTDB_SCHEMA;
+ _GLOBAL_CONST signed long arTEXTSYS_INF_ALREADY_OPENED;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_CANT_OPEN_TEXTDB;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_INVALID_HANDLE;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_ACCESS_DENIED;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_FAILED;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_INVALID_ARG;
+ _GLOBAL_CONST unsigned long arTEXTSYS_ERR_OUT_OF_MEMORY;
+#endif
+
+
+
 
 /* Datatypes and datatypes of function blocks */
-
 typedef enum ArTextSysSearchModeEnum
-{
-	arTEXTSYS_SEARCH_FALLBACK_SUBST,
+{	arTEXTSYS_SEARCH_FALLBACK_SUBST,
 	arTEXTSYS_SEARCH_LANGUAGE_ONLY,
 	arTEXTSYS_SEARCH_FALLBACK
 } ArTextSysSearchModeEnum;
 
 typedef struct ArTextSysFormatArgumentType
-{
-	unsigned short Datatype;
+{	unsigned short Datatype;
 	unsigned long Data;
 	unsigned long UnitNamespace;
 	unsigned long UnitID;
 } ArTextSysFormatArgumentType;
 
-/** @cond HIDDEN_INTERNALS */
-struct ArTextSysExec1InternalType
-{
-	unsigned short	i_serno;
-	unsigned short	i_state;
-	signed long int Result;
-};
+typedef struct ArTextSysExec1InternalType
+{	unsigned short i_serno;
+	unsigned short i_state;
+	signed long Result;
+} ArTextSysExec1InternalType;
 
-struct ArTextSysIter1InternalType
-{
-	struct ArTextSysExec1InternalType i_base;
-	signed long int m_iter;
-};
-/** @endcond */
+typedef struct ArTextSysIter1InternalType
+{	struct ArTextSysExec1InternalType i_base;
+	signed long m_iter;
+} ArTextSysIter1InternalType;
 
 typedef plcstring ArTextSysLanguageCodeType[19];
 
@@ -214,6 +203,8 @@ typedef struct ArTextSysGetFormattedText
 	plcbit Error;
 } ArTextSysGetFormattedText_typ;
 
+
+
 /* Prototyping of functions and function blocks */
 _BUR_PUBLIC void ArTextSysGetSystemLanguage(struct ArTextSysGetSystemLanguage* inst);
 _BUR_PUBLIC void ArTextSysSetSystemLanguage(struct ArTextSysSetSystemLanguage* inst);
@@ -222,10 +213,9 @@ _BUR_PUBLIC void ArTextSysGetText(struct ArTextSysGetText* inst);
 _BUR_PUBLIC void ArTextSysFormatString(struct ArTextSysFormatString* inst);
 _BUR_PUBLIC void ArTextSysGetFormattedText(struct ArTextSysGetFormattedText* inst);
 
-#ifdef __cplusplus
-}	// End of C-Linkage
-#endif /*__cplusplus*/
 
-/** @}*/
-#endif /* _ARTEXTSYS_H_INCLUDED_ */
+#ifdef __cplusplus
+};
+#endif
+#endif /* _ARTEXTSYS_ */
 

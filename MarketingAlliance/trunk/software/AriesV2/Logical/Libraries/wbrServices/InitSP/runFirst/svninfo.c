@@ -1,10 +1,10 @@
 
-char *Revision      = "742";
+char *Revision      = "743";
 char *Modified      = "Modified";
-char *Date          = "2017/04/10 15:31:13";
-char *TimeNow       = "2017/04/10 18:40:06";
-char *RevRange      = "741:742";
-char *Mixed         = "Mixed revision WC";
+char *Date          = "2017/04/10 18:44:02";
+char *TimeNow       = "2017/04/11 12:35:19";
+char *RevRange      = "743";
+char *Mixed         = "Not mixed";
 char *IsTagged      = "Not tagged";
 char *URL           = "http://99.33.108.51/Internal/MarketingAlliance/trunk/software/AriesV2";
 char *isInSVN       = "not versioned";

@@ -114,13 +114,9 @@ END_TYPE
 (*Insert your comment here.*)
 
 TYPE
-	hmiTableRecCfgTrigger_typ : 	STRUCT 
-		Control : BOOL;
-		Dispense : BOOL;
-	END_STRUCT;
 	hmiTableTrigger_typ : 	STRUCT 
-		Rec : hmiTableRecCfgTrigger_typ;
-		Cfg : hmiTableRecCfgTrigger_typ;
+		Rec : BOOL;
+		Cfg : BOOL;
 	END_STRUCT;
 	hmiTableLoad_typ : 	STRUCT 
 		Trigger : BOOL;
