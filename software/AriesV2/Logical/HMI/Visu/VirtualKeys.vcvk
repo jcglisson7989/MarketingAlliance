@@ -2159,7 +2159,7 @@
         <Property Name="Locking" Value="Never"/>
         <Property Name="Name" Value="Action_2"/>
         <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.tables.Trigger.Rec.Control]"/>
+        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.tables.Trigger.Rec]"/>
       </KeyAction>
     </KeyActions>
   </VirtualKey>
@@ -2221,7 +2221,7 @@
         <Property Name="Locking" Value="Never"/>
         <Property Name="Name" Value="Action_2"/>
         <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.tables.Trigger.Cfg.Control]"/>
+        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.tables.Trigger.Cfg]"/>
       </KeyAction>
     </KeyActions>
   </VirtualKey>
@@ -2288,59 +2288,6 @@
         <Property Name="Name" Value="Action_1"/>
         <Property Name="Page" Value="Source[local].Page[Pg43_Login_4_Engineer]"/>
         <Property Name="Target" Value="Page"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
-  <VirtualKey Name="TABS_40_LOGIN_5_HERNON">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="5"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioDataPoint]"/>
-      </KeyAction>
-      <KeyAction ClassId="0x00000160">
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_1"/>
-        <Property Name="Page" Value="None"/>
-        <Property Name="Target" Value="Page"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
-  <VirtualKey Name="TABS_40_LOGIN_6_FACTORY">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="6"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioDataPoint]"/>
-      </KeyAction>
-      <KeyAction ClassId="0x00000160">
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_1"/>
-        <Property Name="Page" Value="None"/>
-        <Property Name="Target" Value="Page"/>
-      </KeyAction>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_2"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.tables.Trigger.Cfg.Admin]"/>
       </KeyAction>
     </KeyActions>
   </VirtualKey>
@@ -2432,28 +2379,6 @@
       </KeyAction>
     </KeyActions>
   </VirtualKey>
-  <VirtualKey Name="TABS_90_AUX_1_FILE_EXPLORER">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-    <KeyActions>
-      <KeyAction ClassId="0x00000161">
-        <Property Name="CompletionDatapoint" Value="None"/>
-        <Property Name="CompletionValue" Value="0"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_0"/>
-        <Property Name="SetValue" Value="1"/>
-        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioDataPoint]"/>
-      </KeyAction>
-      <KeyAction ClassId="0x00000160">
-        <Property Name="Description" Value=""/>
-        <Property Name="Locking" Value="Never"/>
-        <Property Name="Name" Value="Action_1"/>
-        <Property Name="Page" Value="Source[local].Page[Pg53_Diag_3_FileExplorer]"/>
-        <Property Name="Target" Value="Page"/>
-      </KeyAction>
-    </KeyActions>
-  </VirtualKey>
   <VirtualKey Name="%embVirtualKey_4">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
@@ -2463,6 +2388,10 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="%embVirtualKey_62">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_35">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>

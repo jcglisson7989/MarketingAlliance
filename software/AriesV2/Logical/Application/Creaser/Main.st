@@ -99,14 +99,23 @@ PROGRAM _CYCLIC
 		
 		MACHINE_STATE_RUNNING:
 			Action_Manage_Update_Total_Runtime;
+			
+			Action_Tally_Board_L;
+			
+			IF iSoftStopCommand THEN
+				ProcessState := PRCS_STATE_SOFT_STOP;
+			END_IF;
 
 			CASE ProcessState OF
 				PRCS_STATE_INIT:
+					Current_Board_Position := 0;
+					
 					IF setFlagCreaserIdxFinished THEN
 						ProcessState := PRCS_STATE_READY;
 					END_IF;					
 				
 				PRCS_STATE_READY:
+					Current_Board_Position := 0;
 					
 					IF AxisControl.InVelocity THEN
 						ii_crease_count := 0;
@@ -114,7 +123,6 @@ PROGRAM _CYCLIC
 					END_IF;
 					
 				PRCS_STATE_FEED_BOARD:
-					
 					IF IO.iFiberOpticSensor AND NOT IO_LastCycle.iFiberOpticSensor THEN
 						Action_Move_Section_Distance;
 						
@@ -124,16 +132,12 @@ PROGRAM _CYCLIC
 					END_IF;
 				
 				PRCS_STATE_MOVE_CREASE:
-					
-					Action_Tally_Board_L;
-				
 					IF AxisControl.InPosition THEN
 						setflagCreaserIndexCommand := TRUE;
 						ProcessState := PRCS_STATE_CREASE;
 					END_IF;
 				
 				PRCS_STATE_CREASE:
-					Action_Tally_Board_L;
 					
 					IF setFlagCreaserIdxFinished THEN //Wait for flag set by creaser that it has indexed and is at the "ready" position to move board
 						ii_crease_count := ii_crease_count + 1; //Increment crease counter
@@ -148,17 +152,12 @@ PROGRAM _CYCLIC
 					END_IF;
 				
 				PRCS_STATE_MOVE_CREASE_WIDTH:
-					
-					Action_Tally_Board_L;
-				
 					IF AxisControl.InPosition THEN
 						Action_Move_Section_Distance;
 						ProcessState := PRCS_STATE_MOVE_CREASE;
 					END_IF;
 				
 				PRCS_STATE_EJECT_FINISHED_BOARD:
-					Action_Tally_Board_L;
-					
 					IF NOT IO.iFiberOpticSensor AND IO_LastCycle.iFiberOpticSensor THEN
 						
 						Latch_Board_Length := Current_Board_Position;
@@ -174,6 +173,19 @@ PROGRAM _CYCLIC
 				
 				PRCS_STATE_ERROR:
 				
+				PRCS_STATE_SOFT_STOP:
+				
+					IF NOT iSoftStopCommand THEN
+						Action_Start_Feeder;
+						
+						IF IO.iFiberOpticSensor THEN  //Eject this part, maybe in the future resume from last state but for now just consider the current part a wash
+							ProcessState := PRCS_STATE_EJECT_FINISHED_BOARD;
+						ELSE //Re-cycle back to process SM jump-off point
+							setflagCreaserIndexCommand := TRUE;
+							ii_crease_count := 0;
+							ProcessState := PRCS_STATE_INIT;
+						END_IF;
+					END_IF;
 			END_CASE;
 		
 		

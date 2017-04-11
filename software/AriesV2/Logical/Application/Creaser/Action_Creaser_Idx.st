@@ -2,10 +2,14 @@
 ACTION Action_Creaser_Idx: 
 	
 		//Temp. Sim. code->
-	Timer_Sim_CreaserIdx.PT := T#500ms;
-	Timer_Sim_CreaserIdx.IN := setFlagCreaserWaitEdge;
-	Timer_Sim_CreaserIdx();
-	IO.iCreaserShaftSensor := Timer_Sim_CreaserIdx.Q;
+	
+	IF gSimulateMachine THEN
+		Timer_Sim_CreaserIdx.PT := T#500ms;
+		Timer_Sim_CreaserIdx.IN := setFlagCreaserWaitEdge;
+		Timer_Sim_CreaserIdx();
+		IO.iCreaserShaftSensor := Timer_Sim_CreaserIdx.Q;
+	END_IF;
+	
 	
 	setFlagCreaserIdxFinished := FALSE;
 	

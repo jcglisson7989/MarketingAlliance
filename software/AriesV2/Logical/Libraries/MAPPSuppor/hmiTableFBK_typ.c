@@ -29,6 +29,8 @@
 #include "hmiParamList.h"
 #include "ArTextSys.h"
 
+//#define LOGGING_ENABLE
+
 static void Update_Stats_Table(UDINT * pMaxVal, char * pText, UDINT * pOverallMaxVal){
 	UDINT TextLen = 0;
 	
@@ -149,14 +151,19 @@ void hmiTableFBK_typ(struct hmiTableFBK_typ* p)
 			p->hmiStruct.Max_Idx_Entries = ii_entries - 1;
 			p->hmiStruct.Load_OK = (flagError == 0);
 			
+			
+			#ifdef LOGGING_ENABLE
 			wbrsnprintf((char *) &LogString, DEFINE_LOGSTRING_LEN, "TableInfo:<Table=%s><Count=%d><err=%d>", &p->tableName, ii_entries, (UDINT) flagError);
 			requestMessageToLog((char *) &LogString, p->Logbook, arlogLEVEL_INFO, 50000, 0, 0);
+			#endif
 			
 			return;
 		}//...Otherwise load its texts
 		
+		#ifdef LOGGING_ENABLE
 		wbrsnprintf((char *) &LogString, DEFINE_LOGSTRING_LEN, "TableItem:<PVName=%s><Def=%s><Min=%s><Max=%s>", &p->hmiStruct.info[ii_entries].Val.Param.Str, &p->hmiStruct.info[ii_entries].Val.Default.Str, &p->hmiStruct.info[ii_entries].Val.Min.Str, &p->hmiStruct.info[ii_entries].Val.Max.Str);
 		requestMessageToLog((char *) &LogString, p->Logbook, arlogLEVEL_INFO, 50000, 0, 0);
+		#endif
 		
 		Update_Stats_Table(&p->TableStats.Param,(char *) &p->hmiStruct.info[ii_entries].Val.Param.Str, &p->pOverallStats->Param);
 		Update_Stats_Table(&p->TableStats.Default,(char *) &p->hmiStruct.info[ii_entries].Val.Default.Str, &p->pOverallStats->Default);

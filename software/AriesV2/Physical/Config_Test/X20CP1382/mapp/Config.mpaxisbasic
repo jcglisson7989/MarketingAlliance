@@ -8,6 +8,13 @@
         <Group ID="PeriodSettings">
           <Property ID="Period" Value="125.664" />
         </Group>
+        <Group ID="MovementLimits">
+          <Property ID="VelocityPositive" Value="10000.0" />
+          <Property ID="VelocityNegative" Value="10000.0" />
+          <Property ID="Acceleration" Value="10000.0" />
+          <Property ID="Deceleration" Value="10000.0" />
+          <Property ID="PositionErrorStopLimit" Value="0.5" />
+        </Group>
       </Group>
       <Group ID="Drive">
         <Group ID="Gearbox">
