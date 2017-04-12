@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1492023051_4_
-#define _BUR_1492023051_4_
+#ifndef _BUR_1492025066_4_
+#define _BUR_1492025066_4_
 
 #include <bur/plctypes.h>
 
@@ -14,7 +14,6 @@
 
 /* Variables */
 _GLOBAL struct MpComIdentType Recipe_CSV_MpLink;
-_GLOBAL struct MpComIdentType gAlarmBasic;
 _GLOBAL struct MpComIdentType File_Manager_MpLink;
 _GLOBAL struct MpComIdentType FeedAxis_MpLink;
 _GLOBAL struct MpComIdentType Data_Log_MpLink;
@@ -35,5 +34,5 @@ __asm__(".ascii \"iecfile \\\"Temp/Includes/AS_TempDecl/Config_Test/GlobalCompon
 __asm__(".previous");
 
 
-#endif /* _BUR_1492023051_4_ */
+#endif /* _BUR_1492025066_4_ */
 

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1492023051_15_
-#define _BUR_1492023051_15_
+#ifndef _BUR_1492025066_15_
+#define _BUR_1492025066_15_
 
 #include <bur/plctypes.h>
 
@@ -39,5 +39,5 @@ __asm__(".ascii \"iecdep \\\"Logical/HMI/HMI.var\\\" scope \\\"global\\\"\\n\"")
 __asm__(".previous");
 
 
-#endif /* _BUR_1492023051_15_ */
+#endif /* _BUR_1492025066_15_ */
 

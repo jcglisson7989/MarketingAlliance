@@ -518,6 +518,7 @@
             <Pos L="0" C="0" PS="Source[local].Layer[MAPP_UI_Recipe_Control].Control[Text_3].Property[StatusDatapoint]" A="RW" O="StatusDatapoint" />
             <Pos L="0" C="0" PS="Source[local].Layer[MAPP_UI_Recipe_Control].Control[Text_4].Property[StatusDatapoint]" A="RW" O="StatusDatapoint" />
             <Pos L="0" C="0" PS="Source[local].Layer[MAPP_UI_Recipe_Control].Control[txtNewRecipe].Property[StatusDatapoint]" A="RW" O="StatusDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Button_3].Property[StatusDatapoint]" A="RW" O="StatusDatapoint" />
             <Pos L="0" C="0" PS="Source[local].Layer[pvListViewMain].Control[Numeric_6].Property[StatusDatapoint]" A="RW" O="StatusDatapoint" />
             <Pos L="0" C="0" PS="Source[local].Layer[pvListViewMain].Control[Button_10].Property[StatusDatapoint]" A="RW" O="StatusDatapoint" />
             <Pos L="0" C="0" PS="Source[local].Layer[pvListViewMain].Control[Button_11].Property[StatusDatapoint]" A="RW" O="StatusDatapoint" />
@@ -783,6 +784,82 @@
       <Var Name="Recipe_Handling.pRecCfgUIConnect.MessageBox.Type" Scope="" Type="MpRecipeUIMessageEnum" Desc="">
          <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
             <Pos L="0" C="0" PS="Source[local].Layer[MAPP_UI_Recipe_Message].Control[txtContent].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+         </File>
+      </Var>
+      <Var Name="gHMIForceIO.forceEnable" Scope="" Type="UDINT" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].VirtualKey[%embVirtualKey_69].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].VirtualKey[%embVirtualKey_34].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Enable" Scope="" Type="BOOL" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].VirtualKey[%embVirtualKey_18_0].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Button_21].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_11].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_37].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_38].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_39].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_40].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.ErrorReset" Scope="" Type="BOOL" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].VirtualKey[%embVirtualKey_119].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].VirtualKey[%embVirtualKey_121].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+         </File>
+      </Var>
+      <Var Name="gMotionAxesListbox.Strings" Scope="" Type="STRING[0..12]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Dropdown_1].Property[TextDatapoint]" A="RW" O="TextDatapoint" />
+         </File>
+      </Var>
+      <Var Name="gMotionAxesListbox.Index" Scope="" Type="DINT" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Dropdown_1].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Info.PLCopenState" Scope="" Type="MpAxisPlcOpenStateEnum" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_4].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Text_4].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Info.Diag.ExecutingCommand" Scope="" Type="MpAxisExecutingCmdEnum" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_5].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+         </File>
+      </Var>
+      <Var Name="CurrentControlHMIStatus" Scope="" Type="DINT" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_8].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Info.Diag.Internal.Code" Scope="" Type="UINT" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Numeric_7].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_7].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Info.Diag.Internal.Severity" Scope="" Type="MpComSeveritiesEnum" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_28].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Info.Diag.StatusID.Severity" Scope="" Type="MpComSeveritiesEnum" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_29].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Info.Diag.StatusID.Code" Scope="" Type="UINT" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Numeric_8].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_8].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+         </File>
+      </Var>
+      <Var Name="LineControl.pAxisControl.Info.Diag.Internal.Facility" Scope="" Type="MpComFacilitiesEnum" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_32].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
          </File>
       </Var>
       <Var Name="LineControl.pAxisControl.Update" Scope="" Type="BOOL" Desc="">
@@ -1352,9 +1429,9 @@
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].VirtualKey[%embVirtualKey_40].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
          </File>
       </Var>
-      <Var Name="gHMIForceIO.forceEnable" Scope="" Type="UDINT" Desc="">
+      <Var Name="gStatistics.runtime_s" Scope="" Type="UDINT" Desc="">
          <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].VirtualKey[%embVirtualKey_34].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_21].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
          </File>
       </Var>
       <Var Name="gHMIForceIO.forceItemsVisibility" Scope="" Type="UDINT" Desc="">
@@ -1429,11 +1506,6 @@
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Text_17].Property[ColorDatapoint]" A="R" O="ColorDatapoint" />
          </File>
       </Var>
-      <Var Name="gStatistics.runtime_s" Scope="" Type="UDINT" Desc="">
-         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_21].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
-         </File>
-      </Var>
       <Var Name="gStatistics.runtime_m" Scope="" Type="UDINT" Desc="">
          <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_22].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
@@ -1444,16 +1516,16 @@
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_24].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
          </File>
       </Var>
-      <Var Name="ProcessState" Scope="" Type="CreaserPrcsState_Enum" Desc="">
-         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Text_23].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
-         </File>
-      </Var>
       <Var Name="gStatistics.total_processed" Scope="" Type="UDINT" Desc="">
          <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_25].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_26].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_28].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+         </File>
+      </Var>
+      <Var Name="ProcessState" Scope="" Type="CreaserPrcsState_Enum" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Text_23].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
          </File>
       </Var>
       <Var Name="Current_Board_Position" Scope="" Type="REAL" Desc="">
@@ -1484,11 +1556,6 @@
       <Var Name="AxisControl.Position" Scope="" Type="LREAL" Desc="">
          <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_34].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
-         </File>
-      </Var>
-      <Var Name="LineControl.pAxisPar.Direction" Scope="" Type="MpAxisMoveDirectionEnum" Desc="">
-         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Dropdown_2].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
          </File>
       </Var>
       <Var Name="LineControl.pAxisControl.Info.CyclicRead.Torque.Value" Scope="" Type="LREAL" Desc="">
@@ -1546,12 +1613,9 @@
             <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_39].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
          </File>
       </Var>
-      <Var Name="LineControl.pAxisControl.Enable" Scope="" Type="BOOL" Desc="">
+      <Var Name="LineControl.pAxisPar.Direction" Scope="" Type="MpAxisMoveDirectionEnum" Desc="">
          <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_11].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_37].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_38].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
-            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_39].Property[LockingDatapoint]" A="RW" O="LockingDatapoint" />
+            <Pos L="0" C="0" PS="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Dropdown_2].Property[IndexDatapoint]" A="RW" O="IndexDatapoint" />
          </File>
       </Var>
       <Var Name="gRecCfg.active.Cfg.HMI.passwordSetup" Scope="" Type="STRING[15]" Desc="">
@@ -1626,6 +1690,106 @@
       <Var Name="gHmi.dialogMsg.btnCancel" Scope="" Type="UINT" Desc="">
          <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
             <Pos L="0" C="0" PS="Source[local].VirtualKey[APP_HMI_DIALOG_CANCEL].Action[Action_0].Property[ValueDatapoint]" A="RW" O="ValueDatapoint" />
+         </File>
+      </Var>
+      <Var Name="AppAlarms.AlarmImage" Scope="" Type="BOOL[0..19]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].AlarmGroup[AS1.AppAlarms].Property[AlarmImage]" A="RW" O="AlarmImage" />
+         </File>
+      </Var>
+      <Var Name="AppAlarms.AcknowledgeImage" Scope="" Type="BOOL[0..19]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].AlarmGroup[AS1.AppAlarms].Property[AcknowledgeImage]" A="RW" O="AcknowledgeImage" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[15]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo15].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[14]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo14].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[13]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo13].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[12]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo12].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[11]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo11].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[10]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo10].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[9]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo9].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[8]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo8].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[7]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo7].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[6]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo6].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[5]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo5].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[4]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo4].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[3]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo3].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[2]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo2].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[1]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo1].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AddInfo[0]" Scope="" Type="STRING[100]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo0].Property[Datapoint]" A="RW" O="Datapoint" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AlarmImage" Scope="" Type="BOOL[0..19]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].AlarmGroup[AS1.Motor_Line_Alarms].Property[AlarmImage]" A="RW" O="AlarmImage" />
+         </File>
+      </Var>
+      <Var Name="Alarm_Feed.AcknowledgeImage" Scope="" Type="BOOL[0..19]" Desc="">
+         <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/Visu/VCObject.vc">
+            <Pos L="0" C="0" PS="Source[global].AlarmGroup[AS1.Motor_Line_Alarms].Property[AcknowledgeImage]" A="RW" O="AcknowledgeImage" />
          </File>
       </Var>
       <Var Name="File_Manager_UIConnect.DeviceList.DeviceNames[9]" Scope="" Type="STRING[50]" Desc="">

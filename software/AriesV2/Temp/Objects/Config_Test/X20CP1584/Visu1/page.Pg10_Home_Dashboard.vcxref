@@ -3,6 +3,13 @@
    <!--Intermediate File for generation of the XReferenceFile-->
    <Pg10_Home_Dashboard ReferenceString="Source[local].Page[Pg10_Home_Dashboard]">
       <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].VirtualKey[%embVirtualKey_121].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ErrorReset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].VirtualKey[%embVirtualKey_118].Action[Action_0].Property[ValueDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Stop]</ReferenceString>
@@ -202,6 +209,13 @@
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].VirtualKey[%embVirtualKey_34].Action[Action_0].Property[ValueDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceEnable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_21].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.gStatistics.runtime_s]</ReferenceString>
             <AccessRights>RW</AccessRights>
          </DataPoint>
       </Connection>
@@ -430,13 +444,6 @@
          </DataPoint>
       </Connection>
       <Connection>
-         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_21].Property[ValueDatapoint]" />
-         <DataPoint>
-            <ReferenceString>Source[global].Variable[DataSource.gStatistics.runtime_s]</ReferenceString>
-            <AccessRights>RW</AccessRights>
-         </DataPoint>
-      </Connection>
-      <Connection>
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_22].Property[ValueDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.gStatistics.runtime_m]</ReferenceString>
@@ -447,6 +454,13 @@
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_24].Property[ValueDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.gStatistics.runtime_h]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_25].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.gStatistics.total_processed]</ReferenceString>
             <AccessRights>RW</AccessRights>
          </DataPoint>
       </Connection>
@@ -468,13 +482,6 @@
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Text_23].Property[IndexDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.ProcessState]</ReferenceString>
-            <AccessRights>RW</AccessRights>
-         </DataPoint>
-      </Connection>
-      <Connection>
-         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_25].Property[ValueDatapoint]" />
-         <DataPoint>
-            <ReferenceString>Source[global].Variable[DataSource.gStatistics.total_processed]</ReferenceString>
             <AccessRights>RW</AccessRights>
          </DataPoint>
       </Connection>
@@ -545,13 +552,6 @@
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_34].Property[ValueDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.AxisControl.Position]</ReferenceString>
-            <AccessRights>RW</AccessRights>
-         </DataPoint>
-      </Connection>
-      <Connection>
-         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Dropdown_2].Property[IndexDatapoint]" />
-         <DataPoint>
-            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Direction]</ReferenceString>
             <AccessRights>RW</AccessRights>
          </DataPoint>
       </Connection>
@@ -633,6 +633,20 @@
          </DataPoint>
       </Connection>
       <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_7].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Code]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Dropdown_2].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Direction]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_11].Property[LockingDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
@@ -657,6 +671,27 @@
          <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_39].Property[LockingDatapoint]" />
          <DataPoint>
             <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Button_40].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Text_4].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.PLCopenState]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg10_Home_Dashboard].Layer[Default].Control[Numeric_8].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Code]</ReferenceString>
             <AccessRights>RW</AccessRights>
          </DataPoint>
       </Connection>

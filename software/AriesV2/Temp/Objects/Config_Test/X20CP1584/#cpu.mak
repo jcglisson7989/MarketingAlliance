@@ -42,6 +42,8 @@ $(AS_CPU_PATH)/ForceIO1.br \
 $(AS_CPU_PATH)/ForceIO1.xref \
 $(AS_CPU_PATH)/LineContro.br \
 $(AS_CPU_PATH)/LineContro.xref \
+$(AS_CPU_PATH)/HMI_Alarms.br \
+$(AS_CPU_PATH)/HMI_Alarms.xref \
 $(AS_CPU_PATH)/Recipe_Han.br \
 $(AS_CPU_PATH)/Recipe_Han.xref \
 $(AS_CPU_PATH)/hmilogic.br \
@@ -62,7 +64,6 @@ $(AS_CPU_PATH)/MAPP_Rec.br \
 $(AS_CPU_PATH)/MAPP_Cfg.br \
 $(AS_CPU_PATH)/MAPP_Web.br \
 $(AS_CPU_PATH)/MAPP_Alm.br \
-$(AS_CPU_PATH)/Alarm.br \
 $(AS_CPU_PATH)/Data_Log.br \
 $(AS_CPU_PATH)/Config.br \
 $(AS_CPU_PATH)/TC.br \
@@ -80,7 +81,6 @@ include $(AS_CPU_PATH)/TCData/TCData.mak
 include $(AS_CPU_PATH)/TC/TC.mak
 include $(AS_CPU_PATH)/Config/Config.mak
 include $(AS_CPU_PATH)/Data_Log/Data_Log.mak
-include $(AS_CPU_PATH)/Alarm/Alarm.mak
 include $(AS_CPU_PATH)/MAPP_Alm/MAPP_Alm.mak
 include $(AS_CPU_PATH)/MAPP_Web/MAPP_Web.mak
 include $(AS_CPU_PATH)/MAPP_Cfg/MAPP_Cfg.mak
@@ -96,6 +96,7 @@ include $(AS_CPU_PATH)/File_Handl/File_Handl.mak
 include $(AS_CPU_PATH)/HMITableMa/HMITableMa.mak
 include $(AS_CPU_PATH)/hmilogic/hmilogic.mak
 include $(AS_CPU_PATH)/Recipe_Han/Recipe_Han.mak
+include $(AS_CPU_PATH)/HMI_Alarms/HMI_Alarms.mak
 include $(AS_CPU_PATH)/LineContro/LineContro.mak
 include $(AS_CPU_PATH)/ForceIO1/ForceIO1.mak
 include $(AS_CPU_PATH)/Creaser/Creaser.mak

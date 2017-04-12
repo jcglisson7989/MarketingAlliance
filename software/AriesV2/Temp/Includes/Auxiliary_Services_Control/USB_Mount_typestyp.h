@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1492023051_9_
-#define _BUR_1492023051_9_
+#ifndef _BUR_1492025066_9_
+#define _BUR_1492025066_9_
 
 #include <bur/plctypes.h>
 
@@ -67,5 +67,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Auxiliary_Services_Control/USB_Mount_types
 __asm__(".previous");
 
 
-#endif /* _BUR_1492023051_9_ */
+#endif /* _BUR_1492025066_9_ */
 

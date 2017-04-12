@@ -8,6 +8,7 @@
   <Operation Delete="HMITableMa.br"/>
   <Operation Delete="hmilogic.br"/>
   <Operation Delete="Recipe_Han.br"/>
+  <Operation Delete="HMI_Alarms.br"/>
   <Operation Delete="LineContro.br"/>
   <Operation Delete="ForceIO1.br"/>
   <Operation Delete="Creaser.br"/>
@@ -21,45 +22,45 @@
   <Operation Delete="AsTCP.br"/>
   <Operation Delete="AsARCfg.br"/>
   <Operation Delete="AsANSL.br"/>
-  <Operation Delete="vcpfx20.br"/>
-  <Operation Delete="vcpdvnc.br"/>
-  <Operation Delete="vcmgr.br"/>
-  <Operation Delete="vctcal.br"/>
-  <Operation Delete="vccddbox.br"/>
-  <Operation Delete="vcpkat.br"/>
-  <Operation Delete="vccline.br"/>
-  <Operation Delete="vccovl.br"/>
-  <Operation Delete="vcpdsw.br"/>
-  <Operation Delete="vcdsint.br"/>
   <Operation Delete="vcclbox.br"/>
-  <Operation Delete="vcctext.br"/>
-  <Operation Delete="vcrt.br"/>
-  <Operation Delete="vccbmp.br"/>
+  <Operation Delete="vcpkat.br"/>
   <Operation Delete="vccdt.br"/>
+  <Operation Delete="vctcal.br"/>
   <Operation Delete="vcchtml.br"/>
-  <Operation Delete="vcdsloc.br"/>
-  <Operation Delete="vcalarm.br"/>
-  <Operation Delete="vccscale.br"/>
-  <Operation Delete="vccalarm.br"/>
-  <Operation Delete="vccstr.br"/>
+  <Operation Delete="vcpdsw.br"/>
   <Operation Delete="vccshape.br"/>
-  <Operation Delete="vcbclass.br"/>
-  <Operation Delete="vcfntttf.br"/>
+  <Operation Delete="vccddbox.br"/>
+  <Operation Delete="vccstr.br"/>
   <Operation Delete="vccnum.br"/>
-  <Operation Delete="vcfile.br"/>
+  <Operation Delete="vcrt.br"/>
+  <Operation Delete="vcbclass.br"/>
+  <Operation Delete="vcalarm.br"/>
+  <Operation Delete="vcctext.br"/>
+  <Operation Delete="vccline.br"/>
+  <Operation Delete="vcpfx20.br"/>
+  <Operation Delete="vccovl.br"/>
+  <Operation Delete="vccalarm.br"/>
+  <Operation Delete="vcdsloc.br"/>
   <Operation Delete="vccbtn.br"/>
+  <Operation Delete="vcdsint.br"/>
+  <Operation Delete="vcmgr.br"/>
   <Operation Delete="vccpwd.br"/>
+  <Operation Delete="vcfile.br"/>
+  <Operation Delete="vcpdvnc.br"/>
+  <Operation Delete="vccscale.br"/>
+  <Operation Delete="vccbmp.br"/>
+  <Operation Delete="vcfntttf.br"/>
   <Operation Delete="MpFile.br"/>
   <Operation Delete="MAPPSuppor.br"/>
-  <Operation Delete="MpAlarm.br"/>
   <Operation Delete="MpRecipe.br"/>
+  <Operation Delete="MpAlarm.br"/>
   <Operation Delete="MpAxis.br"/>
   <Operation Delete="jgLibC.br"/>
   <Operation Delete="AsIecCon.br"/>
   <Operation Delete="vcshared.br"/>
   <Operation Delete="vera.br"/>
-  <Operation Delete="arial.br"/>
   <Operation Delete="arialbd.br"/>
+  <Operation Delete="arial.br"/>
   <Operation Delete="Visu103.br"/>
   <Operation Delete="Visu102.br"/>
   <Operation Delete="Visu101.br"/>
@@ -72,10 +73,10 @@
   <Operation Delete="AsMem.br"/>
   <Operation Delete="AsICMP.br"/>
   <Operation Delete="MpCom.br"/>
-  <Operation Delete="ashw.br"/>
-  <Operation Delete="vccpopup.br"/>
   <Operation Delete="vcxml.br"/>
   <Operation Delete="vccurl.br"/>
+  <Operation Delete="vccpopup.br"/>
+  <Operation Delete="ashw.br"/>
   <Operation Delete="DataObj.br"/>
   <Operation Delete="vcgclass.br"/>
   <Operation Delete="vcnet.br"/>
@@ -91,7 +92,6 @@
   <Operation Download="arconfig.br" Memory="SystemROM"/>
   <Operation Download="sysconf.br" Memory="SystemROM"/>
   <Operation Restart="warm"/>
-  <Operation Download="Acp10sys.br" Memory="UserROM"/>
   <Operation Download="acp10cfg.br" Memory="UserROM"/>
   <Operation Download="Acp10map.br" Memory="UserROM"/>
   <Operation Download="NcGlobal.br" Memory="UserROM"/>
@@ -105,16 +105,17 @@
   <Operation Download="sys_lib.br" Memory="UserROM"/>
   <Operation Download="Acp10_MC.br" Memory="UserROM"/>
   <Operation Download="Acp10sim.br" Memory="UserROM"/>
+  <Operation Download="Acp10sys.br" Memory="UserROM"/>
   <Operation Download="acp10etxen.br" Memory="UserROM"/>
   <Operation Restart="warm"/>
   <Operation Download="vcresman.br" Memory="UserROM"/>
   <Operation Download="vcnet.br" Memory="UserROM"/>
   <Operation Download="vcgclass.br" Memory="UserROM"/>
   <Operation Download="DataObj.br" Memory="UserROM"/>
+  <Operation Download="ashw.br" Memory="UserROM"/>
+  <Operation Download="vccpopup.br" Memory="UserROM"/>
   <Operation Download="vccurl.br" Memory="UserROM"/>
   <Operation Download="vcxml.br" Memory="UserROM"/>
-  <Operation Download="vccpopup.br" Memory="UserROM"/>
-  <Operation Download="ashw.br" Memory="UserROM"/>
   <Operation Download="AsBrStr.br" Memory="UserROM"/>
   <Operation Download="arsvcreg.br" Memory="UserROM"/>
   <Operation Download="MpCom.br" Memory="UserROM"/>
@@ -131,57 +132,56 @@
   <Operation Download="Visu101.br" Memory="UserROM"/>
   <Operation Download="Visu102.br" Memory="UserROM"/>
   <Operation Download="Visu103.br" Memory="UserROM"/>
-  <Operation Download="arialbd.br" Memory="UserROM"/>
   <Operation Download="arial.br" Memory="UserROM"/>
+  <Operation Download="arialbd.br" Memory="UserROM"/>
   <Operation Download="vera.br" Memory="UserROM"/>
   <Operation Download="vcshared.br" Memory="UserROM"/>
   <Operation Download="AsIecCon.br" Memory="UserROM"/>
   <Operation Download="jgLibC.br" Memory="UserROM"/>
   <Operation Download="MpAxis.br" Memory="UserROM"/>
-  <Operation Download="MpRecipe.br" Memory="UserROM"/>
   <Operation Download="MpAlarm.br" Memory="UserROM"/>
+  <Operation Download="MpRecipe.br" Memory="UserROM"/>
   <Operation Download="MAPPSuppor.br" Memory="UserROM"/>
   <Operation Download="MpFile.br" Memory="UserROM"/>
-  <Operation Download="vccpwd.br" Memory="UserROM"/>
-  <Operation Download="vccbtn.br" Memory="UserROM"/>
-  <Operation Download="vcfile.br" Memory="UserROM"/>
-  <Operation Download="vccnum.br" Memory="UserROM"/>
   <Operation Download="vcfntttf.br" Memory="UserROM"/>
-  <Operation Download="vcbclass.br" Memory="UserROM"/>
-  <Operation Download="vccshape.br" Memory="UserROM"/>
-  <Operation Download="vccstr.br" Memory="UserROM"/>
-  <Operation Download="vccalarm.br" Memory="UserROM"/>
-  <Operation Download="vccscale.br" Memory="UserROM"/>
-  <Operation Download="vcalarm.br" Memory="UserROM"/>
-  <Operation Download="vcdsloc.br" Memory="UserROM"/>
-  <Operation Download="vcchtml.br" Memory="UserROM"/>
-  <Operation Download="vccdt.br" Memory="UserROM"/>
   <Operation Download="vccbmp.br" Memory="UserROM"/>
-  <Operation Download="vcrt.br" Memory="UserROM"/>
-  <Operation Download="vcctext.br" Memory="UserROM"/>
-  <Operation Download="vcclbox.br" Memory="UserROM"/>
-  <Operation Download="vcdsint.br" Memory="UserROM"/>
-  <Operation Download="vcpdsw.br" Memory="UserROM"/>
-  <Operation Download="vccovl.br" Memory="UserROM"/>
-  <Operation Download="vccline.br" Memory="UserROM"/>
-  <Operation Download="vcpkat.br" Memory="UserROM"/>
-  <Operation Download="vccddbox.br" Memory="UserROM"/>
-  <Operation Download="vctcal.br" Memory="UserROM"/>
-  <Operation Download="vcmgr.br" Memory="UserROM"/>
+  <Operation Download="vccscale.br" Memory="UserROM"/>
   <Operation Download="vcpdvnc.br" Memory="UserROM"/>
-  <Operation Download="udbdef.br" Memory="UserROM"/>
-  <Operation Download="TCData.br" Memory="UserROM"/>
-  <Operation Download="Alarm.br" Memory="UserROM"/>
-  <Operation Download="MAPP_Cfg.br" Memory="UserROM"/>
-  <Operation Download="MAPP_File.br" Memory="UserROM"/>
-  <Operation Download="MAPP_Web.br" Memory="UserROM"/>
-  <Operation Download="MAPP_Rec.br" Memory="UserROM"/>
-  <Operation Download="MAPP_Alm.br" Memory="UserROM"/>
-  <Operation Download="Data_Log.br" Memory="UserROM"/>
-  <Operation Download="iomap.br" Memory="UserROM"/>
-  <Operation Download="Config.br" Memory="UserROM"/>
+  <Operation Download="vcfile.br" Memory="UserROM"/>
+  <Operation Download="vccpwd.br" Memory="UserROM"/>
+  <Operation Download="vcmgr.br" Memory="UserROM"/>
+  <Operation Download="vcdsint.br" Memory="UserROM"/>
+  <Operation Download="vccbtn.br" Memory="UserROM"/>
+  <Operation Download="vcdsloc.br" Memory="UserROM"/>
+  <Operation Download="vccalarm.br" Memory="UserROM"/>
+  <Operation Download="vccovl.br" Memory="UserROM"/>
   <Operation Download="vcpfx20.br" Memory="UserROM"/>
+  <Operation Download="vccline.br" Memory="UserROM"/>
+  <Operation Download="vcctext.br" Memory="UserROM"/>
+  <Operation Download="vcalarm.br" Memory="UserROM"/>
+  <Operation Download="vcbclass.br" Memory="UserROM"/>
+  <Operation Download="udbdef.br" Memory="UserROM"/>
+  <Operation Download="vcrt.br" Memory="UserROM"/>
+  <Operation Download="vccnum.br" Memory="UserROM"/>
+  <Operation Download="vccstr.br" Memory="UserROM"/>
+  <Operation Download="vccddbox.br" Memory="UserROM"/>
+  <Operation Download="vccshape.br" Memory="UserROM"/>
+  <Operation Download="vcpdsw.br" Memory="UserROM"/>
+  <Operation Download="TCData.br" Memory="SystemROM"/>
+  <Operation Download="vcchtml.br" Memory="UserROM"/>
+  <Operation Download="vctcal.br" Memory="UserROM"/>
+  <Operation Download="vccdt.br" Memory="UserROM"/>
+  <Operation Download="vcpkat.br" Memory="UserROM"/>
+  <Operation Download="vcclbox.br" Memory="UserROM"/>
+  <Operation Download="Data_Log.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Alm.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Rec.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Web.br" Memory="UserROM"/>
+  <Operation Download="MAPP_File.br" Memory="UserROM"/>
+  <Operation Download="Config.br" Memory="UserROM"/>
   <Operation Download="TC.br" Memory="UserROM"/>
+  <Operation Download="MAPP_Cfg.br" Memory="UserROM"/>
+  <Operation Download="iomap.br" Memory="UserROM"/>
   <Operation Download="AsXml.br" Memory="UserROM"/>
   <Operation Download="AsANSL.br" Memory="UserROM"/>
   <Operation Download="AsARCfg.br" Memory="UserROM"/>
@@ -202,6 +202,7 @@
   <Operation Download="Creaser.br" Memory="UserROM"/>
   <Operation Download="ForceIO1.br" Memory="UserROM"/>
   <Operation Download="LineContro.br" Memory="UserROM"/>
+  <Operation Download="HMI_Alarms.br" Memory="UserROM"/>
   <Operation Download="Recipe_Han.br" Memory="UserROM"/>
   <Operation Download="hmilogic.br" Memory="UserROM"/>
   <Operation Download="HMITableMa.br" Memory="UserROM"/>
