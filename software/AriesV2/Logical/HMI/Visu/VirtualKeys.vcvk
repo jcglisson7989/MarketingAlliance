@@ -1330,30 +1330,6 @@
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_113">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_114">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_115">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_116">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_117">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_118">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
   <VirtualKey Name="%embVirtualKey_120">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
@@ -1371,10 +1347,6 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="%embVirtualKey_147">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_14_0">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
@@ -1731,10 +1703,6 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="%embVirtualKey_80">
-    <Property Name="Description" Value=""/>
-    <Property Name="VirtualKey_LED" Value="False"/>
-  </VirtualKey>
-  <VirtualKey Name="%embVirtualKey_88">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
@@ -2374,7 +2342,7 @@
         <Property Name="Description" Value=""/>
         <Property Name="Locking" Value="Never"/>
         <Property Name="Name" Value="Action_1"/>
-        <Property Name="Page" Value="Source[local].Page[Pg53_Diag_3_FileExplorer]"/>
+        <Property Name="Page" Value="Source[local].Page[Pg53_Diagnostics_4_FileExplorer]"/>
         <Property Name="Target" Value="Page"/>
       </KeyAction>
     </KeyActions>
@@ -2392,6 +2360,82 @@
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
   <VirtualKey Name="%embVirtualKey_35">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_74">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_75">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="TABS_50_DIAGNOSTICS_5_Motion_1">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+    <KeyActions>
+      <KeyAction ClassId="0x00000161">
+        <Property Name="CompletionDatapoint" Value="None"/>
+        <Property Name="CompletionValue" Value="0"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="Locking" Value="Never"/>
+        <Property Name="Name" Value="Action_0"/>
+        <Property Name="SetValue" Value="5"/>
+        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioDataPoint]"/>
+      </KeyAction>
+      <KeyAction ClassId="0x00000160">
+        <Property Name="Description" Value=""/>
+        <Property Name="Locking" Value="Never"/>
+        <Property Name="Name" Value="Action_1"/>
+        <Property Name="Page" Value="Source[local].Page[Pg54_Diagnostics_5_Motion_1]"/>
+        <Property Name="Target" Value="Page"/>
+      </KeyAction>
+    </KeyActions>
+  </VirtualKey>
+  <VirtualKey Name="TABS_50_DIAGNOSTICS_6_Motion_2">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+    <KeyActions>
+      <KeyAction ClassId="0x00000161">
+        <Property Name="CompletionDatapoint" Value="None"/>
+        <Property Name="CompletionValue" Value="0"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="Locking" Value="Never"/>
+        <Property Name="Name" Value="Action_0"/>
+        <Property Name="SetValue" Value="6"/>
+        <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioDataPoint]"/>
+      </KeyAction>
+      <KeyAction ClassId="0x00000160">
+        <Property Name="Description" Value=""/>
+        <Property Name="Locking" Value="Never"/>
+        <Property Name="Name" Value="Action_1"/>
+        <Property Name="Page" Value="Source[local].Page[Pg55_Diagnostics_6_Motion_2]"/>
+        <Property Name="Target" Value="Page"/>
+      </KeyAction>
+    </KeyActions>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_14_0">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_88">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_115">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_116">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_117">
+    <Property Name="Description" Value=""/>
+    <Property Name="VirtualKey_LED" Value="False"/>
+  </VirtualKey>
+  <VirtualKey Name="%embVirtualKey_118">
     <Property Name="Description" Value=""/>
     <Property Name="VirtualKey_LED" Value="False"/>
   </VirtualKey>
