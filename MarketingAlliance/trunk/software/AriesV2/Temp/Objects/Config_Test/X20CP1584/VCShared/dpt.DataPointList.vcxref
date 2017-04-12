@@ -3945,6 +3945,19 @@
             <Scope Name="HMI.gHmiParamTable.setDefaultRequest" DSFolderType="Package" />
          </ReferenceDescription>
       </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.HMI.CurrentControlHMIStatus]">
+         <Name>CurrentControlHMIStatus</Name>
+         <Scope />
+         <PLCType>DINT</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="HMI.CurrentControlHMIStatus" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
       <DataPoint Reference="Source[global].Variable[DataSource.gStatistics.runtime_h]">
          <Name>runtime_h</Name>
          <Scope />
@@ -4237,36 +4250,6 @@
             <Scope Name="MotionControl.LineControl.pAxisControl.Enable" DSFolderType="Package" />
          </ReferenceDescription>
       </DataPoint>
-      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.JogPositive]">
-         <Name>JogPositive</Name>
-         <Scope />
-         <PLCType>BOOL</PLCType>
-         <DerivationPlcType />
-         <DataType>BOOL</DataType>
-         <ArrayType />
-         <StringLength>0</StringLength>
-         <Description />
-         <ReferenceDescription>
-            <Scope Name="pAxisControl.JogPositive" DSFolderType="Struct" />
-            <Scope Name="LineControl.pAxisControl.JogPositive" DSFolderType="Program" />
-            <Scope Name="MotionControl.LineControl.pAxisControl.JogPositive" DSFolderType="Package" />
-         </ReferenceDescription>
-      </DataPoint>
-      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.JogNegative]">
-         <Name>JogNegative</Name>
-         <Scope />
-         <PLCType>BOOL</PLCType>
-         <DerivationPlcType />
-         <DataType>BOOL</DataType>
-         <ArrayType />
-         <StringLength>0</StringLength>
-         <Description />
-         <ReferenceDescription>
-            <Scope Name="pAxisControl.JogNegative" DSFolderType="Struct" />
-            <Scope Name="LineControl.pAxisControl.JogNegative" DSFolderType="Program" />
-            <Scope Name="MotionControl.LineControl.pAxisControl.JogNegative" DSFolderType="Package" />
-         </ReferenceDescription>
-      </DataPoint>
       <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveAbsolute]">
          <Name>MoveAbsolute</Name>
          <Scope />
@@ -4537,6 +4520,21 @@
             <Scope Name="MotionControl.LineControl.pAxisControl.TorqueLimit" DSFolderType="Package" />
          </ReferenceDescription>
       </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ErrorReset]">
+         <Name>ErrorReset</Name>
+         <Scope />
+         <PLCType>BOOL</PLCType>
+         <DerivationPlcType />
+         <DataType>BOOL</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="pAxisControl.ErrorReset" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.ErrorReset" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.ErrorReset" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
       <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.ReadyToPowerOn]">
          <Name>ReadyToPowerOn</Name>
          <Scope />
@@ -4567,6 +4565,22 @@
             <Scope Name="pAxisControl.Info.TorqueLimitActive" DSFolderType="Struct" />
             <Scope Name="LineControl.pAxisControl.Info.TorqueLimitActive" DSFolderType="Program" />
             <Scope Name="MotionControl.LineControl.pAxisControl.Info.TorqueLimitActive" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.PLCopenState]">
+         <Name>PLCopenState</Name>
+         <Scope />
+         <PLCType>MpAxisPlcOpenStateEnum</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Info.PLCopenState" DSFolderType="Struct" />
+            <Scope Name="pAxisControl.Info.PLCopenState" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.Info.PLCopenState" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.Info.PLCopenState" DSFolderType="Package" />
          </ReferenceDescription>
       </DataPoint>
       <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.Torque.Valid]">
@@ -4675,6 +4689,113 @@
             <Scope Name="pAxisControl.Info.CyclicRead.MotorTemperature.Value" DSFolderType="Struct" />
             <Scope Name="LineControl.pAxisControl.Info.CyclicRead.MotorTemperature.Value" DSFolderType="Program" />
             <Scope Name="MotionControl.LineControl.pAxisControl.Info.CyclicRead.MotorTemperature.Value" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.ExecutingCommand]">
+         <Name>ExecutingCommand</Name>
+         <Scope />
+         <PLCType>MpAxisExecutingCmdEnum</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Diag.ExecutingCommand" DSFolderType="Struct" />
+            <Scope Name="Info.Diag.ExecutingCommand" DSFolderType="Struct" />
+            <Scope Name="pAxisControl.Info.Diag.ExecutingCommand" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.Info.Diag.ExecutingCommand" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.Info.Diag.ExecutingCommand" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Severity]">
+         <Name>Severity</Name>
+         <Scope />
+         <PLCType>MpComSeveritiesEnum</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="StatusID.Severity" DSFolderType="Struct" />
+            <Scope Name="Diag.StatusID.Severity" DSFolderType="Struct" />
+            <Scope Name="Info.Diag.StatusID.Severity" DSFolderType="Struct" />
+            <Scope Name="pAxisControl.Info.Diag.StatusID.Severity" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.Info.Diag.StatusID.Severity" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Severity" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Code]">
+         <Name>Code</Name>
+         <Scope />
+         <PLCType>UINT</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="StatusID.Code" DSFolderType="Struct" />
+            <Scope Name="Diag.StatusID.Code" DSFolderType="Struct" />
+            <Scope Name="Info.Diag.StatusID.Code" DSFolderType="Struct" />
+            <Scope Name="pAxisControl.Info.Diag.StatusID.Code" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.Info.Diag.StatusID.Code" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Code" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Severity]">
+         <Name>Severity</Name>
+         <Scope />
+         <PLCType>MpComSeveritiesEnum</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Internal.Severity" DSFolderType="Struct" />
+            <Scope Name="Diag.Internal.Severity" DSFolderType="Struct" />
+            <Scope Name="Info.Diag.Internal.Severity" DSFolderType="Struct" />
+            <Scope Name="pAxisControl.Info.Diag.Internal.Severity" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.Info.Diag.Internal.Severity" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Severity" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Facility]">
+         <Name>Facility</Name>
+         <Scope />
+         <PLCType>MpComFacilitiesEnum</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Internal.Facility" DSFolderType="Struct" />
+            <Scope Name="Diag.Internal.Facility" DSFolderType="Struct" />
+            <Scope Name="Info.Diag.Internal.Facility" DSFolderType="Struct" />
+            <Scope Name="pAxisControl.Info.Diag.Internal.Facility" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.Info.Diag.Internal.Facility" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Facility" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Code]">
+         <Name>Code</Name>
+         <Scope />
+         <PLCType>UINT</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Internal.Code" DSFolderType="Struct" />
+            <Scope Name="Diag.Internal.Code" DSFolderType="Struct" />
+            <Scope Name="Info.Diag.Internal.Code" DSFolderType="Struct" />
+            <Scope Name="pAxisControl.Info.Diag.Internal.Code" DSFolderType="Struct" />
+            <Scope Name="LineControl.pAxisControl.Info.Diag.Internal.Code" DSFolderType="Program" />
+            <Scope Name="MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Code" DSFolderType="Package" />
          </ReferenceDescription>
       </DataPoint>
       <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Distance]">
@@ -5231,6 +5352,34 @@
             <Scope Name="MotionControl.LineControl.pAxisPar.Stop.Phase" DSFolderType="Package" />
          </ReferenceDescription>
       </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.gMotionAxesListbox.Index]">
+         <Name>Index</Name>
+         <Scope />
+         <PLCType>DINT</PLCType>
+         <DerivationPlcType />
+         <DataType>INTEGER</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="gMotionAxesListbox.Index" DSFolderType="Struct" />
+            <Scope Name="MotionControl.gMotionAxesListbox.Index" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.MotionControl.gMotionAxesListbox.Strings]">
+         <Name>Strings</Name>
+         <Scope />
+         <PLCType>STRING[0..12]</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING[]</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="gMotionAxesListbox.Strings" DSFolderType="Struct" />
+            <Scope Name="MotionControl.gMotionAxesListbox.Strings" DSFolderType="Package" />
+         </ReferenceDescription>
+      </DataPoint>
       <DataPoint Reference="Source[global].Variable[DataSource.gMachine.HMI.PowerCycleSystem]">
          <Name>PowerCycleSystem</Name>
          <Scope />
@@ -5270,6 +5419,266 @@
          <Description />
          <ReferenceDescription>
             <Scope Name="AxisControl.Position" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AlarmImage]">
+         <Name>AlarmImage</Name>
+         <Scope />
+         <PLCType>BOOL[0..19]</PLCType>
+         <DerivationPlcType />
+         <DataType>BOOL[]</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AlarmImage" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AcknowledgeImage]">
+         <Name>AcknowledgeImage</Name>
+         <Scope />
+         <PLCType>BOOL[0..19]</PLCType>
+         <DerivationPlcType />
+         <DataType>BOOL[]</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AcknowledgeImage" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[0]]">
+         <Name>AddInfo[0]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[0]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[1]]">
+         <Name>AddInfo[1]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[1]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[2]]">
+         <Name>AddInfo[2]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[2]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[3]]">
+         <Name>AddInfo[3]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[3]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[4]]">
+         <Name>AddInfo[4]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[4]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[5]]">
+         <Name>AddInfo[5]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[5]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[6]]">
+         <Name>AddInfo[6]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[6]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[7]]">
+         <Name>AddInfo[7]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[7]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[8]]">
+         <Name>AddInfo[8]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[8]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[9]]">
+         <Name>AddInfo[9]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[9]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[10]]">
+         <Name>AddInfo[10]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[10]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[11]]">
+         <Name>AddInfo[11]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[11]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[12]]">
+         <Name>AddInfo[12]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[12]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[13]]">
+         <Name>AddInfo[13]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[13]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[14]]">
+         <Name>AddInfo[14]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[14]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[15]]">
+         <Name>AddInfo[15]</Name>
+         <Scope />
+         <PLCType>STRING</PLCType>
+         <DerivationPlcType />
+         <DataType>STRING</DataType>
+         <ArrayType>STRING[]</ArrayType>
+         <StringLength>100</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="Alarm_Feed.AddInfo[15]" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.AppAlarms.AlarmImage]">
+         <Name>AlarmImage</Name>
+         <Scope />
+         <PLCType>BOOL[0..19]</PLCType>
+         <DerivationPlcType />
+         <DataType>BOOL[]</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="AppAlarms.AlarmImage" DSFolderType="Struct" />
+         </ReferenceDescription>
+      </DataPoint>
+      <DataPoint Reference="Source[global].Variable[DataSource.AppAlarms.AcknowledgeImage]">
+         <Name>AcknowledgeImage</Name>
+         <Scope />
+         <PLCType>BOOL[0..19]</PLCType>
+         <DerivationPlcType />
+         <DataType>BOOL[]</DataType>
+         <ArrayType />
+         <StringLength>0</StringLength>
+         <Description />
+         <ReferenceDescription>
+            <Scope Name="AppAlarms.AcknowledgeImage" DSFolderType="Struct" />
          </ReferenceDescription>
       </DataPoint>
       <DataPoint Reference="Source[global].Variable[DataSource.ProcessState]">

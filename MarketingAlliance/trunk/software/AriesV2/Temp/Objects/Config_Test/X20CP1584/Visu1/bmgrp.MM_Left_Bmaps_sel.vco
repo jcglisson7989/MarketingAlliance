@@ -111,5 +111,167 @@
         </Folder>
       </Folder>
     </Folder>
+    <Folder Name="pt" TargetIndex="2">
+      <Folder Name="BitmapGroups">
+        <Folder Name="POBJ">
+          <Object Name="MM_Left_Bmaps_sel" ClsId="0x308" Version="1" TargetIndex="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_pt]">
+            <UInt32 Name="Count">9</UInt32>
+            <Group Name="nav_Home_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Home_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">0</UInt16>
+            </Group>
+            <Group Name="nav_Recipe_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Recipe_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="nav_Engineer_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Engineer_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="nav_Security_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Security_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="nav_Diagnostics_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Diagnostics_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
+            </Group>
+            <Group Name="nav_Engineer_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Engineer_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">8</UInt16>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+    <Folder Name="es" TargetIndex="5">
+      <Folder Name="BitmapGroups">
+        <Folder Name="POBJ">
+          <Object Name="MM_Left_Bmaps_sel" ClsId="0x308" Version="1" TargetIndex="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_es]">
+            <UInt32 Name="Count">9</UInt32>
+            <Group Name="nav_Home_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Home_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">0</UInt16>
+            </Group>
+            <Group Name="nav_Recipe_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Recipe_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="nav_Engineer_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Engineer_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="nav_Security_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Security_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="nav_Diagnostics_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Diagnostics_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
+            </Group>
+            <Group Name="nav_Engineer_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Engineer_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">8</UInt16>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+    <Folder Name="sv" TargetIndex="3">
+      <Folder Name="BitmapGroups">
+        <Folder Name="POBJ">
+          <Object Name="MM_Left_Bmaps_sel" ClsId="0x308" Version="1" TargetIndex="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_sv]">
+            <UInt32 Name="Count">9</UInt32>
+            <Group Name="nav_Home_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Home_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">0</UInt16>
+            </Group>
+            <Group Name="nav_Recipe_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Recipe_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="nav_Engineer_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Engineer_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="nav_Security_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Security_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="nav_Diagnostics_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Diagnostics_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="nav_Gears_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Gears_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
+            </Group>
+            <Group Name="nav_Engineer_64x64_Pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[nav_Engineer_64x64_Pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">8</UInt16>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
   </Folder>
 </Intermediate>

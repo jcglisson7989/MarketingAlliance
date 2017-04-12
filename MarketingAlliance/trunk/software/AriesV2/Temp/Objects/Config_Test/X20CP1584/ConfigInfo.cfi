@@ -85,6 +85,22 @@
         Path="C:\Users\jcgli\Desktop\software_Aries_041217\AriesV2\Logical\MotionControl\LineControl\Variables.var" />
     </Task>
     <Task
+      Name="HMI_Alarms"
+      Disable="false"
+      Source="HMI.HMI_Alarms"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\jcgli\Desktop\software_Aries_041217\AriesV2\Temp\Objects\Config_Test\X20CP1584\HMI_Alarms\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\Users\jcgli\Desktop\software_Aries_041217\AriesV2\Temp\Objects\Config_Test\X20CP1584\HMI_Alarms\Init.st.var" />
+      <InternalFile
+        Path="C:\Users\jcgli\Desktop\software_Aries_041217\AriesV2\Temp\Objects\Config_Test\X20CP1584\HMI_Alarms\Exit.st.var" />
+      <File
+        Path="C:\Users\jcgli\Desktop\software_Aries_041217\AriesV2\Logical\HMI\HMI_Alarms\Types.typ" />
+      <File
+        Path="C:\Users\jcgli\Desktop\software_Aries_041217\AriesV2\Logical\HMI\HMI_Alarms\Variables.var" />
+    </Task>
+    <Task
       Name="Recipe_Han"
       Disable="false"
       Source="Auxiliary_Services_Control.Recipe_Handling"

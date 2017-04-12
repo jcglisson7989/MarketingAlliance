@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1492023051_17_
-#define _BUR_1492023051_17_
+#ifndef _BUR_1492025066_17_
+#define _BUR_1492025066_17_
 
 #include <bur/plctypes.h>
 
@@ -118,5 +118,5 @@ __asm__(".ascii \"iecdep \\\"Logical/Libraries/MAPPSuppor/MAPPSuppor.var\\\" sco
 __asm__(".previous");
 
 
-#endif /* _BUR_1492023051_17_ */
+#endif /* _BUR_1492025066_17_ */
 

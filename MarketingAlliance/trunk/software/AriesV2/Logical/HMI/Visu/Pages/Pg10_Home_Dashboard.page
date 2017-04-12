@@ -116,6 +116,9 @@
           <Text ID="620724" Value="Move Additive"/>
           <Text ID="620726" Value="Move Velocity"/>
           <Text ID="620728" Value="STOP"/>
+          <Text ID="621876" Value="PLCopen Status:"/>
+          <Text ID="621877" Value="Error Acknowledge"/>
+          <Text ID="621878" Value="Err Reset"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="619358" Value=""/>
@@ -182,6 +185,9 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
+          <Text ID="621876" Value="Text_2"/>
+          <Text ID="621877" Value=""/>
+          <Text ID="621878" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="pt">
           <Text ID="619358" Value=""/>
@@ -248,6 +254,9 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
+          <Text ID="621876" Value=""/>
+          <Text ID="621877" Value=""/>
+          <Text ID="621878" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="es">
           <Text ID="619358" Value=""/>
@@ -314,6 +323,9 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
+          <Text ID="621876" Value="Text_2"/>
+          <Text ID="621877" Value=""/>
+          <Text ID="621878" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="sv">
           <Text ID="619358" Value=""/>
@@ -380,6 +392,9 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
+          <Text ID="621876" Value=""/>
+          <Text ID="621877" Value=""/>
+          <Text ID="621878" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="619358" Value="35"/>
@@ -446,6 +461,9 @@
           <Index ID="620724" Value="84"/>
           <Index ID="620726" Value="86"/>
           <Index ID="620728" Value="88"/>
+          <Index ID="621876" Value="87"/>
+          <Index ID="621877" Value="89"/>
+          <Index ID="621878" Value="90"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -2149,15 +2167,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="29"/>
-          <Property Name="Left" Value="253"/>
+          <Property Name="Height" Value="24"/>
+          <Property Name="Left" Value="275"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="58"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="173"/>
+          <Property Name="Top" Value="163"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_30">
@@ -2167,15 +2185,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="29"/>
-          <Property Name="Left" Value="252"/>
+          <Property Name="Height" Value="24"/>
+          <Property Name="Left" Value="274"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="60"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="205"/>
+          <Property Name="Top" Value="190"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_31">
@@ -2185,15 +2203,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="29"/>
-          <Property Name="Left" Value="253"/>
+          <Property Name="Height" Value="24"/>
+          <Property Name="Left" Value="275"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="63"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="238"/>
+          <Property Name="Top" Value="217"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_32">
@@ -2203,15 +2221,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="29"/>
-          <Property Name="Left" Value="253"/>
+          <Property Name="Height" Value="24"/>
+          <Property Name="Left" Value="275"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="65"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="141"/>
+          <Property Name="Top" Value="136"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_35">
@@ -2224,7 +2242,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="30"/>
+          <Property Name="Height" Value="24"/>
           <Property Name="Input" Value="True"/>
           <Property Name="InputCancel" Value="Lost Focus"/>
           <Property Name="InputComma" Value="Explicit"/>
@@ -2234,7 +2252,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Progressive"/>
-          <Property Name="Left" Value="307"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -2242,7 +2260,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="140"/>
+          <Property Name="Top" Value="137"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Distance]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="75"/>
@@ -2254,15 +2272,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="29"/>
-          <Property Name="Left" Value="252"/>
+          <Property Name="Height" Value="24"/>
+          <Property Name="Left" Value="274"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="68"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="271"/>
+          <Property Name="Top" Value="244"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_34">
@@ -2272,15 +2290,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="257"/>
+          <Property Name="Height" Value="24"/>
+          <Property Name="Left" Value="279"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="70"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="310"/>
+          <Property Name="Top" Value="276"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_36">
@@ -2293,7 +2311,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="30"/>
+          <Property Name="Height" Value="24"/>
           <Property Name="Input" Value="True"/>
           <Property Name="InputCancel" Value="Lost Focus"/>
           <Property Name="InputComma" Value="Explicit"/>
@@ -2303,7 +2321,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Progressive"/>
-          <Property Name="Left" Value="307"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -2311,7 +2329,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="172"/>
+          <Property Name="Top" Value="164"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Position]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="75"/>
@@ -2326,7 +2344,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="30"/>
+          <Property Name="Height" Value="24"/>
           <Property Name="Input" Value="True"/>
           <Property Name="InputCancel" Value="Lost Focus"/>
           <Property Name="InputComma" Value="Explicit"/>
@@ -2336,7 +2354,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Progressive"/>
-          <Property Name="Left" Value="307"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -2344,7 +2362,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="204"/>
+          <Property Name="Top" Value="191"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Velocity]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="75"/>
@@ -2359,7 +2377,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="30"/>
+          <Property Name="Height" Value="24"/>
           <Property Name="Input" Value="True"/>
           <Property Name="InputCancel" Value="Lost Focus"/>
           <Property Name="InputComma" Value="Explicit"/>
@@ -2369,7 +2387,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Progressive"/>
-          <Property Name="Left" Value="307"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -2377,7 +2395,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="237"/>
+          <Property Name="Top" Value="218"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Acceleration]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="75"/>
@@ -2392,7 +2410,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="30"/>
+          <Property Name="Height" Value="24"/>
           <Property Name="Input" Value="True"/>
           <Property Name="InputCancel" Value="Lost Focus"/>
           <Property Name="InputComma" Value="Explicit"/>
@@ -2402,7 +2420,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Progressive"/>
-          <Property Name="Left" Value="307"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -2410,7 +2428,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="270"/>
+          <Property Name="Top" Value="245"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Deceleration]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="75"/>
@@ -2425,9 +2443,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
           <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="30"/>
+          <Property Name="Height" Value="24"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Direction]"/>
-          <Property Name="Left" Value="307"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="LeftBitmap" Value="None"/>
           <Property Name="LeftTextGroup" Value="None"/>
           <Property Name="MaxDatapoint" Value="None"/>
@@ -2444,7 +2462,7 @@
           <Property Name="TextGroup" Value="Source[local].TextGroup[MAPP_Axis_MOVE_DIRECTION]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="304"/>
+          <Property Name="Top" Value="272"/>
           <Property Name="Width" Value="75"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_1">
@@ -2644,6 +2662,123 @@
           <Property Name="Top" Value="355"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_118]"/>
           <Property Name="Width" Value="50"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="BackColor" Value="8"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Opaque"/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+          <Property Name="ForeColor" Value="15"/>
+          <Property Name="Height" Value="22"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.PLCopenState]"/>
+          <Property Name="Left" Value="263"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[MAPP_Axis_PLCOpen_State]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="308"/>
+          <Property Name="Width" Value="144"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_6">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+          <Property Name="ForeColor" Value="15"/>
+          <Property Name="Height" Value="14"/>
+          <Property Name="Left" Value="187"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="87"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="14"/>
+          <Property Name="Width" Value="128"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_40">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BackColor" Value="51"/>
+          <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_InputBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_121]"/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_11]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="257"/>
+          <Property Name="Locking" Value="Datapoint = 0"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]"/>
+          <Property Name="Multiline" Value="Automatic"/>
+          <Property Name="PressedBackColor" Value="0"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_InputBorder]"/>
+          <Property Name="PressedForeColor" Value="10"/>
+          <Property Name="PressedTextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="PressedTextIndex" Value="90"/>
+          <Property Name="PressedTextSource" Value="SingleText"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="89"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="364"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_121]"/>
+          <Property Name="Width" Value="152"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_7">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+          <Property Name="ForeColor" Value="51"/>
+          <Property Name="Height" Value="20"/>
+          <Property Name="Left" Value="345"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="341"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Code]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="60"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_8">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="CompletionValue" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+          <Property Name="ForeColor" Value="51"/>
+          <Property Name="Height" Value="18"/>
+          <Property Name="Left" Value="260"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="342"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Code]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="60"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -3095,6 +3230,22 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_121">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016B">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ErrorReset]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
       </KeyMapping>
     </Layer>
     <LayerRef Source="Source[local].Layer[Navigation_Left]">
@@ -3200,5 +3351,7 @@
     <TabSeqItem Index="21" Value="Source[embedded].Layer[Default].Control[Numeric_38]"/>
     <TabSeqItem Index="22" Value="Source[embedded].Layer[Default].Control[Numeric_39]"/>
     <TabSeqItem Index="23" Value="Source[embedded].Layer[Default].Control[Dropdown_2]"/>
+    <TabSeqItem Index="24" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
+    <TabSeqItem Index="25" Value="Source[embedded].Layer[Default].Control[Numeric_7]"/>
   </TabSequence>
 </Page>

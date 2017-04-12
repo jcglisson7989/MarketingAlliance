@@ -13,4 +13,7 @@ ACTION Action_AxisControl_Mgmt:
 	
 	Axis1; //Reference the PV cyclically to ensure it registers as being included in the program!
 	AxisControl();//Call the function block responsible for executing the axis commands
+	
+	Alarm_Feed;
+	Alarm_Feed_UI();
 END_ACTION

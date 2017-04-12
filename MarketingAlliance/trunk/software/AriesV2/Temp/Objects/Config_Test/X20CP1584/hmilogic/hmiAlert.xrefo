@@ -2539,15 +2539,14 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpCom.h
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/mpcomponentsVAR.h
 
     16:31  g v DEF  S Recipe_CSV_MpLink                
-    17:31  g v DEF  S gAlarmBasic                      
-    18:31  g v DEF  S File_Manager_MpLink              
-    19:31  g v DEF  S FeedAxis_MpLink                  
-    20:31  g v DEF  S Data_Log_MpLink                  
-    21:31  g v DEF  S Config_CSV_MpLink                
-    22:31  g v DEF  S Alarm_MpLink                     
-    28:1   l v DEF  S __asm__                          
-    31:1   l v DEF  S __asm__                          
-    35:1   l v DEF  S __asm__                          
+    17:31  g v DEF  S File_Manager_MpLink              
+    18:31  g v DEF  S FeedAxis_MpLink                  
+    19:31  g v DEF  S Data_Log_MpLink                  
+    20:31  g v DEF  S Config_CSV_MpLink                
+    21:31  g v DEF  S Alarm_MpLink                     
+    27:1   l v DEF  S __asm__                          
+    30:1   l v DEF  S __asm__                          
+    34:1   l v DEF  S __asm__                          
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
@@ -2579,6 +2578,30 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/machine
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
     46:45  g v DEF  S gStatistics                      
+    47:23  g v DEF  S AppAlarms_UI                     
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAlarm.h
+
+    97:16  g v DEF  S MpAlarmBasic                     
+    87:16  g v DEF  S MpAlarmInfoType                  
+    83:16  g v DEF  S MpAlarmDiagType                  
+    77:16  g v DEF  S MpAlarmStatusIDType              
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpCom.h
+
+   128:16  g v DEF  S MpComInternalDataType            
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
+
+    48:29  g v DEF  S AppAlarms_FBK                    
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAlarm.h
+
+    65:16  g v DEF  S MpAlarmBasicUIConnect20Type      
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
+
+    49:44  g v DEF  S AppAlarms                        
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/machineTYP.h
 
@@ -2586,10 +2609,21 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/machine
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
-    47:34  g v DEF  S IO_LastCycle                     
-    48:34  g v DEF  S IO                               
-    49:36  g v DEF  S ProcessState                     
-    50:37  g v DEF  S MachineState                     
+    50:34  g v DEF  S IO_LastCycle                     
+    51:34  g v DEF  S IO                               
+    52:36  g v DEF  S ProcessState                     
+    53:37  g v DEF  S MachineState                     
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAlarm.h
+
+   117:16  g v DEF  S MpAlarmBasicUI                   
+    56:16  g v DEF  S MpAlarmBasicUISetupType          
+    91:16  g v DEF  S MpAlarmBasicUIInternalType       
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
+
+    54:31  g v DEF  S Alarm_Feed_UI                    
+    55:44  g v DEF  S Alarm_Feed                       
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAxis.h
 
@@ -2604,7 +2638,7 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAxis.
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
-    51:35  g v DEF  S AxisPar                          
+    56:35  g v DEF  S AxisPar                          
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAxis.h
 
@@ -2618,13 +2652,9 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAxis.
    498:16  g v DEF  S MpAxisStatusIDType               
    504:16  g v DEF  S MpAxisInternalType               
 
-FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpCom.h
-
-   128:16  g v DEF  S MpComInternalDataType            
-
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
-    52:28  g v DEF  S AxisControl                      
+    57:28  g v DEF  S AxisControl                      
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/Acp10man.h
 
@@ -2709,10 +2739,10 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/Acp10ma
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
-    53:30  g v DEF  S Axis1                            
-    54:19  g v DEF  S gVersion                         
-    55:19  g v DEF  S gProjectDate                     
-    56:19  g v DEF  S gMachineName                     
+    58:30  g v DEF  S Axis1                            
+    59:19  g v DEF  S gVersion                         
+    60:19  g v DEF  S gProjectDate                     
+    61:19  g v DEF  S gMachineName                     
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/machineTYP.h
 
@@ -2720,7 +2750,8 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/machine
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
-    57:35  g v DEF  S gAlarms                          
+    62:35  g v DEF  S gAlarms                          
+    63:35  g v DEF  S gAcknowledge                     
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/generic_rec_cfgTYP.h
 
@@ -2763,11 +2794,12 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/generic
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/globalVAR.h
 
-    58:38  g v DEF  S gRecCfg                          
-    64:1   l v DEF  S __asm__                          
-    67:1   l v DEF  S __asm__                          
-    68:1   l v DEF  S __asm__                          
-    72:1   l v DEF  S __asm__                          
+    64:38  g v DEF  S gRecCfg                          
+    70:1   l v DEF  S __asm__                          
+    73:1   l v DEF  S __asm__                          
+    74:1   l v DEF  S __asm__                          
+    75:1   l v DEF  S __asm__                          
+    79:1   l v DEF  S __asm__                          
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/machineTYP.h
 
@@ -2855,26 +2887,7 @@ FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/auxilia
     15:30  g c DEF  S DEFINE_CONSTANT_MAGIC_SUFFIX     
     16:30  g c DEF  S DEFINE_CONSTANT_MAGIC_PREFIX     
     17:30  g c DEF  S MAX_IDX_USB_PORTS                
-
-FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAlarm.h
-
-   117:16  g v DEF  S MpAlarmBasicUI                   
-    56:16  g v DEF  S MpAlarmBasicUISetupType          
-    87:16  g v DEF  S MpAlarmInfoType                  
-    83:16  g v DEF  S MpAlarmDiagType                  
-    77:16  g v DEF  S MpAlarmStatusIDType              
-    91:16  g v DEF  S MpAlarmBasicUIInternalType       
-
-FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
-
     22:31  g v DEF  S Alarm_Data_UI                    
-
-FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpAlarm.h
-
-    65:16  g v DEF  S MpAlarmBasicUIConnect20Type      
-
-FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/auxiliary_services_control/auxiliaryVAR.h
-
     23:44  g v DEF  S Alarm_Data                       
 
 FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/MpCom.h

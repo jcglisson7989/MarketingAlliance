@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1492023051_20_
-#define _BUR_1492023051_20_
+#ifndef _BUR_1492025066_20_
+#define _BUR_1492025066_20_
 
 #include <bur/plctypes.h>
 
@@ -19,5 +19,5 @@ __asm__(".ascii \"iecfile \\\"Logical/MotionControl/MotionVar.var\\\" scope \\\"
 __asm__(".previous");
 
 
-#endif /* _BUR_1492023051_20_ */
+#endif /* _BUR_1492025066_20_ */
 

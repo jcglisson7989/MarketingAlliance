@@ -91,7 +91,12 @@ TXTGRP_SOURCES_Visu1=$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/AriesMachine
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/DateTimeHeader.txtgrp \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MM_Left_Titles.txtgrp \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/Tabs_20_Recipe.txtgrp \
-	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/Tabs_40_Login.txtgrp 
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/Tabs_40_Login.txtgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_Axis_PLCOpen_State.txtgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_COMMAND_EXECUTE_ENUM.txtgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_COMM_SEVERITIES.txtgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_FACILITIES_eNUM.txtgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_INTERNAL_ERROR_ENUM.txtgrp 
 
 FNINFO_SOURCES_Visu1=$(AS_PROJECT_PATH)/Logical/HMI/Visu/Fonts/DefaultFont.fninfo \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Fonts/Info.fninfo \
@@ -294,7 +299,8 @@ LAYER_SOURCES_Visu1=$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Background.layer 
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Tabs_20_Recipe.layer \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Tabs_30_Config.layer \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Tabs_40_Login.layer \
-	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Tabs_50_Diagnostics.layer 
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Tabs_50_Diagnostics.layer \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Motion_MAPP_Axis_Lefthand_Choice.layer 
 
 VCS_SOURCES_Visu1=$(AS_PROJECT_PATH)/Logical/HMI/Visu/StyleSheets/Color.vcs 
 
@@ -541,6 +547,10 @@ $(TEMP_PATH_Visu1)/layer.Tabs_50_Diagnostics.vco: $(AS_PROJECT_PATH)/Logical/HMI
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1) -ds $(DEFAULT_STYLE_SHEET_Visu1) -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
 
 
+$(TEMP_PATH_Visu1)/layer.Motion_MAPP_Axis_Lefthand_Choice.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Motion_MAPP_Axis_Lefthand_Choice.layer $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1) -ds $(DEFAULT_STYLE_SHEET_Visu1) -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
+
+
 #Layers END
 
 
@@ -675,6 +685,26 @@ $(TEMP_PATH_Visu1)/txtgrp.Tabs_20_Recipe.vco: $(AS_PROJECT_PATH)/Logical/HMI/Vis
 
 
 $(TEMP_PATH_Visu1)/txtgrp.Tabs_40_Login.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/Tabs_40_Login.txtgrp $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1)  -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
+
+
+$(TEMP_PATH_Visu1)/txtgrp.MAPP_Axis_PLCOpen_State.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_Axis_PLCOpen_State.txtgrp $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1)  -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
+
+
+$(TEMP_PATH_Visu1)/txtgrp.MAPP_COMMAND_EXECUTE_ENUM.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_COMMAND_EXECUTE_ENUM.txtgrp $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1)  -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
+
+
+$(TEMP_PATH_Visu1)/txtgrp.MAPP_COMM_SEVERITIES.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_COMM_SEVERITIES.txtgrp $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1)  -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
+
+
+$(TEMP_PATH_Visu1)/txtgrp.MAPP_FACILITIES_eNUM.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_FACILITIES_eNUM.txtgrp $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1)  -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
+
+
+$(TEMP_PATH_Visu1)/txtgrp.MAPP_INTERNAL_ERROR_ENUM.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/TextGroups/MAPP_INTERNAL_ERROR_ENUM.txtgrp $(VC_LANGUAGES_Visu1)
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Visu1)" $(VCCFLAGS_Visu1)  -p Visu1 -so $(VC_STATIC_OPTIONS_Visu1) -vcr 4263 -sfas
 
 
@@ -1307,11 +1337,17 @@ $(TEMP_PATH_Visu1)/bdr.Bordermanager.vco: $(BDR_SOURCES_Visu1)
 #
 # Logical fonts
 #
-$(TEMP_PATH_Visu1)/lfnt.en.vco: $(TEMP_PATH_Visu1)/en.lfnt $(VC_LANGUAGES_Visu1)
-	 $(VCC) -f "$<" -o "$@" $(LFNTFLAGS_Visu1) $(VCCFLAGS_Visu1) -p Visu1 -sfas
 $(TEMP_PATH_Visu1)/lfnt.de.vco: $(TEMP_PATH_Visu1)/de.lfnt $(VC_LANGUAGES_Visu1)
 	 $(VCC) -f "$<" -o "$@" $(LFNTFLAGS_Visu1) $(VCCFLAGS_Visu1) -p Visu1 -sfas
-LFNT_OBJECTS_Visu1=$(TEMP_PATH_Visu1)/lfnt.en.vco $(TEMP_PATH_Visu1)/lfnt.de.vco 
+$(TEMP_PATH_Visu1)/lfnt.en.vco: $(TEMP_PATH_Visu1)/en.lfnt $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" $(LFNTFLAGS_Visu1) $(VCCFLAGS_Visu1) -p Visu1 -sfas
+$(TEMP_PATH_Visu1)/lfnt.pt.vco: $(TEMP_PATH_Visu1)/pt.lfnt $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" $(LFNTFLAGS_Visu1) $(VCCFLAGS_Visu1) -p Visu1 -sfas
+$(TEMP_PATH_Visu1)/lfnt.es.vco: $(TEMP_PATH_Visu1)/es.lfnt $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" $(LFNTFLAGS_Visu1) $(VCCFLAGS_Visu1) -p Visu1 -sfas
+$(TEMP_PATH_Visu1)/lfnt.sv.vco: $(TEMP_PATH_Visu1)/sv.lfnt $(VC_LANGUAGES_Visu1)
+	 $(VCC) -f "$<" -o "$@" $(LFNTFLAGS_Visu1) $(VCCFLAGS_Visu1) -p Visu1 -sfas
+LFNT_OBJECTS_Visu1=$(TEMP_PATH_Visu1)/lfnt.de.vco $(TEMP_PATH_Visu1)/lfnt.en.vco $(TEMP_PATH_Visu1)/lfnt.pt.vco $(TEMP_PATH_Visu1)/lfnt.es.vco $(TEMP_PATH_Visu1)/lfnt.sv.vco 
 
 #Runtime Object
 $(VCR_OBJECT_Visu1) : $(VCR_SOURCE_Visu1)

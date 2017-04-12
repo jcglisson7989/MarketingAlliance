@@ -36,6 +36,8 @@
   <Symbol Name="\UnitGroups\POBJ" Index="0" Type="UNIT" RefString="Source[global].UnitGroup[Temperatures].Unit[PLCUnit]" />
   <Symbol Name="\UnitGroups\POBJ" Index="3" Type="UNIT" RefString="Source[global].UnitGroup[Temperatures].Unit[Celsius_AT_Module]" />
   <Symbol Name="\AlarmSystems\AS1\AlarmGroups\POBJ" Index="0" Type="AG" RefString="Source[global].AlarmGroup[AS1.SystemAlarms]" />
+  <Symbol Name="\AlarmSystems\AS1\AlarmGroups\POBJ" Index="17" Type="AG" RefString="Source[global].AlarmGroup[AS1.Motor_Line_Alarms]" />
+  <Symbol Name="\AlarmSystems\AS1\AlarmGroups\POBJ" Index="1" Type="AG" RefString="Source[global].AlarmGroup[AS1.AppAlarms]" />
   <Symbol Name="\TextGroupBase\AlarmAcknowledgeState" Index="2147483800" Type="TG" RefString="Source[global].TextGroup[AlarmAcknowledgeState]" />
   <Symbol Name="\TextGroupBase\AlarmBypassState" Index="2147483801" Type="TG" RefString="Source[global].TextGroup[AlarmBypassState]" />
   <Symbol Name="\TextGroupBase\AlarmEvent" Index="2147483799" Type="TG" RefString="Source[global].TextGroup[AlarmEvent]" />
@@ -289,120 +291,149 @@
   <Symbol Name="\DPV\POBJ" Index="233" Type="DP" RefString="Source[global].Variable[DataSource.HMI.gHmiParamTable.index]" />
   <Symbol Name="\DPV\POBJ" Index="234" Type="DP" RefString="Source[global].Variable[DataSource.HMI.gHmiParamTable.maxIndex]" />
   <Symbol Name="\DPV\POBJ" Index="235" Type="DP" RefString="Source[global].Variable[DataSource.HMI.gHmiParamTable.setDefaultRequest]" />
-  <Symbol Name="\DPV\POBJ" Index="236" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.runtime_h]" />
-  <Symbol Name="\DPV\POBJ" Index="237" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.runtime_m]" />
-  <Symbol Name="\DPV\POBJ" Index="238" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.runtime_s]" />
-  <Symbol Name="\DPV\POBJ" Index="239" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.Reset]" />
-  <Symbol Name="\DPV\POBJ" Index="240" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.total_processed]" />
-  <Symbol Name="\DPV\POBJ" Index="241" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.Avg_Board_Length]" />
-  <Symbol Name="\DPV\POBJ" Index="242" Type="DP" RefString="Source[global].Variable[DataSource.IO.oCreaserCCWRotation]" />
-  <Symbol Name="\DPV\POBJ" Index="243" Type="DP" RefString="Source[global].Variable[DataSource.IO.oCreaserCWRotation]" />
-  <Symbol Name="\DPV\POBJ" Index="244" Type="DP" RefString="Source[global].Variable[DataSource.IO.oBoardFeedingLight]" />
-  <Symbol Name="\DPV\POBJ" Index="245" Type="DP" RefString="Source[global].Variable[DataSource.IO.oUIIndicatorLight]" />
-  <Symbol Name="\DPV\POBJ" Index="246" Type="DP" RefString="Source[global].Variable[DataSource.IO.iSafeMachineState]" />
-  <Symbol Name="\DPV\POBJ" Index="247" Type="DP" RefString="Source[global].Variable[DataSource.IO.iCreaserShaftSensor]" />
-  <Symbol Name="\DPV\POBJ" Index="248" Type="DP" RefString="Source[global].Variable[DataSource.IO.iFiberOpticSensor]" />
-  <Symbol Name="\DPV\POBJ" Index="249" Type="DP" RefString="Source[global].Variable[DataSource.IO.iSM1Disabled]" />
-  <Symbol Name="\DPV\POBJ" Index="250" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.HMI.passwordSetup]" />
-  <Symbol Name="\DPV\POBJ" Index="251" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.HMI.passwordEngineer]" />
-  <Symbol Name="\DPV\POBJ" Index="252" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.AS_config]" />
-  <Symbol Name="\DPV\POBJ" Index="253" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.date]" />
-  <Symbol Name="\DPV\POBJ" Index="254" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.Rev_Number]" />
-  <Symbol Name="\DPV\POBJ" Index="255" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Position]" />
-  <Symbol Name="\DPV\POBJ" Index="256" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]" />
-  <Symbol Name="\DPV\POBJ" Index="257" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.JogPositive]" />
-  <Symbol Name="\DPV\POBJ" Index="258" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.JogNegative]" />
-  <Symbol Name="\DPV\POBJ" Index="259" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveAbsolute]" />
-  <Symbol Name="\DPV\POBJ" Index="260" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveAdditive]" />
-  <Symbol Name="\DPV\POBJ" Index="261" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveVelocity]" />
-  <Symbol Name="\DPV\POBJ" Index="262" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Stop]" />
-  <Symbol Name="\DPV\POBJ" Index="263" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Home]" />
-  <Symbol Name="\DPV\POBJ" Index="264" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Power]" />
-  <Symbol Name="\DPV\POBJ" Index="265" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.PowerOn]" />
-  <Symbol Name="\DPV\POBJ" Index="266" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.IsHomed]" />
-  <Symbol Name="\DPV\POBJ" Index="267" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.UpdateDone]" />
-  <Symbol Name="\DPV\POBJ" Index="268" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Update]" />
-  <Symbol Name="\DPV\POBJ" Index="269" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Simulation]" />
-  <Symbol Name="\DPV\POBJ" Index="270" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.TuningDone]" />
-  <Symbol Name="\DPV\POBJ" Index="271" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.BrakeReleased]" />
-  <Symbol Name="\DPV\POBJ" Index="272" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.TorqueLimited]" />
-  <Symbol Name="\DPV\POBJ" Index="273" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Simulate]" />
-  <Symbol Name="\DPV\POBJ" Index="274" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Autotune]" />
-  <Symbol Name="\DPV\POBJ" Index="275" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ReleaseBrake]" />
-  <Symbol Name="\DPV\POBJ" Index="276" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.TorqueLimit]" />
+  <Symbol Name="\DPV\POBJ" Index="236" Type="DP" RefString="Source[global].Variable[DataSource.HMI.CurrentControlHMIStatus]" />
+  <Symbol Name="\DPV\POBJ" Index="237" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.runtime_h]" />
+  <Symbol Name="\DPV\POBJ" Index="238" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.runtime_m]" />
+  <Symbol Name="\DPV\POBJ" Index="239" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.runtime_s]" />
+  <Symbol Name="\DPV\POBJ" Index="240" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.Reset]" />
+  <Symbol Name="\DPV\POBJ" Index="241" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.total_processed]" />
+  <Symbol Name="\DPV\POBJ" Index="242" Type="DP" RefString="Source[global].Variable[DataSource.gStatistics.Avg_Board_Length]" />
+  <Symbol Name="\DPV\POBJ" Index="243" Type="DP" RefString="Source[global].Variable[DataSource.IO.oCreaserCCWRotation]" />
+  <Symbol Name="\DPV\POBJ" Index="244" Type="DP" RefString="Source[global].Variable[DataSource.IO.oCreaserCWRotation]" />
+  <Symbol Name="\DPV\POBJ" Index="245" Type="DP" RefString="Source[global].Variable[DataSource.IO.oBoardFeedingLight]" />
+  <Symbol Name="\DPV\POBJ" Index="246" Type="DP" RefString="Source[global].Variable[DataSource.IO.oUIIndicatorLight]" />
+  <Symbol Name="\DPV\POBJ" Index="247" Type="DP" RefString="Source[global].Variable[DataSource.IO.iSafeMachineState]" />
+  <Symbol Name="\DPV\POBJ" Index="248" Type="DP" RefString="Source[global].Variable[DataSource.IO.iCreaserShaftSensor]" />
+  <Symbol Name="\DPV\POBJ" Index="249" Type="DP" RefString="Source[global].Variable[DataSource.IO.iFiberOpticSensor]" />
+  <Symbol Name="\DPV\POBJ" Index="250" Type="DP" RefString="Source[global].Variable[DataSource.IO.iSM1Disabled]" />
+  <Symbol Name="\DPV\POBJ" Index="251" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.HMI.passwordSetup]" />
+  <Symbol Name="\DPV\POBJ" Index="252" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.HMI.passwordEngineer]" />
+  <Symbol Name="\DPV\POBJ" Index="253" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.AS_config]" />
+  <Symbol Name="\DPV\POBJ" Index="254" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.date]" />
+  <Symbol Name="\DPV\POBJ" Index="255" Type="DP" RefString="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.Rev_Number]" />
+  <Symbol Name="\DPV\POBJ" Index="256" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Position]" />
+  <Symbol Name="\DPV\POBJ" Index="257" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]" />
+  <Symbol Name="\DPV\POBJ" Index="258" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveAbsolute]" />
+  <Symbol Name="\DPV\POBJ" Index="259" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveAdditive]" />
+  <Symbol Name="\DPV\POBJ" Index="260" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveVelocity]" />
+  <Symbol Name="\DPV\POBJ" Index="261" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Stop]" />
+  <Symbol Name="\DPV\POBJ" Index="262" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Home]" />
+  <Symbol Name="\DPV\POBJ" Index="263" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Power]" />
+  <Symbol Name="\DPV\POBJ" Index="264" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.PowerOn]" />
+  <Symbol Name="\DPV\POBJ" Index="265" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.IsHomed]" />
+  <Symbol Name="\DPV\POBJ" Index="266" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.UpdateDone]" />
+  <Symbol Name="\DPV\POBJ" Index="267" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Update]" />
+  <Symbol Name="\DPV\POBJ" Index="268" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Simulation]" />
+  <Symbol Name="\DPV\POBJ" Index="269" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.TuningDone]" />
+  <Symbol Name="\DPV\POBJ" Index="270" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.BrakeReleased]" />
+  <Symbol Name="\DPV\POBJ" Index="271" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.TorqueLimited]" />
+  <Symbol Name="\DPV\POBJ" Index="272" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Simulate]" />
+  <Symbol Name="\DPV\POBJ" Index="273" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Autotune]" />
+  <Symbol Name="\DPV\POBJ" Index="274" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ReleaseBrake]" />
+  <Symbol Name="\DPV\POBJ" Index="275" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.TorqueLimit]" />
+  <Symbol Name="\DPV\POBJ" Index="276" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ErrorReset]" />
   <Symbol Name="\DPV\POBJ" Index="277" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.ReadyToPowerOn]" />
   <Symbol Name="\DPV\POBJ" Index="278" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.TorqueLimitActive]" />
-  <Symbol Name="\DPV\POBJ" Index="279" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.Torque.Valid]" />
-  <Symbol Name="\DPV\POBJ" Index="280" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.Torque.Value]" />
-  <Symbol Name="\DPV\POBJ" Index="281" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.LagError.Valid]" />
-  <Symbol Name="\DPV\POBJ" Index="282" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.LagError.Value]" />
-  <Symbol Name="\DPV\POBJ" Index="283" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.MotorTemperature.Valid]" />
-  <Symbol Name="\DPV\POBJ" Index="284" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.MotorTemperature.Value]" />
-  <Symbol Name="\DPV\POBJ" Index="285" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Distance]" />
-  <Symbol Name="\DPV\POBJ" Index="286" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Position]" />
-  <Symbol Name="\DPV\POBJ" Index="287" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Velocity]" />
-  <Symbol Name="\DPV\POBJ" Index="288" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Acceleration]" />
-  <Symbol Name="\DPV\POBJ" Index="289" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Deceleration]" />
-  <Symbol Name="\DPV\POBJ" Index="290" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Direction]" />
-  <Symbol Name="\DPV\POBJ" Index="291" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.Mode]" />
-  <Symbol Name="\DPV\POBJ" Index="292" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.Position]" />
-  <Symbol Name="\DPV\POBJ" Index="293" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.StartVelocity]" />
-  <Symbol Name="\DPV\POBJ" Index="294" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.HomingVelocity]" />
-  <Symbol Name="\DPV\POBJ" Index="295" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.SensorOffset]" />
-  <Symbol Name="\DPV\POBJ" Index="296" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.Acceleration]" />
-  <Symbol Name="\DPV\POBJ" Index="297" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.StartDirection]" />
-  <Symbol Name="\DPV\POBJ" Index="298" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.HomingDirection]" />
-  <Symbol Name="\DPV\POBJ" Index="299" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.SwitchEdge]" />
-  <Symbol Name="\DPV\POBJ" Index="300" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.NoDirectionChange]" />
-  <Symbol Name="\DPV\POBJ" Index="301" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.ReferencePulse]" />
-  <Symbol Name="\DPV\POBJ" Index="302" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.ReferencePulseBlockingDistance]" />
-  <Symbol Name="\DPV\POBJ" Index="303" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.TorqueLimit]" />
-  <Symbol Name="\DPV\POBJ" Index="304" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.BlockDetectionPositionError]" />
-  <Symbol Name="\DPV\POBJ" Index="305" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.PositionErrorStopLimit]" />
-  <Symbol Name="\DPV\POBJ" Index="306" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Torque.Limit]" />
-  <Symbol Name="\DPV\POBJ" Index="307" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Torque.Window]" />
-  <Symbol Name="\DPV\POBJ" Index="308" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.CyclicRead.TorqueMode]" />
-  <Symbol Name="\DPV\POBJ" Index="309" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.CyclicRead.LagErrorMode]" />
-  <Symbol Name="\DPV\POBJ" Index="310" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.CyclicRead.MotorTempMode]" />
-  <Symbol Name="\DPV\POBJ" Index="311" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.Mode]" />
-  <Symbol Name="\DPV\POBJ" Index="312" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.FeedForward]" />
-  <Symbol Name="\DPV\POBJ" Index="313" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.Vertical]" />
-  <Symbol Name="\DPV\POBJ" Index="314" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.MaxCurrentPercent]" />
-  <Symbol Name="\DPV\POBJ" Index="315" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.MaxSpeedPercent]" />
-  <Symbol Name="\DPV\POBJ" Index="316" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.MaxDistance]" />
-  <Symbol Name="\DPV\POBJ" Index="317" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.ProportionalAmplification]" />
-  <Symbol Name="\DPV\POBJ" Index="318" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Stop.Deceleration]" />
-  <Symbol Name="\DPV\POBJ" Index="319" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Stop.Phase]" />
-  <Symbol Name="\DPV\POBJ" Index="320" Type="DP" RefString="Source[global].Variable[DataSource.gMachine.HMI.PowerCycleSystem]" />
-  <Symbol Name="\DPV\POBJ" Index="321" Type="DP" RefString="Source[global].Variable[DataSource.Application.Creaser.ii_crease_count]" />
-  <Symbol Name="\DPV\POBJ" Index="322" Type="DP" RefString="Source[global].Variable[DataSource.AxisControl.Position]" />
-  <Symbol Name="\DPV\POBJ" Index="323" Type="DP" RefString="Source[global].Variable[DataSource.ProcessState]" />
-  <Symbol Name="\DPV\POBJ" Index="324" Type="DP" RefString="Source[global].Variable[DataSource.MachineState]" />
-  <Symbol Name="\DPV\POBJ" Index="325" Type="DP" RefString="Source[global].Variable[DataSource.gMachineName]" />
-  <Symbol Name="\DPV\POBJ" Index="326" Type="DP" RefString="Source[global].Variable[DataSource.iStartCommand]" />
-  <Symbol Name="\DPV\POBJ" Index="327" Type="DP" RefString="Source[global].Variable[DataSource.iMachineErrorReset]" />
-  <Symbol Name="\DPV\POBJ" Index="328" Type="DP" RefString="Source[global].Variable[DataSource.iSoftStopCommand]" />
-  <Symbol Name="\DPV\POBJ" Index="329" Type="DP" RefString="Source[global].Variable[DataSource.Latch_Board_Length]" />
-  <Symbol Name="\DPV\POBJ" Index="330" Type="DP" RefString="Source[global].Variable[DataSource.Current_Crease_Section_Length]" />
-  <Symbol Name="\DPV\POBJ" Index="331" Type="DP" RefString="Source[global].Variable[DataSource.Current_Board_Position]" />
-  <Symbol Name="\DPV\POBJ" Index="332" Type="DP" RefString="Source[global].Variable[DataSource.gSimulateMachine]" />
-  <Symbol Name="\DPV\POBJ" Index="333" Type="DP" RefString="Source[global].Variable[Internal.Display.Brightness]" />
-  <Symbol Name="\DPV\POBJ" Index="334" Type="DP" RefString="Source[global].Variable[Internal.Display.Contrast]" />
-  <Symbol Name="\DPV\POBJ" Index="335" Type="DP" RefString="Source[global].Variable[Internal.Display.BackLight]" />
-  <Symbol Name="\DPV\POBJ" Index="336" Type="DP" RefString="Source[global].Variable[Internal.Connection.IPAddress]" />
-  <Symbol Name="\DPV\POBJ" Index="337" Type="DP" RefString="Source[global].Variable[Internal.Connection.NodeNumber]" />
-  <Symbol Name="\DPV\POBJ" Index="338" Type="DP" RefString="Source[global].Variable[Internal.Temperature.CPU]" />
-  <Symbol Name="\DPV\POBJ" Index="339" Type="DP" RefString="Source[global].Variable[Internal.Temperature.Room]" />
-  <Symbol Name="\DPV\POBJ" Index="340" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Day]" />
-  <Symbol Name="\DPV\POBJ" Index="341" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Hour]" />
-  <Symbol Name="\DPV\POBJ" Index="342" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Minute]" />
-  <Symbol Name="\DPV\POBJ" Index="343" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Month]" />
-  <Symbol Name="\DPV\POBJ" Index="344" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Second]" />
-  <Symbol Name="\DPV\POBJ" Index="345" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Year]" />
-  <Symbol Name="\DPV\POBJ" Index="346" Type="DP" RefString="Source[global].Variable[Internal.DateTime.DayOfWeek]" />
-  <Symbol Name="\DPV\POBJ" Index="347" Type="DP" RefString="Source[global].Variable[Internal.Memory.LargestFreeBlock]" />
-  <Symbol Name="\DPV\POBJ" Index="348" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalFree]" />
-  <Symbol Name="\DPV\POBJ" Index="349" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalInstalled]" />
+  <Symbol Name="\DPV\POBJ" Index="279" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.PLCopenState]" />
+  <Symbol Name="\DPV\POBJ" Index="280" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.Torque.Valid]" />
+  <Symbol Name="\DPV\POBJ" Index="281" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.Torque.Value]" />
+  <Symbol Name="\DPV\POBJ" Index="282" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.LagError.Valid]" />
+  <Symbol Name="\DPV\POBJ" Index="283" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.LagError.Value]" />
+  <Symbol Name="\DPV\POBJ" Index="284" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.MotorTemperature.Valid]" />
+  <Symbol Name="\DPV\POBJ" Index="285" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.CyclicRead.MotorTemperature.Value]" />
+  <Symbol Name="\DPV\POBJ" Index="286" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.ExecutingCommand]" />
+  <Symbol Name="\DPV\POBJ" Index="287" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Severity]" />
+  <Symbol Name="\DPV\POBJ" Index="288" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Code]" />
+  <Symbol Name="\DPV\POBJ" Index="289" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Severity]" />
+  <Symbol Name="\DPV\POBJ" Index="290" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Facility]" />
+  <Symbol Name="\DPV\POBJ" Index="291" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Code]" />
+  <Symbol Name="\DPV\POBJ" Index="292" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Distance]" />
+  <Symbol Name="\DPV\POBJ" Index="293" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Position]" />
+  <Symbol Name="\DPV\POBJ" Index="294" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Velocity]" />
+  <Symbol Name="\DPV\POBJ" Index="295" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Acceleration]" />
+  <Symbol Name="\DPV\POBJ" Index="296" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Deceleration]" />
+  <Symbol Name="\DPV\POBJ" Index="297" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Direction]" />
+  <Symbol Name="\DPV\POBJ" Index="298" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.Mode]" />
+  <Symbol Name="\DPV\POBJ" Index="299" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.Position]" />
+  <Symbol Name="\DPV\POBJ" Index="300" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.StartVelocity]" />
+  <Symbol Name="\DPV\POBJ" Index="301" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.HomingVelocity]" />
+  <Symbol Name="\DPV\POBJ" Index="302" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.SensorOffset]" />
+  <Symbol Name="\DPV\POBJ" Index="303" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.Acceleration]" />
+  <Symbol Name="\DPV\POBJ" Index="304" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.StartDirection]" />
+  <Symbol Name="\DPV\POBJ" Index="305" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.HomingDirection]" />
+  <Symbol Name="\DPV\POBJ" Index="306" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.SwitchEdge]" />
+  <Symbol Name="\DPV\POBJ" Index="307" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.NoDirectionChange]" />
+  <Symbol Name="\DPV\POBJ" Index="308" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.ReferencePulse]" />
+  <Symbol Name="\DPV\POBJ" Index="309" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.ReferencePulseBlockingDistance]" />
+  <Symbol Name="\DPV\POBJ" Index="310" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.TorqueLimit]" />
+  <Symbol Name="\DPV\POBJ" Index="311" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.BlockDetectionPositionError]" />
+  <Symbol Name="\DPV\POBJ" Index="312" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Home.PositionErrorStopLimit]" />
+  <Symbol Name="\DPV\POBJ" Index="313" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Torque.Limit]" />
+  <Symbol Name="\DPV\POBJ" Index="314" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Torque.Window]" />
+  <Symbol Name="\DPV\POBJ" Index="315" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.CyclicRead.TorqueMode]" />
+  <Symbol Name="\DPV\POBJ" Index="316" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.CyclicRead.LagErrorMode]" />
+  <Symbol Name="\DPV\POBJ" Index="317" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.CyclicRead.MotorTempMode]" />
+  <Symbol Name="\DPV\POBJ" Index="318" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.Mode]" />
+  <Symbol Name="\DPV\POBJ" Index="319" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.FeedForward]" />
+  <Symbol Name="\DPV\POBJ" Index="320" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.Vertical]" />
+  <Symbol Name="\DPV\POBJ" Index="321" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.MaxCurrentPercent]" />
+  <Symbol Name="\DPV\POBJ" Index="322" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.MaxSpeedPercent]" />
+  <Symbol Name="\DPV\POBJ" Index="323" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.MaxDistance]" />
+  <Symbol Name="\DPV\POBJ" Index="324" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Autotune.ProportionalAmplification]" />
+  <Symbol Name="\DPV\POBJ" Index="325" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Stop.Deceleration]" />
+  <Symbol Name="\DPV\POBJ" Index="326" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Stop.Phase]" />
+  <Symbol Name="\DPV\POBJ" Index="327" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.gMotionAxesListbox.Index]" />
+  <Symbol Name="\DPV\POBJ" Index="328" Type="DP" RefString="Source[global].Variable[DataSource.MotionControl.gMotionAxesListbox.Strings]" />
+  <Symbol Name="\DPV\POBJ" Index="329" Type="DP" RefString="Source[global].Variable[DataSource.gMachine.HMI.PowerCycleSystem]" />
+  <Symbol Name="\DPV\POBJ" Index="330" Type="DP" RefString="Source[global].Variable[DataSource.Application.Creaser.ii_crease_count]" />
+  <Symbol Name="\DPV\POBJ" Index="331" Type="DP" RefString="Source[global].Variable[DataSource.AxisControl.Position]" />
+  <Symbol Name="\DPV\POBJ" Index="332" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AlarmImage]" />
+  <Symbol Name="\DPV\POBJ" Index="333" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AcknowledgeImage]" />
+  <Symbol Name="\DPV\POBJ" Index="334" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[0]]" />
+  <Symbol Name="\DPV\POBJ" Index="335" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[1]]" />
+  <Symbol Name="\DPV\POBJ" Index="336" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[2]]" />
+  <Symbol Name="\DPV\POBJ" Index="337" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[3]]" />
+  <Symbol Name="\DPV\POBJ" Index="338" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[4]]" />
+  <Symbol Name="\DPV\POBJ" Index="339" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[5]]" />
+  <Symbol Name="\DPV\POBJ" Index="340" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[6]]" />
+  <Symbol Name="\DPV\POBJ" Index="341" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[7]]" />
+  <Symbol Name="\DPV\POBJ" Index="342" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[8]]" />
+  <Symbol Name="\DPV\POBJ" Index="343" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[9]]" />
+  <Symbol Name="\DPV\POBJ" Index="344" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[10]]" />
+  <Symbol Name="\DPV\POBJ" Index="345" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[11]]" />
+  <Symbol Name="\DPV\POBJ" Index="346" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[12]]" />
+  <Symbol Name="\DPV\POBJ" Index="347" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[13]]" />
+  <Symbol Name="\DPV\POBJ" Index="348" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[14]]" />
+  <Symbol Name="\DPV\POBJ" Index="349" Type="DP" RefString="Source[global].Variable[DataSource.Alarm_Feed.AddInfo[15]]" />
+  <Symbol Name="\DPV\POBJ" Index="350" Type="DP" RefString="Source[global].Variable[DataSource.AppAlarms.AlarmImage]" />
+  <Symbol Name="\DPV\POBJ" Index="351" Type="DP" RefString="Source[global].Variable[DataSource.AppAlarms.AcknowledgeImage]" />
+  <Symbol Name="\DPV\POBJ" Index="352" Type="DP" RefString="Source[global].Variable[DataSource.ProcessState]" />
+  <Symbol Name="\DPV\POBJ" Index="353" Type="DP" RefString="Source[global].Variable[DataSource.MachineState]" />
+  <Symbol Name="\DPV\POBJ" Index="354" Type="DP" RefString="Source[global].Variable[DataSource.gMachineName]" />
+  <Symbol Name="\DPV\POBJ" Index="355" Type="DP" RefString="Source[global].Variable[DataSource.iStartCommand]" />
+  <Symbol Name="\DPV\POBJ" Index="356" Type="DP" RefString="Source[global].Variable[DataSource.iMachineErrorReset]" />
+  <Symbol Name="\DPV\POBJ" Index="357" Type="DP" RefString="Source[global].Variable[DataSource.iSoftStopCommand]" />
+  <Symbol Name="\DPV\POBJ" Index="358" Type="DP" RefString="Source[global].Variable[DataSource.Latch_Board_Length]" />
+  <Symbol Name="\DPV\POBJ" Index="359" Type="DP" RefString="Source[global].Variable[DataSource.Current_Crease_Section_Length]" />
+  <Symbol Name="\DPV\POBJ" Index="360" Type="DP" RefString="Source[global].Variable[DataSource.Current_Board_Position]" />
+  <Symbol Name="\DPV\POBJ" Index="361" Type="DP" RefString="Source[global].Variable[DataSource.gSimulateMachine]" />
+  <Symbol Name="\DPV\POBJ" Index="362" Type="DP" RefString="Source[global].Variable[Internal.Display.Brightness]" />
+  <Symbol Name="\DPV\POBJ" Index="363" Type="DP" RefString="Source[global].Variable[Internal.Display.Contrast]" />
+  <Symbol Name="\DPV\POBJ" Index="364" Type="DP" RefString="Source[global].Variable[Internal.Display.BackLight]" />
+  <Symbol Name="\DPV\POBJ" Index="365" Type="DP" RefString="Source[global].Variable[Internal.Connection.IPAddress]" />
+  <Symbol Name="\DPV\POBJ" Index="366" Type="DP" RefString="Source[global].Variable[Internal.Connection.NodeNumber]" />
+  <Symbol Name="\DPV\POBJ" Index="367" Type="DP" RefString="Source[global].Variable[Internal.Temperature.CPU]" />
+  <Symbol Name="\DPV\POBJ" Index="368" Type="DP" RefString="Source[global].Variable[Internal.Temperature.Room]" />
+  <Symbol Name="\DPV\POBJ" Index="369" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Day]" />
+  <Symbol Name="\DPV\POBJ" Index="370" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Hour]" />
+  <Symbol Name="\DPV\POBJ" Index="371" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Minute]" />
+  <Symbol Name="\DPV\POBJ" Index="372" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Month]" />
+  <Symbol Name="\DPV\POBJ" Index="373" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Second]" />
+  <Symbol Name="\DPV\POBJ" Index="374" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Year]" />
+  <Symbol Name="\DPV\POBJ" Index="375" Type="DP" RefString="Source[global].Variable[Internal.DateTime.DayOfWeek]" />
+  <Symbol Name="\DPV\POBJ" Index="376" Type="DP" RefString="Source[global].Variable[Internal.Memory.LargestFreeBlock]" />
+  <Symbol Name="\DPV\POBJ" Index="377" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalFree]" />
+  <Symbol Name="\DPV\POBJ" Index="378" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalInstalled]" />
   <Symbol Name="Source[global].UnitGroup[Length]" Index="3221225472" Type="UG" RefString="Source[global].UnitGroup[Length]" />
   <Symbol Name="Source[global].UnitGroup[Length].Unit[$OneToOne]" Index="3221225480" Type="UNIT" RefString="Source[global].UnitGroup[Length].Unit[$OneToOne]" />
   <Symbol Name="Source[global].UnitGroup[Mass]" Index="3221225473" Type="UG" RefString="Source[global].UnitGroup[Mass]" />
@@ -425,73 +456,92 @@
   <Symbol Name="Source[global].TextGroup[Pressure_embedded]" Index="3221225477" Type="TG" RefString="Source[global].TextGroup[Pressure_embedded]" />
   <Symbol Name="Source[global].TextGroup[Temperatures_embedded]" Index="3221225478" Type="TG" RefString="Source[global].TextGroup[Temperatures_embedded]" />
   <Symbol Name="Source[global].TextGroup[AG.SystemAlarms.AS1]" Index="3221225479" Type="TG" RefString="Source[global].TextGroup[AG.SystemAlarms.AS1]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name0]" Index="3221225472" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name0]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name1]" Index="3221225473" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name1]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name2]" Index="3221225474" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name2]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name3]" Index="3221225475" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name3]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name4]" Index="3221225476" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name4]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name5]" Index="3221225477" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name5]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name6]" Index="3221225478" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name6]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name7]" Index="3221225479" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name7]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name8]" Index="3221225480" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name8]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name9]" Index="3221225481" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name9]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name10]" Index="3221225482" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name10]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name11]" Index="3221225483" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name11]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name12]" Index="3221225484" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name12]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name13]" Index="3221225485" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name13]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name0]" Index="3221225486" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name0]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name1]" Index="3221225487" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name1]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name2]" Index="3221225488" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name2]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name3]" Index="3221225489" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name3]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name4]" Index="3221225490" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name4]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name5]" Index="3221225491" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name5]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name6]" Index="3221225492" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name6]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name7]" Index="3221225493" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name7]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name8]" Index="3221225494" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name8]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name9]" Index="3221225495" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name9]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name10]" Index="3221225496" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name10]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name11]" Index="3221225497" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name11]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name12]" Index="3221225498" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name12]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name13]" Index="3221225499" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name13]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName]" Index="3221225500" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[DevName]" Index="3221225501" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[DevName]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount]" Index="3221225502" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount]" Index="3221225503" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName1]" Index="3221225504" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName1]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount1]" Index="3221225505" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount1]" />
-  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount1]" Index="3221225506" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount1]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_0]" Index="3221225507" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_0]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_1]" Index="3221225508" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_1]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_2]" Index="3221225509" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_2]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_3]" Index="3221225510" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_3]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_4]" Index="3221225511" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_4]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_5]" Index="3221225512" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_5]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_6]" Index="3221225513" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_6]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_7]" Index="3221225514" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_7]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_8]" Index="3221225515" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_8]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_9]" Index="3221225516" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_9]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_10]" Index="3221225517" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_10]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_11]" Index="3221225518" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_11]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_12]" Index="3221225519" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_12]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_13]" Index="3221225520" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_13]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_14]" Index="3221225521" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_14]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_15]" Index="3221225522" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_15]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_16]" Index="3221225523" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_16]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_17]" Index="3221225524" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_17]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_18]" Index="3221225525" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_18]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_19]" Index="3221225526" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_19]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName]" Index="3221225527" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[DevName]" Index="3221225528" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[DevName]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount]" Index="3221225529" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount]" Index="3221225530" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName1]" Index="3221225531" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName1]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount1]" Index="3221225532" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount1]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount1]" Index="3221225533" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount1]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DirName]" Index="3221225534" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DirName]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DevName]" Index="3221225535" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DevName]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FileCount]" Index="3221225536" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FileCount]" />
-  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FolderCount]" Index="3221225537" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FolderCount]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo0]" Index="3221225472" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo0]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo1]" Index="3221225473" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo1]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo2]" Index="3221225474" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo2]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo3]" Index="3221225475" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo3]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo4]" Index="3221225476" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo4]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo5]" Index="3221225477" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo5]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo6]" Index="3221225478" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo6]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo7]" Index="3221225479" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo7]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo8]" Index="3221225480" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo8]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo9]" Index="3221225481" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo9]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo10]" Index="3221225482" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo10]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo11]" Index="3221225483" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo11]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo12]" Index="3221225484" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo12]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo13]" Index="3221225485" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo13]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo14]" Index="3221225486" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo14]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo15]" Index="3221225487" Type="SNP" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Snippet[AddInfo15]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1]" Index="3221225480" Type="TG" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1]" />
+  <Symbol Name="Source[global].TextGroup[AG.AppAlarms.AS1]" Index="3221225481" Type="TG" RefString="Source[global].TextGroup[AG.AppAlarms.AS1]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name0]" Index="3221225488" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name0]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name1]" Index="3221225489" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name1]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name2]" Index="3221225490" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name2]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name3]" Index="3221225491" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name3]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name4]" Index="3221225492" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name4]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name5]" Index="3221225493" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name5]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name6]" Index="3221225494" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name6]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name7]" Index="3221225495" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name7]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name8]" Index="3221225496" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name8]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name9]" Index="3221225497" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name9]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name10]" Index="3221225498" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name10]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name11]" Index="3221225499" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name11]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name12]" Index="3221225500" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name12]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name13]" Index="3221225501" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Snippet[Name13]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name0]" Index="3221225502" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name0]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name1]" Index="3221225503" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name1]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name2]" Index="3221225504" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name2]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name3]" Index="3221225505" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name3]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name4]" Index="3221225506" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name4]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name5]" Index="3221225507" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name5]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name6]" Index="3221225508" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name6]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name7]" Index="3221225509" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name7]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name8]" Index="3221225510" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name8]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name9]" Index="3221225511" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name9]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name10]" Index="3221225512" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name10]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name11]" Index="3221225513" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name11]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name12]" Index="3221225514" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name12]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name13]" Index="3221225515" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Snippet[Name13]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName]" Index="3221225516" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[DevName]" Index="3221225517" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[DevName]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount]" Index="3221225518" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount]" Index="3221225519" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName1]" Index="3221225520" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[DirName1]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount1]" Index="3221225521" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FileCount1]" />
+  <Symbol Name="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount1]" Index="3221225522" Type="SNP" RefString="Source[global].TextGroup[MpFileManagerUIText].Snippet[FolderCount1]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_0]" Index="3221225523" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_0]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_1]" Index="3221225524" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_1]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_2]" Index="3221225525" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_2]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_3]" Index="3221225526" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_3]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_4]" Index="3221225527" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_4]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_5]" Index="3221225528" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_5]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_6]" Index="3221225529" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_6]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_7]" Index="3221225530" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_7]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_8]" Index="3221225531" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_8]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_9]" Index="3221225532" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_9]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_10]" Index="3221225533" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_10]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_11]" Index="3221225534" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_11]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_12]" Index="3221225535" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_12]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_13]" Index="3221225536" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_13]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_14]" Index="3221225537" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_14]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_15]" Index="3221225538" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_15]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_16]" Index="3221225539" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_16]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_17]" Index="3221225540" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_17]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_18]" Index="3221225541" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_18]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_19]" Index="3221225542" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUISize].Snippet[SizeIndex_19]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName]" Index="3221225543" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[DevName]" Index="3221225544" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[DevName]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount]" Index="3221225545" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount]" Index="3221225546" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName1]" Index="3221225547" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName1]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount1]" Index="3221225548" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount1]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount1]" Index="3221225549" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount1]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DirName]" Index="3221225550" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DirName]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DevName]" Index="3221225551" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[DevName]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FileCount]" Index="3221225552" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FileCount]" />
+  <Symbol Name="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FolderCount]" Index="3221225553" Type="SNP" RefString="Source[global].TextGroup[MpRecipeUIText_0].Snippet[FolderCount]" />
   <Symbol Name="Source[global].AlarmSystem[AS1]" Index="3221225472" Type="AS" RefString="Source[global].AlarmSystem[AS1]" />
+  <Symbol Name="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].TextSnippetData[TextSnippetData]" Index="3221225472" Type="TSD" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].TextSnippetData[TextSnippetData]" />
   <Symbol Name="Source[global].DataSource[Internal]" Index="3221225472" Type="DS" RefString="Source[global].DataSource[Internal]" />
   <Symbol Name="Source[global].DataSource[DataSource]" Index="3221225473" Type="DS" RefString="Source[global].DataSource[DataSource]" />
   <Symbol Name="Source[global].DPV[]" Index="3221225472" Type="DPM" RefString="Source[global].DPV[]" />
@@ -511,6 +561,8 @@
   <Symbol Name="\Language\en\TextGroups\POBJ" Index="3221225477" Type="TG" RefString="Source[global].TextGroup[Pressure_embedded].Language[en]" />
   <Symbol Name="\Language\en\TextGroups\POBJ" Index="3221225478" Type="TG" RefString="Source[global].TextGroup[Temperatures_embedded].Language[en]" />
   <Symbol Name="\Language\en\TextGroups\POBJ" Index="3221225479" Type="TG" RefString="Source[global].TextGroup[AG.SystemAlarms.AS1].Language[en]" />
+  <Symbol Name="\Language\en\TextGroups\POBJ" Index="3221225480" Type="TG" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Language[en]" />
+  <Symbol Name="\Language\en\TextGroups\POBJ" Index="3221225481" Type="TG" RefString="Source[global].TextGroup[AG.AppAlarms.AS1].Language[en]" />
   <Symbol Name="\Language\en\TextGroups\POBJ" Index="2147483800" Type="TG" RefString="Source[global].TextGroup[AlarmAcknowledgeState].Language[en]" />
   <Symbol Name="\Language\en\TextGroups\POBJ" Index="2147483801" Type="TG" RefString="Source[global].TextGroup[AlarmBypassState].Language[en]" />
   <Symbol Name="\Language\en\TextGroups\POBJ" Index="2147483799" Type="TG" RefString="Source[global].TextGroup[AlarmEvent].Language[en]" />
@@ -536,6 +588,8 @@
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="3221225477" Type="TG" RefString="Source[global].TextGroup[Pressure_embedded].Language[de]" />
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="3221225478" Type="TG" RefString="Source[global].TextGroup[Temperatures_embedded].Language[de]" />
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="3221225479" Type="TG" RefString="Source[global].TextGroup[AG.SystemAlarms.AS1].Language[de]" />
+  <Symbol Name="\Language\de\TextGroups\POBJ" Index="3221225480" Type="TG" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Language[de]" />
+  <Symbol Name="\Language\de\TextGroups\POBJ" Index="3221225481" Type="TG" RefString="Source[global].TextGroup[AG.AppAlarms.AS1].Language[de]" />
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="2147483800" Type="TG" RefString="Source[global].TextGroup[AlarmAcknowledgeState].Language[de]" />
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="2147483801" Type="TG" RefString="Source[global].TextGroup[AlarmBypassState].Language[de]" />
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="2147483799" Type="TG" RefString="Source[global].TextGroup[AlarmEvent].Language[de]" />
@@ -553,27 +607,129 @@
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="2147484666" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIStatus].Language[de]" />
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="2147484676" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText].Language[de]" />
   <Symbol Name="\Language\de\TextGroups\POBJ" Index="2147484672" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText_0].Language[de]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225472" Type="TG" RefString="Source[global].TextGroup[Length_embedded].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225473" Type="TG" RefString="Source[global].TextGroup[Mass_embedded].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225474" Type="TG" RefString="Source[global].TextGroup[Volume_embedded].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225475" Type="TG" RefString="Source[global].TextGroup[Power_embedded].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225476" Type="TG" RefString="Source[global].TextGroup[Memory_embedded].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225477" Type="TG" RefString="Source[global].TextGroup[Pressure_embedded].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225478" Type="TG" RefString="Source[global].TextGroup[Temperatures_embedded].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225479" Type="TG" RefString="Source[global].TextGroup[AG.SystemAlarms.AS1].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225480" Type="TG" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="3221225481" Type="TG" RefString="Source[global].TextGroup[AG.AppAlarms.AS1].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147483800" Type="TG" RefString="Source[global].TextGroup[AlarmAcknowledgeState].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147483801" Type="TG" RefString="Source[global].TextGroup[AlarmBypassState].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147483799" Type="TG" RefString="Source[global].TextGroup[AlarmEvent].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147483798" Type="TG" RefString="Source[global].TextGroup[AlarmState].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147483648" Type="TG" RefString="Source[global].TextGroup[DateTimeFormats].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147483649" Type="TG" RefString="Source[global].TextGroup[httpURL_SDM].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484649" Type="TG" RefString="Source[global].TextGroup[MpDateTimeFormats].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484668" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484669" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484652" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIMessageBox].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484667" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIStatus].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484665" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIText].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147483651" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIMessageBox].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484671" Type="TG" RefString="Source[global].TextGroup[MpRecipeUISize].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484666" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIStatus].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484676" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText].Language[pt]" />
+  <Symbol Name="\Language\pt\TextGroups\POBJ" Index="2147484672" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText_0].Language[pt]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225472" Type="TG" RefString="Source[global].TextGroup[Length_embedded].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225473" Type="TG" RefString="Source[global].TextGroup[Mass_embedded].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225474" Type="TG" RefString="Source[global].TextGroup[Volume_embedded].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225475" Type="TG" RefString="Source[global].TextGroup[Power_embedded].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225476" Type="TG" RefString="Source[global].TextGroup[Memory_embedded].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225477" Type="TG" RefString="Source[global].TextGroup[Pressure_embedded].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225478" Type="TG" RefString="Source[global].TextGroup[Temperatures_embedded].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225479" Type="TG" RefString="Source[global].TextGroup[AG.SystemAlarms.AS1].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225480" Type="TG" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="3221225481" Type="TG" RefString="Source[global].TextGroup[AG.AppAlarms.AS1].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147483800" Type="TG" RefString="Source[global].TextGroup[AlarmAcknowledgeState].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147483801" Type="TG" RefString="Source[global].TextGroup[AlarmBypassState].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147483799" Type="TG" RefString="Source[global].TextGroup[AlarmEvent].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147483798" Type="TG" RefString="Source[global].TextGroup[AlarmState].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147483648" Type="TG" RefString="Source[global].TextGroup[DateTimeFormats].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147483649" Type="TG" RefString="Source[global].TextGroup[httpURL_SDM].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484649" Type="TG" RefString="Source[global].TextGroup[MpDateTimeFormats].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484668" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484669" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484652" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIMessageBox].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484667" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIStatus].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484665" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIText].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147483651" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIMessageBox].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484671" Type="TG" RefString="Source[global].TextGroup[MpRecipeUISize].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484666" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIStatus].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484676" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText].Language[es]" />
+  <Symbol Name="\Language\es\TextGroups\POBJ" Index="2147484672" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText_0].Language[es]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225472" Type="TG" RefString="Source[global].TextGroup[Length_embedded].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225473" Type="TG" RefString="Source[global].TextGroup[Mass_embedded].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225474" Type="TG" RefString="Source[global].TextGroup[Volume_embedded].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225475" Type="TG" RefString="Source[global].TextGroup[Power_embedded].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225476" Type="TG" RefString="Source[global].TextGroup[Memory_embedded].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225477" Type="TG" RefString="Source[global].TextGroup[Pressure_embedded].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225478" Type="TG" RefString="Source[global].TextGroup[Temperatures_embedded].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225479" Type="TG" RefString="Source[global].TextGroup[AG.SystemAlarms.AS1].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225480" Type="TG" RefString="Source[global].TextGroup[AG.Motor_Line_Alarms.AS1].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="3221225481" Type="TG" RefString="Source[global].TextGroup[AG.AppAlarms.AS1].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147483800" Type="TG" RefString="Source[global].TextGroup[AlarmAcknowledgeState].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147483801" Type="TG" RefString="Source[global].TextGroup[AlarmBypassState].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147483799" Type="TG" RefString="Source[global].TextGroup[AlarmEvent].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147483798" Type="TG" RefString="Source[global].TextGroup[AlarmState].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147483648" Type="TG" RefString="Source[global].TextGroup[DateTimeFormats].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147483649" Type="TG" RefString="Source[global].TextGroup[httpURL_SDM].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484649" Type="TG" RefString="Source[global].TextGroup[MpDateTimeFormats].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484668" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIDevices].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484669" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIFiles].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484652" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIMessageBox].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484667" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIStatus].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484665" Type="TG" RefString="Source[global].TextGroup[MpFileManagerUIText].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147483651" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIMessageBox].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484671" Type="TG" RefString="Source[global].TextGroup[MpRecipeUISize].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484666" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIStatus].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484676" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText].Language[sv]" />
+  <Symbol Name="\Language\sv\TextGroups\POBJ" Index="2147484672" Type="TG" RefString="Source[global].TextGroup[MpRecipeUIText_0].Language[sv]" />
   <Symbol Name="\Projects\Visu1" Index="1001" Type="REF" RefString="Source[local].BitmapGroup[MpPads]" />
   <Symbol Name="\Projects\Visu1\Language\en\BitmapGroups\POBJ" Index="1001" Type="BMPG" RefString="Source[local].BitmapGroup[MpPads_en]" />
   <Symbol Name="\Projects\Visu1\Language\de\BitmapGroups\POBJ" Index="1001" Type="BMPG" RefString="Source[local].BitmapGroup[MpPads_de]" />
+  <Symbol Name="\Projects\Visu1\Language\pt\BitmapGroups\POBJ" Index="1001" Type="BMPG" RefString="Source[local].BitmapGroup[MpPads_pt]" />
+  <Symbol Name="\Projects\Visu1\Language\es\BitmapGroups\POBJ" Index="1001" Type="BMPG" RefString="Source[local].BitmapGroup[MpPads_es]" />
+  <Symbol Name="\Projects\Visu1\Language\sv\BitmapGroups\POBJ" Index="1001" Type="BMPG" RefString="Source[local].BitmapGroup[MpPads_sv]" />
   <Symbol Name="\Projects\Visu1" Index="2" Type="REF" RefString="Source[local].BitmapGroup[Pads]" />
   <Symbol Name="\Projects\Visu1\Language\en\BitmapGroups\POBJ" Index="2" Type="BMPG" RefString="Source[local].BitmapGroup[Pads_en]" />
   <Symbol Name="\Projects\Visu1\Language\de\BitmapGroups\POBJ" Index="2" Type="BMPG" RefString="Source[local].BitmapGroup[Pads_de]" />
+  <Symbol Name="\Projects\Visu1\Language\pt\BitmapGroups\POBJ" Index="2" Type="BMPG" RefString="Source[local].BitmapGroup[Pads_pt]" />
+  <Symbol Name="\Projects\Visu1\Language\es\BitmapGroups\POBJ" Index="2" Type="BMPG" RefString="Source[local].BitmapGroup[Pads_es]" />
+  <Symbol Name="\Projects\Visu1\Language\sv\BitmapGroups\POBJ" Index="2" Type="BMPG" RefString="Source[local].BitmapGroup[Pads_sv]" />
   <Symbol Name="\Projects\Visu1" Index="1" Type="REF" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel]" />
   <Symbol Name="\Projects\Visu1\Language\en\BitmapGroups\POBJ" Index="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_en]" />
   <Symbol Name="\Projects\Visu1\Language\de\BitmapGroups\POBJ" Index="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_de]" />
+  <Symbol Name="\Projects\Visu1\Language\pt\BitmapGroups\POBJ" Index="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_pt]" />
+  <Symbol Name="\Projects\Visu1\Language\es\BitmapGroups\POBJ" Index="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_es]" />
+  <Symbol Name="\Projects\Visu1\Language\sv\BitmapGroups\POBJ" Index="1" Type="BMPG" RefString="Source[local].BitmapGroup[MM_Left_Bmaps_sel_sv]" />
   <Symbol Name="\Projects\Visu1" Index="1151" Type="REF" RefString="Source[local].BitmapGroup[MpAlarmAcknowledgeState]" />
   <Symbol Name="\Projects\Visu1\Language\en\BitmapGroups\POBJ" Index="1151" Type="BMPG" RefString="Source[local].BitmapGroup[MpAlarmAcknowledgeState_en]" />
   <Symbol Name="\Projects\Visu1\Language\de\BitmapGroups\POBJ" Index="1151" Type="BMPG" RefString="Source[local].BitmapGroup[MpAlarmAcknowledgeState_de]" />
+  <Symbol Name="\Projects\Visu1\Language\pt\BitmapGroups\POBJ" Index="1151" Type="BMPG" RefString="Source[local].BitmapGroup[MpAlarmAcknowledgeState_pt]" />
+  <Symbol Name="\Projects\Visu1\Language\es\BitmapGroups\POBJ" Index="1151" Type="BMPG" RefString="Source[local].BitmapGroup[MpAlarmAcknowledgeState_es]" />
+  <Symbol Name="\Projects\Visu1\Language\sv\BitmapGroups\POBJ" Index="1151" Type="BMPG" RefString="Source[local].BitmapGroup[MpAlarmAcknowledgeState_sv]" />
   <Symbol Name="\Projects\Visu1" Index="1003" Type="REF" RefString="Source[local].BitmapGroup[MpBorders]" />
   <Symbol Name="\Projects\Visu1\Language\en\BitmapGroups\POBJ" Index="1003" Type="BMPG" RefString="Source[local].BitmapGroup[MpBorders_en]" />
   <Symbol Name="\Projects\Visu1\Language\de\BitmapGroups\POBJ" Index="1003" Type="BMPG" RefString="Source[local].BitmapGroup[MpBorders_de]" />
+  <Symbol Name="\Projects\Visu1\Language\pt\BitmapGroups\POBJ" Index="1003" Type="BMPG" RefString="Source[local].BitmapGroup[MpBorders_pt]" />
+  <Symbol Name="\Projects\Visu1\Language\es\BitmapGroups\POBJ" Index="1003" Type="BMPG" RefString="Source[local].BitmapGroup[MpBorders_es]" />
+  <Symbol Name="\Projects\Visu1\Language\sv\BitmapGroups\POBJ" Index="1003" Type="BMPG" RefString="Source[local].BitmapGroup[MpBorders_sv]" />
   <Symbol Name="\Projects\Visu1" Index="20" Type="REF" RefString="Source[local].BitmapGroup[MpComSeveritiesEnum]" />
   <Symbol Name="\Projects\Visu1\Language\en\BitmapGroups\POBJ" Index="20" Type="BMPG" RefString="Source[local].BitmapGroup[MpComSeveritiesEnum_en]" />
   <Symbol Name="\Projects\Visu1\Language\de\BitmapGroups\POBJ" Index="20" Type="BMPG" RefString="Source[local].BitmapGroup[MpComSeveritiesEnum_de]" />
+  <Symbol Name="\Projects\Visu1\Language\pt\BitmapGroups\POBJ" Index="20" Type="BMPG" RefString="Source[local].BitmapGroup[MpComSeveritiesEnum_pt]" />
+  <Symbol Name="\Projects\Visu1\Language\es\BitmapGroups\POBJ" Index="20" Type="BMPG" RefString="Source[local].BitmapGroup[MpComSeveritiesEnum_es]" />
+  <Symbol Name="\Projects\Visu1\Language\sv\BitmapGroups\POBJ" Index="20" Type="BMPG" RefString="Source[local].BitmapGroup[MpComSeveritiesEnum_sv]" />
   <Symbol Name="\Projects\Visu1" Index="1010" Type="REF" RefString="Source[local].BitmapGroup[MpFileIcons]" />
   <Symbol Name="\Projects\Visu1\Language\en\BitmapGroups\POBJ" Index="1010" Type="BMPG" RefString="Source[local].BitmapGroup[MpFileIcons_en]" />
   <Symbol Name="\Projects\Visu1\Language\de\BitmapGroups\POBJ" Index="1010" Type="BMPG" RefString="Source[local].BitmapGroup[MpFileIcons_de]" />
+  <Symbol Name="\Projects\Visu1\Language\pt\BitmapGroups\POBJ" Index="1010" Type="BMPG" RefString="Source[local].BitmapGroup[MpFileIcons_pt]" />
+  <Symbol Name="\Projects\Visu1\Language\es\BitmapGroups\POBJ" Index="1010" Type="BMPG" RefString="Source[local].BitmapGroup[MpFileIcons_es]" />
+  <Symbol Name="\Projects\Visu1\Language\sv\BitmapGroups\POBJ" Index="1010" Type="BMPG" RefString="Source[local].BitmapGroup[MpFileIcons_sv]" />
   <Symbol Name="\Projects\Visu1\Bitmaps\POBJ" Index="141" Type="GFX" RefString="Source[local].Bitmap[HAS_alertmsg_border]" />
   <Symbol Name="\Projects\Visu1\Bitmaps\POBJ" Index="138" Type="GFX" RefString="Source[local].Bitmap[HAS_border_nav_listviewbox_0]" />
   <Symbol Name="\Projects\Visu1\Bitmaps\POBJ" Index="120" Type="GFX" RefString="Source[local].Bitmap[HAS_dialog_check]" />

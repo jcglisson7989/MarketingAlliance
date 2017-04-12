@@ -11,6 +11,7 @@ ForceIO	"$(AS_CPU_PATH)/ForceIO/a.out" -o "$(AS_CPU_PATH)/ForceIO/ForceIO.ox" -T
 Creaser	"$(AS_CPU_PATH)/Creaser/a.out" -o "$(AS_CPU_PATH)/Creaser/Creaser.ox" -T SG4 -r Cyclic1  -extOptions -D $(AS_CONFIGURATION)  -G V4.1.2 
 ForceIO1	"$(AS_CPU_PATH)/ForceIO1/a.out" -o "$(AS_CPU_PATH)/ForceIO1/ForceIO1.ox" -T SG4 -r Cyclic1  -extOptions -D $(AS_CONFIGURATION)  -G V4.1.2 
 LineContro	"$(AS_CPU_PATH)/LineContro/a.out" -o "$(AS_CPU_PATH)/LineContro/LineContro.ox" -T SG4 -r Cyclic8  -extOptions -D $(AS_CONFIGURATION)  -G V4.1.2 
+HMI_Alarms	"$(AS_CPU_PATH)/HMI_Alarms/a.out" -o "$(AS_CPU_PATH)/HMI_Alarms/HMI_Alarms.ox" -T SG4 -r Cyclic8  -extOptions -D $(AS_CONFIGURATION)  -G V4.1.2 
 Recipe_Han	"$(AS_CPU_PATH)/Recipe_Han/a.out" -o "$(AS_CPU_PATH)/Recipe_Han/Recipe_Han.ox" -T SG4 -r Cyclic8  -extOptions -D $(AS_CONFIGURATION)  -G V4.1.2 
 hmilogic	"$(AS_CPU_PATH)/hmilogic/a.out" -o "$(AS_CPU_PATH)/hmilogic/hmilogic.ox" -T SG4 -r Cyclic8  -extOptions -D $(AS_CONFIGURATION)  -X "$(AS_CPU_PATH)/hmilogic/hmilogic.xrefox" -G V4.1.2 
 HMITableMa	"$(AS_CPU_PATH)/HMITableMa/a.out" -o "$(AS_CPU_PATH)/HMITableMa/HMITableMa.ox" -T SG4 -r Cyclic8  -extOptions -D $(AS_CONFIGURATION)  -G V4.1.2 
