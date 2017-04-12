@@ -4,11 +4,19 @@
   <Module Name="6PPT30.101G-20B" Type="6PPT30.101G-20B" Version="1.1.0.0">
     <Connection Connector="ETH1" TargetModule="X20CP1584" TargetConnector="IF2" NodeNumber="1" />
     <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="Startmode" Value="1" />
+    <Parameter ID="Mode" Value="Manual" />
+    <Parameter ID="ScreenRotation" Value="90" />
+    <Parameter ID="SelectedFavoriteVNC" Value="192.168.10.10" />
     <Parameter ID="PasswordVNC" Value="" />
     <Parameter ID="PasswordCIFS" Value="" />
     <Parameter ID="PasswordService" Value="" />
     <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.101G-20B.dis" />
     <Parameter ID="VncPortNumber" Value="5901" />
+    <Parameter ID="VncRefreshRate" Value="100" />
+    <Parameter ID="InternetAddress" Value="192.168.10.20" />
+    <Parameter ID="DefaultGateway" Value="192.168.10.1" />
+    <Parameter ID="Subnetmask" Value="255.255.255.0" />
   </Module>
   <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.1">
     <Connection Connector="X2X1" TargetModule="X20CP1584" TargetConnector="IF6" />
