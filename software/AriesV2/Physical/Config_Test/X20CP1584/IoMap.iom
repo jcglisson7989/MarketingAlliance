@@ -1,0 +1,10 @@
+VAR_CONFIG
+	IO.iSafeMachineState AT %IX."X20DI9371".DigitalInput01;
+	IO.iCreaserShaftSensor AT %IX."X20DI9371".DigitalInput02;
+	IO.iFiberOpticSensor AT %IX."X20DI9371".DigitalInput03;
+	IO.iSM1Disabled AT %IX."X20DI9371".DigitalInput05;
+	IO.oBoardFeedingLight  AT %QX."X20DO9322".DigitalOutput05;
+	IO.oCreaserCCWRotation   AT %QX."X20DO9322".DigitalOutput03;
+	IO.oCreaserCWRotation   AT %QX."X20DO9322".DigitalOutput04;
+	IO.oUIIndicatorLight  AT %QX."X20DO9322".DigitalOutput07;
+END_VAR
