@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<Crossref Scope="Auxiliary_Services_Control.ComLogger" AppMod="">
+  <Vars>
+    <Var Name="Com_Logger_UI.Enable" Scope="Global" Type="MpComLoggerUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="4" C="2" PS="Ln:4, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Com_Logger_UI.Scope" Scope="Global" Type="MpComLoggerUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="8" C="2" PS="Ln:8, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Com_Logger_UI.UISetup.LoggerListSize" Scope="Global" Type="MpComLoggerUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="10" C="2" PS="Ln:10, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Com_Logger_UI.UISetup.LoggerScrollWindow" Scope="Global" Type="MpComLoggerUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="11" C="2" PS="Ln:11, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Com_Logger_UI.UIConnect" Scope="Global" Type="MpComLoggerUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="13" C="2" PS="Ln:13, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Com_Logger_UI" Scope="Global" Type="MpComLoggerUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="15" C="2" PS="Ln:15, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Cyclic.st">
+        <Pos L="3" C="2" PS="Ln:3, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Com_Logger_UIConnect" Scope="Global" Type="MpComLoggerUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="13" C="33" PS="Ln:13, Col:33" A="R" />
+        <Pos L="16" C="2" PS="Ln:16, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Cyclic.st">
+        <Pos L="4" C="2" PS="Ln:4, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gMachineName" Scope="Global" Type="STRING[80]">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Cyclic.st">
+        <Pos L="6" C="2" PS="Ln:6, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gProjectDate" Scope="Global" Type="STRING[80]">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Cyclic.st">
+        <Pos L="7" C="2" PS="Ln:7, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gVersion" Scope="Global" Type="STRING[80]">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Cyclic.st">
+        <Pos L="8" C="2" PS="Ln:8, Col:2" A="W" />
+      </File>
+    </Var>
+  </Vars>
+  <Consts>
+  </Consts>
+  <Enums>
+    <Enum Name="mpCOM_CONFIG_SCOPE_BRANCH" Scope="Global" Type="MpComConfigScopeEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="8" C="25" PS="Ln:8, Col:25" A="R" />
+      </File>
+    </Enum>
+  </Enums>
+  <Funcs>
+    <Func Name="MpComLoggerUI" Lib="MpCom">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Init.st">
+        <Pos L="15" C="2" PS="Ln:15, Col:2" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/ComLogger/Cyclic.st">
+        <Pos L="3" C="2" PS="Ln:3, Col:2" />
+      </File>
+    </Func>
+  </Funcs>
+  <Actions>
+  </Actions>
+</Crossref>

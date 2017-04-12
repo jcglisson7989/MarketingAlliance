@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Crossref Scope="Auxiliary_Services_Control.File_Handling" AppMod="">
+	<Vars>
+		<Var Name="File_Manager_Control" Scope="Global" Type="MpFileManagerUI">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/File_Handling/Cyclic.st">
+				<Pos L="3" C="2" PS="Ln:3, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="File_Manager_UIConnect" Scope="Global" Type="MpFileManagerUIConnectType">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/File_Handling/Cyclic.st">
+				<Pos L="4" C="2" PS="Ln:4, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_File" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/File_Handling/Cyclic.st">
+				<Pos L="6" C="2" PS="Ln:6, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_File_UI" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/File_Handling/Cyclic.st">
+				<Pos L="7" C="2" PS="Ln:7, Col:2" A="RW"/>
+			</File>
+		</Var>
+	</Vars>
+	<Consts>
+	</Consts>
+	<Enums>
+	</Enums>
+	<Funcs>
+		<Func Name="MpAlarmBasicUI" Lib="MpAlarm">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/File_Handling/Cyclic.st">
+				<Pos L="7" C="2" PS="Ln:7, Col:2"/>
+			</File>
+		</Func>
+		<Func Name="MpFileManagerUI" Lib="MpFile">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/File_Handling/Cyclic.st">
+				<Pos L="3" C="2" PS="Ln:3, Col:2"/>
+			</File>
+		</Func>
+	</Funcs>
+	<Actions>
+	</Actions>
+</Crossref>

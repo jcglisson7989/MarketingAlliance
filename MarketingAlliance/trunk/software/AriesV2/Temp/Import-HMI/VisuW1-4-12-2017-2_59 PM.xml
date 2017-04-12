@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.8.54 SP"?>
+<?xml-stylesheet type="text/xsl" href="SG4_Import_ToDo_Generator.xsl"?>
+<ImportLog>
+  <Header>
+    <Property Name="ImportDate" Value="4/12/2017 2:59 PM"/>
+    <Property Name="SourceVisualization" Value="C:\Users\jcgli\Desktop\AS5200_tmp_import\AS5200\Logical\HMI\VisuW1"/>
+    <Property Name="TargetVisualization" Value="C:\Users\jcgli\Desktop\software_Aries_041217\AriesV2\Logical\HMI\Visu"/>
+  </Header>
+  <Resources>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_BLK_114x220]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_BLU_114x220]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_GRN_114x221]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Bitmaps[Panel_RED_114x221]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Borders[Panel_BLK]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Panel_BLK_114x220]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Borders[Panel_BLU]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Panel_BLU_114x220]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Borders[Panel_GRN]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Panel_GRN_114x221]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Borders[Panel_RED]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Bitmaps[Panel_RED_114x221]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_10]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_11]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Fonts[rockwell_9]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Layers[Motion_MAPP_Axis_Lefthand_Choice]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Borders[Panel_BLK]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Borders[Panel_BLU]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Borders[Panel_GRN]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Borders[Panel_RED]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Fonts[rockwell_10]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Fonts[rockwell_11]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].Fonts[rockwell_9]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Control.Button.BasicButton]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Control.Button.Empty]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Control.Dropdown.DropDown]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Control.Numeric.Output]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Control.Text.Empty]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].StyleClasses[Control.Text.Text]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_PLCOpen_State]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].TextGroups[MAPP_COMMAND_EXECUTE_ENUM]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].TextGroups[MAPP_COMM_SEVERITIES]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].TextGroups[MAPP_FACILITIES_eNUM]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].TextGroups[MAPP_INTERNAL_ERROR_ENUM]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[%embVirtualKey_119]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[%embVirtualKey_18_0]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[HMI\VisuW1].VirtualKeys[%embVirtualKey_69]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].DataSources[DataSource]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].Palette[Palette]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Control.Button.BasicButton]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Control.Button.Empty]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Control.Dropdown.DropDown]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Control.Numeric.Output]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Control.Text.Empty]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].StyleClasses[Control.Text.Text]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_Axis_PLCOpen_State]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_COMMAND_EXECUTE_ENUM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_COMM_SEVERITIES]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_FACILITIES_eNUM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].TextGroups[MAPP_INTERNAL_ERROR_ENUM]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[%embVirtualKey_119]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[%embVirtualKey_18_0]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[HMI\VisuW1].VirtualKeys[%embVirtualKey_69]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="0"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[VCShared].AlarmGroups[Motor_Line_Alarms]"/>
+      <ImportedDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].DataSources[DataSource]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[English]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[German]"/>
+          <Property Name="Resolution" Value="Redirected"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Portuguese]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Spanish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[Swedish]"/>
+          <Property Name="Resolution" Value="Imported"/>
+        </Dependency>
+      </ImportedDependencies>
+      <LostDependencies>
+        <Dependency>
+          <Property Name="ReferencePath" Value="Source[VCShared].Languages[French]"/>
+          <Property Name="Resolution" Value="Removed"/>
+        </Dependency>
+      </LostDependencies>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[VCShared].DataSources[DataSource]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[VCShared].Languages[English]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[VCShared].Languages[French]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Skip"/>
+      <Property Name="Reference" Value="Source[VCShared].Languages[German]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[VCShared].Languages[Portuguese]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Operation" Value="Import"/>
+      <Property Name="Reference" Value="Source[VCShared].Languages[Spanish]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+    <Resource>
+      <Property Name="Forced" Value="1"/>
+      <Property Name="Modification" Value="&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;Resource '428': index already exists in ressource.
+&quot;Resource '113': index already exists in ressource.
+&quot;Resource '114': index already exists in ressource.
+&quot;Resource '115': index already exists in ressource.
+&quot;Resource '21': index already exists in ressource.
+&quot;Resource '25': index already exists in ressource.
+&quot;Resource '20': index already exists in ressource.
+&quot;Resource '0': index already exists in ressource.
+&quot;Resource '1': index already exists in ressource.
+&quot;"/>
+      <Property Name="NewName" Value=""/>
+      <Property Name="Operation" Value="Rename &amp; Modify"/>
+      <Property Name="Reference" Value="Source[VCShared].Languages[Swedish]"/>
+      <ImportedDependencies/>
+      <LostDependencies/>
+    </Resource>
+  </Resources>
+</ImportLog>

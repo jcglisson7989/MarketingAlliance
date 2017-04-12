@@ -1,0 +1,101 @@
+--------------------------------------------
+BR.AS.CrossRefExtender.exe generated LogFile
+Work(): Extend VAR-info
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c" -o "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/hmilogic/hmilogic.xrefo" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrServices_C_Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrsprintf" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -DConfig_Test -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -include "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Work(): Add CONST entry  DEFINE_HMI_SPLASHSCREEN_TO_MS
+Work(): Delete VAR entry  DEFINE_HMI_SPLASHSCREEN_TO_MS
+Work(): Add VAR entry  gHmi.status.menuVisibleLT
+Work(): Add VAR entry  gHmi.status.menuVisibleRT
+Work(): Add VAR entry  gHmi.status.menuVisibleRTItems
+Work(): Add VAR entry  gHmi.status.menuIndexRT
+Work(): Add VAR entry  gHmi.status.menuLFHideTimer
+Work(): Add VAR entry  gHmi.status.menuRTHideTimer
+Work(): Add VAR entry  gHmi.status.tabKeysRadioDataPoint
+Work(): Add VAR entry  gHmi.status.tabKeysRadioArray
+Work(): Add VAR entry  gHmi.prv.tmr4
+Work(): Add VAR entry  gHmi.status.passwordStrings
+Work(): Add VAR entry  gHmi.prv.changePage
+Work(): Add VAR entry  gHmi.status.menuIndexLT
+Work(): Add VAR entry  gHmi.alertMsg
+Work(): Add VAR entry  gHmi.dialogMsg
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c" -o "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/hmilogic/loginCyclicLogic.xrefo" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrServices_C_Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrsprintf" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -DConfig_Test -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -include "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Work(): Add VAR entry  gHmi.prv.loginLevel
+Work(): Add VAR entry  gHmi.status.loginVisibleGE1
+Work(): Add VAR entry  gHmi.status.loginVisibleGE2
+Work(): Add VAR entry  gHmi.status.loginVisibleGE3
+Work(): Add VAR entry  gHmi.prv.tmr3
+Work(): Add VAR entry  gHmi.keys.btnRestartLoginTimer
+Work(): Add VAR entry  gHmi.keys.btnLoginIcon
+Work(): Add VAR entry  gHmi.prv.tmr3RemainingTimeSec
+Work(): Add VAR entry  gHmi.prv.tmr3RemainingTimeMin
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiParamList.c" -o "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/hmilogic/hmiParamList.xrefo" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrServices_C_Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrsprintf" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -DConfig_Test -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -include "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Work(): Add CONST entry  DEFINE_MAX_TABLE_ENTRIES
+Work(): Delete VAR entry  DEFINE_MAX_TABLE_ENTRIES
+Work(): Add CONST entry  FORCEIO_ACCESS_LEVEL
+Work(): Delete VAR entry  FORCEIO_ACCESS_LEVEL
+Work(): Add VAR entry  gRecCfg.active.Cfg.HMI.passwordSetup
+Work(): Add VAR entry  gRecCfg.active.Cfg.HMI.passwordEngineer
+Work(): Add VAR entry  gRecCfg.active.Cfg.HMI.passwordFactory
+Work(): Add CONST entry  DEFINE_MENU_R_HIDE_TIMEOUT_MS
+Work(): Delete VAR entry  DEFINE_MENU_R_HIDE_TIMEOUT_MS
+Work(): Add CONST entry  DEFINE_LOGIN_TO
+Work(): Delete VAR entry  DEFINE_LOGIN_TO
+Work(): Add CONST entry  DEFINE_LOGIN_TO
+Work(): Delete VAR entry  DEFINE_LOGIN_TO
+Work(): Add CONST entry  HMI_PWD_MAXLEN
+Work(): Delete VAR entry  HMI_PWD_MAXLEN
+Work(): Add CONST entry  HMI_PWD_MAXLEN
+Work(): Delete VAR entry  HMI_PWD_MAXLEN
+Work(): Add CONST entry  HMI_PWD_MAXLEN
+Work(): Delete VAR entry  HMI_PWD_MAXLEN
+Work(): Add CONST entry  HMI_PWD_MAXLEN
+Work(): Delete VAR entry  HMI_PWD_MAXLEN
+Work(): Add CONST entry  RECIPE_ACCESS_LEVEL
+Work(): Delete VAR entry  RECIPE_ACCESS_LEVEL
+Work(): Add CONST entry  HMI_ENUM_TAB_KEYS_MAX
+Work(): Delete VAR entry  HMI_ENUM_TAB_KEYS_MAX
+Work(): Add CONST entry  DEFINE_MENU_L_HIDE_TIMEOUT_MS
+Work(): Delete VAR entry  DEFINE_MENU_L_HIDE_TIMEOUT_MS
+Work(): Add VAR entry  gHmiParamTable.selValueFormVisible
+Work(): Add CONST entry  CONFIG_ACCESS_LEVEL
+Work(): Delete VAR entry  CONFIG_ACCESS_LEVEL
+Work(): Add CONST entry  HMI_ENUM_MENU_ITEMS_RT
+Work(): Delete VAR entry  HMI_ENUM_MENU_ITEMS_RT
+Work(): Delete VAR entry  gRecCfg
+Work(): Insert VAR entry  gHmi.status.tabKeysRadioDataPoint
+Work(): Insert VAR entry  gHmi.prv.tmr3RemainingTimeSec
+Work(): Insert VAR entry  gHmi.alertMsg
+Work(): Insert VAR entry  gRecCfg.active.Cfg.HMI.passwordEngineer
+Work(): Insert VAR entry  gHmi.prv.tmr4
+Work(): Insert VAR entry  gHmi.status.tabKeysRadioArray
+Work(): Insert VAR entry  gRecCfg.active.Cfg.HMI.passwordSetup
+Work(): Insert VAR entry  gHmi.status.menuIndexLT
+Work(): Insert VAR entry  gHmiParamTable.selValueFormVisible
+Work(): Insert VAR entry  gHmi.prv.tmr3
+Work(): Insert VAR entry  gHmi.status.menuVisibleRTItems
+Work(): Insert VAR entry  gHmi.status.menuVisibleRT
+Work(): Insert VAR entry  gHmi.status.menuVisibleLT
+Work(): Insert VAR entry  gHmi.status.menuRTHideTimer
+Work(): Insert VAR entry  gHmi.status.menuLFHideTimer
+Work(): Insert VAR entry  gHmi.dialogMsg
+Work(): Insert VAR entry  gHmi.prv.changePage
+Work(): Insert VAR entry  gHmi.status.loginVisibleGE3
+Work(): Insert VAR entry  gHmi.status.loginVisibleGE2
+Work(): Insert VAR entry  gHmi.status.loginVisibleGE1
+Work(): Insert VAR entry  gHmi.prv.tmr3RemainingTimeMin
+Work(): Insert VAR entry  gHmi.keys.btnLoginIcon
+Work(): Insert VAR entry  gHmi.status.passwordStrings
+Work(): Insert VAR entry  gRecCfg.active.Cfg.HMI.passwordFactory
+Work(): Insert VAR entry  gHmi.keys.btnRestartLoginTimer
+Work(): Insert VAR entry  gHmi.prv.loginLevel
+Work(): Insert VAR entry  gHmi.status.menuIndexRT
+Work(): Extend CONST-info
+Work(): Extend FUNC-info
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiAlert.c" -o "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/hmilogic/hmiAlert.xrefo" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrServices_C_Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrsprintf" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -DConfig_Test -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -include "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiDialog.c" -o "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/hmilogic/hmiDialog.xrefo" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI/hmilogic" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes/HMI" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrServices_C_Includes" "-IC:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrsprintf" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -DConfig_Test -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -include "C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Temp/Objects/Config_Test/X20CP1584/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Work(): Write output file

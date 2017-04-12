@@ -1,0 +1,21 @@
+
+FILE: C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Libraries/wbrServices/wbrSvcUtilities/wbrFltUtil/wbrFloatUtilities.c
+
+    13:7   g v DEF  S wbrDoubleInRange                 
+    13:31  l v DEF  S lo                               
+    13:42  l v DEF  S v1                               
+    13:53  l v DEF  S hi                               
+    15:13  l v R    S lo                               
+    15:18  l v R    S v1                               
+    15:26  l v R    S v1                               
+    15:31  l v R    S hi                               
+    18:7   g v DEF  S wbrDoubleCompare                 
+    18:31  l v DEF  S v1                               
+    18:42  l v DEF  S v2                               
+    18:53  l v DEF  S tol                              
+    20:11  g v RW   S wbrDoubleInRange                 
+    20:28  l v R    S v2                               
+    20:31  l v R    S tol                              
+    20:37  l v R    S v1                               
+    20:43  l v R    S v2                               
+    20:46  l v R    S tol                              
