@@ -1,0 +1,952 @@
+<?xml version="1.0"?>
+<Crossref Scope="Application.Creaser" AppMod="">
+	<Vars>
+		<Var Name="Creaser.Timer_Sim_CreaserIdx.PT" Scope="Local" Type="TON">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="7" C="3" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Timer_Sim_CreaserIdx.IN" Scope="Local" Type="TON">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="8" C="3" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Timer_Sim_CreaserIdx" Scope="Local" Type="TON">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="9" C="3" PS="Action_Creaser_Idx" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Timer_Sim_CreaserIdx.Q" Scope="Local" Type="TON">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="10" C="29" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Timer_Creaser_Idx_Edge" Scope="Local" Type="TON">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="25" C="51" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="37" C="19" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="42" C="19" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="52" C="16" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Timer_Total_Runtime" Scope="Local" Type="TON">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="4" C="22" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="6" C="16" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="13" C="16" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setFlagTravelEdgeOffset" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="17" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="25" C="6" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="26" C="4" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="35" C="80" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="36" C="6" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="40" C="80" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="41" C="6" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setFlagCreaserIdxFinished" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="113" C="9" PS="Ln:113, Col:9" A="R"/>
+				<Pos L="142" C="9" PS="Ln:142, Col:9" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="14" C="2" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="28" C="4" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setflagCreaserIndexCommand" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="92" C="6" PS="Ln:92, Col:6" A="W"/>
+				<Pos L="136" C="7" PS="Ln:136, Col:7" A="W"/>
+				<Pos L="184" C="8" PS="Ln:184, Col:8" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="16" C="5" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="55" C="2" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setFlagCreaserWaitEdge" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="8" C="30" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="18" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="21" C="5" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="27" C="4" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow.TimeOn" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="12" C="2" PS="Ln:12, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow.TimeOff" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="13" C="2" PS="Ln:13, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow.bFlashOut" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="55" C="28" PS="Ln:55, Col:28" A="R"/>
+				<Pos L="85" C="28" PS="Ln:85, Col:28" A="R"/>
+				<Pos L="193" C="53" PS="Ln:193, Col:53" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="212" C="2" PS="Ln:212, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast.TimeOn" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="15" C="2" PS="Ln:15, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast.TimeOff" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="16" C="2" PS="Ln:16, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast.bFlashOut" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="53" C="28" PS="Ln:53, Col:28" A="R"/>
+				<Pos L="193" C="28" PS="Ln:193, Col:28" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="213" C="2" PS="Ln:213, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.ii_crease_count" Scope="Local" Type="UDINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="93" C="6" PS="Ln:93, Col:6" A="W"/>
+				<Pos L="121" C="7" PS="Ln:121, Col:7" A="W"/>
+				<Pos L="143" C="7" PS="Ln:143, Col:7" A="W"/>
+				<Pos L="143" C="26" PS="Ln:143, Col:26" A="R"/>
+				<Pos L="145" C="10" PS="Ln:145, Col:10" A="R"/>
+				<Pos L="185" C="8" PS="Ln:185, Col:8" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="10" C="79" PS="Action_Move_Section_Distance" A="R"/>
+				<Pos L="14" C="66" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+		</Var>
+		<Var Name="FeedAxis_MpLink" Scope="Global" Type="MpComIdentType">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="4" C="28" PS="Ln:4, Col:28" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaseCount" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="46" C="9" PS="Ln:46, Col:9" A="R"/>
+				<Pos L="145" C="29" PS="Ln:145, Col:29" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaserDirection" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="22" C="30" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="23" C="30" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.ShaftSensorEdge" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="33" C="8" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaserMotorIdxLag_S" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="37" C="47" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="42" C="47" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaseWidth_mm" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="9" C="35" PS="Action_Move_Crease_Width" A="R"/>
+				<Pos L="13" C="23" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.FeedAxisAccel" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="11" C="26" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="12" C="26" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="10" C="26" PS="Action_Start_Feeder" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.FeedAxisDecel" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="12" C="26" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="13" C="26" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="11" C="26" PS="Action_Start_Feeder" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.FeedVelocity" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="14" C="22" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="15" C="22" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="9" C="22" PS="Action_Start_Feeder" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaseDistance_mm" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="10" C="35" PS="Action_Move_Section_Distance" A="R"/>
+				<Pos L="14" C="22" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.SM1_Disabled" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="30" C="2" PS="Ln:30, Col:2" A="W"/>
+				<Pos L="37" C="9" PS="Ln:37, Col:9" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Unsafe_Machine_State" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="31" C="2" PS="Ln:31, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Error_State_Unsafe_Machine" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="35" C="4" PS="Ln:35, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Error_State_SM1_Power" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="38" C="4" PS="Ln:38, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Feed_Axis_Motor_Error" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="41" C="4" PS="Ln:41, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Error_State_Process_Error" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="44" C="4" PS="Ln:44, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Crease_Count_Greater_Max" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="47" C="4" PS="Ln:47, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Fiber_Optic_Blocked_RunCmd" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="89" C="6" PS="Ln:89, Col:6" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Axis1" Scope="Global" Type="ACP10AXIS_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="7" C="26" PS="Ln:7, Col:26" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="14" C="2" PS="Action_AxisControl_Mgmt" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MpLink" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="4" C="2" PS="Ln:4, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Enable" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="5" C="2" PS="Ln:5, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Parameters" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="6" C="2" PS="Ln:6, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Axis" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="7" C="2" PS="Ln:7, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="8" C="2" PS="Ln:8, Col:2" A="RW"/>
+				<Pos L="201" C="4" PS="Ln:201, Col:4" A="RW"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="15" C="2" PS="Action_AxisControl_Mgmt" A="RW"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="7" C="2" PS="Action_Move_Crease_Width" A="RW"/>
+				<Pos L="17" C="2" PS="Action_Move_Crease_Width" A="RW"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="8" C="2" PS="Action_Move_Section_Distance" A="RW"/>
+				<Pos L="18" C="2" PS="Action_Move_Section_Distance" A="RW"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="7" C="2" PS="Action_Start_Feeder" A="RW"/>
+				<Pos L="14" C="2" PS="Action_Start_Feeder" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Error" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="40" C="9" PS="Ln:40, Col:9" A="R"/>
+				<Pos L="52" C="5" PS="Ln:52, Col:5" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="10" C="36" PS="Action_AxisControl_Mgmt" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.InVelocity" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="54" C="8" PS="Ln:54, Col:8" A="R"/>
+				<Pos L="120" C="9" PS="Ln:120, Col:9" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MoveActive" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="56" C="8" PS="Ln:56, Col:8" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Power" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="65" C="4" PS="Ln:65, Col:4" A="W"/>
+				<Pos L="73" C="5" PS="Ln:73, Col:5" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Info.ReadyToPowerOn" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="72" C="7" PS="Ln:72, Col:7" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.PowerOn" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="80" C="7" PS="Ln:80, Col:7" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.InPosition" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="135" C="9" PS="Ln:135, Col:9" A="R"/>
+				<Pos L="155" C="9" PS="Ln:155, Col:9" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MoveVelocity" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="197" C="4" PS="Ln:197, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="3" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="6" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="3" C="2" PS="Action_Start_Feeder" A="W"/>
+				<Pos L="13" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MoveAbsolute" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="198" C="4" PS="Ln:198, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="4" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="4" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="4" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MoveAdditive" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="199" C="4" PS="Ln:199, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="5" C="2" PS="Action_Move_Crease_Width" A="W"/>
+				<Pos L="16" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="5" C="2" PS="Action_Move_Section_Distance" A="W"/>
+				<Pos L="17" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="5" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Stop" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="200" C="4" PS="Ln:200, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="6" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="7" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="6" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.ErrorReset" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="5" C="3" PS="Action_AxisControl_Mgmt" A="W"/>
+				<Pos L="7" C="3" PS="Action_AxisControl_Mgmt" A="W"/>
+				<Pos L="10" C="5" PS="Action_AxisControl_Mgmt" A="R"/>
+				<Pos L="11" C="3" PS="Action_AxisControl_Mgmt" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Position" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="4" C="39" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="6" C="32" PS="Ln:6, Col:32" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Acceleration" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="11" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="12" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="10" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Deceleration" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="12" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="13" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="11" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Distance" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="13" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="14" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Velocity" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="14" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="15" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="9" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="MachineState" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="10" C="2" PS="Ln:10, Col:2" A="W"/>
+				<Pos L="33" C="6" PS="Ln:33, Col:6" A="R"/>
+				<Pos L="33" C="46" PS="Ln:33, Col:46" A="R"/>
+				<Pos L="36" C="4" PS="Ln:36, Col:4" A="W"/>
+				<Pos L="39" C="4" PS="Ln:39, Col:4" A="W"/>
+				<Pos L="42" C="4" PS="Ln:42, Col:4" A="W"/>
+				<Pos L="45" C="4" PS="Ln:45, Col:4" A="W"/>
+				<Pos L="48" C="4" PS="Ln:48, Col:4" A="W"/>
+				<Pos L="62" C="7" PS="Ln:62, Col:7" A="R"/>
+				<Pos L="67" C="4" PS="Ln:67, Col:4" A="W"/>
+				<Pos L="74" C="5" PS="Ln:74, Col:5" A="W"/>
+				<Pos L="81" C="5" PS="Ln:81, Col:5" A="W"/>
+				<Pos L="90" C="6" PS="Ln:90, Col:6" A="W"/>
+				<Pos L="96" C="6" PS="Ln:96, Col:6" A="W"/>
+				<Pos L="207" C="5" PS="Ln:207, Col:5" A="W"/>
+			</File>
+		</Var>
+		<Var Name="ProcessState" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="43" C="9" PS="Ln:43, Col:9" A="R"/>
+				<Pos L="95" C="6" PS="Ln:95, Col:6" A="W"/>
+				<Pos L="106" C="5" PS="Ln:106, Col:5" A="W"/>
+				<Pos L="109" C="9" PS="Ln:109, Col:9" A="R"/>
+				<Pos L="114" C="7" PS="Ln:114, Col:7" A="W"/>
+				<Pos L="122" C="7" PS="Ln:122, Col:7" A="W"/>
+				<Pos L="131" C="7" PS="Ln:131, Col:7" A="W"/>
+				<Pos L="137" C="7" PS="Ln:137, Col:7" A="W"/>
+				<Pos L="147" C="8" PS="Ln:147, Col:8" A="W"/>
+				<Pos L="150" C="8" PS="Ln:150, Col:8" A="W"/>
+				<Pos L="157" C="7" PS="Ln:157, Col:7" A="W"/>
+				<Pos L="171" C="7" PS="Ln:171, Col:7" A="W"/>
+				<Pos L="182" C="8" PS="Ln:182, Col:8" A="W"/>
+				<Pos L="186" C="8" PS="Ln:186, Col:8" A="W"/>
+				<Pos L="203" C="4" PS="Ln:203, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.iSM1Disabled" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="30" C="26" PS="Ln:30, Col:26" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iSafeMachineState" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="31" C="38" PS="Ln:31, Col:38" A="R"/>
+				<Pos L="34" C="11" PS="Ln:34, Col:11" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oBoardFeedingLight" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="53" C="3" PS="Ln:53, Col:3" A="W"/>
+				<Pos L="55" C="3" PS="Ln:55, Col:3" A="W"/>
+				<Pos L="57" C="3" PS="Ln:57, Col:3" A="W"/>
+				<Pos L="59" C="3" PS="Ln:59, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.oUIIndicatorLight" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="64" C="4" PS="Ln:64, Col:4" A="W"/>
+				<Pos L="70" C="4" PS="Ln:70, Col:4" A="W"/>
+				<Pos L="78" C="4" PS="Ln:78, Col:4" A="W"/>
+				<Pos L="85" C="4" PS="Ln:85, Col:4" A="W"/>
+				<Pos L="193" C="4" PS="Ln:193, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.iFiberOpticSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="88" C="8" PS="Ln:88, Col:8" A="R"/>
+				<Pos L="126" C="9" PS="Ln:126, Col:9" A="R"/>
+				<Pos L="161" C="13" PS="Ln:161, Col:13" A="R"/>
+				<Pos L="181" C="10" PS="Ln:181, Col:10" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="218" C="18" PS="Ln:218, Col:18" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iCreaserShaftSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="10" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="35" C="8" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="40" C="12" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oCreaserCCWRotation" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="22" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="46" C="3" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.oCreaserCWRotation" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="23" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="47" C="3" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO_LastCycle.iFiberOpticSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="126" C="38" PS="Ln:126, Col:38" A="R"/>
+				<Pos L="161" C="38" PS="Ln:161, Col:38" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO_LastCycle" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="218" C="2" PS="Ln:218, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO_LastCycle.iCreaserShaftSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="35" C="39" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="40" C="39" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.Reset" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="25" C="5" PS="Ln:25, Col:5" A="R"/>
+				<Pos L="206" C="5" PS="Ln:206, Col:5" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="26" C="17" PS="Ln:26, Col:17" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.total_processed" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="165" C="7" PS="Ln:165, Col:7" A="W"/>
+				<Pos L="165" C="38" PS="Ln:165, Col:38" A="R"/>
+				<Pos L="167" C="92" PS="Ln:167, Col:92" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.Sum_Board_Travel_Lengths" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="166" C="7" PS="Ln:166, Col:7" A="W"/>
+				<Pos L="166" C="47" PS="Ln:166, Col:47" A="R"/>
+				<Pos L="167" C="39" PS="Ln:167, Col:39" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.Avg_Board_Length" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="167" C="7" PS="Ln:167, Col:7" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.total_creases" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="30" C="4" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="30" C="33" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.total_runtime" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="5" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+				<Pos L="5" C="32" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="8" C="28" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="9" C="29" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="10" C="28" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.runtime_h" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="8" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.runtime_m" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="9" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.runtime_s" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="10" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+			</File>
+		</Var>
+		<Var Name="iMachineErrorReset" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="205" C="7" PS="Ln:205, Col:7" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="4" C="13" PS="Action_AxisControl_Mgmt" A="R"/>
+				<Pos L="6" C="16" PS="Action_AxisControl_Mgmt" A="R"/>
+			</File>
+		</Var>
+		<Var Name="iStartCommand" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="87" C="15" PS="Ln:87, Col:15" A="R"/>
+			</File>
+		</Var>
+		<Var Name="iSoftStopCommand" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="105" C="7" PS="Ln:105, Col:7" A="R"/>
+				<Pos L="178" C="13" PS="Ln:178, Col:13" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gSimulateMachine" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="6" C="5" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="delta_Board_Position" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="6" C="5" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="7" C="3" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="9" C="3" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="13" C="53" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="RollerPos_LastCycle" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="7" C="72" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="9" C="49" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="15" C="2" PS="Action_Tally_Board_L" A="W"/>
+			</File>
+		</Var>
+		<Var Name="RollerPos_ThisCycle" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="4" C="2" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="7" C="27" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="9" C="27" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="15" C="25" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Current_Board_Position" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="111" C="6" PS="Ln:111, Col:6" A="W"/>
+				<Pos L="118" C="6" PS="Ln:118, Col:6" A="W"/>
+				<Pos L="129" C="7" PS="Ln:129, Col:7" A="W"/>
+				<Pos L="163" C="29" PS="Ln:163, Col:29" A="R"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="13" C="2" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="13" C="28" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Latch_Board_Length" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="163" C="7" PS="Ln:163, Col:7" A="W"/>
+				<Pos L="166" C="86" PS="Ln:166, Col:86" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Current_Crease_Section_Length" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="195" C="4" PS="Ln:195, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="9" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="10" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+		</Var>
+	</Vars>
+	<Consts>
+		<Const Name="Creaser.DEFINE_SLOW_PULSE_PERIOD" Scope="Local" Type="TIME">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="12" C="23" PS="Ln:12, Col:23" A="R"/>
+				<Pos L="13" C="24" PS="Ln:13, Col:24" A="R"/>
+			</File>
+		</Const>
+		<Const Name="Creaser.DEFINE_FAST_PULSE_PERIOD" Scope="Local" Type="TIME">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="15" C="23" PS="Ln:15, Col:23" A="R"/>
+				<Pos L="16" C="24" PS="Ln:16, Col:24" A="R"/>
+			</File>
+		</Const>
+		<Const Name="MAX_IDX_CREASES" Scope="Global" Type="UDINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="46" C="49" PS="Ln:46, Col:49" A="R"/>
+			</File>
+		</Const>
+		<Const Name="DEFINE_MM_ROLLER_REV" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="7" C="49" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Const>
+	</Consts>
+	<Enums>
+		<Enum Name="PRCS_STATE_INIT" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="95" C="22" PS="Ln:95, Col:22" A="R"/>
+				<Pos L="110" C="5" PS="Ln:110, Col:5" A="R"/>
+				<Pos L="186" C="24" PS="Ln:186, Col:24" A="R"/>
+				<Pos L="203" C="20" PS="Ln:203, Col:20" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_READY" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="114" C="23" PS="Ln:114, Col:23" A="R"/>
+				<Pos L="117" C="5" PS="Ln:117, Col:5" A="R"/>
+				<Pos L="171" C="23" PS="Ln:171, Col:23" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_FEED_BOARD" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="122" C="23" PS="Ln:122, Col:23" A="R"/>
+				<Pos L="125" C="5" PS="Ln:125, Col:5" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_MOVE_CREASE" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="131" C="23" PS="Ln:131, Col:23" A="R"/>
+				<Pos L="134" C="5" PS="Ln:134, Col:5" A="R"/>
+				<Pos L="157" C="23" PS="Ln:157, Col:23" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_CREASE" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="137" C="23" PS="Ln:137, Col:23" A="R"/>
+				<Pos L="140" C="5" PS="Ln:140, Col:5" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_MOVE_CREASE_WIDTH" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="150" C="24" PS="Ln:150, Col:24" A="R"/>
+				<Pos L="154" C="5" PS="Ln:154, Col:5" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_ERROR" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="43" C="24" PS="Ln:43, Col:24" A="R"/>
+				<Pos L="174" C="5" PS="Ln:174, Col:5" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_EJECT_FINISHED_BOARD" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="147" C="24" PS="Ln:147, Col:24" A="R"/>
+				<Pos L="160" C="5" PS="Ln:160, Col:5" A="R"/>
+				<Pos L="182" C="24" PS="Ln:182, Col:24" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_SOFT_STOP" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="106" C="21" PS="Ln:106, Col:21" A="R"/>
+				<Pos L="176" C="5" PS="Ln:176, Col:5" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_INIT" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="10" C="18" PS="Ln:10, Col:18" A="R"/>
+				<Pos L="33" C="62" PS="Ln:33, Col:62" A="R"/>
+				<Pos L="63" C="3" PS="Ln:63, Col:3" A="R"/>
+				<Pos L="207" C="21" PS="Ln:207, Col:21" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_IDLE" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="81" C="21" PS="Ln:81, Col:21" A="R"/>
+				<Pos L="84" C="3" PS="Ln:84, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_RUNNING" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="96" C="22" PS="Ln:96, Col:22" A="R"/>
+				<Pos L="100" C="3" PS="Ln:100, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_ERROR" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="33" C="22" PS="Ln:33, Col:22" A="R"/>
+				<Pos L="36" C="20" PS="Ln:36, Col:20" A="R"/>
+				<Pos L="39" C="20" PS="Ln:39, Col:20" A="R"/>
+				<Pos L="42" C="20" PS="Ln:42, Col:20" A="R"/>
+				<Pos L="45" C="20" PS="Ln:45, Col:20" A="R"/>
+				<Pos L="48" C="20" PS="Ln:48, Col:20" A="R"/>
+				<Pos L="90" C="22" PS="Ln:90, Col:22" A="R"/>
+				<Pos L="192" C="3" PS="Ln:192, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_HARDWARE_INIT" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="67" C="20" PS="Ln:67, Col:20" A="R"/>
+				<Pos L="69" C="3" PS="Ln:69, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_AXIS_POWER" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="74" C="21" PS="Ln:74, Col:21" A="R"/>
+				<Pos L="77" C="3" PS="Ln:77, Col:3" A="R"/>
+			</File>
+		</Enum>
+	</Enums>
+	<Funcs>
+		<Func Name="PulseTrain" Prog="Creaser">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="212" C="2" PS="Ln:212, Col:2"/>
+				<Pos L="213" C="2" PS="Ln:213, Col:2"/>
+			</File>
+		</Func>
+		<Func Name="TON" Lib="standard">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="9" C="3" PS="Action_Creaser_Idx"/>
+			</File>
+		</Func>
+		<Func Name="brsmemset" Lib="AsBrStr">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="26" C="3" PS="Ln:26, Col:3"/>
+			</File>
+		</Func>
+		<Func Name="Tms" Lib="jgLibC">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="37" C="43" PS="Action_Creaser_Idx"/>
+				<Pos L="42" C="43" PS="Action_Creaser_Idx"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerCyclic" Lib="bglibasWBR">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="52" C="2" PS="Action_Creaser_Idx"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="13" C="2" PS="Action_Manage_Update_Total_Runtime"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerStart" Lib="bglibasWBR">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="37" C="6" PS="Action_Creaser_Idx"/>
+				<Pos L="42" C="6" PS="Action_Creaser_Idx"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="6" C="3" PS="Action_Manage_Update_Total_Runtime"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerIsTimeOut" Lib="bglibasWBR">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="25" C="34" PS="Action_Creaser_Idx"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="4" C="5" PS="Action_Manage_Update_Total_Runtime"/>
+			</File>
+		</Func>
+		<Func Name="MpAxisBasic" Lib="MpAxis">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="8" C="2" PS="Ln:8, Col:2"/>
+				<Pos L="201" C="4" PS="Ln:201, Col:4"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="15" C="2" PS="Action_AxisControl_Mgmt"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="7" C="2" PS="Action_Move_Crease_Width"/>
+				<Pos L="17" C="2" PS="Action_Move_Crease_Width"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="8" C="2" PS="Action_Move_Section_Distance"/>
+				<Pos L="18" C="2" PS="Action_Move_Section_Distance"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="7" C="2" PS="Action_Start_Feeder"/>
+				<Pos L="14" C="2" PS="Action_Start_Feeder"/>
+			</File>
+		</Func>
+	</Funcs>
+	<Actions>
+		<Action Name="Creaser.Action_AxisControl_Mgmt">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="216" C="2" PS="Ln:216, Col:2"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Creaser_Idx">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="215" C="2" PS="Ln:215, Col:2"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Manage_Update_Total_Runtime">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="101" C="4" PS="Ln:101, Col:4"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Move_Crease_Width">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="149" C="8" PS="Ln:149, Col:8"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Move_Section_Distance">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="127" C="7" PS="Ln:127, Col:7"/>
+				<Pos L="156" C="7" PS="Ln:156, Col:7"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Start_Feeder">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="94" C="6" PS="Ln:94, Col:6"/>
+				<Pos L="146" C="8" PS="Ln:146, Col:8"/>
+				<Pos L="169" C="7" PS="Ln:169, Col:7"/>
+				<Pos L="179" C="7" PS="Ln:179, Col:7"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Tally_Board_L">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="103" C="4" PS="Ln:103, Col:4"/>
+			</File>
+		</Action>
+	</Actions>
+</Crossref>

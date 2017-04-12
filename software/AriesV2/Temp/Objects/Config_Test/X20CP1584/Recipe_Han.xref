@@ -1,0 +1,1473 @@
+<?xml version="1.0"?>
+<Crossref Scope="Auxiliary_Services_Control.Recipe_Handling" AppMod="">
+  <Vars>
+    <Var Name="Recipe_Han.pCmd" Scope="Local" Type="REFERENCE TO Recipe_HMI_Command_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="9" C="4" PS="Ln:9, Col:4" A="A" />
+        <Pos L="12" C="4" PS="Ln:12, Col:4" A="A" />
+        <Pos L="15" C="4" PS="Ln:15, Col:4" A="A" />
+        <Pos L="18" C="4" PS="Ln:18, Col:4" A="A" />
+        <Pos L="21" C="4" PS="Ln:21, Col:4" A="A" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="103" C="2" PS="Ln:103, Col:2" A="A" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc_Timer_Find_Active" Scope="Local" Type="TON">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="230" C="16" PS="Ln:230, Col:16" A="R" />
+        <Pos L="242" C="30" PS="Ln:242, Col:30" A="R" />
+        <Pos L="270" C="16" PS="Ln:270, Col:16" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.ii_char" Scope="Local" Type="UDINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="197" C="7" PS="Ln:197, Col:7" A="W" />
+        <Pos L="198" C="50" PS="Ln:198, Col:50" A="R" />
+        <Pos L="198" C="122" PS="Ln:198, Col:122" A="R" />
+        <Pos L="199" C="48" PS="Ln:199, Col:48" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locRefreshBeforeCall" Scope="Local" Type="BOOL">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="216" C="2" PS="Ln:216, Col:2" A="W" />
+        <Pos L="229" C="51" PS="Ln:229, Col:51" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locDTGetTime.enable" Scope="Local" Type="DTGetTime">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="187" C="3" PS="Ln:187, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locDTGetTime" Scope="Local" Type="DTGetTime">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="188" C="3" PS="Ln:188, Col:3" A="RW" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locDTGetTime.DT1" Scope="Local" Type="DTGetTime">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="190" C="9" PS="Ln:190, Col:9" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locTimeString" Scope="Local" Type="STRING[255]">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="189" C="3" PS="Ln:189, Col:3" A="W" />
+        <Pos L="190" C="31" PS="Ln:190, Col:31" A="R" />
+        <Pos L="195" C="49" PS="Ln:195, Col:49" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locCurrentlySelectedCfgIsActive" Scope="Local" Type="USINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="74" C="2" PS="Ln:74, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locCurrentlySelectedRecIsActive" Scope="Local" Type="USINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="73" C="2" PS="Ln:73, Col:2" A="W" />
+        <Pos L="137" C="89" PS="Ln:137, Col:89" A="R" />
+        <Pos L="166" C="31" PS="Ln:166, Col:31" A="R" />
+        <Pos L="206" C="34" PS="Ln:206, Col:34" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.locFindActiveRecipe" Scope="Local" Type="USINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="26" C="3" PS="Ln:26, Col:3" A="W" />
+        <Pos L="30" C="3" PS="Ln:30, Col:3" A="W" />
+        <Pos L="229" C="76" PS="Ln:229, Col:76" A="R" />
+        <Pos L="231" C="3" PS="Ln:231, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.ii_recipes" Scope="Local" Type="UINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="6" C="6" PS="Action_Set_Active_Rec" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="9" C="20" PS="Ln:9, Col:20" A="RW" />
+        <Pos L="12" C="20" PS="Ln:12, Col:20" A="RW" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="103" C="18" PS="Ln:103, Col:18" A="RW" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="15" C="20" PS="Ln:15, Col:20" A="RW" />
+        <Pos L="18" C="20" PS="Ln:18, Col:20" A="RW" />
+        <Pos L="21" C="20" PS="Ln:21, Col:20" A="RW" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.cmd.Copy_default_to_save" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="33" C="5" PS="Ln:33, Col:5" A="R" />
+        <Pos L="262" C="2" PS="Ln:262, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.cmd.Copy_default_to_active" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="37" C="5" PS="Ln:37, Col:5" A="R" />
+        <Pos L="263" C="2" PS="Ln:263, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.cmd.Copy_save_to_active" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="41" C="5" PS="Ln:41, Col:5" A="R" />
+        <Pos L="264" C="2" PS="Ln:264, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.cmd.Copy_save_to_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="45" C="5" PS="Ln:45, Col:5" A="R" />
+        <Pos L="265" C="2" PS="Ln:265, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.cmd.Copy_active_to_save" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="49" C="5" PS="Ln:49, Col:5" A="R" />
+        <Pos L="266" C="2" PS="Ln:266, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.cmd.Copy_active_to_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="53" C="5" PS="Ln:53, Col:5" A="R" />
+        <Pos L="267" C="2" PS="Ln:267, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.cmd.Copy_internal_to_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="57" C="5" PS="Ln:57, Col:5" A="R" />
+        <Pos L="268" C="2" PS="Ln:268, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.status.save_differs_from_active" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="61" C="2" PS="Ln:61, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.status.default_differs_from_save" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="62" C="2" PS="Ln:62, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.status.active_differs_from_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="63" C="2" PS="Ln:63, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.status.save_differs_from_active" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="67" C="2" PS="Ln:67, Col:2" A="W" />
+        <Pos L="137" C="34" PS="Ln:137, Col:34" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.status.default_differs_from_save" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="68" C="2" PS="Ln:68, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.status.active_differs_from_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="69" C="2" PS="Ln:69, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Refresh.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="110" C="5" PS="Ln:110, Col:5" A="R" />
+        <Pos L="118" C="2" PS="Ln:118, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Refresh.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="114" C="5" PS="Ln:114, Col:5" A="R" />
+        <Pos L="122" C="2" PS="Ln:122, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Refresh.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="119" C="2" PS="Ln:119, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Refresh.Lock" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="120" C="2" PS="Ln:120, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Save.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="124" C="5" PS="Ln:124, Col:5" A="R" />
+        <Pos L="136" C="2" PS="Ln:136, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Save.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="132" C="5" PS="Ln:132, Col:5" A="R" />
+        <Pos L="140" C="2" PS="Ln:140, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Save.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="137" C="2" PS="Ln:137, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Save.Lock" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="138" C="2" PS="Ln:138, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Load.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="143" C="5" PS="Ln:143, Col:5" A="R" />
+        <Pos L="151" C="2" PS="Ln:151, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Load.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="147" C="5" PS="Ln:147, Col:5" A="R" />
+        <Pos L="155" C="2" PS="Ln:155, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Load.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="152" C="2" PS="Ln:152, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Load.Lock" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="153" C="2" PS="Ln:153, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Delete.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="157" C="5" PS="Ln:157, Col:5" A="R" />
+        <Pos L="165" C="2" PS="Ln:165, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Delete.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="161" C="5" PS="Ln:161, Col:5" A="R" />
+        <Pos L="169" C="2" PS="Ln:169, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Delete.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="166" C="2" PS="Ln:166, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Delete.Lock" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="167" C="2" PS="Ln:167, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Overwrite.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="171" C="5" PS="Ln:171, Col:5" A="R" />
+        <Pos L="181" C="2" PS="Ln:181, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Overwrite.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="176" C="5" PS="Ln:176, Col:5" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Overwrite.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="183" C="2" PS="Ln:183, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Overwrite.Lock" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="184" C="2" PS="Ln:184, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Copy.DP" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="186" C="5" PS="Ln:186, Col:5" A="R" />
+        <Pos L="205" C="2" PS="Ln:205, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Copy.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="206" C="2" PS="Ln:206, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Rec.HMI.Copy.Lock" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="207" C="2" PS="Ln:207, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Refresh.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="209" C="2" PS="Ln:209, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Save.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="210" C="2" PS="Ln:210, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Load.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="211" C="2" PS="Ln:211, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Delete.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="212" C="2" PS="Ln:212, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Overwrite.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="213" C="2" PS="Ln:213, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.HMI.Copy.Status" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="214" C="2" PS="Ln:214, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.cmd.Copy_default_to_save" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="289" C="2" PS="Ln:289, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.cmd.Copy_default_to_active" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="290" C="2" PS="Ln:290, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.cmd.Copy_save_to_active" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="291" C="2" PS="Ln:291, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.cmd.Copy_save_to_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="292" C="2" PS="Ln:292, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.cmd.Copy_active_to_save" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="293" C="2" PS="Ln:293, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.cmd.Copy_active_to_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="294" C="2" PS="Ln:294, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.loc.Cfg.cmd.Copy_internal_to_default" Scope="Local" Type="Recipe_loc_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="295" C="2" PS="Ln:295, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.pRecCfgUIConnect" Scope="Local" Type="REFERENCE TO MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="8" C="4" PS="Ln:8, Col:4" A="A" />
+        <Pos L="11" C="4" PS="Ln:11, Col:4" A="A" />
+        <Pos L="14" C="4" PS="Ln:14, Col:4" A="A" />
+        <Pos L="17" C="4" PS="Ln:17, Col:4" A="A" />
+        <Pos L="20" C="4" PS="Ln:20, Col:4" A="A" />
+        <Pos L="221" C="2" PS="Ln:221, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="102" C="2" PS="Ln:102, Col:2" A="A" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.pRecCfgUIConnect.MessageBox.Type" Scope="Local" Type="REFERENCE TO MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="76" C="7" PS="Ln:76, Col:7" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_Han.pRecCfgUIConnect.MessageBox.Confirm" Scope="Local" Type="REFERENCE TO MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="81" C="15" PS="Ln:81, Col:15" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="4" C="2" PS="Ln:4, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.save.Rec" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="34" C="3" PS="Ln:34, Col:3" A="W" />
+        <Pos L="42" C="25" PS="Ln:42, Col:25" A="R" />
+        <Pos L="46" C="30" PS="Ln:46, Col:30" A="R" />
+        <Pos L="50" C="3" PS="Ln:50, Col:3" A="W" />
+        <Pos L="67" C="73" PS="Ln:67, Col:73" A="R" />
+        <Pos L="68" C="103" PS="Ln:68, Col:103" A="R" />
+        <Pos L="84" C="7" PS="Ln:84, Col:7" A="W" />
+        <Pos L="254" C="3" PS="Ln:254, Col:3" A="W" />
+        <Pos L="259" C="25" PS="Ln:259, Col:25" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="15" C="17" PS="Ln:15, Col:17" A="R" />
+        <Pos L="41" C="41" PS="Ln:41, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.defaultvals.Rec" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="34" C="23" PS="Ln:34, Col:23" A="R" />
+        <Pos L="38" C="25" PS="Ln:38, Col:25" A="R" />
+        <Pos L="46" C="3" PS="Ln:46, Col:3" A="W" />
+        <Pos L="54" C="3" PS="Ln:54, Col:3" A="W" />
+        <Pos L="68" C="74" PS="Ln:68, Col:74" A="R" />
+        <Pos L="69" C="100" PS="Ln:69, Col:100" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="14" C="17" PS="Ln:14, Col:17" A="R" />
+        <Pos L="40" C="41" PS="Ln:40, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.active.Rec" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="38" C="3" PS="Ln:38, Col:3" A="W" />
+        <Pos L="42" C="3" PS="Ln:42, Col:3" A="W" />
+        <Pos L="50" C="23" PS="Ln:50, Col:23" A="R" />
+        <Pos L="54" C="30" PS="Ln:54, Col:30" A="R" />
+        <Pos L="67" C="95" PS="Ln:67, Col:95" A="R" />
+        <Pos L="69" C="76" PS="Ln:69, Col:76" A="R" />
+        <Pos L="84" C="27" PS="Ln:84, Col:27" A="R" />
+        <Pos L="254" C="23" PS="Ln:254, Col:23" A="R" />
+        <Pos L="259" C="3" PS="Ln:259, Col:3" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="16" C="17" PS="Ln:16, Col:17" A="R" />
+        <Pos L="42" C="41" PS="Ln:42, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.save.Cfg" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="61" C="73" PS="Ln:61, Col:73" A="R" />
+        <Pos L="62" C="103" PS="Ln:62, Col:103" A="R" />
+        <Pos L="86" C="7" PS="Ln:86, Col:7" A="W" />
+        <Pos L="281" C="3" PS="Ln:281, Col:3" A="W" />
+        <Pos L="286" C="25" PS="Ln:286, Col:25" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="11" C="17" PS="Ln:11, Col:17" A="R" />
+        <Pos L="35" C="41" PS="Ln:35, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.active.Cfg" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="61" C="95" PS="Ln:61, Col:95" A="R" />
+        <Pos L="63" C="76" PS="Ln:63, Col:76" A="R" />
+        <Pos L="86" C="27" PS="Ln:86, Col:27" A="R" />
+        <Pos L="281" C="23" PS="Ln:281, Col:23" A="R" />
+        <Pos L="286" C="3" PS="Ln:286, Col:3" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="12" C="17" PS="Ln:12, Col:17" A="R" />
+        <Pos L="36" C="41" PS="Ln:36, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.defaultvals.Cfg" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="62" C="74" PS="Ln:62, Col:74" A="R" />
+        <Pos L="63" C="100" PS="Ln:63, Col:100" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="10" C="17" PS="Ln:10, Col:17" A="R" />
+        <Pos L="34" C="41" PS="Ln:34, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.IO.Rec.I.FileName" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="172" C="3" PS="Ln:172, Col:3" A="W" />
+        <Pos L="191" C="3" PS="Ln:191, Col:3" A="W" />
+        <Pos L="192" C="3" PS="Ln:192, Col:3" A="W" />
+        <Pos L="193" C="17" PS="Ln:193, Col:17" A="R" />
+        <Pos L="193" C="60" PS="Ln:193, Col:60" A="R" />
+        <Pos L="194" C="17" PS="Ln:194, Col:17" A="R" />
+        <Pos L="195" C="17" PS="Ln:195, Col:17" A="R" />
+        <Pos L="196" C="17" PS="Ln:196, Col:17" A="R" />
+        <Pos L="197" C="37" PS="Ln:197, Col:37" A="R" />
+        <Pos L="198" C="21" PS="Ln:198, Col:21" A="R" />
+        <Pos L="198" C="93" PS="Ln:198, Col:93" A="R" />
+        <Pos L="199" C="19" PS="Ln:199, Col:19" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="53" C="2" PS="Ln:53, Col:2" A="W" />
+        <Pos L="59" C="37" PS="Ln:59, Col:37" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.IO.Cfg.I.FileName" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="177" C="3" PS="Ln:177, Col:3" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="54" C="2" PS="Ln:54, Col:2" A="W" />
+        <Pos L="66" C="37" PS="Ln:66, Col:37" A="R" />
+      </File>
+    </Var>
+    <Var Name="gConfigName" Scope="Global" Type="STRING[255]">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="74" C="147" PS="Ln:74, Col:147" A="R" />
+        <Pos L="102" C="120" PS="Ln:102, Col:120" A="R" />
+        <Pos L="285" C="3" PS="Ln:285, Col:3" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="38" C="3" PS="Ln:38, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipeName" Scope="Global" Type="STRING[255]">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="73" C="147" PS="Ln:73, Col:147" A="R" />
+        <Pos L="95" C="120" PS="Ln:95, Col:120" A="R" />
+        <Pos L="192" C="32" PS="Ln:192, Col:32" A="R" />
+        <Pos L="258" C="3" PS="Ln:258, Col:3" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="7" C="116" PS="Action_Set_Active_Rec" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="44" C="3" PS="Ln:44, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.Save" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="173" C="3" PS="Ln:173, Col:3" A="W" />
+        <Pos L="202" C="3" PS="Ln:202, Col:3" A="W" />
+        <Pos L="246" C="41" PS="Ln:246, Col:41" A="R" />
+        <Pos L="247" C="3" PS="Ln:247, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="218" C="2" PS="Ln:218, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="108" C="2" PS="Ln:108, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.CommandDone" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="246" C="5" PS="Ln:246, Col:5" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.Load" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="246" C="68" PS="Ln:246, Col:68" A="R" />
+        <Pos L="248" C="3" PS="Ln:248, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.Info.LastLoadedRecipe" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="258" C="18" PS="Ln:258, Col:18" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_RegPar" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="219" C="2" PS="Ln:219, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="109" C="2" PS="Ln:109, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="220" C="2" PS="Ln:220, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="11" C="4" PS="Action_Set_Active_Rec" A="RW" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="110" C="2" PS="Ln:110, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="8" C="32" PS="Ln:8, Col:32" A="RW" />
+        <Pos L="11" C="32" PS="Ln:11, Col:32" A="RW" />
+        <Pos L="222" C="2" PS="Ln:222, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="82" C="33" PS="Ln:82, Col:33" A="R" />
+        <Pos L="102" C="30" PS="Ln:102, Col:30" A="RW" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Recipe.List.SelectedIndex" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="73" C="92" PS="Ln:73, Col:92" A="R" />
+        <Pos L="95" C="65" PS="Ln:95, Col:65" A="R" />
+        <Pos L="172" C="72" PS="Ln:172, Col:72" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="4" C="2" PS="Action_Set_Active_Rec" A="W" />
+        <Pos L="7" C="61" PS="Action_Set_Active_Rec" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Recipe.List.Names" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="73" C="52" PS="Ln:73, Col:52" A="R" />
+        <Pos L="95" C="25" PS="Ln:95, Col:25" A="R" />
+        <Pos L="172" C="32" PS="Ln:172, Col:32" A="R" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="7" C="21" PS="Action_Set_Active_Rec" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.MessageBox.Confirm" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="94" C="17" PS="Ln:94, Col:17" A="R" />
+        <Pos L="96" C="8" PS="Ln:96, Col:8" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.MessageBox.Cancel" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="97" C="8" PS="Ln:97, Col:8" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Recipe.Refresh" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="111" C="3" PS="Ln:111, Col:3" A="W" />
+        <Pos L="216" C="26" PS="Ln:216, Col:26" A="R" />
+        <Pos L="229" C="10" PS="Ln:229, Col:10" A="R" />
+        <Pos L="249" C="3" PS="Ln:249, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Recipe.Save" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="129" C="3" PS="Ln:129, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Recipe.Load" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="144" C="3" PS="Ln:144, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Recipe.Delete" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="158" C="3" PS="Ln:158, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Status" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="252" C="13" PS="Ln:252, Col:13" A="R" />
+        <Pos L="257" C="13" PS="Ln:257, Col:13" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.Recipe.List.StepDown" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="10" C="4" PS="Action_Set_Active_Rec" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.Save" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="178" C="3" PS="Ln:178, Col:3" A="W" />
+        <Pos L="273" C="41" PS="Ln:273, Col:41" A="R" />
+        <Pos L="274" C="3" PS="Ln:274, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="224" C="2" PS="Ln:224, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="112" C="2" PS="Ln:112, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.CommandDone" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="273" C="5" PS="Ln:273, Col:5" A="R" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.Load" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="273" C="68" PS="Ln:273, Col:68" A="R" />
+        <Pos L="275" C="3" PS="Ln:275, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.Info.LastLoadedRecipe" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="285" C="18" PS="Ln:285, Col:18" A="R" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_RegPar" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="225" C="2" PS="Ln:225, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="113" C="2" PS="Ln:113, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="226" C="2" PS="Ln:226, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="114" C="2" PS="Ln:114, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="14" C="32" PS="Ln:14, Col:32" A="RW" />
+        <Pos L="17" C="32" PS="Ln:17, Col:32" A="RW" />
+        <Pos L="20" C="32" PS="Ln:20, Col:32" A="RW" />
+        <Pos L="227" C="2" PS="Ln:227, Col:2" A="W" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="86" C="33" PS="Ln:86, Col:33" A="R" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.Recipe.List.SelectedIndex" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="74" C="92" PS="Ln:74, Col:92" A="R" />
+        <Pos L="102" C="65" PS="Ln:102, Col:65" A="R" />
+        <Pos L="177" C="72" PS="Ln:177, Col:72" A="R" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.Recipe.List.Names" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="74" C="52" PS="Ln:74, Col:52" A="R" />
+        <Pos L="102" C="25" PS="Ln:102, Col:25" A="R" />
+        <Pos L="177" C="32" PS="Ln:177, Col:32" A="R" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.MessageBox.Confirm" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="101" C="17" PS="Ln:101, Col:17" A="R" />
+        <Pos L="103" C="8" PS="Ln:103, Col:8" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.MessageBox.Cancel" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="104" C="8" PS="Ln:104, Col:8" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.Recipe.Refresh" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="115" C="3" PS="Ln:115, Col:3" A="W" />
+        <Pos L="276" C="3" PS="Ln:276, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.Recipe.Save" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="133" C="3" PS="Ln:133, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.Recipe.Load" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="148" C="3" PS="Ln:148, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.Recipe.Delete" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="162" C="3" PS="Ln:162, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.Status" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="279" C="13" PS="Ln:279, Col:13" A="R" />
+        <Pos L="284" C="13" PS="Ln:284, Col:13" A="R" />
+      </File>
+    </Var>
+    <Var Name="gHmiParamTable.selValueFormVisible" Scope="Global" Type="hmiParamListTable_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="119" C="45" PS="Ln:119, Col:45" A="R" />
+        <Pos L="137" C="192" PS="Ln:137, Col:192" A="R" />
+        <Pos L="152" C="43" PS="Ln:152, Col:43" A="R" />
+        <Pos L="166" C="79" PS="Ln:166, Col:79" A="R" />
+        <Pos L="206" C="87" PS="Ln:206, Col:87" A="R" />
+        <Pos L="209" C="45" PS="Ln:209, Col:45" A="R" />
+        <Pos L="210" C="42" PS="Ln:210, Col:42" A="R" />
+        <Pos L="211" C="42" PS="Ln:211, Col:42" A="R" />
+        <Pos L="212" C="44" PS="Ln:212, Col:44" A="R" />
+      </File>
+    </Var>
+    <Var Name="gHmi.prv.currentPage" Scope="Global" Type="hmiControlLogic_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="6" C="7" PS="Ln:6, Col:7" A="R" />
+        <Pos L="25" C="13" PS="Ln:25, Col:13" A="R" />
+        <Pos L="29" C="13" PS="Ln:29, Col:13" A="R" />
+        <Pos L="82" C="10" PS="Ln:82, Col:10" A="R" />
+        <Pos L="92" C="9" PS="Ln:92, Col:9" A="R" />
+        <Pos L="137" C="131" PS="Ln:137, Col:131" A="R" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_MpLink" Scope="Global" Type="MpComIdentType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="63" C="35" PS="Ln:63, Col:35" A="R" />
+        <Pos L="75" C="34" PS="Ln:75, Col:34" A="R" />
+        <Pos L="84" C="30" PS="Ln:84, Col:30" A="R" />
+        <Pos L="129" C="32" PS="Ln:129, Col:32" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_MpLink" Scope="Global" Type="MpComIdentType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="56" C="35" PS="Ln:56, Col:35" A="R" />
+        <Pos L="70" C="34" PS="Ln:70, Col:34" A="R" />
+        <Pos L="80" C="30" PS="Ln:80, Col:30" A="R" />
+        <Pos L="116" C="32" PS="Ln:116, Col:32" A="R" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.active.Cfg.MagicPrefix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="4" C="5" PS="Ln:4, Col:5" A="R" />
+        <Pos L="18" C="3" PS="Ln:18, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.save.Cfg.MagicPrefix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="4" C="71" PS="Ln:4, Col:71" A="R" />
+        <Pos L="19" C="3" PS="Ln:19, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.defaultvals.Cfg.MagicPrefix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="4" C="135" PS="Ln:4, Col:135" A="R" />
+        <Pos L="20" C="3" PS="Ln:20, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.active.Cfg.MagicSuffix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="5" C="6" PS="Ln:5, Col:6" A="R" />
+        <Pos L="22" C="3" PS="Ln:22, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.save.Cfg.MagicSuffix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="5" C="72" PS="Ln:5, Col:72" A="R" />
+        <Pos L="23" C="3" PS="Ln:23, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.defaultvals.Cfg.MagicSuffix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="5" C="136" PS="Ln:5, Col:136" A="R" />
+        <Pos L="24" C="3" PS="Ln:24, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.active.Rec.MagicPrefix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="6" C="6" PS="Ln:6, Col:6" A="R" />
+        <Pos L="26" C="3" PS="Ln:26, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.save.Rec.MagicPrefix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="6" C="72" PS="Ln:6, Col:72" A="R" />
+        <Pos L="27" C="3" PS="Ln:27, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.defaultvals.Rec.MagicPrefix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="6" C="136" PS="Ln:6, Col:136" A="R" />
+        <Pos L="28" C="3" PS="Ln:28, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.active.Rec.MagicSuffix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="7" C="6" PS="Ln:7, Col:6" A="R" />
+        <Pos L="30" C="3" PS="Ln:30, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.save.Rec.MagicSuffix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="7" C="72" PS="Ln:7, Col:72" A="R" />
+        <Pos L="31" C="3" PS="Ln:31, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecCfg.defaultvals.Rec.MagicSuffix" Scope="Global" Type="Global_Par_typ">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="7" C="136" PS="Ln:7, Col:136" A="R" />
+        <Pos L="32" C="3" PS="Ln:32, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.MpLink" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="56" C="2" PS="Ln:56, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.Enable" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="57" C="2" PS="Ln:57, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.DeviceName" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="58" C="2" PS="Ln:58, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.FileName" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="59" C="2" PS="Ln:59, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.Category" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="60" C="2" PS="Ln:60, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Control.Header" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="61" C="2" PS="Ln:61, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_Header" Scope="Global" Type="MpRecipeCsvHeaderType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="61" C="35" PS="Ln:61, Col:35" A="R" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_RegPar.MpLink" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="70" C="2" PS="Ln:70, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_RegPar.Enable" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="71" C="2" PS="Ln:71, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_RegPar.PVName" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="72" C="2" PS="Ln:72, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_RegPar.Category" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="73" C="2" PS="Ln:73, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.MpLink" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="80" C="2" PS="Ln:80, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.Enable" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="81" C="2" PS="Ln:81, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.UIConnect" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="82" C="2" PS="Ln:82, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.UISetup.RecipeListSize" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="88" C="2" PS="Ln:88, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.UISetup.RecipeListScrollWindow" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="89" C="2" PS="Ln:89, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.UISetup.Confirmation.RecipeCreate" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="90" C="2" PS="Ln:90, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.UISetup.Confirmation.RecipeLoad" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="91" C="2" PS="Ln:91, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.UISetup.Confirmation.RecipeSave" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="92" C="2" PS="Ln:92, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Recipe_CSV_UI.UISetup.Confirmation.RecipeDelete" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="93" C="2" PS="Ln:93, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gRecipe_CSV_UIConnect.New.FileName" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="105" C="2" PS="Ln:105, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe.AlarmImage" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="121" C="44" PS="Ln:121, Col:44" A="R" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe.AcknowledgeImage" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="122" C="50" PS="Ln:122, Col:50" A="R" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe.AddInfo" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="124" C="41" PS="Ln:124, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="126" C="2" PS="Ln:126, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.MpLink" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="116" C="2" PS="Ln:116, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.Enable" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="117" C="2" PS="Ln:117, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.Mode" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="118" C="2" PS="Ln:118, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.UISetup.ImageSize" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="120" C="2" PS="Ln:120, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.UISetup.AlarmImage" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="121" C="2" PS="Ln:121, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.UISetup.AcknowledgeImage" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="122" C="2" PS="Ln:122, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.UISetup.AddInfoStringSize" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="123" C="2" PS="Ln:123, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI.UISetup.AddInfo" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="124" C="2" PS="Ln:124, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Recipe_UI" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="127" C="2" PS="Ln:127, Col:2" A="RW" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.MpLink" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="63" C="2" PS="Ln:63, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.Enable" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="64" C="2" PS="Ln:64, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.DeviceName" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="65" C="2" PS="Ln:65, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.FileName" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="66" C="2" PS="Ln:66, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.Category" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="67" C="2" PS="Ln:67, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Control.Header" Scope="Global" Type="MpRecipeCsv">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="68" C="2" PS="Ln:68, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_Header" Scope="Global" Type="MpRecipeCsvHeaderType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="68" C="35" PS="Ln:68, Col:35" A="R" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_RegPar.MpLink" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="75" C="2" PS="Ln:75, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_RegPar.Enable" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="76" C="2" PS="Ln:76, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_RegPar.PVName" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="77" C="2" PS="Ln:77, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_RegPar.Category" Scope="Global" Type="MpRecipeRegPar">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="78" C="2" PS="Ln:78, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.MpLink" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="84" C="2" PS="Ln:84, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.Enable" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="85" C="2" PS="Ln:85, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.UIConnect" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="86" C="2" PS="Ln:86, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.UISetup.RecipeListSize" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="95" C="2" PS="Ln:95, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.UISetup.RecipeListScrollWindow" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="96" C="2" PS="Ln:96, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.UISetup.Confirmation.RecipeCreate" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="97" C="2" PS="Ln:97, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.UISetup.Confirmation.RecipeLoad" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="98" C="2" PS="Ln:98, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.UISetup.Confirmation.RecipeSave" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="99" C="2" PS="Ln:99, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Config_CSV_UI.UISetup.Confirmation.RecipeDelete" Scope="Global" Type="MpRecipeUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="100" C="2" PS="Ln:100, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="gConfig_CSV_UIConnect.New.FileName" Scope="Global" Type="MpRecipeUIConnectType">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="106" C="2" PS="Ln:106, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config.AlarmImage" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="134" C="44" PS="Ln:134, Col:44" A="R" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config.AcknowledgeImage" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="135" C="50" PS="Ln:135, Col:50" A="R" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config.AddInfo" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="137" C="41" PS="Ln:137, Col:41" A="R" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="139" C="2" PS="Ln:139, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.MpLink" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="129" C="2" PS="Ln:129, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.Enable" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="130" C="2" PS="Ln:130, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.Mode" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="131" C="2" PS="Ln:131, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.UISetup.ImageSize" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="133" C="2" PS="Ln:133, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.UISetup.AlarmImage" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="134" C="2" PS="Ln:134, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.UISetup.AcknowledgeImage" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="135" C="2" PS="Ln:135, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.UISetup.AddInfoStringSize" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="136" C="2" PS="Ln:136, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI.UISetup.AddInfo" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="137" C="2" PS="Ln:137, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_Config_UI" Scope="Global" Type="MpAlarmBasicUI">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="140" C="2" PS="Ln:140, Col:2" A="RW" />
+      </File>
+    </Var>
+  </Vars>
+  <Consts>
+    <Const Name="MAX_IDX_TOTAL_RECIPES" Scope="Global" Type="UINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="6" C="25" PS="Action_Set_Active_Rec" A="R" />
+      </File>
+    </Const>
+    <Const Name="DEFINE_CONSTANT_MAGIC_PREFIX" Scope="Global" Type="UDINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="4" C="39" PS="Ln:4, Col:39" A="R" />
+        <Pos L="4" C="103" PS="Ln:4, Col:103" A="R" />
+        <Pos L="4" C="174" PS="Ln:4, Col:174" A="R" />
+        <Pos L="6" C="40" PS="Ln:6, Col:40" A="R" />
+        <Pos L="6" C="104" PS="Ln:6, Col:104" A="R" />
+        <Pos L="6" C="175" PS="Ln:6, Col:175" A="R" />
+        <Pos L="18" C="37" PS="Ln:18, Col:37" A="R" />
+        <Pos L="19" C="34" PS="Ln:19, Col:34" A="R" />
+        <Pos L="20" C="41" PS="Ln:20, Col:41" A="R" />
+        <Pos L="26" C="37" PS="Ln:26, Col:37" A="R" />
+        <Pos L="27" C="34" PS="Ln:27, Col:34" A="R" />
+        <Pos L="28" C="41" PS="Ln:28, Col:41" A="R" />
+      </File>
+    </Const>
+    <Const Name="DEFINE_CONSTANT_MAGIC_SUFFIX" Scope="Global" Type="UDINT">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="5" C="40" PS="Ln:5, Col:40" A="R" />
+        <Pos L="5" C="104" PS="Ln:5, Col:104" A="R" />
+        <Pos L="5" C="175" PS="Ln:5, Col:175" A="R" />
+        <Pos L="7" C="40" PS="Ln:7, Col:40" A="R" />
+        <Pos L="7" C="104" PS="Ln:7, Col:104" A="R" />
+        <Pos L="7" C="175" PS="Ln:7, Col:175" A="R" />
+        <Pos L="22" C="37" PS="Ln:22, Col:37" A="R" />
+        <Pos L="23" C="34" PS="Ln:23, Col:34" A="R" />
+        <Pos L="24" C="41" PS="Ln:24, Col:41" A="R" />
+        <Pos L="30" C="37" PS="Ln:30, Col:37" A="R" />
+        <Pos L="31" C="34" PS="Ln:31, Col:34" A="R" />
+        <Pos L="32" C="41" PS="Ln:32, Col:41" A="R" />
+      </File>
+    </Const>
+  </Consts>
+  <Enums>
+    <Enum Name="mpRECIPE_UI_MSG_CONFIRM_LOAD" Scope="Global" Type="MpRecipeUIMessageEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="77" C="3" PS="Ln:77, Col:3" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="mpRECIPE_UI_MSG_CONFIRM_SAVE" Scope="Global" Type="MpRecipeUIMessageEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="79" C="3" PS="Ln:79, Col:3" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="mpRECIPE_UI_MSG_CONFIRM_CREATE" Scope="Global" Type="MpRecipeUIMessageEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="89" C="3" PS="Ln:89, Col:3" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="mpRECIPE_UI_MSG_CONFIRM_DELETE" Scope="Global" Type="MpRecipeUIMessageEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="91" C="3" PS="Ln:91, Col:3" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="mpRECIPE_UI_STATUS_LOAD" Scope="Global" Type="MpRecipeUIStatusEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="257" C="44" PS="Ln:257, Col:44" A="R" />
+        <Pos L="284" C="44" PS="Ln:284, Col:44" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="mpRECIPE_UI_STATUS_SAVE" Scope="Global" Type="MpRecipeUIStatusEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="252" C="44" PS="Ln:252, Col:44" A="R" />
+        <Pos L="279" C="44" PS="Ln:279, Col:44" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="HMI_RECIPE_20_SELECT" Scope="Global" Type="HMI_Page_Enum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="7" C="3" PS="Ln:7, Col:3" A="R" />
+        <Pos L="25" C="36" PS="Ln:25, Col:36" A="R" />
+        <Pos L="83" C="6" PS="Ln:83, Col:6" A="R" />
+        <Pos L="93" C="5" PS="Ln:93, Col:5" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="HMI_RECIPE_21_PVLIST" Scope="Global" Type="HMI_Page_Enum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="10" C="3" PS="Ln:10, Col:3" A="R" />
+        <Pos L="137" C="154" PS="Ln:137, Col:154" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="HMI_CONFIG_30_SELECT" Scope="Global" Type="HMI_Page_Enum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="13" C="3" PS="Ln:13, Col:3" A="R" />
+        <Pos L="29" C="36" PS="Ln:29, Col:36" A="R" />
+        <Pos L="85" C="6" PS="Ln:85, Col:6" A="R" />
+        <Pos L="100" C="5" PS="Ln:100, Col:5" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="HMI_CONFIG_31_PVLIST" Scope="Global" Type="HMI_Page_Enum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="16" C="3" PS="Ln:16, Col:3" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="HMI_LOGIN_43_ENGINEER" Scope="Global" Type="HMI_Page_Enum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="19" C="3" PS="Ln:19, Col:3" A="R" />
+      </File>
+    </Enum>
+    <Enum Name="mpALARM_BASIC_UI_MODE_ALL" Scope="Global" Type="MpAlarmBasicUIModeEnum">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="118" C="26" PS="Ln:118, Col:26" A="R" />
+        <Pos L="131" C="26" PS="Ln:131, Col:26" A="R" />
+      </File>
+    </Enum>
+  </Enums>
+  <Funcs>
+    <Func Name="DTGetTime" Lib="astime">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="188" C="3" PS="Ln:188, Col:3" />
+      </File>
+    </Func>
+    <Func Name="ascDT" Lib="astime">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="190" C="3" PS="Ln:190, Col:3" />
+      </File>
+    </Func>
+    <Func Name="brsmemset" Lib="AsBrStr">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="193" C="3" PS="Ln:193, Col:3" />
+        <Pos L="199" C="5" PS="Ln:199, Col:5" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="10" C="3" PS="Ln:10, Col:3" />
+        <Pos L="11" C="3" PS="Ln:11, Col:3" />
+        <Pos L="12" C="3" PS="Ln:12, Col:3" />
+        <Pos L="14" C="3" PS="Ln:14, Col:3" />
+        <Pos L="15" C="3" PS="Ln:15, Col:3" />
+        <Pos L="16" C="3" PS="Ln:16, Col:3" />
+      </File>
+    </Func>
+    <Func Name="brsmemcmp" Lib="AsBrStr">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="61" C="59" PS="Ln:61, Col:59" />
+        <Pos L="62" C="60" PS="Ln:62, Col:60" />
+        <Pos L="63" C="62" PS="Ln:63, Col:62" />
+        <Pos L="67" C="59" PS="Ln:67, Col:59" />
+        <Pos L="68" C="60" PS="Ln:68, Col:60" />
+        <Pos L="69" C="62" PS="Ln:69, Col:62" />
+        <Pos L="198" C="7" PS="Ln:198, Col:7" />
+        <Pos L="198" C="79" PS="Ln:198, Col:79" />
+      </File>
+    </Func>
+    <Func Name="brsstrcat" Lib="AsBrStr">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="194" C="3" PS="Ln:194, Col:3" />
+        <Pos L="195" C="3" PS="Ln:195, Col:3" />
+        <Pos L="196" C="3" PS="Ln:196, Col:3" />
+      </File>
+    </Func>
+    <Func Name="brsstrlen" Lib="AsBrStr">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="193" C="46" PS="Ln:193, Col:46" />
+        <Pos L="197" C="23" PS="Ln:197, Col:23" />
+      </File>
+    </Func>
+    <Func Name="brsstrcmp" Lib="AsBrStr">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="73" C="38" PS="Ln:73, Col:38" />
+        <Pos L="74" C="38" PS="Ln:74, Col:38" />
+        <Pos L="95" C="11" PS="Ln:95, Col:11" />
+        <Pos L="102" C="11" PS="Ln:102, Col:11" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="7" C="7" PS="Action_Set_Active_Rec" />
+      </File>
+    </Func>
+    <Func Name="Tms" Lib="jgLibC">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="230" C="39" PS="Ln:230, Col:39" />
+      </File>
+    </Func>
+    <Func Name="bgTimerCyclic" Lib="bglibasWBR">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="270" C="2" PS="Ln:270, Col:2" />
+      </File>
+    </Func>
+    <Func Name="bgTimerStart" Lib="bglibasWBR">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="230" C="3" PS="Ln:230, Col:3" />
+      </File>
+    </Func>
+    <Func Name="bgTimerIsTimeOut" Lib="bglibasWBR">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="242" C="13" PS="Ln:242, Col:13" />
+      </File>
+    </Func>
+    <Func Name="MpRecipeRegPar" Lib="MpRecipe">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="219" C="2" PS="Ln:219, Col:2" />
+        <Pos L="225" C="2" PS="Ln:225, Col:2" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="109" C="2" PS="Ln:109, Col:2" />
+        <Pos L="113" C="2" PS="Ln:113, Col:2" />
+      </File>
+    </Func>
+    <Func Name="MpRecipeUI" Lib="MpRecipe">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="220" C="2" PS="Ln:220, Col:2" />
+        <Pos L="226" C="2" PS="Ln:226, Col:2" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+        <Pos L="11" C="4" PS="Action_Set_Active_Rec" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="110" C="2" PS="Ln:110, Col:2" />
+        <Pos L="114" C="2" PS="Ln:114, Col:2" />
+      </File>
+    </Func>
+    <Func Name="MpRecipeCsv" Lib="MpRecipe">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="218" C="2" PS="Ln:218, Col:2" />
+        <Pos L="224" C="2" PS="Ln:224, Col:2" />
+      </File>
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="108" C="2" PS="Ln:108, Col:2" />
+        <Pos L="112" C="2" PS="Ln:112, Col:2" />
+      </File>
+    </Func>
+    <Func Name="Set_Default_Config_Values" Prog="Recipe_Handling">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="34" C="3" PS="Ln:34, Col:3" />
+        <Pos L="35" C="3" PS="Ln:35, Col:3" />
+        <Pos L="36" C="3" PS="Ln:36, Col:3" />
+      </File>
+    </Func>
+    <Func Name="Set_Default_Recipe_Values" Prog="Recipe_Handling">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="40" C="3" PS="Ln:40, Col:3" />
+        <Pos L="41" C="3" PS="Ln:41, Col:3" />
+        <Pos L="42" C="3" PS="Ln:42, Col:3" />
+      </File>
+    </Func>
+    <Func Name="MpAlarmBasicUI" Lib="MpAlarm">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Init.st">
+        <Pos L="127" C="2" PS="Ln:127, Col:2" />
+        <Pos L="140" C="2" PS="Ln:140, Col:2" />
+      </File>
+    </Func>
+  </Funcs>
+  <Actions>
+    <Action Name="Recipe_Han.Action_Set_Active_Rec">
+      <File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+        <Pos L="127" C="3" PS="Ln:127, Col:3" />
+        <Pos L="243" C="3" PS="Ln:243, Col:3" />
+      </File>
+    </Action>
+  </Actions>
+</Crossref>

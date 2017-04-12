@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<Crossref>
+	<Vars>
+		<Var Name="gHmi" Scope="Global" Type="hmiControlLogic_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="54"/>
+				<Pos L="55"/>
+				<Pos L="69"/>
+				<Pos L="70"/>
+				<Pos L="71"/>
+				<Pos L="75"/>
+				<Pos L="76"/>
+				<Pos L="79"/>
+				<Pos L="81"/>
+				<Pos L="83"/>
+				<Pos L="85"/>
+				<Pos L="86"/>
+				<Pos L="90"/>
+				<Pos L="91"/>
+				<Pos L="93"/>
+				<Pos L="95"/>
+				<Pos L="96"/>
+				<Pos L="108"/>
+				<Pos L="116"/>
+				<Pos L="117"/>
+				<Pos L="119"/>
+				<Pos L="139"/>
+				<Pos L="141"/>
+				<Pos L="158"/>
+				<Pos L="159"/>
+				<Pos L="160"/>
+				<Pos L="161"/>
+				<Pos L="194"/>
+				<Pos L="195"/>
+				<Pos L="250"/>
+				<Pos L="269"/>
+				<Pos L="273"/>
+				<Pos L="274"/>
+				<Pos L="276"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="10"/>
+				<Pos L="22"/>
+				<Pos L="23"/>
+				<Pos L="24"/>
+				<Pos L="25"/>
+				<Pos L="27"/>
+				<Pos L="28"/>
+				<Pos L="29"/>
+				<Pos L="30"/>
+				<Pos L="32"/>
+				<Pos L="33"/>
+				<Pos L="34"/>
+				<Pos L="35"/>
+				<Pos L="37"/>
+				<Pos L="38"/>
+				<Pos L="39"/>
+				<Pos L="46"/>
+				<Pos L="49"/>
+				<Pos L="50"/>
+				<Pos L="51"/>
+				<Pos L="53"/>
+				<Pos L="61"/>
+				<Pos L="62"/>
+				<Pos L="63"/>
+				<Pos L="67"/>
+				<Pos L="68"/>
+				<Pos L="69"/>
+				<Pos L="70"/>
+				<Pos L="75"/>
+				<Pos L="76"/>
+				<Pos L="80"/>
+				<Pos L="81"/>
+			</File>
+		</Var>
+		<Var Name="HMI_ENUM_MENU_ITEMS_RT" Scope="Global" Type="USINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="68"/>
+			</File>
+		</Var>
+		<Var Name="DEFINE_MENU_L_HIDE_TIMEOUT_MS" Scope="Global" Type="UDINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="81"/>
+			</File>
+		</Var>
+		<Var Name="DEFINE_MENU_R_HIDE_TIMEOUT_MS" Scope="Global" Type="UDINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="91"/>
+			</File>
+		</Var>
+		<Var Name="HMI_ENUM_TAB_KEYS_MAX" Scope="Global" Type="USINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="115"/>
+			</File>
+		</Var>
+		<Var Name="RECIPE_ACCESS_LEVEL" Scope="Global" Type="UINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="152"/>
+			</File>
+		</Var>
+		<Var Name="CONFIG_ACCESS_LEVEL" Scope="Global" Type="UINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="155"/>
+			</File>
+		</Var>
+		<Var Name="HMI_PWD_MAXLEN" Scope="Global" Type="UDINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="158"/>
+				<Pos L="159"/>
+				<Pos L="160"/>
+				<Pos L="161"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="159"/>
+				<Pos L="160"/>
+				<Pos L="161"/>
+			</File>
+		</Var>
+		<Var Name="FORCEIO_ACCESS_LEVEL" Scope="Global" Type="UINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="173"/>
+			</File>
+		</Var>
+		<Var Name="gHmiParamTable" Scope="Global" Type="hmiParamListTable_typ">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="210"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="10"/>
+			</File>
+		</Var>
+		<Var Name="DEFINE_HMI_SPLASHSCREEN_TO_MS" Scope="Global" Type="UDINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="276"/>
+			</File>
+		</Var>
+		<Var Name="DEFINE_MAX_TABLE_ENTRIES" Scope="Global" Type="UDINT">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiParamList.c">
+				<Pos L="225"/>
+			</File>
+		</Var>
+		<Var Name="DEFINE_LOGIN_TO" Scope="Global" Type="REAL">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="53"/>
+				<Pos L="63"/>
+			</File>
+		</Var>
+	</Vars>
+	<Funcs>
+		<Func Name="bgTimerCyclic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="75"/>
+				<Pos L="76"/>
+				<Pos L="141"/>
+				<Pos L="219"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiDialog.c">
+				<Pos L="98"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiAlert.c">
+				<Pos L="60"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="46"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerStart">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="81"/>
+				<Pos L="91"/>
+				<Pos L="276"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiDialog.c">
+				<Pos L="70"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiAlert.c">
+				<Pos L="54"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="53"/>
+				<Pos L="63"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerIsTimeOut">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="85"/>
+				<Pos L="95"/>
+				<Pos L="194"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiDialog.c">
+				<Pos L="106"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiAlert.c">
+				<Pos L="42"/>
+				<Pos L="61"/>
+			</File>
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="75"/>
+			</File>
+		</Func>
+		<Func Name="hmiParamListTableCyclic">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmilogic.c">
+				<Pos L="210"/>
+			</File>
+		</Func>
+		<Func Name="brsftoa">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/hmiParamList.c">
+				<Pos L="89"/>
+			</File>
+		</Func>
+		<Func Name="Tms">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="53"/>
+				<Pos L="63"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerTimeRemaining">
+			<File Name="C:/Users/jcgli/Desktop/software_Aries_041217/AriesV2/Logical/HMI/hmilogic/loginCyclicLogic.c">
+				<Pos L="80"/>
+				<Pos L="81"/>
+			</File>
+		</Func>
+	</Funcs>
+</Crossref>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VCXReferenceList>
+   <!--Intermediate File for generation of the XReferenceFile-->
+   <MAPP_UI_File_Message ReferenceString="Source[local].Layer[MAPP_UI_File_Message]">
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[MAPP_UI_File_Message].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.LayerStatus]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[MAPP_UI_File_Message].VirtualKey[%embVirtualKey_8_1].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.Confirm]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[MAPP_UI_File_Message].VirtualKey[%embVirtualKey_5_2].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.Cancel]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[MAPP_UI_File_Message].Control[txtContent].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.MessageBox.Type]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+   </MAPP_UI_File_Message>
+</VCXReferenceList>
