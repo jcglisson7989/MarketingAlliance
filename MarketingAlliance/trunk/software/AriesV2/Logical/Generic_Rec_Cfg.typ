@@ -48,6 +48,7 @@ TYPE
 		save_differs_from_active : USINT;
 		default_differs_from_save : USINT;
 		active_differs_from_default : USINT;
+		Initial_Load : USINT;
 	END_STRUCT;
 	Global_Rec_Cfg_Info_typ : 	STRUCT 
 		O : Global_RecCfg_Public_Out_typ;

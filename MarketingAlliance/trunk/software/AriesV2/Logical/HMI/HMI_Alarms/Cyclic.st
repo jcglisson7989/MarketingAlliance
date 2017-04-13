@@ -37,17 +37,11 @@ PROGRAM _CYCLIC
 //	END_FOR;
 	
 	
-//	IF gAlarmResetRequested THEN
-//		brsmemset(ADR(gAlarms.Dispense), 								0, 		SIZEOF(HERNON_Alarm_Dispense_typ));
-//		brsmemset(ADR(gAlarms.Inspect), 								0, 		SIZEOF(HERNON_Alarm_Inspect_typ));
-//		brsmemset(ADR(gAlarms.Sensor), 									0, 		SIZEOF(HERNON_Alarm_Sensor_typ));
-//		brsmemset(ADR(gAlarms.Safety), 									0, 		SIZEOF(HERNON_Alarm_Safety_typ));
-//		brsmemset(ADR(gAlarms.RecCfg), 									0, 		SIZEOF(HERNON_Alarm_RecCfg_typ));
-//		brsmemset(ADR(gAlarms.Hardware), 								0, 		SIZEOF(HERNON_Alarm_HW_typ));
-//		brsmemset(ADR(gAlarms.Motor), 									0, 		SIZEOF(HERNON_Alarm_Motor_typ));
-//		gMachine.App.MotorVar.ChainDrive.Current.oError := FALSE;
-//		gAlarmResetRequested := FALSE;
-//	END_IF;
+	IF gAlarmResetRequested THEN
+		brsmemset(ADR(gAlarms), 0, 		SIZEOF(Machine_Alarms_typ));
+
+		gAlarmResetRequested := FALSE;
+	END_IF;
 //
 //	IF Alarm_Control.ActiveAlarms = 0 AND Alarm_Control.PendingAlarms = 0 AND tmp_alarm_counter = 0 THEN
 //		gAlarmState := 0;

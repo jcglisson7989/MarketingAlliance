@@ -116,7 +116,6 @@
           <Text ID="620724" Value="Move Additive"/>
           <Text ID="620726" Value="Move Velocity"/>
           <Text ID="620728" Value="STOP"/>
-          <Text ID="621876" Value="PLCopen Status:"/>
           <Text ID="621877" Value="Error Acknowledge"/>
           <Text ID="621878" Value="Err Reset"/>
         </TextLayer>
@@ -185,7 +184,6 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
-          <Text ID="621876" Value="Text_2"/>
           <Text ID="621877" Value=""/>
           <Text ID="621878" Value=""/>
         </TextLayer>
@@ -254,7 +252,6 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
-          <Text ID="621876" Value=""/>
           <Text ID="621877" Value=""/>
           <Text ID="621878" Value=""/>
         </TextLayer>
@@ -323,7 +320,6 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
-          <Text ID="621876" Value="Text_2"/>
           <Text ID="621877" Value=""/>
           <Text ID="621878" Value=""/>
         </TextLayer>
@@ -392,7 +388,6 @@
           <Text ID="620724" Value=""/>
           <Text ID="620726" Value=""/>
           <Text ID="620728" Value=""/>
-          <Text ID="621876" Value=""/>
           <Text ID="621877" Value=""/>
           <Text ID="621878" Value=""/>
         </TextLayer>
@@ -461,7 +456,6 @@
           <Index ID="620724" Value="84"/>
           <Index ID="620726" Value="86"/>
           <Index ID="620728" Value="88"/>
-          <Index ID="621876" Value="87"/>
           <Index ID="621877" Value="89"/>
           <Index ID="621878" Value="90"/>
         </IndexMap>
@@ -2684,24 +2678,6 @@
           <Property Name="Top" Value="308"/>
           <Property Name="Width" Value="144"/>
         </Control>
-        <Control ClassId="0x00001004" Name="Text_6">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="AlignmentVertical" Value="Center"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
-          <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="14"/>
-          <Property Name="Left" Value="187"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="87"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="14"/>
-          <Property Name="Width" Value="128"/>
-        </Control>
         <Control ClassId="0x00001002" Name="Button_40">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="BackColor" Value="51"/>
@@ -3328,30 +3304,28 @@
   </MovementOrder>
   <TabSequence>
     <TabSeqItem Index="0" Value="Source[local].Layer[MSG_Dialog].Control[Numeric_1]"/>
-    <TabSeqItem Index="1" Value="Source[local].Layer[Global_Overlay].Control[Numeric_2]"/>
-    <TabSeqItem Index="2" Value="Source[local].Layer[Global_Overlay].Control[Numeric_3]"/>
-    <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Numeric_21]"/>
-    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_22]"/>
-    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_24]"/>
-    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_25]"/>
-    <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[Numeric_26]"/>
-    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[Numeric_28]"/>
-    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[Numeric_29]"/>
-    <TabSeqItem Index="10" Value="Source[embedded].Layer[Default].Control[Numeric_30]"/>
-    <TabSeqItem Index="11" Value="Source[embedded].Layer[Default].Control[Numeric_31]"/>
-    <TabSeqItem Index="12" Value="Source[embedded].Layer[Default].Control[Numeric_32]"/>
-    <TabSeqItem Index="13" Value="Source[embedded].Layer[Default].Control[Numeric_33]"/>
-    <TabSeqItem Index="14" Value="Source[embedded].Layer[Default].Control[Numeric_34]"/>
-    <TabSeqItem Index="15" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-    <TabSeqItem Index="16" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
-    <TabSeqItem Index="17" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
-    <TabSeqItem Index="18" Value="Source[embedded].Layer[Default].Control[Numeric_35]"/>
-    <TabSeqItem Index="19" Value="Source[embedded].Layer[Default].Control[Numeric_36]"/>
-    <TabSeqItem Index="20" Value="Source[embedded].Layer[Default].Control[Numeric_37]"/>
-    <TabSeqItem Index="21" Value="Source[embedded].Layer[Default].Control[Numeric_38]"/>
-    <TabSeqItem Index="22" Value="Source[embedded].Layer[Default].Control[Numeric_39]"/>
-    <TabSeqItem Index="23" Value="Source[embedded].Layer[Default].Control[Dropdown_2]"/>
-    <TabSeqItem Index="24" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
-    <TabSeqItem Index="25" Value="Source[embedded].Layer[Default].Control[Numeric_7]"/>
+    <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_21]"/>
+    <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_22]"/>
+    <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Numeric_24]"/>
+    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_25]"/>
+    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_26]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_28]"/>
+    <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[Numeric_29]"/>
+    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[Numeric_30]"/>
+    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[Numeric_31]"/>
+    <TabSeqItem Index="10" Value="Source[embedded].Layer[Default].Control[Numeric_32]"/>
+    <TabSeqItem Index="11" Value="Source[embedded].Layer[Default].Control[Numeric_33]"/>
+    <TabSeqItem Index="12" Value="Source[embedded].Layer[Default].Control[Numeric_34]"/>
+    <TabSeqItem Index="13" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
+    <TabSeqItem Index="14" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
+    <TabSeqItem Index="15" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
+    <TabSeqItem Index="16" Value="Source[embedded].Layer[Default].Control[Numeric_35]"/>
+    <TabSeqItem Index="17" Value="Source[embedded].Layer[Default].Control[Numeric_36]"/>
+    <TabSeqItem Index="18" Value="Source[embedded].Layer[Default].Control[Numeric_37]"/>
+    <TabSeqItem Index="19" Value="Source[embedded].Layer[Default].Control[Numeric_38]"/>
+    <TabSeqItem Index="20" Value="Source[embedded].Layer[Default].Control[Numeric_39]"/>
+    <TabSeqItem Index="21" Value="Source[embedded].Layer[Default].Control[Dropdown_2]"/>
+    <TabSeqItem Index="22" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
+    <TabSeqItem Index="23" Value="Source[embedded].Layer[Default].Control[Numeric_7]"/>
   </TabSequence>
 </Page>
