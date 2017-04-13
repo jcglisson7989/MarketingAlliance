@@ -7,7 +7,8 @@ void loginLevelParameterEditControl(UDINT minLevel)
 {
 	//input form (i.e. common page) not visible for operator 
 	//(i.e. loginlevel==0 > visibility set to 1 (not visible))
-	gHmiParamTable.selValueFormVisible = (gHmi.prv.loginLevel >= minLevel) ? 0 : 1;
+	/*gHmiParamTable.selValueFormVisible = (gHmi.prv.loginLevel >= minLevel) ? 0 : 1;*/
+	gHmiParamTable.selValueFormVisible = 0;
 }
 
 
@@ -19,25 +20,29 @@ void	loginLevelLogicCyclic()
 	
 	//update visiblity flags that are associated with the current login level
 	//note that current app support three login levels: 0-operator;1-supervisor;2-admin
-	if(gHmi.prv.loginLevel == 1){
-		gHmi.status.loginVisibleGE1 = 0;//visible
-		gHmi.status.loginVisibleGE2 = 1;//not visible
-		gHmi.status.loginVisibleGE3 = 1;//not visible
-	}else
-		if(gHmi.prv.loginLevel == 2){
-		gHmi.status.loginVisibleGE1 = 0;//visible
-		gHmi.status.loginVisibleGE2 = 0;//visible
-		gHmi.status.loginVisibleGE3 = 1;//not visible
-	}else
-		if(gHmi.prv.loginLevel == 3){
-		gHmi.status.loginVisibleGE1 = 0;//visible
-		gHmi.status.loginVisibleGE2 = 0;//visible
-		gHmi.status.loginVisibleGE3 = 0;//visible
-	}else{
-		gHmi.status.loginVisibleGE1 = 1;//not visible
-		gHmi.status.loginVisibleGE2 = 1;//not visible
-		gHmi.status.loginVisibleGE3 = 1;//not visible		
-	}		
+//	if(gHmi.prv.loginLevel == 1){
+//		gHmi.status.loginVisibleGE1 = 0;//visible
+//		gHmi.status.loginVisibleGE2 = 1;//not visible
+//		gHmi.status.loginVisibleGE3 = 1;//not visible
+//	}else
+//		if(gHmi.prv.loginLevel == 2){
+//		gHmi.status.loginVisibleGE1 = 0;//visible
+//		gHmi.status.loginVisibleGE2 = 0;//visible
+//		gHmi.status.loginVisibleGE3 = 1;//not visible
+//	}else
+//		if(gHmi.prv.loginLevel == 3){
+//		gHmi.status.loginVisibleGE1 = 0;//visible
+//		gHmi.status.loginVisibleGE2 = 0;//visible
+//		gHmi.status.loginVisibleGE3 = 0;//visible
+//	}else{
+//		gHmi.status.loginVisibleGE1 = 1;//not visible
+//		gHmi.status.loginVisibleGE2 = 1;//not visible
+//		gHmi.status.loginVisibleGE3 = 1;//not visible		
+//	}		
+	
+	gHmi.status.loginVisibleGE1 = 0;//visible
+	gHmi.status.loginVisibleGE2 = 0;//visible
+	gHmi.status.loginVisibleGE3 = 0;//visible
 	
 
 	//operate login timeout timer

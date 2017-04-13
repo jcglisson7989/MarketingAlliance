@@ -59,16 +59,17 @@ END_TYPE
 (*Insert your comment here.*)
 
 TYPE
-	Machine_Alarms_typ : 	STRUCT 
-		SM1_Disabled : BOOL;
-		Unsafe_Machine_State : BOOL;
-		Fiber_Optic_Blocked_RunCmd : BOOL;
-		Creaser_Shaft_Edge_Timeout : BOOL;
-		Error_State_Unsafe_Machine : BOOL;
-		Error_State_SM1_Power : BOOL;
-		Feed_Axis_Motor_Error : BOOL;
-		Crease_Count_Greater_Max : BOOL;
-		Error_State_Process_Error : BOOL;
+	Machine_Alarms_typ : 	STRUCT  (*Did something fancy here- structure is copied into array for VC error texts, make sure the following numbers line up with the VC error text indices!*)
+		SM1_Disabled : BOOL; (*0*)
+		Unsafe_Machine_State : BOOL; (*1*)
+		Fiber_Optic_Blocked_RunCmd : BOOL; (*2*)
+		Creaser_Shaft_Edge_Timeout : BOOL; (*3*)
+		Error_State_Unsafe_Machine : BOOL; (*4*)
+		Error_State_SM1_Power : BOOL; (*5*)
+		Feed_Axis_Motor_Error : BOOL; (*6*)
+		Crease_Count_Greater_Max : BOOL; (*7*)
+		Error_State_Process_Error : BOOL; (*8*)
+		Load_Recipe : BOOL; (*9*)
 	END_STRUCT;
 	Global_Statistics_typ : 	STRUCT 
 		total_runtime : UDINT;

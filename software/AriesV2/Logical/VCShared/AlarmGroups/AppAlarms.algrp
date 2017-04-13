@@ -68,6 +68,66 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="4">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="5">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="6">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="7">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="8">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -83,10 +143,15 @@
   <TextGroup>
     <TextSnippets/>
     <TextLayer LanguageId="en">
-      <Text ID="2400" Value="alm 1"/>
-      <Text ID="2401" Value="alm 2"/>
-      <Text ID="2402" Value="alm 3"/>
-      <Text ID="2403" Value="alm 4"/>
+      <Text ID="2400" Value="SM1 Power Disabled"/>
+      <Text ID="2401" Value="Unsafe Machine State (E-stop Pressed?)"/>
+      <Text ID="2402" Value="Fiber optic sensor blocked when trying to go into RUN mode"/>
+      <Text ID="2403" Value="Crease Shaft sensor edge timeout (Motor not running?)"/>
+      <Text ID="2408" Value="Unsafe machine state put machine into ERR mode"/>
+      <Text ID="2409" Value="SM1 power put machine into ERR mode"/>
+      <Text ID="2410" Value="Feed servo error put machine into ERR mode"/>
+      <Text ID="2411" Value="Crease count greater than max allowable crease count (reduce number of creases)"/>
+      <Text ID="2412" Value="Crease process error put machine into ERR state"/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="de">
@@ -94,6 +159,11 @@
       <Text ID="2401" Value=""/>
       <Text ID="2402" Value=""/>
       <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="pt">
@@ -101,6 +171,11 @@
       <Text ID="2401" Value=""/>
       <Text ID="2402" Value=""/>
       <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="es">
@@ -108,6 +183,11 @@
       <Text ID="2401" Value=""/>
       <Text ID="2402" Value=""/>
       <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="sv">
@@ -115,6 +195,11 @@
       <Text ID="2401" Value=""/>
       <Text ID="2402" Value=""/>
       <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -122,6 +207,11 @@
       <Index ID="2401" Value="1"/>
       <Index ID="2402" Value="2"/>
       <Index ID="2403" Value="3"/>
+      <Index ID="2408" Value="4"/>
+      <Index ID="2409" Value="5"/>
+      <Index ID="2410" Value="6"/>
+      <Index ID="2411" Value="7"/>
+      <Index ID="2412" Value="8"/>
       <Index ID="2399" Value="Group"/>
     </IndexMap>
   </TextGroup>

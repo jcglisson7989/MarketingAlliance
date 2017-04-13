@@ -59,27 +59,41 @@ PROGRAM _CYCLIC
 		ELSIF gRecCfg.active.Rec.Crease.CreaseCount > MAX_IDX_CREASES THEN
 			gAlarms.Crease_Count_Greater_Max := TRUE;
 			MachineState := MACHINE_STATE_ERROR;
+		ELSIF NOT (gRecCfg.IO.Rec.O.Initial_Load = 1) THEN
+			gAlarms.Load_Recipe := TRUE;
+			MachineState := MACHINE_STATE_ERROR;
 		END_IF;
 	END_IF;
 	
-	IF AxisControl.Error THEN
-		IO.oBoardFeedingLight := Pulse_Fast.bFlashOut;
-	ELSIF AxisControl.InVelocity THEN
-		IO.oBoardFeedingLight := Pulse_Slow.bFlashOut;
-	ELSIF AxisControl.MoveActive THEN
-		IO.oBoardFeedingLight := TRUE;//Set the green indicator light on the UI to the "movement active" status of the axis FBK.
-	ELSE
-		IO.oBoardFeedingLight := FALSE;
+//	IF AxisControl.Error THEN
+//		IO.oBoardFeedingLight := Pulse_Fast.bFlashOut;
+//	ELSIF AxisControl.InVelocity THEN
+//		IO.oBoardFeedingLight := Pulse_Slow.bFlashOut;
+//	ELSIF AxisControl.MoveActive THEN
+//		IO.oBoardFeedingLight := TRUE;//Set the green indicator light on the UI to the "movement active" status of the axis FBK.
+//	ELSE
+//		IO.oBoardFeedingLight := FALSE;
+	//	END_IF;
+	
+	IF EDGEPOS(MachineState = MACHINE_STATE_ERROR) THEN
+		AxisControl.MoveVelocity := FALSE;
+		AxisControl.MoveAbsolute := FALSE;
+		AxisControl.MoveAdditive := FALSE;
+		AxisControl.Stop := TRUE;
+		AxisControl();
 	END_IF;
+	
 
 	CASE MachineState OF
 		MACHINE_STATE_INIT:
+			IO.oBoardFeedingLight := FALSE;
 			IO.oUIIndicatorLight := FALSE;
 			AxisControl.Power := FALSE;
 		
 			MachineState := MACHINE_STATE_HARDWARE_INIT;
 		
 		MACHINE_STATE_HARDWARE_INIT:
+			IO.oBoardFeedingLight := FALSE;
 			IO.oUIIndicatorLight := FALSE;
 			
 			IF AxisControl.Info.ReadyToPowerOn THEN
@@ -88,6 +102,7 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		MACHINE_STATE_AXIS_POWER:
+			IO.oBoardFeedingLight := FALSE;
 			IO.oUIIndicatorLight := FALSE;
 			
 			IF AxisControl.PowerOn THEN
@@ -95,6 +110,7 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		MACHINE_STATE_IDLE:
+			IO.oBoardFeedingLight := FALSE;
 			IO.oUIIndicatorLight := Pulse_Slow.bFlashOut;
 		
 			IF EDGEPOS(iStartCommand) THEN
@@ -111,6 +127,8 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		MACHINE_STATE_RUNNING:
+			IO.oUIIndicatorLight := TRUE;
+			
 			Action_Manage_Update_Total_Runtime;
 			
 			Action_Tally_Board_L;
@@ -121,6 +139,7 @@ PROGRAM _CYCLIC
 
 			CASE ProcessState OF
 				PRCS_STATE_INIT:
+					IO.oBoardFeedingLight := FALSE;
 					Current_Board_Position := 0;
 					
 					IF setFlagCreaserIdxFinished THEN
@@ -128,6 +147,7 @@ PROGRAM _CYCLIC
 					END_IF;					
 				
 				PRCS_STATE_READY:
+					IO.oBoardFeedingLight := FALSE;
 					Current_Board_Position := 0;
 					
 					IF AxisControl.InVelocity THEN
@@ -136,6 +156,7 @@ PROGRAM _CYCLIC
 					END_IF;
 					
 				PRCS_STATE_FEED_BOARD:
+					IO.oBoardFeedingLight := TRUE;
 					IF IO.iFiberOpticSensor AND NOT IO_LastCycle.iFiberOpticSensor THEN
 						Action_Move_Section_Distance;
 						
@@ -145,12 +166,14 @@ PROGRAM _CYCLIC
 					END_IF;
 				
 				PRCS_STATE_MOVE_CREASE:
+					IO.oBoardFeedingLight := Pulse_Slow.bFlashOut;
 					IF AxisControl.InPosition THEN
 						setflagCreaserIndexCommand := TRUE;
 						ProcessState := PRCS_STATE_CREASE;
 					END_IF;
 				
 				PRCS_STATE_CREASE:
+					IO.oBoardFeedingLight := Pulse_Fast.bFlashOut;
 					
 					IF setFlagCreaserIdxFinished THEN //Wait for flag set by creaser that it has indexed and is at the "ready" position to move board
 						ii_crease_count := ii_crease_count + 1; //Increment crease counter
@@ -165,12 +188,16 @@ PROGRAM _CYCLIC
 					END_IF;
 				
 				PRCS_STATE_MOVE_CREASE_WIDTH:
+					IO.oBoardFeedingLight := Pulse_Slow.bFlashOut;
+					
 					IF AxisControl.InPosition THEN
 						Action_Move_Section_Distance;
 						ProcessState := PRCS_STATE_MOVE_CREASE;
 					END_IF;
 				
 				PRCS_STATE_EJECT_FINISHED_BOARD:
+					IO.oBoardFeedingLight := Pulse_Slow.bFlashOut AND Pulse_Fast.bFlashOut;
+					
 					IF NOT IO.iFiberOpticSensor AND IO_LastCycle.iFiberOpticSensor THEN
 						
 						Latch_Board_Length := Current_Board_Position;
@@ -185,8 +212,10 @@ PROGRAM _CYCLIC
 					END_IF;
 				
 				PRCS_STATE_ERROR:
+					IO.oBoardFeedingLight := FALSE;
 				
 				PRCS_STATE_SOFT_STOP:
+					IO.oBoardFeedingLight := FALSE;
 				
 					IF NOT iSoftStopCommand THEN
 						Action_Start_Feeder;
@@ -203,19 +232,15 @@ PROGRAM _CYCLIC
 		
 		
 		MACHINE_STATE_ERROR:
+			IO.oBoardFeedingLight := FALSE;
 			IO.oUIIndicatorLight := Pulse_Fast.bFlashOut AND Pulse_Slow.bFlashOut;
 			
 			Current_Crease_Section_Length := 0;
-			
-			AxisControl.MoveVelocity := FALSE;
-			AxisControl.MoveAbsolute := FALSE;
-			AxisControl.MoveAdditive := FALSE;
-			AxisControl.Stop := TRUE;
-			AxisControl();
-		
+
 			ProcessState := PRCS_STATE_INIT;
 			
 			IF iMachineErrorReset THEN
+				gAlarmResetRequested := TRUE;
 				gStatistics.Reset := TRUE;
 				MachineState := MACHINE_STATE_INIT;
 			END_IF;

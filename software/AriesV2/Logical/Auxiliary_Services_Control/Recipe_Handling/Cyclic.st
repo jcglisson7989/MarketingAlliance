@@ -255,6 +255,7 @@ PROGRAM _CYCLIC
 	END_IF;
 	
 	IF EDGENEG(gRecipe_CSV_UIConnect.Status = mpRECIPE_UI_STATUS_LOAD) THEN
+		gRecCfg.IO.Rec.O.Initial_Load := 1;
 		gRecipeName := Recipe_CSV_Control.Info.LastLoadedRecipe;
 		gRecCfg.active.Rec := gRecCfg.save.Rec;
 	END_IF;

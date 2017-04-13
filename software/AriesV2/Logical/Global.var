@@ -54,6 +54,7 @@ VAR RETAIN
 END_VAR
 (*Insert your comment here.*)
 VAR
+	gAlarmResetRequested : BOOL;
 	iMachineErrorReset : BOOL;
 	iStartCommand : BOOL;
 	iSoftStopCommand : BOOL;
