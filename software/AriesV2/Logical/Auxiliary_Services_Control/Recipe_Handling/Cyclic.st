@@ -16,9 +16,6 @@ PROGRAM _CYCLIC
 		HMI_CONFIG_31_PVLIST:
 			pRecCfgUIConnect ACCESS ADR(gConfig_CSV_UIConnect);
 			pCmd ACCESS ADR(loc.Cfg.HMI);
-		HMI_LOGIN_43_ENGINEER:
-			pRecCfgUIConnect ACCESS ADR(gConfig_CSV_UIConnect);
-			pCmd ACCESS ADR(loc.Cfg.HMI);
 	END_CASE;
 	
 	
@@ -67,6 +64,8 @@ PROGRAM _CYCLIC
 	loc.Rec.status.save_differs_from_active := BOOL_TO_USINT(brsmemcmp(ADR(gRecCfg.save.Rec),ADR(gRecCfg.active.Rec), SIZEOF(Global_Rec_typ)) <> 0);
 	loc.Rec.status.default_differs_from_save := BOOL_TO_USINT(brsmemcmp(ADR(gRecCfg.defaultvals.Rec),ADR(gRecCfg.save.Rec), SIZEOF(Global_Rec_typ)) <> 0);
 	loc.Rec.status.active_differs_from_default := BOOL_TO_USINT(brsmemcmp(ADR(gRecCfg.active.Rec),ADR(gRecCfg.defaultvals.Rec), SIZEOF(Global_Rec_typ)) <> 0);
+	
+	gAlarms.Unsaved_Recipe_Params := USINT_TO_BOOL(loc.Rec.status.save_differs_from_active);
 	
 //	loc.Rec.status.Invalid := NOT Fcn_Recipe_Valid(pRec := ADR(gRecCfg.active.Rec), pAlarms := ADR(gAlarms));
 	

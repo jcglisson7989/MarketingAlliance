@@ -200,6 +200,18 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="15">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -229,7 +241,8 @@
       <Text ID="2433" Value="Sum of creasing distances greater than configured board length"/>
       <Text ID="2434" Value="Sum of creasing distances less than configured board length"/>
       <Text ID="2435" Value="Measured board length greater than configured board length"/>
-      <Text ID="2436" Value="Measured board length greater than configured board length"/>
+      <Text ID="2436" Value="Measured board length less than configured board length"/>
+      <Text ID="2459" Value="Recipe Settings changed since last save!"/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="de">
@@ -248,6 +261,7 @@
       <Text ID="2434" Value=""/>
       <Text ID="2435" Value=""/>
       <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="pt">
@@ -266,6 +280,7 @@
       <Text ID="2434" Value=""/>
       <Text ID="2435" Value=""/>
       <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="es">
@@ -284,6 +299,7 @@
       <Text ID="2434" Value=""/>
       <Text ID="2435" Value=""/>
       <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="sv">
@@ -302,6 +318,7 @@
       <Text ID="2434" Value=""/>
       <Text ID="2435" Value=""/>
       <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -320,6 +337,7 @@
       <Index ID="2434" Value="12"/>
       <Index ID="2435" Value="13"/>
       <Index ID="2436" Value="14"/>
+      <Index ID="2459" Value="15"/>
       <Index ID="2399" Value="Group"/>
     </IndexMap>
   </TextGroup>

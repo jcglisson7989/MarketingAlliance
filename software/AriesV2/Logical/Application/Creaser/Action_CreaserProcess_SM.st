@@ -37,6 +37,9 @@ ACTION Action_CreaserProcess_SM:
 				
 		PRCS_STATE_FEED_BOARD:
 			IO.oBoardFeedingLight := TRUE;
+			
+			Current_Board_Position := 0;
+			
 			IF IO.iFiberOpticSensor AND NOT IO_LastCycle.iFiberOpticSensor THEN
 				Action_Move_Photoeye_Offset;
 						
@@ -101,13 +104,13 @@ ACTION Action_CreaserProcess_SM:
 					
 			IF NOT IO.iFiberOpticSensor AND IO_LastCycle.iFiberOpticSensor THEN
 						
-				Latch_Board_Length := Current_Board_Position;
+				Latch_Board_Length := Current_Board_Position + gRecCfg.active.Cfg.Creaser.PhotoEyeOffset;
 						
 				IF Latch_Board_Length > (gRecCfg.active.Rec.Crease.TotalBoardLength + gRecCfg.active.Cfg.Creaser.BoardLengthTolerance) THEN
 					gAlarms.Measured_Length_GT_Configured := TRUE;
 					ProcessState := PRCS_STATE_ERROR;
 				ELSIF Latch_Board_Length < (gRecCfg.active.Rec.Crease.TotalBoardLength - gRecCfg.active.Cfg.Creaser.BoardLengthTolerance) THEN
-					gAlarms.Board_Length_LT_Confgd_Amount := TRUE;
+					gAlarms.Measured_Length_LT_Configured := TRUE;
 					ProcessState := PRCS_STATE_ERROR;
 				ELSE
 					gStatistics.total_processed := gStatistics.total_processed + 1;
@@ -134,7 +137,7 @@ ACTION Action_CreaserProcess_SM:
 				IF IO.iFiberOpticSensor THEN  //Eject this part, maybe in the future resume from last state but for now just consider the current part a wash
 					ProcessState := PRCS_STATE_INIT;
 				ELSE //Re-cycle back to process SM jump-off point
-					setflagCreaserIndexCommand := TRUE;
+//					setflagCreaserIndexCommand := TRUE;
 					ii_crease_count := 0;
 					ProcessState := PRCS_STATE_INIT;
 				END_IF;

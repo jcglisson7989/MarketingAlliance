@@ -19,14 +19,9 @@ PROGRAM _CYCLIC
 		brsmemset(ADR(gStatistics), 0, SIZEOF(Global_Statistics_typ)); //Kind of a weird way to do this- essentially just writes 0's to the entirety of the memory the structure occupies (thus "zeroing-out" the counters)
 	END_IF;
 	
-	//Set status alarm values based on IO points->
-	gAlarms.SM1_Disabled := IO.iSM1Disabled; //SM1 supplies power to the IO from the 24VAC->24VDC power supply
-	gAlarms.Unsafe_Machine_State := NOT IO.iSafeMachineState; //DP reads whether the E-stop has been pressed
-	
 	Action_Eval_ErrorState_Statuses; //Evaluate the conditions that put machine into ERR state
 
 	//Eval conditions that would send the machine into ERR state if the machine isn't already in ERR or INIT state->
-
 
 	IF EDGEPOS(IO.iSafeMachineState) OR iMachineErrorReset THEN
 		ProcessState := PRCS_STATE_INIT;
@@ -43,6 +38,10 @@ PROGRAM _CYCLIC
 		AxisControl();
 	END_IF;
 	
+	BoardEjectUIButton_Hide := BOOL_TO_USINT(NOT ((MachineState = MACHINE_STATE_IDLE OR MachineState = MACHINE_STATE_MANUAL_EJECT) AND IO.iFiberOpticSensor));
+	
+	StartUIButton_Hide := NOT (MachineState = MACHINE_STATE_IDLE);
+	StopUIButton_Hide := NOT (MachineState = MACHINE_STATE_RUNNING);
 
 	CASE MachineState OF
 		MACHINE_STATE_INIT:
@@ -109,6 +108,9 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		MACHINE_STATE_MANUAL_EJECT:
+			IO.oBoardFeedingLight := TRUE;
+			IO.oUIIndicatorLight := Pulse_Slow.bFlashOut;
+			
 			IF (NOT IO.iFiberOpticSensor AND IO_LastCycle.iFiberOpticSensor) OR NOT iManualBoardEject THEN
 				Action_Stop_Feeder;
 				MachineState := MACHINE_STATE_IDLE;
@@ -123,6 +125,11 @@ PROGRAM _CYCLIC
 			Action_Tally_Board_L;
 			
 			IF iSoftStopCommand THEN
+				
+				IF NOT (ProcessState = PRCS_STATE_SOFT_STOP) THEN
+					Action_Stop_Feeder;
+				END_IF;
+				
 				ProcessState := PRCS_STATE_SOFT_STOP;
 			END_IF;
 			

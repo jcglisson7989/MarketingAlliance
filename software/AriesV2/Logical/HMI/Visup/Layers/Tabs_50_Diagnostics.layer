@@ -40,7 +40,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_57]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="40"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
@@ -73,7 +73,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_72]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="40"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
@@ -106,7 +106,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_80]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="40"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
@@ -139,7 +139,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_73]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="40"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
@@ -172,7 +172,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_74]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="40"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
@@ -192,39 +192,6 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="55"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_50_DIAGNOSTICS_5_Motion_1]"/>
-      <Property Name="Width" Value="117"/>
-    </Control>
-    <Control ClassId="0x00001002" Name="Button_7">
-      <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
-      <Property Name="BitmapIndexDatapoint" Value="None"/>
-      <Property Name="BitmapSource" Value="None"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[6]]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[Header_Tab_Sel_Txt]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_75]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
-      <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="40"/>
-      <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="645"/>
-      <Property Name="PressedBackColor" Value="202"/>
-      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-      <Property Name="PressedColorDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[6]]"/>
-      <Property Name="PressedColorMap" Value="Source[local].ColorMap[Header_Tab_Sel_Txt]"/>
-      <Property Name="PressedColorMapIndexOffset" Value="0"/>
-      <Property Name="PressedForeColor" Value="250"/>
-      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-      <Property Name="TextGroup" Value="Source[local].TextGroup[Tabs_50_Diagnostics]"/>
-      <Property Name="TextIndex" Value="5"/>
-      <Property Name="TextIndexDatapoint" Value="None"/>
-      <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="55"/>
-      <Property Name="VirtualKey" Value="Source[local].VirtualKey[TABS_50_DIAGNOSTICS_6_Motion_2]"/>
       <Property Name="Width" Value="117"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_1">

@@ -18,7 +18,7 @@
           <Property Name="FolderType" Value="Struct"/>
           <DataPoint Name="Status">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+            <Property Name="ConnectingVisus" Value="HMI\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="MpRecipeUIStatusEnum"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -2227,7 +2227,7 @@
             </DataPoint>
             <DataPoint Name="tabKeysRadioArray[6]">
               <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
               <Property Name="Description" Value=""/>
               <Property Name="PLCType" Value="USINT"/>
               <Property Name="UpdateTime" Value="Default"/>
@@ -2403,7 +2403,7 @@
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
           <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="STRING[0..16]"/>
+          <Property Name="PLCType" Value="STRING[0..26]"/>
           <Property Name="StringLength" Value="4"/>
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
@@ -2413,7 +2413,7 @@
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
           <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="STRING[0..16]"/>
+          <Property Name="PLCType" Value="STRING[0..26]"/>
           <Property Name="StringLength" Value="80"/>
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
@@ -2423,7 +2423,7 @@
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
           <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="STRING[0..16]"/>
+          <Property Name="PLCType" Value="STRING[0..26]"/>
           <Property Name="StringLength" Value="80"/>
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
@@ -2746,7 +2746,7 @@
             <Property Name="FolderType" Value="Struct"/>
             <DataPoint Name="AS_config">
               <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
               <Property Name="Description" Value=""/>
               <Property Name="PLCType" Value="STRING"/>
               <Property Name="StringLength" Value="63"/>
@@ -2756,7 +2756,7 @@
             </DataPoint>
             <DataPoint Name="date">
               <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
               <Property Name="Description" Value=""/>
               <Property Name="PLCType" Value="STRING"/>
               <Property Name="StringLength" Value="31"/>
@@ -2766,7 +2766,7 @@
             </DataPoint>
             <DataPoint Name="Rev_Number">
               <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+              <Property Name="ConnectingVisus" Value="HMI\Visu"/>
               <Property Name="Description" Value=""/>
               <Property Name="PLCType" Value="STRING"/>
               <Property Name="StringLength" Value="63"/>
@@ -3644,7 +3644,7 @@
     </DataPoint>
     <DataPoint Name="Current_Crease_Section_Length">
       <Property Name="ConnectedBySharedResource" Value="False"/>
-      <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+      <Property Name="ConnectingVisus" Value="HMI\Visu"/>
       <Property Name="DPLimit" Value="None"/>
       <Property Name="Description" Value=""/>
       <Property Name="PLCType" Value="REAL"/>
@@ -3701,6 +3701,18 @@
         <Property Name="DPLimit" Value="None"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="LREAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="Velocity">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\Visup"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
         <Property Name="PLCUnit" Value="None"/>
         <Property Name="UnitGroup" Value="None"/>
         <Property Name="UpdateTime" Value="Default"/>
@@ -3931,6 +3943,42 @@
       <Property Name="UpdateTime" Value="Default"/>
       <Property Name="UserID" Value="None"/>
       <Property Name="VCType" Value="STRING"/>
+    </DataPoint>
+    <DataPoint Name="iManualBoardEject">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\Visup"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <DataPoint Name="BoardEjectUIButton_Hide">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\Visup"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="USINT"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
+    </DataPoint>
+    <DataPoint Name="StopUIButton_Hide">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\Visup"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="USINT"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
+    </DataPoint>
+    <DataPoint Name="StartUIButton_Hide">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\Visup"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="USINT"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
     </DataPoint>
   </DataPoints>
 </DataSource>

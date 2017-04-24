@@ -4,7 +4,7 @@
   <Property Name="BackColor" Value="0"/>
   <Property Name="Description" Value=""/>
   <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="22"/>
+  <Property Name="Index" Value="21"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
   <Property Name="Width" Value="800"/>
@@ -167,8 +167,8 @@
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Numeric_6]">
       <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
-      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
-      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
+      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
+      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
       <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
     </MovementEntry>
   </MovementOrder>

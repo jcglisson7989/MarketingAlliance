@@ -29,7 +29,7 @@
     </tu>
     <tu tuid="Desc.0">
       <tuv xml:lang="en">
-        <seg>TBA [mm/s**2]</seg>
+        <seg>Acceleration of the infeed roller [mm/s**2]</seg>
       </tuv>
     </tu>
     <tu tuid="PV.1">
@@ -56,7 +56,7 @@
     </tu>
     <tu tuid="Desc.1">
       <tuv xml:lang="en">
-        <seg>TBA [mm/s**2]</seg>
+        <seg>Deceleration of the infeed roller [mm/s**2]</seg>
       </tuv>
     </tu>
     <tu tuid="PV.2">
@@ -83,7 +83,7 @@
     </tu>
     <tu tuid="Desc.2">
       <tuv xml:lang="en">
-        <seg>TBA</seg>
+        <seg>Distance to compensate for the gap between the fiber optic eye and the roller</seg>
       </tuv>
     </tu>
     <tu tuid="PV.3">
@@ -110,7 +110,7 @@
     </tu>
     <tu tuid="Desc.3">
       <tuv xml:lang="en">
-        <seg>TBA</seg>
+        <seg>Speed to run the roller at while waiting to detect a part [mm/s]</seg>
       </tuv>
     </tu>
     <tu tuid="PV.4">
@@ -138,6 +138,33 @@
     <tu tuid="Desc.4">
       <tuv xml:lang="en">
         <seg>Tolerance [mm] for board length recipe entry where, when measured board length is outside of this number, machine enters ERR state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.5">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0.01</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.CreaseInfeedDelay</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.5">
+      <tuv xml:lang="en">
+        <seg>Crease-Index Delay [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.5">
+      <tuv xml:lang="en">
+        <seg>Delay after creasing to compensate for blade movement</seg>
       </tuv>
     </tu>
   </body>

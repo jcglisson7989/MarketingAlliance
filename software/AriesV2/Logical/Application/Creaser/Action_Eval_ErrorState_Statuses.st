@@ -1,6 +1,10 @@
 
 ACTION Action_Eval_ErrorState_Statuses: 
 	
+		//Set status alarm values based on IO points->
+	gAlarms.SM1_Disabled := IO.iSM1Disabled; //SM1 supplies power to the IO from the 24VAC->24VDC power supply
+	gAlarms.Unsafe_Machine_State := NOT IO.iSafeMachineState; //DP reads whether the E-stop has been pressed
+	
 	IF (MachineState <> MACHINE_STATE_ERROR AND MachineState <> MACHINE_STATE_INIT) THEN
 		IF (NOT IO.iSafeMachineState) THEN //E-stop pressed
 			gAlarms.Error_State_Unsafe_Machine := TRUE;
