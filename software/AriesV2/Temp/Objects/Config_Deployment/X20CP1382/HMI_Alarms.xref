@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Crossref Scope="HMI.HMI_Alarms" AppMod="">
+  <Vars>
+    <Var Name="gAcknowledge" Scope="Global" Type="Machine_Alarms_typ">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="5" C="16" PS="Ln:5, Col:16" A="R" />
+      </File>
+    </Var>
+    <Var Name="gAlarms" Scope="Global" Type="Machine_Alarms_typ">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="3" C="47" PS="Ln:3, Col:47" A="R" />
+        <Pos L="41" C="17" PS="Ln:41, Col:17" A="R" />
+      </File>
+    </Var>
+    <Var Name="AppAlarms.AlarmImage" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="3" C="16" PS="Ln:3, Col:16" A="R" />
+        <Pos L="5" C="39" PS="Ln:5, Col:39" A="R" />
+      </File>
+    </Var>
+    <Var Name="AppAlarms_FBK" Scope="Global" Type="MpAlarmBasic">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="56" C="2" PS="Ln:56, Col:2" A="RW" />
+      </File>
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Init.st">
+        <Pos L="7" C="2" PS="Ln:7, Col:2" A="RW" />
+      </File>
+    </Var>
+    <Var Name="gAlarmResetRequested" Scope="Global" Type="BOOL">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="40" C="5" PS="Ln:40, Col:5" A="R" />
+        <Pos L="43" C="3" PS="Ln:43, Col:3" A="W" />
+      </File>
+    </Var>
+    <Var Name="Alarm_MpLink" Scope="Global" Type="MpComIdentType">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Init.st">
+        <Pos L="5" C="30" PS="Ln:5, Col:30" A="R" />
+      </File>
+    </Var>
+    <Var Name="AppAlarms_FBK.MpLink" Scope="Global" Type="MpAlarmBasic">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Init.st">
+        <Pos L="5" C="2" PS="Ln:5, Col:2" A="W" />
+      </File>
+    </Var>
+    <Var Name="AppAlarms_FBK.Enable" Scope="Global" Type="MpAlarmBasic">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Init.st">
+        <Pos L="6" C="2" PS="Ln:6, Col:2" A="W" />
+      </File>
+    </Var>
+  </Vars>
+  <Consts>
+  </Consts>
+  <Enums>
+  </Enums>
+  <Funcs>
+    <Func Name="brsmemset" Lib="AsBrStr">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="41" C="3" PS="Ln:41, Col:3" />
+      </File>
+    </Func>
+    <Func Name="brsmemcpy" Lib="AsBrStr">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="3" C="2" PS="Ln:3, Col:2" />
+        <Pos L="5" C="2" PS="Ln:5, Col:2" />
+      </File>
+    </Func>
+    <Func Name="MpAlarmBasic" Lib="MpAlarm">
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Cyclic.st">
+        <Pos L="56" C="2" PS="Ln:56, Col:2" />
+      </File>
+      <File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/HMI/HMI_Alarms/Init.st">
+        <Pos L="7" C="2" PS="Ln:7, Col:2" />
+      </File>
+    </Func>
+  </Funcs>
+  <Actions>
+  </Actions>
+</Crossref>

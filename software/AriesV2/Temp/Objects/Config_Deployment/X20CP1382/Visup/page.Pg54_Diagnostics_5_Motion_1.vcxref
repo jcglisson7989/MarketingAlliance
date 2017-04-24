@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VCXReferenceList>
+   <!--Intermediate File for generation of the XReferenceFile-->
+   <Pg54_Diagnostics_5_Motion_1 ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1]">
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_35].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Application.Creaser.setflagCreaserIndexCommand]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_34].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceEnable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_121].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ErrorReset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_15].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[7].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_15].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[7].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_14].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[6].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_14].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[6].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_13].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[5].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_13].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[5].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_12].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[4].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_12].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[4].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_11].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[3].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_11].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[3].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_10].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[2].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_10].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[2].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_9].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[1].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_9].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[1].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_56_8].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[0].set]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_53_8].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItems[0].reset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_118].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Stop]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_117].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveVelocity]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_116].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveAdditive]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_115].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.MoveAbsolute]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_88].Action[Action_0].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.ReadyToPowerOn]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_88].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Power]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].VirtualKey[%embVirtualKey_14_0].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Home]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_11].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_37].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_38].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_39].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_15].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_10].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_10].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.oCreaserCCWRotation]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_16].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_17].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_11].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_11].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.oCreaserCWRotation]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_18].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_19].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_12].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_12].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.oBoardFeedingLight]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_20].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_21].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_13].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_13].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.oUIIndicatorLight]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_22].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_23].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_14].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_14].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.iSafeMachineState]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_24].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_25].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_15].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_15].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.iCreaserShaftSensor]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_26].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_27].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_16].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_16].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.iFiberOpticSensor]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_28].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_29].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_17].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_17].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.IO.iSM1Disabled]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_30].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Button_40].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Dropdown_2].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Direction]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Numeric_35].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Distance]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_1].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Text_2].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceItemsVisibility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Numeric_36].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Position]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Numeric_37].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Velocity]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Numeric_38].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Acceleration]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Page[Pg54_Diagnostics_5_Motion_1].Layer[Default].Control[Numeric_39].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisPar.Deceleration]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+   </Pg54_Diagnostics_5_Motion_1>
+</VCXReferenceList>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Crossref Scope="MotionControl.LineControl" AppMod="">
+	<Vars>
+		<Var Name="LineContro.pAxisControl" Scope="Local" Type="REFERENCE TO MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/MotionControl/LineControl/Main.st">
+				<Pos L="8" C="2" PS="Ln:8, Col:2" A="A"/>
+			</File>
+		</Var>
+		<Var Name="LineContro.pAxisPar" Scope="Local" Type="REFERENCE TO MpAxisBasicParType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/MotionControl/LineControl/Main.st">
+				<Pos L="9" C="2" PS="Ln:9, Col:2" A="A"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/MotionControl/LineControl/Main.st">
+				<Pos L="8" C="26" PS="Ln:8, Col:26" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/MotionControl/LineControl/Main.st">
+				<Pos L="9" C="22" PS="Ln:9, Col:22" A="RW"/>
+			</File>
+		</Var>
+	</Vars>
+	<Consts>
+	</Consts>
+	<Enums>
+	</Enums>
+	<Funcs>
+	</Funcs>
+	<Actions>
+	</Actions>
+</Crossref>

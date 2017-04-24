@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VCXReferenceList>
+   <!--Intermediate File for generation of the XReferenceFile-->
+   <Motion_MAPP_Axis_Lefthand_Choice ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice]">
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].VirtualKey[%embVirtualKey_69].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHMIForceIO.forceEnable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].VirtualKey[%embVirtualKey_18_0].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].VirtualKey[%embVirtualKey_119].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.ErrorReset]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Button_21].Property[LockingDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Enable]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Dropdown_1].Property[TextDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.gMotionAxesListbox.Strings]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Dropdown_1].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.gMotionAxesListbox.Index]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_4].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.PLCopenState]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Button_3].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_5].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.ExecutingCommand]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_8].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.CurrentControlHMIStatus]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Numeric_7].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Code]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_28].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Severity]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_29].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Severity]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Numeric_8].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.StatusID.Code]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Motion_MAPP_Axis_Lefthand_Choice].Control[Text_32].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.MotionControl.LineControl.pAxisControl.Info.Diag.Internal.Facility]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+   </Motion_MAPP_Axis_Lefthand_Choice>
+</VCXReferenceList>

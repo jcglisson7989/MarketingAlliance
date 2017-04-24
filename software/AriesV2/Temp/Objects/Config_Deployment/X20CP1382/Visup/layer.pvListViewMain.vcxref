@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VCXReferenceList>
+   <!--Intermediate File for generation of the XReferenceFile-->
+   <pvListViewMain ReferenceString="Source[local].Layer[pvListViewMain]">
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].VirtualKey[APP_PROP_LIST_VALDFLTREAL].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.setDefaultRequest]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].VirtualKey[APP_PROP_LIST_IDXINCINC].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.index]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].VirtualKey[APP_PROP_LIST_IDXDECDEC].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.index]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_3].Property[TextDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.listIdText]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_3].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.index]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_3].Property[MaxDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.maxIndex]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_4].Property[TextDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.listName]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_4].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.index]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_4].Property[MaxDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.maxIndex]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_2].Property[TextDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.listValueText]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_2].Property[IndexDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.index]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Listbox_2].Property[MaxDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.maxIndex]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Text_21].Property[TextDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selDescription]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_5].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.index]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_5].Property[MaxDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.maxIndex]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_10].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.maxIndex]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_6].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueREAL]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_6].Property[MinDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueREALMin]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_6].Property[MaxDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueREALMax]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_6].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_6].Property[AddFractionDigitsDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueDecPlaces]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Button_10].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Button_11].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Button_9].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_8].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueREALMin]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_8].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_8].Property[AddFractionDigitsDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueDecPlaces]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_7].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueREALMax]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_7].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_7].Property[AddFractionDigitsDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueDecPlaces]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_9].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueREALDefault]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_9].Property[StatusDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueFormVisible]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Numeric_9].Property[AddFractionDigitsDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.selValueDecPlaces]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[pvListViewMain].Control[Text_3].Property[TextDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmiParamTable.listHeader]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+   </pvListViewMain>
+</VCXReferenceList>
