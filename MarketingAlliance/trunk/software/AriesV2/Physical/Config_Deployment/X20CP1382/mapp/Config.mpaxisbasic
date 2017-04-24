@@ -13,7 +13,7 @@
           <Property ID="VelocityNegative" Value="10000.0" />
           <Property ID="Acceleration" Value="10000.0" />
           <Property ID="Deceleration" Value="10000.0" />
-          <Property ID="PositionErrorStopLimit" Value="0.5" />
+          <Property ID="PositionErrorStopLimit" Value="1" />
         </Group>
       </Group>
       <Group ID="Drive">
@@ -24,6 +24,10 @@
           <Property ID="ReferenceDistance" Value="125.664" />
         </Group>
         <Group ID="Controller">
+          <Group ID="Speed">
+            <Property ID="ProportionalGain" Value="1.75" />
+            <Property ID="IntegralTime" Value="1" />
+          </Group>
           <Group ID="LoopFilters">
             <Selector ID="[0]" />
             <Selector ID="[1]" />

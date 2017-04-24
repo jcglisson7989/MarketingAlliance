@@ -10,7 +10,8 @@ TYPE
 		PRCS_STATE_MOVE_CREASE_WIDTH := 5,
 		PRCS_STATE_ERROR := 6,
 		PRCS_STATE_EJECT_FINISHED_BOARD := 7,
-		PRCS_STATE_SOFT_STOP := 8
+		PRCS_STATE_SOFT_STOP := 8,
+		PRCS_STATE_MOVE_PHOTOEYE_OFFSET := 9
 		);
 	AriesMachineState_Enum : 
 		(
@@ -30,6 +31,8 @@ TYPE
 	CreaserConfig_typ : 	STRUCT 
 		FeedAxisAccel : REAL;
 		FeedAxisDecel : REAL;
+		PhotoEyeOffset : REAL;
+		PreInsertSpeed : REAL;
 	END_STRUCT;
 	AriesCreaserParams_typ : 	STRUCT 
 		CreaseDistance_mm : ARRAY[0..MAX_IDX_CREASES]OF REAL;
@@ -70,6 +73,7 @@ TYPE
 		Crease_Count_Greater_Max : BOOL; (*7*)
 		Error_State_Process_Error : BOOL; (*8*)
 		Load_Recipe : BOOL; (*9*)
+		Manual_Home_Creaser_Blade : BOOL;
 	END_STRUCT;
 	Global_Statistics_typ : 	STRUCT 
 		total_runtime : UDINT;

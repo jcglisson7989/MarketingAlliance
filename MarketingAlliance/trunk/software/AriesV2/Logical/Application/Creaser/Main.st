@@ -75,6 +75,13 @@ PROGRAM _CYCLIC
 //		IO.oBoardFeedingLight := FALSE;
 	//	END_IF;
 	
+	IF iMachineErrorReset THEN
+		ProcessState := PRCS_STATE_INIT;
+		gAlarmResetRequested := TRUE;
+		gStatistics.Reset := TRUE;
+		MachineState := MACHINE_STATE_INIT;
+	END_IF;
+	
 	IF EDGEPOS(MachineState = MACHINE_STATE_ERROR) THEN
 		AxisControl.MoveVelocity := FALSE;
 		AxisControl.MoveAbsolute := FALSE;
@@ -117,8 +124,11 @@ PROGRAM _CYCLIC
 				IF IO.iFiberOpticSensor THEN
 					gAlarms.Fiber_Optic_Blocked_RunCmd := TRUE;
 					MachineState := MACHINE_STATE_ERROR;
+				ELSIF NOT IO.iCreaserShaftSensor THEN
+					gAlarms.Manual_Home_Creaser_Blade := TRUE;
+					MachineState := MACHINE_STATE_ERROR;
 				ELSE
-					setflagCreaserIndexCommand := TRUE;
+//					setflagCreaserIndexCommand := TRUE;
 					ii_crease_count := 0;
 					Action_Start_Feeder;
 					ProcessState := PRCS_STATE_INIT;
@@ -142,7 +152,7 @@ PROGRAM _CYCLIC
 					IO.oBoardFeedingLight := FALSE;
 					Current_Board_Position := 0;
 					
-					IF setFlagCreaserIdxFinished THEN
+					IF IO.iCreaserShaftSensor THEN
 						ProcessState := PRCS_STATE_READY;
 					END_IF;					
 				
@@ -155,13 +165,30 @@ PROGRAM _CYCLIC
 						ProcessState := PRCS_STATE_FEED_BOARD;
 					END_IF;
 					
+//				PRCS_STATE_FEED_BOARD:
+//					IO.oBoardFeedingLight := TRUE;
+//					IF IO.iFiberOpticSensor AND NOT IO_LastCycle.iFiberOpticSensor THEN
+//						Action_Move_Section_Distance;
+//						
+//						Current_Board_Position := 0;
+//						
+//						ProcessState := PRCS_STATE_MOVE_CREASE;
+				//					END_IF;
+				
 				PRCS_STATE_FEED_BOARD:
 					IO.oBoardFeedingLight := TRUE;
 					IF IO.iFiberOpticSensor AND NOT IO_LastCycle.iFiberOpticSensor THEN
+						Action_Move_Photoeye_Offset;
+						
+						ProcessState := PRCS_STATE_MOVE_PHOTOEYE_OFFSET;
+					END_IF;
+				
+				PRCS_STATE_MOVE_PHOTOEYE_OFFSET:
+					IO.oBoardFeedingLight := Pulse_Slow.bFlashOut;
+					
+					IF AxisControl.InPosition THEN
 						Action_Move_Section_Distance;
-						
 						Current_Board_Position := 0;
-						
 						ProcessState := PRCS_STATE_MOVE_CREASE;
 					END_IF;
 				
@@ -179,7 +206,21 @@ PROGRAM _CYCLIC
 						ii_crease_count := ii_crease_count + 1; //Increment crease counter
 						
 						IF ii_crease_count = (gRecCfg.active.Rec.Crease.CreaseCount) THEN
-							Action_Start_Feeder;
+							//							Action_Start_Feeder;
+							
+							AxisControl.MoveVelocity := FALSE;
+							AxisControl.MoveAbsolute := FALSE;
+							AxisControl.MoveAdditive := FALSE;
+							AxisControl.Stop := FALSE;
+							AxisControl();
+	
+							AxisPar.Velocity := gRecCfg.active.Rec.FeedVelocity;
+							AxisPar.Acceleration := gRecCfg.active.Cfg.Creaser.FeedAxisAccel;
+							AxisPar.Deceleration := gRecCfg.active.Cfg.Creaser.FeedAxisDecel;
+	
+							AxisControl.MoveVelocity := TRUE;
+							AxisControl();
+							
 							ProcessState := PRCS_STATE_EJECT_FINISHED_BOARD;
 						ELSE
 							Action_Move_Crease_Width;
@@ -221,7 +262,7 @@ PROGRAM _CYCLIC
 						Action_Start_Feeder;
 						
 						IF IO.iFiberOpticSensor THEN  //Eject this part, maybe in the future resume from last state but for now just consider the current part a wash
-							ProcessState := PRCS_STATE_EJECT_FINISHED_BOARD;
+							ProcessState := PRCS_STATE_INIT;
 						ELSE //Re-cycle back to process SM jump-off point
 							setflagCreaserIndexCommand := TRUE;
 							ii_crease_count := 0;
@@ -239,11 +280,12 @@ PROGRAM _CYCLIC
 
 			ProcessState := PRCS_STATE_INIT;
 			
-			IF iMachineErrorReset THEN
-				gAlarmResetRequested := TRUE;
-				gStatistics.Reset := TRUE;
-				MachineState := MACHINE_STATE_INIT;
-			END_IF;
+//			IF iMachineErrorReset THEN
+//				ProcessState := PRCS_STATE_INIT;
+//				gAlarmResetRequested := TRUE;
+//				gStatistics.Reset := TRUE;
+//				MachineState := MACHINE_STATE_INIT;
+//			END_IF;
 		
 	END_CASE;
 	

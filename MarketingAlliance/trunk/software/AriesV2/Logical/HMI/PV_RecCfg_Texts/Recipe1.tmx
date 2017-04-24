@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/tmp1</prop>
+  </header>
+  <body>
+    <tu tuid="PV.0">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>100</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>5000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.FeedVelocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.0">
+      <tuv xml:lang="en">
+        <seg>Feed Velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.0">
+      <tuv xml:lang="en">
+        <seg>TBA [mm/s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.1">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseWidth_mm</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.1">
+      <tuv xml:lang="en">
+        <seg>Crease Width</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.1">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.2">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseCount</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.2">
+      <tuv xml:lang="en">
+        <seg>Crease Count</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.2">
+      <tuv xml:lang="en">
+        <seg>TBA [ul]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.3">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.ShaftSensorEdge</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.3">
+      <tuv xml:lang="en">
+        <seg>Shaft Sensor Edge Selection</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.3">
+      <tuv xml:lang="en">
+        <seg>TBA</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.4">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaserDirection</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.4">
+      <tuv xml:lang="en">
+        <seg>Creaser Motor Direction</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.4">
+      <tuv xml:lang="en">
+        <seg>TBA</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.5">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>100</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaserMotorIdxLag_S</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.5">
+      <tuv xml:lang="en">
+        <seg>Crease Motor Edge Delay</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.5">
+      <tuv xml:lang="en">
+        <seg>TBA</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.6">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[0]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.6">
+      <tuv xml:lang="en">
+        <seg>Length- Section 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.6">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.7">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[1]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.7">
+      <tuv xml:lang="en">
+        <seg>Length- Section 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.7">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.8">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[2]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.8">
+      <tuv xml:lang="en">
+        <seg>Length- Section 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.8">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.9">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[3]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.9">
+      <tuv xml:lang="en">
+        <seg>Length- Section 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.9">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.10">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[4]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.10">
+      <tuv xml:lang="en">
+        <seg>Length- Section 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.10">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.11">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[5]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.11">
+      <tuv xml:lang="en">
+        <seg>Length- Section 6</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.11">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.12">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[6]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.12">
+      <tuv xml:lang="en">
+        <seg>Length- Section 7</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.12">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.13">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[7]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.13">
+      <tuv xml:lang="en">
+        <seg>Length- Section 8</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.13">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.14">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[8]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.14">
+      <tuv xml:lang="en">
+        <seg>Length- Section 9</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.14">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.15">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Crease.CreaseDistance_mm[9]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.15">
+      <tuv xml:lang="en">
+        <seg>Length- Section 10</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.15">
+      <tuv xml:lang="en">
+        <seg>TBA [mm]</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

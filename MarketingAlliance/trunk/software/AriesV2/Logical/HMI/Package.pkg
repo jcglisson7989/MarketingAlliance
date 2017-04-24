@@ -14,8 +14,8 @@
     <Object Type="Program" Language="ANSIC" Description="Service that manages navigating through the VC4 HMI">hmilogic</Object>
     <Object Type="Program" Language="IEC">ForceIO</Object>
     <Object Type="Program" Language="IEC" Description="Manage activating the PV List tables for recipe, configuration params (gRecCfg.active.&lt;&gt;)">HMITableManager</Object>
-    <Object Type="DataObject" Language="Vc" Description="800x480">Visu</Object>
     <Object Type="Package">PV_RecCfg_Texts</Object>
     <Object Type="Program" Language="IEC" Description="Service that maps the gAlarms structure to the VC4 HMI alarms structure and resets all alarms when commanded">HMI_Alarms</Object>
+    <Object Type="DataObject" Language="Vc" Description="800x480">Visup</Object>
   </Objects>
 </Package>

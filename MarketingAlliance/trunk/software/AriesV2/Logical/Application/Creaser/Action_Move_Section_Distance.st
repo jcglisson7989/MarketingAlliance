@@ -7,6 +7,8 @@ ACTION Action_Move_Section_Distance:
 	AxisControl.Stop := FALSE;
 	AxisControl();
 	
+//	AxisPar.Direction := mpAXIS_DIR_EXCEED_PERIOD;
+	
 	Current_Crease_Section_Length := gRecCfg.active.Rec.Crease.CreaseDistance_mm[ii_crease_count];
 	
 	AxisPar.Acceleration := gRecCfg.active.Cfg.Creaser.FeedAxisAccel;

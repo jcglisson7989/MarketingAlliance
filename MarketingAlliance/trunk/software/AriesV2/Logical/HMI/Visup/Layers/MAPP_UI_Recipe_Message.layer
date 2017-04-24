@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.8.54 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="MAPP_UI_Recipe_Message">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value="Message Box"/>
+  <Property Name="Height" Value="480"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.MessageBox.LayerStatus]"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="800"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="619019" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="619019" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="619019" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="619019" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="sv">
+      <Text ID="619019" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="619019" Value="0"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="txtHeader">
+      <Property Name="Border" Value="Source[local].Border[AS_border_AlertMessage]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_15]"/>
+      <Property Name="Height" Value="300"/>
+      <Property Name="Left" Value="170"/>
+      <Property Name="SimulationIndex" Value="1"/>
+      <Property Name="SimulationValue" Value="MsgBox Header"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="120"/>
+      <Property Name="Width" Value="460"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtContent">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_15]"/>
+      <Property Name="Height" Value="127"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.MessageBox.Type]"/>
+      <Property Name="Left" Value="225"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="1"/>
+      <Property Name="SimulationValue" Value="Example Alarm Text"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpRecipeUIMessageBox]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="202"/>
+      <Property Name="Width" Value="348"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="cmdCancel">
+      <Property Name="BackColor" Value="51"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[HAS_dialog_x]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1_1]"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="190"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="356"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1_1]"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="cmdOK">
+      <Property Name="BackColor" Value="2"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[HAS_dialog_check]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_2_2]"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="412"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="356"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_2_2]"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="%embVirtualKey_1_1">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.MessageBox.Cancel]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_2_2">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Recipe_Handling.pRecCfgUIConnect.MessageBox.Confirm]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>
