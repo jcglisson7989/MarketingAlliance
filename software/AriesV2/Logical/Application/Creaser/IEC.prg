@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.2.7.54 SP?>
+<?AutomationStudio Version=4.2.8.54 SP?>
 <Program xmlns="http://br-automation.co.at/AS/Program">
   <Files>
     <File Description="Init, cyclic, exit code">Main.st</File>
@@ -14,5 +14,6 @@
     <File>Action_Tally_Board_L.st</File>
     <File Private="true">LocalFunctions.fun</File>
     <File>PulseTrain.st</File>
+    <File>Action_Move_Photoeye_Offset.st</File>
   </Files>
 </Program>

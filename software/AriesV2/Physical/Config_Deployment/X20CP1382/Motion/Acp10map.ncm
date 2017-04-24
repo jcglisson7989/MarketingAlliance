@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.2.7.54 SP?>
+<?AutomationStudio Version=4.2.8.54 SP?>
 <NcMapping NcSwId="Acp10" DisabledNodesAreHidden="False">
-  <NcObject Name="Axis1" ModuleId="8V1022.00-2" Type="ncAXIS" Channel="1" AcoposSimulation="Complete" InitParameter="Axisi" AcoposParameter="Axisa" AdditionalData="PLCopen_ModPos=&quot;1000,1&quot; " Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="Axis1" ModuleId="8V1022.00-2" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="Axisi" AcoposParameter="Axisa" AdditionalData="PLCopen_ModPos=&quot;1000,1&quot; " Disabled="FALSE" ModuleDisabled="FALSE" />
   <NcObject Name="8V1045.00-2_ncV_AXIS1" ModuleId="8V1022.00-2" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
 </NcMapping>

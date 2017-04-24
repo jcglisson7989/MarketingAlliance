@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.2.7.54 SP?>
-<NcConfiguration Version="3.16.2" NcSwId="Acp10">
+<?AutomationStudio Version=4.2.8.54 SP?>
+<NcConfiguration Version="3.16.1" NcSwId="Acp10">
   <Group ID="ACP10CF1_typ">
     <Parameter ID="cnt_nettrc_rec_drive" Value="1500" />
     <Parameter ID="bufsize_trace_upload" Value="1200" />
@@ -26,7 +26,7 @@
     </Group>
     <Group ID="plk_if[0]">
       <Parameter ID="if_name" Value="IF3" />
-      <Parameter ID="tc_CycDat_PLCopen" Value="Cyclic #1" />
+      <Parameter ID="tc_CycDat_PLCopen" Value="Task class for NC Manager task" />
       <Parameter ID="mc_broadcast_extdat" Value="No" />
     </Group>
   </Group>

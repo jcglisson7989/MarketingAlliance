@@ -6,7 +6,7 @@ ACTION Action_Start_Feeder:
 	AxisControl.Stop := FALSE;
 	AxisControl();
 	
-	AxisPar.Velocity := gRecCfg.active.Rec.FeedVelocity;
+	AxisPar.Velocity := gRecCfg.active.Cfg.Creaser.PreInsertSpeed;
 	AxisPar.Acceleration := gRecCfg.active.Cfg.Creaser.FeedAxisAccel;
 	AxisPar.Deceleration := gRecCfg.active.Cfg.Creaser.FeedAxisDecel;
 	
