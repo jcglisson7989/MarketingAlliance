@@ -13,9 +13,9 @@ ACTION Action_Validate_Board_Length:
 	IF length_calculated_total > (gRecCfg.active.Rec.Crease.TotalBoardLength + gRecCfg.active.Cfg.Creaser.BoardLengthTolerance) THEN
 		gAlarms.Board_Length_GT_Confgd_Amount := TRUE;
 		flagBoardLengthCfgErr := TRUE;
-	ELSIF length_calculated_total < (gRecCfg.active.Rec.Crease.TotalBoardLength - gRecCfg.active.Cfg.Creaser.BoardLengthTolerance) THEN
-		gAlarms.Board_Length_LT_Confgd_Amount := TRUE;
-		flagBoardLengthCfgErr := TRUE;
+//	ELSIF length_calculated_total < (gRecCfg.active.Rec.Crease.TotalBoardLength - gRecCfg.active.Cfg.Creaser.BoardLengthTolerance) THEN
+//		gAlarms.Board_Length_LT_Confgd_Amount := TRUE;
+//		flagBoardLengthCfgErr := TRUE;
 	END_IF;
 		
 END_ACTION

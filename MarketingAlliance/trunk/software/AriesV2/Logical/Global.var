@@ -55,6 +55,9 @@ END_VAR
 (*Insert your comment here.*)
 VAR
 	gAlarmResetRequested : BOOL;
+	StartUIButton_Hide : USINT;
+	StopUIButton_Hide : USINT;
+	BoardEjectUIButton_Hide : USINT;
 	iManualBoardEject : BOOL;
 	iMachineErrorReset : BOOL;
 	iStartCommand : BOOL;

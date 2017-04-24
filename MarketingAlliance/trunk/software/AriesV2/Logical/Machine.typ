@@ -35,6 +35,7 @@ TYPE
 		PhotoEyeOffset : REAL;
 		PreInsertSpeed : REAL;
 		BoardLengthTolerance : REAL;
+		CreaseInfeedDelay : REAL;
 	END_STRUCT;
 	AriesCreaserParams_typ : 	STRUCT 
 		CreaseDistance_mm : ARRAY[0..MAX_IDX_CREASES]OF REAL;
@@ -81,6 +82,7 @@ TYPE
 		Board_Length_LT_Confgd_Amount : BOOL; (*12*)
 		Measured_Length_GT_Configured : BOOL; (*13*)
 		Measured_Length_LT_Configured : BOOL; (*14*)
+		Unsaved_Recipe_Params : BOOL; (*15*)
 	END_STRUCT;
 	Global_Statistics_typ : 	STRUCT 
 		total_runtime : UDINT;
