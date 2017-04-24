@@ -65,7 +65,7 @@
       <Property Name="AlarmText_SeparatorTextGroup" Value="None"/>
       <Property Name="AlarmText_Width" Value="500"/>
       <Property Name="BackColor" Value="0"/>
-      <Property Name="Border" Value="Source[local].Border[Panel_BLK]"/>
+      <Property Name="Border" Value="None"/>
       <Property Name="BypassState_Alignment" Value="Left"/>
       <Property Name="BypassState_Format" Value="Text"/>
       <Property Name="BypassState_Position" Value="Column 4"/>
@@ -91,14 +91,14 @@
       <Property Name="ForeColor" Value="10"/>
       <Property Name="GroupNumber_Position" Value="None"/>
       <Property Name="Height" Value="360"/>
-      <Property Name="Left" Value="2"/>
+      <Property Name="Left" Value="3"/>
       <Property Name="Node1" Value="User order"/>
       <Property Name="Priority_Position" Value="None"/>
       <Property Name="SortColumn" Value="Time"/>
       <Property Name="SortOrder" Value="Descending"/>
       <Property Name="Source" Value="Current"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="96"/>
+      <Property Name="Top" Value="86"/>
       <Property Name="Width" Value="720"/>
     </Control>
     <Control ClassId="0x00001002" Name="cmdAlarmPageUp">

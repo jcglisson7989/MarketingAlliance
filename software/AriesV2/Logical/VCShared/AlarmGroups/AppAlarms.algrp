@@ -152,6 +152,54 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="11">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="12">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="14">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -178,6 +226,10 @@
       <Text ID="2412" Value="Crease process error put machine into ERR state"/>
       <Text ID="2423" Value="Load recipe before running"/>
       <Text ID="2428" Value="Manually homing of creaser blade required"/>
+      <Text ID="2433" Value="Sum of creasing distances greater than configured board length"/>
+      <Text ID="2434" Value="Sum of creasing distances less than configured board length"/>
+      <Text ID="2435" Value="Measured board length greater than configured board length"/>
+      <Text ID="2436" Value="Measured board length greater than configured board length"/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="de">
@@ -192,6 +244,10 @@
       <Text ID="2412" Value=""/>
       <Text ID="2423" Value=""/>
       <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="pt">
@@ -206,6 +262,10 @@
       <Text ID="2412" Value=""/>
       <Text ID="2423" Value=""/>
       <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="es">
@@ -220,6 +280,10 @@
       <Text ID="2412" Value=""/>
       <Text ID="2423" Value=""/>
       <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="sv">
@@ -234,6 +298,10 @@
       <Text ID="2412" Value=""/>
       <Text ID="2423" Value=""/>
       <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
       <Text ID="2399" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -248,6 +316,10 @@
       <Index ID="2412" Value="8"/>
       <Index ID="2423" Value="9"/>
       <Index ID="2428" Value="10"/>
+      <Index ID="2433" Value="11"/>
+      <Index ID="2434" Value="12"/>
+      <Index ID="2435" Value="13"/>
+      <Index ID="2436" Value="14"/>
       <Index ID="2399" Value="Group"/>
     </IndexMap>
   </TextGroup>

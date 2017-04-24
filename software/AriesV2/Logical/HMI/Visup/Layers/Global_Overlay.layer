@@ -22,7 +22,7 @@
       <Property Name="AlignmentVertical" Value="Center"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="20"/>
       <Property Name="IndexDatapoint" Value="None"/>
@@ -50,10 +50,10 @@
       <Property Name="AlignmentVertical" Value="Center"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_8]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="17"/>
-      <Property Name="Left" Value="493"/>
+      <Property Name="Left" Value="494"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="192.168.100.100"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
@@ -85,7 +85,7 @@
       <Property Name="AlignmentVertical" Value="Center"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_8]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="20"/>
       <Property Name="Left" Value="0"/>
@@ -118,7 +118,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value="R123"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gRecCfg.active.Cfg.cfgCompile.Rev_Number]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.gVersion]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="463"/>
       <Property Name="Width" Value="50"/>
@@ -128,7 +128,7 @@
       <Property Name="AlignmentVertical" Value="Center"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_6]"/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
       <Property Name="ForeColor" Value="16"/>
       <Property Name="Height" Value="17"/>
       <Property Name="Left" Value="642"/>
@@ -139,27 +139,6 @@
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="463"/>
       <Property Name="Width" Value="110"/>
-    </Control>
-    <Control ClassId="0x00001004" Name="Text_22">
-      <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="AlignmentVertical" Value="Center"/>
-      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_11]"/>
-      <Property Name="ForeColor" Value="16"/>
-      <Property Name="Height" Value="26"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MachineState]"/>
-      <Property Name="Left" Value="430"/>
-      <Property Name="Multiline" Value="Automatic"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-      <Property Name="TextGroup" Value="Source[local].TextGroup[AriesMachineSMTexts]"/>
-      <Property Name="TextIndexOffset" Value="0"/>
-      <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="1"/>
-      <Property Name="Width" Value="362"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_7">
       <Property Name="ControlID" Value="0"/>

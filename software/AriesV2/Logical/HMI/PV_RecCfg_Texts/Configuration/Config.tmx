@@ -113,5 +113,32 @@
         <seg>TBA</seg>
       </tuv>
     </tu>
+    <tu tuid="PV.4">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.BoardLengthTolerance</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.4">
+      <tuv xml:lang="en">
+        <seg>Board Length Tolerance [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.4">
+      <tuv xml:lang="en">
+        <seg>Tolerance [mm] for board length recipe entry where, when measured board length is outside of this number, machine enters ERR state</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
