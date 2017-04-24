@@ -55,6 +55,7 @@ END_VAR
 (*Insert your comment here.*)
 VAR
 	gAlarmResetRequested : BOOL;
+	iManualBoardEject : BOOL;
 	iMachineErrorReset : BOOL;
 	iStartCommand : BOOL;
 	iSoftStopCommand : BOOL;

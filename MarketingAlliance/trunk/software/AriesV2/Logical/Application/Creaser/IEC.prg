@@ -6,6 +6,7 @@
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
     <File Description="Manage the total runtime counter and its breakdown into HH:MM:SS">Action_Manage_Update_Total_Runtime.st</File>
+    <File>Action_Stop_Feeder.st</File>
     <File>Action_Start_Feeder.st</File>
     <File>Action_Move_Section_Distance.st</File>
     <File>Action_Creaser_Idx.st</File>
@@ -15,5 +16,9 @@
     <File Private="true">LocalFunctions.fun</File>
     <File>PulseTrain.st</File>
     <File>Action_Move_Photoeye_Offset.st</File>
+    <File>Action_Validate_Board_Length.st</File>
+    <File>Action_Init_Infeed_Axis.st</File>
+    <File>Action_CreaserProcess_SM.st</File>
+    <File>Action_Eval_ErrorState_Statuses.st</File>
   </Files>
 </Program>

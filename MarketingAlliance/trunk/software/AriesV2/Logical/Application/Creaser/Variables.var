@@ -12,6 +12,10 @@ VAR
 	setFlagCreaserWaitEdge : BOOL;
 END_VAR
 (*Insert your comment here.*)
+VAR
+	flagBoardLengthCfgErr : BOOL;
+	length_calculated_total : REAL;
+END_VAR
 VAR CONSTANT
 	DEFINE_SLOW_PULSE_PERIOD : TIME := T#1s;
 	DEFINE_FAST_PULSE_PERIOD : TIME := T#125ms;

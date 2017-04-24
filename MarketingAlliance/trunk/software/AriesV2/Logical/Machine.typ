@@ -1,7 +1,7 @@
 
 TYPE
 	CreaserPrcsState_Enum : 
-		(
+		( (*Make sure the indices entered below line up with the VC texts displayed on the UI*)
 		PRCS_STATE_INIT := 0,
 		PRCS_STATE_READY := 1,
 		PRCS_STATE_FEED_BOARD := 2,
@@ -14,14 +14,15 @@ TYPE
 		PRCS_STATE_MOVE_PHOTOEYE_OFFSET := 9
 		);
 	AriesMachineState_Enum : 
-		(
+		( (*Make sure the indices entered below line up with the VC texts displayed on the UI*)
 		MACHINE_STATE_INIT := 0,
 		MACHINE_STATE_IDLE := 1,
 		MACHINE_STATE_RUNNING := 2,
 		MACHINE_STATE_ERROR := 3,
 		MACHINE_STATE_HARDWARE_INIT := 4,
 		MACHINE_STATE_AXIS_POWER := 5,
-		MACHINE_STATE_AXIS_HOME := 6
+		MACHINE_STATE_AXIS_HOME := 6,
+		MACHINE_STATE_MANUAL_EJECT := 7
 		);
 END_TYPE
 
@@ -33,6 +34,7 @@ TYPE
 		FeedAxisDecel : REAL;
 		PhotoEyeOffset : REAL;
 		PreInsertSpeed : REAL;
+		BoardLengthTolerance : REAL;
 	END_STRUCT;
 	AriesCreaserParams_typ : 	STRUCT 
 		CreaseDistance_mm : ARRAY[0..MAX_IDX_CREASES]OF REAL;
@@ -41,6 +43,7 @@ TYPE
 		ShaftSensorEdge : UDINT;
 		CreaserDirection : UDINT;
 		CreaserMotorIdxLag_S : REAL;
+		TotalBoardLength : REAL;
 	END_STRUCT;
 END_TYPE
 
@@ -73,7 +76,11 @@ TYPE
 		Crease_Count_Greater_Max : BOOL; (*7*)
 		Error_State_Process_Error : BOOL; (*8*)
 		Load_Recipe : BOOL; (*9*)
-		Manual_Home_Creaser_Blade : BOOL;
+		Manual_Home_Creaser_Blade : BOOL; (*10*)
+		Board_Length_GT_Confgd_Amount : BOOL; (*11*)
+		Board_Length_LT_Confgd_Amount : BOOL; (*12*)
+		Measured_Length_GT_Configured : BOOL; (*13*)
+		Measured_Length_LT_Configured : BOOL; (*14*)
 	END_STRUCT;
 	Global_Statistics_typ : 	STRUCT 
 		total_runtime : UDINT;
