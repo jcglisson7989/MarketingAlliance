@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Library Version="1.20.3" Description="Basic alarm management" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpAlarmError.typ</File>
+    <File>MpAlarm.typ</File>
+    <File>MpAlarm.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpCom" FromVersion="1.20.3" ToVersion="1.20.3" />
+  </Dependencies>
+</Library>

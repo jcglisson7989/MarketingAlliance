@@ -1,0 +1,15 @@
+$(AS_CPU_PATH)/bglibasWBR/bgTimer1ms.c.o:
+$(AS_PROJECT_PATH)/Logical/Libraries/wbrServices/bglibasWBR/bgTimer1ms.c
+$(AS_GNU_INST_PATH)/i386-elf/include/bur/plctypes.h
+$(AS_GNU_INST_PATH)/i386-elf/include/bur/plc.h
+$(AS_TEMP_PATH)/Includes/bglibasWBR.h
+$(AS_TEMP_PATH)/Includes/standard.h
+$(AS_TEMP_PATH)/Includes/wbrLogSvc.h
+$(AS_TEMP_PATH)/Includes/AsArLog.h
+$(AS_TEMP_PATH)/Includes/runtime.h
+$(AS_PROJECT_PATH)/Logical/Libraries/wbrServices/wbrsprintf/wbrsprintf.h
+$(AS_GNU_INST_PATH)/lib/gcc/i386-elf/4.1.2/include/stdarg.h
+$(AS_TEMP_PATH)/Includes/wbrListSvc.h
+$(AS_TEMP_PATH)/Includes/wbrMemSvc.h
+$(AS_TEMP_PATH)/Includes/AsMem.h
+$(AS_TEMP_PATH)/Includes/standard.h

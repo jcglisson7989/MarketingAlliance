@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.2.134"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAuditEventText">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="18"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="464383" Value="[%[TIME=%u%T]] [%op] [%ev$[TEXT=0]]"/>
+    <Text ID="464384" Value="changed DP:[%dpid] [%old] to [%new]"/>
+    <Text ID="464385" Value="changed VCDP:[%dpid$[TEXT=g2]] [%old$[TEXT=%sel]] to [%new$[TEXT=%sel]]"/>
+    <Text ID="464386" Value="[%typ$[TEXT=4]]"/>
+    <Text ID="464387" Value="User-Action [%act] ([%usr])"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="464383" Value="[%[TIME=%u%T]] [%op] [%ev$[TEXT=0]]"/>
+    <Text ID="464384" Value="changed DP:[%dpid] [%old] to [%new]"/>
+    <Text ID="464385" Value="changed VCDP:[%dpid$[TEXT=g2]] [%old$[TEXT=%sel]] to [%new$[TEXT=%sel]]"/>
+    <Text ID="464386" Value="[%typ$[TEXT=4]]"/>
+    <Text ID="464387" Value="User-Action [%act] ([%usr])"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="464383" Value=""/>
+    <Text ID="464384" Value=""/>
+    <Text ID="464385" Value=""/>
+    <Text ID="464386" Value=""/>
+    <Text ID="464387" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="464383" Value="0"/>
+    <Index ID="464384" Value="16"/>
+    <Index ID="464385" Value="17"/>
+    <Index ID="464386" Value="18"/>
+    <Index ID="464387" Value="2"/>
+  </IndexMap>
+</TextGroup>

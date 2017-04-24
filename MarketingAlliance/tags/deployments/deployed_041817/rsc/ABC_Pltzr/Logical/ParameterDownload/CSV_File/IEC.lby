@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Library Version="2.01.8" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>CSV_File.typ</File>
+    <File>CSV_File.var</File>
+    <File>CSV_File.fun</File>
+    <File>CSV_CheckFile.ab</File>
+    <File>CSV_InitCheckFile.ab</File>
+    <File>CSV_Search.ab</File>
+    <File>CSV_Init.ab</File>
+    <File>CSV_ListFile.ab</File>
+    <File>SearchFileName.ab</File>
+    <File>CSV_ReadFile.ab</File>
+    <File>ExListFile.ab</File>
+    <File>CSV_WriteFile.ab</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="AsMath" />
+    <Dependency ObjectName="AsMem" FromVersion="1.00.2" />
+    <Dependency ObjectName="AsString" />
+    <Dependency ObjectName="FileIO" FromVersion="1.03.6" />
+    <Dependency ObjectName="runtime" />
+    <Dependency ObjectName="standard" FromVersion="1.35.0" />
+    <Dependency ObjectName="sys_lib" FromVersion="1.40.2" />
+    <Dependency ObjectName="astime" FromVersion="2.00.0" />
+  </Dependencies>
+</Library>

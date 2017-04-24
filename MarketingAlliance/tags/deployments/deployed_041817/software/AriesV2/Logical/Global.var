@@ -1,0 +1,80 @@
+VAR CONSTANT
+	FORCEIO_ACCESS_LEVEL : UINT := 1;
+	CONFIG_ACCESS_LEVEL : UINT := 2;
+	RECIPE_ACCESS_LEVEL : UINT := 1;
+	DEFINE_MENU_L_HIDE_TIMEOUT_MS : UDINT := 7000;
+	DEFINE_MENU_R_HIDE_TIMEOUT_MS : UDINT := 7000;
+	DEFINE_HMI_SPLASHSCREEN_TO_MS : UDINT := 5000;
+	MAX_IDX_TOTAL_RECIPES : UINT := 100;
+	DEFINE_LOGIN_TO : REAL := 600;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	MAX_IDX_CREASES : UDINT := 19;
+END_VAR
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+VAR RETAIN
+	gRecCfg : Global_Par_typ;
+END_VAR
+VAR
+	gAcknowledge : Machine_Alarms_typ;
+	gAlarms : Machine_Alarms_typ;
+	gMachineName : {REDUND_UNREPLICABLE} STRING[80] := 'Aries';
+	gProjectDate : {REDUND_UNREPLICABLE} STRING[80] := '10. April 2017';
+	gVersion : {REDUND_UNREPLICABLE} STRING[80] := 'R741';
+END_VAR
+(*Insert your comment here.*)
+VAR
+	Axis1 : ACP10AXIS_typ;
+	AxisControl : MpAxisBasic;
+	AxisPar : MpAxisBasicParType;
+	Alarm_Feed : MpAlarmBasicUIConnect20Type := (0);
+	Alarm_Feed_UI : MpAlarmBasicUI := (0);
+END_VAR
+(*Insert your comment here.*)
+VAR
+	MachineState : AriesMachineState_Enum;
+	ProcessState : CreaserPrcsState_Enum;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	IO : AriesIOPoints_typ;
+	IO_LastCycle : AriesIOPoints_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	AppAlarms : MpAlarmBasicUIConnect20Type;
+	AppAlarms_FBK : MpAlarmBasic;
+	AppAlarms_UI : USINT;
+END_VAR
+(*Insert your comment here.*)
+VAR RETAIN
+	gStatistics : Global_Statistics_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	gAlarmResetRequested : BOOL;
+	StartUIButton_Hide : USINT;
+	StopUIButton_Hide : USINT;
+	BoardEjectUIButton_Hide : USINT;
+	iManualBoardEject : BOOL;
+	iMachineErrorReset : BOOL;
+	iStartCommand : BOOL;
+	iSoftStopCommand : BOOL;
+	gSimulateMachine : BOOL;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	DEFINE_MM_ROLLER_REV : REAL := 125.664;
+END_VAR
+VAR
+	delta_Board_Position : REAL;
+	RollerPos_LastCycle : REAL;
+	RollerPos_ThisCycle : REAL;
+	Current_Board_Position : REAL;
+	Latch_Board_Length : REAL;
+	Current_Crease_Section_Length : REAL;
+END_VAR
+(*Insert your comment here.*)
+(*Insert your comment here.*)

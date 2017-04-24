@@ -1,0 +1,19 @@
+(********************************************************************
+ * COPYRIGHT -- piedmont
+ ********************************************************************
+ * Package: HMI
+ * File: HMI.var
+ * Author: goran
+ * Created: August 28, 2013
+ ********************************************************************
+ * Variables of package HMI
+ ********************************************************************)
+VAR CONSTANT
+	HMI_ENUM_FORCEIO_LASTINDEX : USINT := 7;
+END_VAR
+VAR
+	gHmiParamTable : hmiParamListTable_typ := (0); (*Machine configuration / parameter settings logic *)
+	gHmi : hmiControlLogic_typ := (0); (*HMI logic, page navigation, visibility control, etc.*)
+	gHmiMsgScroll : hmiMsgScrolling_typ := (0); (*Scrolling Alarm Msg Support*)
+	gHMIForceIO : hmiForceIO_typ := (0);
+END_VAR

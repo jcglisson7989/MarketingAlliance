@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Config</prop>
+  </header>
+  <body>
+    <tu tuid="PV.0">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.FeedAxisAccel</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.0">
+      <tuv xml:lang="en">
+        <seg>Feed Axis Accel</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.0">
+      <tuv xml:lang="en">
+        <seg>Acceleration of the infeed roller [mm/s**2]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.1">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.FeedAxisDecel</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.1">
+      <tuv xml:lang="en">
+        <seg>Feed Axis Decel</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.1">
+      <tuv xml:lang="en">
+        <seg>Deceleration of the infeed roller [mm/s**2]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.2">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>15</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.PhotoEyeOffset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.2">
+      <tuv xml:lang="en">
+        <seg>Photoeye Offset [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.2">
+      <tuv xml:lang="en">
+        <seg>Distance to compensate for the gap between the fiber optic eye and the roller</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.3">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>25</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.PreInsertSpeed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.3">
+      <tuv xml:lang="en">
+        <seg>Pre Insert Velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.3">
+      <tuv xml:lang="en">
+        <seg>Speed to run the roller at while waiting to detect a part [mm/s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.4">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.BoardLengthTolerance</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.4">
+      <tuv xml:lang="en">
+        <seg>Board Length Tolerance [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.4">
+      <tuv xml:lang="en">
+        <seg>Tolerance [mm] for board length recipe entry where, when measured board length is outside of this number, machine enters ERR state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.5">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>0.01</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.CreaseInfeedDelay</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.5">
+      <tuv xml:lang="en">
+        <seg>Crease-Index Delay [s]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.5">
+      <tuv xml:lang="en">
+        <seg>Delay after creasing to compensate for blade movement</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,258 @@
+FUNCTION_BLOCK CSV_WriteFile
+;*****************************************************************
+;FUB: 			CSV_WriteFile
+;*****************************************************************
+;Discription:
+;	This FUB writes the Values from the allocated memory from the FUB
+;	CSV-Init in a CSV-File.
+;
+;Parameter:
+;
+;Author:	Georg Kreil
+;			B&R Eggelsberg
+;
+;History:	V0.01 - 17 June 2003
+;					created
+;			V0.01.1 - 4 July 2003
+;					no changes
+;			V0.01.2 - 8 July 2003
+;					no changes
+;			V0.01.3 - 14 July 2003
+;					no changes
+;			V0.01.4 - 15 July 2003
+;					no changes
+;			V0.01.5 - 17 July 2003
+;					no changes
+;			V0.01.6 - 21 July 2003
+;					no changes
+;			V0.01.7 - 7 August 2003
+;					no changes
+;			V0.01.8 - 8 August 2003
+;					no changes
+;			V0.01.9 - 11 August 2003
+;					no changes
+;			V0.03   - 01 December 2003
+;					underlines in filename allowed
+;
+;*****************************************************************
+
+
+select Step
+
+	;*************************************************************
+	state CONTROL_FILENAME
+	;*************************************************************
+
+		when ( pFileName = 0) do
+			status= ERROR_ZERO_POINTER_FILE
+		next CONTROL_FILENAME
+
+		strcpy(adr(FileName),pFileName)
+
+		if( strlen(adr(FileName)) <> 0 )then
+			; control, if the filename has the right extension
+			loop i=0 to sizeof(FileName) do
+
+				Dyn_Usint access (adr(FileName)+i)
+
+				 if( ((Dyn_Usint >= '0' ) and ( Dyn_Usint <= '9' )) or ((Dyn_Usint >= 'A') and (Dyn_Usint <= 'Z')) or ((Dyn_Usint >= 'a') and (Dyn_Usint <= 'z')) or ( Dyn_Usint = '_') or ( Dyn_Usint = '-') or ( Dyn_Usint = '.') or ( Dyn_Usint = 0) )then
+
+					if(Dyn_Usint = '.')then
+						if ( strcmp((adr(FileName)+i),".CSV") = 0 ) or ( strcmp((adr(FileName)+i),".csv") = 0 ) then
+							exitif(1=1)
+						else
+							strcpy((adr(FileName)+i),".CSV")
+							exitif(1=1)
+						endif
+					else if(Dyn_Usint = 0) then
+						strcpy((adr(FileName)+i),".CSV")
+						exitif(1=1)
+					endif
+					status= 65535
+				else
+					status= INVALID_CHARACTER
+					exitif(1=1)
+				endif
+
+			endloop
+
+		;Pathname angegeben
+		if(pPath <> 0)then
+			strcpy(adr(Path),pPath)
+			; Pathname bearbeiten
+			if( strlen(adr(Path)) <> 0 )then
+
+			; control, if the filename has the right extension
+				loop i=0 to sizeof(Path) do
+
+					Dyn_Usint access (adr(Path) + i)
+					 if( ((Dyn_Usint >= '0' ) and ( Dyn_Usint <= '9' )) or ((Dyn_Usint >= 'A') and (Dyn_Usint <= 'Z')) or ((Dyn_Usint >= 'a') and (Dyn_Usint <= 'z')) or ( Dyn_Usint = '_') or ( Dyn_Usint = '-') or ( Dyn_Usint = '/') or ( Dyn_Usint = '\') or ( Dyn_Usint = 0) )then
+
+						if(Dyn_Usint = 0) then
+							Dyn_Usint access (adr(Path) + i - 1)
+							if(Dyn_Usint <> '\') and (Dyn_Usint <> '/')then
+								strcat( adr(Path), adr("/") )
+							endif
+							exitif(1=1)
+						endif
+						status= 65535
+					else
+						status= INVALID_CHARACTER
+						exitif(1=1)
+					endif
+				endloop
+				strcat( adr(Path), adr(FileName) )
+				strcpy( adr(FileName), adr(Path) )
+			endif
+		endif
+
+		else
+			status= NO_FILENAME
+		endif
+
+		when ( pDevice = 0) do
+			status= ERR_ZERO_POINTER_DEVICE
+		next CONTROL_FILENAME
+
+		when (status = 65535) and ( (Mode = FILE_CREATE) or (Mode = FILE_OW)) do
+		next CHECK_PARTITION
+
+		when (status = 65535) and ( (Mode = FILE_CREATE_WITHOUT_MEM_CHECK) or (Mode = FILE_OW_WITHOUT_MEM_CHECK)) do
+		next FILE_CREATE
+
+	;*************************************************************
+	state CHECK_PARTITION
+	;*************************************************************
+
+		DevMemInfo_CSV.enable= 1
+		DevMemInfo_CSV.pDevice= pDevice
+		DevMemInfo_CSV FUB DevMemInfo()
+		; error
+		when (DevMemInfo_CSV.status <> 0) and (DevMemInfo_CSV.status <> 65535) do
+			status= DevMemInfo_CSV.status
+		next CONTROL_FILENAME
+
+		; no error, enough memory
+		when (DevMemInfo_CSV.status = 0) and (DevMemInfo_CSV.freemem >= MemLen ) do
+			status= 65535
+		next FILE_CREATE
+
+		; no error, not enough memory
+		when (DevMemInfo_CSV.status = 0) and (DevMemInfo_CSV.freemem < MemLen ) do
+			status= fiERR_SPACE
+		next CONTROL_FILENAME
+
+		; file is under creation
+		when (DevMemInfo_CSV.status = 65535) do
+			status= DevMemInfo_CSV.status
+		next CHECK_PARTITION
+
+	;*************************************************************
+	state FILE_CREATE
+	;*************************************************************
+
+		FileCreate_CSV.enable= 1
+		FileCreate_CSV.pDevice= pDevice
+		FileCreate_CSV.pFile= adr(FileName)
+		FileCreate_CSV FUB FileCreate()
+
+		; file allready exists and will be not overwritten
+		when (FileCreate_CSV.status = 20705) and (Mode <> FILE_OW) and (Mode <> FILE_OW_WITHOUT_MEM_CHECK) do
+			status= FileCreate_CSV.status
+		next  CONTROL_FILENAME
+
+		; file allready exists and will be overwritten
+		when (FileCreate_CSV.status = 20705) and ( (Mode = FILE_OW) or (Mode = FILE_OW_WITHOUT_MEM_CHECK) ) do
+			status= 65535
+		next FILE_DELETE
+
+		; error
+		when (FileCreate_CSV.status <> 0) and (FileCreate_CSV.status <> 65535) do
+			status= FileCreate_CSV.status
+		next CONTROL_FILENAME
+
+		; no error
+		when (FileCreate_CSV.status = 0) do
+			FileWrite_CSV.ident= FileCreate_CSV.ident
+			status= 65535
+		next FILE_WRITE
+
+		; file is under creation
+		when (FileCreate_CSV.status = 65535) do
+			status= FileCreate_CSV.status
+		next FILE_CREATE
+
+	;*************************************************************
+	state FILE_DELETE
+	;*************************************************************
+		FileDelete_CSV.enable= 1
+		FileDelete_CSV.pDevice= pDevice
+		FileDelete_CSV.pName= adr(FileName)
+		FileDelete_CSV FUB FileDelete()
+
+		; error
+		when (FileDelete_CSV.status <> 0) and (FileDelete_CSV.status <> 65535) do
+			status= FileDelete_CSV.status
+		next CONTROL_FILENAME
+
+		; no error
+		when (FileDelete_CSV.status = 0) do
+			status= 65535
+		next FILE_CREATE
+
+		; file under erasing
+		when (FileDelete_CSV.status = 65535) do
+			status= FileDelete_CSV.status
+		next FILE_DELETE
+
+	;*************************************************************
+	state FILE_WRITE
+	;*************************************************************
+
+		FileWrite_CSV.enable= 1
+		FileWrite_CSV.offset= 0
+		FileWrite_CSV.pSrc= pStructMem
+		FileWrite_CSV.len= MemLen
+		FileWrite_CSV FUB FileWrite()
+
+		; error
+		when (FileWrite_CSV.status <> 0) and (FileWrite_CSV.status <> 65535) do
+			status= FileWrite_CSV.status
+		next CONTROL_FILENAME
+
+		; no error
+		when (FileWrite_CSV.status = 0) do
+			status= 65535
+		next FILE_CLOSE
+
+		; file is writeing
+		when (FileWrite_CSV.status = 65535) do
+			status= FileWrite_CSV.status
+		next FILE_WRITE
+
+	;*************************************************************
+	state FILE_CLOSE
+	;*************************************************************
+
+
+		FileClose_CSV.enable= 1
+		FileClose_CSV.ident= FileWrite_CSV.ident
+		FileClose_CSV FUB FileClose()
+
+		; error
+		when (FileClose_CSV.status <> 0) and (FileClose_CSV.status <> 65535) do
+			status= FileClose_CSV.status
+		next CONTROL_FILENAME
+
+		; no error
+		when (FileClose_CSV.status = 0) do
+			status= 0
+		next CONTROL_FILENAME
+
+		; file is closing
+		when (FileClose_CSV.status = 65535) do
+			status= FileClose_CSV.status
+		next FILE_CLOSE
+
+endselect
+END_FUNCTION_BLOCK

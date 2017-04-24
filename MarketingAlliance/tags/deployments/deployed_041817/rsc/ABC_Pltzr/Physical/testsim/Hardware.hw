@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.2.134?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="PLC1" Type="PC_any" Version="1.1.0.0" OrderNumber="PC">
+    <Connector Name="IF3">
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="paXGA" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard2.dis" />
+      <Parameter ID="VncAuthentication1" Value="1" />
+      <Parameter ID="VncPasswordViewOnly1" Value="v" />
+      <Parameter ID="VncPasswordViewControl1" Value="c" />
+      <Parameter ID="VncMaxConnections1" Value="9" />
+      <Parameter ID="VncRefreshRate1" Value="200" />
+      <Parameter ID="VncConnectionTimeout1" Value="5" />
+      <Group ID="Vnc2" />
+      <Parameter ID="VncKeyMappingFile2" Value="VC\PS2-Keyboard1.dis" />
+      <Parameter ID="VncAuthentication2" Value="1" />
+      <Parameter ID="VncPasswordViewOnly2" Value="v" />
+      <Parameter ID="VncPasswordViewControl2" Value="c" />
+      <Parameter ID="VncPortNumber2" Value="5901" />
+      <Group ID="Vnc3" />
+      <Parameter ID="VncAuthentication3" Value="1" />
+      <Parameter ID="VncPasswordViewOnly3" Value="v" />
+      <Parameter ID="VncPasswordViewControl3" Value="c" />
+      <Parameter ID="VncPortNumber3" Value="5902" />
+    </Connector>
+    <Parameter ID="PermanentPvSize" Value="20000" />
+    <Parameter ID="RemanentGlobalPvSize" Value="20000" />
+    <Parameter ID="VolatileGlobalPvSize" Value="280000" />
+    <Parameter ID="PreservePermanentPvMemory" Value="1" />
+    <Parameter ID="SystemTick" Value="1000" />
+    <Parameter ID="XLinkUseDefault" Value="0" />
+    <Parameter ID="Cyclic1Duration" Value="1000" />
+    <Parameter ID="Cyclic1Tolerance" Value="100000" />
+    <Parameter ID="Cyclic2Duration" Value="20000" />
+    <Parameter ID="Cyclic2Tolerance" Value="10000000" />
+    <Parameter ID="Cyclic3Duration" Value="100000" />
+    <Parameter ID="Cyclic3Tolerance" Value="100000" />
+    <Parameter ID="Cyclic4Duration" Value="500000" />
+    <Parameter ID="Cyclic4Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic5Duration" Value="1000000" />
+    <Parameter ID="Cyclic5Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic6Duration" Value="3000000" />
+    <Parameter ID="Cyclic6Tolerance" Value="12000000" />
+    <Parameter ID="Cyclic7Duration" Value="4000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="12000000" />
+    <Parameter ID="Cyclic8Duration" Value="10000" />
+    <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Parameter ID="WebServerWebDir" Value="C:\temp\web\" />
+  </Module>
+</Hardware>

@@ -1,0 +1,1404 @@
+<?xml version="1.0"?>
+<Crossref Scope="Application.Creaser" AppMod="">
+	<Vars>
+		<Var Name="Creaser.Timer_Creaser_Idx_Delay" Scope="Local" Type="TON">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="16" C="56" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="32" C="17" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="55" C="16" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Timer_Creaser_Idx_Edge" Scope="Local" Type="TON">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="27" C="51" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="46" C="19" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="56" C="16" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Timer_Total_Runtime" Scope="Local" Type="TON">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="4" C="22" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="6" C="16" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="13" C="16" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setFlagTravelEdgeOffset" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="19" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="27" C="6" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="28" C="4" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="44" C="80" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="45" C="6" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setFlagCreaserIdxFinished" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="68" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="16" C="2" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setflagCreaserIndexCommand" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="61" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="18" C="5" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="59" C="2" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.setFlagCreaserWaitEdge" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="20" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="23" C="5" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="29" C="4" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.flagBoardLengthCfgErr" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="11" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="12" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="5" C="2" PS="Action_Validate_Board_Length" A="W"/>
+				<Pos L="15" C="3" PS="Action_Validate_Board_Length" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.length_calculated_total" Scope="Local" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="4" C="2" PS="Action_Validate_Board_Length" A="W"/>
+				<Pos L="9" C="3" PS="Action_Validate_Board_Length" A="W"/>
+				<Pos L="9" C="30" PS="Action_Validate_Board_Length" A="R"/>
+				<Pos L="13" C="5" PS="Action_Validate_Board_Length" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow.TimeOn" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="8" C="2" PS="Ln:8, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow.TimeOff" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="9" C="2" PS="Ln:9, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow.bFlashOut" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="74" C="28" PS="Ln:74, Col:28" A="R"/>
+				<Pos L="112" C="28" PS="Ln:112, Col:28" A="R"/>
+				<Pos L="140" C="53" PS="Ln:140, Col:53" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="50" C="29" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="59" C="29" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="95" C="29" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="103" C="29" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Slow" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="148" C="2" PS="Ln:148, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast.TimeOn" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="11" C="2" PS="Ln:11, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast.TimeOff" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="12" C="2" PS="Ln:12, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast.bFlashOut" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="140" C="28" PS="Ln:140, Col:28" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="66" C="29" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="103" C="54" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.Pulse_Fast" Scope="Local" Type="PulseTrain">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="149" C="2" PS="Ln:149, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Creaser.ii_crease_count" Scope="Local" Type="UDINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="15" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="24" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="69" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="69" C="24" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="71" C="8" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="141" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="12" C="79" PS="Action_Move_Section_Distance" A="R"/>
+				<Pos L="16" C="66" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="7" C="6" PS="Action_Validate_Board_Length" A="W"/>
+				<Pos L="9" C="100" PS="Action_Validate_Board_Length" A="R"/>
+			</File>
+		</Var>
+		<Var Name="FeedAxis_MpLink" Scope="Global" Type="MpComIdentType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="4" C="28" PS="Action_Init_Infeed_Axis" A="R"/>
+				<Pos L="10" C="30" PS="Action_Init_Infeed_Axis" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.FeedVelocity" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="84" C="25" PS="Ln:84, Col:25" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="80" C="26" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="14" C="22" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="18" C="22" PS="Action_Move_Photoeye_Offset" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="17" C="22" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.FeedAxisAccel" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="85" C="29" PS="Ln:85, Col:29" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="81" C="30" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="11" C="26" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="15" C="26" PS="Action_Move_Photoeye_Offset" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="14" C="26" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="10" C="26" PS="Action_Start_Feeder" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="10" C="26" PS="Action_Stop_Feeder" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.FeedAxisDecel" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="86" C="29" PS="Ln:86, Col:29" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="82" C="30" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="12" C="26" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="16" C="26" PS="Action_Move_Photoeye_Offset" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="15" C="26" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="11" C="26" PS="Action_Start_Feeder" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="11" C="26" PS="Action_Stop_Feeder" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaseCount" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="71" C="27" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="21" C="9" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="7" C="30" PS="Action_Validate_Board_Length" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.PhotoEyeOffset" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="107" C="52" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="13" C="35" PS="Action_Move_Photoeye_Offset" A="R"/>
+				<Pos L="17" C="22" PS="Action_Move_Photoeye_Offset" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.TotalBoardLength" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="109" C="30" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="112" C="33" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="13" C="32" PS="Action_Validate_Board_Length" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.BoardLengthTolerance" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="109" C="75" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="112" C="78" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="13" C="77" PS="Action_Validate_Board_Length" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaserDirection" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="24" C="30" PS="Action_Creaser_Idx" A="R"/>
+				<Pos L="25" C="30" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.CreaseInfeedDelay" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="32" C="46" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaserMotorIdxLag_S" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="46" C="47" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.IO.Rec.O.Initial_Load" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="24" C="14" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaseWidth_mm" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="9" C="35" PS="Action_Move_Crease_Width" A="R"/>
+				<Pos L="13" C="23" PS="Action_Move_Crease_Width" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="9" C="119" PS="Action_Validate_Board_Length" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec.Crease.CreaseDistance_mm" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="12" C="35" PS="Action_Move_Section_Distance" A="R"/>
+				<Pos L="16" C="22" PS="Action_Move_Section_Distance" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="9" C="56" PS="Action_Validate_Board_Length" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg.Creaser.PreInsertSpeed" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="9" C="22" PS="Action_Start_Feeder" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="9" C="22" PS="Action_Stop_Feeder" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Fiber_Optic_Blocked_RunCmd" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="96" C="6" PS="Ln:96, Col:6" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Manual_Home_Creaser_Blade" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="99" C="6" PS="Ln:99, Col:6" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Measured_Length_GT_Configured" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="110" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Measured_Length_LT_Configured" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="113" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.SM1_Disabled" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="5" C="2" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+				<Pos L="12" C="9" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Unsafe_Machine_State" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="6" C="2" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Error_State_Unsafe_Machine" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="10" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Error_State_SM1_Power" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="13" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Feed_Axis_Motor_Error" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="16" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Error_State_Process_Error" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="19" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Crease_Count_Greater_Max" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="22" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Load_Recipe" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="25" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Board_Length_GT_Confgd_Amount" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Validate_Board_Length.st">
+				<Pos L="14" C="3" PS="Action_Validate_Board_Length" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Axis1" Scope="Global" Type="ACP10AXIS_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="14" C="2" PS="Action_AxisControl_Mgmt" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="7" C="26" PS="Action_Init_Infeed_Axis" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MoveVelocity" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="34" C="3" PS="Ln:34, Col:3" A="W"/>
+				<Pos L="78" C="5" PS="Ln:78, Col:5" A="W"/>
+				<Pos L="88" C="5" PS="Ln:88, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="74" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="84" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="3" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="7" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="6" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="3" C="2" PS="Action_Start_Feeder" A="W"/>
+				<Pos L="13" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="3" C="2" PS="Action_Stop_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MoveAbsolute" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="35" C="3" PS="Ln:35, Col:3" A="W"/>
+				<Pos L="79" C="5" PS="Ln:79, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="75" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="4" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="5" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="4" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="4" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="4" C="2" PS="Action_Stop_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MoveAdditive" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="36" C="3" PS="Ln:36, Col:3" A="W"/>
+				<Pos L="80" C="5" PS="Ln:80, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="76" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="5" C="2" PS="Action_Move_Crease_Width" A="W"/>
+				<Pos L="16" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="6" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+				<Pos L="20" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="5" C="2" PS="Action_Move_Section_Distance" A="W"/>
+				<Pos L="19" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="5" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="5" C="2" PS="Action_Stop_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Stop" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="37" C="3" PS="Ln:37, Col:3" A="W"/>
+				<Pos L="81" C="5" PS="Ln:81, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="77" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="6" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="8" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="7" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="6" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="6" C="2" PS="Action_Stop_Feeder" A="W"/>
+				<Pos L="13" C="2" PS="Action_Stop_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="38" C="3" PS="Ln:38, Col:3" A="RW"/>
+				<Pos L="82" C="5" PS="Ln:82, Col:5" A="RW"/>
+				<Pos L="89" C="5" PS="Ln:89, Col:5" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="15" C="2" PS="Action_AxisControl_Mgmt" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="78" C="6" PS="Action_CreaserProcess_SM" A="RW"/>
+				<Pos L="85" C="6" PS="Action_CreaserProcess_SM" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="8" C="2" PS="Action_Init_Infeed_Axis" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="7" C="2" PS="Action_Move_Crease_Width" A="RW"/>
+				<Pos L="17" C="2" PS="Action_Move_Crease_Width" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="9" C="2" PS="Action_Move_Photoeye_Offset" A="RW"/>
+				<Pos L="21" C="2" PS="Action_Move_Photoeye_Offset" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="8" C="2" PS="Action_Move_Section_Distance" A="RW"/>
+				<Pos L="20" C="2" PS="Action_Move_Section_Distance" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="7" C="2" PS="Action_Start_Feeder" A="RW"/>
+				<Pos L="14" C="2" PS="Action_Start_Feeder" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="7" C="2" PS="Action_Stop_Feeder" A="RW"/>
+				<Pos L="14" C="2" PS="Action_Stop_Feeder" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Power" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="50" C="4" PS="Ln:50, Col:4" A="W"/>
+				<Pos L="59" C="5" PS="Ln:59, Col:5" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Info.ReadyToPowerOn" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="58" C="7" PS="Ln:58, Col:7" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.PowerOn" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="67" C="7" PS="Ln:67, Col:7" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.ErrorReset" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="5" C="3" PS="Action_AxisControl_Mgmt" A="W"/>
+				<Pos L="7" C="3" PS="Action_AxisControl_Mgmt" A="W"/>
+				<Pos L="10" C="5" PS="Action_AxisControl_Mgmt" A="R"/>
+				<Pos L="11" C="3" PS="Action_AxisControl_Mgmt" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Error" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="10" C="36" PS="Action_AxisControl_Mgmt" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="15" C="9" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.InVelocity" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="23" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.InPosition" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="52" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="60" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="97" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.MpLink" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="4" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Enable" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="5" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Parameters" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="6" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Axis" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="7" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisControl.Position" Scope="Global" Type="MpAxisBasic">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="4" C="39" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Velocity" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="84" C="5" PS="Ln:84, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="80" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="14" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="18" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="17" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="9" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="9" C="2" PS="Action_Stop_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Acceleration" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="85" C="5" PS="Ln:85, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="81" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="11" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="15" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="14" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="10" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="10" C="2" PS="Action_Stop_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Deceleration" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="86" C="5" PS="Ln:86, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="82" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="12" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="16" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="15" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="11" C="2" PS="Action_Start_Feeder" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="11" C="2" PS="Action_Stop_Feeder" A="W"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="6" C="32" PS="Action_Init_Infeed_Axis" A="R"/>
+			</File>
+		</Var>
+		<Var Name="AxisPar.Distance" Scope="Global" Type="MpAxisBasicParType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="13" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="17" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="16" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="17" C="2" PS="Action_AxisControl_Mgmt" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="20" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed.AlarmImage" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="15" C="42" PS="Action_Init_Infeed_Axis" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed.AcknowledgeImage" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="16" C="48" PS="Action_Init_Infeed_Axis" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed.AddInfo" Scope="Global" Type="MpAlarmBasicUIConnect20Type">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="18" C="39" PS="Action_Init_Infeed_Axis" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="18" C="2" PS="Action_AxisControl_Mgmt" A="RW"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="21" C="2" PS="Action_Init_Infeed_Axis" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.MpLink" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="10" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.Enable" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="11" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.Mode" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="12" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.UISetup.ImageSize" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="14" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.UISetup.AlarmImage" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="15" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.UISetup.AcknowledgeImage" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="16" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.UISetup.AddInfoStringSize" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="17" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Alarm_Feed_UI.UISetup.AddInfo" Scope="Global" Type="MpAlarmBasicUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="18" C="2" PS="Action_Init_Infeed_Axis" A="W"/>
+			</File>
+		</Var>
+		<Var Name="MachineState" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="6" C="2" PS="Ln:6, Col:2" A="W"/>
+				<Pos L="30" C="3" PS="Ln:30, Col:3" A="W"/>
+				<Pos L="33" C="13" PS="Ln:33, Col:13" A="R"/>
+				<Pos L="41" C="49" PS="Ln:41, Col:49" A="R"/>
+				<Pos L="41" C="86" PS="Ln:41, Col:86" A="R"/>
+				<Pos L="43" C="29" PS="Ln:43, Col:29" A="R"/>
+				<Pos L="44" C="28" PS="Ln:44, Col:28" A="R"/>
+				<Pos L="46" C="7" PS="Ln:46, Col:7" A="R"/>
+				<Pos L="52" C="4" PS="Ln:52, Col:4" A="W"/>
+				<Pos L="60" C="5" PS="Ln:60, Col:5" A="W"/>
+				<Pos L="69" C="5" PS="Ln:69, Col:5" A="W"/>
+				<Pos L="91" C="5" PS="Ln:91, Col:5" A="W"/>
+				<Pos L="97" C="6" PS="Ln:97, Col:6" A="W"/>
+				<Pos L="100" C="6" PS="Ln:100, Col:6" A="W"/>
+				<Pos L="106" C="6" PS="Ln:106, Col:6" A="W"/>
+				<Pos L="116" C="5" PS="Ln:116, Col:5" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="8" C="6" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="8" C="46" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="11" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+				<Pos L="14" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+				<Pos L="17" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+				<Pos L="20" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+				<Pos L="23" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+				<Pos L="26" C="4" PS="Action_Eval_ErrorState_Statuses" A="W"/>
+			</File>
+		</Var>
+		<Var Name="ProcessState" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="27" C="3" PS="Ln:27, Col:3" A="W"/>
+				<Pos L="105" C="6" PS="Ln:105, Col:6" A="W"/>
+				<Pos L="129" C="13" PS="Ln:129, Col:13" A="R"/>
+				<Pos L="133" C="5" PS="Ln:133, Col:5" A="W"/>
+				<Pos L="144" C="4" PS="Ln:144, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="4" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="13" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="16" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="25" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="46" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="55" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="62" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="87" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="90" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="99" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="111" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="114" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="122" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="138" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="142" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="18" C="9" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iSafeMachineState" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="26" C="13" PS="Ln:26, Col:13" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="6" C="38" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="9" C="11" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.iFiberOpticSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="41" C="133" PS="Ln:41, Col:133" A="R"/>
+				<Pos L="95" C="8" PS="Ln:95, Col:8" A="R"/>
+				<Pos L="114" C="12" PS="Ln:114, Col:12" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="43" C="7" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="105" C="11" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="137" C="8" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oBoardFeedingLight" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="48" C="4" PS="Ln:48, Col:4" A="W"/>
+				<Pos L="55" C="4" PS="Ln:55, Col:4" A="W"/>
+				<Pos L="64" C="4" PS="Ln:64, Col:4" A="W"/>
+				<Pos L="73" C="4" PS="Ln:73, Col:4" A="W"/>
+				<Pos L="111" C="4" PS="Ln:111, Col:4" A="W"/>
+				<Pos L="139" C="4" PS="Ln:139, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="6" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="20" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="39" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="50" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="59" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="66" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="95" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="103" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="129" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="132" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.oUIIndicatorLight" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="49" C="4" PS="Ln:49, Col:4" A="W"/>
+				<Pos L="56" C="4" PS="Ln:56, Col:4" A="W"/>
+				<Pos L="65" C="4" PS="Ln:65, Col:4" A="W"/>
+				<Pos L="74" C="4" PS="Ln:74, Col:4" A="W"/>
+				<Pos L="112" C="4" PS="Ln:112, Col:4" A="W"/>
+				<Pos L="121" C="4" PS="Ln:121, Col:4" A="W"/>
+				<Pos L="140" C="4" PS="Ln:140, Col:4" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.iCreaserShaftSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="98" C="15" PS="Ln:98, Col:15" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="14" C="10" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="44" C="12" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="154" C="18" PS="Ln:154, Col:18" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO.oCreaserCCWRotation" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="24" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="50" C="3" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.oCreaserCWRotation" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="25" C="3" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="51" C="3" PS="Action_Creaser_Idx" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO.iSM1Disabled" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="5" C="26" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO_LastCycle.iFiberOpticSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="114" C="37" PS="Ln:114, Col:37" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="43" C="36" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="105" C="36" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="IO_LastCycle" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="154" C="2" PS="Ln:154, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="IO_LastCycle.iCreaserShaftSensor" Scope="Global" Type="AriesIOPoints_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="44" C="39" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.Reset" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="18" C="5" PS="Ln:18, Col:5" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="19" C="17" PS="Ln:19, Col:17" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.total_processed" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="116" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="116" C="37" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="118" C="91" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.Sum_Board_Travel_Lengths" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="117" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="117" C="46" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="118" C="38" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.Avg_Board_Length" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="118" C="6" PS="Action_CreaserProcess_SM" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.total_creases" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="34" C="4" PS="Action_Creaser_Idx" A="W"/>
+				<Pos L="34" C="33" PS="Action_Creaser_Idx" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.total_runtime" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="5" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+				<Pos L="5" C="32" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="8" C="28" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="9" C="29" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+				<Pos L="10" C="28" PS="Action_Manage_Update_Total_Runtime" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.runtime_h" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="8" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.runtime_m" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="9" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gStatistics.runtime_s" Scope="Global" Type="Global_Statistics_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="10" C="3" PS="Action_Manage_Update_Total_Runtime" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarmResetRequested" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="28" C="3" PS="Ln:28, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="StartUIButton_Hide" Scope="Global" Type="USINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="43" C="2" PS="Ln:43, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="StopUIButton_Hide" Scope="Global" Type="USINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="44" C="2" PS="Ln:44, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="BoardEjectUIButton_Hide" Scope="Global" Type="USINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="41" C="2" PS="Ln:41, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="iManualBoardEject" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="76" C="15" PS="Ln:76, Col:15" A="R"/>
+				<Pos L="114" C="76" PS="Ln:114, Col:76" A="R"/>
+			</File>
+		</Var>
+		<Var Name="iMachineErrorReset" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="26" C="38" PS="Ln:26, Col:38" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="4" C="13" PS="Action_AxisControl_Mgmt" A="R"/>
+				<Pos L="6" C="16" PS="Action_AxisControl_Mgmt" A="R"/>
+			</File>
+		</Var>
+		<Var Name="iStartCommand" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="94" C="15" PS="Ln:94, Col:15" A="R"/>
+			</File>
+		</Var>
+		<Var Name="iSoftStopCommand" Scope="Global" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="127" C="7" PS="Ln:127, Col:7" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="134" C="11" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="delta_Board_Position" Scope="Global" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="6" C="5" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="7" C="3" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="9" C="3" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="13" C="53" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="RollerPos_LastCycle" Scope="Global" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="7" C="72" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="9" C="49" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="15" C="2" PS="Action_Tally_Board_L" A="W"/>
+			</File>
+		</Var>
+		<Var Name="RollerPos_ThisCycle" Scope="Global" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="4" C="2" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="7" C="27" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="9" C="27" PS="Action_Tally_Board_L" A="R"/>
+				<Pos L="15" C="25" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Current_Board_Position" Scope="Global" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="7" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="21" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="41" C="4" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="54" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="107" C="27" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="13" C="2" PS="Action_Tally_Board_L" A="W"/>
+				<Pos L="13" C="28" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Latch_Board_Length" Scope="Global" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="107" C="5" PS="Action_CreaserProcess_SM" A="W"/>
+				<Pos L="109" C="8" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="112" C="11" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="117" C="85" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Current_Crease_Section_Length" Scope="Global" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="142" C="4" PS="Ln:142, Col:4" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="9" C="2" PS="Action_Move_Crease_Width" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="13" C="2" PS="Action_Move_Photoeye_Offset" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="12" C="2" PS="Action_Move_Section_Distance" A="W"/>
+			</File>
+		</Var>
+	</Vars>
+	<Consts>
+		<Const Name="Creaser.DEFINE_SLOW_PULSE_PERIOD" Scope="Local" Type="TIME">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="8" C="23" PS="Ln:8, Col:23" A="R"/>
+				<Pos L="9" C="24" PS="Ln:9, Col:24" A="R"/>
+			</File>
+		</Const>
+		<Const Name="Creaser.DEFINE_FAST_PULSE_PERIOD" Scope="Local" Type="TIME">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="11" C="23" PS="Ln:11, Col:23" A="R"/>
+				<Pos L="12" C="24" PS="Ln:12, Col:24" A="R"/>
+			</File>
+		</Const>
+		<Const Name="MAX_IDX_CREASES" Scope="Global" Type="UDINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="21" C="49" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Const>
+		<Const Name="DEFINE_MM_ROLLER_REV" Scope="Global" Type="REAL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Tally_Board_L.st">
+				<Pos L="7" C="49" PS="Action_Tally_Board_L" A="R"/>
+			</File>
+		</Const>
+	</Consts>
+	<Enums>
+		<Enum Name="mpALARM_BASIC_UI_MODE_ALL" Scope="Global" Type="MpAlarmBasicUIModeEnum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="12" C="24" PS="Action_Init_Infeed_Axis" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_INIT" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="27" C="19" PS="Ln:27, Col:19" A="R"/>
+				<Pos L="105" C="22" PS="Ln:105, Col:22" A="R"/>
+				<Pos L="144" C="20" PS="Ln:144, Col:20" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="5" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="138" C="22" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="142" C="22" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_READY" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="16" C="21" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="19" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="122" C="22" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_FEED_BOARD" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="25" C="21" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="38" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_MOVE_CREASE" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="55" C="21" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="58" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="99" C="21" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_CREASE" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="62" C="21" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="65" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_MOVE_CREASE_WIDTH" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="90" C="22" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="94" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_ERROR" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="13" C="21" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="111" C="22" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="114" C="22" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="128" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="18" C="24" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_EJECT_FINISHED_BOARD" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="87" C="22" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="102" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_SOFT_STOP" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="129" C="28" PS="Ln:129, Col:28" A="R"/>
+				<Pos L="133" C="21" PS="Ln:133, Col:21" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="131" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="PRCS_STATE_MOVE_PHOTOEYE_OFFSET" Scope="Global" Type="CreaserPrcsState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="46" C="21" PS="Action_CreaserProcess_SM" A="R"/>
+				<Pos L="49" C="3" PS="Action_CreaserProcess_SM" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_INIT" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="6" C="18" PS="Ln:6, Col:18" A="R"/>
+				<Pos L="30" C="19" PS="Ln:30, Col:19" A="R"/>
+				<Pos L="47" C="3" PS="Ln:47, Col:3" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="8" C="62" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_IDLE" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="41" C="64" PS="Ln:41, Col:64" A="R"/>
+				<Pos L="43" C="44" PS="Ln:43, Col:44" A="R"/>
+				<Pos L="69" C="21" PS="Ln:69, Col:21" A="R"/>
+				<Pos L="72" C="3" PS="Ln:72, Col:3" A="R"/>
+				<Pos L="116" C="21" PS="Ln:116, Col:21" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_RUNNING" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="44" C="43" PS="Ln:44, Col:43" A="R"/>
+				<Pos L="106" C="22" PS="Ln:106, Col:22" A="R"/>
+				<Pos L="120" C="3" PS="Ln:120, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_ERROR" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="33" C="28" PS="Ln:33, Col:28" A="R"/>
+				<Pos L="97" C="22" PS="Ln:97, Col:22" A="R"/>
+				<Pos L="100" C="22" PS="Ln:100, Col:22" A="R"/>
+				<Pos L="138" C="3" PS="Ln:138, Col:3" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Eval_ErrorState_Statuses.st">
+				<Pos L="8" C="22" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="11" C="20" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="14" C="20" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="17" C="20" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="20" C="20" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="23" C="20" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+				<Pos L="26" C="20" PS="Action_Eval_ErrorState_Statuses" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_HARDWARE_INIT" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="52" C="20" PS="Ln:52, Col:20" A="R"/>
+				<Pos L="54" C="3" PS="Ln:54, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_AXIS_POWER" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="60" C="21" PS="Ln:60, Col:21" A="R"/>
+				<Pos L="63" C="3" PS="Ln:63, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="MACHINE_STATE_MANUAL_EJECT" Scope="Global" Type="AriesMachineState_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="41" C="101" PS="Ln:41, Col:101" A="R"/>
+				<Pos L="91" C="21" PS="Ln:91, Col:21" A="R"/>
+				<Pos L="110" C="3" PS="Ln:110, Col:3" A="R"/>
+			</File>
+		</Enum>
+	</Enums>
+	<Funcs>
+		<Func Name="PulseTrain" Prog="Creaser">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="148" C="2" PS="Ln:148, Col:2"/>
+				<Pos L="149" C="2" PS="Ln:149, Col:2"/>
+			</File>
+		</Func>
+		<Func Name="brsmemset" Lib="AsBrStr">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="19" C="3" PS="Ln:19, Col:3"/>
+			</File>
+		</Func>
+		<Func Name="Tms" Lib="jgLibC">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="32" C="42" PS="Action_Creaser_Idx"/>
+				<Pos L="46" C="43" PS="Action_Creaser_Idx"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerCyclic" Lib="bglibasWBR">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="55" C="2" PS="Action_Creaser_Idx"/>
+				<Pos L="56" C="2" PS="Action_Creaser_Idx"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="13" C="2" PS="Action_Manage_Update_Total_Runtime"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerStart" Lib="bglibasWBR">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="32" C="4" PS="Action_Creaser_Idx"/>
+				<Pos L="46" C="6" PS="Action_Creaser_Idx"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="6" C="3" PS="Action_Manage_Update_Total_Runtime"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerIsTimeOut" Lib="bglibasWBR">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Creaser_Idx.st">
+				<Pos L="16" C="39" PS="Action_Creaser_Idx"/>
+				<Pos L="27" C="34" PS="Action_Creaser_Idx"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Manage_Update_Total_Runtime.st">
+				<Pos L="4" C="5" PS="Action_Manage_Update_Total_Runtime"/>
+			</File>
+		</Func>
+		<Func Name="MpAlarmBasicUI" Lib="MpAlarm">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="18" C="2" PS="Action_AxisControl_Mgmt"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="21" C="2" PS="Action_Init_Infeed_Axis"/>
+			</File>
+		</Func>
+		<Func Name="MpAxisBasic" Lib="MpAxis">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="38" C="3" PS="Ln:38, Col:3"/>
+				<Pos L="82" C="5" PS="Ln:82, Col:5"/>
+				<Pos L="89" C="5" PS="Ln:89, Col:5"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_AxisControl_Mgmt.st">
+				<Pos L="15" C="2" PS="Action_AxisControl_Mgmt"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="78" C="6" PS="Action_CreaserProcess_SM"/>
+				<Pos L="85" C="6" PS="Action_CreaserProcess_SM"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Init_Infeed_Axis.st">
+				<Pos L="8" C="2" PS="Action_Init_Infeed_Axis"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Crease_Width.st">
+				<Pos L="7" C="2" PS="Action_Move_Crease_Width"/>
+				<Pos L="17" C="2" PS="Action_Move_Crease_Width"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Photoeye_Offset.st">
+				<Pos L="9" C="2" PS="Action_Move_Photoeye_Offset"/>
+				<Pos L="21" C="2" PS="Action_Move_Photoeye_Offset"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Move_Section_Distance.st">
+				<Pos L="8" C="2" PS="Action_Move_Section_Distance"/>
+				<Pos L="20" C="2" PS="Action_Move_Section_Distance"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Start_Feeder.st">
+				<Pos L="7" C="2" PS="Action_Start_Feeder"/>
+				<Pos L="14" C="2" PS="Action_Start_Feeder"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_Stop_Feeder.st">
+				<Pos L="7" C="2" PS="Action_Stop_Feeder"/>
+				<Pos L="14" C="2" PS="Action_Stop_Feeder"/>
+			</File>
+		</Func>
+	</Funcs>
+	<Actions>
+		<Action Name="Creaser.Action_AxisControl_Mgmt">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="152" C="2" PS="Ln:152, Col:2"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_CreaserProcess_SM">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="136" C="4" PS="Ln:136, Col:4"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Creaser_Idx">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="151" C="2" PS="Ln:151, Col:2"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Eval_ErrorState_Statuses">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="22" C="2" PS="Ln:22, Col:2"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Init_Infeed_Axis">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="4" C="2" PS="Ln:4, Col:2"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Manage_Update_Total_Runtime">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="123" C="4" PS="Ln:123, Col:4"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Move_Crease_Width">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="89" C="6" PS="Action_CreaserProcess_SM"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Move_Photoeye_Offset">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="44" C="5" PS="Action_CreaserProcess_SM"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Move_Section_Distance">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="53" C="5" PS="Action_CreaserProcess_SM"/>
+				<Pos L="98" C="5" PS="Action_CreaserProcess_SM"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Start_Feeder">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="104" C="6" PS="Ln:104, Col:6"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="120" C="6" PS="Action_CreaserProcess_SM"/>
+				<Pos L="135" C="5" PS="Action_CreaserProcess_SM"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Stop_Feeder">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="68" C="5" PS="Ln:68, Col:5"/>
+				<Pos L="115" C="5" PS="Ln:115, Col:5"/>
+				<Pos L="130" C="6" PS="Ln:130, Col:6"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Tally_Board_L">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Main.st">
+				<Pos L="125" C="4" PS="Ln:125, Col:4"/>
+			</File>
+		</Action>
+		<Action Name="Creaser.Action_Validate_Board_Length">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Application/Creaser/Action_CreaserProcess_SM.st">
+				<Pos L="9" C="4" PS="Action_CreaserProcess_SM"/>
+			</File>
+		</Action>
+	</Actions>
+</Crossref>

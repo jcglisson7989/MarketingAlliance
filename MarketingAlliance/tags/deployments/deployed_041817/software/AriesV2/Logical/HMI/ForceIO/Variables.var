@@ -1,0 +1,7 @@
+VAR
+	pToggle : REFERENCE TO BOOL;
+	pSet : REFERENCE TO BOOL;
+	pReset : REFERENCE TO BOOL;
+	pForceIOPt : REFERENCE TO BOOL;
+	ii_force : UDINT := 0;
+END_VAR

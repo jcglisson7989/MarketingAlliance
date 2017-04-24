@@ -1,0 +1,5 @@
+VAR
+	Init_Logbook : FBK_Init_Logbook;
+	loadHMITable : ARRAY[0..DEFINE_MAX_IDX_HMI_TABLES] OF hmiTableFBK_typ;
+	tableStats : hmiTableStats_typ;
+END_VAR

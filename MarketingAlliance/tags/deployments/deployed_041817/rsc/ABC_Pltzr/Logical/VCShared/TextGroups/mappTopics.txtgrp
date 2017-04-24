@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="mappTopics">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="1000"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="464344" Value=""/>
+    <Text ID="464345" Value="MpAlarm has been designed to support alarm management if Visual Components 4. Alarms are recorded and evaluated."/>
+    <Text ID="464346" Value="MpAudit can be used to log various events. These events could come from the HMI application, MpUser or from user-defined events. The user can determine the format in which the events are stored in a file."/>
+    <Text ID="464347" Value="MpAxis provides standard functions for axis control. This includes initialization, standard movements, autotuning and error handling. Multi-axis functions and cyclic setpoint generation are also supported."/>
+    <Text ID="464348" Value="MpCnc provides all necessary functions for implementing a CNC machine. This includes automatic movements, manual jogging and the associated configurations."/>
+    <Text ID="464349" Value="MpData makes it possible for users to back up values of defined process variables (PVs). This data is stored in .csv files."/>
+    <Text ID="464350" Value="MpDelta is used to configure and control a robot with delta mechanics with or without center rotation axis"/>
+    <Text ID="464351" Value="MpFile provides a file management system as well as a connection to Visual Components 4 to display files."/>
+    <Text ID="464352" Value="MpPackML complies with the requirements of the OMAC PackML standard to generate the logic for the machine controller. This component can be used to manage the various PackML states and modes as well as incorporating a Visual Components 4 HMI application."/>
+    <Text ID="464353" Value="MpRecipe provides all of the functions necessary for simple yet high-speed recipe management. This includes reading and writing as well as a connection to Visual Components 4. \nThis component is compatible with all other mapp components and therefore acts as a centralized recipe management system that consolidates the parameters from across the entire machine infrastructure."/>
+    <Text ID="464354" Value="MpUser is used to set up user management. Users are divided into groups with different access rights and can log in using a username and password"/>
+    <Text ID="464355" Value="MpOee"/>
+    <Text ID="464356" Value="MpRoboArm is used to configure and control a robot arm of 4 and 6 axes."/>
+    <Text ID="464357" Value="MpRoboArm is used to configure and control a robot arm of 4 and 6 axes."/>
+    <Text ID="464358" Value="MpRoboArm is used to configure and control a robot arm of 4 and 6 axes."/>
+    <Text ID="464359" Value="MpCom represents the heart of the mapp components and can be used to establish a connection and to structure the components."/>
+    <Text ID="464360" Value="MpScara is used to configure and control a SCARA robot with 2 or 4 axes."/>
+    <Text ID="464361" Value="MpScara is used to configure and control a SCARA robot with 2 or 4 axes."/>
+    <Text ID="464362" Value="MpSpindle controls a spindle for a CNC machine. Standard axis functions are integrated. Combined with MpCnc, the spindle in automatically detected and managed in CNC programs."/>
+    <Text ID="464363" Value="MpWebXs provides a web-based connection to mapp. It can be used for diagnostics and to configure mapp components."/>
+    <Text ID="464364" Value="MpScara is used to configure and control a SCARA robot with 2 or 4 axes."/>
+    <Text ID="464365" Value="MpDelta is used to configure and control a robot with delta mechanics with or without center rotation axis"/>
+    <Text ID="464366" Value="MpAxis provides standard functions for axis control. This includes initialization, standard movements, autotuning and error handling. Multi-axis functions and cyclic setpoint generation are also supported."/>
+    <Text ID="464367" Value="MpCnc provides all necessary functions for implementing a CNC machine. This includes automatic movements, manual jogging and the associated configurations."/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="464344" Value=""/>
+    <Text ID="464345" Value=""/>
+    <Text ID="464346" Value=""/>
+    <Text ID="464347" Value=""/>
+    <Text ID="464348" Value=""/>
+    <Text ID="464349" Value=""/>
+    <Text ID="464350" Value=""/>
+    <Text ID="464351" Value=""/>
+    <Text ID="464352" Value=""/>
+    <Text ID="464353" Value=""/>
+    <Text ID="464354" Value=""/>
+    <Text ID="464355" Value=""/>
+    <Text ID="464356" Value=""/>
+    <Text ID="464357" Value=""/>
+    <Text ID="464358" Value=""/>
+    <Text ID="464359" Value=""/>
+    <Text ID="464360" Value=""/>
+    <Text ID="464361" Value=""/>
+    <Text ID="464362" Value=""/>
+    <Text ID="464363" Value=""/>
+    <Text ID="464364" Value=""/>
+    <Text ID="464365" Value=""/>
+    <Text ID="464366" Value=""/>
+    <Text ID="464367" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="464344" Value=""/>
+    <Text ID="464345" Value=""/>
+    <Text ID="464346" Value=""/>
+    <Text ID="464347" Value=""/>
+    <Text ID="464348" Value=""/>
+    <Text ID="464349" Value=""/>
+    <Text ID="464350" Value=""/>
+    <Text ID="464351" Value=""/>
+    <Text ID="464352" Value=""/>
+    <Text ID="464353" Value=""/>
+    <Text ID="464354" Value=""/>
+    <Text ID="464355" Value=""/>
+    <Text ID="464356" Value=""/>
+    <Text ID="464357" Value=""/>
+    <Text ID="464358" Value=""/>
+    <Text ID="464359" Value=""/>
+    <Text ID="464360" Value=""/>
+    <Text ID="464361" Value=""/>
+    <Text ID="464362" Value=""/>
+    <Text ID="464363" Value=""/>
+    <Text ID="464364" Value=""/>
+    <Text ID="464365" Value=""/>
+    <Text ID="464366" Value=""/>
+    <Text ID="464367" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="464344" Value="0"/>
+    <Index ID="464345" Value="1"/>
+    <Index ID="464346" Value="2"/>
+    <Index ID="464347" Value="3"/>
+    <Index ID="464348" Value="5"/>
+    <Index ID="464349" Value="7"/>
+    <Index ID="464350" Value="8"/>
+    <Index ID="464351" Value="12"/>
+    <Index ID="464352" Value="13"/>
+    <Index ID="464353" Value="14"/>
+    <Index ID="464354" Value="15"/>
+    <Index ID="464355" Value="16"/>
+    <Index ID="464356" Value="18"/>
+    <Index ID="464357" Value="19"/>
+    <Index ID="464358" Value="20"/>
+    <Index ID="464359" Value="26"/>
+    <Index ID="464360" Value="21"/>
+    <Index ID="464361" Value="22"/>
+    <Index ID="464362" Value="23"/>
+    <Index ID="464363" Value="27"/>
+    <Index ID="464364" Value="11"/>
+    <Index ID="464365" Value="9"/>
+    <Index ID="464366" Value="4"/>
+    <Index ID="464367" Value="6"/>
+  </IndexMap>
+</TextGroup>
