@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VCXReferenceList>
+   <!--Intermediate File for generation of the XReferenceFile-->
+   <Tabs_20_Recipe ReferenceString="Source[local].Layer[Tabs_20_Recipe]">
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Tabs_20_Recipe].Control[Button_1].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[1]]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[Tabs_20_Recipe].Control[Button_4].Property[ColorDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.HMI.gHmi.status.tabKeysRadioArray[2]]</ReferenceString>
+            <AccessRights>R</AccessRights>
+         </DataPoint>
+      </Connection>
+   </Tabs_20_Recipe>
+</VCXReferenceList>

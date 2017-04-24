@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VCXReferenceList>
+   <!--Intermediate File for generation of the XReferenceFile-->
+   <UI_Change_Lang ReferenceString="Source[local].Layer[UI_Change_Lang]">
+      <Connection>
+         <Property ReferenceString="Source[local].Layer[UI_Change_Lang].VirtualKey[%embVirtualKey_64].Action[Action_0].Property[ValueDatapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.gMachine.HMI.PowerCycleSystem]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+   </UI_Change_Lang>
+</VCXReferenceList>

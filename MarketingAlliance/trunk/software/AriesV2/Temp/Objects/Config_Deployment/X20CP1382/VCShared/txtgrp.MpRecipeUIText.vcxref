@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VCXReferenceList>
+   <!--Intermediate File for generation of the XReferenceFile-->
+   <FolderCount1 ReferenceString="Source[global].TextGroup[MpRecipeUIText].Snippet[]">
+      <Connection>
+         <Property ReferenceString="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount1].Property[Datapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FolderCount]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount1].Property[Datapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FileCount]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName1].Property[Datapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.CurrentDir]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[global].TextGroup[MpRecipeUIText].Snippet[FolderCount].Property[Datapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FolderCount]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[global].TextGroup[MpRecipeUIText].Snippet[FileCount].Property[Datapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.FileCount]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+      <Connection>
+         <Property ReferenceString="Source[global].TextGroup[MpRecipeUIText].Snippet[DirName].Property[Datapoint]" />
+         <DataPoint>
+            <ReferenceString>Source[global].Variable[DataSource.Auxiliary_Services_Control.File_Manager_UIConnect.File.PathInfo.CurrentDir]</ReferenceString>
+            <AccessRights>RW</AccessRights>
+         </DataPoint>
+      </Connection>
+   </FolderCount1>
+</VCXReferenceList>

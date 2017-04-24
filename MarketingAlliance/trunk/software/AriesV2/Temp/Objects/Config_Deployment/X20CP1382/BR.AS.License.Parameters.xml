@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
+    <ConnectionParameters>/RT=1000 /AM=* /SDT=5 /DAIP=192.168.10.10 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>C:\Users\Admin\Desktop\MarketingAlliance_Aries_Merge\software\AriesV2\AriesV2.apj</ApjFullFileName>
+    <ProjectName>AriesV2</ProjectName>
+    <ActiveConfigurationName>Config_Deployment</ActiveConfigurationName>
+    <LicenseDataFolder>C:\Users\Admin\Desktop\MarketingAlliance_Aries_Merge\software\AriesV2\Temp\Objects\Config_Deployment\X20CP1382</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

@@ -1,0 +1,897 @@
+<?xml version="1.0"?>
+<Crossref Scope="Auxiliary_Services_Control.Recipe_Handling" AppMod="">
+	<Vars>
+		<Var Name="Recipe_Han.pCmd" Scope="Local" Type="REFERENCE TO Recipe_HMI_Command_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="9" C="4" PS="Ln:9, Col:4" A="A"/>
+				<Pos L="12" C="4" PS="Ln:12, Col:4" A="A"/>
+				<Pos L="15" C="4" PS="Ln:15, Col:4" A="A"/>
+				<Pos L="18" C="4" PS="Ln:18, Col:4" A="A"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc_Timer_Find_Active" Scope="Local" Type="TON">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="229" C="16" PS="Ln:229, Col:16" A="R"/>
+				<Pos L="241" C="30" PS="Ln:241, Col:30" A="R"/>
+				<Pos L="270" C="16" PS="Ln:270, Col:16" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.ii_char" Scope="Local" Type="UDINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="196" C="7" PS="Ln:196, Col:7" A="W"/>
+				<Pos L="197" C="50" PS="Ln:197, Col:50" A="R"/>
+				<Pos L="197" C="122" PS="Ln:197, Col:122" A="R"/>
+				<Pos L="198" C="48" PS="Ln:198, Col:48" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locRefreshBeforeCall" Scope="Local" Type="BOOL">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="215" C="2" PS="Ln:215, Col:2" A="W"/>
+				<Pos L="228" C="51" PS="Ln:228, Col:51" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locDTGetTime.enable" Scope="Local" Type="DTGetTime">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="186" C="3" PS="Ln:186, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locDTGetTime" Scope="Local" Type="DTGetTime">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="187" C="3" PS="Ln:187, Col:3" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locDTGetTime.DT1" Scope="Local" Type="DTGetTime">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="189" C="9" PS="Ln:189, Col:9" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locTimeString" Scope="Local" Type="STRING[255]">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="188" C="3" PS="Ln:188, Col:3" A="W"/>
+				<Pos L="189" C="31" PS="Ln:189, Col:31" A="R"/>
+				<Pos L="194" C="49" PS="Ln:194, Col:49" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locCurrentlySelectedCfgIsActive" Scope="Local" Type="USINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="73" C="2" PS="Ln:73, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locCurrentlySelectedRecIsActive" Scope="Local" Type="USINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="72" C="2" PS="Ln:72, Col:2" A="W"/>
+				<Pos L="136" C="89" PS="Ln:136, Col:89" A="R"/>
+				<Pos L="165" C="31" PS="Ln:165, Col:31" A="R"/>
+				<Pos L="205" C="34" PS="Ln:205, Col:34" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.locFindActiveRecipe" Scope="Local" Type="USINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="23" C="3" PS="Ln:23, Col:3" A="W"/>
+				<Pos L="27" C="3" PS="Ln:27, Col:3" A="W"/>
+				<Pos L="228" C="76" PS="Ln:228, Col:76" A="R"/>
+				<Pos L="230" C="3" PS="Ln:230, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.ii_recipes" Scope="Local" Type="UINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="6" C="6" PS="Action_Set_Active_Rec" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="9" C="20" PS="Ln:9, Col:20" A="RW"/>
+				<Pos L="12" C="20" PS="Ln:12, Col:20" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="15" C="20" PS="Ln:15, Col:20" A="RW"/>
+				<Pos L="18" C="20" PS="Ln:18, Col:20" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.cmd.Copy_default_to_save" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="30" C="5" PS="Ln:30, Col:5" A="R"/>
+				<Pos L="262" C="2" PS="Ln:262, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.cmd.Copy_default_to_active" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="34" C="5" PS="Ln:34, Col:5" A="R"/>
+				<Pos L="263" C="2" PS="Ln:263, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.cmd.Copy_save_to_active" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="38" C="5" PS="Ln:38, Col:5" A="R"/>
+				<Pos L="264" C="2" PS="Ln:264, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.cmd.Copy_save_to_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="42" C="5" PS="Ln:42, Col:5" A="R"/>
+				<Pos L="265" C="2" PS="Ln:265, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.cmd.Copy_active_to_save" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="46" C="5" PS="Ln:46, Col:5" A="R"/>
+				<Pos L="266" C="2" PS="Ln:266, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.cmd.Copy_active_to_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="50" C="5" PS="Ln:50, Col:5" A="R"/>
+				<Pos L="267" C="2" PS="Ln:267, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.cmd.Copy_internal_to_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="54" C="5" PS="Ln:54, Col:5" A="R"/>
+				<Pos L="268" C="2" PS="Ln:268, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.status.save_differs_from_active" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="58" C="2" PS="Ln:58, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.status.default_differs_from_save" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="59" C="2" PS="Ln:59, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.status.active_differs_from_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="60" C="2" PS="Ln:60, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.status.save_differs_from_active" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="64" C="2" PS="Ln:64, Col:2" A="W"/>
+				<Pos L="68" C="49" PS="Ln:68, Col:49" A="R"/>
+				<Pos L="136" C="34" PS="Ln:136, Col:34" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.status.default_differs_from_save" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="65" C="2" PS="Ln:65, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.status.active_differs_from_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="66" C="2" PS="Ln:66, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Refresh.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="109" C="5" PS="Ln:109, Col:5" A="R"/>
+				<Pos L="117" C="2" PS="Ln:117, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Refresh.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="113" C="5" PS="Ln:113, Col:5" A="R"/>
+				<Pos L="121" C="2" PS="Ln:121, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Refresh.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="118" C="2" PS="Ln:118, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Refresh.Lock" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="119" C="2" PS="Ln:119, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Save.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="123" C="5" PS="Ln:123, Col:5" A="R"/>
+				<Pos L="135" C="2" PS="Ln:135, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Save.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="131" C="5" PS="Ln:131, Col:5" A="R"/>
+				<Pos L="139" C="2" PS="Ln:139, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Save.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="136" C="2" PS="Ln:136, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Save.Lock" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="137" C="2" PS="Ln:137, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Load.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="142" C="5" PS="Ln:142, Col:5" A="R"/>
+				<Pos L="150" C="2" PS="Ln:150, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Load.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="146" C="5" PS="Ln:146, Col:5" A="R"/>
+				<Pos L="154" C="2" PS="Ln:154, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Load.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="151" C="2" PS="Ln:151, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Load.Lock" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="152" C="2" PS="Ln:152, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Delete.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="156" C="5" PS="Ln:156, Col:5" A="R"/>
+				<Pos L="164" C="2" PS="Ln:164, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Delete.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="160" C="5" PS="Ln:160, Col:5" A="R"/>
+				<Pos L="168" C="2" PS="Ln:168, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Delete.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="165" C="2" PS="Ln:165, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Delete.Lock" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="166" C="2" PS="Ln:166, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Overwrite.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="170" C="5" PS="Ln:170, Col:5" A="R"/>
+				<Pos L="180" C="2" PS="Ln:180, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Overwrite.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="175" C="5" PS="Ln:175, Col:5" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Overwrite.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="182" C="2" PS="Ln:182, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Overwrite.Lock" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="183" C="2" PS="Ln:183, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Copy.DP" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="185" C="5" PS="Ln:185, Col:5" A="R"/>
+				<Pos L="204" C="2" PS="Ln:204, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Copy.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="205" C="2" PS="Ln:205, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Rec.HMI.Copy.Lock" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="206" C="2" PS="Ln:206, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Refresh.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="208" C="2" PS="Ln:208, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Save.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="209" C="2" PS="Ln:209, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Load.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="210" C="2" PS="Ln:210, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Delete.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="211" C="2" PS="Ln:211, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Overwrite.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="212" C="2" PS="Ln:212, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.HMI.Copy.Status" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="213" C="2" PS="Ln:213, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.cmd.Copy_default_to_save" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="289" C="2" PS="Ln:289, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.cmd.Copy_default_to_active" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="290" C="2" PS="Ln:290, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.cmd.Copy_save_to_active" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="291" C="2" PS="Ln:291, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.cmd.Copy_save_to_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="292" C="2" PS="Ln:292, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.cmd.Copy_active_to_save" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="293" C="2" PS="Ln:293, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.cmd.Copy_active_to_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="294" C="2" PS="Ln:294, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.loc.Cfg.cmd.Copy_internal_to_default" Scope="Local" Type="Recipe_loc_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="295" C="2" PS="Ln:295, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.pRecCfgUIConnect" Scope="Local" Type="REFERENCE TO MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="8" C="4" PS="Ln:8, Col:4" A="A"/>
+				<Pos L="11" C="4" PS="Ln:11, Col:4" A="A"/>
+				<Pos L="14" C="4" PS="Ln:14, Col:4" A="A"/>
+				<Pos L="17" C="4" PS="Ln:17, Col:4" A="A"/>
+				<Pos L="220" C="2" PS="Ln:220, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.pRecCfgUIConnect.MessageBox.Type" Scope="Local" Type="REFERENCE TO MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="75" C="7" PS="Ln:75, Col:7" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_Han.pRecCfgUIConnect.MessageBox.Confirm" Scope="Local" Type="REFERENCE TO MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="80" C="15" PS="Ln:80, Col:15" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="4" C="2" PS="Ln:4, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.save.Rec" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="31" C="3" PS="Ln:31, Col:3" A="W"/>
+				<Pos L="39" C="25" PS="Ln:39, Col:25" A="R"/>
+				<Pos L="43" C="30" PS="Ln:43, Col:30" A="R"/>
+				<Pos L="47" C="3" PS="Ln:47, Col:3" A="W"/>
+				<Pos L="64" C="73" PS="Ln:64, Col:73" A="R"/>
+				<Pos L="65" C="103" PS="Ln:65, Col:103" A="R"/>
+				<Pos L="83" C="7" PS="Ln:83, Col:7" A="W"/>
+				<Pos L="253" C="3" PS="Ln:253, Col:3" A="W"/>
+				<Pos L="259" C="25" PS="Ln:259, Col:25" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.defaultvals.Rec" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="31" C="23" PS="Ln:31, Col:23" A="R"/>
+				<Pos L="35" C="25" PS="Ln:35, Col:25" A="R"/>
+				<Pos L="43" C="3" PS="Ln:43, Col:3" A="W"/>
+				<Pos L="51" C="3" PS="Ln:51, Col:3" A="W"/>
+				<Pos L="65" C="74" PS="Ln:65, Col:74" A="R"/>
+				<Pos L="66" C="100" PS="Ln:66, Col:100" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Rec" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="35" C="3" PS="Ln:35, Col:3" A="W"/>
+				<Pos L="39" C="3" PS="Ln:39, Col:3" A="W"/>
+				<Pos L="47" C="23" PS="Ln:47, Col:23" A="R"/>
+				<Pos L="51" C="30" PS="Ln:51, Col:30" A="R"/>
+				<Pos L="64" C="95" PS="Ln:64, Col:95" A="R"/>
+				<Pos L="66" C="76" PS="Ln:66, Col:76" A="R"/>
+				<Pos L="83" C="27" PS="Ln:83, Col:27" A="R"/>
+				<Pos L="253" C="23" PS="Ln:253, Col:23" A="R"/>
+				<Pos L="259" C="3" PS="Ln:259, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.save.Cfg" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="58" C="73" PS="Ln:58, Col:73" A="R"/>
+				<Pos L="59" C="103" PS="Ln:59, Col:103" A="R"/>
+				<Pos L="85" C="7" PS="Ln:85, Col:7" A="W"/>
+				<Pos L="281" C="3" PS="Ln:281, Col:3" A="W"/>
+				<Pos L="286" C="25" PS="Ln:286, Col:25" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.active.Cfg" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="58" C="95" PS="Ln:58, Col:95" A="R"/>
+				<Pos L="60" C="76" PS="Ln:60, Col:76" A="R"/>
+				<Pos L="85" C="27" PS="Ln:85, Col:27" A="R"/>
+				<Pos L="281" C="23" PS="Ln:281, Col:23" A="R"/>
+				<Pos L="286" C="3" PS="Ln:286, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.defaultvals.Cfg" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="59" C="74" PS="Ln:59, Col:74" A="R"/>
+				<Pos L="60" C="100" PS="Ln:60, Col:100" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.IO.Rec.I.FileName" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="171" C="3" PS="Ln:171, Col:3" A="W"/>
+				<Pos L="190" C="3" PS="Ln:190, Col:3" A="W"/>
+				<Pos L="191" C="3" PS="Ln:191, Col:3" A="W"/>
+				<Pos L="192" C="17" PS="Ln:192, Col:17" A="R"/>
+				<Pos L="192" C="60" PS="Ln:192, Col:60" A="R"/>
+				<Pos L="193" C="17" PS="Ln:193, Col:17" A="R"/>
+				<Pos L="194" C="17" PS="Ln:194, Col:17" A="R"/>
+				<Pos L="195" C="17" PS="Ln:195, Col:17" A="R"/>
+				<Pos L="196" C="37" PS="Ln:196, Col:37" A="R"/>
+				<Pos L="197" C="21" PS="Ln:197, Col:21" A="R"/>
+				<Pos L="197" C="93" PS="Ln:197, Col:93" A="R"/>
+				<Pos L="198" C="19" PS="Ln:198, Col:19" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.IO.Cfg.I.FileName" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="176" C="3" PS="Ln:176, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecCfg.IO.Rec.O.Initial_Load" Scope="Global" Type="Global_Par_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="257" C="3" PS="Ln:257, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gAlarms.Unsaved_Recipe_Params" Scope="Global" Type="Machine_Alarms_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="68" C="2" PS="Ln:68, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfigName" Scope="Global" Type="STRING[255]">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="73" C="147" PS="Ln:73, Col:147" A="R"/>
+				<Pos L="101" C="120" PS="Ln:101, Col:120" A="R"/>
+				<Pos L="285" C="3" PS="Ln:285, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipeName" Scope="Global" Type="STRING[255]">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="72" C="147" PS="Ln:72, Col:147" A="R"/>
+				<Pos L="94" C="120" PS="Ln:94, Col:120" A="R"/>
+				<Pos L="191" C="32" PS="Ln:191, Col:32" A="R"/>
+				<Pos L="258" C="3" PS="Ln:258, Col:3" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="7" C="116" PS="Action_Set_Active_Rec" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_CSV_Control.Save" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="172" C="3" PS="Ln:172, Col:3" A="W"/>
+				<Pos L="201" C="3" PS="Ln:201, Col:3" A="W"/>
+				<Pos L="245" C="41" PS="Ln:245, Col:41" A="R"/>
+				<Pos L="246" C="3" PS="Ln:246, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_CSV_Control" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="217" C="2" PS="Ln:217, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_CSV_Control.CommandDone" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="245" C="5" PS="Ln:245, Col:5" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_CSV_Control.Load" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="245" C="68" PS="Ln:245, Col:68" A="R"/>
+				<Pos L="247" C="3" PS="Ln:247, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_CSV_Control.Info.LastLoadedRecipe" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="258" C="18" PS="Ln:258, Col:18" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_CSV_RegPar" Scope="Global" Type="MpRecipeRegPar">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="218" C="2" PS="Ln:218, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Recipe_CSV_UI" Scope="Global" Type="MpRecipeUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="219" C="2" PS="Ln:219, Col:2" A="W"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="11" C="4" PS="Action_Set_Active_Rec" A="RW"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="8" C="32" PS="Ln:8, Col:32" A="RW"/>
+				<Pos L="11" C="32" PS="Ln:11, Col:32" A="RW"/>
+				<Pos L="221" C="2" PS="Ln:221, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Recipe.List.SelectedIndex" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="72" C="92" PS="Ln:72, Col:92" A="R"/>
+				<Pos L="94" C="65" PS="Ln:94, Col:65" A="R"/>
+				<Pos L="171" C="72" PS="Ln:171, Col:72" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="4" C="2" PS="Action_Set_Active_Rec" A="W"/>
+				<Pos L="7" C="61" PS="Action_Set_Active_Rec" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Recipe.List.Names" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="72" C="52" PS="Ln:72, Col:52" A="R"/>
+				<Pos L="94" C="25" PS="Ln:94, Col:25" A="R"/>
+				<Pos L="171" C="32" PS="Ln:171, Col:32" A="R"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="7" C="21" PS="Action_Set_Active_Rec" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.MessageBox.Confirm" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="93" C="17" PS="Ln:93, Col:17" A="R"/>
+				<Pos L="95" C="8" PS="Ln:95, Col:8" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.MessageBox.Cancel" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="96" C="8" PS="Ln:96, Col:8" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Recipe.Refresh" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="110" C="3" PS="Ln:110, Col:3" A="W"/>
+				<Pos L="215" C="26" PS="Ln:215, Col:26" A="R"/>
+				<Pos L="228" C="10" PS="Ln:228, Col:10" A="R"/>
+				<Pos L="248" C="3" PS="Ln:248, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Recipe.Save" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="128" C="3" PS="Ln:128, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Recipe.Load" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="143" C="3" PS="Ln:143, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Recipe.Delete" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="157" C="3" PS="Ln:157, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Status" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="251" C="13" PS="Ln:251, Col:13" A="R"/>
+				<Pos L="256" C="13" PS="Ln:256, Col:13" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gRecipe_CSV_UIConnect.Recipe.List.StepDown" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="10" C="4" PS="Action_Set_Active_Rec" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Config_CSV_Control.Save" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="177" C="3" PS="Ln:177, Col:3" A="W"/>
+				<Pos L="273" C="41" PS="Ln:273, Col:41" A="R"/>
+				<Pos L="274" C="3" PS="Ln:274, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Config_CSV_Control" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="223" C="2" PS="Ln:223, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Config_CSV_Control.CommandDone" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="273" C="5" PS="Ln:273, Col:5" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Config_CSV_Control.Load" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="273" C="68" PS="Ln:273, Col:68" A="R"/>
+				<Pos L="275" C="3" PS="Ln:275, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Config_CSV_Control.Info.LastLoadedRecipe" Scope="Global" Type="MpRecipeCsv">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="285" C="18" PS="Ln:285, Col:18" A="R"/>
+			</File>
+		</Var>
+		<Var Name="Config_CSV_RegPar" Scope="Global" Type="MpRecipeRegPar">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="224" C="2" PS="Ln:224, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="Config_CSV_UI" Scope="Global" Type="MpRecipeUI">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="225" C="2" PS="Ln:225, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="14" C="32" PS="Ln:14, Col:32" A="RW"/>
+				<Pos L="17" C="32" PS="Ln:17, Col:32" A="RW"/>
+				<Pos L="226" C="2" PS="Ln:226, Col:2" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.Recipe.List.SelectedIndex" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="73" C="92" PS="Ln:73, Col:92" A="R"/>
+				<Pos L="101" C="65" PS="Ln:101, Col:65" A="R"/>
+				<Pos L="176" C="72" PS="Ln:176, Col:72" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.Recipe.List.Names" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="73" C="52" PS="Ln:73, Col:52" A="R"/>
+				<Pos L="101" C="25" PS="Ln:101, Col:25" A="R"/>
+				<Pos L="176" C="32" PS="Ln:176, Col:32" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.MessageBox.Confirm" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="100" C="17" PS="Ln:100, Col:17" A="R"/>
+				<Pos L="102" C="8" PS="Ln:102, Col:8" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.MessageBox.Cancel" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="103" C="8" PS="Ln:103, Col:8" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.Recipe.Refresh" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="114" C="3" PS="Ln:114, Col:3" A="W"/>
+				<Pos L="276" C="3" PS="Ln:276, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.Recipe.Save" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="132" C="3" PS="Ln:132, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.Recipe.Load" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="147" C="3" PS="Ln:147, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.Recipe.Delete" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="161" C="3" PS="Ln:161, Col:3" A="W"/>
+			</File>
+		</Var>
+		<Var Name="gConfig_CSV_UIConnect.Status" Scope="Global" Type="MpRecipeUIConnectType">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="279" C="13" PS="Ln:279, Col:13" A="R"/>
+				<Pos L="284" C="13" PS="Ln:284, Col:13" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gHmiParamTable.selValueFormVisible" Scope="Global" Type="hmiParamListTable_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="118" C="45" PS="Ln:118, Col:45" A="R"/>
+				<Pos L="136" C="192" PS="Ln:136, Col:192" A="R"/>
+				<Pos L="151" C="43" PS="Ln:151, Col:43" A="R"/>
+				<Pos L="165" C="79" PS="Ln:165, Col:79" A="R"/>
+				<Pos L="205" C="87" PS="Ln:205, Col:87" A="R"/>
+				<Pos L="208" C="45" PS="Ln:208, Col:45" A="R"/>
+				<Pos L="209" C="42" PS="Ln:209, Col:42" A="R"/>
+				<Pos L="210" C="42" PS="Ln:210, Col:42" A="R"/>
+				<Pos L="211" C="44" PS="Ln:211, Col:44" A="R"/>
+			</File>
+		</Var>
+		<Var Name="gHmi.prv.currentPage" Scope="Global" Type="hmiControlLogic_typ">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="6" C="7" PS="Ln:6, Col:7" A="R"/>
+				<Pos L="22" C="13" PS="Ln:22, Col:13" A="R"/>
+				<Pos L="26" C="13" PS="Ln:26, Col:13" A="R"/>
+				<Pos L="81" C="10" PS="Ln:81, Col:10" A="R"/>
+				<Pos L="91" C="9" PS="Ln:91, Col:9" A="R"/>
+				<Pos L="136" C="131" PS="Ln:136, Col:131" A="R"/>
+			</File>
+		</Var>
+	</Vars>
+	<Consts>
+		<Const Name="MAX_IDX_TOTAL_RECIPES" Scope="Global" Type="UINT">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="6" C="25" PS="Action_Set_Active_Rec" A="R"/>
+			</File>
+		</Const>
+	</Consts>
+	<Enums>
+		<Enum Name="mpRECIPE_UI_MSG_CONFIRM_LOAD" Scope="Global" Type="MpRecipeUIMessageEnum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="76" C="3" PS="Ln:76, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="mpRECIPE_UI_MSG_CONFIRM_SAVE" Scope="Global" Type="MpRecipeUIMessageEnum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="78" C="3" PS="Ln:78, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="mpRECIPE_UI_MSG_CONFIRM_CREATE" Scope="Global" Type="MpRecipeUIMessageEnum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="88" C="3" PS="Ln:88, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="mpRECIPE_UI_MSG_CONFIRM_DELETE" Scope="Global" Type="MpRecipeUIMessageEnum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="90" C="3" PS="Ln:90, Col:3" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="mpRECIPE_UI_STATUS_LOAD" Scope="Global" Type="MpRecipeUIStatusEnum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="256" C="44" PS="Ln:256, Col:44" A="R"/>
+				<Pos L="284" C="44" PS="Ln:284, Col:44" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="mpRECIPE_UI_STATUS_SAVE" Scope="Global" Type="MpRecipeUIStatusEnum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="251" C="44" PS="Ln:251, Col:44" A="R"/>
+				<Pos L="279" C="44" PS="Ln:279, Col:44" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="HMI_RECIPE_20_SELECT" Scope="Global" Type="HMI_Page_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="7" C="3" PS="Ln:7, Col:3" A="R"/>
+				<Pos L="22" C="36" PS="Ln:22, Col:36" A="R"/>
+				<Pos L="82" C="6" PS="Ln:82, Col:6" A="R"/>
+				<Pos L="92" C="5" PS="Ln:92, Col:5" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="HMI_RECIPE_21_PVLIST" Scope="Global" Type="HMI_Page_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="10" C="3" PS="Ln:10, Col:3" A="R"/>
+				<Pos L="136" C="154" PS="Ln:136, Col:154" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="HMI_CONFIG_30_SELECT" Scope="Global" Type="HMI_Page_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="13" C="3" PS="Ln:13, Col:3" A="R"/>
+				<Pos L="26" C="36" PS="Ln:26, Col:36" A="R"/>
+				<Pos L="84" C="6" PS="Ln:84, Col:6" A="R"/>
+				<Pos L="99" C="5" PS="Ln:99, Col:5" A="R"/>
+			</File>
+		</Enum>
+		<Enum Name="HMI_CONFIG_31_PVLIST" Scope="Global" Type="HMI_Page_Enum">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="16" C="3" PS="Ln:16, Col:3" A="R"/>
+			</File>
+		</Enum>
+	</Enums>
+	<Funcs>
+		<Func Name="DTGetTime" Lib="astime">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="187" C="3" PS="Ln:187, Col:3"/>
+			</File>
+		</Func>
+		<Func Name="ascDT" Lib="astime">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="189" C="3" PS="Ln:189, Col:3"/>
+			</File>
+		</Func>
+		<Func Name="brsmemset" Lib="AsBrStr">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="192" C="3" PS="Ln:192, Col:3"/>
+				<Pos L="198" C="5" PS="Ln:198, Col:5"/>
+			</File>
+		</Func>
+		<Func Name="brsmemcmp" Lib="AsBrStr">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="58" C="59" PS="Ln:58, Col:59"/>
+				<Pos L="59" C="60" PS="Ln:59, Col:60"/>
+				<Pos L="60" C="62" PS="Ln:60, Col:62"/>
+				<Pos L="64" C="59" PS="Ln:64, Col:59"/>
+				<Pos L="65" C="60" PS="Ln:65, Col:60"/>
+				<Pos L="66" C="62" PS="Ln:66, Col:62"/>
+				<Pos L="197" C="7" PS="Ln:197, Col:7"/>
+				<Pos L="197" C="79" PS="Ln:197, Col:79"/>
+			</File>
+		</Func>
+		<Func Name="brsstrcat" Lib="AsBrStr">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="193" C="3" PS="Ln:193, Col:3"/>
+				<Pos L="194" C="3" PS="Ln:194, Col:3"/>
+				<Pos L="195" C="3" PS="Ln:195, Col:3"/>
+			</File>
+		</Func>
+		<Func Name="brsstrlen" Lib="AsBrStr">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="192" C="46" PS="Ln:192, Col:46"/>
+				<Pos L="196" C="23" PS="Ln:196, Col:23"/>
+			</File>
+		</Func>
+		<Func Name="brsstrcmp" Lib="AsBrStr">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="72" C="38" PS="Ln:72, Col:38"/>
+				<Pos L="73" C="38" PS="Ln:73, Col:38"/>
+				<Pos L="94" C="11" PS="Ln:94, Col:11"/>
+				<Pos L="101" C="11" PS="Ln:101, Col:11"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="7" C="7" PS="Action_Set_Active_Rec"/>
+			</File>
+		</Func>
+		<Func Name="Tms" Lib="jgLibC">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="229" C="39" PS="Ln:229, Col:39"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerCyclic" Lib="bglibasWBR">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="270" C="2" PS="Ln:270, Col:2"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerStart" Lib="bglibasWBR">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="229" C="3" PS="Ln:229, Col:3"/>
+			</File>
+		</Func>
+		<Func Name="bgTimerIsTimeOut" Lib="bglibasWBR">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="241" C="13" PS="Ln:241, Col:13"/>
+			</File>
+		</Func>
+		<Func Name="MpRecipeRegPar" Lib="MpRecipe">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="218" C="2" PS="Ln:218, Col:2"/>
+				<Pos L="224" C="2" PS="Ln:224, Col:2"/>
+			</File>
+		</Func>
+		<Func Name="MpRecipeUI" Lib="MpRecipe">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="219" C="2" PS="Ln:219, Col:2"/>
+				<Pos L="225" C="2" PS="Ln:225, Col:2"/>
+			</File>
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Action_Set_Active_Rec.st">
+				<Pos L="11" C="4" PS="Action_Set_Active_Rec"/>
+			</File>
+		</Func>
+		<Func Name="MpRecipeCsv" Lib="MpRecipe">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="217" C="2" PS="Ln:217, Col:2"/>
+				<Pos L="223" C="2" PS="Ln:223, Col:2"/>
+			</File>
+		</Func>
+	</Funcs>
+	<Actions>
+		<Action Name="Recipe_Han.Action_Set_Active_Rec">
+			<File Name="C:/Users/Admin/Desktop/MarketingAlliance_Aries_Merge/software/AriesV2/Logical/Auxiliary_Services_Control/Recipe_Handling/Cyclic.st">
+				<Pos L="126" C="3" PS="Ln:126, Col:3"/>
+				<Pos L="242" C="3" PS="Ln:242, Col:3"/>
+			</File>
+		</Action>
+	</Actions>
+</Crossref>
