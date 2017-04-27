@@ -142,33 +142,33 @@
   </Layers>
   <MovementOrder>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Listbox_3]">
-      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
+      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
       <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
       <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Listbox_4]">
       <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
       <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
       <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Listbox_2]">
-      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
+      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
       <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
       <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
       <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Numeric_5]">
-      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
-      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
+      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
+      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
       <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
-      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Numeric_6]"/>
+      <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_2]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[pvListViewMain].Control[Numeric_6]">
-      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
-      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
-      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
+      <Property Name="Down" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
+      <Property Name="Left" Value="Source[local].Layer[pvListViewMain].Control[Listbox_3]"/>
+      <Property Name="Right" Value="Source[local].Layer[pvListViewMain].Control[Numeric_5]"/>
       <Property Name="Up" Value="Source[local].Layer[pvListViewMain].Control[Listbox_4]"/>
     </MovementEntry>
   </MovementOrder>

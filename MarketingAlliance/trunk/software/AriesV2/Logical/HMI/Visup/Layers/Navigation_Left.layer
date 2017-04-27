@@ -34,7 +34,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="Height" Value="447"/>
+      <Property Name="Height" Value="424"/>
       <Property Name="Left" Value="3"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -87,7 +87,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_6]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_18]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="54"/>
+      <Property Name="Height" Value="80"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="20"/>
       <Property Name="Multiline" Value="Automatic"/>
@@ -103,7 +103,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="74"/>
+      <Property Name="Top" Value="59"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_0_HOME]"/>
       <Property Name="Width" Value="333"/>
     </Control>
@@ -118,7 +118,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_7]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_18]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="54"/>
+      <Property Name="Height" Value="80"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="20"/>
       <Property Name="Multiline" Value="Automatic"/>
@@ -134,39 +134,8 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="147"/>
+      <Property Name="Top" Value="149"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_1_RECIPE]"/>
-      <Property Name="Width" Value="333"/>
-    </Control>
-    <Control ClassId="0x00001002" Name="Button_4">
-      <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="BackColor" Value="250"/>
-      <Property Name="BitmapAlignmentHorizontal" Value="Right"/>
-      <Property Name="BitmapIndexDatapoint" Value="None"/>
-      <Property Name="BitmapSource" Value="None"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_8]"/>
-      <Property Name="Font" Value="Source[local].Font[rockwell_18]"/>
-      <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="54"/>
-      <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="20"/>
-      <Property Name="Multiline" Value="Automatic"/>
-      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-      <Property Name="PressedForeColor" Value="1"/>
-      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-      <Property Name="SpacingHorizontal" Value="12"/>
-      <Property Name="SpacingVertical" Value="10"/>
-      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.HMI.gHmi.status.menuVisibleLT]"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-      <Property Name="TextGroup" Value="Source[local].TextGroup[MM_Left_Titles]"/>
-      <Property Name="TextIndex" Value="3"/>
-      <Property Name="TextIndexDatapoint" Value="None"/>
-      <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="293"/>
-      <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_3_LOGIN]"/>
       <Property Name="Width" Value="333"/>
     </Control>
     <Control ClassId="0x00001002" Name="Button_5">
@@ -180,7 +149,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_9]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_18]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="54"/>
+      <Property Name="Height" Value="80"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="20"/>
       <Property Name="Multiline" Value="Automatic"/>
@@ -196,7 +165,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="366"/>
+      <Property Name="Top" Value="329"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_4_DIAGNOSTICS]"/>
       <Property Name="Width" Value="333"/>
     </Control>
@@ -211,7 +180,7 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_47]"/>
       <Property Name="Font" Value="Source[local].Font[rockwell_18]"/>
       <Property Name="ForeColor" Value="0"/>
-      <Property Name="Height" Value="54"/>
+      <Property Name="Height" Value="80"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="20"/>
       <Property Name="Multiline" Value="Automatic"/>
@@ -227,7 +196,7 @@
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
-      <Property Name="Top" Value="220"/>
+      <Property Name="Top" Value="239"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[APP_MENU_LF_2_CONFIG]"/>
       <Property Name="Width" Value="333"/>
     </Control>
