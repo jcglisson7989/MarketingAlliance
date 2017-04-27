@@ -47,18 +47,18 @@
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001005" Name="Bitmap_1">
-          <Property Name="BackColor" Value="15"/>
-          <Property Name="Bitmap" Value="Source[local].Bitmap[logoMarketingAllianceInc]"/>
+          <Property Name="Bitmap" Value="Source[local].Bitmap[logoMarketingAlliance]"/>
           <Property Name="BitmapSource" Value="SingleBitmap"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="200"/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="126"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="286"/>
+          <Property Name="Left" Value="86"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-          <Property Name="Top" Value="121"/>
-          <Property Name="Width" Value="200"/>
+          <Property Name="Top" Value="152"/>
+          <Property Name="Width" Value="617"/>
         </Control>
       </Controls>
       <KeyMapping/>

@@ -167,5 +167,32 @@
         <seg>Delay after creasing to compensate for blade movement</seg>
       </tuv>
     </tu>
+    <tu tuid="PV.6">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.BypassBoardLengthError</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.6">
+      <tuv xml:lang="en">
+        <seg>Board Length Error Bypass</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.6">
+      <tuv xml:lang="en">
+        <seg>Bypass sending machine into ERR state when measured board length doesn't match configured board length</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

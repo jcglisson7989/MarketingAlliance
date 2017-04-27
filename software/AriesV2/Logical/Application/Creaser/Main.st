@@ -100,7 +100,7 @@ PROGRAM _CYCLIC
 					MachineState := MACHINE_STATE_ERROR;
 				ELSE
 					//					setflagCreaserIndexCommand := TRUE;
-					
+					iSoftStopCommand := FALSE;
 					Action_Start_Feeder;
 					ProcessState := PRCS_STATE_INIT;
 					MachineState := MACHINE_STATE_RUNNING;

@@ -5,10 +5,11 @@ ACTION Action_CreaserProcess_SM:
 		PRCS_STATE_INIT:
 			IO.oBoardFeedingLight := FALSE;
 			Current_Board_Position := 0;
+			iSoftStopCommand := FALSE;
 					
 			Action_Validate_Board_Length;					
 					
-			IF flagBoardLengthCfgErr THEN
+			IF flagBoardLengthCfgErr AND (gRecCfg.active.Cfg.Creaser.BypassBoardLengthError = 0) THEN
 				flagBoardLengthCfgErr := FALSE;
 				ProcessState := PRCS_STATE_ERROR;
 			ELSIF IO.iCreaserShaftSensor THEN
@@ -106,10 +107,10 @@ ACTION Action_CreaserProcess_SM:
 						
 				Latch_Board_Length := Current_Board_Position + gRecCfg.active.Cfg.Creaser.PhotoEyeOffset;
 						
-				IF Latch_Board_Length > (gRecCfg.active.Rec.Crease.TotalBoardLength + gRecCfg.active.Cfg.Creaser.BoardLengthTolerance) THEN
+				IF (Latch_Board_Length > (gRecCfg.active.Rec.Crease.TotalBoardLength + gRecCfg.active.Cfg.Creaser.BoardLengthTolerance)) AND (gRecCfg.active.Cfg.Creaser.BypassBoardLengthError = 0) THEN
 					gAlarms.Measured_Length_GT_Configured := TRUE;
 					ProcessState := PRCS_STATE_ERROR;
-				ELSIF Latch_Board_Length < (gRecCfg.active.Rec.Crease.TotalBoardLength - gRecCfg.active.Cfg.Creaser.BoardLengthTolerance) THEN
+				ELSIF (Latch_Board_Length < (gRecCfg.active.Rec.Crease.TotalBoardLength - gRecCfg.active.Cfg.Creaser.BoardLengthTolerance)) AND (gRecCfg.active.Cfg.Creaser.BypassBoardLengthError = 0) THEN
 					gAlarms.Measured_Length_LT_Configured := TRUE;
 					ProcessState := PRCS_STATE_ERROR;
 				ELSE
