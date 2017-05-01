@@ -11,12 +11,20 @@ PROGRAM _INIT
 	Pulse_Fast.TimeOn := DEFINE_FAST_PULSE_PERIOD;
 	Pulse_Fast.TimeOff := DEFINE_FAST_PULSE_PERIOD;
 	
+	StdDevCalc.Enable := TRUE;
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	
 	IF gStatistics.Reset THEN //Reset all statistics
 		brsmemset(ADR(gStatistics), 0, SIZEOF(Global_Statistics_typ)); //Kind of a weird way to do this- essentially just writes 0's to the entirety of the memory the structure occupies (thus "zeroing-out" the counters)
+		StdDevCalc.Enable := TRUE;
+		StdDevCalc.Reset := FALSE;
+		StdDevCalc();
+		StdDevCalc.Reset := TRUE;
+		StdDevCalc();
+		StdDevCalc.Reset := FALSE;
 	END_IF;
 	
 	Action_Eval_ErrorState_Statuses; //Evaluate the conditions that put machine into ERR state
@@ -42,6 +50,8 @@ PROGRAM _CYCLIC
 	
 	StartUIButton_Hide := NOT (MachineState = MACHINE_STATE_IDLE);
 	StopUIButton_Hide := NOT (MachineState = MACHINE_STATE_RUNNING);
+	
+	Action_Tally_Board_L;
 
 	CASE MachineState OF
 		MACHINE_STATE_INIT:
@@ -122,7 +132,7 @@ PROGRAM _CYCLIC
 			
 			Action_Manage_Update_Total_Runtime;
 			
-			Action_Tally_Board_L;
+			
 			
 			IF iSoftStopCommand THEN
 				

@@ -72,6 +72,7 @@
           <Text ID="622007" Value="Machine Status:"/>
           <Text ID="622161" Value="Manual Board Eject"/>
           <Text ID="622239" Value="Roller Vel.:"/>
+          <Text ID="622404" Value="Std. Deviation:"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="619383" Value=""/>
@@ -94,6 +95,7 @@
           <Text ID="622007" Value=""/>
           <Text ID="622161" Value=""/>
           <Text ID="622239" Value=""/>
+          <Text ID="622404" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="pt">
           <Text ID="619383" Value=""/>
@@ -116,6 +118,7 @@
           <Text ID="622007" Value=""/>
           <Text ID="622161" Value=""/>
           <Text ID="622239" Value=""/>
+          <Text ID="622404" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="es">
           <Text ID="619383" Value=""/>
@@ -138,6 +141,7 @@
           <Text ID="622007" Value=""/>
           <Text ID="622161" Value=""/>
           <Text ID="622239" Value=""/>
+          <Text ID="622404" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="sv">
           <Text ID="619383" Value=""/>
@@ -160,6 +164,7 @@
           <Text ID="622007" Value=""/>
           <Text ID="622161" Value=""/>
           <Text ID="622239" Value=""/>
+          <Text ID="622404" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="619383" Value="91"/>
@@ -182,6 +187,7 @@
           <Index ID="622007" Value="85"/>
           <Index ID="622161" Value="6"/>
           <Index ID="622239" Value="8"/>
+          <Index ID="622404" Value="9"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -338,7 +344,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
           <Property Name="ForeColor" Value="16"/>
-          <Property Name="Height" Value="34"/>
+          <Property Name="Height" Value="26"/>
           <Property Name="Left" Value="267"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -346,7 +352,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="20"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="141"/>
+          <Property Name="Top" Value="139"/>
           <Property Name="Width" Value="150"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_23">
@@ -542,7 +548,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_15]"/>
           <Property Name="ForeColor" Value="10"/>
-          <Property Name="Height" Value="34"/>
+          <Property Name="Height" Value="26"/>
           <Property Name="Left" Value="417"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -551,7 +557,7 @@
           <Property Name="SimulationValue" Value="123"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="141"/>
+          <Property Name="Top" Value="139"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gStatistics.total_processed]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="120"/>
@@ -563,7 +569,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
           <Property Name="ForeColor" Value="16"/>
-          <Property Name="Height" Value="34"/>
+          <Property Name="Height" Value="26"/>
           <Property Name="Left" Value="267"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -571,7 +577,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="32"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="175"/>
+          <Property Name="Top" Value="163"/>
           <Property Name="Width" Value="150"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_26">
@@ -581,7 +587,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_15]"/>
           <Property Name="ForeColor" Value="10"/>
-          <Property Name="Height" Value="34"/>
+          <Property Name="Height" Value="26"/>
           <Property Name="Left" Value="417"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -590,7 +596,7 @@
           <Property Name="SimulationValue" Value="123"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="175"/>
+          <Property Name="Top" Value="163"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gStatistics.Avg_Board_Length]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="120"/>
@@ -969,15 +975,54 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
           <Property Name="ForeColor" Value="10"/>
-          <Property Name="Height" Value="34"/>
+          <Property Name="Height" Value="30"/>
           <Property Name="Left" Value="269"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Current Rec."/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.gRecipeName]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="210"/>
+          <Property Name="Top" Value="214"/>
           <Property Name="Width" Value="272"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_11">
+          <Property Name="AlignmentHorizontal" Value="Right"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_13]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="26"/>
+          <Property Name="Left" Value="267"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="9"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="186"/>
+          <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_27">
+          <Property Name="AddFractionDigits" Value="3"/>
+          <Property Name="BackColor" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[rockwell_15]"/>
+          <Property Name="ForeColor" Value="10"/>
+          <Property Name="Height" Value="26"/>
+          <Property Name="Left" Value="417"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="123"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="187"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Application.Creaser.StdDevCalc.Out]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="120"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -1116,5 +1161,6 @@
     <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[Numeric_34]"/>
     <TabSeqItem Index="10" Value="Source[embedded].Layer[Default].Control[AlarmCurrent]"/>
     <TabSeqItem Index="11" Value="Source[embedded].Layer[Default].Control[Numeric_35]"/>
+    <TabSeqItem Index="12" Value="Source[embedded].Layer[Default].Control[Numeric_27]"/>
   </TabSequence>
 </Page>

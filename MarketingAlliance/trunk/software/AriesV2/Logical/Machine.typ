@@ -37,6 +37,7 @@ TYPE
 		BoardLengthTolerance : REAL;
 		CreaseInfeedDelay : REAL;
 		BypassBoardLengthError : UDINT;
+		PhotoEyeMeasurementOffset : REAL;
 	END_STRUCT;
 	AriesCreaserParams_typ : 	STRUCT 
 		CreaseDistance_mm : ARRAY[0..MAX_IDX_CREASES]OF REAL;

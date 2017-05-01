@@ -3067,7 +3067,7 @@
           </DataPoint>
           <DataPoint Name="Update">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+            <Property Name="ConnectingVisus" Value="HMI\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="BOOL"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -3112,7 +3112,7 @@
           </DataPoint>
           <DataPoint Name="Simulate">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+            <Property Name="ConnectingVisus" Value="HMI\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="BOOL"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -3121,7 +3121,7 @@
           </DataPoint>
           <DataPoint Name="Autotune">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+            <Property Name="ConnectingVisus" Value="HMI\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="BOOL"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -3130,7 +3130,7 @@
           </DataPoint>
           <DataPoint Name="ReleaseBrake">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+            <Property Name="ConnectingVisus" Value="HMI\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="BOOL"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -3139,7 +3139,7 @@
           </DataPoint>
           <DataPoint Name="TorqueLimit">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="HMI\Visu,HMI\Visup"/>
+            <Property Name="ConnectingVisus" Value="HMI\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="BOOL"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -3690,6 +3690,22 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="BOOL"/>
         </DataPoint>
+        <Folder Name="StdDevCalc">
+          <Property Name="Description" Value=""/>
+          <Property Name="FolderType" Value="FunctionBlock"/>
+          <DataPoint Name="Out">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="HMI\Visup"/>
+            <Property Name="DPLimit" Value="None"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="REAL"/>
+            <Property Name="PLCUnit" Value="None"/>
+            <Property Name="UnitGroup" Value="None"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="SCALED"/>
+          </DataPoint>
+        </Folder>
       </Folder>
     </Folder>
     <Folder Name="AxisControl">

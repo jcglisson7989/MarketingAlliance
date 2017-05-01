@@ -1,5 +1,5 @@
 
- FUNCTION_BLOCK MTDataStdDeviation (*Standard deviation calculation.*)
+{REDUND_OK} FUNCTION_BLOCK MTDataStdDeviation (*Standard deviation calculation.*)
 	VAR_INPUT
 		Enable : BOOL; (*Enable function block.*)
 		In : REAL; (*Input value.*)
@@ -16,7 +16,7 @@
 	END_VAR
 END_FUNCTION_BLOCK
 
- FUNCTION_BLOCK MTDataVariance (*Variance calculation.*)
+{REDUND_OK} FUNCTION_BLOCK MTDataVariance (*Variance calculation.*)
 	VAR_INPUT
 		Enable : BOOL; (*Enable function block.*)
 		In : REAL; (*Input value.*)
@@ -33,7 +33,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
- FUNCTION_BLOCK MTDataRMS (*Root mean square calculation.*)
+{REDUND_OK} FUNCTION_BLOCK MTDataRMS (*Root mean square calculation.*)
 	VAR_INPUT
 		Enable : BOOL; (*Enable function block.*)
 		In : REAL; (*Input value.*)
@@ -50,7 +50,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
- FUNCTION_BLOCK MTDataMean (*Mean calculation.*)
+{REDUND_OK} FUNCTION_BLOCK MTDataMean (*Mean calculation.*)
 	VAR_INPUT
 		Enable : BOOL; (*Enable function block.*)
 		In : REAL; (*Input value.*)
@@ -67,7 +67,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
- FUNCTION_BLOCK MTDataMinMax (*Minimum/Maximum calculation.*)
+{REDUND_OK} FUNCTION_BLOCK MTDataMinMax (*Minimum/Maximum calculation.*)
 	VAR_INPUT
 		Enable : BOOL; (*Enable function block.*)
 		In : REAL; (*Input value.*)
@@ -87,7 +87,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
- FUNCTION_BLOCK MTDataStatistics (*Statistics calculation.*)
+{REDUND_ERROR} FUNCTION_BLOCK MTDataStatistics (*Statistics calculation.*)
 	VAR_INPUT
 		Enable : BOOL; (*Enable function block.*)
 		MovingWindowLength : UDINT; (*Length of moving window.*)
@@ -110,6 +110,6 @@ END_FUNCTION_BLOCK
 		StdDeviation : REAL; (*Standard deviation value.*)
 	END_VAR
 	VAR
-		Internal :  MTDataStatisticsInternalType; (*Data for internal use.*)
+		Internal : {REDUND_UNREPLICABLE} MTDataStatisticsInternalType; (*Data for internal use.*)
 	END_VAR
 END_FUNCTION_BLOCK
