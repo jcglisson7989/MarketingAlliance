@@ -194,5 +194,32 @@
         <seg>Bypass sending machine into ERR state when measured board length doesn't match configured board length</seg>
       </tuv>
     </tu>
+    <tu tuid="PV.7">
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>13</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>-1000</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1000</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Cfg.Creaser.PhotoEyeMeasurementOffset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.7">
+      <tuv xml:lang="en">
+        <seg>Photoeye Measurement Offset [mm]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.7">
+      <tuv xml:lang="en">
+        <seg>Amount to offset the length measurement that latches after the falling edge of the photoeye sensor to make up for the falling edge delay lag</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

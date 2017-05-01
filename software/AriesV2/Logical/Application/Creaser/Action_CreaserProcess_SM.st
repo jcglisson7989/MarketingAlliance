@@ -61,6 +61,9 @@ ACTION Action_CreaserProcess_SM:
 			IF AxisControl.InPosition THEN
 				setflagCreaserIndexCommand := TRUE;
 				ProcessState := PRCS_STATE_CREASE;
+			ELSIF NOT IO.iFiberOpticSensor THEN
+				gAlarms.Board_Length_LT_Confgd_Amount := TRUE;
+				ProcessState := PRCS_STATE_ERROR;
 			END_IF;
 				
 		PRCS_STATE_CREASE:
@@ -90,6 +93,9 @@ ACTION Action_CreaserProcess_SM:
 					Action_Move_Crease_Width;
 					ProcessState := PRCS_STATE_MOVE_CREASE_WIDTH;
 				END_IF;
+			ELSIF NOT IO.iFiberOpticSensor THEN
+				gAlarms.Board_Length_LT_Confgd_Amount := TRUE;
+				ProcessState := PRCS_STATE_ERROR;
 			END_IF;
 				
 		PRCS_STATE_MOVE_CREASE_WIDTH:
@@ -98,6 +104,9 @@ ACTION Action_CreaserProcess_SM:
 			IF AxisControl.InPosition THEN
 				Action_Move_Section_Distance;
 				ProcessState := PRCS_STATE_MOVE_CREASE;
+			ELSIF NOT IO.iFiberOpticSensor THEN
+				gAlarms.Board_Length_LT_Confgd_Amount := TRUE;
+				ProcessState := PRCS_STATE_ERROR;
 			END_IF;
 				
 		PRCS_STATE_EJECT_FINISHED_BOARD:
@@ -105,7 +114,10 @@ ACTION Action_CreaserProcess_SM:
 					
 			IF NOT IO.iFiberOpticSensor AND IO_LastCycle.iFiberOpticSensor THEN
 						
-				Latch_Board_Length := Current_Board_Position + gRecCfg.active.Cfg.Creaser.PhotoEyeOffset;
+				Latch_Board_Length := Current_Board_Position + gRecCfg.active.Cfg.Creaser.PhotoEyeOffset + gRecCfg.active.Cfg.Creaser.PhotoEyeMeasurementOffset;
+				
+				StdDevCalc.In := Latch_Board_Length;
+				StdDevCalc();
 						
 				IF (Latch_Board_Length > (gRecCfg.active.Rec.Crease.TotalBoardLength + gRecCfg.active.Cfg.Creaser.BoardLengthTolerance)) AND (gRecCfg.active.Cfg.Creaser.BypassBoardLengthError = 0) THEN
 					gAlarms.Measured_Length_GT_Configured := TRUE;

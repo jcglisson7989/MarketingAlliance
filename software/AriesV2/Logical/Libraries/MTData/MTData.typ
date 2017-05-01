@@ -58,7 +58,7 @@ TYPE
 		EnableOld : BOOL; (*Data for internal use.*)
 		UpdateOld : BOOL; (*Data for internal use.*)
 		FirstTime : BOOL; (*Data for internal use.*)
-		MemStatus :  UINT; (*Data for internal use.*)
+		MemStatus : {REDUND_UNREPLICABLE} UINT; (*Data for internal use.*)
 		BufferCntMax : UDINT; (*Data for internal use.*)
 		pBuffer : REFERENCE TO REAL; (*Data for internal use.*)
 	END_STRUCT;

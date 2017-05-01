@@ -26,7 +26,6 @@
     <Object Type="Library" Language="Binary" Description="The AsArProf library is used to operate the AR Profiler from an application.">AsArProf</Object>
     <Object Type="Library" Language="Binary" Description="This mechatronics library contains different system datatypes and general error numbers.">MTTypes</Object>
     <Object Type="Library" Language="ANSIC">jgLibC</Object>
-    <Object Type="Library" Language="Binary" Description="This mechatronics library contains function blocks for statistical data analysis.">MTData</Object>
     <Object Type="Library" Language="ANSIC" Description="library (written/managed by J. Glisson) containing functions for ACPu err acknowledgement, HMI param table construction, HMI param table activation to the common layer">MAPPSuppor</Object>
     <Object Type="Package" Description="Service libraries">wbrServices</Object>
     <Object Type="Library" Language="Binary" Description="This library contains FBKs for pinging a station.">AsICMP</Object>
@@ -42,5 +41,6 @@
     <Object Type="Library" Language="Binary" Description="Global NC functions">NcGlobal</Object>
     <Object Type="Library" Language="Binary" Description="ACOPOS Simulation">Acp10sim</Object>
     <Object Type="Library" Language="Binary" Description="PLCopen Motion Control function blocks">Acp10_MC</Object>
+    <Object Type="Library" Language="Binary" Description="This mechatronics library contains function blocks for statistical data analysis.">MTData</Object>
   </Objects>
 </Package>
