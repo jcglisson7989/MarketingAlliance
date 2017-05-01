@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpOeeTimelineUIProductionState">
+  <Property Name="Description" Value="OeeTimeLineUI production state text"/>
+  <Property Name="Index" Value="1184"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="463728" Value="INACTIVE"/>
+    <Text ID="463729" Value="UPTIME"/>
+    <Text ID="463730" Value="SCHEDULED DOWNTIME"/>
+    <Text ID="463731" Value="UNSCHEDULED DOWNTIME"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="463728" Value="INAKTIV"/>
+    <Text ID="463729" Value="BETRIEBSZEIT"/>
+    <Text ID="463730" Value="GEPLANTE AUSFALLZEIT"/>
+    <Text ID="463731" Value="UNGEPLANTE AUSFALLZEIT"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="463728" Value=""/>
+    <Text ID="463729" Value=""/>
+    <Text ID="463730" Value=""/>
+    <Text ID="463731" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="463728" Value="0"/>
+    <Index ID="463729" Value="1"/>
+    <Index ID="463730" Value="2"/>
+    <Index ID="463731" Value="3"/>
+  </IndexMap>
+</TextGroup>

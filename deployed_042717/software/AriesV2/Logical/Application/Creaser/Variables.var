@@ -1,0 +1,29 @@
+VAR
+	StdDevCalc : MTDataStdDeviation;
+	Timer_Creaser_Idx_Delay : TON;
+	Timer_Sim_CreaserIdx : TON;
+	Timer_Creaser_Idx_Edge : TON;
+	Timer_Total_Runtime : TON;
+	tmp_bool : BOOL;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	setFlagTravelEdgeOffset : BOOL;
+	setFlagCreaserIdxFinished : BOOL;
+	setflagCreaserIndexCommand : BOOL;
+	setFlagCreaserWaitEdge : BOOL;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	flagBoardLengthCfgErr : BOOL;
+	length_calculated_total : REAL;
+END_VAR
+VAR CONSTANT
+	DEFINE_SLOW_PULSE_PERIOD : TIME := T#1s;
+	DEFINE_FAST_PULSE_PERIOD : TIME := T#125ms;
+END_VAR
+VAR
+	Pulse_Slow : PulseTrain;
+	Pulse_Fast : PulseTrain;
+	ii_crease_count : UDINT;
+END_VAR

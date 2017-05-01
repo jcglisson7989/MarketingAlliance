@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.8.54 SP"?>
+<AlarmGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="AppAlarms">
+  <Property Name="AcknowledgeImage" Value="Source[global].Variable[DataSource.AppAlarms.AcknowledgeImage]"/>
+  <Property Name="ActiveBackColor" Value="4"/>
+  <Property Name="ActiveForeColor" Value="0"/>
+  <Property Name="AlarmImage" Value="Source[global].Variable[DataSource.AppAlarms.AlarmImage]"/>
+  <Property Name="BypassBackColor" Value="14"/>
+  <Property Name="BypassForeColor" Value="0"/>
+  <Property Name="BypassImage" Value="None"/>
+  <Property Name="DefaultBackColor" Value="15"/>
+  <Property Name="DefaultForeColor" Value="0"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="GroupAlarm" Value="None"/>
+  <Property Name="ImageOffset" Value="0"/>
+  <Property Name="Index" Value="1"/>
+  <Property Name="LatchedBackColor" Value="2"/>
+  <Property Name="LatchedForeColor" Value="0"/>
+  <Property Name="Priority" Value="1"/>
+  <Property Name="QuitBackColor" Value="1"/>
+  <Property Name="QuitForeColor" Value="0"/>
+  <Alarms>
+    <Alarm Index="0">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="1">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="2">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="3">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="4">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="5">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="6">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="7">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="8">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="9">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="10">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="11">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="12">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="14">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="15">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="Group">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+    </Alarm>
+  </Alarms>
+  <TextGroup>
+    <TextSnippets/>
+    <TextLayer LanguageId="en">
+      <Text ID="2400" Value="SM1 Power Disabled"/>
+      <Text ID="2401" Value="Unsafe Machine State (E-stop Pressed?)"/>
+      <Text ID="2402" Value="Fiber optic sensor blocked when trying to go into RUN mode"/>
+      <Text ID="2403" Value="Crease Shaft sensor edge timeout (Motor not running?)"/>
+      <Text ID="2408" Value="Unsafe machine state put machine into ERR mode"/>
+      <Text ID="2409" Value="SM1 power put machine into ERR mode"/>
+      <Text ID="2410" Value="Feed servo error put machine into ERR mode"/>
+      <Text ID="2411" Value="Crease count greater than max allowable crease count (reduce number of creases)"/>
+      <Text ID="2412" Value="Crease process error put machine into ERR state"/>
+      <Text ID="2423" Value="Load recipe before running"/>
+      <Text ID="2428" Value="Manually homing of creaser blade required"/>
+      <Text ID="2433" Value="Sum of creasing distances greater than configured board length"/>
+      <Text ID="2434" Value="Sum of creasing distances less than configured board length"/>
+      <Text ID="2435" Value="Measured board length greater than configured board length"/>
+      <Text ID="2436" Value="Measured board length less than configured board length"/>
+      <Text ID="2459" Value="Recipe Settings changed since last save!"/>
+      <Text ID="2399" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="2400" Value=""/>
+      <Text ID="2401" Value=""/>
+      <Text ID="2402" Value=""/>
+      <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
+      <Text ID="2423" Value=""/>
+      <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
+      <Text ID="2399" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="2400" Value=""/>
+      <Text ID="2401" Value=""/>
+      <Text ID="2402" Value=""/>
+      <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
+      <Text ID="2423" Value=""/>
+      <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
+      <Text ID="2399" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="2400" Value=""/>
+      <Text ID="2401" Value=""/>
+      <Text ID="2402" Value=""/>
+      <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
+      <Text ID="2423" Value=""/>
+      <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
+      <Text ID="2399" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="sv">
+      <Text ID="2400" Value=""/>
+      <Text ID="2401" Value=""/>
+      <Text ID="2402" Value=""/>
+      <Text ID="2403" Value=""/>
+      <Text ID="2408" Value=""/>
+      <Text ID="2409" Value=""/>
+      <Text ID="2410" Value=""/>
+      <Text ID="2411" Value=""/>
+      <Text ID="2412" Value=""/>
+      <Text ID="2423" Value=""/>
+      <Text ID="2428" Value=""/>
+      <Text ID="2433" Value=""/>
+      <Text ID="2434" Value=""/>
+      <Text ID="2435" Value=""/>
+      <Text ID="2436" Value=""/>
+      <Text ID="2459" Value=""/>
+      <Text ID="2399" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="2400" Value="0"/>
+      <Index ID="2401" Value="1"/>
+      <Index ID="2402" Value="2"/>
+      <Index ID="2403" Value="3"/>
+      <Index ID="2408" Value="4"/>
+      <Index ID="2409" Value="5"/>
+      <Index ID="2410" Value="6"/>
+      <Index ID="2411" Value="7"/>
+      <Index ID="2412" Value="8"/>
+      <Index ID="2423" Value="9"/>
+      <Index ID="2428" Value="10"/>
+      <Index ID="2433" Value="11"/>
+      <Index ID="2434" Value="12"/>
+      <Index ID="2435" Value="13"/>
+      <Index ID="2436" Value="14"/>
+      <Index ID="2459" Value="15"/>
+      <Index ID="2399" Value="Group"/>
+    </IndexMap>
+  </TextGroup>
+</AlarmGroup>

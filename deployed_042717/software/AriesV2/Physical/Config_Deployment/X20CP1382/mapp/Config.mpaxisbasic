@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="FeedAxis_MpLink" Type="mpaxisbasic">
+    <Selector ID="AxisConfiguration" Value="AxisWithConfiguration">
+      <Group ID="Axis">
+        <Property ID="MeasurementUnit" Value="1" />
+        <Property ID="MeasurementResolution" Value="0.001" />
+        <Group ID="PeriodSettings">
+          <Property ID="Period" Value="125.664" />
+        </Group>
+        <Group ID="MovementLimits">
+          <Property ID="VelocityPositive" Value="10000.0" />
+          <Property ID="VelocityNegative" Value="10000.0" />
+          <Property ID="Acceleration" Value="10000.0" />
+          <Property ID="Deceleration" Value="10000.0" />
+          <Property ID="PositionErrorStopLimit" Value="2.5" />
+        </Group>
+      </Group>
+      <Group ID="Drive">
+        <Group ID="Gearbox">
+          <Property ID="Input" Value="5" />
+        </Group>
+        <Group ID="Transformation">
+          <Property ID="ReferenceDistance" Value="125.664" />
+        </Group>
+        <Group ID="Controller">
+          <Group ID="Speed">
+            <Property ID="ProportionalGain" Value="1.75" />
+            <Property ID="IntegralTime" Value="1" />
+          </Group>
+          <Group ID="LoopFilters">
+            <Selector ID="[0]" />
+            <Selector ID="[1]" />
+            <Selector ID="[2]" />
+          </Group>
+        </Group>
+      </Group>
+    </Selector>
+  </Element>
+</Configuration>

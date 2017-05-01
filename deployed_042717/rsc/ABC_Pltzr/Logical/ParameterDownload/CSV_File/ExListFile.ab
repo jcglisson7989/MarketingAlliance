@@ -1,0 +1,590 @@
+FUNCTION_BLOCK ExListFile
+;*****************************************************************
+;FUB: 			ExFileList
+;*****************************************************************
+;Discription:
+;	This FUB writes the Values from the allocated memory from the FUB
+;	CSV-Init in a CSV-File.
+;
+;Parameter:
+;
+;Author:	Georg Kreil
+;			B&R Eggelsberg
+;
+;History:	V0.01.1 - 24 June 2003
+;					created
+;			V0.01.2 - 8 July 2003
+;					no changes
+;			V0.01.3 - 14 July 2003
+;					no changes
+;			V0.01.4 - 15 July 2003
+;					Error with maximum namelenght corrected
+;					displayed strings changed by diplayed year
+;					2003 -> 03
+;					and without file-extension
+;			V0.01.5 - 17 July 2003
+;					no changes
+;			V0.01.6 - 18 July 2003
+;					Possibility to set the focus over a separate value added
+;					Output, if it possible to scroll one page up/down  added
+;			V0.01.7 - 7 August 2003
+;					no changes
+;			V0.01.8 - 8 August 2003
+;					output strings one charecter shorter
+;			V0.01.9 - 11 August 2003
+;					no changes
+;*****************************************************************
+
+
+Internal.CRLF[0]= 13
+Internal.CRLF[1]= 10
+Internal.CRLF[2]= 0
+
+	select Internal.Step
+
+	;*********************************************************************
+		state wait
+	;*********************************************************************
+	;*********************************************************************
+	; control memorysize
+    when ( (MaxNameLenght+19)*ArrayNum > SizeStringArray) or (MaxNameLenght > 28) do
+    	status= MAX_NAMELENGHT_TO_LONG
+    	command= 0
+	next wait
+	;*********************************************************************
+	; create file-list
+    when (command = FiJOB_CREATE_FILE_LIST ) and (status <> 65535) do
+    	status  = 65535
+		next file_dir_info
+	;*********************************************************************
+	; Scroll one line up
+    when (command = FiJOB_LIST_UP) and (status <> 65535) do
+	    	if(ListboxFocusPos = 0) then
+	    		ListboxFocusPos= 0				; set focus
+	        	ScrollUp= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+	    	else
+	    		ListboxFocusPos= ListboxFocusPos-1			; set focus
+
+	    		if(ListboxFocusPos <> 0)then ;set/reset scrolldown output
+		        	ScrollUp= 1
+		        else
+		        	ScrollUp= 0
+		        endif
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+	    		if(Internal.DownLines < NumListboxLines-1)then
+	    			Internal.UpLines= Internal.UpLines-1
+	    			Internal.DownLines= Internal.DownLines+1
+	    		else
+	    			Internal.PosFirstLine= Internal.PosFirstLine-1
+	    		endif
+			endif
+		command = 0
+		status  = 0
+		next wait
+	;*********************************************************************
+	; Scroll one line down
+    when (command = FiJOB_LIST_DOWN) and (status <> 65535) do
+	    	if(CSV_FileNum-1 <= ListboxFocusPos) then
+	    		ListboxFocusPos= CSV_FileNum-1			; set focus
+	    		ScrollDown= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+	    	else
+
+	    		ListboxFocusPos= ListboxFocusPos+1			; set focus
+
+	    		if(ListboxFocusPos <> CSV_FileNum-1 )then; set/reset scrollup output
+		    		ScrollDown= 1
+				else
+		    		ScrollDown= 0
+				endif
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+	    		if(Internal.UpLines < NumListboxLines-1)then
+	    			Internal.UpLines= Internal.UpLines+1
+	    			Internal.DownLines= Internal.DownLines-1
+	    		else
+	    			Internal.PosFirstLine= Internal.PosFirstLine+1
+	    		endif
+
+			endif
+		command = 0
+		status  = 0
+		next wait
+	;*********************************************************************
+	; Scroll one page up
+    when (command = FiJOB_LIST_PG_UP) and (status <> 65535) do
+	        ; there are less files as lines in the listbox
+	    	if(ListboxFocusPos <= 0) or (ListboxFocusPos-NumListboxLines = 0)  then
+	    		ListboxFocusPos= 0			; set focus
+	        	ScrollUp= 0
+    			Internal.UpLines= 0
+    			Internal.DownLines= NumListboxLines-1
+	    		Internal.PosFirstLine= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+			else if ( ListboxFocusPos-NumListboxLines > 30000 )then
+	        	ListboxFocusPos= 0			; set focus
+	        	ScrollUp= 0
+    			Internal.UpLines= 0
+    			Internal.DownLines= NumListboxLines-1
+	    		Internal.PosFirstLine= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+			else if ( ListboxFocusPos-NumListboxLines > 0 )and ( ListboxFocusPos-NumListboxLines < 30000 )then
+	        	ListboxFocusPos= ListboxFocusPos-NumListboxLines			; set focus
+	        	ScrollUp= 1
+
+	    		Internal.PosFirstLine= Internal.PosFirstLine - (NumListboxLines -Internal.UpLines)
+    			Internal.UpLines= 0
+    			Internal.DownLines= NumListboxLines-1
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrolldown output
+		        	ScrollDown= 0
+	        	else
+		        	ScrollDown= 1
+	    		endif
+
+			endif
+		command = 0
+		status  = 0
+		next wait
+	;*********************************************************************
+	; Scroll one page down
+    when (command = FiJOB_LIST_PG_DOWN) and (status <> 65535) do
+	        ; there are less files as lines in the listbox
+	    	if(CSV_FileNum-1 <= ListboxFocusPos+NumListboxLines) then
+	    		ListboxFocusPos= CSV_FileNum-1			; set focus
+	    		ScrollDown= 0
+
+    			if( CSV_FileNum > NumListboxLines) then
+    				Internal.PosFirstLine= (CSV_FileNum-1)-(NumListboxLines-1)
+   	 				Internal.UpLines= NumListboxLines-1
+    				Internal.DownLines= 0
+    			endif
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+			else if ( ListboxFocusPos+NumListboxLines > CSV_FileNum )then
+	        	ListboxFocusPos= CSV_FileNum-1			; set focus
+	    		ScrollDown= 0
+
+    			Internal.PosFirstLine= (CSV_FileNum-1)-(NumListboxLines-1)
+    			Internal.UpLines= NumListboxLines-1
+    			Internal.DownLines= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+			else if ( ListboxFocusPos+NumListboxLines < CSV_FileNum )then
+	        	ListboxFocusPos= ListboxFocusPos+NumListboxLines			; set focus
+	    		ScrollDown= 1
+
+    			Internal.PosFirstLine= Internal.PosFirstLine + NumListboxLines - Internal.DownLines
+    			Internal.UpLines= NumListboxLines-1
+    			Internal.DownLines= 0
+
+	    		if (CSV_FileNum = 1) then ; set/reset scrollup output
+		        	ScrollUp= 0
+	        	else
+		        	ScrollUp= 1
+	    		endif
+
+			endif
+		command = 0
+		status  = 0
+	    next wait
+
+	;*********************************************************************
+	; set focus with input-value
+    when (command = FiJOB_SET_FOCUS) and (status <> 65535) do
+  		if( SetFocusPos <= NumListboxLines-1  ) then
+  			if( CSV_FileNum- 1 >= Internal.PosFirstLine+SetFocusPos ) then
+		  		ListboxFocusPos= Internal.PosFirstLine+SetFocusPos
+		  		Internal.DownLines= NumListboxLines-SetFocusPos-1
+		  		Internal.UpLines= SetFocusPos
+				status  = 0
+			endif
+
+		else
+			status  = FOCUSPOS_OUT_OF_LISTBOX
+		endif
+
+	  	command = 0
+   		next wait
+
+	;*********************************************************************
+		state file_dir_info
+	;*********************************************************************
+
+	  ; no memoryadress given
+		when ( pStringArray = 0)  do
+			command = 0
+			status  = ERR_NO_MEM_ALLOC
+		next wait
+
+	    DirInfo_CSV.enable = 1
+	    DirInfo_CSV.pDevice = pFileDevice
+	    DirInfo_CSV.pPath = 0
+	    DirInfo_CSV FUB DirInfo()
+
+	    ;no error, files exists
+	    when (DirInfo_CSV.status = ERRF_NO_ERROR) and (DirInfo_CSV.filenum <> 0) DO
+	      Internal.FileNumOnDisk = uint(DirInfo_CSV.filenum)
+	  	  memset(pStringArray, 0, SizeStringArray)
+	      CSV_FileNum = 0								; filenumber reset
+	      Internal.FileNumAct = 0                      	; actual filenumber reset
+	      Internal.Offset = 0							; reset offset
+	      status= 65535
+		  strcpy(adr(Internal.TmpExtension),".CSV")
+	      next file_info
+
+	    ; no error, no files
+	    when (DirInfo_CSV.status = ERRF_NO_ERROR) and (DirInfo_CSV.filenum = 0) DO
+	      Internal.FileNumOnDisk = 0                    ; number of files reset
+	      Internal.FileNumAct = 0                       ; actual filenumber reset
+	      CSV_FileNum = 0								; filenumber reset
+	   	  memset(pStringArray, 0,SizeStringArray)	  ; clear memory
+	      command = 0  	                              ; command reset
+	      status= 0  	      						  ; clear status
+	      next wait
+
+	    ; Fehler aufgetreten
+	    when (DirInfo_CSV.status <> ERRF_NO_ERROR) and (DirInfo_CSV.status <> 65535) DO
+	      status = DirInfo_CSV.status                  ; set error
+	      command = 0                             	   ; command reset
+	      Internal.FileNumAct = 0                      ; actual filenumber reset
+	      Internal.Offset = 0      				       ; reset offset
+	      next wait
+
+	;*********************************************************************************
+	  state file_info
+	;*********************************************************************************
+
+	    when (ArrayNum < Internal.FileNumOnDisk) DO
+			command = 0
+			status  = ARRAY_TO_LESS
+    	next wait
+
+	    ; create FileInfo
+	    DirRead_CSV.enable = 1
+	    DirRead_CSV.pDevice = pFileDevice
+	    DirRead_CSV.pPath = 0
+	    DirRead_CSV.entry = udint(Internal.FileNumAct)  ; actual filenumber
+	    DirRead_CSV.option = FILE_FILE
+	    DirRead_CSV.pData = adr(Internal.FileInfo)
+	    DirRead_CSV.data_len = sizeof(Internal.FileInfo)
+	    DirRead_CSV FUB DirRead()
+
+	    ; Fehler aufgetreten
+	    when (DirRead_CSV.status <> 0) and (DirRead_CSV.status <> 65535) do
+	      status = DirRead_CSV.status                      ; Fehler setzen
+	      command= 0
+	      next wait
+
+	    ; no error
+	    if (DirRead_CSV.status = 0) then
+	      ; filename to long -> not add to filelist
+	      if (strlen(adr(Internal.FileInfo.Filename)) <= MaxNameLenght+4) then
+			; control, if the file has the right extension
+	      	loop Internal.i=0 to strlen(adr(Internal.FileInfo.Filename)) do
+		     	memcpy(adr(Internal.TmpExtension),adr(Internal.FileInfo.Filename[Internal.i]),sizeof(Internal.TmpExtension))
+		     	Internal.result1=strcmp(adr(Internal.TmpExtension),".CSV")
+				Internal.result2=strcmp(adr(Internal.TmpExtension),".csv")
+
+				; File gefunden
+				if((Internal.result1 = 0 ) or (Internal.result2 = 0 ))then
+					Internal.FileFound = 1
+			    else if( adr(Internal.FileInfo.Filename[Internal.i]) = '.' )then
+			    	exitif(1=1)			; File hat falsche Extension
+			    endif
+
+		    endloop
+
+	      endif
+
+	      Internal.FileNumAct = Internal.FileNumAct + 1                ;  increase actual filenumber
+	    endif
+
+		; ein neues CSV-File wurde gefunden
+	    when(Internal.FileFound = 1) do
+	    	Internal.FileFound = 0
+	    	next open_file
+
+	    when (Internal.FileNumAct >= Internal.FileNumOnDisk) DO		; all files listed
+			command = 0								; reset command
+			ListboxFocusPos= 0						; reset focus-position
+	       	ScrollUp= 0
+   			Internal.UpLines= 0
+   			Internal.DownLines= NumListboxLines-1
+   			Internal.PosFirstLine= 0
+
+    		if (CSV_FileNum = 1) then
+	        	ScrollDown= 0
+        	else
+	        	ScrollDown= 1
+    		endif
+
+			status  = 0		    					; reset status
+      next wait
+
+
+	;*********************************************************************************
+	  state open_file
+	;*********************************************************************************
+
+		FileOpen_CSV.enable= 1
+		FileOpen_CSV.pDevice= pFileDevice
+		FileOpen_CSV.pFile= adr(Internal.FileInfo.Filename)
+		FileOpen_CSV.mode= FILE_R
+		FileOpen_CSV FUB FileOpen()
+
+			; no error
+			when (FileOpen_CSV.status = 0) do
+				; allocate memory, to copy the first part of file
+				Internal.status_alloc= TMP_alloc(FileOpen_CSV.filelen,adr(Internal.pFileData))
+				status= 65535
+			next read_file
+
+			; file is opening
+			when (FileOpen_CSV.status = 65535) do
+				status= FileOpen_CSV.status
+			next open_file
+
+			;error durring opening
+			when (FileOpen_CSV.status <> 0) and (FileOpen_CSV.status <> 65535) do
+				status= FileOpen_CSV.status
+			next wait
+
+
+	;##########################################################################################
+	state read_file
+	;##########################################################################################
+
+		if( (Internal.status_alloc = 0) and (FileOpen_CSV.status = 0) )then
+			FileRead_CSV.enable= 1
+			FileRead_CSV.ident= FileOpen_CSV.ident
+			FileRead_CSV.offset= 0
+			FileRead_CSV.pDest= Internal.pFileData
+			FileRead_CSV.len= FileOpen_CSV.filelen
+			FileRead_CSV FUB FileRead()
+		endif
+
+		; keine Speicher allokiert
+		when (Internal.status_alloc <> 0) do
+				status= Internal.status_alloc
+			next wait
+
+		; Fehler aufgetreten
+		when (FileRead_CSV.status <> 0) and  (FileRead_CSV.status <> 65535) do
+				status= FileRead_CSV.status
+			next wait
+		; noch beim Auslesen
+		when (FileRead_CSV.status = 65535) do
+				status= FileRead_CSV.status
+			next read_file
+
+		; fertig mit auslesen
+		when (FileRead_CSV.status = 0) do
+				status= 65535
+			next close_file
+
+
+		;##########################################################################################
+		state close_file
+		;##########################################################################################
+
+		 	FileClose_CSV.enable= 1
+			FileClose_CSV.ident= FileOpen_CSV.ident
+			FileClose_CSV FUB FileClose()
+
+			; Fehler beim Schliessen
+			when (FileClose_CSV.status <> 0) and (FileClose_CSV.status <> 65535) do
+				status= FileClose_CSV.status
+			next wait
+
+			; kein Fehler aufgetreten
+			when (FileClose_CSV.status = 0) do
+				status= 65535
+			next search_filename
+
+			; noch nicht fertig
+			when (FileClose_CSV.status = 65535) do
+				status= FileClose_CSV.status
+			next close_file
+
+		;##########################################################################################
+		state search_filename
+		;##########################################################################################
+
+		; Kontrolle des Optionspointer
+		when pOptions = 0 do
+			status = ERR_ZERO_POINTER_OPTION
+			next wait
+
+		; Merker zurücksetzen
+		Internal.PositionFound = 0
+		Internal.FirstSeperatorFound = 0
+		Internal.SecondSeperatorFound = 0
+		Internal.EndPositionFound = 0
+
+		; Optionsstruktur holen
+		; -> kein Zeiger wegen debug-Möglichkeit
+		memcpy( adr(Internal.OptionStruct), pOptions, sizeof(Internal.OptionStruct) )
+
+		; ausgelesenes File durchsuchen
+      	loop Internal.i=0 to Internal.OptionStruct.FileLenToRead do
+
+      		; Position des Variablennamen im CSV-File suchen
+			if (Internal.PositionFound = 0) then
+				Internal.result1=memcmp( Internal.pFileData + Internal.i, adr(Internal.OptionStruct.SearchVarName), 5)
+				if (Internal.result1 = 0) then
+					Internal.PositionFound = 1	; Position gefunden
+				endif
+			; ersten ';' suchen
+			else if (Internal.FirstSeperatorFound = 0 )then
+				DynUsint access Internal.pFileData + Internal.i
+				if (DynUsint = ';') then
+					Internal.FirstSeperatorFound = 1 ; ersten ';' gefunden
+				endif
+			; zweiten ';' suchen
+			else if (Internal.SecondSeperatorFound = 0 )then
+				DynUsint access Internal.pFileData + Internal.i
+				if (DynUsint = ';') then
+					Internal.StartPositionName =  Internal.pFileData + Internal.i + 1 ;Startposition merken
+					Internal.SecondSeperatorFound = 1 ; zweiten ';' gefunden
+				endif
+			; Ende der Zeile suchen
+			else if (Internal.EndPositionFound = 0 )then
+				DynUsint access Internal.pFileData + Internal.i
+				if (DynUsint = 13) then
+					; Variablenwert herauskopieren
+					memcpy(adr(Internal.InternalFileName), Internal.StartPositionName, Internal.pFileData + Internal.i - Internal.StartPositionName);
+					Internal.EndPositionFound = 1 ; Ende der Zeile gefunden
+				endif
+			endif
+		endloop
+
+		; Kompletten String löschen
+		memset( adr(Internal.CompleteEntry), 0, sizeof(Internal.CompleteEntry) )
+		;echten Filenamen "zusammenstutzen"
+		memset( adr(Internal.FileInfo.Filename[strlen(adr(Internal.FileInfo.Filename)) - 4]), 0, sizeof(Internal.FileInfo.Filename)-strlen(adr(Internal.FileInfo.Filename))  )
+		if ( strlen(adr(Internal.FileInfo.Filename)) > Internal.OptionStruct.MaxNrLen ) then
+			Internal.FileInfo.Filename[Internal.OptionStruct.MaxNrLen] = 0
+		else
+			loop Internal.i = strlen(adr(Internal.FileInfo.Filename)) to Internal.OptionStruct.MaxNrLen-1 do
+				Internal.FileInfo.Filename[Internal.i] = ' '
+			endloop
+		endif
+
+		;echten Filenamen umkopieren
+		memcpy( adr(Internal.CompleteEntry), adr(Internal.FileInfo.Filename) ,strlen(adr(Internal.FileInfo.Filename)) )
+;		strcat( adr(Internal.CompleteEntry), "  ")
+
+		;Filenamen "zusammenstutzen"
+		if ( strlen(adr(Internal.InternalFileName)) > Internal.OptionStruct.MaxNameLen ) then
+			Internal.InternalFileName[Internal.OptionStruct.MaxNameLen] = 0
+		else
+			loop Internal.i = strlen(adr(Internal.InternalFileName)) to Internal.OptionStruct.MaxNameLen-1 do
+				Internal.InternalFileName[Internal.i] = ' '
+			endloop
+		endif
+		;Filenamen hinzufügen zum echten Filenamen
+		strcat( adr(Internal.CompleteEntry),adr(Internal.InternalFileName) )
+
+		DT_TO_DTStructure(Internal.FileInfo.Date, adr(Internal.dateandtime));
+
+		; create date and time to a string and add to the filename
+		Internal.TmpString[0]= (Internal.dateandtime.day / 10) + '0'
+		Internal.TmpString[1]= (Internal.dateandtime.day mod 10) + '0'
+		Internal.TmpString[2]= '.'
+
+		Internal.TmpString[3]= (Internal.dateandtime.month / 10) + '0'
+		Internal.TmpString[4]= (Internal.dateandtime.month mod 10) + '0'
+		Internal.TmpString[5]= '.'
+
+		Internal.TmpString[6]= USINT( ((Internal.dateandtime.year mod 100)/10)  ) + '0'
+		Internal.TmpString[7]= USINT(  (Internal.dateandtime.year mod 10)       ) + '0'
+		Internal.TmpString[8]= ' '
+
+		Internal.TmpString[9]= (Internal.dateandtime.hour / 10) + '0'
+		Internal.TmpString[10]= (Internal.dateandtime.hour mod 10) + '0'
+		Internal.TmpString[11]= ':'
+		Internal.TmpString[12]= (Internal.dateandtime.minute / 10) + '0'
+		Internal.TmpString[13]= (Internal.dateandtime.minute mod 10) + '0'
+		Internal.TmpString[14]= 0
+
+;		strcat( adr(Internal.CompleteEntry), " ")
+		strcat( adr(Internal.CompleteEntry),adr(Internal.TmpString) )
+		memset( adr(Internal.InternalFileName), 0, sizeof(Internal.InternalFileName) )
+
+;		strcpy( pStringArray + Internal.Offset, adr(Internal.CompleteEntry) )
+		strcpy( pStringArray + Internal.Offset, adr(Internal.CompleteEntry) )
+		Internal.Offset = Internal.Offset + strlen( adr(Internal.CompleteEntry)) + 1
+
+	    inc(CSV_FileNum)				; increase CSV-filenumber
+
+	    when (Internal.FileNumAct >= Internal.FileNumOnDisk) DO		; all files listed
+			command = 0								; reset command
+			ListboxFocusPos= 0						; reset focus-position
+	       	ScrollUp= 0
+   			Internal.UpLines= 0
+   			Internal.DownLines= NumListboxLines-1
+   			Internal.PosFirstLine= 0
+
+    		if (CSV_FileNum = 1) then
+	        	ScrollDown= 0
+        	else
+	        	ScrollDown= 1
+    		endif
+			status  = 0		    					; reset status
+    		next wait
+
+		; nächster File holen
+		when (1 = 1) do
+			status= 65535
+			next file_info
+
+
+	endselect
+END_FUNCTION_BLOCK

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeUIText">
+  <Property Name="Description" Value="General page text for RecipeUI"/>
+  <Property Name="Index" Value="1022"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="DirName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.CurrentDir]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="DevName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FileCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.FileCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FolderCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.FolderCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="464037" Value="Load"/>
+    <Text ID="464038" Value="Save"/>
+    <Text ID="464039" Value="Copy"/>
+    <Text ID="464040" Value="Create"/>
+    <Text ID="464041" Value="Refresh"/>
+    <Text ID="464042" Value="No"/>
+    <Text ID="464043" Value="Search keyword"/>
+    <Text ID="464044" Value="Sort"/>
+    <Text ID="464045" Value="Status"/>
+    <Text ID="464046" Value="Recipe select"/>
+    <Text ID="464047" Value="MpRecipeUI"/>
+    <Text ID="464048" Value="Create"/>
+    <Text ID="464049" Value="Name"/>
+    <Text ID="464050" Value="Date"/>
+    <Text ID="464051" Value="Size"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="464037" Value="Laden"/>
+    <Text ID="464038" Value="Speichern"/>
+    <Text ID="464039" Value="Kopieren"/>
+    <Text ID="464040" Value="Erstellen"/>
+    <Text ID="464041" Value="Refresh"/>
+    <Text ID="464042" Value="Nein"/>
+    <Text ID="464043" Value="Suche"/>
+    <Text ID="464044" Value="Sortieren"/>
+    <Text ID="464045" Value="Status"/>
+    <Text ID="464046" Value="Rezeptauswahl"/>
+    <Text ID="464047" Value="MpRecipeUI"/>
+    <Text ID="464048" Value=" Erstellen"/>
+    <Text ID="464049" Value="Name"/>
+    <Text ID="464050" Value="Datum"/>
+    <Text ID="464051" Value="Größe"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="464037" Value=""/>
+    <Text ID="464038" Value=""/>
+    <Text ID="464039" Value=""/>
+    <Text ID="464040" Value=""/>
+    <Text ID="464041" Value=""/>
+    <Text ID="464042" Value=""/>
+    <Text ID="464043" Value=""/>
+    <Text ID="464044" Value=""/>
+    <Text ID="464045" Value=""/>
+    <Text ID="464046" Value=""/>
+    <Text ID="464047" Value=""/>
+    <Text ID="464048" Value=""/>
+    <Text ID="464049" Value=""/>
+    <Text ID="464050" Value=""/>
+    <Text ID="464051" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="464037" Value="0"/>
+    <Index ID="464038" Value="1"/>
+    <Index ID="464039" Value="2"/>
+    <Index ID="464040" Value="3"/>
+    <Index ID="464041" Value="4"/>
+    <Index ID="464042" Value="11"/>
+    <Index ID="464043" Value="12"/>
+    <Index ID="464044" Value="16"/>
+    <Index ID="464045" Value="17"/>
+    <Index ID="464046" Value="18"/>
+    <Index ID="464047" Value="10"/>
+    <Index ID="464048" Value="19"/>
+    <Index ID="464049" Value="20"/>
+    <Index ID="464050" Value="21"/>
+    <Index ID="464051" Value="22"/>
+  </IndexMap>
+</TextGroup>

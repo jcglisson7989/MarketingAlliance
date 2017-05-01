@@ -1,0 +1,23 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: S44param
+ * File: S44param.var
+ * Author: scoccimaroj
+ * Created: July 15, 2010
+ ********************************************************************
+ * Local variables of program S44param
+ ********************************************************************)
+VAR
+	P84ParRead : P84ParamRead_typ; (*Variable used to store parameter data*)
+	X64ParRead : X64ParamRead_typ; (*Holds the information for the X64 parameters that are read*)
+	S44ParRead : S44ParamRead_typ; (*Holds the information for the X64 parameters that are read*)
+	P74ParRead : P74ParamRead_typ; (*Variable used to store parameter data*)
+END_VAR
+(*Constants*)
+VAR CONSTANT
+	NUM_OF_S44PAR : UINT := 123; (*Number of x64 parameters*)
+	NUM_OF_X64PAR : UINT := 138; (*Number of x64 parameters*)
+	NUM_OF_P74PAR : UINT := 836; (*Number of P84 parameters in the IO configuration screen*)
+	NUM_OF_P84PAR : UINT := 362; (*Number of P84 parameters in the IO configuration screen*)
+END_VAR

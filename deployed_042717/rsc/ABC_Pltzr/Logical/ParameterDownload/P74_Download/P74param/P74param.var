@@ -1,0 +1,25 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: P84param
+ * File: P84param.var
+ * Author: scoccimaroj
+ * Created: July 14, 2010
+ ********************************************************************
+ * Local variables of program P84param
+ ********************************************************************)
+VAR
+	State : USINT;
+	cmdStart : BOOL; (*command to start the reading procedure.*)
+	eplRead : EplSDORead; (*Function block to read parameters from the drive.*)
+	cmdAck : BOOL; (*Acknowledge an epl read error*)
+	csvSearch : CSV_Search;
+	csvWrite : CSV_WriteFile;
+	csvInit : CSV_Init;
+	csvInitCheckFile : CSV_InitCheckFile;
+	pNames : ARRAY[0..4] OF UDINT;
+	csvStrucMem : UDINT;
+	csvMemLength : UDINT;
+	position : INT;
+	i : UINT; (*loop variable*)
+END_VAR

@@ -1,0 +1,166 @@
+FUNCTION_BLOCK CSV_CheckFile
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer Industrie Elektronik GmbH
+ ********************************************************************
+ * Library: CSV_File
+ * File: CSV_CheckFile.ab
+ * Author: kreidlm
+ * Created: November 29, 2006
+ ********************************************************************
+ * Implementation of library CSV_File
+ ********************************************************************)
+
+CharPerCyclic = CharPerCyclic
+
+R_TRIG_0.CLK = enable
+R_TRIG_0 FUB R_TRIG()
+
+select fileCheckStep of
+	;##########################################################################################
+    state WAIT
+	;##########################################################################################
+
+        when (R_TRIG_0.CLK = 1) and ( (pFileName = 0) or (pDevice = 0) or (pStructSizes = 0) or (pVersion = 0) or (pFileBuffer = 0) ) do
+            status = ERROR_INPUT_POINTER_ERR;
+       	next WAIT
+
+        when (R_TRIG_0.CLK = 1) do
+            status = 65535
+            statusInternal = 0
+            fileError = 0
+            lineCnt = 0
+            maxLenLine = SIZEOF(lineBuf)-1
+            versionFound = 0
+            cntSizesFound = 0
+            memset(adr(SizesFound), 0, SIZEOF(SizesFound))
+            strcpy(adr(verSignificationStr),"// V")
+            strcpy(adr(sizeSignificationStr), "// Structure Size: ")
+            strcpy(adr(fileVersionStr), "")
+        next FOPEN
+
+	;##########################################################################################
+    state FOPEN
+	;##########################################################################################
+    	FOpen.enable = 1
+        FOpen.pDevice  = pDevice
+        FOpen.pFile = pFileName
+        FOpen.mode = 2
+
+        FOpen FUB FileOpen()
+        fileIdent = FOpen.ident
+        statusInternal = FOpen.status
+
+        when (statusInternal = 0) and (FOpen.filelen < FileBufferSize) do
+            memset(pFileBuffer, 0 , FileBufferSize)
+            pChar access (pFileBuffer+FOpen.filelen)
+            pChar = 0 (* Terminierung ans Ende des Filebuffers*)
+            status = 65535
+        next FREAD
+        (* File zu gross für Buffer *)
+        when (statusInternal = 0) and (FOpen.filelen >= FileBufferSize) do
+        	statusInternal = ERROR_CHECKFILEBUFFER_TOO_SMALL
+            status = statusInternal
+        next WAIT
+        when ((statusInternal <> 0) and (statusInternal <> 65535)) do
+            if (statusInternal = fiERR_SYSTEM) then
+                fileError = FileIoGetSysError()
+            endif
+            status = statusInternal
+        next WAIT
+
+	;##########################################################################################
+    state FREAD
+	;##########################################################################################
+         FRead.enable = 1
+         FRead.ident = fileIdent
+         FRead.offset = 0
+         FRead.pDest = pFileBuffer
+         FRead.len = FOpen.filelen
+
+         FRead FUB FileRead()
+         statusInternal = FRead.status
+
+         when (statusInternal = 0) do
+            loop fileOffset = 0 to (FOpen.filelen-1) do
+                pChar access (pFileBuffer+fileOffset)
+                if (pChar = 10) then (* LF *)
+            	    pChar = 0 (* durch Terminator ersetzen *)
+                    lineCnt = lineCnt + 1
+                endif
+   	        endloop
+            fileOffset = pFileBuffer
+            status = 65535
+         next FCLOSE
+         when ((statusInternal <> 0) and (statusInternal <> 65535)) do
+            if (statusInternal = fiERR_SYSTEM) then
+                fileError = FileIoGetSysError()
+            endif
+            status = statusInternal
+         next WAIT
+
+	;##########################################################################################
+	state FCLOSE
+	;##########################################################################################
+    	FClose.enable = 1
+        FClose.ident = fileIdent
+
+        FClose FUB FileClose()
+        statusInternal = FClose.status
+
+        when (statusInternal = 0) do
+        	status = 65535
+        next FCHECK
+        when ((statusInternal <> 0) and (statusInternal <> 65535)) do
+            if (statusInternal = fiERR_SYSTEM) then
+                fileError = FileIoGetSysError()
+            endif
+            status = statusInternal
+        next WAIT
+
+	;##########################################################################################
+    state FCHECK
+	;##########################################################################################
+        when (1=1) do
+            if (lineCnt > 0) then
+                ixLineMax = lineCnt - 1
+            else
+            	ixLineMax = 0
+            endif
+            ;Filebuffer parsen
+            loop ixLine = 0 to ixLineMax do
+                if (strlen(fileOffset) <= maxLenLine ) then
+                    strcpy(adr(lineBuf), fileOffset)
+                    if ((FIND(lineBuf, verSignificationStr) = 1) and (versionFound = 0)) then
+                        fileVersionStr = MID(lineBuf, strlen(pVersion), strlen(adr(verSignificationStr)))
+                        versionFound = 1
+                    endif
+                    if ((FIND(lineBuf, sizeSignificationStr) = 1) and (cntSizesFound < NumOfStruct)) then
+                        SizesFound[cntSizesFound] = atoi(adr(lineBuf) + strlen(adr(sizeSignificationStr)))
+                        cntSizesFound = cntSizesFound + 1
+                    endif
+                endif
+                fileOffset = fileOffset + strlen(fileOffset) + 1
+            endloop
+            ;Auswertung
+            if (strcmp(adr(fileVersionStr), pVersion) <> 0) then
+                statusInternal = ERROR_VERSION_MISMATCH
+            endif
+            if (cntSizesFound <> NumOfStruct) then
+        	    statusInternal = ERROR_NUM_OF_STRUCT_MISMATCH
+            endif
+       	    if (NumOfStruct > 0) then
+                loop ixCmp = 0 to (NumOfStruct-1) do
+                    pSize access (pStructSizes + ixCmp*SIZEOF(SizesFound[0]))
+                    if (SizesFound[ixCmp] <> pSize) then
+                        statusInternal = ERROR_SIZE_MISMATCH
+                    endif
+                    exitif (statusInternal = ERROR_SIZE_MISMATCH)
+                endloop
+            else
+                statusInternal = ERROR_NUM_OF_STRUCT_MISMATCH
+            endif
+            status = statusInternal
+      	next WAIT
+
+endselect
+END_FUNCTION_BLOCK

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="appManualOperation">
+  <Property Name="Description" Value="Texts for header bar"/>
+  <Property Name="Index" Value="4"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002003" Name="DateTime">
+      <Property Name="Description" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[DateTimeFormats]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="479485" Value="OFF"/>
+    <Text ID="479486" Value="ON"/>
+    <Text ID="479487" Value="STOPPED"/>
+    <Text ID="479488" Value="MOVING"/>
+    <Text ID="479494" Value="JOG BACK"/>
+    <Text ID="479495" Value="MOVE BACK"/>
+    <Text ID="479496" Value="JOG FWD"/>
+    <Text ID="479497" Value="MOVE FWD"/>
+    <Text ID="481405" Value="JOG DOWN"/>
+    <Text ID="481406" Value="MOVE DW"/>
+    <Text ID="481407" Value="JOG UP"/>
+    <Text ID="481408" Value="MOVE UP"/>
+    <Text ID="484212" Value="MOVE to TOP"/>
+    <Text ID="484213" Value="MOVE to MID HI"/>
+    <Text ID="484214" Value="MOVE to MID LO"/>
+    <Text ID="484215" Value="MOVE to BOTOM"/>
+    <Text ID="486158" Value="NO Box"/>
+    <Text ID="486159" Value="Box Present"/>
+    <Text ID="486160" Value="Chain Slack"/>
+    <Text ID="486161" Value="Chain OK"/>
+    <Text ID="486162" Value="NOT Present"/>
+    <Text ID="486163" Value="Present"/>
+    <Text ID="486168" Value="NOT Active"/>
+    <Text ID="486169" Value="Active"/>
+    <Text ID="486472" Value="Open"/>
+    <Text ID="486473" Value="Closed"/>
+    <Text ID="488797" Value="LOWER"/>
+    <Text ID="488798" Value="RAISE"/>
+    <Text ID="488805" Value="OPEN"/>
+    <Text ID="488806" Value="CLOSE"/>
+    <Text ID="488807" Value="RETRACT"/>
+    <Text ID="488808" Value="EXTEND"/>
+    <Text ID="497917" Value="TO GROUPING"/>
+    <Text ID="497918" Value="TO PALLETE"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="479485" Value=""/>
+    <Text ID="479486" Value=""/>
+    <Text ID="479487" Value=""/>
+    <Text ID="479488" Value=""/>
+    <Text ID="479494" Value=""/>
+    <Text ID="479495" Value=""/>
+    <Text ID="479496" Value=""/>
+    <Text ID="479497" Value=""/>
+    <Text ID="481405" Value=""/>
+    <Text ID="481406" Value=""/>
+    <Text ID="481407" Value=""/>
+    <Text ID="481408" Value=""/>
+    <Text ID="484212" Value=""/>
+    <Text ID="484213" Value=""/>
+    <Text ID="484214" Value=""/>
+    <Text ID="484215" Value=""/>
+    <Text ID="486158" Value=""/>
+    <Text ID="486159" Value=""/>
+    <Text ID="486160" Value=""/>
+    <Text ID="486161" Value=""/>
+    <Text ID="486162" Value=""/>
+    <Text ID="486163" Value=""/>
+    <Text ID="486168" Value=""/>
+    <Text ID="486169" Value=""/>
+    <Text ID="486472" Value=""/>
+    <Text ID="486473" Value=""/>
+    <Text ID="488797" Value=""/>
+    <Text ID="488798" Value=""/>
+    <Text ID="488805" Value=""/>
+    <Text ID="488806" Value=""/>
+    <Text ID="488807" Value=""/>
+    <Text ID="488808" Value=""/>
+    <Text ID="497917" Value=""/>
+    <Text ID="497918" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="479485" Value=""/>
+    <Text ID="479486" Value=""/>
+    <Text ID="479487" Value=""/>
+    <Text ID="479488" Value=""/>
+    <Text ID="479494" Value=""/>
+    <Text ID="479495" Value=""/>
+    <Text ID="479496" Value=""/>
+    <Text ID="479497" Value=""/>
+    <Text ID="481405" Value=""/>
+    <Text ID="481406" Value=""/>
+    <Text ID="481407" Value=""/>
+    <Text ID="481408" Value=""/>
+    <Text ID="484212" Value=""/>
+    <Text ID="484213" Value=""/>
+    <Text ID="484214" Value=""/>
+    <Text ID="484215" Value=""/>
+    <Text ID="486158" Value=""/>
+    <Text ID="486159" Value=""/>
+    <Text ID="486160" Value=""/>
+    <Text ID="486161" Value=""/>
+    <Text ID="486162" Value=""/>
+    <Text ID="486163" Value=""/>
+    <Text ID="486168" Value=""/>
+    <Text ID="486169" Value=""/>
+    <Text ID="486472" Value=""/>
+    <Text ID="486473" Value=""/>
+    <Text ID="488797" Value=""/>
+    <Text ID="488798" Value=""/>
+    <Text ID="488805" Value=""/>
+    <Text ID="488806" Value=""/>
+    <Text ID="488807" Value=""/>
+    <Text ID="488808" Value=""/>
+    <Text ID="497917" Value=""/>
+    <Text ID="497918" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="479485" Value="0"/>
+    <Index ID="479486" Value="1"/>
+    <Index ID="479487" Value="2"/>
+    <Index ID="479488" Value="3"/>
+    <Index ID="479494" Value="4"/>
+    <Index ID="479495" Value="5"/>
+    <Index ID="479496" Value="6"/>
+    <Index ID="479497" Value="7"/>
+    <Index ID="481405" Value="8"/>
+    <Index ID="481406" Value="9"/>
+    <Index ID="481407" Value="10"/>
+    <Index ID="481408" Value="11"/>
+    <Index ID="484212" Value="12"/>
+    <Index ID="484213" Value="13"/>
+    <Index ID="484214" Value="14"/>
+    <Index ID="484215" Value="15"/>
+    <Index ID="486158" Value="16"/>
+    <Index ID="486159" Value="17"/>
+    <Index ID="486160" Value="18"/>
+    <Index ID="486161" Value="19"/>
+    <Index ID="486162" Value="20"/>
+    <Index ID="486163" Value="21"/>
+    <Index ID="486168" Value="22"/>
+    <Index ID="486169" Value="23"/>
+    <Index ID="486472" Value="24"/>
+    <Index ID="486473" Value="25"/>
+    <Index ID="488797" Value="26"/>
+    <Index ID="488798" Value="27"/>
+    <Index ID="488805" Value="28"/>
+    <Index ID="488806" Value="29"/>
+    <Index ID="488807" Value="30"/>
+    <Index ID="488808" Value="31"/>
+    <Index ID="497917" Value="32"/>
+    <Index ID="497918" Value="33"/>
+  </IndexMap>
+</TextGroup>

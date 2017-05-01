@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.2.134"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="paiTGMenuRTMachineMode">
+  <Property Name="Description" Value="PAI Text used in the Right menu"/>
+  <Property Name="Index" Value="3"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="460797" Value="STOPPED"/>
+    <Text ID="460798" Value="FILLING"/>
+    <Text ID="460799" Value="PRODUCTION"/>
+    <Text ID="460800" Value="WASHDOWN"/>
+    <Text ID="460801" Value="BREAK"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="460797" Value=""/>
+    <Text ID="460798" Value=""/>
+    <Text ID="460799" Value=""/>
+    <Text ID="460800" Value=""/>
+    <Text ID="460801" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="460797" Value="DETENIDO"/>
+    <Text ID="460798" Value="CARGANDO"/>
+    <Text ID="460799" Value="PRODUCCION"/>
+    <Text ID="460800" Value="LIMPIEZA"/>
+    <Text ID="460801" Value="ALTO"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="460797" Value="0"/>
+    <Index ID="460798" Value="1"/>
+    <Index ID="460799" Value="2"/>
+    <Index ID="460800" Value="3"/>
+    <Index ID="460801" Value="4"/>
+  </IndexMap>
+</TextGroup>

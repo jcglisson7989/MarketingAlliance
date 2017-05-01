@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpFileManagerUIText">
+  <Property Name="Description" Value="Text for FileManagerUI"/>
+  <Property Name="Index" Value="1017"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="DirName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.CurrentDir]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="DevName">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FileCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.FileCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="FolderCount">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.paiComponents.paiMp.gPaiMp.data.MpFileManagerUIConnect.File.PathInfo.FolderCount]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="1"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="463603" Value="Delete"/>
+    <Text ID="463604" Value="Cut"/>
+    <Text ID="463605" Value="Copy"/>
+    <Text ID="463606" Value="Paste"/>
+    <Text ID="463607" Value="Refresh"/>
+    <Text ID="463608" Value="CurrentPath:{DevName}{DirName}"/>
+    <Text ID="463609" Value="Selected:"/>
+    <Text ID="463610" Value="MultiSelect"/>
+    <Text ID="463611" Value="File(s) {FileCount} / Folder(s) {FolderCount}"/>
+    <Text ID="463612" Value="Current Path"/>
+    <Text ID="463613" Value="MpFileManagerUI"/>
+    <Text ID="463614" Value="No"/>
+    <Text ID="463615" Value="Search keyword"/>
+    <Text ID="463616" Value="Create Dir"/>
+    <Text ID="463617" Value="Rename"/>
+    <Text ID="463618" Value="New Name"/>
+    <Text ID="463619" Value="Sort"/>
+    <Text ID="463620" Value="Status"/>
+    <Text ID="463621" Value="Name"/>
+    <Text ID="463622" Value="Date"/>
+    <Text ID="463623" Value="Size"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="463603" Value="Löschen"/>
+    <Text ID="463604" Value="Ausschn."/>
+    <Text ID="463605" Value="Kopieren"/>
+    <Text ID="463606" Value="Einfügen"/>
+    <Text ID="463607" Value="Refresh"/>
+    <Text ID="463608" Value="Pfad:{DevName}{DirName}"/>
+    <Text ID="463609" Value="Ausgewählt:"/>
+    <Text ID="463610" Value="Mehrfach auswahl"/>
+    <Text ID="463611" Value="Dateien {FileCount} / Ordner {FolderCount}"/>
+    <Text ID="463612" Value="Akt. Pfad"/>
+    <Text ID="463613" Value="MpFileManagerUI"/>
+    <Text ID="463614" Value="Nein"/>
+    <Text ID="463615" Value="Suche"/>
+    <Text ID="463616" Value="Ordner erstellen"/>
+    <Text ID="463617" Value="Um benennen"/>
+    <Text ID="463618" Value="Neuer Name"/>
+    <Text ID="463619" Value="Sortieren"/>
+    <Text ID="463620" Value="Status"/>
+    <Text ID="463621" Value="Name"/>
+    <Text ID="463622" Value="Datum"/>
+    <Text ID="463623" Value="Größe"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="463603" Value=""/>
+    <Text ID="463604" Value=""/>
+    <Text ID="463605" Value=""/>
+    <Text ID="463606" Value=""/>
+    <Text ID="463607" Value=""/>
+    <Text ID="463608" Value=""/>
+    <Text ID="463609" Value=""/>
+    <Text ID="463610" Value=""/>
+    <Text ID="463611" Value=""/>
+    <Text ID="463612" Value=""/>
+    <Text ID="463613" Value=""/>
+    <Text ID="463614" Value=""/>
+    <Text ID="463615" Value=""/>
+    <Text ID="463616" Value=""/>
+    <Text ID="463617" Value=""/>
+    <Text ID="463618" Value=""/>
+    <Text ID="463619" Value=""/>
+    <Text ID="463620" Value=""/>
+    <Text ID="463621" Value=""/>
+    <Text ID="463622" Value=""/>
+    <Text ID="463623" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="463603" Value="0"/>
+    <Index ID="463604" Value="1"/>
+    <Index ID="463605" Value="2"/>
+    <Index ID="463606" Value="3"/>
+    <Index ID="463607" Value="4"/>
+    <Index ID="463608" Value="5"/>
+    <Index ID="463609" Value="6"/>
+    <Index ID="463610" Value="7"/>
+    <Index ID="463611" Value="9"/>
+    <Index ID="463612" Value="8"/>
+    <Index ID="463613" Value="10"/>
+    <Index ID="463614" Value="11"/>
+    <Index ID="463615" Value="12"/>
+    <Index ID="463616" Value="13"/>
+    <Index ID="463617" Value="14"/>
+    <Index ID="463618" Value="15"/>
+    <Index ID="463619" Value="16"/>
+    <Index ID="463620" Value="17"/>
+    <Index ID="463621" Value="20"/>
+    <Index ID="463622" Value="21"/>
+    <Index ID="463623" Value="22"/>
+  </IndexMap>
+</TextGroup>
