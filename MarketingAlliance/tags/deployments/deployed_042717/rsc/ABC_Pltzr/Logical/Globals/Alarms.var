@@ -1,0 +1,11 @@
+(*********************************************************************************
+ * Copyright: Piedmont Automation Inc
+ * Author:    Goran
+ * Created:   Jun 26, 2015/11:38 AM 
+ *********************************************************************************
+ * Declaration of global variables
+ *********************************************************************************)
+VAR
+	gAlarms : applicationAlarms_typ := (0);
+	gAlarmsFiltered : applicationAlarms_typ := (0);
+END_VAR

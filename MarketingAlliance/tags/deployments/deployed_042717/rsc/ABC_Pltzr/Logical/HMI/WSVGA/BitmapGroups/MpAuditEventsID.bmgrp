@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAuditEventsID">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="1020"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="1233" Value="None"/>
+    <BitmapRef ID="1234" Value="Source[local].Bitmap[MpAudit_3rdPartyEvent]"/>
+    <BitmapRef ID="1235" Value="Source[local].Bitmap[MpAudit_VC4Event]"/>
+    <BitmapRef ID="1236" Value="Source[local].Bitmap[MpAudit_CustomEvent]"/>
+    <BitmapRef ID="1237" Value="Source[local].Bitmap[MpAudit_UserEvent]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="1233" Value="0"/>
+    <Index ID="1234" Value="16"/>
+    <Index ID="1235" Value="17"/>
+    <Index ID="1236" Value="18"/>
+    <Index ID="1237" Value="2"/>
+  </IndexMap>
+</BitmapGroup>

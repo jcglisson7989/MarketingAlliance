@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="alertMsg">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value="Message Box"/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiAlertMsg.status]"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="462268" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="462268" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="462268" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="462268" Value="2"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="AlertHeader">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="22"/>
+      <Property Name="Left" Value="355"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="Alert Title"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiTXTMSGHeader]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiAlertMsg.header]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="212"/>
+      <Property Name="Width" Value="320"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="MessageBody">
+      <Property Name="BackColor" Value="8"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="154"/>
+      <Property Name="Left" Value="355"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="234"/>
+      <Property Name="Width" Value="320"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtContent">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="102"/>
+      <Property Name="Left" Value="357"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="Example Alarm Text"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[paiTXTMSGBody]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.paiComponents.paiTemplate.paiHMI.gPaiHmiAlertMsg.message]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="254"/>
+      <Property Name="Width" Value="313"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>

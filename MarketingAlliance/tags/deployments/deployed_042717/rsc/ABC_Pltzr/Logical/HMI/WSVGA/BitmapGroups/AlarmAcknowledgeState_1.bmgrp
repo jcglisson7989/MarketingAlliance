@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="AlarmAcknowledgeState_1">
+  <Property Name="Description" Value="Bitmap group for acknowledge state of an alarm"/>
+  <Property Name="Index" Value="156"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="22" Value="Source[local].Bitmap[Alarm_Quit_0]"/>
+    <BitmapRef ID="23" Value="Source[local].Bitmap[Alarm_NotQuit_0]"/>
+    <BitmapRef ID="24" Value="Source[local].Bitmap[Alarm_ResetAcknowledge_0]"/>
+    <BitmapRef ID="36" Value="Source[local].Bitmap[Alarm_AcknowledgeReset_0]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="22" Value="0"/>
+    <Index ID="23" Value="1"/>
+    <Index ID="24" Value="2"/>
+    <Index ID="36" Value="3"/>
+  </IndexMap>
+</BitmapGroup>

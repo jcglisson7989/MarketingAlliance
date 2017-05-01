@@ -1,0 +1,87 @@
+FUNCTION_BLOCK SearchFileName
+;*****************************************************************
+;FUB: 			CSV_SearchFileName
+;*****************************************************************
+;Discription:
+;	This FUB search the specified device for the specified file.
+;
+;Parameter:
+;
+;Author:	Georg Kreil
+;			B&R Eggelsberg
+;
+;History:	V0.01.6 - 21 July 2003
+;					created
+;			V0.01.7 - 7 August 2003
+;					no changes
+;			V0.01.8 - 8 August 2003
+;					no changes
+;			V0.01.9 - 11 August 2003
+;					no changes
+;
+;*****************************************************************
+ select step
+
+;############################################################################################
+ 	state WAIT
+;############################################################################################
+ 		when(pFileName <> 0) do
+ 			strcpy(adr(FileName),pFileName)
+
+			loop i=0 to usint(strlen(adr(FileName))) do
+				SearchChar access adr(FileName)+i
+				exitif(SearchChar = '.')
+			endloop
+
+			if(SearchChar <> '.') then
+				strcat(adr(FileName), ".CSV")
+			endif
+			status= 65535
+ 		next FILEOPEN
+
+;############################################################################################
+ 	state FILEOPEN
+;############################################################################################
+		FileOpen_01.enable= 1
+		FileOpen_01.pDevice= pDevice
+		FileOpen_01.pFile= adr(FileName)
+		FileOpen_01.mode= 0
+		FileOpen_01 FUB FileOpen()
+
+		when (FileOpen_01.status = 0) do
+			status= 65535
+		next FILECLOSE
+
+		when (FileOpen_01.status = 65535) do
+			status= FileOpen_01.status
+		next FILEOPEN
+
+		when (FileOpen_01.status = 20708) do
+			status= FILE_NOT_FOUND
+		next WAIT
+
+		when (FileOpen_01.status <> 20708) and (FileOpen_01.status <> 0)and (FileOpen_01.status <> 65535) do
+			status= FileOpen_01.status
+		next WAIT
+
+;############################################################################################
+ 	state FILECLOSE
+;############################################################################################
+		FileClose_01.enable= 1
+		FileClose_01.ident= FileOpen_01.ident
+		FileClose_01 FUB FileClose()
+
+		when (FileClose_01.status = 0) do
+			status= FILE_FOUND
+		next WAIT
+
+		when (FileClose_01.status = 65535) do
+			status= FileClose_01.status
+		next FILECLOSE
+
+		when (FileClose_01.status <> 0)and (FileClose_01.status <> 65535) do
+			status= FileClose_01.status
+		next WAIT
+
+endselect
+END_FUNCTION_BLOCK

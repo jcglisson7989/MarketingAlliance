@@ -1,0 +1,11 @@
+VAR RETAIN
+	gTestLayer : ARRAY[0..9] OF appControlAnimationRow_typ;
+END_VAR
+VAR
+	gDrawRect : ARRAY[0..PADRAW_RECT_MAXIDX] OF paDrawRect_typ;
+	gDrawBoxLayer : paDrawBoxDrawing_typ;
+	gCamApp : paCamEditApp_typ;
+END_VAR
+VAR RETAIN
+	gBoxSize : paDrawBoxSize_typ;
+END_VAR

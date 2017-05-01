@@ -1,0 +1,24 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: S44param
+ * File: S44param.var
+ * Author: scoccimaroj
+ * Created: July 15, 2010
+ ********************************************************************
+ * Local variables of program S44param
+ ********************************************************************)
+VAR
+	cmdStart : BOOL; (*Start command*)
+	State : USINT; (*state machine state*)
+	i : UINT; (*counter variable*)
+	AsIOAccRead_0 : AsIOAccRead; (*Read function block*)
+	csvSearch : CSV_Search;
+	csvWrite : CSV_WriteFile;
+	csvInit : CSV_Init;
+	csvInitCheckFile : CSV_InitCheckFile;
+	pNames : ARRAY[0..4] OF UDINT;
+	csvStrucMem : UDINT;
+	csvMemLength : UDINT;
+	position : INT;
+END_VAR

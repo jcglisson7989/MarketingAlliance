@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlarmBasic" Type="mpalarmbasic">
+    <Group ID="mapp.Alarm.Factory">
+      <Group ID="Reactions">
+        <Group ID="Reaction[0]">
+          <Property ID="Description" Value="Example: Immediate Stop" />
+        </Group>
+      </Group>
+    </Group>
+    <Group ID="Alarms">
+      <Group ID="UserAlarm">
+        <Group ID="Alarms">
+          <Group ID="Alarm[0]">
+            <Property ID="Description" Value="Example: Temperature over Tolerance" />
+            <Property ID="Reaction" Value="1" />
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.2.134?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="Package">paiScreens</Object>
+    <Object Type="File" Description="Global data types - machine configuration  - pai private - DO NOT CHANGE ">paiConfigSys.typ</Object>
+    <Object Type="File" Description="pai HMI types">paiHMI.typ</Object>
+    <Object Type="File" Description="Global variables - pai System  - DO NOT CHANGE">paiConfig.var</Object>
+    <Object Type="File" Description="Global variables - pai HMI - DO NOT CHANGE">paiHMI.var</Object>
+    <Object Type="Program" Language="ANSIC" Description="pai HMITemplate Support (TK#8) ">paiHmi</Object>
+  </Objects>
+</Package>

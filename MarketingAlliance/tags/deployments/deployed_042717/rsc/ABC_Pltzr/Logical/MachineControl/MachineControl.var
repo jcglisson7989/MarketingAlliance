@@ -1,0 +1,29 @@
+(*Main Control Object*)
+VAR
+	gCtrl : macCtrl_typ := (0);
+	gCtrlAnimation : appControlAnimation_typ := (0);
+	dryCycleState : UDINT := 0;
+	dryCycleStatePallete : UDINT := 0;
+	animationState : UDINT := 0;
+	gMsgRunning : STRING[63] := 'Palletizer 72';
+	gMsgRunningCtrl : paiHmiMsgRunning_typ := (0);
+END_VAR
+(*==========================================================*)
+VAR RETAIN
+	gPallete : palleteCtrl_typ := (0);
+END_VAR
+VAR
+	gLayer_L0 : palleteCfgLayer_typ := (0);
+	gLayer_L1 : palleteCfgLayer_typ := (0);
+	gLayerEditor : palleteCfgLayer_typ := (0);
+	gLayerEditorTxt : palleteCfgLayerTxt_typ := (0);
+END_VAR
+(*Application specific recipe file handling*)
+VAR
+	gPalleteFileHandler : appHmiFileHandling_typ := (0);
+	gLayerFileHandler : appHmiFileHandling_typ := (0);
+	gLayer_L0_L1_FileHandler : appHmiFileHandling_typ := (0);
+END_VAR
+VAR RETAIN
+	gStats : macCtrlStats_typ := (0);
+END_VAR
