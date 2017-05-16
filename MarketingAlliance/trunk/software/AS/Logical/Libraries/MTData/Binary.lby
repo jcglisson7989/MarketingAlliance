@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.4.149?>
+<Library Version="2.10.0" Description="This mechatronics library contains function blocks for statistical data analysis." xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MTData.fun</File>
+    <File>MTData.typ</File>
+    <File>MTData.var</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="sys_lib" />
+    <Dependency ObjectName="brsystem" />
+    <Dependency ObjectName="astime" />
+    <Dependency ObjectName="MTTypes" FromVersion="1.03.0" />
+  </Dependencies>
+</Library>

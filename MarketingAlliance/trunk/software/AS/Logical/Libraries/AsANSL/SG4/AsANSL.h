@@ -28,17 +28,6 @@ extern "C"
  #define asANSL_ERR_THREAD_RESOURCE 31653U
  #define asANSL_ERR_EVENT_RESOURCE 31652U
  #define asANSL_ERR_MEMORY_RESOURCE 31651U
- #define asANSL_RED_CONN_SEC_ERROR 32U
- #define asANSL_RED_CONN_SEC_OK 16U
- #define asANSL_RED_CONN_PRI_ERROR 8U
- #define asANSL_RED_CONN_PRI_OK 4U
- #define asANSL_RED_CONN_CLU_ERROR 2U
- #define asANSL_RED_CONN_CLU_OK 1U
- #define asANSL_RED_CONN_SEC_ACTIV 5U
- #define asANSL_RED_CONN_SEC_NOT_ACTIV 4U
- #define asANSL_RED_CONN_PRI_ACTIV 3U
- #define asANSL_RED_CONN_PRI_NOT_ACTIV 2U
- #define asANSL_RED_CONN_NO_CONNECTION 0U
  #define asANSL_PV_DIRECTION_WRITE 2U
  #define asANSL_PV_DIRECTION_READ 1U
  #define asANSL_OPTION_CPU_PARTNER 1U
@@ -63,17 +52,6 @@ extern "C"
  _GLOBAL_CONST unsigned short asANSL_ERR_THREAD_RESOURCE;
  _GLOBAL_CONST unsigned short asANSL_ERR_EVENT_RESOURCE;
  _GLOBAL_CONST unsigned short asANSL_ERR_MEMORY_RESOURCE;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_SEC_ERROR;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_SEC_OK;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_PRI_ERROR;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_PRI_OK;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_CLU_ERROR;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_CLU_OK;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_SEC_ACTIV;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_SEC_NOT_ACTIV;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_PRI_ACTIV;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_PRI_NOT_ACTIV;
- _GLOBAL_CONST unsigned long asANSL_RED_CONN_NO_CONNECTION;
  _GLOBAL_CONST unsigned char asANSL_PV_DIRECTION_WRITE;
  _GLOBAL_CONST unsigned char asANSL_PV_DIRECTION_READ;
  _GLOBAL_CONST unsigned char asANSL_OPTION_CPU_PARTNER;
@@ -114,16 +92,6 @@ typedef struct AsANSLClientDiagConnInfoType
 	unsigned long connNumErr;
 } AsANSLClientDiagConnInfoType;
 
-typedef struct AsANSLClientDiagRedConnInfoType
-{	plcstring redConnActIpAddr[65];
-	unsigned long redConnAct;
-	unsigned long redConnStatus;
-	unsigned long redConnCluError;
-	unsigned long redConnPriError;
-	unsigned long redConnSecError;
-	unsigned long redConnRRPrio;
-} AsANSLClientDiagRedConnInfoType;
-
 typedef struct AsANSLClientDiagPvInfoType
 {	plcstring pvNameLocal[513];
 	plcstring pvNameRemote[513];
@@ -132,30 +100,6 @@ typedef struct AsANSLClientDiagPvInfoType
 	unsigned long pvError;
 	unsigned long pvDirection;
 } AsANSLClientDiagPvInfoType;
-
-typedef struct AsANSLServerDiagConnInfoType
-{	plcstring connClientIpAddr[65];
-	plcstring connServerIpAddr[65];
-	struct AsANSLTimeStampType connTimeStamp;
-	unsigned long connTimeout;
-	unsigned long connSendDelay;
-	unsigned long connPort;
-	unsigned long connBufferSize;
-	unsigned long connServiceObjects;
-	unsigned long connBytesRecv;
-	unsigned long connBytesSent;
-	unsigned long connRequestsRecv;
-	unsigned long connEventsSent;
-	unsigned long connResponsesSent;
-	unsigned long connEventPvs;
-	plcbit connEventPvProcessing;
-	unsigned long connEventPvRate;
-	unsigned long connEventPvTime;
-	unsigned long connEventPvsChangedBlock;
-	unsigned long connEventPvsChangedAll;
-	unsigned long connRRPrio;
-	plcstring connRRName[65];
-} AsANSLServerDiagConnInfoType;
 
 typedef struct AsANSLClientStart
 {
@@ -242,21 +186,6 @@ typedef struct AsANSLClientDiagConnAll
 	plcbit enable;
 } AsANSLClientDiagConnAll_typ;
 
-typedef struct AsANSLClientDiagRedConn
-{
-	/* VAR_INPUT (analog) */
-	plcstring dataObjName[257];
-	plcstring connName[65];
-	/* VAR_OUTPUT (analog) */
-	unsigned short status;
-	struct AsANSLClientDiagRedConnInfoType ClientDiagRedConnInfo;
-	/* VAR (analog) */
-	unsigned short i_state;
-	unsigned short i_result;
-	/* VAR_INPUT (digital) */
-	plcbit enable;
-} AsANSLClientDiagRedConn_typ;
-
 typedef struct AsANSLClientDiagPv
 {
 	/* VAR_INPUT (analog) */
@@ -309,21 +238,6 @@ typedef struct AsANSLServerRRInfo
 	plcbit enable;
 } AsANSLServerRRInfo_typ;
 
-typedef struct AsANSLServerDiagConnAll
-{
-	/* VAR_INPUT (analog) */
-	unsigned long index;
-	plcstring filterClientIpAddr[65];
-	/* VAR_OUTPUT (analog) */
-	unsigned short status;
-	struct AsANSLServerDiagConnInfoType ServerDiagConnInfo;
-	/* VAR (analog) */
-	unsigned short i_state;
-	unsigned short i_result;
-	/* VAR_INPUT (digital) */
-	plcbit enable;
-} AsANSLServerDiagConnAll_typ;
-
 
 
 /* Prototyping of functions and function blocks */
@@ -333,12 +247,10 @@ _BUR_PUBLIC void AsANSLClientDiag(struct AsANSLClientDiag* inst);
 _BUR_PUBLIC void AsANSLClientDiagAll(struct AsANSLClientDiagAll* inst);
 _BUR_PUBLIC void AsANSLClientDiagConn(struct AsANSLClientDiagConn* inst);
 _BUR_PUBLIC void AsANSLClientDiagConnAll(struct AsANSLClientDiagConnAll* inst);
-_BUR_PUBLIC void AsANSLClientDiagRedConn(struct AsANSLClientDiagRedConn* inst);
 _BUR_PUBLIC void AsANSLClientDiagPv(struct AsANSLClientDiagPv* inst);
 _BUR_PUBLIC void AsANSLClientDiagPvAll(struct AsANSLClientDiagPvAll* inst);
 _BUR_PUBLIC void AsANSLServerRRInfo(struct AsANSLServerRRInfo* inst);
-_BUR_PUBLIC void AsANSLServerDiagConnAll(struct AsANSLServerDiagConnAll* inst);
-_BUR_PUBLIC unsigned long AsANSLServerConnCount(void);
+_BUR_PUBLIC unsigned long AsANSLServerConnCount();
 
 
 #ifdef __cplusplus

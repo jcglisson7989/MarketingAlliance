@@ -1,0 +1,45 @@
+(********************************************************************
+ * COPYRIGHT -- Microsoft
+ ********************************************************************
+ * Library: MAPPSuppor
+ * File: MAPPSuppor.var
+ * Author: John
+ * Created: April 23, 2015
+ ********************************************************************
+ * Constants of library MAPPSuppor
+ ********************************************************************)
+VAR CONSTANT
+	DEFINE_LOGSTRING_LEN : UDINT := 512;
+	MAX_CALLS_INIT_LOGBOOK : UDINT := 50;
+	MAX_IDX_LANGUAGES : UDINT := 5;
+	DEFINE_LANGUAGE_STRINGS : ARRAY[0..MAX_IDX_LANGUAGES] OF STRING[4] := ['en','sv','pt','de','es','fr']; (*MUST MATCH EXACTLY THE LANGUAGES IN THE ORDER THEY ARE CONFIGURED IN PROJECT LANGUAGES.*)
+	DEFINE_MAX_IDX_HMI_TABLES : UDINT := 3;
+	DEFINE_MAX_TABLE_ENTRIES : UDINT := 20;
+	DEFINE_PAR_DESC_MAXLEN : UDINT := 240;
+	DEFINE_PAR_NAME_MAXLEN : UDINT := 80;
+	DEFINE_PAR_IDX_MAXLEN : UDINT := 4;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	Enum_Max_Listbox_Char : USINT := 80;
+	Enum_Max_Listbox_Items : USINT := 12;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	HMI_ENUM_TAB_KEYS_MAX : USINT := 11;
+	HMI_ENUM_MENU_ITEMS_RT : USINT := 11;
+	HMI_ENUM_MENU_ITEMS_LT : USINT := 11;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	HMI_PWD_MAXLEN : UDINT := 15;
+	HMI_PWD_LEVELS : UDINT := 4;
+END_VAR
+(*Insert your comment here.*)
+VAR CONSTANT
+	DEFINE_INDEX_TEXTTABLE_PV : USINT := LANGUAGE_ENGLISH;
+	DEFINE_INDEX_TEXTTABLE_DEFAULT : USINT := LANGUAGE_SWEDISH;
+	DEFINE_INDEX_TEXTTABLE_MIN : USINT := LANGUAGE_PORTUGESE;
+	DEFINE_INDEX_TEXTTABLE_MAX : USINT := LANGUAGE_GERMAN;
+	DEFINE_INDEX_TEXTTABLE_HIDE : USINT := LANGUAGE_SPANISH;
+END_VAR

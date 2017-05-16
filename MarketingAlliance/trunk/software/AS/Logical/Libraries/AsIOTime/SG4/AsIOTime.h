@@ -17,8 +17,8 @@ extern "C"
 
 
 /* Prototyping of functions and function blocks */
-_BUR_PUBLIC signed long AsIOTimeStamp(void);
-_BUR_PUBLIC signed long AsIOTimeCyclicStart(void);
+_BUR_PUBLIC signed long AsIOTimeStamp();
+_BUR_PUBLIC signed long AsIOTimeCyclicStart();
 
 
 #ifdef __cplusplus

@@ -26,12 +26,6 @@ extern "C"
  #define tcpMSG_OOB 1U
  #define tcpID_MAX_GET 3002U
  #define tcpID_LIST_GET 3001U
- #define tcpTCP_KEEPINTVL_GET 2008U
- #define tcpTCP_KEEPINTVL_SET 2007U
- #define tcpTCP_KEEPIDLE_GET 2006U
- #define tcpTCP_KEEPIDLE_SET 2005U
- #define tcpTCP_KEEPCNT_GET 2004U
- #define tcpTCP_KEEPCNT_SET 2003U
  #define tcpTCP_NODELAY_GET 2002U
  #define tcpTCP_NODELAY_SET 2001U
  #define tcpSO_NOWAITING_GET 1013U
@@ -81,12 +75,6 @@ extern "C"
  _GLOBAL_CONST unsigned long tcpMSG_OOB;
  _GLOBAL_CONST unsigned long tcpID_MAX_GET;
  _GLOBAL_CONST unsigned long tcpID_LIST_GET;
- _GLOBAL_CONST unsigned long tcpTCP_KEEPINTVL_GET;
- _GLOBAL_CONST unsigned long tcpTCP_KEEPINTVL_SET;
- _GLOBAL_CONST unsigned long tcpTCP_KEEPIDLE_GET;
- _GLOBAL_CONST unsigned long tcpTCP_KEEPIDLE_SET;
- _GLOBAL_CONST unsigned long tcpTCP_KEEPCNT_GET;
- _GLOBAL_CONST unsigned long tcpTCP_KEEPCNT_SET;
  _GLOBAL_CONST unsigned long tcpTCP_NODELAY_GET;
  _GLOBAL_CONST unsigned long tcpTCP_NODELAY_SET;
  _GLOBAL_CONST unsigned long tcpSO_NOWAITING_GET;

@@ -1,8 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.2.6.110 SP?>
+<?AutomationStudio Version=4.2.4.149?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">HMI_Page_Enum.typ</Object>
-    <Object Type="DataObject" Language="Vc" Description="1024x768">WSVGA</Object>
+    <Object Type="File" Description="Global data types">Generic_Controls.typ</Object>
+    <Object Type="File">HMI_Pages.typ</Object>
+    <Object Type="File" Description="Global data types">HMIdialog.typ</Object>
+    <Object Type="File" Description="Global data types">HMImsgScroll.typ</Object>
+    <Object Type="File" Description="Global data types">HMIForceIO.typ</Object>
+    <Object Type="File" Description="Global data types">HMIalert.typ</Object>
+    <Object Type="File" Description="Global data types">HMI.typ</Object>
+    <Object Type="File" Description="Global data types">HMIremmem.typ</Object>
+    <Object Type="File" Description="Global variables">HMI.var</Object>
+    <Object Type="Program" Language="ANSIC" Description="Service that manages navigating through the VC4 HMI">hmilogic</Object>
+    <Object Type="Program" Language="IEC">ForceIO</Object>
+    <Object Type="DataObject" Language="Vc" Description="800x480">VisuW1</Object>
+    <Object Type="Program" Language="IEC" Description="Manage activating the PV List tables for recipe, configuration params (gRecCfg.active.&lt;&gt;)">HMITableManager</Object>
   </Objects>
 </Package>

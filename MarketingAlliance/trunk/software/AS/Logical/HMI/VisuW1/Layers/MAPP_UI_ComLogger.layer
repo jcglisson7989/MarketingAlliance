@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="MAPP_UI_ComLogger">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="480"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="800"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="491783" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491784" Value=""/>
+      <Text ID="491785" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491786" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491787" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491788" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491789" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491790" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491791" Value="Clear"/>
+      <Text ID="491792" Value="Filter:"/>
+      <Text ID="514205" Value=""/>
+      <Text ID="514206" Value=""/>
+      <Text ID="514207" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="sv">
+      <Text ID="491783" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491784" Value=""/>
+      <Text ID="491785" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491786" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491787" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491788" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491789" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491790" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491791" Value="Klar"/>
+      <Text ID="491792" Value="Filtrera:"/>
+      <Text ID="514205" Value=""/>
+      <Text ID="514206" Value=""/>
+      <Text ID="514207" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="491783" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491784" Value=""/>
+      <Text ID="491785" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491786" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491787" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491788" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491789" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491790" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491791" Value="Claro"/>
+      <Text ID="491792" Value="Filtro:"/>
+      <Text ID="514205" Value=""/>
+      <Text ID="514206" Value=""/>
+      <Text ID="514207" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="491783" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491784" Value=""/>
+      <Text ID="491785" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491786" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491787" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491788" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491789" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491790" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491791" Value="Klar"/>
+      <Text ID="491792" Value="Filter:"/>
+      <Text ID="514205" Value=""/>
+      <Text ID="514206" Value=""/>
+      <Text ID="514207" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="fr">
+      <Text ID="491783" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491784" Value=""/>
+      <Text ID="491785" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491786" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491787" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491788" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491789" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491790" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491791" Value="Clair"/>
+      <Text ID="491792" Value="Filtre:"/>
+      <Text ID="514205" Value=""/>
+      <Text ID="514206" Value=""/>
+      <Text ID="514207" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="es">
+      <Text ID="491783" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491784" Value=""/>
+      <Text ID="491785" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491786" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491787" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491788" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491789" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491790" Value="%m/%d/%Y %H:%M:%S"/>
+      <Text ID="491791" Value="Claro"/>
+      <Text ID="491792" Value="Filtrar:"/>
+      <Text ID="514205" Value=""/>
+      <Text ID="514206" Value=""/>
+      <Text ID="514207" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="491783" Value="40"/>
+      <Index ID="491784" Value="18"/>
+      <Index ID="491785" Value="43"/>
+      <Index ID="491786" Value="46"/>
+      <Index ID="491787" Value="49"/>
+      <Index ID="491788" Value="52"/>
+      <Index ID="491789" Value="55"/>
+      <Index ID="491790" Value="58"/>
+      <Index ID="491791" Value="60"/>
+      <Index ID="491792" Value="62"/>
+      <Index ID="514205" Value="24"/>
+      <Index ID="514206" Value="25"/>
+      <Index ID="514207" Value="26"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="Text_5">
+      <Property Name="Border" Value="Source[local].Border[Panel_BLK]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="41"/>
+      <Property Name="Left" Value="692"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="26"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="413"/>
+      <Property Name="Width" Value="108"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_4">
+      <Property Name="Border" Value="Source[local].Border[Panel_BLK]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="269"/>
+      <Property Name="Left" Value="692"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="25"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="145"/>
+      <Property Name="Width" Value="108"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_3">
+      <Property Name="Border" Value="Source[local].Border[Panel_BLK]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="51"/>
+      <Property Name="Left" Value="692"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="24"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="96"/>
+      <Property Name="Width" Value="108"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="Border" Value="Source[local].Border[Panel_BLK]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="356"/>
+      <Property Name="Left" Value="1"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="18"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="97"/>
+      <Property Name="Width" Value="693"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpFacilityIdx0">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="None"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[0]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="99"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="103"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpSeverityIdx0">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpComSeveritiesEnum]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[0]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="128"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtComponentNameIdx0">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="232"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MpComponent"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[0]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="99"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtIndex0">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="2"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="40"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="99"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[0].DateTime]"/>
+      <Property Name="Width" Value="220"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtErrorMessageIdx0">
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[0]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="116"/>
+      <Property Name="Width" Value="648"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnLineUp">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[HAS_up_1_0]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_22_0]"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="727"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[ScrollUp]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="218"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_22_0]"/>
+      <Property Name="Width" Value="66"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnLineDown">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[HAS_down_1_0]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27_0]"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="727"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[DownButton]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="282"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27_0]"/>
+      <Property Name="Width" Value="66"/>
+    </Control>
+    <Control ClassId="0x00001012" Name="sclScrollBar">
+      <Property Name="BackColor" Value="15"/>
+      <Property Name="Border" Value="Source[local].Border[Panel_BLK]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="263"/>
+      <Property Name="Left" Value="698"/>
+      <Property Name="Marker" Value="Bitmap Only"/>
+      <Property Name="MarkerBitmap" Value="None"/>
+      <Property Name="MarkerSpacing" Value="0"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="100"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="MinorPitchLines" Value="1"/>
+      <Property Name="Orientation" Value="Top"/>
+      <Property Name="RangeColor" Value="10"/>
+      <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.RangeEnd]"/>
+      <Property Name="RangeEndValue" Value="90"/>
+      <Property Name="RangeSpacing" Value="0"/>
+      <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.RangeStart]"/>
+      <Property Name="RangeStartValue" Value="30"/>
+      <Property Name="RangeWidth" Value="18"/>
+      <Property Name="Spacing" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="149"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueSimulation" Value="0"/>
+      <Property Name="Width" Value="25"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnPageUp">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[HAS_up_2_0]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="727"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollUpMulti]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="154"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
+      <Property Name="Width" Value="66"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnPageDown">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[HAS_down_2_0]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_29_0]"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="727"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[DownButton]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="346"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_29_0]"/>
+      <Property Name="Width" Value="66"/>
+    </Control>
+    <Control ClassId="0x0000100B" Name="txtSearchFilter">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[Panel_BLU]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="Height" Value="26"/>
+      <Property Name="Left" Value="698"/>
+      <Property Name="SimulationValue" Value="Mp"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
+      <Property Name="Top" Value="115"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.SearchFilter]"/>
+      <Property Name="Width" Value="98"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numStatusIDIdx0">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="432"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="-1064300936"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="101"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[0]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numErrorNumberIdx0">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="545"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="36306"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="101"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[0]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_1">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="686"/>
+      <Property Name="EndY" Value="150"/>
+      <Property Name="ForeColor" Value="250"/>
+      <Property Name="StartX" Value="7"/>
+      <Property Name="StartY" Value="150"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpFacilityIdx1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="None"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[1]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="99"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="153"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpSeverityIdx1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpComSeveritiesEnum]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[1]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="178"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtComponentNameIdx1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="232"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MpComponent"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[1]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="149"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtIndex1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="2"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="43"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="149"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[1].DateTime]"/>
+      <Property Name="Width" Value="220"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtErrorMessageIdx1">
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[1]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="166"/>
+      <Property Name="Width" Value="648"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numStatusIDIdx1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="432"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="-1064300936"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="151"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[1]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numErrorNumberIdx1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="545"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="36306"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="151"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[1]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_2">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="686"/>
+      <Property Name="EndY" Value="200"/>
+      <Property Name="ForeColor" Value="250"/>
+      <Property Name="StartX" Value="7"/>
+      <Property Name="StartY" Value="200"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpFacilityIdx2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="None"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[2]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="99"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="203"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpSeverityIdx2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpComSeveritiesEnum]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[2]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="228"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtComponentNameIdx2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="232"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MpComponent"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[2]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="199"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtIndex2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="2"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="46"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="199"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[2].DateTime]"/>
+      <Property Name="Width" Value="220"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtErrorMessageIdx2">
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[2]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="216"/>
+      <Property Name="Width" Value="648"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numStatusIDIdx2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="432"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="-1064300936"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="201"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[2]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numErrorNumberIdx2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="545"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="36306"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="201"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[2]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_3">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="686"/>
+      <Property Name="EndY" Value="250"/>
+      <Property Name="ForeColor" Value="250"/>
+      <Property Name="StartX" Value="7"/>
+      <Property Name="StartY" Value="250"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpFacilityIdx3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="None"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[3]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="99"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="253"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpSeverityIdx3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpComSeveritiesEnum]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[3]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="278"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtComponentNameIdx3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="232"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MpComponent"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[3]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="249"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtIndex3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="2"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="49"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="249"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[3].DateTime]"/>
+      <Property Name="Width" Value="220"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtErrorMessageIdx3">
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[3]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="266"/>
+      <Property Name="Width" Value="648"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numStatusIDIdx3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="432"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="-1064300936"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="251"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[3]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numErrorNumberIdx3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="545"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="36306"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="251"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[3]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_4">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="686"/>
+      <Property Name="EndY" Value="300"/>
+      <Property Name="ForeColor" Value="250"/>
+      <Property Name="StartX" Value="7"/>
+      <Property Name="StartY" Value="300"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpFacilityIdx4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="None"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[4]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="99"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="303"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpSeverityIdx4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpComSeveritiesEnum]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[4]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="328"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtComponentNameIdx4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="232"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MpComponent"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[4]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="299"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtIndex4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="2"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="52"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="299"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[4].DateTime]"/>
+      <Property Name="Width" Value="220"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtErrorMessageIdx4">
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[4]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="316"/>
+      <Property Name="Width" Value="648"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numStatusIDIdx4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="432"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="-1064300936"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="301"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[4]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numErrorNumberIdx4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="545"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="36306"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="301"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[4]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_5">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="686"/>
+      <Property Name="EndY" Value="350"/>
+      <Property Name="ForeColor" Value="250"/>
+      <Property Name="StartX" Value="7"/>
+      <Property Name="StartY" Value="350"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpFacilityIdx5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="None"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[5]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="99"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="353"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpSeverityIdx5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpComSeveritiesEnum]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[5]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="378"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtComponentNameIdx5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="232"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MpComponent"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[5]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="349"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtIndex5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="2"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="55"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="349"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[5].DateTime]"/>
+      <Property Name="Width" Value="220"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtErrorMessageIdx5">
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[5]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="366"/>
+      <Property Name="Width" Value="648"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numStatusIDIdx5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="432"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="-1064300936"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="351"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[5]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numErrorNumberIdx5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="545"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="36306"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="351"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[5]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_6">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="686"/>
+      <Property Name="EndY" Value="400"/>
+      <Property Name="ForeColor" Value="250"/>
+      <Property Name="StartX" Value="7"/>
+      <Property Name="StartY" Value="400"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpFacilityIdx6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="None"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Facility[6]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="99"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="403"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="bmpSeverityIdx6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpComSeveritiesEnum]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Severity[6]]"/>
+      <Property Name="Left" Value="660"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="428"/>
+      <Property Name="Width" Value="24"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtComponentNameIdx6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="232"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MpComponent"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Component[6]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="399"/>
+      <Property Name="Width" Value="200"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtIndex6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="19"/>
+      <Property Name="Left" Value="2"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="58"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="399"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Time[6].DateTime]"/>
+      <Property Name="Width" Value="220"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtErrorMessageIdx6">
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_7]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'  'Error in MC_BR_MoveProgram call, please check GMC logger'"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.Message[6]]"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="416"/>
+      <Property Name="Width" Value="648"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numStatusIDIdx6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="432"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="-1064300936"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="401"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StatusID[6]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="numErrorNumberIdx6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="246"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_9]"/>
+      <Property Name="ForeColor" Value="11"/>
+      <Property Name="Height" Value="14"/>
+      <Property Name="Left" Value="545"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="None"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="None"/>
+      <Property Name="SimulationValue" Value="36306"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="401"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.ErrorNumber[6]]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="90"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_7">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="657"/>
+      <Property Name="EndY" Value="449"/>
+      <Property Name="ForeColor" Value="248"/>
+      <Property Name="StartX" Value="657"/>
+      <Property Name="StartY" Value="100"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="btnPageUp1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Panel_RED]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_30_0]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="703"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Panel_GRN]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollUpMulti]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="60"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="417"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_30_0]"/>
+      <Property Name="Width" Value="82"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[rockwell_10]"/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="18"/>
+      <Property Name="Left" Value="707"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="62"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="97"/>
+      <Property Name="Width" Value="80"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="%embVirtualKey_22_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x0000016B">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="ResetValue" Value="0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StepUp]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_27_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x0000016B">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="ResetValue" Value="0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.StepDown]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_28">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x0000016B">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="ResetValue" Value="0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.PageUp]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_29_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x0000016B">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="ResetValue" Value="0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.List.PageDown]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_30_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auxiliary_Services_Control.Com_Logger_UIConnect.Clear]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>
