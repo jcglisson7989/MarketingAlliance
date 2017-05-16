@@ -1,9 +1,0 @@
-VAR CONSTANT
-	svnIsInVCSSytem : STRING[80] := '$WCINSVN?versioned:not versioned$';
-	svnURL : STRING[80] := '$WCURL$';
-	svnCompileTime : STRING[80] := '$WCNOW$';
-	svnPullDate : STRING[80] := '$WCDATE$';
-	svnContainsModifications : STRING[80] := '$WCMODS?Modified:Not modified$';
-	svnRevision : STRING[80] := 'R$WCREV$';
-	svnRange : STRING[80] := '$WCRANGE$';
-END_VAR

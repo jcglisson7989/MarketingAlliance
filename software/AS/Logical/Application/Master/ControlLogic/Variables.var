@@ -1,0 +1,16 @@
+VAR
+	Dashboard_Hide_Encoder_Sim : USINT;
+	ii_valves : USINT;
+	CMD_Set_Home_Pos_0 : BOOL;
+	CMD_Set_Current_Pos_As_Home : BOOL;
+	CMD_Reset_Statistics : BOOL;
+	encoder_diff_counts : INT;
+	Multiturn_Absolute_Position : DINT;
+	PositionValue : UINT;
+	ShiftBits : UINT;
+	Timer_Total_Runtime : TON;
+	Timer_Pulse_Target_Present : TON;
+	STATUS_LIGHT_FLASH : FLASH;
+	Flag_Cure_Error_Exists : BOOL;
+	Flag_Valve_Error_Exists : BOOL;
+END_VAR

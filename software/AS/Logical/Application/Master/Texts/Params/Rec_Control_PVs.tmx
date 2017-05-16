@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Rec/Control</prop>
+  </header>
+  <body>
+    <tu tuid="PV.0">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Control.N_Targets_On_Dial</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>18</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>MAX_IDX_TARGETS</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.1">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Control.Enable_Cure[0]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PV.2">
+      <tuv xml:lang="en">
+        <seg>gRecCfg.active.Rec.Control.Enable_Cure[1]</seg>
+      </tuv>
+      <tuv xml:lang="sv">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>0</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,8 @@
+VAR
+	Debug_Stats_LastCycle : AS3500_Disp_Debug_typ;
+	ii_valves : UDINT := 0;
+	ValveReadyFailCount : {REDUND_UNREPLICABLE} DINT;
+	ValveReadyFailCount_LastCycle : {REDUND_UNREPLICABLE} DINT;
+	CycleCount : {REDUND_UNREPLICABLE} DINT;
+	CycleCount_LastCycle : {REDUND_UNREPLICABLE} DINT;
+END_VAR

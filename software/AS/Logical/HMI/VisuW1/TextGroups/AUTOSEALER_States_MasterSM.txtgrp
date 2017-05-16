@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.4.149"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="AUTOSEALER_States_MasterSM">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="9"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="514696" Value="Initializing"/>
+    <Text ID="514697" Value="Idle"/>
+    <Text ID="514699" Value="Running"/>
+    <Text ID="514701" Value="Error Stop"/>
+  </TextLayer>
+  <TextLayer LanguageId="sv">
+    <Text ID="514696" Value="Väntar på start Cmd ..."/>
+    <Text ID="514697" Value="Slå på Motion ..."/>
+    <Text ID="514699" Value="Färdig"/>
+    <Text ID="514701" Value="Spring"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="514696" Value="Esperando Iniciar Cmd ..."/>
+    <Text ID="514697" Value="Ligar movimento ..."/>
+    <Text ID="514699" Value="Pronto"/>
+    <Text ID="514701" Value="Correndo"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="514696" Value="Warten auf Start Cmd ..."/>
+    <Text ID="514697" Value="Einschalten Bewegung ..."/>
+    <Text ID="514699" Value="Bereit"/>
+    <Text ID="514701" Value="Laufen"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="514696" Value="Waiting For Démarrer Cmd ..."/>
+    <Text ID="514697" Value="Mise sous tension de mouvement ..."/>
+    <Text ID="514699" Value="Prêt"/>
+    <Text ID="514701" Value="Fonctionnement"/>
+  </TextLayer>
+  <TextLayer LanguageId="es">
+    <Text ID="514696" Value="Espera para el inicio Cmd ..."/>
+    <Text ID="514697" Value="Encendido de movimiento ..."/>
+    <Text ID="514699" Value="Listo"/>
+    <Text ID="514701" Value="Corriendo"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="514696" Value="0"/>
+    <Index ID="514697" Value="1"/>
+    <Index ID="514699" Value="2"/>
+    <Index ID="514701" Value="3"/>
+  </IndexMap>
+</TextGroup>

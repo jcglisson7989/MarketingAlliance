@@ -15,28 +15,28 @@ extern "C"
 #endif
 /* Constants */
 #ifdef _REPLACE_CONST
- #define brmE 2.71828f
- #define brmPI 3.14159f
- #define brmLN2 0.693147f
- #define brm1_PI 0.31831f
- #define brm2_PI 0.63662f
- #define brmLN10 2.30259f
- #define brmPI_2 1.5708f
- #define brmPI_4 0.785398f
- #define brm3PI_4 2.35619f
- #define brmLN2HI 0.693147f
- #define brmLN2LO 1.90821e-010f
- #define brmLOG2E 1.4427f
- #define brmSQRT2 1.41421f
- #define brmSQRT3 1.73205f
- #define brmTWOPI 6.28319f
- #define brmINVLN2 1.4427f
- #define brmIVLN10 0.434294f
- #define brmLOG10E 0.434294f
- #define brmLOG2_E 0.693147f
- #define brmSQRTPI 1.77245f
- #define brmSQRT1_2 0.707107f
- #define brm2_SQRTPI 1.12838f
+ #define brmE 2.71828
+ #define brmPI 3.14159
+ #define brmLN2 0.693147
+ #define brm1_PI 0.31831
+ #define brm2_PI 0.63662
+ #define brmLN10 2.30259
+ #define brmPI_2 1.5708
+ #define brmPI_4 0.785398
+ #define brm3PI_4 2.35619
+ #define brmLN2HI 0.693147
+ #define brmLN2LO 1.90821e-010
+ #define brmLOG2E 1.4427
+ #define brmSQRT2 1.41421
+ #define brmSQRT3 1.73205
+ #define brmTWOPI 6.28319
+ #define brmINVLN2 1.4427
+ #define brmIVLN10 0.434294
+ #define brmLOG10E 0.434294
+ #define brmLOG2_E 0.693147
+ #define brmSQRTPI 1.77245
+ #define brmSQRT1_2 0.707107
+ #define brm2_SQRTPI 1.12838
 #else
  #ifndef _GLOBAL_CONST
    #define _GLOBAL_CONST _WEAK const

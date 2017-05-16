@@ -1,0 +1,56 @@
+(*Insert your comment here.*)
+VAR
+	gState : AS3500HS_SM_States_Enum;
+	ColorBar : AS3500HS_ColorBar_Enum;
+END_VAR
+(*Insert your comment here.*)
+VAR RETAIN
+	gRecCfg : Global_Par_typ;
+END_VAR
+VAR
+	gAlarms : HERNON_Alarms_typ;
+	gMachineName : {REDUND_UNREPLICABLE} STRING[80] := 'AS3500HS';
+	gProjectDate : {REDUND_UNREPLICABLE} STRING[80] := '7. March 2017';
+	gVersion : {REDUND_UNREPLICABLE} STRING[80] := 'TBD';
+	gStatistics : AS3500HS_Stats_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	ValveFBK : ARRAY[0..MAX_IDX_VALVES] OF FBK_Hernon_SureShot;
+	ValveIO : ARRAY[0..MAX_IDX_VALVES] OF HERNON_Valve_IOPoint_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	CureIO : AS3500_Cure_IO_typ;
+	StatusIO : AS3500_Status_IO_typ;
+	ControlIO : AS3500_Control_IO_typ;
+	CureIO_LastCycle : AS3500_Cure_IO_typ;
+	StatusIO_LastCycle : AS3500_Status_IO_typ;
+	ControlIO_LastCycle : AS3500_Control_IO_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	Control : AS3500HS_Control_Var_typ;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	Position_SHL : AS3500HS_Position_Var_typ;
+	Position_SHL_LastCycle : AS3500HS_Position_Var_typ;
+	Position : AS3500HS_Position_Var_typ;
+	Position_LastCycle : AS3500HS_Position_Var_typ;
+	ii_cycles : UDINT;
+	sim_encoder : UINT;
+	VelCalc_DT_Element : MTBasicsDT1;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	Dial_Vel : AS3500HS_Dial_Vel_Calc;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	TargetInfoArray : ARRAY[0..MAX_IDX_TARGETS] OF Target_typ;
+END_VAR
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+(*Insert your comment here.*)
+(*Insert your comment here.*)

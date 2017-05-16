@@ -17,7 +17,6 @@ extern "C"
 #endif
 /* Constants */
 #ifdef _REPLACE_CONST
- #define cfgSDM_COLOR_DEFAULT 2147483648U
  #define cfgSTATUS_NTP_INACTIVE 0U
  #define cfgSTATUS_NTP_ACTIVE 1U
  #define cfgNTP_STOP 0U
@@ -88,7 +87,6 @@ extern "C"
  #ifndef _GLOBAL_CONST
    #define _GLOBAL_CONST _WEAK const
  #endif
- _GLOBAL_CONST unsigned long cfgSDM_COLOR_DEFAULT;
  _GLOBAL_CONST unsigned short cfgSTATUS_NTP_INACTIVE;
  _GLOBAL_CONST unsigned short cfgSTATUS_NTP_ACTIVE;
  _GLOBAL_CONST unsigned short cfgNTP_STOP;
@@ -265,41 +263,6 @@ typedef struct CfgSetSubnetMask
 	plcbit enable;
 } CfgSetSubnetMask_typ;
 
-typedef struct CfgGetClusterIPAddr
-{
-	/* VAR_INPUT (analog) */
-	unsigned long pDevice;
-	unsigned long pIPAddr;
-	unsigned long pSubnetMask;
-	unsigned char LenIp;
-	unsigned char LenSnmk;
-	/* VAR_OUTPUT (analog) */
-	unsigned short status;
-	/* VAR (analog) */
-	unsigned short i_state;
-	unsigned short i_result;
-	unsigned long i_tmp;
-	/* VAR_INPUT (digital) */
-	plcbit enable;
-} CfgGetClusterIPAddr_typ;
-
-typedef struct CfgSetClusterIPAddr
-{
-	/* VAR_INPUT (analog) */
-	unsigned long pDevice;
-	unsigned long pIPAddr;
-	unsigned long pSubnetMask;
-	unsigned long Option;
-	/* VAR_OUTPUT (analog) */
-	unsigned short status;
-	/* VAR (analog) */
-	unsigned short i_state;
-	unsigned short i_result;
-	unsigned long i_tmp;
-	/* VAR_INPUT (digital) */
-	plcbit enable;
-} CfgSetClusterIPAddr_typ;
-
 typedef struct CfgGetDefaultGateway
 {
 	/* VAR_INPUT (analog) */
@@ -455,38 +418,6 @@ typedef struct CfgSetHostName
 	/* VAR_INPUT (digital) */
 	plcbit enable;
 } CfgSetHostName_typ;
-
-typedef struct CfgGetHostNameIf
-{
-	/* VAR_INPUT (analog) */
-	unsigned long pDevice;
-	unsigned long pHostName;
-	unsigned char Len;
-	/* VAR_OUTPUT (analog) */
-	unsigned short status;
-	/* VAR (analog) */
-	unsigned short i_state;
-	unsigned short i_result;
-	unsigned long i_tmp;
-	/* VAR_INPUT (digital) */
-	plcbit enable;
-} CfgGetHostNameIf_typ;
-
-typedef struct CfgSetHostNameIf
-{
-	/* VAR_INPUT (analog) */
-	unsigned long pDevice;
-	unsigned long pHostName;
-	unsigned long Option;
-	/* VAR_OUTPUT (analog) */
-	unsigned short status;
-	/* VAR (analog) */
-	unsigned short i_state;
-	unsigned short i_result;
-	unsigned long i_tmp;
-	/* VAR_INPUT (digital) */
-	plcbit enable;
-} CfgSetHostNameIf_typ;
 
 typedef struct CfgGetMacAddr
 {
@@ -1247,8 +1178,6 @@ _BUR_PUBLIC void CfgGetIPAddr(struct CfgGetIPAddr* inst);
 _BUR_PUBLIC void CfgSetIPAddr(struct CfgSetIPAddr* inst);
 _BUR_PUBLIC void CfgGetSubnetMask(struct CfgGetSubnetMask* inst);
 _BUR_PUBLIC void CfgSetSubnetMask(struct CfgSetSubnetMask* inst);
-_BUR_PUBLIC void CfgGetClusterIPAddr(struct CfgGetClusterIPAddr* inst);
-_BUR_PUBLIC void CfgSetClusterIPAddr(struct CfgSetClusterIPAddr* inst);
 _BUR_PUBLIC void CfgGetDefaultGateway(struct CfgGetDefaultGateway* inst);
 _BUR_PUBLIC void CfgSetDefaultGateway(struct CfgSetDefaultGateway* inst);
 _BUR_PUBLIC void CfgGetBroadcastAddr(struct CfgGetBroadcastAddr* inst);
@@ -1259,8 +1188,6 @@ _BUR_PUBLIC void CfgGetEthConfigMode(struct CfgGetEthConfigMode* inst);
 _BUR_PUBLIC void CfgSetEthConfigMode(struct CfgSetEthConfigMode* inst);
 _BUR_PUBLIC void CfgGetHostName(struct CfgGetHostName* inst);
 _BUR_PUBLIC void CfgSetHostName(struct CfgSetHostName* inst);
-_BUR_PUBLIC void CfgGetHostNameIf(struct CfgGetHostNameIf* inst);
-_BUR_PUBLIC void CfgSetHostNameIf(struct CfgSetHostNameIf* inst);
 _BUR_PUBLIC void CfgGetMacAddr(struct CfgGetMacAddr* inst);
 _BUR_PUBLIC void CfgSetFTPServer(struct CfgSetFTPServer* inst);
 _BUR_PUBLIC void CfgGetTimeOffset(struct CfgGetTimeOffset* inst);
@@ -1309,7 +1236,7 @@ _BUR_PUBLIC void CfgGetDnsSuffix(struct CfgGetDnsSuffix* inst);
 _BUR_PUBLIC void CfgSetDnsSuffix(struct CfgSetDnsSuffix* inst);
 _BUR_PUBLIC void CfgGetDnsAddress(struct CfgGetDnsAddress* inst);
 _BUR_PUBLIC void CfgSetDnsAddress(struct CfgSetDnsAddress* inst);
-_BUR_PUBLIC unsigned short CfgClearNV(void);
+_BUR_PUBLIC unsigned short CfgClearNV();
 
 
 #ifdef __cplusplus

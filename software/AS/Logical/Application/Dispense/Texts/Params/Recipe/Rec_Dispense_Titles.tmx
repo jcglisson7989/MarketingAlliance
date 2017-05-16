@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">hmiTable/Rec/Dispense</prop>
+  </header>
+  <body>
+    <tu tuid="Title.0">
+      <tuv xml:lang="en">
+        <seg>Valve 1 Enable</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.1">
+      <tuv xml:lang="en">
+        <seg>Valve 1 Active Time [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.2">
+      <tuv xml:lang="en">
+        <seg>Valve 1 Fract. Offset [Pct.]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.3">
+      <tuv xml:lang="en">
+        <seg>Valve 1 Target Offset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.4">
+      <tuv xml:lang="en">
+        <seg>Valve 1 Extra Shot Offset [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.5">
+      <tuv xml:lang="en">
+        <seg>Valve 2 Enable</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.6">
+      <tuv xml:lang="en">
+        <seg>Valve 2 Active Time [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.7">
+      <tuv xml:lang="en">
+        <seg>Valve 2 Fract. Offset [Pct.]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.8">
+      <tuv xml:lang="en">
+        <seg>Valve 2 Target Offset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.9">
+      <tuv xml:lang="en">
+        <seg>Valve 2 Extra Shot Offset [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.10">
+      <tuv xml:lang="en">
+        <seg>Valve 3 Enable</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.11">
+      <tuv xml:lang="en">
+        <seg>Valve 3 Active Time [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.12">
+      <tuv xml:lang="en">
+        <seg>Valve 3 Fract. Offset [Pct.]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.13">
+      <tuv xml:lang="en">
+        <seg>Valve 3 Target Offset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.14">
+      <tuv xml:lang="en">
+        <seg>Valve 3 Extra Shot Offset [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.15">
+      <tuv xml:lang="en">
+        <seg>Valve 4 Enable</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.16">
+      <tuv xml:lang="en">
+        <seg>Valve 4 Active Time [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.17">
+      <tuv xml:lang="en">
+        <seg>Valve 4 Fract. Offset [Pct.]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.18">
+      <tuv xml:lang="en">
+        <seg>Valve 4 Target Offset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Title.19">
+      <tuv xml:lang="en">
+        <seg>Valve 4 Extra Shot Offset [S]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.0">
+      <tuv xml:lang="en">
+        <seg>0- Set Valve 1 Inactive, 1-Activate Valve 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.1">
+      <tuv xml:lang="en">
+        <seg>Valve 1 active dispense time (higher values - larger dispense amount) [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.2">
+      <tuv xml:lang="en">
+        <seg>Valve 1 - Fractional Target Block delay apportioned 0-100%</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.3">
+      <tuv xml:lang="en">
+        <seg>Valve 1 - Number of targets between PiP sensor, dispense valve</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.4">
+      <tuv xml:lang="en">
+        <seg>Valve 1 - Time Delay between extra dispense cycles</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.5">
+      <tuv xml:lang="en">
+        <seg>0- Set Valve 2 Inactive, 1-Activate Valve 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.6">
+      <tuv xml:lang="en">
+        <seg>Valve 2 active dispense time (higher values - larger dispense amount) [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.7">
+      <tuv xml:lang="en">
+        <seg>Valve 2 - Fractional Target Block delay apportioned 0-100%</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.8">
+      <tuv xml:lang="en">
+        <seg>Valve 2 - Number of targets between PiP sensor, dispense valve</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.9">
+      <tuv xml:lang="en">
+        <seg>Valve 2 - Time Delay between extra dispense cycles</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.10">
+      <tuv xml:lang="en">
+        <seg>0- Set Valve 3 Inactive, 1-Activate Valve 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.11">
+      <tuv xml:lang="en">
+        <seg>Valve 3 active dispense time (higher values - larger dispense amount) [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.12">
+      <tuv xml:lang="en">
+        <seg>Valve 3 - Fractional Target Block delay apportioned 0-100%</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.13">
+      <tuv xml:lang="en">
+        <seg>Valve 3 - Number of targets between PiP sensor, dispense valve</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.14">
+      <tuv xml:lang="en">
+        <seg>Valve 3 - Time Delay between extra dispense cycles</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.15">
+      <tuv xml:lang="en">
+        <seg>0- Set Valve 4 Inactive, 1-Activate Valve 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.16">
+      <tuv xml:lang="en">
+        <seg>Valve 4 active dispense time (higher values - larger dispense amount) [mS]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.17">
+      <tuv xml:lang="en">
+        <seg>Valve 4 - Fractional Target Block delay apportioned 0-100%</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.18">
+      <tuv xml:lang="en">
+        <seg>Valve 4 - Number of targets between PiP sensor, dispense valve</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Desc.19">
+      <tuv xml:lang="en">
+        <seg>Valve 4 - Time Delay between extra dispense cycles</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

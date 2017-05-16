@@ -698,7 +698,7 @@ _BUR_PUBLIC void DevLink(struct DevLink* inst);
 _BUR_PUBLIC void DevUnlink(struct DevUnlink* inst);
 _BUR_PUBLIC void GetVolumeLabel(struct GetVolumeLabel* inst);
 _BUR_PUBLIC void GetVolumeSerialNo(struct GetVolumeSerialNo* inst);
-_BUR_PUBLIC unsigned short FileIoGetSysError(void);
+_BUR_PUBLIC unsigned short FileIoGetSysError();
 
 
 #ifdef __cplusplus

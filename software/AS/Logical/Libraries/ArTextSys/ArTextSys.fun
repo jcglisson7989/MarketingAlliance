@@ -7,7 +7,9 @@
  * Declaration of IEC-FUBs of library ArTextSys
  ********************************************************************)
 
-{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetSystemLanguage	(*determine preferred user-language*)
+(* ..ION_BLOCK 123456789|123456789|123456789| <-maximum name-length *)
+
+FUNCTION_BLOCK ArTextSysGetSystemLanguage	(*determine preferred user-language*)
 	VAR_INPUT
 		Execute 		: BOOL; 			(*start on rising edge*)
 	END_VAR
@@ -23,7 +25,7 @@
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysSetSystemLanguage	(*update preferred user-language*)
+FUNCTION_BLOCK ArTextSysSetSystemLanguage	(*update preferred user-language*)
 	VAR_INPUT
 		Execute 		: BOOL;
 		LanguageCode	: ArTextSysLanguageCodeType;
@@ -39,8 +41,9 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
+(* ..ION_BLOCK 123456789|123456789|123456789| <-maximum name-length *)
 
-{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetNamespaceLanguages
+FUNCTION_BLOCK ArTextSysGetNamespaceLanguages
 	VAR_INPUT
 		Execute 		: BOOL; 			(*start on rising edge*)
 		Namespace		: UDINT;			(*string-pointer to namespace*)
@@ -59,8 +62,9 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
+(* ..ION_BLOCK 123456789|123456789|123456789| <-maximum name-length *)
 
-{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetText
+FUNCTION_BLOCK ArTextSysGetText
 	VAR_INPUT
 		Execute 		: BOOL;
 		Namespace		: UDINT;			(*string-pointer to namespace*)
@@ -82,7 +86,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysFormatString
+FUNCTION_BLOCK ArTextSysFormatString
 	VAR_INPUT
 		Execute 		: BOOL;
 		FormatString	: UDINT;			(*string-pointer to format-template*)
@@ -105,7 +109,7 @@ END_FUNCTION_BLOCK
 	END_VAR
 END_FUNCTION_BLOCK
 
-{REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK ArTextSysGetFormattedText
+FUNCTION_BLOCK ArTextSysGetFormattedText
 	VAR_INPUT
 		Execute 		: BOOL;
 		Namespace		: UDINT;			(*string-pointer to namespace*)
